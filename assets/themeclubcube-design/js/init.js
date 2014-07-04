@@ -1,0 +1,3 @@
+$(function(){
+    mbc.gateway.init();
+});

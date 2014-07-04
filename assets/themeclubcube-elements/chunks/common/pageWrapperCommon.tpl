@@ -1,0 +1,1 @@
+<ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul>
