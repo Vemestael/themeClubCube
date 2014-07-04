@@ -8,11 +8,12 @@ $(function() {
         var $topEventsSLider = $('.top-events-sliders');
 
         $sliderNode.slick({
-            slidesToShow: 1,
+            // slidesToShow: 1,
             fade: true,
-            autoplay: false,
-            draggable: false,
-            speed: 1600
+            // autoplay: true,
+            autoplaySpeed: 2000,
+            draggable: true,
+            speed: 1000
         });
 
         $topEventsSLider.slick({
@@ -54,31 +55,29 @@ $(function() {
     };
 
     cubeObj.videoImgResponsive = function() {
-        // var $vidImages = $('.vid.height-to-window');
-        // var $iframe = $('.video-bg');
-        // var $vidIframeContainer = $('.video-bg').closest('.container-fluidss');
-
 
         function runResize() {
-            var $vidImages = $('.vid.height-to-window');
+            var $vidImages = $('.img-fit');
             var $iframe = $('.video-bg');
             var $vidIframeContainer = $('.video-bg').closest('.container-fluidss');
 
             $vidImages.each(function() {
-                if (($(window).innerWidth() / $(window).innerHeight()) > 1.7) {
+                //If the screen width is wider than height
+                if (($(window).innerWidth() > $(window).innerHeight())) {
                     $(this).css('width', $(window).innerWidth());
                     $(this).css('height', 'auto');
-                    $(this).css('top', -($(this).height() - $(window).innerHeight())/2);
+                    $(this).css('top', -($(this).height() - $(window).innerHeight()) / 2);
                     $(this).css('left', 0);
-                } else if ($(window).innerWidth() < 1200) {
+                } else
+                //If the screen height is heiger than it's width
+                if (($(window).innerWidth() < $(window).innerHeight())) {
                     $(this).css('height', $(window).innerHeight());
                     $(this).css('width', 'auto');
                     $(this).css('top', 0);
-                    // console.log($(this).height(), $(this).width(), $(window).innerWidth());
                     var leftPadding = ($(this).width() - $(window).innerWidth()) / 2;
                     console.log($(this), leftPadding, $(this).width(), $(window).innerWidth());
                     $(this).css('left', -leftPadding);
-                    // console.log('Inner width:', $(window).innerWidth(), 'Img width:', $(this).width(), 'left:', leftPadding, ($(this).width() - $(window).innerWidth())/2);
+                    //If th      
                 } else {
                     $(this).css('left', 'auto');
                     $(this).css('height', 'auto');
@@ -87,7 +86,7 @@ $(function() {
             });
 
             $iframe.each(function() {
-                $(this).width($(window).innerWidth());
+                $(this).width($(window).innerWidth() - 10);
             });
         };
 
@@ -610,8 +609,8 @@ function onPlayerReady(event) {
     };
 
     $playBtn.on('click touchstart', function() {
-
         $('.slider').slickPause();
+        console.log('Play!', _eventTarget);
         _eventTarget.playVideo();
         setTimeout(function() {
             hideControls();
