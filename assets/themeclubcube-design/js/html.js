@@ -11,7 +11,6 @@ $(function() {
             slidesToShow: 1,
             fade: true,
             autoplay: false,
-            // autoplaySpeed: 4200,
             draggable: false,
             speed: 1600
         });
