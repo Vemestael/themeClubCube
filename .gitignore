@@ -2,6 +2,7 @@ config.core.php
 .idea
 nbproject
 .svn
+.sass-cache
 
 /_packages/*
 !/_packages/*.zip
