@@ -32,17 +32,31 @@ $(function() {
         // Full height sluder images
         function fullHeightSlides() {
             var $imgSlider = $('.slider .container-fluidss img.img-responsive');
-            var $windowHeight = $(window).height();
-            var $windowWidth = $(window).width();
+            var $defaildSlider = $('.slider-default .container-fluidss img.img-responsive');
+            var windowHeight = $(window).height();
+            var windowWidth = $(window).width();
+
+
+            function count(node) {
+                if ((windowHeight > windowWidth) && ($('.slider').length)) {
+                    $(node).removeClass('img-responsive').addClass('height-to-window');
+                };
+                if ((windowHeight < windowWidth) && ($('.slider').length)) {
+                    // $(this).removeClass('height-to-window').addClass('img-responsive');
+                    $(node).removeClass('img-responsive').addClass('height-to-window');
+                };
+                if ((windowWidth < 1200) && ($('.slider-default').length)) {
+                    $(node).removeClass('img-responsive').addClass('height-to-window');
+                };
+            };
 
             $imgSlider.each(function() {
-                if ($windowHeight > $windowWidth) {
-                    $(this).removeClass('img-responsive').addClass('height-to-window');
-                };
-                if ($windowHeight < $windowWidth) {
-                    // $(this).removeClass('height-to-window').addClass('img-responsive');
-                    $(this).removeClass('img-responsive').addClass('height-to-window');
-                };
+                var node = this;
+                count(node);
+            });
+            $defaildSlider.each(function() {
+                var node = this;
+                count(node);
             });
 
         };
@@ -289,23 +303,28 @@ $(function() {
             var slideNodeHeight = $rows.height();
             var windowHeight = document.body.clientHeight;
             var windowWidth = document.body.clientWidth;
+            var sliderHeight = $('.slider-default').height() || $('.slider').height();
             var $slideClick = $('.slick-prev');
             var $slideClickNext = $('.slick-next');
             var slideClickHeight = $slideClick.height();
-            var slideClickTop = (windowHeight - slideClickHeight) / 2;
-            var sliderTopPadding = (windowHeight - slideNodeHeight) / 2;
+            var slideClickTop = (sliderHeight - slideClickHeight) / 2;
+            var sliderTopPadding = (sliderHeight - slideNodeHeight) / 2;
 
             $slideClick.css('top', slideClickTop);
             $slideClickNext.css('top', slideClickTop);
 
-            if (slideNodeHeight < windowHeight) {
+            console.log(slideNodeHeight, windowHeight);
+
+            if ((slideNodeHeight < sliderHeight) && ($('.slider').length)) {
                 $rows.css('top', sliderTopPadding + 40);
+            } else if ((slideNodeHeight < sliderHeight) && ($('.slider-default').length)) {
+                 $rows.css('top', sliderTopPadding + 10);
             } else {
                 $rows.css('top', '140px');
             };
 
-            if ((slideNodeHeight < windowHeight) && (window.devicePixelRatio === 2) && ((windowWidth) === 1024)) {
-                $rows.css('top', ((windowHeight / 2 - slideNodeHeight)) + 40);
+            if ((slideNodeHeight < sliderHeight) && (window.devicePixelRatio === 2) && ((windowWidth) === 1024)) {
+                $rows.css('top', ((sliderHeight / 2 - slideNodeHeight)) + 40);
             };
 
 
@@ -434,7 +453,7 @@ $(function() {
     cubeObj.responsiveImg = function() {
 
         function resizeResponsiveImg() {
-            var $imgContainers = $('.img-overfl');
+            var $imgContainers = $('.img-contain');
 
             $imgContainers.each(function() {
                 var $imgContainer = $(this);
@@ -501,8 +520,8 @@ $(function() {
                 fade: true,
                 dots: true,
                 easing: 'easeInExpo',
-                autoplay: true,
-                autoplaySpeed: 4200,
+                // autoplay: true,
+                // autoplaySpeed: 4200,
                 draggable: false,
                 speed: 1000
             });
@@ -541,6 +560,10 @@ $(function() {
             this.slider();
             this.scrollAtOnce();
             this.headerToTop();
+            this.fullHeightSLider();
+        };
+        if ($('.slider-default').length) {
+            this.slider();
             this.fullHeightSLider();
         };
         this.calendar();
