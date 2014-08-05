@@ -337,10 +337,10 @@
 			this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).show();
 		},
 
-		appendImg:function(){
-			$('.datepicker.dropdown-menu .table-condensed>thead>tr>th.prev').after('<th class="month-img"></th>');
+		// appendImg:function(){
+		// 	$('.datepicker.dropdown-menu .table-condensed>thead>tr>th.prev').after('<th class="month-img"></th>');
 			
-		}
+		// }
 	};
 	
 	$.fn.datepicker = function ( option, val ) {
@@ -456,8 +456,8 @@
 							'<tr>'+
 								'<th class="prev"></th>'+
 								// '<th class="month-img"></th>' +
-								'<th colspan="4" class="switch"></th>'+
-								'<th class="month-img"></th>' +
+								'<th colspan="5" class="switch"></th>'+
+								// '<th class="month-img"></th>' +
 								'<th class="next"></th>'+
 							'</tr>'+
 						'</thead>',
