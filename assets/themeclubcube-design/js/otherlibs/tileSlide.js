@@ -109,12 +109,10 @@
 	TileSlide.prototype.stopSlide = function() {
 		// clearInterval(self.timing);
 		this.pause = true;
-		console.log('Slider stopped');
 	};
 
 	TileSlide.prototype.playSlide = function(){
 		this.pause = false;
-		console.log('Slider played');
 	};
 
 	TileSlide.prototype.runSlider = function() {
@@ -122,7 +120,6 @@
 		self.timing = setInterval(function() {
 			if (self.pause === false) {
 				self.navigation('next');
-				console.log('Played');
 			};
 		}, self.interval);
 	};
@@ -167,7 +164,6 @@
 		});
 
 		$(document).ready(function() {
-			console.log('Bind onload event');
 			self.runSlider();
 		});
 	};

@@ -175,3 +175,4 @@ input.dt {border:none;background:$bg-f9-color;}
 .datepicker.dropdown-menu.whity .month-img {background-image: url(../img/sprites.png);background-repeat: no-repeat;background-position: -462px -35px;}
 .datepicker.dropdown-menu td.day.event {color:$orange-color;font-weight:bold;}
 .datepicker .table-condensed>tbody>tr:hover td.day.event {color:$white-color;}
+.datepicker.dropdown-menu {z-index: 10;}

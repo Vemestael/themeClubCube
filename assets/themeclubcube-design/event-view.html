@@ -12,13 +12,12 @@
     <meta property="og:url" content="" />
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/jquery/jquery-1.11.0.min.js"></script>
     <!--    <link rel="stylesheet" href="assets/css/datepicker.css">-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/perfect-scrollbar-0.4.10.min.js"></script>
+    <script src="js/otherlibs/bootstrap.js"></script>
+    <script src="js/jquery/plugins/slick/slick.min.js"></script>
     <!--[if IE]>
             <script src="assets/js/html5.js"></script>
     <![endif]-->
@@ -29,100 +28,117 @@
 
 <body>
 
-        <div class="header-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="navbar-header col-lg-4 col-lg-offset-1">
-                        <button class="navbar-toggle">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="" class="navbar-brand nav-top sec"></a>
+        <header class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header col-lg-5 col-lg-offset-1">
+                    <div class="tile">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="home-btn">Home</span>
                     </div>
-                    <div class="collapse navbar-collapse col-lg-8 pull-right main-navig">
-                        <ul class="nav navbar-nav navbar-right nav-top">
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle sub-heading-a" data-toggle="dropdown">Home
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-left nav-top">
-                                    <li>
-                                        <a href="">Home Slider</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="">Home Video</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle sub-heading-a" data-toggle="dropdown">Events
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-left nav-top">
-                                    <li>
-                                        <a href="">Home Slider</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="">Home Video</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle sub-heading-a" data-toggle="dropdown">About
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-left nav-top">
-                                    <li>
-                                        <a href="">Home Slider</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="">Home Video</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle sub-heading-a" data-toggle="dropdown">Media
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-left nav-top">
-                                    <li>
-                                        <a href="">Home Slider</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="">Home Video</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle sub-heading-a" data-toggle="dropdown">Blog
-                                    <b class="caret"></b>
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="sub-heading-a">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="" class="navbar-brand first"></a>
                 </div>
+                <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle">Home
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Home Slider</a>
+                                </li>
+                                <li class="last">
+                                    <a href="v.html">Home Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle main-heading-a">Events
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Home Slider</a>
+                                </li>
+                                <li class="last">
+                                    <a href="">Home Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle main-heading-a">About
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Home Slider</a>
+                                </li>
+                                <li class="last">
+                                    <a href="">Home Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle main-heading-a" >Media
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Home Slider</a>
+                                </li>
+                                <li class="last">
+                                    <a href="">Home Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle main-heading-a">Blog
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Home Slider</a>
+                                </li>
+                                <li class="">
+                                    <a href="">Home Video</a>
+                                </li>
+                                <li class="">
+                                    <a href="">Home Video</a>
+                                </li>
+                                <li class="last">
+                                    <a href="">Home Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle main-heading-a">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
+    </header>
    <section class="fullwidth-bg event-view">
-    <img src="assets/img/event-veiw.jpg" alt="" class="img-responsive">
+    <img src="../uploads/event-view/event-veiw.jpg" alt="" class="img-responsive">
     <div class="pattern"></div>
        <div class="container z-top">
            <div class="row">
-               <div class="col-md-8">
+               <div class="col-md-8 col-sm-8">
                    <h1 class="event-h1 text-left">TRAP ONLY. best records plus fit</h1>
                    <span class="event-title-descr">2<sup class="event-sup">nd</sup> dancefloor</span>
                </div>
-               <div class="col-md-4"><div class="event-about view-evt">
+               <div class="col-md-4 col-sm-4"><div class="event-about view-evt">
                         <div class="date">
                             <div class="month">APRIL</div>
                             <div class="day">23</div>
                             <div class="year">2014</div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-sm-7">
                             <h1 class="slider-heading event-h1 text-left">
                                 <span class="trs">Start</span><br>8PM</h1>
                         </div>
@@ -130,16 +146,17 @@
            </div>
        </div>
    </section>
-   <main>
-    <div class="container">
-        <div class="row">
-            <div class="content-page col-md-8">
+   <div class="main-content">
+   <div class="container text-contain">
+    <div class="row">
+   <main class="col-lg-8 col-md-12 col-sm-12 content-main">
+            <div class="content-page">
                 <div class="line-up z-top">
                     <div class="top-line-up">
                         <span class="line-up-title pull-left">Line-up</span><span class="line-up-title pull-right">Price: <span class="wh-text">5$</span></span>
                     </div>
                     <div class="bottom-line-up">
-                        <div class="pull-left col-md-8 line-up-guests">
+                        <div class="pull-left col-md-8 col-sm-8 line-up-guests">
                             <ul>
                                 <li>
                                     <div class="wh-text">Andrew Feeling</div>
@@ -163,7 +180,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="pull-right col-md-4 text-right line-up-contacts">
+                        <div class="pull-right col-md-4 col-sm-4 text-right line-up-contacts">
                             <ul>
                                 <li><i class="letter-img-white"></i><a href="mailto:tickets@cumeclub.com" class="border-bottom">tickets@cumeclub.com</a></li>
                                 <li><span class="pull-right"><i class="phone-img-white"></i>(096) 977-60-11</span></li>
@@ -234,30 +251,33 @@
                 </ul>
             </div>
             </div>
-            <aside class="col-md-4">
-                <div class="calendar-white"></div>
+   </main>
+   </div>
+    </div>
+    <div class="container absi">
+    <div class="row absi-inner">
+   <aside class="col-lg-12 col-md-12 col-sm-12 items-aside">
+                <!-- <div class="calendar-white"></div> -->
                     <div class="event-dates input-append date" id="dp" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
                         <div class="ev-date-left date-no-border">
                             <div class="ttl">This week</div>
                             <div class="dt">21 ... 28 April</div>
                             <input type="text" class="input-datepicker" value="12-02-2012" readonly placeholder="21 ... 28 April">
                         </div>
-     <!--                    <div class="ev-date-right add-on" value="02/16/12" data-date-format="mm/dd/yy">
-                            <b class="caret"></b>
-                        </div> -->
                     </div>
-                    <div class="some-events">
-                               <article class="top-event">
-                        <img class="img-responsive" src="assets/img/top-ev.jpg" alt="">
+                    <div class="some-events row">
+                    <div class="col-lg-12 col-md-4 col-sm-6">
+                    <article class="top-event">
+                        <img class="img-h-responsive" src="../uploads/events/Paramore-11.jpg" alt="">
                         <div class="top-event-descr">
                             <div class="date-event">
-                                <div class="month">APRIL</div>
-                                <div class="day">23</div>
+                                <div class="month">MAY</div>
+                                <div class="day">10</div>
                                 <div class="week-day">WED</div>
                             </div>
                             <div class="item-title">
-                                <a href="" class="top-event-title">TRAP ONLY. best records</a>
-                                <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
+                                <a href="" class="top-event-title">Paramore live acoustic</a>
+                                <div class="top-event-place">main hall</div>
                             </div>
                             <div class="ticket-triangle-left"></div>
                             <div class="ticket-triangle-right"></div>
@@ -265,62 +285,50 @@
                             <div class="ticket-triangle-rightB"></div>
                         </div>
                         <div class="rombus">
-                            <!--                            <img src="assets/img/ev-top.png" alt="">-->
                         </div>
                         <div class="popup-evt">
                             <div class="poput-evt-inner">
                             <div class="start-row row">
-                                <div class="col-xs-2">start</div>
-                                <div class="col-xs-9 col-lg-offset-1">8pm</div>
+                                <div class="left-evt-inner">start</div>
+                                <div class="right-evt-inner">11pm</div>
                             </div>
                             <div class="what-row row">
-                                <div class="col-xs-2">line-up</div>
-                                <div class="col-xs-9 col-lg-offset-1">
-                                    <div>Andrew Feeling (donetsk)</div>
-                                    <div>Shalim (donetsk)</div>
-                                    <div>Stay B (donetsk)</div>
-                                    <div>Someone² (mariupol)</div>
-                                    <div>Dranga (mariupol)</div>
+                                <div class="left-evt-inner">line-up</div>
+                                <div class="right-evt-inner">
+                                    <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
+                                    <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
+                                    <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
+                                    <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
+                                    <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
                                 </div>
                             </div>
-                            <div class="line-ev row">
-                                <div class="col-xs-2"></div>
-                                <div class="col-xs-9 col-lg-offset-1"></div>
+                             <div class="line-ev row">
+                                <!-- <div class="left-evt-inner"></div>
+                                <div class="right-evt-inner"></div> -->
+                                <div class="evt-liner"></div>
                             </div>
                             <div class="what-row row">
-                                <div class="col-xs-2">line-up</div>
-                                <div class="col-xs-9 col-lg-offset-1">
-                                    <div>Andrew Feeling (donetsk)</div>
-                                    <div>Shalim (donetsk)</div>
-                                    <div>Stay B (donetsk)</div>
-                                    <div>Someone² (mariupol)</div>
-                                    <div>Dranga (mariupol)</div>
-                                </div>
-                            </div>
-                            <div class="line-ev row">
-                                <div class="col-xs-2"></div>
-                                <div class="col-xs-9 col-lg-offset-1"></div>
-                            </div>
-                            <div class="what-row row">
-                                <div class="col-xs-2">about</div>
-                                <div class="col-xs-9 col-lg-offset-1">
-                                    <div class="evt-about">But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</div>
+                                <div class="left-evt-inner">price</div>
+                                <div class="right-evt-inner">
+                                    <div>5$</div>
                                 </div>
                             </div>
                            </div> 
                         </div>
                     </article>
+           </div>
+           <div class="col-lg-12 col-md-4 col-sm-6">
                     <article class="top-event">
-                        <img class="img-responsive" src="assets/img/top-ev2.jpg" alt="">
+                        <img class="img-h-responsive" src="../uploads/events/130197.jpg" alt="">
                         <div class="top-event-descr">
                             <div class="date-event">
-                                <div class="month">APRIL</div>
-                                <div class="day">23</div>
+                                <div class="month">SEPT</div>
+                                <div class="day">15</div>
                                 <div class="week-day">WED</div>
                             </div>
                             <div class="item-title">
-                                <a href="" class="top-event-title">FRIENDS Privat House Party on the Carribean hills</a>
-                                <div class="top-event-place">Lime Party Group</div>
+                                <a href="" class="top-event-title">Iron Maiden open Air</a>
+                                <div class="top-event-place">Open Air</div>
                             </div>
                             <div class="ticket-triangle-left"></div>
                             <div class="ticket-triangle-right"></div>
@@ -328,53 +336,47 @@
                             <div class="ticket-triangle-rightB"></div>
                         </div>
                         <div class="rombus">
-                            <!--                            <img src="assets/img/ev-top.png" alt="">-->
                         </div>
-                        <div class="popup-evt">
+                                                <div class="popup-evt">
                             <div class="poput-evt-inner">
                             <div class="start-row row">
-                                <div class="col-xs-2">start</div>
-                                <div class="col-xs-9 col-lg-offset-1">8pm</div>
+                                <div class="left-evt-inner">start</div>
+                                <div class="right-evt-inner">11pm</div>
                             </div>
                             <div class="what-row row">
-                                <div class="col-xs-2">line-up</div>
-                                <div class="col-xs-9 col-lg-offset-1">
-                                    <div>Andrew Feeling (donetsk)</div>
-                                    <div>Shalim (donetsk)</div>
+                                <div class="left-evt-inner">line-up</div>
+                                <div class="right-evt-inner">
+                                    <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
+                                    <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
+                                    <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
+                                    <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
+                                    <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
                                 </div>
                             </div>
-                            <div class="line-ev row">
-                                <div class="col-xs-2"></div>
-                                <div class="col-xs-9 col-lg-offset-1"></div>
+                             <div class="line-ev row">
+                                <!-- <div class="left-evt-inner"></div>
+                                <div class="right-evt-inner"></div> -->
+                                <div class="evt-liner"></div>
                             </div>
                             <div class="what-row row">
-                                <div class="col-xs-2">line-up</div>
-                                <div class="col-xs-9 col-lg-offset-1">
-                                    <div>Andrew Feeling (donetsk)</div>
+                                <div class="left-evt-inner">price</div>
+                                <div class="right-evt-inner">
+                                    <div>5$</div>
                                 </div>
                             </div>
-                            <div class="line-ev row">
-                                <div class="col-xs-2"></div>
-                                <div class="col-xs-9 col-lg-offset-1"></div>
-                            </div>
-                            <div class="what-row row">
-                                <div class="col-xs-2">about</div>
-                                <div class="col-xs-9 col-lg-offset-1">
-                                    <div class="evt-about">But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</div>
-                                </div>
-                            </div>
-                        </div>
+                           </div> 
                         </div>
                     </article>
+           </div>
                     </div>
             </aside>
-        </div>
-    </div>
-   </main>
+            </div>
+            </div>
+            </div>
     <footer class="contact-us">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6 footer-block">
                     <div class="welcome">
                         <div class="welcome-inner">
                             <div class="corner-welcome"></div>
@@ -385,26 +387,26 @@
                     <address>
                         <ul class="address-list">
                             <li>
-                                <img src="assets/img/letter-img.png" alt="">
+                                <img src="images/letter-img.png" alt="">
                                 <a href="mailto:hello@cubeclub.com">hello@cubeclub.com</a>
                             </li>
                             <li>
-                                <img src="assets/img/phone-angle.png" alt="">
+                                <img src="images/phone-angle.png" alt="">
                                 <ul>
                                     <li>+38 (050) 588-46-37</li>
                                     <li>+38 (097) 798-45-12</li>
                                 </ul>
                             </li>
-                            <li>
-                                <img src="assets/img/baloone.png" alt="">
+                            <li class="last">
+                                <img src="images/baloone.png" alt="">
                                 <ul>
-                                    <li>87500 Mariupol,Ukraine,ul. Kazantsev 7b,2nd floor,office. 29</li>
+                                    <li>87500 Mariupol, Ukraine, ul. Kazantsev 7b, 2nd floor, office. 29</li>
                                 </ul>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6 footer-block">
                     <div class="subscribe-here soc-marg">
                         <h6>Mailing list</h6>
                         <p>Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!</p>
@@ -416,8 +418,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="soc-marg">
+                <div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
+                    <div class="soc-marg soc-webs">
                         <h6>Follow us</h6>
                         <p>To be up-to-date with us</p>
                         <ul class="social-icons">
@@ -477,23 +479,23 @@
         </div>
     </div>
     </footer>
-    <script src="assets/js/bootstrap-datepicker.js"></script>
-    <script src="assets/js/core.js"></script>
+    <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
+    <script src="js/html.js"></script>
     <script>    
-        var currDate = new Date();
-        var setDate = (currDate.getMonth() + 1) + '-' + currDate.getDate() + '-' + currDate.getFullYear();
-        $('.input-datepicker').attr('value', setDate);
-        $('#dp').attr('data-date', setDate);
+        // var currDate = new Date();
+        // var setDate = (currDate.getMonth() + 1) + '-' + currDate.getDate() + '-' + currDate.getFullYear();
+        // $('.input-datepicker').attr('value', setDate);
+        // $('#dp').attr('data-date', setDate);
 
-        var picker = $('#dp').datepicker({
-            format: 'mm-dd-yyyy',
-            startDate: '-15d',
-            autoclose: true,
-            endDate: '+0d',
-            todayHighlight: true,
-            weekStart: 1
-        });
-        $('.calendar-white').append($('.datepicker.dropdown-menu'));
+        // var picker = $('#dp').datepicker({
+        //     format: 'mm-dd-yyyy',
+        //     startDate: '-15d',
+        //     autoclose: true,
+        //     endDate: '+0d',
+        //     todayHighlight: true,
+        //     weekStart: 1
+        // });
+        // $('.calendar-white').append($('.datepicker.dropdown-menu'));
     </script>
 </body>
 
