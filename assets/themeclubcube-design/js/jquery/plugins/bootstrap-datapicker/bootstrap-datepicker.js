@@ -155,8 +155,8 @@
             var dateEventWidth = $('.event-dates').width();
             var eventCaretWidth = $('.ev-date-right').width();
 			this.picker.css({
-				top: offset.top + this.height + 5,
-				left: offset.left - dateEventWidth + eventCaretWidth + 6
+				top: offset.top + this.height,
+				left: offset.left - dateEventWidth + eventCaretWidth
 			});
 		},
 		

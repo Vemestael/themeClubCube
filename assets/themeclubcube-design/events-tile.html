@@ -185,7 +185,7 @@
        </section>
        <div class="container gr-bg tab-content">
         <div class="tab-pane row fade" id="this-w">
-           <div class="col-md-4 col-sm-6">
+           <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-h-responsive" src="../uploads/events/Paramore-11.jpg" alt="">
                         <div class="top-event-descr">
@@ -236,7 +236,7 @@
                         </div>
                     </article>
            </div>
-           <div class="col-md-4 col-sm-6">
+           <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-h-responsive" src="../uploads/events/130197.jpg" alt="">
                         <div class="top-event-descr">
@@ -287,7 +287,7 @@
                         </div>
                     </article>
            </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-h-responsive" src="../uploads/events/20130125-rhcp-x600-1359132290.jpg" alt="">
                         <div class="top-event-descr">
@@ -338,7 +338,7 @@
                         </div>
                     </article>
            </div>
-             <div class="col-md-4 col-sm-6">
+             <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-responsive" src="../uploads/events/top-ev2.jpg" alt="">
                         <div class="top-event-descr">
@@ -390,7 +390,7 @@
                         </div>
                 </article>
            </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-responsive" src="../uploads/events/top-ev3.jpg" alt="">
                         <div class="top-event-descr">
@@ -441,7 +441,7 @@
                         </div>
                     </article>
            </div>
-           <div class="col-md-4 col-sm-6">
+           <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-responsive" src="../uploads/events/top-ev.jpg" alt="">
                         <div class="top-event-descr">
@@ -493,7 +493,7 @@
                         </div>
                     </article>
            </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event">
                         <img class="img-responsive" src="../uploads/events/top-ev3.jpg" alt="">
                         <div class="top-event-descr">
@@ -544,7 +544,7 @@
                         </div>
                     </article>
            </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 top-event-container">
                     <article class="top-event last">
                         <img class="img-h-responsive" src="../uploads/events/130197.jpg" alt="">
                         <div class="top-event-descr">
@@ -1139,6 +1139,12 @@
     </footer>
     <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
     <script src="js/html.js"></script>
+    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+    <script>
+        $(document).ready(function(){
+            var events = new EventAnimate($('.tab-pane.active .top-event'));
+        });
+    </script>
 </body>
 
 </html>
