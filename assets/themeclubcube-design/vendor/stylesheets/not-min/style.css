@@ -5600,6 +5600,1460 @@ input.dt {
   z-index: 10;
 }
 
+/* ========================================================================
+ * Custom buttons "Read more"
+ * ======================================================================== */
+.read-more {
+  display: block;
+  padding: 10px 17px;
+  font-size: 12px;
+  background: #a82743;
+  float: left;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.read-more.hover {
+  background: #e15e32;
+}
+
+.read-more.pressed {
+  background: #d35a33;
+}
+
+.read-more.off {
+  cursor: default;
+}
+
+.read-more.off, .read-more.off:hover {
+  background: #cccccc;
+}
+
+/* ========================================================================
+ * Custom buttons "Next-Prev"
+ * ======================================================================== */
+.left-pag {
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+
+.left-pag .pad-arr {
+  display: block;
+  float: left;
+  width: 55px;
+  height: 70px;
+  background: #a82743;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag .pad-arr i {
+  display: inline-block;
+  width: 20px;
+  height: 28px;
+  margin-top: 21px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -328px -39px;
+  vertical-align: middle;
+}
+
+.left-pag .pad-text {
+  display: block;
+  float: right;
+  padding: 13px 18px;
+  border: 1px solid #e9cfd5;
+  border-left: 0 none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag .pad-title {
+  display: block;
+  text-transform: uppercase;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag .pad-dates {
+  display: block;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag:hover .pad-arr, .left-pag.hover .pad-arr {
+  background: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag:hover .pad-title, .left-pag.hover .pad-title {
+  color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag:hover .pad-text, .left-pag.hover .pad-text {
+  border: 1px solid #f4dad1;
+  border-left: 0 none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag.off {
+  cursor: default;
+}
+
+.left-pag.off .pad-arr {
+  background: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag.off .pad-text {
+  border: 1px solid #e6e6e6;
+  border-left: 0 none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag.off .pad-title, .left-pag.off .pad-dates {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag.pressed .pad-arr {
+  background: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag.pressed .pad-text {
+  border: 1px solid #d35a33;
+  border-left: 0 none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.left-pag.pressed .pad-title {
+  color: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Button Slider"
+ * ======================================================================== */
+.button-slider {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #a82743;
+  border: 2px solid #a82743;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-slider:hover {
+  animation: buttonRotate .3s ease forwards;
+}
+
+.button-slider.hover {
+  border: 2px solid #e15e32;
+  background: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-slider.off {
+  cursor: default;
+}
+
+.button-slider.off {
+  background-color: #cbcbcb;
+  border: 2px solid #cbcbcb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-slider.pressed {
+  border: 2px solid #cbcbcb;
+  background: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-slider.pressed:hover, .button-slider.off:hover, .button-slider.hover:hover {
+  animation: none;
+}
+
+@keyframes buttonRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 2px solid #e15e32;
+    background: transparent;
+  }
+}
+@-webkit-keyframes buttonRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 2px solid #e15e32;
+    background: transparent;
+  }
+}
+/* ========================================================================
+ * Custom buttons "Button Arrow"
+ * ======================================================================== */
+.button-arrow-left {
+  display: block;
+  position: relative;
+  width: 45px;
+  height: 55px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button-arrow-left .button-arrow-border {
+  display: block;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 9px;
+  left: 10px;
+  border-left: 1px solid #a82743;
+  border-bottom: 1px solid #a82743;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-arrow-left:hover .button-arrow-border, .button-arrow-left.hover .button-arrow-border {
+  border-left: 1px solid #e15e32;
+  border-bottom: 1px solid #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-arrow-left.off {
+  cursor: default;
+}
+
+.button-arrow-left.off .button-arrow-border {
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-arrow-left.pressed .button-arrow-border {
+  border-left: 1px solid #d35a33;
+  border-bottom: 1px solid #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Button Filter Checked"
+ * ======================================================================== */
+.button-filter.checked {
+  display: block;
+  float: left;
+  padding: 12px 19px;
+  border: 1px solid #e9cfd5;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked .button-filter-text {
+  float: left;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #a82743;
+  margin-right: 30px;
+}
+
+.button-filter.checked .button-filter-arr {
+  display: block;
+  float: right;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.button-filter.checked .button-filter-line.left {
+  display: block;
+  width: 16px;
+  left: -6px;
+  top: 14px;
+  height: 2px;
+  position: absolute;
+  background: #a82743;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked .button-filter-line.right {
+  display: block;
+  width: 25px;
+  left: 3px;
+  top: 11px;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  background: #a82743;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked:hover, .button-filter.checked.hover {
+  background: #a2a2a2;
+  border: 1px solid #999999;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked:hover .button-filter-text, .button-filter.checked.hover .button-filter-text {
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked:hover .button-filter-line.left, .button-filter.checked.hover .button-filter-line.left {
+  width: 25px;
+  left: 0px;
+  top: 11px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked:hover .button-filter-line.right, .button-filter.checked.hover .button-filter-line.right {
+  width: 25px;
+  left: 0px;
+  top: 11px;
+  background: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.off {
+  cursor: default;
+}
+
+.button-filter.checked.off {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.off .button-filter-text {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.off .button-filter-line.left {
+  width: 16px;
+  left: -6px;
+  top: 14px;
+  background: #cccccc;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.off .button-filter-line.right {
+  width: 25px;
+  left: 3px;
+  top: 11px;
+  background: #cccccc;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.pressed {
+  background: #a2a2a2;
+  border: 1px solid #999999;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.pressed .button-filter-text {
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.pressed .button-filter-line.left {
+  width: 16px;
+  left: -6px;
+  top: 14px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.checked.pressed .button-filter-line.right {
+  width: 25px;
+  left: 3px;
+  top: 11px;
+  background: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Button Filter Unchecked"
+ * ======================================================================== */
+.button-filter.unchecked {
+  display: block;
+  float: left;
+  padding: 12px 19px;
+  border: 1px solid #e9cfd5;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked .button-filter-text {
+  float: left;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #a82743;
+  margin-right: 30px;
+}
+
+.button-filter.unchecked .button-filter-arr {
+  display: block;
+  float: right;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.button-filter.unchecked .button-filter-line.left {
+  display: block;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  background: #a82743;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked .button-filter-line.right {
+  display: block;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  background: #a82743;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked:hover, .button-filter.unchecked.hover {
+  background: #a82743;
+  border: 1px solid #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked:hover .button-filter-text, .button-filter.unchecked.hover .button-filter-text {
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked:hover .button-filter-line.left, .button-filter.unchecked.hover .button-filter-line.left {
+  width: 16px;
+  left: -6px;
+  top: 14px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked:hover .button-filter-line.right, .button-filter.unchecked.hover .button-filter-line.right {
+  width: 25px;
+  left: 3px;
+  top: 11px;
+  background: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.off {
+  cursor: default;
+}
+
+.button-filter.unchecked.off {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.off .button-filter-text {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.off .button-filter-line.left {
+  width: 25px;
+  left: 0;
+  top: 11px;
+  background: #cccccc;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.off .button-filter-line.right {
+  width: 25px;
+  left: 0;
+  top: 11px;
+  background: #cccccc;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.pressed {
+  background: #a82743;
+  border: 1px solid #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.pressed .button-filter-text {
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.pressed .button-filter-line.left {
+  width: 16px;
+  left: -6px;
+  top: 14px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-filter.unchecked.pressed .button-filter-line.right {
+  width: 25px;
+  left: 3px;
+  top: 11px;
+  background: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Button Dropdown"
+ * ======================================================================== */
+.button-dropdown {
+  display: block;
+  height: 70px;
+  float: left;
+  cursor: pointer;
+}
+
+.button-dropdown .button-dropdown-text {
+  display: block;
+  float: left;
+  padding: 14px 18px;
+  border: 1px solid #e9cfd5;
+  border-right: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown .button-dropdown-text .dropdown-text-title {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown .button-dropdown-text .dropdown-text-dates {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown .button-dropdown-arr {
+  display: block;
+  float: left;
+  width: 55px;
+  height: 100%;
+  background: #a82743;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown .button-dropdown-arr i {
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  margin: 0 auto;
+  margin-top: 27px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -121px -80px;
+}
+
+.button-dropdown:hover .button-dropdown-text, .button-dropdown.hover .button-dropdown-text {
+  border: 1px solid #e9cfd5;
+  border-right: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown:hover .dropdown-text-title, .button-dropdown.hover .dropdown-text-title {
+  color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown:hover .dropdown-text-dates, .button-dropdown.hover .dropdown-text-dates {
+  color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown:hover .button-dropdown-arr, .button-dropdown.hover .button-dropdown-arr {
+  background: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.off {
+  cursor: default;
+}
+
+.button-dropdown.off .button-dropdown-text {
+  border: 1px solid #e6e6e6;
+  border-right: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.off .dropdown-text-title, .button-dropdown.off .dropdown-text-dates {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.off .button-dropdown-arr {
+  background: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.pressed .button-dropdown-text {
+  border: 1px solid #d35a33;
+  border-right: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.pressed .dropdown-text-title {
+  color: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.pressed .dropdown-text-dates {
+  color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-dropdown.pressed .button-dropdown-arr {
+  background: #d35a33;
+  border-right: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Dropdown List"
+ * ======================================================================== */
+.dropdown-list {
+  display: block;
+  float: left;
+  border: 7px solid #e2e2e2;
+  cursor: pointer;
+}
+
+.club-table .dropdown-list {
+  width: 220px;
+}
+
+.dropdown-list .button-dropdown-text {
+  padding: 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.dropdown-list .button-dropdown-text:first-child {
+  border-top: none;
+}
+
+.dropdown-list .button-dropdown-text:last-child {
+  border-bottom: none;
+}
+
+.dropdown-list .button-dropdown-text .dropdown-text-title {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropdown-list .button-dropdown-text .dropdown-text-dates {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropdown-list .button-dropdown-text:hover .dropdown-text-title, .dropdown-list .button-dropdown-text.hover .dropdown-text-title {
+  color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropdown-list.off {
+  cursor: default;
+}
+
+.dropdown-list .button-dropdown-text.off .dropdown-text-title, .dropdown-list .button-dropdown-text.off .dropdown-text-dates {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropdown-list .button-dropdown-text.pressed .dropdown-text-title {
+  color: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Tab"
+ * ======================================================================== */
+.tab-custom {
+  display: block;
+  float: left;
+  position: relative;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.tab-custom .dropdown-text-title {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom .dropdown-text-dates {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom .tab-custom-line {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  background: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom:hover .dropdown-text-title, .tab-custom.hover .dropdown-text-title {
+  color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom:hover .dropdown-text-dates, .tab-custom.hover .dropdown-text-dates {
+  color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom:hover .tab-custom-line, .tab-custom.hover .tab-custom-line {
+  opacity: 1;
+  background: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom.off {
+  cursor: default;
+}
+
+.tab-custom.off .dropdown-text-title, .tab-custom.off .dropdown-text-dates {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom.off .tab-custom-line {
+  opacity: 1;
+  background: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom.pressed .dropdown-text-title {
+  color: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-custom.pressed .tab-custom-line {
+  opacity: 1;
+  background: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+table.club-table tr.padding-b-no td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* ========================================================================
+ * Custom buttons "menu"
+ * ======================================================================== */
+ul.mob-menu {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.page-text ul.mob-menu {
+  padding-left: 0;
+}
+
+.mob-menu li a {
+  display: block;
+  min-width: 175px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #e2e2e2;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 16px;
+  color: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mob-menu li:last-child a {
+  border-bottom: none;
+}
+
+ul.mob-menu li a:hover, ul.mob-menu li a.hover {
+  color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+ul.mob-menu.off:hover, ul.mob-menu.off li a:hover {
+  cursor: default;
+}
+
+ul.mob-menu li a.off {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+ul.mob-menu li a.pressed {
+  color: #d35a33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+ * Custom buttons "Radio"
+ * ======================================================================== */
+.radio-b {
+  display: block;
+}
+
+.radio-b label.rb-lb {
+  width: 100%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.rb-lb {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  font-family: "PT Sans reg", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+.radio-b label.rb-lb:last-child {
+  margin-bottom: 0;
+}
+
+label.rb-lb:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  border: 2px solid #a82743;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label.rb-lb:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 5px;
+  top: 8px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label.rb-lb:hover:after, input[type="radio"] + label.rb-lb.hover-lb:hover:after, input[type="radio"]:checked + label.rb-lb.hover-lb:after, input[type="radio"]:checked + label.rb-lb.hover-lb:hover:after {
+  width: 10px;
+  height: 10px;
+  left: 5px;
+  top: 8px;
+  background: #e15e32;
+}
+
+input[type="radio"]:checked + label.rb-lb:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 6px;
+  top: 9px;
+  background: #e15e32;
+  border-radius: 50%;
+}
+
+label.rb-lb.off-lb {
+  cursor: default;
+}
+
+label.rb-lb.off-lb:before {
+  border: 2px solid #cccccc;
+}
+
+input[type="radio"].off-rb:checked + label.rb-lb.off-lb:after, input[type="radio"].off-rb:checked + label.rb-lb.off-lb:hover:after {
+  width: 10px;
+  height: 10px;
+  left: 5px;
+  top: 8px;
+  background: #cccccc;
+}
+
+input[type="radio"].off-rb + label.rb-lb.off-lb:hover:after {
+  background: transparent;
+}
+
+label.rb-lb.off-lb {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"].pressed-rb:checked + label.rb-lb.pressed-lb:after, input[type="radio"] + label.rb-lb.hover-lb:hover:after {
+  width: 8px;
+  height: 8px;
+  left: 6px;
+  top: 9px;
+  background: #e15e32;
+}
+
+input[type="radio"].pressed-rb:checked + label.rb-lb.pressed-lb:hover:after, input[type="radio"] + label.rb-lb.pressed-lb:after {
+  width: 8px;
+  height: 8px;
+  left: 6px;
+  top: 9px;
+}
+
+input[type="radio"]:checked + label.rb-lb.active:after {
+  width: 10px;
+  height: 10px;
+  left: 5px;
+  top: 8px;
+  background: #a82743;
+}
+
+/* ========================================================================
+ * Custom buttons "Checkbox"
+ * ======================================================================== */
+.checkbox-b {
+  display: block;
+}
+
+.checkbox-b label.chb-lb {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label.chb-lb {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+.radio-b label.chb-lb:last-child {
+  margin-bottom: 0;
+}
+
+label.chb-lb:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  border: 2px solid #a82743;
+  background: transparent;
+}
+
+input[type="checkbox"] + label.chb-lb:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  left: 5px;
+  top: 8px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type="checkbox"] + label.chb-lb:hover:after, input[type="checkbox"] + label.chb-lb.hover-lb:hover:after, input[type="checkbox"]:checked + label.chb-lb.hover-lb:after, input[type="checkbox"]:checked + label.chb-lb.hover-lb:hover:after {
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 9px;
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -307px -78px;
+}
+
+input[type="checkbox"]:checked + label.rb-lb:after {
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 9px;
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -307px -107px;
+}
+
+label.chb-lb.off-lb {
+  cursor: default;
+}
+
+label.chb-lb.off-lb:before {
+  border: 2px solid #cccccc;
+}
+
+input[type="checkbox"].off-chb:checked + label.chb-lb.off-lb:after, input[type="checkbox"].off-chb:checked + label.chb-lb.off-lb:hover:after {
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 9px;
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -307px -137px;
+}
+
+input[type="checkbox"].off-chb + label.chb-lb.off-lb:hover:after {
+  background: transparent;
+}
+
+label.chb-lb.off-lb {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"].pressed-chb:checked + label.chb-lb.pressed-lb:after, input[type="checkbox"] + label.chb-lb.hover-lb:hover:after {
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 9px;
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -307px -78px;
+}
+
+input[type="checkbox"].pressed-chb:checked + label.chb-lb.pressed-lb:hover:after, input[type="checkbox"] + label.chb-lb.pressed-lb:after {
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 9px;
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -307px -78px;
+}
+
+input[type="checkbox"]:checked + label.chb-lb.active:after {
+  width: 12px;
+  height: 10px;
+  left: 4px;
+  top: 9px;
+  background-image: url("../images/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -307px -107px;
+}
+
+/* ========================================================================
+ * Custom inputs "Text"
+ * ======================================================================== */
+table.club-table input.text-input {
+  width: 282px;
+}
+
+input.text-input {
+  display: block;
+  float: left;
+  padding: 11px 14px;
+  border: 2px solid #cccccc;
+  background: white;
+  font-family: "PT Sans reg", sans-serif;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input.text-input[placeholder] {
+  font-family: "PT Sans it", sans-serif;
+  color: #999999;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input.text-input.off, input.text-input.off:focus {
+  border: 2px solid #e2e2e2;
+  background: #f9f9f9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input.text-input.off[placeholder] {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input.text-input:focus, input.text-input.pressed {
+  border: 2px solid #a82743;
+  font-family: "PT Sans reg", sans-serif;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+* Custom inputs "Subscribe"
+* ======================================================================== */
+.subscr-input {
+  display: block;
+  height: 45px;
+  padding: 10px 15px;
+  border: 2px solid #cccccc;
+  background: white;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+table.club-table .subscr-input {
+  width: 185px;
+}
+
+.email-lb {
+  display: block;
+  float: left;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 45px;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subscr-input.off, .subscr-input.off:focus {
+  border: 2px solid #e2e2e2;
+  background: #f9f9f9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.email-lb.off {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subscr-input:focus, .subscr-input.pressed {
+  border: 2px solid #a82743;
+  font-family: "PT Sans reg", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+* Custom inputs "Select"
+* ======================================================================== */
+select.select {
+  display: block;
+  float: left;
+  outline: none;
+  border: 2px solid #cccccc;
+  padding: 11px 14px;
+  font-family: "PT Sans it", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #999999;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+table.club-table select.select {
+  width: 282px;
+}
+
+select.select option {
+  font-family: "PT Sans reg", sans-serif;
+  color: black;
+}
+
+select.select.off {
+  border: 2px solid #e2e2e2;
+  background: #f9f9f9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+select.select.pressed {
+  border: 2px solid #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+* Custom inputs "Textarea"
+* ======================================================================== */
+table.club-table .text-area {
+  width: 282px;
+  height: 130px;
+}
+
+.text-area {
+  display: block;
+  float: left;
+  font-family: "PT Sans it", sans-serif;
+  color: #999999;
+  border: 2px solid #cccccc;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+.text-area.off, .text-area.off:focus {
+  border: 2px solid #e2e2e2;
+  color: #cccccc;
+  background: #f9f9f9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.text-area:focus, .text-area.pressed {
+  border: 2px solid #a82743;
+  font-family: "PT Sans reg", sans-serif;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================
+* Custom inputs "Text error"
+* ======================================================================== */
+input.required {
+  font-family: "PT Sans reg", sans-serif;
+  color: black !important;
+  font-size: 18px !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input.error {
+  border: 2px solid #e15e32 !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+table.club-table input.required {
+  width: 626px;
+}
+
+input.submit {
+  display: block;
+  float: left;
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 16px;
+  background: #a82743;
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+input.submit:hover {
+  background: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 html, body {
   height: 100%;
   font-family: "PT Sans reg", sans-serif;
@@ -5711,6 +7165,10 @@ input:focus {
 
 .share {
   font-weight: bold;
+}
+
+:focus {
+  outline: none;
 }
 
 .slider, .container-fluidss {
@@ -5864,6 +7322,79 @@ input:focus {
   margin: auto;
 }
 
+.tooltip {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tooltip-inner {
+  max-width: 340px;
+  background-color: #e15e32;
+  padding: 20px;
+  text-align: left;
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: -60px;
+  border-top-color: #e15e32;
+  border-width: 40px 40px 40px 0;
+}
+
+.tooltip.in.top {
+  opacity: 1;
+}
+
+.club-table {
+  margin-bottom: 35px;
+}
+
+table.club-table.container, .table {
+  width: none;
+  max-width: none;
+}
+
+table.club-table tr, th {
+  text-align: left;
+}
+
+table.club-table > tbody > tr > td, table.club-table > tbody > tr > th, table.club-table > tfoot > tr > td, table.club-table > tfoot > tr > th, table.club-table > thead > tr > td, table.club-table > thead > tr > th {
+  border-top: 0 none;
+  border-bottom: 0 none;
+  padding: 15px 0;
+}
+
+table.club-table thead tr th:first-child, table.club-table tbody tr td:first-child {
+  padding-left: 20px;
+}
+
+table.club-table thead tr th:last-child, table.club-table tbody tr td:last-child {
+  padding-right: 20px;
+}
+
+table.club-table thead tr th {
+  text-transform: uppercase;
+  font-family: "PT Sans bold", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+table.club-table tr.white {
+  background: white;
+}
+
+table.club-table tr.grey {
+  background: #efefef;
+}
+
+table.club-table tbody tr td {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 14px;
+}
+
+.club-table > tbody > tr > td, .club-table > tbody > tr > th, .club-table > tfoot > tr > td, .club-table > tfoot > tr > th, .club-table > thead > tr > td, .club-table > thead > tr > th {
+  vertical-align: middle;
+}
+
 h2 {
   color: #010101;
 }
@@ -5888,7 +7419,7 @@ blockquote p {
   font-family: "PT Sans reg", sans-serif;
   color: #5c323e;
   padding: 0 0 10px 0 !important;
-  line-height: 18px !important;
+  line-height: 18px;
 }
 
 blockquote a {
@@ -8104,23 +9635,6 @@ h1.slider-heading.video-heading {
   margin: 0 0 25px 0;
 }
 
-.read-more {
-  display: block;
-  padding: 10px 17px;
-  font-size: 12px;
-  background: #a82743;
-  float: left;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-}
-
-.read-more:hover {
-  background: #e15e32;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .blog-item .top-event-title {
   font-size: 24px;
 }
@@ -8768,20 +10282,30 @@ h3.content-h3 {
   color: #333333;
 }
 
+h4.content-h4 {
+  font-family: "PT Sans bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
 .page-text ul {
   margin-left: 0;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 ul.square, ol.numbered {
   margin-bottom: 20px;
+  color: #333333;
 }
 
 ul.square li {
   font-family: "PT Sans reg", sans-serif;
   list-style: none;
   position: relative;
-  padding-left: 15px;
+  padding-left: 25px;
+  color: #333333;
 }
 
 ul.square li:before {
@@ -8795,18 +10319,20 @@ ul.square li:before {
 }
 
 ol.numbered {
-  padding-left: 18px;
+  padding-left: 25px;
   list-style: none;
 }
 
 ol.numbered li {
   font-family: "PT Sans reg", sans-serif;
   counter-increment: myIndex;
+  color: #333333;
 }
 
 ol.numbered li:before {
   content: counter(myIndex) " ";
   color: #a82743;
+  padding-right: 10px;
 }
 
 .page-text li {
@@ -8907,10 +10433,6 @@ ol.numbered li:before {
 .date-no-border .ttl {
   text-transform: uppercase;
   font-size: 36px;
-}
-
-.some-events article.top-event {
-  margin-top: 30px;
 }
 
 .absi {
@@ -9826,6 +11348,120 @@ ol.numbered li:before {
 
 .paging.single-paging .event-dates, .paging .event-dates {
   cursor: pointer;
+}
+
+.content-header {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.content-header .img-responsive {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 6;
+}
+
+.content-header .pattern {
+  background: url("../images/pattern.png") repeat scroll left top rgba(0, 0, 0, 0.2);
+}
+
+.content-header.white-img .content-h1, .content-header.white-img .top-event-place.blog-view-descr {
+  color: white;
+}
+
+.content-h1 {
+  font-size: 48px;
+  font-family: "PT Sans bold", sans-serif;
+  color: black;
+  line-height: 48px;
+  text-transform: none;
+}
+
+.top-event-place.blog-view-descr {
+  font-family: "PT Sans reg", sans-serif;
+  font-size: 13px;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.absi aside.items-aside {
+  padding-top: 0;
+}
+
+aside.items-aside .event-dates {
+  margin-top: 50px;
+}
+
+aside.items-aside .date-no-border .ttl {
+  line-height: 36px;
+}
+
+aside.items-aside .blog-item-def .item-title {
+  height: auto;
+}
+
+.content-page {
+  padding-top: 50px;
+}
+
+.page-text .content-intro {
+  font-family: "PT Sans it", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.video-content {
+  margin-bottom: 50px;
+}
+
+.content-figure .content-video {
+  display: block;
+  width: 750px;
+  height: 422px;
+}
+
+.content-figure figcaption {
+  font-family: "PT Sans it", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.img-side-right {
+  display: block;
+  max-width: 280px;
+  margin: 20px 0 20px 30px;
+  float: right;
+}
+
+.img-side-right img {
+  max-width: 100%;
+}
+
+.img-full-width {
+  display: block;
+  width: 100%;
+  margin: 45px 0;
+  overflow: hidden;
+}
+
+.img-full-width img {
+  max-width: 100%;
+}
+
+.text-contain hr {
+  color: #cccccc;
+}
+
+.footnote-main {
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) and (max-height: 767px) {
@@ -13869,6 +15505,16 @@ ol.numbered li:before {
 
   .paging.single-paging .arr-left, .paging.single-paging .arr-right {
     margin-top: 10px;
+  }
+
+  .content-h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .top-event-place.blog-view-descr {
+    font-size: 13px;
+    line-height: 30px;
   }
 }
 .ps-container .ps-scrollbar-x-rail {

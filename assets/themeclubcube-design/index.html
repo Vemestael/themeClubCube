@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/jquery/jquery-1.11.0.min.js"></script>
     <script src="js/otherlibs/bootstrap.js"></script>
@@ -1204,7 +1204,8 @@
     <script src="js/jquery/plugins/topEventsAnimate.js"></script>
     <script>
         $(document).ready(function(){
-            var events = new EventAnimate($('.top-evt-slide'));
+            var events = new EventAnimate($('.top-event'));
+            var blogs = new EventAnimate($('.blog-item'));
         });
     </script>
 </body>

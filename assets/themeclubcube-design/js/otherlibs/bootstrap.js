@@ -1332,7 +1332,9 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     if (isNaN(marginTop))  marginTop  = 0
     if (isNaN(marginLeft)) marginLeft = 0
 
-    offset.top  = offset.top  + marginTop
+//Club repair   offset.top  = offset.top  + marginTop
+
+    offset.top  = offset.top  + marginTop - 20
     offset.left = offset.left + marginLeft
 
     // $.fn.offset doesn't round pixel values

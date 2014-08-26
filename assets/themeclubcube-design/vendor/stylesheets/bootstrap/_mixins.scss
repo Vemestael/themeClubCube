@@ -953,3 +953,8 @@
   -webkit-transition: all $trans-time ease;
   transition: all $trans-time ease;
 }
+
+@mixin transitionsNone(){
+  -webkit-transition: none;
+  transition: none;
+}
