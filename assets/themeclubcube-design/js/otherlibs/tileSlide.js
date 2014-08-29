@@ -21,13 +21,17 @@
 
 	//Add naviation dots
 	TileSlide.prototype.addDots = function() {
-		this.dots = '<ul class="slick-dots"></ul>';
+		this.dots = '<ul class="tileslide-dots"></ul>';
 		$(this.node).append(this.dots);
-		var $sliderUl = $('.slick-dots');
+		this.dots = $(this.node).find('.tileslide-dots');
+		var $sliderUl = $('.tileslide-dots');
 		var self = this;
 		for (var i = 0; i < this.slides.length; i++) {
-			$sliderUl.append('<li><button></button></li>');
+			$sliderUl.append('<li><button class="button-slider"></button></li>');
 		};
+		var firstDot = $sliderUl.find('.button-slider')[0];
+		$(firstDot).addClass('pressed');
+
 		function dotClick(node) {
 			for (var i = 0; i < self.slides.length; i++) {
 				if (node === $dots[i]) {
@@ -35,7 +39,7 @@
 				}
 			};
 		};
-		var $dots = $('.slick-dots li button');
+		var $dots = $('.tileslide-dots li button');
 		$dots.on('click', function() {
 			dotClick(this);
 		});
@@ -102,6 +106,7 @@
 		self.isAnimating = true;
 		var currentPanel;
 		var nextPanel;
+		var $dots = this.dots;
 		if (direction === 'prev') {
 			currentPanel = this.slides[this.current - 1];
 			this.current = this.current === 1 ? this.panelsCount : this.current - 1;
@@ -119,6 +124,20 @@
 
 		//Current slide change
 		self.applyTransforms(currentPanel);
+
+		//Dots animation
+		if (self.options.dots === true) {
+			var currentDot = $dots.find('button')[this.current - 1];
+			var $dotButtons = $dots.find('button');
+			for (var j = 0; j < $dotButtons.length; j++) {
+				if (j === (this.current - 1)) {
+					$($dotButtons[j]).addClass('pressed');
+				} else {
+					$($dotButtons[j]).removeClass('pressed');
+				};
+			};
+		};
+
 		currentPanel.querySelector('.rowss').style.visibility = 'hidden';
 		if (currentPanel.querySelector('iframe')) {
 			currentPanel.querySelector('iframe').style.visibility = 'hidden';
@@ -143,6 +162,7 @@
 
 				//Reset transforms for curent slide
 				self.resetTransforms(currentPanel);
+
 				self.isAnimating = false;
 			};
 		if (true) {

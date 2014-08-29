@@ -27,7 +27,15 @@
 </head>
 
 <body>
-
+<div class="loader-container">
+                <div class="backstage"></div>
+                <div class="loader">
+                    <div class="fr-bl"></div>
+                    <div class="sc-bl"></div>
+                    <div class="thr-bl"></div>
+                    <div class="fth-bl"></div>
+                </div>
+            </div>
         <header class="header-top">
         <div class="container-fluid">
             <div class="row">
@@ -123,7 +131,7 @@
             </div>
         </div>
     </header>
-   <section class="fullwidth-bg event-view">
+   <section class="fullwidth-bg event-view ">
     <img src="../uploads/event-view/event-veiw.jpg" alt="" class="img-responsive">
     <div class="pattern"></div>
        <div class="container z-top">
@@ -254,7 +262,7 @@
    </main>
    </div>
     </div>
-    <div class="container absi">
+    <div class="container absi ">
     <div class="row absi-inner">
    <aside class="col-lg-12 col-md-12 col-sm-12 items-aside">
                 <!-- <div class="calendar-white"></div> -->
@@ -497,7 +505,9 @@
         // });
         // $('.calendar-white').append($('.datepicker.dropdown-menu'));
     </script>
+    <script src="js/loader.js"></script>
     <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="js/jquery/plugins/tinyAnimations.js"></script>
     <script>
         $(document).ready(function(){
             var  events = new EventAnimate($('.top-event'));
