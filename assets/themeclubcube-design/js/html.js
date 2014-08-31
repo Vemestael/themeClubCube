@@ -2,7 +2,6 @@ $(function() {
     'use strict';
     var cubeObj = {};
 
-    //
     cubeObj.fullHeightSlides = function() {
         function fullHeightSlides() {
             var $imgSlider = $('.slider .container-fluidss img.img-responsive');
@@ -69,7 +68,7 @@ $(function() {
             speed: 900,
             swipe: false
         });
-        // $('.top-events-sliders').bxSlider({mode: 'fade', controls:false, preloadImages:'all'});
+
 
         // Full height sluder images
         // function fullHeightSlides() {
@@ -113,6 +112,35 @@ $(function() {
             dots: true
         });
         this.fullHeightSlides();
+    };
+
+    cubeObj.partnersSlider = function() {
+        //Slider for partners
+        function partnerSlider() {
+            if (window.innerWidth < 768) {
+                $('.partners-slider').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 400,
+                    slidesToShow: 1,
+                    touchMove: false,
+                    slidesToScroll: 1
+                });
+            } else {
+                $('.partners-slider').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 5,
+                    touchMove: false,
+                    slidesToScroll: 1
+                });
+            };
+        };
+        $(window).resize(function() {
+            partnerSlider();
+        });
+        partnerSlider();
     };
 
     //
@@ -162,6 +190,7 @@ $(function() {
         var $topEvents = $('.top-events');
         var $gallery = $('.gallery.sect');
         var $sect = $('.blog.sect');
+        var $scrollDownButt = $('.scroll-down');
         var $windowHeight = $(window).height();
         var self = this;
         var scrollTopValue = 0;
@@ -208,6 +237,22 @@ $(function() {
         if ($(document).scrollTop() === 0) {
             setDefaultPositions();
         };
+
+        //Scroll down button event
+        $scrollDownButt.on('click', function() {
+            scrollToogle = true;
+
+            $('html,body').stop().animate({
+                scrollTop: $(window).height()
+            }, 600);
+
+            tileSlide.stopSlide();
+            setTimeout(function() {
+                setCustomPositions();
+                $('header').addClass('header-top active');
+                $(window).unbind('DOMMouseScroll mousewheel');
+            }, 600);
+        });
 
         // Append to scrollbar dragg
         $(window).scroll(function() {
@@ -290,8 +335,8 @@ $(function() {
         var currDate = new Date();
         var setDate = (currDate.getMonth() + 1) + '-' + currDate.getDate() + '-' + currDate.getFullYear();
         $('.input-datepicker').attr('value', setDate);
-        $('#dp').attr('data-date', setDate);
-        $('#dp').datepicker({
+        $('.dp').attr('data-date', setDate);
+        $('.dp').datepicker({
             format: 'mm-dd-yyyy',
             startDate: '-15d',
             autoclose: true,
@@ -306,19 +351,27 @@ $(function() {
         function headToTop() {
             var $header = $('header');
             var $headerParent = $('header').parent();
+            var $sliderDefault = $('.slider-default');
             var headerParentHeight = $headerParent.height();
 
-            if ($(window).scrollTop() >= headerParentHeight) {
+            if ($sliderDefault.length) {
+                if ($(window).scrollTop() >= $sliderDefault.height()) {
+                    $header.addClass('header-top');
+                };
+            } else if ($(window).scrollTop() >= headerParentHeight) {
                 $header.addClass('header-top');
             };
-            // $(document).scroll(function() {
-            //     if ($(window).scrollTop() >= headerParentHeight) {
-            //         $header.addClass('header-top active');
-            //     } else {
-            //         $header.removeClass('header-top active');
-            //     };
-            // });
+            $(document).scroll(function() {
+                if ($sliderDefault.length) {
+                    if ($(window).scrollTop() >= $sliderDefault.height()) {
+                        $header.addClass('header-top active');
+                    } else {
+                        $header.removeClass('header-top active');
+                    }
+                };
+            });
         };
+
         headToTop();
         $(window).resize(function() {
             headToTop();
@@ -460,10 +513,11 @@ $(function() {
 
     //Button hider
     cubeObj.btnToogle = function() {
-        var $btnHider = $('.btn-dropdown').find('.col-right-btn');
+        var $btnHider = $('.button-dropdown');
         $btnHider.on('touchstart touchend click', function(event) {
             event.preventDefault();
-            var $hidedDive = $(event.target).closest('.btn-dropdown').find('.hidden-dv');
+            console.log('clicked');
+            var $hidedDive = $(event.target).find('.hidden-dv');
             if ($hidedDive.hasClass('hide')) {
                 // $hidedDive.show();
                 $hidedDive.removeClass('hide');
@@ -493,17 +547,14 @@ $(function() {
                     $imgInner.removeClass('height-to-window').addClass('img-responsive');
                 }
             });
-            //Responsive iframe for default video
-            // if ($('.video-bg.default').length) {
-            //     $('.video-bg.default').height(600);
-            //     $('.video-bg.default').width(1066);
-            // };
         };
         resizeResponsiveImg();
         $(window).resize(function() {
             resizeResponsiveImg();
         });
-    },
+    };
+
+
     cubeObj.ticketEventAnimate = function() {
         var $tickets = $('.ticket-event');
         if ($tickets.length > 0) {
@@ -558,7 +609,7 @@ $(function() {
         // if (document.querySelector('.slider-default')) {
         //     window.defaultTileSlide = new TileSlide(document.querySelector('.slider-default'));
         // };
-        $('.datepicker.dropdown-menu').addClass('whity');
+        // $('.datepicker.dropdown-menu').addClass('whity');
         $('.default-slider-tickets').slick({
             slidesToShow: 1,
             dots: true,
@@ -566,7 +617,7 @@ $(function() {
             autoplay: false,
             autoplaySpeed: 4200,
             draggable: false,
-            speed: 800,
+            speed: 300,
             vertical: true
         });
         $('.default-gallery-slider').slick({
@@ -577,13 +628,7 @@ $(function() {
             infinite: false,
             autoplay: false,
             draggable: false,
-            speed: 800
-        });
-        $('.gall-slide-right').click(function() {
-            $('.default-gallery-slider').slickNext();
-        });
-        $('.gall-slide-prev').click(function() {
-            $('.default-gallery-slider').slickPrev();
+            speed: 300
         });
     };
 
@@ -592,14 +637,13 @@ $(function() {
     cubeObj.eventView = function() {
         function leftAsider() {
             var $mainContent = $('.text-contain');
+            var leftMargin = ((window.innerWidth - 1170) / 2) + 781;
             var $aside = $('.absi');
-            $aside.css('left', ($mainContent.offset().left + 781));
+            $aside.css('left', leftMargin);
         };
-
         $(window).resize(function() {
             leftAsider();
         });
-
         leftAsider();
     };
 
@@ -779,7 +823,7 @@ $(function() {
         $rightPaging.on('click touchstart', function() {
             sideClick('right', this);
         });
-        $(window).resize(function(){
+        $(window).resize(function() {
             var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
         });
     };
@@ -795,14 +839,17 @@ $(function() {
             this.headerToTop();
             this.fullHeightSLider();
             this.addVideos();
+            this.partnersSlider();
         };
 
         //If it's default slider
         if ($('.slider-default').length) {
             this.defaultSlider();
             this.fullHeightSLider();
+            this.headerToTop();
             this.addVideosDefault();
-            // this.headerToTop();
+            this.partnersSlider();
+            var defaultBlogs = new EventAnimate($('.blog-item-def'));
         };
         this.calendar();
         this.validateEmail();
@@ -817,7 +864,7 @@ $(function() {
         if ($('section.events-list').length) {
             cubeObj.eventsTile();
         };
-        if ($('.event-view').length) {
+        if ($('.absi').length) {
             cubeObj.eventView();
         };
     };
