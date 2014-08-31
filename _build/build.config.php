@@ -61,13 +61,16 @@ $BUILD_RESOLVERS = array(
     'setup',
 
     'contenttype',
-	'propertysets',
     'settings',
     'sources',
 
+    'tv.create',
     'tv.template',
     'resources',
     'contextsettings',
+    'settingsresourcedependence',
+    'propertysets',
+    'plugins',
 
     'usergroups',
     'users',

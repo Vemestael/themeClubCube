@@ -7,6 +7,10 @@ $tmp = array(
 		'file' => 'formContacts',
 		'description' => '',
 	),
+    'time' => array(
+        'file' => 'time',
+        'description' => '',
+    ),
 );
 
 foreach ($tmp as $k => $v) {

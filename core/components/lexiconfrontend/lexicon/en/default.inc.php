@@ -1,6 +1,8 @@
 <?php
 
-$_lang['lf_brand_name'] = 'Base Theme';
+$_lang['lf_brand_name'] = 'Club Cube';
+
+$_lang['lf_our_partners'] = 'OUR Partners';
 
 $_lang['lf_contact_head'] = 'Напишите нам';
 $_lang['lf_contact_name'] = 'Имя:';

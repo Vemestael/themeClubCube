@@ -1,0 +1,4 @@
+[[$metaBase]]
+[[$headerBase]]
+[[$eventsItemContent]]
+[[$footerBase]]

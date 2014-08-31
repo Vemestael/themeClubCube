@@ -1,0 +1,4 @@
+[[$metaBase]]
+[[$headerBase]]
+[[$galleryListContent]]
+[[$footerBase]]

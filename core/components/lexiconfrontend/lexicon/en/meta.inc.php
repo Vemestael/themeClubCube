@@ -1,6 +1,6 @@
 <?php
 
-$_lang['lf_site_name'] = ' / Base Theme';
+$_lang['lf_site_name'] = ' / Club Cube';
 
 $_lang['lf_description'] = '';
 $_lang['lf_description_content'] = '';

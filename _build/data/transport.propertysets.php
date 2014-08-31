@@ -3,28 +3,30 @@
 $propertysets = array();
 
 $tmp = array(
-    'indexResources' => array(
+    'indexGallery' => array(
         array(
-            'name' => 'includeTVs',
-            'type' => 'textfield',
-            'value' => 'img',
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '12',
         )
-        ,array(
-            'name' => 'processTVs',
-            'type' => 'textfield',
-            'value' => 'img',
+    ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
         )
-        ,array(
-            'name' => 'tvPrefix',
+    ,array(
+            'name' => 'sotrby',
             'type' => 'textfield',
-            'value' => '',
+            'value' => 'publeshedon',
         )
-        ,array(
-            'name' => 'parents',
+    ,array(
+            'name' => 'sortdir',
             'type' => 'textfield',
-            'value' => '',
+            'value' => 'DESC',
         )
-        ,array(
+    ),
+    'indexBlog' => array(
+        array(
             'name' => 'limit',
             'type' => 'numberfield',
             'value' => '3',
@@ -33,6 +35,33 @@ $tmp = array(
             'name' => 'depth',
             'type' => 'numberfield',
             'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'publeshedon',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'DESC',
+        )
+    ),
+    'indexPartners' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '0',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'menuindex',
         )
     )
     ,'listResources' => array(

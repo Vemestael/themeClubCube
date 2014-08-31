@@ -16,8 +16,11 @@ if ($object->xpdo) {
 		case xPDOTransport::ACTION_UPGRADE:
 			/* Checking and installing required packages */
 			$packages = array(
+                /*
+                 * TODO перенести в базовый шаблон новую версию компонента
+                 */
 				'pdoTools' => array(
-                    'signature' => 'pdotools-1.9.2-pl2',
+                    'signature' => 'pdotools-1.9.3-pl1',
                     'options' => array(
                         'version_major' => 1,
                         'version_minor:>=' =>  9,
@@ -58,6 +61,13 @@ if ($object->xpdo) {
                         'version_minor:>=' =>  0,
                     )
                 ),
+                'migx' => array(
+                    'signature' => 'migx-2.8.1-pl',
+                    'options' => array(
+                        'version_major' => 2,
+                        'version_minor:>=' =>  8,
+                    )
+                ),
                 'pthumb' => array(
                     'signature' => 'pthumb-2.3.1-pl',
                     'options' => array(
@@ -66,7 +76,7 @@ if ($object->xpdo) {
                     )
                 ),
                 'tickets' => array(
-                    'signature' => 'tickets-1.4.0-pl',
+                    'signature' => 'tickets-1.4.2-rc2',
                     'options' => array(
                         'version_major' => 1,
                         'version_minor:>=' =>  4,

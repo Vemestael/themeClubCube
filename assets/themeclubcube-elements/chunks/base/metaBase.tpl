@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
+		<meta name="cmsmagazine" content="a39ef97fd1d4cf6d3e103f0ff48ea4f6" />
+
         <meta property="og:title" content="[[*longtitle:notempty=`[[*longtitle]]`:default=`[[*pagetitle]] / [[++site_name]]`]]" />
         <meta property="og:description" content="[[*description:notempty=`[[*description:htmlent]]`:default=`[[%lf_description:htmlent]]`]]" />
         <meta property="og:type" content="website" />
@@ -26,23 +28,26 @@
         [[Molt?
             &minifyCss=`1`
             &minifyJs=`1`
-            &cacheFolder=`[[++themeclubcube_design_url]]min/`
+            &cacheFolder=`[[++themeclubcube.design_url]]min/`
             &jsSources=`
-                [[++themeclubcube_design_url]]js/jquery/plugins/jquery.imgpreload.js
-                ,[[++themeclubcube_design_url]]js/jquery/plugins/form/jquery.form.js
-                ,[[++themeclubcube_design_url]]js/jquery/plugins/validation/jquery.validate.js
-				[[++cultureKey:notis=`en`:then=`,[[++themeclubcube_design_url]]js/jquery/plugins/validation/localization/messages_[[++cultureKey]].js`:else=``]]
-                ,[[++themeclubcube_design_url]]js/jquery/plugins/xhrPool.js
-				,[[++themeclubcube_design_url]]js/mbc/site.js
-				,[[++themeclubcube_design_url]]js/mbc/siteSub.js
-				,[[++themeclubcube_design_url]]js/mbc/data.js
-				,[[++themeclubcube_design_url]]js/mbc/mode/normalMode.js
-				,[[++themeclubcube_design_url]]js/mbc/mode/pageContacts.js
-                ,[[++themeclubcube_design_url]]js/init.js
+				[[++themeclubcube.design_url]]js/otherlibs/bootstrap.min.js
+                ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.imgpreload.js
+                ,[[++themeclubcube.design_url]]js/jquery/plugins/form/jquery.form.js
+                ,[[++themeclubcube.design_url]]js/jquery/plugins/validation/jquery.validate.js
+				[[++cultureKey:notis=`en`:then=`,[[++themeclubcube.design_url]]js/jquery/plugins/validation/localization/messages_[[++cultureKey]].js`:else=``]]
+                ,[[++themeclubcube.design_url]]js/jquery/plugins/xhrPool.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.min.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js
+				,[[++themeclubcube.design_url]]js/mbc/site.js
+				,[[++themeclubcube.design_url]]js/mbc/siteSub.js
+				,[[++themeclubcube.design_url]]js/mbc/data.js
+				,[[++themeclubcube.design_url]]js/mbc/mode/normalMode.js
+				,[[++themeclubcube.design_url]]js/mbc/mode/pageContacts.js
+                ,[[++themeclubcube.design_url]]js/init.js
             `
             &cssSources=`
-				[[++themeclubcube_design_url]]css/bootstrap.min.css
-				,[[++themeclubcube_design_url]]css/bootstrap-theme.min.css
+				[[++themeclubcube.design_url]]css/style.min.css
+				,[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.css
             `
         ]]
         
@@ -53,13 +58,13 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-		[[++themeclubcube_ga_tracking_id:notempty=`
+		[[++themeclubcube.ga_tracking_id:notempty=`
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', '[[++themeclubcube_ga_tracking_id]]', '[[++themeclubcube_ga_tracking_name]]');
+			ga('create', '[[++themeclubcube.ga_tracking_id]]', 'auto');
 			ga('send', 'pageview');
 		</script>
 		`]]

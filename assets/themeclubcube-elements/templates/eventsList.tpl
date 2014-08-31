@@ -1,4 +1,4 @@
 [[$metaBase]]
 [[$headerBase]]
-[[$listItemContent]]
+[[$eventsListContent]]
 [[$footerBase]]
