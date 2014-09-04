@@ -9,30 +9,32 @@
 	var miliseconds = 0;
 	var oldMiliseconds = 0;
 
-	console.log('Start');
+	// console.log('Start');
 
 	$body.addClass('ov-hidd');
+	$loaderWrap.addClass('active');
 
 	
-	window.loaderInterval = setInterval(function() {
-		// console.timeEnd('one');
-		oldMiliseconds = miliseconds - oldMiliseconds;
-		$tiles.removeClass('active');
-		$($tiles[current]).addClass('active');
-		current++;
-		if (current > 3) {
-			current = 0;
-		};
-		// console.time('one');
-		currentTime = new Date();
-		miliseconds = currentTime.getMilliseconds();
-		console.log(oldMiliseconds);
-	}, 300);
+	// window.loaderInterval = setInterval(function() {
+	// 	// console.timeEnd('one');
+	// 	oldMiliseconds = miliseconds - oldMiliseconds;
+	// 	// $tiles.removeClass('active');
+	// 	// $($tiles[current]).addClass('active');
+	// 	current++;
+	// 	if (current > 3) {
+	// 		current = 0;
+	// 	};
+	// 	// console.time('one');
+	// 	currentTime = new Date();
+	// 	miliseconds = currentTime.getMilliseconds();
+	// 	console.log(oldMiliseconds);
+	// }, 300);
 
 	$(window).load(function() {
-		clearInterval(window.loaderInterval);
-		console.log('Loaded');
+		// clearInterval(window.loaderInterval);
+		// console.log('Loaded');
 		$body.removeClass('ov-hidd');
+		$loaderWrap.removeClass('active');
 		$loaderWrap.fadeOut(1000);
 	});
 })(jQuery);

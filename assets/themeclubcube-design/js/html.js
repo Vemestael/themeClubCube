@@ -833,15 +833,110 @@ $(function() {
         var $galleryText = $('.gall-close');
         var $scrollButton = $('.scroll-down');
         var $borderGallery = $('.border-gall');
+        var $galleryCount = $('.gall-count');
+        var $imagesCounter = $('.img-counter');
+        var $allImagesBlock = $('.all-btn');
+        var $galleryHeader = $('.gallery-tiles h1');
+        var $curentImageContainer = '';
+        var $allImgContainers = $('.gallery-tile');
+
+
+        var events = new EventAnimate($('.top-event'));
+        var blogs = new EventAnimate($('.blog-item-def'));
+
+        $('.tooltips-show').tooltip();
+        tinyAnimations.buttonSlider($('.button-slider'));
+        tinyAnimations.buttonArrow($('.button-arrow-left'));
+        tinyAnimations.radioButton($('.rb-lb'));
+        tinyAnimations.checkboxButton($('.chb-lb'));
+
+        //Counts all images 
+        function countImages() {
+            var $allImgContainers = $('.gallery-tile');
+            var imagesLength = $allImgContainers.length;
+            var $currentImg = $('#imagelightbox');
+            var currentImageNumber = 1;
+
+            for (var i = 0; i < imagesLength; i++) {
+                if ($allImgContainers[i].href === $curentImageContainer[0].href) {
+                    currentImageNumber = i + 1;
+                };
+            };
+            $imagesCounter.text(currentImageNumber + '/' + imagesLength);
+        };
+
+        function showGalleryPicture() {
+            var $images = $('.gallery-tile');
+            $allImgContainers = $('.gallery-tile');
+            if (!$('.imageLightboxWrap').length) {
+                var wrapper = '<div class="imageLightboxWrap"></div>';
+                var prevNavigation = '<div class="lightbox-prev"></div>';
+                var nextNavigation = '<div class="lightbox-next"></div>';
+                $(wrapper).appendTo('body');
+                $(prevNavigation).appendTo('body');
+                $(nextNavigation).appendTo('body');
+            } else {
+                $('.imageLightboxWrap').fadeIn();
+                $('.lightbox-prev').show();
+                $('.lightbox-next').show();
+            };
+            // $images.css('visibility', 'hidden');
+
+            $scrollButton.hide();
+            $galleryCount.hide();
+            $allImagesBlock.show();
+            // $galleryHeader.hide();
+
+            countImages();
+        };
+
+        function exitGalleryPicture() {
+            var $images = $('.gallery-tile');
+            var $wrapper = $('.imageLightboxWrap');
+            var $prevNavigation = $('.lightbox-prev');
+            var $nextNavigation = $('.lightbox-next');
+            $wrapper.fadeOut();
+            $prevNavigation.hide();
+            $nextNavigation.hide();
+            // $images.css('visibility', 'visible');
+            $allImagesBlock.hide();
+            // $galleryHeader.show();
+            $scrollButton.show();
+            $galleryCount.show();
+        };
+
+        var $galleryLightBox = $('.gallery-tile').imageLightbox({
+            selector: 'id="imagelightbox"', // string;
+            allowedTypes: 'png|jpg|jpeg|gif', // string;
+            animationSpeed: 250, // integer;
+            preloadNext: true, // bool;            silently preload the next image
+            enableKeyboard: true, // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
+            quitOnEnd: false, // bool;            quit after viewing the last image
+            quitOnImgClick: false, // bool;            quit when the viewed image is clicked
+            quitOnDocClick: true, // bool;            quit when anything but the viewed image is clicked
+            onStart: function() {
+                showGalleryPicture();
+            }, // function/bool;   calls function when the lightbox starts
+            onEnd: function() {
+                exitGalleryPicture();
+            }, // function/bool;   calls function when the lightbox quits
+            onLoadStart: false, // function/bool;   calls function when the image load begins
+            onLoadEnd: false // function/bool;   calls function when the image finishes loading
+        });
 
         $scrollButton.on('click', function() {
             if ($galleryText.hasClass('active')) {
+
                 $scrollButton.find('.scroll-down-inner').text('about this event');
-                $galleryContainer.slideDown(700);
+                // $galleryContainer.slideDown(700);
+                $galleryContainer.animate({
+                    top: 0
+                }, 700);
                 setTimeout(function() {
-                    $galleryText.removeClass('active');
+                    $galleryContainer.removeClass('top');
                     // $scrollButton.removeClass('active');
                     // $borderGallery.removeClass('active');
+                    $galleryText.removeClass('active');
                     $('html,body').scrollTop(0);
                 }, 700);
                 $scrollButton.removeClass('active top');
@@ -850,14 +945,30 @@ $(function() {
                 $borderGallery.addClass('active');
                 $scrollButton.addClass('active top');
                 $scrollButton.find('.scroll-down-inner').text('to gallery');
+
+                $galleryContainer.addClass('top');
+                $galleryContainer.animate({
+                    top: -($galleryContainer.outerHeight())
+                }, 700);
                 $galleryText.addClass('active');
-                $galleryContainer.slideUp(700);
+                //  $galleryText.addClass('active');
+                // $galleryText.addClass('active');
+                // $galleryContainer.slideUp(700);
                 $('html, body').animate({
                     scrollTop: 0
                 }, 700);
             };
         });
+
+        $allImagesBlock.on('click', function() {
+            $galleryLightBox.quitImageLightbox();
+        });
+
+        $allImgContainers.on('click', function() {
+            $curentImageContainer = $(this);
+        });
     };
+
 
     // Init
     cubeObj.init = function() {
