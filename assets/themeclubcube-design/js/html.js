@@ -637,7 +637,7 @@ $(function() {
     cubeObj.eventView = function() {
         function leftAsider() {
             var $mainContent = $('.text-contain');
-            var leftMargin = ((window.innerWidth - 1170) / 2) + 781;
+            var leftMargin = ((window.innerWidth - 1170) / 2) + 772;
             var $aside = $('.absi');
             $aside.css('left', leftMargin);
         };
@@ -828,6 +828,36 @@ $(function() {
         });
     };
 
+    cubeObj.galleryPage = function() {
+        var $galleryContainer = $('.gallery-tiles');
+        var $galleryText = $('.gall-close');
+        var $scrollButton = $('.scroll-down');
+        var $borderGallery = $('.border-gall');
+
+        $scrollButton.on('click', function() {
+            if ($galleryText.hasClass('active')) {
+                $scrollButton.find('.scroll-down-inner').text('about this event');
+                $galleryContainer.slideDown(700);
+                setTimeout(function() {
+                    $galleryText.removeClass('active');
+                    // $scrollButton.removeClass('active');
+                    // $borderGallery.removeClass('active');
+                    $('html,body').scrollTop(0);
+                }, 700);
+                $scrollButton.removeClass('active top');
+                $borderGallery.removeClass('active');
+            } else {
+                $borderGallery.addClass('active');
+                $scrollButton.addClass('active top');
+                $scrollButton.find('.scroll-down-inner').text('to gallery');
+                $galleryText.addClass('active');
+                $galleryContainer.slideUp(700);
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 700);
+            };
+        });
+    };
 
     // Init
     cubeObj.init = function() {
@@ -859,13 +889,16 @@ $(function() {
         this.videoImgResponsive();
         this.defaults();
         if ($('section.all-events.events-tiles').length) {
-            cubeObj.eventsTile();
+            this.eventsTile();
         };
         if ($('section.events-list').length) {
-            cubeObj.eventsTile();
+            this.eventsTile();
         };
         if ($('.absi').length) {
-            cubeObj.eventView();
+            this.eventView();
+        };
+        if ($('.gallery-tiles').length) {
+            this.galleryPage();
         };
     };
 
