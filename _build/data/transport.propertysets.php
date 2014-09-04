@@ -3,6 +3,28 @@
 $propertysets = array();
 
 $tmp = array(
+    'indexEvents' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '12',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'timeStart',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'ASC',
+        ),
+    ),
     'indexGallery' => array(
         array(
             'name' => 'limit',

@@ -35,15 +35,23 @@
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/form/jquery.form.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/validation/jquery.validate.js
 				[[++cultureKey:notis=`en`:then=`,[[++themeclubcube.design_url]]js/jquery/plugins/validation/localization/messages_[[++cultureKey]].js`:else=``]]
-                ,[[++themeclubcube.design_url]]js/jquery/plugins/xhrPool.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.min.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js
-				,[[++themeclubcube.design_url]]js/mbc/site.js
-				,[[++themeclubcube.design_url]]js/mbc/siteSub.js
-				,[[++themeclubcube.design_url]]js/mbc/data.js
-				,[[++themeclubcube.design_url]]js/mbc/mode/normalMode.js
-				,[[++themeclubcube.design_url]]js/mbc/mode/pageContacts.js
-                ,[[++themeclubcube.design_url]]js/init.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/tileSlide.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/topEventsAnimate.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/tinyAnimations.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/flat-calendar.js
+				,[[++themeclubcube.design_url]]js/app/lib/site.js
+				,[[++themeclubcube.design_url]]js/app/lib/siteMode.js
+				,[[++themeclubcube.design_url]]js/app/mode/themeMode.js
+				,[[++themeclubcube.design_url]]js/app/modules/images.js
+				,[[++themeclubcube.design_url]]js/app/modules/loaderMain.js
+				,[[++themeclubcube.design_url]]js/app/modules/fullHeightSlider.js
+				,[[++themeclubcube.design_url]]js/app/modules/eventAnimate.js
+				,[[++themeclubcube.design_url]]js/app/modules/blogAnimate.js
+				,[[++themeclubcube.design_url]]js/app/modules/partners.js
+				,[[++themeclubcube.design_url]]js/app/modules/scrollAtOnce.js
+				,[[++themeclubcube.design_url]]js/init.js
             `
             &cssSources=`
 				[[++themeclubcube.design_url]]css/style.min.css

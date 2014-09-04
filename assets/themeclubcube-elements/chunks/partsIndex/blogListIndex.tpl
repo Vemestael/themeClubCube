@@ -1,4 +1,4 @@
-<section class="blog sect">
+<section class="blog sect" id="blogIndex">
 	<div class="container">
 		<div class="row head more-button-bott">
 			<h2>[[%lf_blog_head:htmlent]]</h2>

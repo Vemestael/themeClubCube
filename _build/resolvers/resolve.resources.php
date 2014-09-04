@@ -256,7 +256,7 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/130197.jpg',
-                                        'timeStart' => time() + (14 * 24 * 60 * 60),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (-14 * 24 * 60 * 60)),
                                         'price' => '5$',
                                         'lineUp' => $modx->toJson(array(
                                             array(
@@ -315,7 +315,7 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/20130125-rhcp-x600-1359132290.jpg',
-                                        'timeStart' => time() + (21 * 24 * 60 * 60),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (21 * 24 * 60 * 60)),
                                         'price' => '5$',
                                         'lineUp' => $modx->toJson(array(
                                             array(
@@ -374,7 +374,7 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/Paramore-11.jpg',
-                                        'timeStart' => time() + (28 * 24 * 60 * 60),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (28 * 24 * 60 * 60)),
                                         'price' => '5$',
                                         'lineUp' => $modx->toJson(array(
                                             array(
@@ -433,7 +433,7 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/the-police.jpg',
-                                        'timeStart' => time() + (35 * 24 * 60 * 60),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (35 * 24 * 60 * 60)),
                                         'price' => '5$',
                                         'lineUp' => $modx->toJson(array(
                                             array(
@@ -492,7 +492,7 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/top-ev.jpg',
-                                        'timeStart' => time() + (42 * 24 * 60 * 60),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (42 * 24 * 60 * 60)),
                                         'price' => '5$',
                                         'lineUp' => $modx->toJson(array(
                                             array(
@@ -551,35 +551,35 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/top-ev2.jpg',
-                                        'timeStart' => time() + (49 * 24 * 60 * 60),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (49 * 24 * 60 * 60)),
                                         'price' => '5$',
                                         'lineUp' => $modx->toJson(array(
-                                                array(
-                                                    "MIGX_id" => 1,
-                                                    'name' => 'Andrew Feeling',
-                                                    'location' => "donetsk"
-                                                ),
-                                                array(
-                                                    "MIGX_id" => 2,
-                                                    'name' => 'Shalim',
-                                                    'location' => "donetsk"
-                                                ),
-                                                array(
-                                                    "MIGX_id" => 3,
-                                                    'name' => 'Stay B',
-                                                    'location' => "donetsk"
-                                                ),
-                                                array(
-                                                    "MIGX_id" => 4,
-                                                    'name' => 'Someone',
-                                                    'location' => "mariupol"
-                                                ),
-                                                array(
-                                                    "MIGX_id" => 5,
-                                                    'name' => 'Dranga',
-                                                    'location' => "mariupol"
-                                                ),
-                                            ))
+                                            array(
+                                                "MIGX_id" => 1,
+                                                'name' => 'Andrew Feeling',
+                                                'location' => "donetsk"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 2,
+                                                'name' => 'Shalim',
+                                                'location' => "donetsk"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 3,
+                                                'name' => 'Stay B',
+                                                'location' => "donetsk"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 4,
+                                                'name' => 'Someone',
+                                                'location' => "mariupol"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 5,
+                                                'name' => 'Dranga',
+                                                'location' => "mariupol"
+                                            ),
+                                        ))
                                     ),
                                 ),
                                 'event7:Ticket' => array(
@@ -610,7 +610,7 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'img' => 'events/top-ev3.jpg',
-                                        'timeStart' => date('d-m-Y H:i:00', time() + (56 * 24 * 60 * 60)),
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (56 * 24 * 60 * 60)),
                                         'price' => '10$',
                                         'lineUp' => $modx->toJson(array(
                                             array(
@@ -635,6 +635,31 @@ if ($object && $object->xpdo) {
                                             ),
                                             array(
                                                 "MIGX_id" => 5,
+                                                'name' => 'Dranga',
+                                                'location' => "mariupol"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 6,
+                                                'name' => 'Andrew Feeling',
+                                                'location' => "donetsk"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 7,
+                                                'name' => 'Shalim',
+                                                'location' => "donetsk"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 8,
+                                                'name' => 'Stay B',
+                                                'location' => "donetsk"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 9,
+                                                'name' => 'Someone',
+                                                'location' => "mariupol"
+                                            ),
+                                            array(
+                                                "MIGX_id" => 10,
                                                 'name' => 'Dranga',
                                                 'location' => "mariupol"
                                             ),

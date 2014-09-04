@@ -3,9 +3,11 @@
 $_lang['lf_brand_name'] = 'Club Cube';
 
 $_lang['lf_events_head'] = 'Top Events';
+$_lang['lf_events_more'] = 'More events';
 $_lang['lf_events_start'] = 'start';
 $_lang['lf_events_lineup'] = 'line-up';
 $_lang['lf_events_price'] = 'price';
+$_lang['lf_events_about'] = 'about';
 
 $_lang['lf_gallery_head'] = 'Gallery';
 $_lang['lf_gallery_more'] = 'More photos';

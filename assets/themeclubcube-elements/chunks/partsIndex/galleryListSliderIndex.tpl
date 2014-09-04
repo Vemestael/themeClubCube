@@ -1,4 +1,4 @@
-<section class="gallery sect gallery-default">
+<section class="gallery sect gallery-default" id="galleryIndex">
 	<div class="container">
 		<div class="row head">
 			<h2 class="text-left no-padding-left pull-left">[[%lf_gallery_head:htmlent]]</h2>

@@ -1,4 +1,4 @@
-<section class="gallery sect">
+<section class="gallery sect" id="galleryIndex">
 	<div class="container">
 		<div class="row head">
 			<div class="col-lg-12 text-center">

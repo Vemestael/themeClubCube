@@ -31,6 +31,12 @@ if ($object && $object->xpdo) {
                 'lineUp' => array(
                     'templates' => array('eventsItem'),
                 ),
+                'topEvent' => array(
+                    'templates' => array('eventsItem'),
+                ),
+                'promoEvent' => array(
+                    'templates' => array('eventsItem'),
+                ),
             );
 
             foreach ($tvs as $tvName => $relations) {

@@ -6,7 +6,7 @@ $tmp = array(
     'img' => array(
         'name' => 'img',
         'caption' => 'Preview',
-        'description' => '',
+        'description' => 'Recommended size: Events - 768x360, Blog - 768x172, Gallery - 768x195',
         'type' => 'image',
         'display' => 'text',
         'locked' => 0,
@@ -57,6 +57,33 @@ $tmp = array(
         'description' => '',
         'type' => 'text',
         'display' => 'default',
+    ),
+    'topEvent' => array(
+        'name' => 'topEvent',
+        'caption' => 'Top event',
+        'description' => 'if checked, event show in top event on main page',
+        'type' => 'checkbox',
+        'els' => 'On==1',
+        'default_text' => '0',
+        'display' => 'default',
+    ),
+    'promoEvent' => array(
+        'name' => 'promoEvent',
+        'caption' => 'Promo event',
+        'description' => 'if checked, event show in big slider on main page',
+        'type' => 'checkbox',
+        'els' => 'On==1',
+        'default_text' => '0',
+        'display' => 'default',
+    ),
+    'promoImg' => array(
+        'name' => 'promoImg',
+        'caption' => 'Promo preview',
+        'description' => 'Recommended size: 1920x1024',
+        'type' => 'image',
+        'display' => 'text',
+        'locked' => 0,
+        'rank' => 0,
     ),
 );
 
