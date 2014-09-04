@@ -1,0 +1,104 @@
+appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $document) {
+	//PRIVATE VARIABLES
+	var _themeMode = this,
+	_defaults = {
+        // classes ans styles
+        classMode: 'theme-mode'
+    },
+	_properties = $.extend(_defaults, properties),
+	_globals = {
+		siteObj: null,
+		preloaded: false
+    },
+
+	//PRIVATE METHODS
+	_init = function() {
+        appMakeBeCool.gateway.classes.SiteMode.apply(_themeMode, [_properties])
+        if(!_globals.preloaded) {
+            return _themeMode.init();
+        }
+        _config();
+        _extendClasses();
+        _instantiateClasses();
+        _setup();
+        _setBinds();
+        _setCustomMethods();
+        _themeMode.trigger(_themeMode.globals.classType+'_Complete');
+    },
+
+    _config = function() {
+        _globals.siteObj = _themeMode.getSiteObj();
+    },
+
+    _extendClasses = function() {
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.Images, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.LoaderMain, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.FullHeightSlider, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.EventAnimate, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.BlogAnimate, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.Partners, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.ScrollAtOnce, _globals.siteObj.base.Class);
+    },
+
+    _instantiateClasses = function() {
+        _globals.siteObj.createClassInstance('images', _globals.siteObj.classes.Images, {classId: 'Images'});
+        _globals.siteObj.createClassInstance('loaderMain', _globals.siteObj.classes.LoaderMain, {classId: 'LoaderMain'});
+        _globals.siteObj.createClassInstance('fullHeightSlider', _globals.siteObj.classes.FullHeightSlider, {classId: 'FullHeightSlider'});
+        _globals.siteObj.createClassInstance('eventAnimate', _globals.siteObj.classes.EventAnimate, {classId: 'EventAnimate'});
+        _globals.siteObj.createClassInstance('blogAnimate', _globals.siteObj.classes.BlogAnimate, {classId: 'BlogAnimate'});
+        _globals.siteObj.createClassInstance('partners', _globals.siteObj.classes.Partners, {classId: 'Partners'});
+        _globals.siteObj.createClassInstance('scrollAtOnce', _globals.siteObj.classes.ScrollAtOnce, {classId: 'ScrollAtOnce'});
+    },
+
+    _setup = function() {
+        $('body').addClass(_properties.classMode);
+    },
+
+    _setBinds = function() {
+        _binds().setCompleteBind();
+        _binds().setImage_CompleteBind();
+        _binds().setScrollAtOnce_ToggleBind();
+    },
+	
+	_binds = function() {
+        return {
+            setCompleteBind: function() {
+                _themeMode.bind($window, _themeMode.globals.classType+'_Complete', function(e, data){
+                    _themeMode.trigger('LoaderMain_Init', data);
+                    _themeMode.trigger('Images_Init', data);
+                });
+            },
+            setImage_CompleteBind: function(){
+                _themeMode.bind($window, 'Images_ImagesComplete', function(e, data){
+                    _themeMode.trigger('FullHeightSlider_Init', data);
+                    _themeMode.trigger('LoaderMain_End', data);
+                    _themeMode.trigger('EventAnimate_Init', data);
+                    _themeMode.trigger('BlogAnimate_Init', data);
+                    _themeMode.trigger('Partners_Init', data);
+                    _themeMode.trigger('ScrollAtOnce_Init', data);
+                });
+            },
+            setScrollAtOnce_ToggleBind: function(){
+                _themeMode.bind($window, 'ScrollAtOnce_Toggle', function(e, data){
+                    _themeMode.trigger('FullHeightSlider_Action', data);
+                });
+            }
+        }
+    },
+	
+	_setCustomMethods = function() {
+        _themeMode.globals.customResurrect = function() {};
+        _themeMode.globals.customDestroy = function() {};
+    };
+	
+	//PUBLIC METHODS
+    _themeMode.addMethod('init', function() {
+        _themeMode.bind($window, 'siteConfigComplete', function() {
+            _globals.preloaded = true;
+            _init();
+        });
+    });
+
+    //GO!
+    _init();
+});
