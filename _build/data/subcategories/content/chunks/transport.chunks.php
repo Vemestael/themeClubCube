@@ -14,8 +14,36 @@ $tmp = array(
         'file' => 'content/indexContent',
         'description' => '',
     ),
-    'listContent' => array(
-        'file' => 'content/listContent',
+    'galleryListContent' => array(
+        'file' => 'content/galleryListContent',
+        'description' => '',
+    ),
+    'galleryItemContent' => array(
+        'file' => 'content/galleryItemContent',
+        'description' => '',
+    ),
+    'blogItemContent' => array(
+        'file' => 'content/blogItemContent',
+        'description' => '',
+    ),
+    'blogListContent' => array(
+        'file' => 'content/blogListContent',
+        'description' => '',
+    ),
+    'blogListTileContent' => array(
+        'file' => 'content/blogListTileContent',
+        'description' => '',
+    ),
+    'eventsListContent' => array(
+        'file' => 'content/eventsListContent',
+        'description' => '',
+    ),
+    'eventsListTicketsContent' => array(
+        'file' => 'content/eventsListTicketsContent',
+        'description' => '',
+    ),
+    'eventsItemContent' => array(
+        'file' => 'content/eventsItemContent',
         'description' => '',
     ),
 );

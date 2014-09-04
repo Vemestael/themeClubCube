@@ -1,3 +1,3 @@
 $(function(){
-    mbc.gateway.init();
+    appMakeBeCool.gateway.init();
 });

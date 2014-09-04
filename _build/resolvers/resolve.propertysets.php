@@ -7,14 +7,26 @@ if ($object && $object->xpdo) {
 
             /* list of property sets, and elements associated with each */
             $sets = array(
-                'indexResources' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources', 'properties' => array(
-                        array(
-                            'name' => 'parents',
-                            'type' => 'textfield',
-                            'value' => $modx->getObject('TicketsSection', array('alias' => 'blog',))->get('id'),
-                        )
-                    )),
+//                'indexResources' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources', 'properties' => array(
+//                        array(
+//                            'name' => 'parents',
+//                            'type' => 'textfield',
+//                            'value' => $modx->getObject('TicketsSection', array('alias' => 'blog',))->get('id'),
+//                        )
+//                    )),
+//                ),
+                'indexEvents' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexGallery' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexBlog' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexPartners' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
                 ),
                 'listResources' => array(
                     array('class' => 'modSnippet','name' => 'pdoPage'),
@@ -48,11 +60,10 @@ if ($object && $object->xpdo) {
                             }
                         }
                     } else {
-                        $modx->log(xPDO::LOG_LEVEL_ERROR,'Could not find property set and element.');
+                        $modx->log(xPDO::LOG_LEVEL_ERROR,'Could not find property set '.$setName.' and element '.$el['name'].'.');
                     }
 
                     if($propertySet && isset($el['properties']) && !empty($el['properties'])) {
-                        var_dump($el['properties']);
                         $propertySet->setProperties($el['properties'], true);
                         $propertySet->save();
                     }

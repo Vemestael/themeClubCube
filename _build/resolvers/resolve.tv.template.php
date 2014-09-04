@@ -8,10 +8,34 @@ if ($object && $object->xpdo) {
             /* list of tvs and templates for each */
             $tvs = array(
                 'img' => array(
-                    'templates' => array('listItem'),
+                    'templates' => array('partners','galleryItem','blogItem'),
                     'sources' => array(
                         'web' => 'Uploads'
                     )
+                ),
+                'galleryImg' => array(
+                    'templates' => array(),
+                    'sources' => array(
+                        'web' => 'Uploads'
+                    )
+                ),
+                'gallery' => array(
+                    'templates' => array('galleryItem'),
+                ),
+                'timeStart' => array(
+                    'templates' => array('eventsItem'),
+                ),
+                'price' => array(
+                    'templates' => array('eventsItem'),
+                ),
+                'lineUp' => array(
+                    'templates' => array('eventsItem'),
+                ),
+                'topEvent' => array(
+                    'templates' => array('eventsItem'),
+                ),
+                'promoEvent' => array(
+                    'templates' => array('eventsItem'),
                 ),
             );
 
@@ -50,35 +74,40 @@ if ($object && $object->xpdo) {
                     $rank++;
                 }
 
-                $sourceElements = $modx->getCollection('sources.modMediaSourceElement',array(
-                    'object' => $tv->get('id'),
-                    'object_class' => 'modTemplateVar',
-                ));
-                /** @var modMediaSourceElement $sourceElement */
-                foreach ($sourceElements as $sourceElement) {
-                    $sourceElement->remove();
-                }
-
-                foreach ($relations['sources'] as $key => $sourceName) {
-                    $source = $modx->getObject('sources.modMediaSource', array('name' => $sourceName));
-                    if (!$source) continue;
-
-                    /** @var modMediaSourceElement $sourceElement */
-                    $sourceElement = $modx->getObject('sources.modMediaSourceElement',array(
+                /*
+                 * TODO перенести условие на проверку source в базовый шаблон
+                 */
+                if(isset($relations['sources'])) {
+                    $sourceElements = $modx->getCollection('sources.modMediaSourceElement',array(
                         'object' => $tv->get('id'),
-                        'object_class' => $tv->_class,
-                        'context_key' => $key,
+                        'object_class' => 'modTemplateVar',
                     ));
-                    if (!$sourceElement) {
-                        $sourceElement = $modx->newObject('sources.modMediaSourceElement');
-                        $sourceElement->fromArray(array(
+                    /** @var modMediaSourceElement $sourceElement */
+                    foreach ($sourceElements as $sourceElement) {
+                        $sourceElement->remove();
+                    }
+
+                    foreach ($relations['sources'] as $key => $sourceName) {
+                        $source = $modx->getObject('sources.modMediaSource', array('name' => $sourceName));
+                        if (!$source) continue;
+
+                        /** @var modMediaSourceElement $sourceElement */
+                        $sourceElement = $modx->getObject('sources.modMediaSourceElement',array(
                             'object' => $tv->get('id'),
                             'object_class' => $tv->_class,
                             'context_key' => $key,
-                        ),'',true,true);
+                        ));
+                        if (!$sourceElement) {
+                            $sourceElement = $modx->newObject('sources.modMediaSourceElement');
+                            $sourceElement->fromArray(array(
+                                'object' => $tv->get('id'),
+                                'object_class' => $tv->_class,
+                                'context_key' => $key,
+                            ),'',true,true);
+                        }
+                        $sourceElement->set('source',$source->get('id'));
+                        $sourceElement->save();
                     }
-                    $sourceElement->set('source',$source->get('id'));
-                    $sourceElement->save();
                 }
             }
         break;

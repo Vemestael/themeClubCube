@@ -3,21 +3,74 @@
 $settings = array();
 
 $tmp = array(
+    //main
 	'ga_tracking_id' => array(
 		'xtype' => 'textfield',
 		'value' => '',
 		'area' => 'themeclubcube_main',
 	),
-    'ga_tracking_name' => array(
-        'xtype' => 'textfield',
-        'value' => 'auto',
-        'area' => 'themeclubcube_main',
-    ),
     'design_url' => array(
         'xtype' => 'textfield',
         'value' => '{assets_url}'.PKG_NAME_LOWER.'-design/',
         'area' => 'themeclubcube_main',
     ),
+
+    //subscribe
+    'unisender_api_key' => array(
+        'xtype' => 'textfield',
+        'value' => '',
+        'area' => 'themeclubcube_subscribe',
+    ),
+    'unisender_tag_id' => array(
+        'xtype' => 'textfield',
+        'value' => '',
+        'area' => 'themeclubcube_subscribe',
+    ),
+
+    // style index
+    'style_index_gallery_list' => array(
+        'xtype' => 'numberfield',
+        'value' => 1,
+        'area' => 'themeclubcube_style_index',
+    ),
+    'style_index_blog_list' => array(
+        'xtype' => 'numberfield',
+        'value' => 1,
+        'area' => 'themeclubcube_style_index',
+    ),
+    'style_index_events_list' => array(
+        'xtype' => 'numberfield',
+        'value' => 2,
+        'area' => 'themeclubcube_style_index',
+    ),
+    'style_events_time_format' => array(
+        'xtype' => 'combo-boolean',
+        'value' => false,
+        'area' => 'themeclubcube_style_index',
+    ),
+
+    // resources
+    'partners_resource' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themeclubcube_resources',
+    ),
+    'blog_resource' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themeclubcube_resources',
+    ),
+    'gallery_resource' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themeclubcube_resources',
+    ),
+    'events_resource' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themeclubcube_resources',
+    ),
+
 );
 
 foreach ($tmp as $k => $v) {
@@ -25,7 +78,7 @@ foreach ($tmp as $k => $v) {
 	$setting = $modx->newObject('modSystemSetting');
 	$setting->fromArray(array_merge(
 		array(
-			'key' => 'themeclubcube_'.$k,
+			'key' => 'themeclubcube.'.$k,
 			'namespace' => PKG_NAME_LOWER,
 		), $v
 	),'',true,true);

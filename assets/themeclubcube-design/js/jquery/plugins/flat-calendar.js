@@ -215,5 +215,5 @@ $(document).ready(function() {
 	};
 
 	// Add global variable
-	window.flatCalObj = new FlatCalObj($('.flat-calendar'));
+//	window.flatCalObj = new FlatCalObj($('.flat-calendar'));
 });

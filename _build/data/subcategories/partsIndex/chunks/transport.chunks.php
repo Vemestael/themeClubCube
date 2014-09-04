@@ -3,9 +3,57 @@
 $chunks = array();
 
 $tmp = array(
-    //Index
-    'itemIndex' => array(
-        'file' => 'partsIndex/itemIndex',
+    // Index
+    'eventsListIndex' => array(
+        'file' => 'partsIndex/eventsListIndex',
+        'description' => '',
+    ),
+    'eventsListTileIndex' => array(
+        'file' => 'partsIndex/eventsListTileIndex',
+        'description' => '',
+    ),
+    'eventsItemIndex' => array(
+        'file' => 'partsIndex/eventsItemIndex',
+        'description' => '',
+    ),
+    'eventsItemTileIndex' => array(
+        'file' => 'partsIndex/eventsItemTileIndex',
+        'description' => '',
+    ),
+    'galleryListIndex' => array(
+        'file' => 'partsIndex/galleryListIndex',
+        'description' => '',
+    ),
+    'galleryListSliderIndex' => array(
+        'file' => 'partsIndex/galleryListSliderIndex',
+        'description' => '',
+    ),
+    'galleryItemIndex' => array(
+        'file' => 'partsIndex/galleryItemIndex',
+        'description' => '',
+    ),
+    'galleryItemBigIndex' => array(
+        'file' => 'partsIndex/galleryItemBigIndex',
+        'description' => '',
+    ),
+    'blogListIndex' => array(
+        'file' => 'partsIndex/blogListIndex',
+        'description' => '',
+    ),
+    'blogItemIndex' => array(
+        'file' => 'partsIndex/blogItemIndex',
+        'description' => '',
+    ),
+    'blogItemTileIndex' => array(
+        'file' => 'partsIndex/blogItemTileIndex',
+        'description' => '',
+    ),
+    'partnersListIndex' => array(
+        'file' => 'partsIndex/partnersListIndex',
+        'description' => '',
+    ),
+    'partnersItemIndex' => array(
+        'file' => 'partsIndex/partnersItemIndex',
         'description' => '',
     ),
 );
@@ -29,33 +77,10 @@ foreach ($tmp as $k => $v) {
 		'static_file' => 'assets/'.PKG_NAME_LOWER.'-elements/chunks/'.$v['file'].'.tpl',
 	),'',true,true);
 
-//    $partsName = explode('/', $v['file']);
-//    $chunkCategoryName = $partsName[0];
-//
-//    if($chunkCategoryName != $chunkCategoryNameOld) {
-//        $chunkCategoryNameOld = $chunkCategoryName;
-//        /* create category */
-//        /* @var modCategory $category */
-//        $chunkCategory[$i] = $modx->newObject('modCategory');
-//        $chunkCategory[$i]->set('category',$chunkCategoryName);
-//        echo $chunkCategoryName . '<br>';
-//
-//        $i++;
-//    }
-
 	$chunks[] = $chunk;
 
 	$BUILD_CHUNKS[$k] = file_get_contents($sources['elements_core'].'/chunks/'.$v['file'].'.tpl');
 }
-
-//$attr[xPDOTransport::RELATED_OBJECT_ATTRIBUTES]['Children'] = array (
-//    xPDOTransport::UNIQUE_KEY => 'category',
-//    xPDOTransport::PRESERVE_KEYS => false,
-//    xPDOTransport::UPDATE_OBJECT => true,
-//    xPDOTransport::RELATED_OBJECTS => true,
-//);
-//$modx->log(xPDO::LOG_LEVEL_INFO,'Created sub category for chunks.');
-//$category->addMany($chunkCategory);
 
 unset($tmp);
 return $chunks;

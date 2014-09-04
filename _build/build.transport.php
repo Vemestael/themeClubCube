@@ -24,7 +24,7 @@ $sources = array(
 	'source_core' => $root.'core/components/'.PKG_NAME_LOWER,
     'elements_core' => $root.'assets/'.PKG_NAME_LOWER.'-elements/',
     'design_assets' => $root.'assets/'.PKG_NAME_LOWER.'-design/',
-    'lexicon' => $root.'core/components/lexiconfrontend/lexicon/',
+    'lexiconfrontend' => $root.'core/components/lexiconfrontend/',
     'source' => $root.'assets/uploads/',
 );
 unset($root);
@@ -400,8 +400,8 @@ foreach ($BUILD_RESOLVERS as $resolver) {
 }
 
 $vehicle->resolve('file',array(
-    'source' => $sources['lexicon'],
-    'target' => "return MODX_CORE_PATH . 'components/lexiconfrontend/';",
+    'source' => $sources['lexiconfrontend'],
+    'target' => "return MODX_CORE_PATH . 'components/';",
 ));
 
 flush();

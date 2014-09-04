@@ -6,13 +6,41 @@ $tmp = array(
         'file' => 'index',
         'description' => 'Index template',
     ),
-    'list' => array(
-        'file' => 'list',
-        'description' => 'List of resource template',
+    'partners' => array(
+        'file' => 'partners',
+        'description' => 'Template for partners',
     ),
-    'listItem' => array(
-        'file' => 'listItem',
-        'description' => 'ListItem of resource template',
+    'galleryList' => array(
+        'file' => 'galleryList',
+        'description' => 'Gallery list template',
+    ),
+    'galleryItem' => array(
+        'file' => 'galleryList',
+        'description' => 'Gallery item template',
+    ),
+    'blogList' => array(
+        'file' => 'blogList',
+        'description' => 'Blog list template with preview image',
+    ),
+    'blogListTile' => array(
+        'file' => 'blogListTile',
+        'description' => 'Blog list as tile template',
+    ),
+    'blogItem' => array(
+        'file' => 'blogItem',
+        'description' => 'Blog item template',
+    ),
+    'eventsList' => array(
+        'file' => 'eventsList',
+        'description' => 'Events list template',
+    ),
+    'eventsListTickets' => array(
+        'file' => 'eventsListTickets',
+        'description' => 'Events list as tickets template',
+    ),
+    'eventsItem' => array(
+        'file' => 'eventsItem',
+        'description' => 'Events item template',
     ),
     'text' => array(
         'file' => 'text',
