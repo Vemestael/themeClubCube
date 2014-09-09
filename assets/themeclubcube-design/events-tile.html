@@ -141,38 +141,34 @@
                     </div>
                 </div>
                 <div class="rows">
-                    <div class="btn-dropdown">
-                        <div class="col-left">
-                            <div class="ttl btn-custom-text">This week</div>
-                            <div class="dt">21 ... 28 April</div>
+                    <div class="button-dropdown hidd">
+                        <div class="button-dropdown-text">
+                            <div class="dropdown-text-title">This week</div>
+                            <div class="dropdown-text-dates">1 December ... 7 December</div>
                         </div>
-                        <div class="col-right-btn week-click">
-                            <b class="caret"></b>
+                        <div class="button-dropdown-arr">
+                            <i></i>
                         </div>
                         <div class="hidden-dv hide" role="tablist" id="weeks-tab">
-                            <a href="#this-w" class="btn-custom-org active" data-toggle="tab" role="tab">
-                                <div class="ttl btn-custom-text">This week</div>
-                                <div class="dt">21 ... 28 April</div>
-                                <div class="line-bott"></div>
-                                <span class="yes-arr"></span>
+                            <a href="#this-w" class="tab-custom pressed" data-toggle="tab" role="tab">
+                                <div class="dropdown-text-title">This week</div>
+                                <div class="dropdown-text-dates">1 December ... 7 December</div>
+                                <div class="tab-custom-line"></div>
                             </a>
-                            <a href="#next-w" class="btn-custom" data-toggle="tab" role="tab">
-                                <div class="ttl btn-custom-text">Next week</div>
-                                <div class="dt">28 ... 05 May</div>
-                                <div class="line-bott"></div>
-                                <span class="yes-arr"></span>
+                            <a href="#next-w" class="tab-custom" data-toggle="tab" role="tab">
+                                <div class="dropdown-text-title">Next week</div>
+                                <div class="dropdown-text-dates">8 December ... 14 December</div>
+                                <div class="tab-custom-line"></div>
                             </a>
-                            <a href="#2-week" class="btn-custom" data-toggle="tab" role="tab">
-                                <div class="ttl btn-custom-text">2 weeks later</div>
-                                <div class="dt">05 ... 12 May</div>
-                                <div class="line-bott"></div>
-                                <span class="yes-arr"></span>
+                            <a href="#2-week" class="tab-custom" data-toggle="tab" role="tab">
+                                <div class="dropdown-text-title">2 weeks later</div>
+                                <div class="dropdown-text-dates">15 December ... 21 December</div>
+                                <div class="tab-custom-line"></div>
                             </a>
-                            <a href="#3-week" class="btn-custom-org last" data-toggle="tab" role="tab">
-                                <div class="ttl btn-custom-text">3 weeks later</div>
-                                <div class="dt">12 ... 19 May</div>
-                                <div class="line-bott"></div>
-                                <span class="yes-arr"></span>
+                            <a href="#3-week" class="tab-custom" data-toggle="tab" role="tab">
+                                <div class="dropdown-text-title">3 weeks later</div>
+                                <div class="dropdown-text-dates">22 December ... 28 December</div>
+                                <div class="tab-custom-line"></div>
                             </a>
                         </div>
                     </div>
@@ -1006,22 +1002,18 @@
                 </div>
             </div>
             <div class="rows paging events-tile-padding">
-                <div class="event-dates input-append date pull-left off">
-                    <div class="ev-date-right pull-left left-paging">
-                        <i class="arr-left"></i>
-                    </div>
-                    <div class="ev-date-left">
-                        <div class="ttl">Prev week</div>
-                        <div class="dt">21 April ... 12 September</div>
+                <div class="left-pag off">
+                    <div class="pad-arr"><i></i></div>
+                    <div class="pad-text">
+                        <div class="pad-title">Prev week</div>
+                        <div class="pad-dates">21 April ... 12 September</div>
                     </div>
                 </div>
-                <div class="event-dates input-append date pull-right">
-                    <div class="ev-date-right right-paging">
-                        <i class="arr-right"></i>
-                    </div>
-                    <div class="ev-date-left">
-                        <div class="ttl">Next week</div>
-                        <div class="dt">21 April ... 12 September</div>
+                <div class="right-pag">
+                    <div class="pad-arr"><i></i></div>
+                    <div class="pad-text">
+                        <div class="pad-title">Next week</div>
+                        <div class="pad-dates">8 December ... 14 December</div>
                     </div>
                 </div>
             </div>
@@ -1052,7 +1044,7 @@
                                     </ul>
                                 </li>
                                 <li class="last">
-                                   <div class="baloone-foot"></div>
+                                    <div class="baloone-foot"></div>
                                     <ul>
                                         <li>87500 Mariupol, Ukraine, ul. Kazantsev 7b, 2nd floor, office. 29</li>
                                     </ul>
@@ -1137,6 +1129,7 @@
         <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
         <script src="js/html.js"></script>
         <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+        <script src="js/jquery/plugins/tinyAnimations.js"></script>
         <script>
         $(document).ready(function(){
         var events = new EventAnimate($('.tab-pane.active .top-event'));

@@ -33,7 +33,7 @@
 					$(this).addClass('pressed-lb');
 				};
 			});
-			$nodes.on('click', function(event) {
+			$nodes.on('click touchend', function(event) {
 				var idRadio = $(this).attr('for');
 				var $checkB = $(document.getElementById(idRadio));
 
@@ -46,9 +46,20 @@
 				};
 			});
 		},
+		dropdownHidden: function(nodes) {
+			var $nodes = nodes;
+			$nodes.on('click touchend', function(event) {
+				var $target = $(event.target).closest('.button-dropdown');
+				if ($target.hasClass('pressed')) {
+					$target.find('.hidden-dv').removeClass('hide');
+				} else {
+					$target.find('.hidden-dv').addClass('hide');
+				};
+			});
+		},
 		checkboxButton: function(nodes) {
 			var $nodes = nodes;
-			$nodes.on('click', function(event) {
+			$nodes.on('click touchend', function(event) {
 				var idRadio = $(this).attr('for');
 				var $checkB = $(document.getElementById(idRadio));
 
@@ -81,9 +92,14 @@
 			};
 
 			for (var key in $tinyObj) {
-				$tinyObj[key].on('click', function(event) {
+				$tinyObj[key].on('click touchend', function(event) {
 					if (!($(event.currentTarget).hasClass('off')) && !($(event.currentTarget).hasClass('hover')) && !($(event.currentTarget).hasClass('pressed'))) {
 						$(event.currentTarget).addClass('pressed');
+						if ($(event.currentTarget).hasClass('left-pag') || $(event.currentTarget).hasClass('right-pag')) {
+							setTimeout(function() {
+								$(event.currentTarget).removeClass('pressed');
+							}, 250);
+						};
 					} else if ($(event.currentTarget).hasClass('pressed')) {
 						$(event.currentTarget).removeClass('pressed');
 					};
@@ -94,4 +110,5 @@
 
 	window.tinyAnimations = tinyAnimations;
 	tinyAnimations.initEventClasses();
+	tinyAnimations.dropdownHidden($('.button-dropdown.hidd'));
 })(jQuery);

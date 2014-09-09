@@ -12,25 +12,40 @@
 /* ========================================================================
  * Custom buttons "Next-Prev"
  * ======================================================================== */
-.left-pag {display: block;float: left;cursor: pointer;}
-.left-pag .pad-arr {display: block;float: left;width: 55px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
-.left-pag .pad-arr i {display: inline-block;width: 20px;height: 28px;margin-top: 21px;background-image:url(../images/sprites.png);background-repeat: no-repeat;background-position: -328px -39px;vertical-align: middle;}
-.left-pag .pad-text {display: block;float: right;padding: 13px 18px;border:1px solid $light-reddy-color;border-left:0 none;@include transitions(.3s);}
-.left-pag .pad-title {display: block;text-transform: uppercase;font-family:$pt-sans ;font-size:24px;line-height:24px;color:$orange-color;@include transitions(.3s);}
-.left-pag .pad-dates {display: block;font-family:$pt-sans;font-size: 12px;line-height: 18px;color:$reddy-color;@include transitions(.3s);}
+.left-pag, .right-pag {display: block;cursor: pointer;}
+.left-pag {float: left;}
+.right-pag {float: right;}
+.left-pag .pad-arr, .right-pag .pad-arr {display: block;width: 55px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
+.left-pag .pad-arr {float: left;}
+.right-pag .pad-arr {float: right;}
+.left-pag.sm .pad-arr, .right-pag.sm .pad-arr {height: 52px;}
+.left-pag .pad-arr i, .right-pag .pad-arr i {display: inline-block;width: 20px;height: 28px;margin-top: 21px;background-image:url(../images/sprites.png);background-repeat: no-repeat;vertical-align: middle;}
+.left-pag .pad-arr i {background-position: -330px -39px;}
+.right-pag .pad-arr i {background-position: -361px -39px;}
+.left-pag.sm .pad-arr i, .right-pag.sm .pad-arr i {margin-top: 13px;}
+.left-pag .pad-text, .right-pag .pad-text {display: block;padding: 13px 18px;border:1px solid $light-reddy-color;@include transitions(.3s);}
+.left-pag .pad-text {float: right;border-left:0 none;}
+.right-pag .pad-text {float: left;border-right:0 none;}
+.left-pag .pad-title, .right-pag .pad-title {display: block;text-transform: uppercase;font-family:$pt-sans ;font-size:24px;line-height:24px;color:$orange-color;@include transitions(.3s);}
+.left-pag .pad-dates, .right-pag .pad-dates {display: block;font-family:$pt-sans;font-size: 12px;line-height: 18px;color:$reddy-color;@include transitions(.3s);}
 
-.left-pag:hover .pad-arr, .left-pag.hover .pad-arr {background:$orange-color;@include transitions(.3s);}
-.left-pag:hover .pad-title, .left-pag.hover .pad-title {color:$orange-color;@include transitions(.3s);}
+.left-pag:hover .pad-arr, .left-pag.hover .pad-arr, .right-pag:hover .pad-arr, .right-pag.hover .pad-arr {background:$orange-color;@include transitions(.3s);}
+.left-pag:hover .pad-title, .left-pag.hover .pad-title, .right-pag:hover .pad-title, .right-pag.hover .pad-title {color:$orange-color;@include transitions(.3s);}
 .left-pag:hover .pad-text, .left-pag.hover .pad-text {border:1px solid $orange-border-light;border-left:0 none;@include transitions(.3s);}
+.right-pag:hover .pad-text, .right-pag.hover .pad-text {border:1px solid $orange-border-light;border-right:0 none;@include transitions(.3s);}
 
-.left-pag.off {cursor: default;}
-.left-pag.off .pad-arr {background:$ccc-color;@include transitions(.3s);}
-.left-pag.off .pad-text {border:1px solid $e6e6e6;border-left:0 none;@include transitions(.3s);}
-.left-pag.off .pad-title, .left-pag.off .pad-dates {color:$ccc-color;@include transitions(.3s);}
+.left-pag.off, .right-pag.off {cursor: default;}
+.left-pag.off .pad-arr, .right-pag.off .pad-arr {background:$ccc-color;@include transitions(.3s);}
+.left-pag.off .pad-text, .right-pag.off .pad-text  {border:1px solid $e6e6e6;@include transitions(.3s);}
+.left-pag.off .pad-text {border-left:0 none;@include transitions(.3s);}
+.right-pag.off .pad-text {border-right:0 none;@include transitions(.3s);}
+.left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates  {color:$ccc-color;@include transitions(.3s);}
 
-.left-pag.pressed .pad-arr {background:$d35a33;@include transitions(.3s);}
-.left-pag.pressed .pad-text {border:1px solid $d35a33;border-left:0 none;@include transitions(.3s);}
-.left-pag.pressed .pad-title {color:$d35a33;@include transitions(.3s);}
+.left-pag.pressed .pad-arr, .right-pag.pressed .pad-arr {background:$d35a33;}
+.left-pag.pressed .pad-text, .right-pag.pressed .pad-text {border:1px solid $d35a33;}
+.left-pag.pressed .pad-text {border-left:0 none;}
+.right-pag.pressed .pad-text {border-right:0 none;}
+.left-pag.pressed .pad-title, .right-pag.pressed .pad-title {color:$d35a33;}
 
 /* ========================================================================
  * Custom buttons "Button Slider"
@@ -185,15 +200,15 @@
 /* ========================================================================
  * Custom buttons "Button Dropdown"
  * ======================================================================== */
-.button-dropdown {display: block;height: 70px;float: left;cursor: pointer;}
+.button-dropdown {display: block;height: 70px;position: relative;float: left;cursor: pointer;}
 .button-dropdown .button-dropdown-text {display: block;float: left;padding: 14px 18px;border: 1px solid $light-reddy-color;border-right: none;@include transitions(.3s);}
 .button-dropdown .button-dropdown-text .dropdown-text-title {font-family: $pt-sans;font-size:24px;line-height: 24px;color: $reddy-color;@include transitions(.3s);}
 .button-dropdown .button-dropdown-text .dropdown-text-dates {font-family: $pt-sans;font-size:12px;line-height: 16px;color: $light-black-color;@include transitions(.3s);}
-.button-dropdown .button-dropdown-arr {display: block;float: left;width: 55px;height: 100%;background:$reddy-color;text-align: center;@include transitions(.3s);}
+.button-dropdown .button-dropdown-arr {display: block;float: left;width: 55px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
 .button-dropdown .button-dropdown-arr i {display: inline-block;height: 20px;width: 30px;margin: 0 auto;margin-top: 27px;background-image: url(../images/sprites.png);background-repeat: no-repeat;background-position: -121px -80px;}
 
 .button-dropdown:hover .button-dropdown-text, .button-dropdown.hover .button-dropdown-text {border: 1px solid $light-reddy-color;border-right: none;@include transitions(.3s);}
-.button-dropdown:hover .dropdown-text-title, .button-dropdown.hover .dropdown-text-title {color: $orange-color;@include transitions(.3s);}
+.button-dropdown:hover .dropdown-text-title, .button-dropdown.hover .dropdown-text-title{color: $orange-color;@include transitions(.3s);}
 .button-dropdown:hover .dropdown-text-dates, .button-dropdown.hover .dropdown-text-dates {color:$light-black-color;@include transitions(.3s);}
 .button-dropdown:hover .button-dropdown-arr, .button-dropdown.hover .button-dropdown-arr {background:$orange-color;@include transitions(.3s);}
 
@@ -213,21 +228,35 @@
 
 .button-dropdown .hidden-dv {}
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: ($screen-lg)-1) {
 
-.button-dropdown.hidd {}
+.button-dropdown .hidden-dv {position: relative;width: 238px;z-index: 10;background: $white-color;border: 7px solid $lighter-grey-color;overflow: hidden;}
+.button-dropdown .hidden-dv .button-filter {width: 100%;float: none;border:none;overflow: hidden;}
+.button-dropdown .hidden-dv .button-filter:hover {border:none;}
+.button-dropdown .hidden-dv .button-filter {border-bottom: 1px solid $lighter-grey-color;}
+.button-dropdown .hidden-dv .button-filter:hover {border-bottom: 1px solid transparent;}
+.button-dropdown .hidden-dv .button-filter:last-child {border-bottom: none;}
+.button-dropdown .hidden-dv .button-filter:last-child:hover {border:none;}
 
 .button-dropdown.hidd .hidden-dv {}
 
+.events-tiles .button-dropdown #weeks-tab.hidden-dv {position: absolute;width: 220px;top: 70px;left: 0;display: none!important;z-index: 7;}
+.events-tiles .button-dropdown.pressed #weeks-tab.hidden-dv {display: block!important;}
 }
 
 @media screen and (min-width: $screen-lg) {
 
 .button-dropdown.hidd .button-dropdown-text, .button-dropdown.hidd .button-dropdown-arr {display: none;}
-
+.button-dropdown .hidden-dv {border: none;}
+.button-dropdown .hidden-dv .button-filter {width: auto;float: left;}
 .button-dropdown.hidd .hidden-dv {display: block!important;}
 
 }
+
+.button-dropdown:hover .hidden-dv .dropdown-text-title {color:$reddy-color;}
+.button-dropdown:hover .hidden-dv .dropdown-text-dates {color:$light-black-color;}
+
+
 
 
 /* ========================================================================
@@ -252,14 +281,15 @@
 /* ========================================================================
  * Custom buttons "Tab"
  * ======================================================================== */
-.tab-custom {display: block;float: left;position: relative;padding: 16px 0;cursor: pointer;}
+.tab-custom {display: block;float: left;position: relative;padding: 16px 0;margin-right: 40px;cursor: pointer;}
+.tab-custom:last-child  {margin-right: 0;}
 .tab-custom .dropdown-text-title {font-family: $pt-sans;font-size: 24px;line-height: 24px;color:$reddy-color;@include transitions(.3s);}
 .tab-custom	.dropdown-text-dates {font-family: $pt-sans;font-size: 12px;line-height: 18px;color:$light-black-color;@include transitions(.3s);}
 .tab-custom .tab-custom-line {display: block;opacity: 0;position: absolute;height: 5px;width: 100%;bottom: -3px;left: 0;background:$reddy-color;@include transitions(.3s);}
 
 .tab-custom:hover .dropdown-text-title, .tab-custom.hover .dropdown-text-title {color: $orange-color;@include transitions(.3s);}
 .tab-custom:hover .dropdown-text-dates, .tab-custom.hover .dropdown-text-dates {color: $light-black-color;@include transitions(.3s);}
-.tab-custom:hover .tab-custom-line, .tab-custom.hover .tab-custom-line {opacity: 1;background:$orange-color;@include transitions(.3s);}
+
 
 .tab-custom.off {cursor: default;}
 .tab-custom.off .dropdown-text-title, .tab-custom.off .dropdown-text-dates {color: $ccc-color;@include transitions(.3s);}
@@ -269,6 +299,30 @@
 .tab-custom.pressed .tab-custom-line {opacity: 1;background:$orange-a-color;@include transitions(.3s);}
 
 table.club-table tr.padding-b-no td {padding-top: 0;padding-bottom: 0;}
+
+// .tab-custom:hover .dropdown-text-title {color: $orange-color;@include transitions(.3s);}
+// .tab-custom:hover .dropdown-text-dates {color:$light-black-color;@include transitions(.3s);}
+
+.button-dropdown.pressed .tab-custom .dropdown-text-title, .button-dropdown .tab-custom .dropdown-text-title {color:$reddy-color;}
+.button-dropdown.pressed .tab-custom .dropdown-text-dates, .button-dropdown .tab-custom .dropdown-text-dates {color:$light-black-color;}
+
+.button-dropdown.pressed .tab-custom:hover .dropdown-text-title, .button-dropdown .tab-custom:hover .dropdown-text-title, .button-dropdown .tab-custom.pressed .dropdown-text-title, .button-dropdown.pressed .tab-custom.pressed .dropdown-text-title {color: $orange-color;@include transitions(.3s);}
+.button-dropdown.pressed .tab-custom:hover .dropdown-text-dates, .button-dropdown .tab-custom:hover .dropdown-text-dates, .button-dropdown .tab-custom.pressed .dropdown-text-dates, .button-dropdown.pressed .tab-custom.pressed .dropdown-text-dates {color: $light-black-color;@include transitions(.3s);}
+
+@media screen and (max-width: ($screen-lg)-1) {
+
+.tab-custom {width: 206px;margin-right: 0;padding: 16px 12px;border-bottom: 1px solid $lighter-grey-color;}
+.tab-custom:last-child {border-bottom: none;}
+.tab-custom .tab-custom-line, .tab-custom:hover .tab-custom-line, .tab-custom.pressed .tab-custom-line {display: none;}
+
+}
+
+
+@media screen and (min-width: $screen-lg) {
+
+.tab-custom:hover .tab-custom-line, .tab-custom.hover .tab-custom-line {opacity: 1;background:$orange-color;@include transitions(.3s);}
+
+}
 
 /* ========================================================================
  * Custom buttons "menu"

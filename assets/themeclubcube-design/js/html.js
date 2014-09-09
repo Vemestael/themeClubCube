@@ -696,8 +696,9 @@ $(function() {
         //Bootstrap tabs
         var currentTabNumber = 0;
         var $tabsArray = $('#weeks-tab a');
-        var $leftNode = $('.paging .event-dates.pull-left');
-        var $rightNode = $('.paging .event-dates.pull-right');;
+        var $leftPaging = $('.left-pag');
+        var $rightPaging = $('.right-pag');
+        var $tabPanels = $('.tab-pane');
 
         function bootstrapTabs() {
             function findPressedTabNumber(pressedTab) {
@@ -707,29 +708,30 @@ $(function() {
                     };
                 };
             };
-            $('#weeks-tab a').on('click touchstart', function(event) {
+            $('#weeks-tab a').on('click touchend', function(event) {
                 event.preventDefault();
                 findPressedTabNumber(this);
+                console.log(currentTabNumber);
                 if (currentTabNumber === 0) {
-                    $leftNode.addClass('off');
-                    $rightNode.removeClass('off');
-                } else if (currentTabNumber === 3) {
-                    $rightNode.addClass('off');
-                    $leftNode.removeClass('off');
+                    $leftPaging.addClass('off');
+                    $rightPaging.removeClass('off');
+                } else if (currentTabNumber === ($tabPanels.length - 1)) {
+                    $rightPaging.addClass('off');
+                    $leftPaging.removeClass('off');
                 } else {
-                    $leftNode.removeClass('off');
-                    $rightNode.removeClass('off');
+                    $leftPaging.removeClass('off');
+                    $rightPaging.removeClass('off');
                 };
                 $(this).tab('show');
 
                 //Find node to insert to
-                var $upperLabel = $(this).closest('.btn-dropdown').find('.col-left');
-                var $ttl = $upperLabel.find('.ttl');
-                var $dt = $upperLabel.find('.dt');
+                var $upperLabel = $(this).closest('.button-dropdown').find('.button-dropdown-text');
+                var $ttl = $upperLabel.find('.dropdown-text-title');
+                var $dt = $upperLabel.find('.dropdown-text-dates');
 
                 //Find clicked nodes texts
-                var thisTtl = $(this).find('.ttl').text();
-                var thisDt = $(this).find('.dt').text();
+                var thisTtl = $(this).find('.dropdown-text-title').text();
+                var thisDt = $(this).find('.dropdown-text-dates').text();
 
                 //Insert text into parent label node
                 $ttl.text(thisTtl);
@@ -741,22 +743,18 @@ $(function() {
 
                 //Add active class to current label week
                 $(this).parent().children().each(function() {
-                    $(this).removeClass('active');
+                    $(this).removeClass('active pressed');
                 });
-                $(this).addClass('active');
+                $(this).addClass('active pressed');
 
                 var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
             });
             $('#weeks-tab a:first').tab('show');
-            $('.week-click').on('click touchstart', function() {
+            $('.week-click').on('click touchend', function() {
                 $('#weeks-tab').removeClass('hidden-xs');
             });
         };
         bootstrapTabs();
-
-        //Toogle event weeks right or left
-        var $leftPaging = $('.paging .event-dates.pull-left');
-        var $rightPaging = $('.paging .event-dates.pull-right');
 
         function sideClick(direction, node) {
             if (direction === 'right') {
@@ -767,25 +765,41 @@ $(function() {
                     });
                     $('#weeks-tab a:eq(' + currentTabNumber + ')').tab('show');
                     $tabsArray.each(function() {
-                        $(this).removeClass('active');
+                        $(this).removeClass('active pressed');
                     });
-                    $($tabsArray[currentTabNumber]).addClass('active');
-                    var $upperLabel = $tabsArray.closest('.btn-dropdown').find('.col-left');
-                    var $ttl = $upperLabel.find('.ttl');
-                    var $dt = $upperLabel.find('.dt');
+                    $($tabsArray[currentTabNumber]).addClass('active pressed');
+                    var $upperLabel = $tabsArray.closest('.button-dropdown').find('.button-dropdown-text');
+                    var $ttl = $upperLabel.find('.dropdown-text-title');
+                    var $dt = $upperLabel.find('.dropdown-text-dates');
+                    var $rightTtl = $('.right-pag').find('.pad-title');
+                    var $rightDt = $('.right-pag').find('.pad-dates');
+                    var $leftTtl = $('.left-pag').find('.pad-title');
+                    var $leftDt = $('.left-pag').find('.pad-dates');
 
                     //Find clicked nodes texts
-                    var thisTtl = $($tabsArray[currentTabNumber]).find('.ttl').text();
-                    var thisDt = $($tabsArray[currentTabNumber]).find('.dt').text();
+                    var thisTtl = $($tabsArray[currentTabNumber]).find('.dropdown-text-title').text();
+                    var thisDt = $($tabsArray[currentTabNumber]).find('.dropdown-text-dates').text();
+                    var previousTtl = $($tabsArray[currentTabNumber - 1]).find('.dropdown-text-title').text();
+                    var previousDt = $($tabsArray[currentTabNumber - 1]).find('.dropdown-text-dates').text();
 
                     //Insert text into parent label node
                     $ttl.text(thisTtl);
                     $dt.text(thisDt);
+                    $rightTtl.text(thisTtl);
+                    $rightDt.text(thisDt);
+                    $leftTtl.text(previousTtl);
+                    $leftDt.text(previousDt);
 
-                    var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 300);
+                    setTimeout(function(){
+                        var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
+                    }, 300);
                 };
-                if (currentTabNumber === 3) {
-                    $(node).closest('.event-dates').addClass('off');
+                if (currentTabNumber === ($tabPanels.length - 1)) {
+                    // $(node).closest('.event-dates').addClass('off');
+                    $(node).addClass('off');
                 };
             } else {
                 if (currentTabNumber > 0) {
@@ -795,32 +809,48 @@ $(function() {
                     });
                     $('#weeks-tab a:eq(' + currentTabNumber + ')').tab('show');
                     $tabsArray.each(function() {
-                        $(this).removeClass('active');
+                        $(this).removeClass('active pressed');
                     });
-                    $($tabsArray[currentTabNumber]).addClass('active');
-                    var $upperLabel = $tabsArray.closest('.btn-dropdown').find('.col-left');
-                    var $ttl = $upperLabel.find('.ttl');
-                    var $dt = $upperLabel.find('.dt');
+                    $($tabsArray[currentTabNumber]).addClass('active pressed');
+                    var $upperLabel = $tabsArray.closest('.button-dropdown').find('.button-dropdown-text');
+                    var $ttl = $upperLabel.find('.dropdown-text-title');
+                    var $dt = $upperLabel.find('.dropdown-text-dates');
+                    var $leftTtl = $('.left-pag').find('.pad-title');
+                    var $leftDt = $('.left-pag').find('.pad-dates');
+                    var $rightTtl = $('.right-pag').find('.pad-title');
+                    var $rightDt = $('.right-pag').find('.pad-dates');
 
                     //Find clicked nodes texts
-                    var thisTtl = $($tabsArray[currentTabNumber]).find('.ttl').text();
-                    var thisDt = $($tabsArray[currentTabNumber]).find('.dt').text();
+                    var thisTtl = $($tabsArray[currentTabNumber]).find('.dropdown-text-title').text();
+                    var thisDt = $($tabsArray[currentTabNumber]).find('.dropdown-text-dates').text();
+                    var nextTtl = $($tabsArray[currentTabNumber + 1]).find('.dropdown-text-title').text();
+                    var nextDt = $($tabsArray[currentTabNumber + 1]).find('.dropdown-text-dates').text();
 
                     //Insert text into parent label node
                     $ttl.text(thisTtl);
                     $dt.text(thisDt);
+                    $leftTtl.text(thisTtl);
+                    $leftDt.text(thisDt);
+                    $rightTtl.text(nextTtl);
+                    $rightDt.text(nextDt);
 
-                    var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 300);
+                     setTimeout(function(){
+                        var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
+                    }, 300);
                 };
                 if (currentTabNumber === 0) {
-                    $(node).closest('.event-dates').addClass('off');
+                    // $(node).closest('.event-dates').addClass('off');
+                    $(node).addClass('off');
                 };
             };
         };
-        $leftPaging.on('click touchstart', function() {
+        $leftPaging.on('click touchend', function() {
             sideClick('left', this);
         });
-        $rightPaging.on('click touchstart', function() {
+        $rightPaging.on('click touchend', function() {
             sideClick('right', this);
         });
         $(window).resize(function() {
@@ -828,6 +858,8 @@ $(function() {
         });
     };
 
+
+    //***************Gallery page*****************//
     cubeObj.galleryPage = function() {
         var $galleryContainer = $('.gallery-tiles');
         var $galleryText = $('.gall-close');
@@ -839,7 +871,7 @@ $(function() {
         var $galleryHeader = $('.gallery-tiles h1');
         var $curentImageContainer = '';
         var $allImgContainers = $('.gallery-tile');
-
+        var $videoIframes = $('.content-video.hiddens');
 
         var events = new EventAnimate($('.top-event'));
         var blogs = new EventAnimate($('.blog-item-def'));
@@ -850,61 +882,116 @@ $(function() {
         tinyAnimations.radioButton($('.rb-lb'));
         tinyAnimations.checkboxButton($('.chb-lb'));
 
-        //Counts all images 
+        //Cunts all videos and images from gallery
+        function countImgAndVideos() {
+
+        };
+
+        //Counts current image on init of gallery
         function countImages() {
-            var $allImgContainers = $('.gallery-tile');
-            var imagesLength = $allImgContainers.length;
+            console.log('Init images count');
+            var $galleryTiles = $('.gallery-tile');
+            var imagesLength = $galleryTiles.length;
             var $currentImg = $('#imagelightbox');
             var currentImageNumber = 1;
-
             for (var i = 0; i < imagesLength; i++) {
-                if ($allImgContainers[i].href === $curentImageContainer[0].href) {
+                if ($galleryTiles[i].href === $curentImageContainer[0].href) {
                     currentImageNumber = i + 1;
                 };
             };
             $imagesCounter.text(currentImageNumber + '/' + imagesLength);
         };
 
+        //Count images and videos on every navigation click
+        function imgCounter() {
+            var $openedImage = $('#imagelightbox');
+            var $galleryTiles = $('.gallery-tile');
+            var $target = $('.gallery-tile' + '[href="' + $openedImage.attr('src') + '"]');
+            var index = $target.index('.gallery-tile');
+            console.log(index);
+            $imagesCounter.text((index + 1) + '/' + $galleryTiles.length);
+        };
+
+        //Click navigation of gallery
+        function clickGalleryNavigation(direction) {
+            var $openedImage = $('#imagelightbox');
+            var $galleryTiles = $('.gallery-tile');
+            var $target = $('.gallery-tile' + '[href="' + $openedImage.attr('src') + '"]');
+            var index = $target.index('.gallery-tile');
+            if (direction === 'left') {
+                index = index - 1;
+                if (!$galleryTiles.eq(index).length) {
+                    index = $galleryTiles.length;
+                };
+            } else {
+                index = index + 1;
+                if (!$galleryTiles.eq(index).length) {
+                    index = 0;
+                };
+            };
+            $galleryLightBox.switchImageLightbox(index);
+            return false;
+        };
+
+        //Init the nodes and gallery
         function showGalleryPicture() {
             var $images = $('.gallery-tile');
             $allImgContainers = $('.gallery-tile');
             if (!$('.imageLightboxWrap').length) {
                 var wrapper = '<div class="imageLightboxWrap"></div>';
+                var loader = '<img class="loader-gif" src="images/ajax-loader.gif" alt="">';
                 var prevNavigation = '<div class="lightbox-prev"></div>';
                 var nextNavigation = '<div class="lightbox-next"></div>';
                 $(wrapper).appendTo('body');
+                $(loader).appendTo('body');
                 $(prevNavigation).appendTo('body');
                 $(nextNavigation).appendTo('body');
+
+                $('.lightbox-prev').on('click touchend', function() {
+                    clickGalleryNavigation('left');
+                });
+                $('.lightbox-next').on('click touchend', function() {
+                    clickGalleryNavigation('right');
+                });
             } else {
                 $('.imageLightboxWrap').fadeIn();
                 $('.lightbox-prev').show();
                 $('.lightbox-next').show();
+                $('.loader-gif').show();
             };
-            // $images.css('visibility', 'hidden');
-
             $scrollButton.hide();
             $galleryCount.hide();
             $allImagesBlock.show();
-            // $galleryHeader.hide();
-
             countImages();
         };
 
+        //Hide all nodea on gallery exit
         function exitGalleryPicture() {
             var $images = $('.gallery-tile');
             var $wrapper = $('.imageLightboxWrap');
             var $prevNavigation = $('.lightbox-prev');
             var $nextNavigation = $('.lightbox-next');
+            var $loader = $('.loader-gif');
+            $loader.hide();
             $wrapper.fadeOut();
             $prevNavigation.hide();
             $nextNavigation.hide();
-            // $images.css('visibility', 'visible');
             $allImagesBlock.hide();
-            // $galleryHeader.show();
             $scrollButton.show();
             $galleryCount.show();
         };
 
+        //Gallery loader picture
+        function galleryLoader(flag) {
+            var $loader = $('.loader-gif');
+            if (flag === true) {
+                $loader.show();
+            } else {
+                $loader.hide();
+            };
+        };
+
+        //Init the gallery
         var $galleryLightBox = $('.gallery-tile').imageLightbox({
             selector: 'id="imagelightbox"', // string;
             allowedTypes: 'png|jpg|jpeg|gif', // string;
@@ -920,22 +1007,28 @@ $(function() {
             onEnd: function() {
                 exitGalleryPicture();
             }, // function/bool;   calls function when the lightbox quits
-            onLoadStart: false, // function/bool;   calls function when the image load begins
-            onLoadEnd: false // function/bool;   calls function when the image finishes loading
+            onLoadStart: function() {
+                galleryLoader(true);
+
+            }, // function/bool;   calls function when the image load begins
+            onLoadEnd: function() {
+                galleryLoader(false);
+                imgCounter();
+            } // function/bool;   calls function when the image finishes loading
         });
 
-        $scrollButton.on('click', function() {
+        //Toogle modes on gallery page
+        $scrollButton.on('click touchend', function() {
             if ($galleryText.hasClass('active')) {
-
                 $scrollButton.find('.scroll-down-inner').text('about this event');
-                // $galleryContainer.slideDown(700);
+                setTimeout(function() {
+                    $videoIframes.removeClass('active');
+                }, 300);
                 $galleryContainer.animate({
                     top: 0
                 }, 700);
                 setTimeout(function() {
                     $galleryContainer.removeClass('top');
-                    // $scrollButton.removeClass('active');
-                    // $borderGallery.removeClass('active');
                     $galleryText.removeClass('active');
                     $('html,body').scrollTop(0);
                 }, 700);
@@ -943,17 +1036,16 @@ $(function() {
                 $borderGallery.removeClass('active');
             } else {
                 $borderGallery.addClass('active');
+                setTimeout(function() {
+                    $videoIframes.addClass('active');
+                }, 300);
                 $scrollButton.addClass('active top');
                 $scrollButton.find('.scroll-down-inner').text('to gallery');
-
                 $galleryContainer.addClass('top');
                 $galleryContainer.animate({
                     top: -($galleryContainer.outerHeight())
                 }, 700);
                 $galleryText.addClass('active');
-                //  $galleryText.addClass('active');
-                // $galleryText.addClass('active');
-                // $galleryContainer.slideUp(700);
                 $('html, body').animate({
                     scrollTop: 0
                 }, 700);
