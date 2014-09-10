@@ -67,7 +67,8 @@
                 swipe: true,
                 touchMove: true,
                 touchThreshold: 5,
-                vertical: false
+                vertical: false,
+                tiles: false
             };
 
             _.initials = {
@@ -139,6 +140,9 @@
             _.dragHandler = $.proxy(_.dragHandler, _);
             _.keyHandler = $.proxy(_.keyHandler, _);
             _.autoPlayIterator = $.proxy(_.autoPlayIterator, _);
+
+            //Custom
+            // _.tileSlide = $.proxy(_.tileSlide, _);
 
             _.instanceUid = instanceUid++;
 
@@ -684,6 +688,9 @@
             _.loadSlider();
             _.initializeEvents();
             _.checkResponsive();
+
+            //Custom
+            _.tileSlide();
         }
 
         if (_.options.onInit !== null) {
@@ -1051,6 +1058,31 @@
 
     };
 
+
+    //Custom tile slide
+    Slick.prototype.tileSlide = function(){
+        var _ = this;
+        var panels = [].slice.call(document.querySelectorAll('.s-panel'));
+        var slides = [].slice.call(document.querySelectorAll('.container-fluidss'));
+        var panelsCount = panels.length;
+        if (_.options.tiles === true) {
+
+            $(panels).height(window.innerHeight);
+            $(slides).height(window.innerHeight);
+
+            panels.forEach(function(panel) {
+            var img = panel.querySelector('img'),
+                imgInsertion = '';
+            for (var i = 0; i < 4; i++) {
+                imgInsertion += '<div class="bg-tile"><div class="bg-img"><img src="' + img.src + '" /></div></div>';
+            };
+            panel.removeChild(img);
+            panel.innerHTML = imgInsertion + panel.innerHTML;
+        });
+        };
+
+    };
+
     Slick.prototype.setFade = function() {
 
         var _ = this,
@@ -1228,12 +1260,14 @@
 
     Slick.prototype.slideHandler = function(index) {
 
+
         var targetSlide, animSlide, slideLeft, unevenOffset, targetLeft = null,
             _ = this;
 
+
         if (_.animating === true) {
             return false;
-        }
+        };
 
         targetSlide = index;
         targetLeft = _.getLeft(targetSlide);
@@ -1276,6 +1310,34 @@
         _.currentSlide = animSlide;
         _.updateDots();
         _.updateArrows();
+
+        //Custom
+        if (_.options.tiles === true) {
+            var _index = index;
+            if (_index < 0) {
+                _index = 0;
+            } else {_index = _index;};
+
+            var tile = $('.s-panel')[_index];
+            var transforms = {
+            'effect-1': ['translate3d(-' + (window.innerWidth / 2 + 10) + 'px, 0, 0)',
+                'translate3d(' + (window.innerWidth / 2 + 10) + 'px, 0, 0)',
+                'translate3d(-' + (window.innerWidth / 2 + 10) + 'px, 0, 0)',
+                'translate3d(' + (window.innerWidth / 2 + 10) + 'px, 0, 0)'
+                ]
+            };
+
+            [].slice.call(tile.querySelectorAll('div.bg-img')).forEach(function(tile, pos) {
+            tile.style.WebkitTransform = transforms['effect-1'][pos];
+            tile.style.transform = transforms['effect-1'][pos];
+            });
+
+            console.log('Tile Animate', _index)
+            setTimeout(function(){
+                _.postSlide(animSlide);
+            }, 1100);
+            return false;
+        };
 
         if (_.options.fade === true) {
             _.fadeSlide(animSlide, function() {

@@ -15,7 +15,7 @@
 .left-pag, .right-pag {display: block;cursor: pointer;}
 .left-pag {float: left;}
 .right-pag {float: right;}
-.left-pag .pad-arr, .right-pag .pad-arr {display: block;width: 55px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
+.left-pag .pad-arr, .right-pag .pad-arr {display: block;width: 40px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
 .left-pag .pad-arr {float: left;}
 .right-pag .pad-arr {float: right;}
 .left-pag.sm .pad-arr, .right-pag.sm .pad-arr {height: 52px;}
@@ -23,7 +23,7 @@
 .left-pag .pad-arr i {background-position: -330px -39px;}
 .right-pag .pad-arr i {background-position: -361px -39px;}
 .left-pag.sm .pad-arr i, .right-pag.sm .pad-arr i {margin-top: 13px;}
-.left-pag .pad-text, .right-pag .pad-text {display: block;padding: 13px 18px;border:1px solid $light-reddy-color;@include transitions(.3s);}
+.left-pag .pad-text, .right-pag .pad-text {display: block;padding: 13px 14px;border:1px solid $light-reddy-color;@include transitions(.3s);}
 .left-pag .pad-text {float: right;border-left:0 none;}
 .right-pag .pad-text {float: left;border-right:0 none;}
 .left-pag .pad-title, .right-pag .pad-title {display: block;text-transform: uppercase;font-family:$pt-sans ;font-size:24px;line-height:24px;color:$orange-color;@include transitions(.3s);}
@@ -46,6 +46,14 @@
 .left-pag.pressed .pad-text {border-left:0 none;}
 .right-pag.pressed .pad-text {border-right:0 none;}
 .left-pag.pressed .pad-title, .right-pag.pressed .pad-title {color:$d35a33;}
+
+@media screen and (min-width: 768px) {
+
+.left-pag .pad-arr, .right-pag .pad-arr {width: 55px;}
+.left-pag .pad-text, .right-pag .pad-text {padding: 13px 18px;}
+
+}
+
 
 /* ========================================================================
  * Custom buttons "Button Slider"
@@ -331,7 +339,9 @@ table.club-table tr.padding-b-no td {padding-top: 0;padding-bottom: 0;}
  * Custom buttons "menu"
  * ======================================================================== */
 ul.mob-menu {display: block;float: left;list-style: none;margin-bottom: 0;padding-left: 0;box-shadow: 0 0 15px rgba(0,0,0,0.25);}
-.page-text ul.mob-menu {padding-left: 0;}
+ul.mob-menu {padding-left: 0;list-style:none;}
+ul.mob-menu li:before {display: none;content: none;}
+.page-text ul.mob-menu li {padding-left: 0px!important;}
 .mob-menu li a {display: block;min-width: 175px;padding: 18px 20px;border-bottom: 1px solid $lighter-grey-color;font-family: $pt-sans;font-size: 16px;color: $reddy-color;@include transitions(.3s);}
 .mob-menu li:last-child a {border-bottom: none;}
 
@@ -394,16 +404,37 @@ input[type="checkbox"]:checked + label.chb-lb.active:after {width: 12px;height: 
 
 
 /* ========================================================================
+ * Bootstrap inputs
+ * ======================================================================== */
+.form-control:focus, textarea:focus {
+    border:2px solid $reddy-color!important;
+    box-shadow: none;
+    outline:none;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   -moz-transition: none;
+   -webkit-transition: none;
+}
+
+.input-group {width: 100%;}
+.form-group {overflow: hidden;}
+.control-label {font-family:$pt-sans;font-size: 18px;font-weight: normal;line-height: 45px;}
+table.club-table .form-group {margin-bottom: 0;}
+table.club-table label {margin-bottom: 0;}
+
+.form-control {height: auto;padding: 11px 14px;border:2px solid $ccc-color;font-family: $pt-sans-it;font-size: 18px;}
+
+/* ========================================================================
  * Custom inputs "Text"
  * ======================================================================== */
- table.club-table input.text-input {width: 282px;}
+ table.club-table input.text-input {height: auto;width: 280px;}
  input.text-input {display: block;float: left;padding: 11px 14px;border:2px solid $ccc-color;background:$white-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
  input.text-input[placeholder] {font-family: $pt-sans-it;color:$grey-color;font-size: 18px;@include transitions(.3s);}
 
  input.text-input.off, input.text-input.off:focus {border:2px solid $lighter-grey-color;background:$bg-f9-color;@include transitions(.3s);}
  input.text-input.off[placeholder] {color: $ccc-color;@include transitions(.3s);}
 
- input.text-input:focus, input.text-input.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
+input.text-input.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
 
  /* ========================================================================
  * Custom inputs "Subscribe"
@@ -415,7 +446,7 @@ table.club-table .subscr-input {width: 185px;}
 .subscr-input.off, .subscr-input.off:focus {border:2px solid $lighter-grey-color;background:$bg-f9-color;@include transitions(.3s);}
 .email-lb.off {color: $ccc-color;@include transitions(.3s);}
 
-.subscr-input:focus, .subscr-input.pressed {border:2px solid $reddy-color;font-family:$pt-sans;@include transitions(.3s);}
+.subscr-input.pressed {border:2px solid $reddy-color!important;font-family:$pt-sans;@include transitions(.3s);}
  /* ========================================================================
  * Custom inputs "Select"
  * ======================================================================== */
@@ -442,9 +473,9 @@ select.select option:hover, select.select option:focus {
  * Custom inputs "Textarea"
  * ======================================================================== */
   table.club-table .text-area {width: 282px;height: 130px;}
- .text-area {display: block;float: left;padding: 11px 14px;font-family: $pt-sans-it;color:$grey-color;border:2px solid $ccc-color;font-size: 18px;@include transitions(.3s);resize: none;}
- .text-area.off, .text-area.off:focus {border:2px solid $lighter-grey-color;color:$ccc-color;background: $bg-f9-color;@include transitions(.3s);}
- .text-area:focus, .text-area.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
+ textarea {display: block;float: left;padding: 11px 14px;font-family: $pt-sans-it;color:$grey-color;border:2px solid $ccc-color;font-size: 18px;@include transitions(.3s);resize: none;}
+ textarea.off, textarea.off:focus {border:2px solid $lighter-grey-color;color:$ccc-color;background: $bg-f9-color;@include transitions(.3s);}
+textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
 
  /* ========================================================================
  * Custom inputs "Text error"
@@ -454,3 +485,10 @@ select.select option:hover, select.select option:focus {
  table.club-table input.required {width: 626px;}
  input.submit {display: block;float: left;font-family: $pt-sans;font-size: 18px;font-weight: normal;text-transform: uppercase;color:$white-color;padding: 13px 16px;background:$reddy-color;outline: none;border:none;@include transitions(.3s);margin-left: 15px;margin-right: 15px;}
  input.submit:hover {background:$orange-color;@include transitions(.3s);}
+
+
+
+ /* ========================================================================
+ * Tables
+ * ======================================================================== */
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {background-color:$efefef;}
