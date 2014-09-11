@@ -2847,12 +2847,6 @@ input[type="button"].btn-block {
     right: auto;
   }
 }
-.datepicker.dropdown-menu {
-  background-color: #e15e32 !important;
-  z-index: 5;
-  border: 6px solid #f07e4f !important;
-}
-
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -5665,6 +5659,12 @@ input:focus {
   padding-top: 45px;
 }
 
+.datepicker.dropdown-menu {
+  background-color: #e15e32 !important;
+  z-index: 5;
+  border: 6px solid #f07e4f !important;
+}
+
 .clear-mard {
   margin: 10px 0;
 }
@@ -6279,6 +6279,19 @@ input:focus {
 }
 
 .container-fluidss .s-panel {
+  position: absolute;
+}
+
+.container-fluidss {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-fluidss .s-panel {
   top: 0;
   left: 0;
   width: 100%;
@@ -6503,65 +6516,6 @@ main {
   background: #f9f9f9;
 }
 
-.navbar-nav {
-  font-family: Verdana, sans-serif;
-}
-
-.navbar-nav > li > a.main-heading-a {
-  font-size: 16px;
-}
-
-.navbar-nav > li > a.sub-heading-a {
-  font-size: 14px;
-}
-
-.header-top {
-  position: fixed;
-  left: 0;
-  height: 50px;
-  z-index: 15;
-}
-
-.header-top.active {
-  animation-duration: .5s;
-  animation-name: popUp;
-  animation-timing-function: easeOutSine;
-}
-
-@keyframes popUp {
-  from {
-    top: -56px;
-  }
-
-  to {
-    top: 0px;
-  }
-}
-.header-top .nav > li > a.dropdown-toggle.main-heading-a {
-  font-size: 14px;
-  padding: 18px 15px 22px 15px;
-  line-height: 14px;
-}
-
-.header-top .nav.nav-top > li > a {
-  padding: 18px 15px 22px 15px;
-  line-height: 14px;
-}
-
-.header-top .top-events .navbar-nav > li.dropdown {
-  border-top: none;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-}
-
-.header-top .navbar-nav > li.dropdown:hover {
-  background: #912a41;
-}
-
-:focus {
-  outline: none;
-}
-
 .btn-custom {
   color: #999999;
   border: 1px solid #cccccc;
@@ -6724,6 +6678,65 @@ main {
   color: #5c323e;
 }
 
+.navbar-nav {
+  font-family: Verdana, sans-serif;
+}
+
+.navbar-nav > li > a.main-heading-a {
+  font-size: 16px;
+}
+
+.navbar-nav > li > a.sub-heading-a {
+  font-size: 14px;
+}
+
+.header-top {
+  position: fixed;
+  left: 0;
+  height: 50px;
+  z-index: 15;
+}
+
+.header-top.active {
+  animation-duration: .5s;
+  animation-name: popUp;
+  animation-timing-function: easeOutSine;
+}
+
+@keyframes popUp {
+  from {
+    top: -56px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+.header-top .nav > li > a.dropdown-toggle.main-heading-a, .header-top .nav > li > span.dropdown-toggle.main-heading-a {
+  font-size: 14px;
+  padding: 18px 15px 23px 15px;
+  line-height: 14px;
+}
+
+.header-top .nav.nav-top > li > a, .header-top .nav.nav-top > li > span {
+  padding: 18px 15px 22px 15px;
+  line-height: 14px;
+}
+
+.header-top .top-events .navbar-nav > li.dropdown {
+  border-top: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.header-top .navbar-nav > li.dropdown:hover {
+  background: #912a41;
+}
+
+:focus {
+  outline: none;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -6773,11 +6786,12 @@ header .row, .header-top .row {
   overflow: visible;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > li > a, li.dropdown > span.dropdown-toggle {
   font-size: 16px;
   background: white;
   color: black;
   text-align: right;
+  cursor: pointer;
 }
 
 .dropdown-menu > li > a, .dropdown-menu > li > span {
@@ -6793,7 +6807,7 @@ header .row, .header-top .row {
   border-top: 1px solid #cbcbcb;
 }
 
-.nav > li > a.dropdown-toggle.main-heading-a {
+.nav > li > a.dropdown-toggle.main-heading-a, .nav > li > span.dropdown-toggle.main-heading-a {
   padding: 10px 20px;
 }
 
@@ -6822,7 +6836,7 @@ header .row, .header-top .row {
   transform: rotate(90deg);
 }
 
-.dropdown-menu > li > a, .dropdown-menu > li > span {
+.dropdown-menu > li > a {
   padding: 10px 20px;
   color: black;
   border-bottom: 2px solid transparent;
@@ -6859,12 +6873,13 @@ header .row, .header-top .row {
   border-left: 1px solid transparent;
 }
 
-.navbar-nav > li > a, .nav > li > a.dropdown-toggle.main-heading-a {
+.navbar-nav > li > a, .nav > li > a.dropdown-toggle.main-heading-a, .nav > li > span.dropdown-toggle.main-heading-a {
+  display: block;
   padding: 18px 15px 22px;
   line-height: 14px;
 }
 
-.nav > li > a.dropdown-toggle.main-heading-a, .navbar-nav > li > a, .navbar-nav > li > a.main-heading-a {
+.nav > li > a.dropdown-toggle.main-heading-a, .navbar-nav > li > a, .navbar-nav > li > a.main-heading-a, .navbar-nav > li > span.main-heading-a {
   font-size: 14px;
 }
 
@@ -11156,7 +11171,7 @@ blockquote a:hover {
     overflow: visible;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav > li > a, .navbar-nav > li > span.dropdown-toggle {
     font-size: 16px;
     background: white;
     color: black;
@@ -13431,7 +13446,7 @@ blockquote a:hover {
     float: right;
   }
 
-  header .nav > li > a.dropdown-toggle.main-heading-a, header .navbar-nav > li > a {
+  header .nav > li > a.dropdown-toggle.main-heading-a, header .navbar-nav > li > a, li.dropdown > span.dropdown-toggle {
     font-size: 16px;
     background: transparent;
     color: white;
@@ -17229,8 +17244,19 @@ input[type="checkbox"]:checked + label.chb-lb.active:after {
 /* ========================================================================
  * Bootstrap inputs
  * ======================================================================== */
-.form-control:focus, textarea:focus {
+input.form-control:focus, textarea:focus {
   border: 2px solid #a82743 !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+select.form-control:focus {
+  border: 2px solid #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, textarea:focus {
   box-shadow: none;
   outline: none;
   -webkit-box-shadow: none;
@@ -17251,7 +17277,10 @@ input[type="checkbox"]:checked + label.chb-lb.active:after {
   font-family: "PT Sans reg", sans-serif;
   font-size: 18px;
   font-weight: normal;
-  line-height: 45px;
+}
+
+.form-horizontal .control-label {
+  padding-top: 11px;
 }
 
 table.club-table .form-group {
@@ -17268,119 +17297,38 @@ table.club-table label {
   border: 2px solid #cccccc;
   font-family: "PT Sans it", sans-serif;
   font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.control-label.off {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form-control.pressed {
+  border: 2px solid #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* ========================================================================
  * Custom inputs "Text"
  * ======================================================================== */
-table.club-table input.text-input {
-  height: auto;
-  width: 280px;
-}
-
-input.text-input {
-  display: block;
-  float: left;
-  padding: 11px 14px;
-  border: 2px solid #cccccc;
-  background: white;
-  font-family: "PT Sans reg", sans-serif;
-  color: black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-input.text-input[placeholder] {
-  font-family: "PT Sans it", sans-serif;
-  color: #999999;
-  font-size: 18px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-input.text-input.off, input.text-input.off:focus {
-  border: 2px solid #e2e2e2;
-  background: #f9f9f9;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-input.text-input.off[placeholder] {
-  color: #cccccc;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-input.text-input.pressed {
-  border: 2px solid #a82743;
-  font-family: "PT Sans reg", sans-serif;
-  color: black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 /* ========================================================================
 * Custom inputs "Subscribe"
 * ======================================================================== */
-.subscr-input {
-  display: block;
-  height: 45px;
-  padding: 10px 15px;
-  border: 2px solid #cccccc;
-  background: white;
-  font-family: "PT Sans reg", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  color: black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-table.club-table .subscr-input {
-  width: 185px;
-}
-
-.email-lb {
-  display: block;
-  float: left;
-  font-family: "PT Sans reg", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 45px;
-  margin-right: 15px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.subscr-input.off, .subscr-input.off:focus {
-  border: 2px solid #e2e2e2;
-  background: #f9f9f9;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.email-lb.off {
-  color: #cccccc;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.subscr-input.pressed {
-  border: 2px solid #a82743 !important;
-  font-family: "PT Sans reg", sans-serif;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 /* ========================================================================
 * Custom inputs "Select"
 * ======================================================================== */
 .select-dropdown {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
-select.select {
+select.form-control {
   display: block;
   height: 53px;
   float: left;
@@ -17434,21 +17382,25 @@ select.select {
   pointer-events: none;
 }
 
-table.club-table select.select {
-  width: 282px;
-}
-
-select.select option {
+select.form-control option {
   font-family: "PT Sans reg", sans-serif;
   color: black;
   padding: 11px 14px;
 }
 
-select.select option:hover, select.select option:focus {
+select.form-control option:hover, select.form-control option:focus {
   background: #a82743;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.select-dropdown.off select.select, .select-dropdown.off:hover select.select {
+.select-dropdown:hover select.form-control {
+  border: 2px solid #a82743 !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.select-dropdown.off select.form-control, .select-dropdown.off:hover select.form-control {
   border: 2px solid #e2e2e2;
   background: #f9f9f9;
   -webkit-transition: all 0.3s ease;
@@ -17467,7 +17419,7 @@ select.select option:hover, select.select option:focus {
   cursor: default;
 }
 
-.select-dropdown.pressed select.select, .select-dropdown.pressed select.select:focus, .select-dropdown:hover select.select, .select-dropdown.pressed:hover select.select {
+.select-dropdown.pressed select.form-control, .select-dropdown.pressed select.form-control:focus, .select-dropdown:hover select.form-control, .select-dropdown.pressed:hover select.form-control {
   border: 2px solid #a82743;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -17482,11 +17434,6 @@ select.select option:hover, select.select option:focus {
 /* ========================================================================
 * Custom inputs "Textarea"
 * ======================================================================== */
-table.club-table .text-area {
-  width: 282px;
-  height: 130px;
-}
-
 textarea {
   display: block;
   float: left;

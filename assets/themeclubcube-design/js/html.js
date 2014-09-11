@@ -39,16 +39,16 @@ $(function() {
     cubeObj.slider = function() {
         var $sliderNode = $('.slider');
         var $topEventsSLider = $('.top-events-sliders');
-        // window.tileSlide = new TileSlide(document.querySelector('.slider'));
-        $sliderNode.slick({
-            // slidesToShow: 1,
-            // fade: true,
-            // autoplay: true,
-            autoplaySpeed: 500000,
-            // draggable: true,
-            speed: 2000,
-            tiles: true
-        });
+        window.tileSlide = new TileSlide(document.querySelector('.slider'));
+        // $sliderNode.slick({
+        //     // slidesToShow: 1,
+        //     // fade: true,
+        //     // autoplay: true,
+        //     autoplaySpeed: 500000,
+        //     // draggable: true,
+        //     speed: 2000,
+        //     tiles: true
+        // });
 
         //Bind Tile Slide
         // if (document.querySelector('.slider')) {
@@ -533,7 +533,9 @@ $(function() {
         });
         //Prevent toogle menu to clicking
         $('.dropdown-toggle').on('click touchstart', function(event) {
-            event.preventDefault();
+            if (window.innerWidth > 990) {
+                event.preventDefault();
+            };
         });
     },
 
@@ -796,7 +798,7 @@ $(function() {
                     $('html, body').animate({
                         scrollTop: 0
                     }, 300);
-                    setTimeout(function(){
+                    setTimeout(function() {
                         var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
                     }, 300);
                 };
@@ -840,7 +842,7 @@ $(function() {
                     $('html, body').animate({
                         scrollTop: 0
                     }, 300);
-                     setTimeout(function(){
+                    setTimeout(function() {
                         var topEventCon = new EventAnimate($('.tab-pane.active .top-event'));
                     }, 300);
                 };
