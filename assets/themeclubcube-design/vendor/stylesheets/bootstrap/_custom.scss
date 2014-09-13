@@ -730,7 +730,7 @@ main.content-main {background:none;}
 aside {padding-bottom: 50px;overflow: hidden;}
 aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 // .items-aside {padding-top: 50px;padding-bottom: 40px;}
-.main-content {position: relative;}
+.main-content {position: relative;padding-bottom: 40px;}
 .text-contain {position: relative;z-index: 9;}
 .content-main {background:$white-color;padding-bottom: 20px;}
 .event-view {height: 346px;position: relative;background:url('../images/event-veiw.jpg') center no-repeat;padding-top: 100px;overflow: hidden;}
@@ -1034,15 +1034,19 @@ aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 .content-header {position: relative;padding-top: 100px;padding-bottom: 50px;overflow: hidden;}
 .content-header .img-responsive {height: 100%;max-width:none;position: absolute;top: 0;z-index: 6;}
 .content-header .pattern {background:url("../images/pattern.png") repeat scroll left top rgba(0, 0, 0, 0.2);}
-.content-header.white-img .content-h1, .content-header.white-img .top-event-place.blog-view-descr {color:$white-color;}
+.content-header .content-h1, .content-header .top-event-place.blog-view-descr {color:$white-color;}
 .content-h1 {font-size: $header2-font-size;font-family: $pt-sans-bold;color:$black-color;line-height: $header2-font-size;text-transform: none;}
 .top-event-place.blog-view-descr {font-family: $pt-sans;font-size: 13px;line-height: 30px;text-transform: none;}
 // .absi aside.items-aside {padding-top: 0;}
 // aside.items-aside .event-dates {margin-top: 50px;}
+.content-header.white-img .content-h1 {color:$black-color;}
+.content-header.white-img .top-event-place.blog-view-descr {color:$grey-color;}
+.main-content__grey-border {background:$bg-f9-color;border-top: 1px solid $lighter-grey-color;}
 aside.items-aside .date-no-border .ttl {line-height: 36px;}
 aside.items-aside .blog-item-def .item-title {height: auto;}
+.content-main__side-header {font-size: $header3-font-size;color:$orange-color;text-transform: uppercase;padding-top: 10px;padding-bottom: 25px;}
 .content-page {padding-top: 30px;}
-.page-text .content-intro {font-family: $pt-sans-it;font-size: 20px;line-height: 30px;margin-bottom: 10px;}
+.page-text .lead {font-family: $pt-sans-it;font-size: 20px;line-height: 30px;margin-bottom: 10px;}
 .video-content {margin-bottom: 30px;}
 .v-container {position: relative;padding-bottom: 56.25%;z-index: 9;}
 .v-container iframe.content-video {position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 9;}
@@ -1075,7 +1079,8 @@ blockquote p {font-family: $pt-sans;color:$brown-color;padding: 0 0 10px 0!impor
 blockquote a {font-family: $pt-sans;color:$orange-color;border-bottom: 1px solid $orange-color;}
 blockquote a:hover {color:$orange-color;}
 
-
+//404
+.ff-col {margin-top: 80px;margin-bottom: 60px;}
 
 
 @media screen and (min-width: 768px) and (max-width: $screen-lg) and (max-height: 767px) {
@@ -1572,6 +1577,10 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 .lightbox-prev {left: 30px;}
 .lightbox-next {right: 30px;}
 
+
+//404
+.ff-col {margin-top: 100px;margin-bottom: 90px;}
+
 }
 
 @media (min-width: $screen-md-min) { 
@@ -1993,7 +2002,8 @@ aside .blog-item-def .item-title {overflow: visible;}
 .paging	.event-dates.off .ttl, .paging	.event-dates.off .dt {color:$grey-color;}
 
 //Event view
-main.content-main {min-height: 1000px;padding-bottom: 100px;}
+// main.content-main {padding-bottom: 100px;}
+.text-contain {padding-bottom: 50px;}
 .event-h1 {font-size: $header2-font-size;line-height: $header2-font-size;margin-bottom: 5px;}
 .event-title-descr {font-size: $header3-font-size;line-height: $header3-font-size;}
 .event-sup {font-size:$header45-font-size;}
@@ -2038,6 +2048,7 @@ main.content-main {min-height: 1000px;padding-bottom: 100px;}
 
 .content-h1 {font-size: $header2-font-size;line-height: $header2-font-size;}
 .top-event-place.blog-view-descr {font-size: 13px;line-height: 30px;}
+.content-main__center-list, .content-header__center-list {width: 900px;margin: 0 auto;float: none;}
 // .content-figure .content-video {display: block;width: 750px;height:422px;}
 .img-side-right {max-width: 280px;}
 .img-full-width {margin:45px 0;}
@@ -2067,6 +2078,9 @@ blockquote {margin-left: 22px;}
 .lightbox-prev {left: 30px;}
 .lightbox-next {right: 30px;}
 
+//404
+.ff-col {margin-top: 150px;margin-bottom: 120px;}
+
 
 }
 
@@ -2076,6 +2090,6 @@ blockquote {margin-left: 22px;}
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
 .col-xm-6 {width: 50%;float: left;padding-left: $grid-gutter-width/2;padding-right: $grid-gutter-width/2;}
-
+.col-xm-offset-3 {margin-left: 25%;}
 .visible-xm-block {display: block;}
 }

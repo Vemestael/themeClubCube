@@ -9374,6 +9374,7 @@ aside .event-dates {
 
 .main-content {
   position: relative;
+  padding-bottom: 40px;
 }
 
 .text-contain {
@@ -10877,7 +10878,7 @@ aside .event-dates {
   background: url("../images/pattern.png") repeat scroll left top rgba(0, 0, 0, 0.2);
 }
 
-.content-header.white-img .content-h1, .content-header.white-img .top-event-place.blog-view-descr {
+.content-header .content-h1, .content-header .top-event-place.blog-view-descr {
   color: white;
 }
 
@@ -10896,6 +10897,19 @@ aside .event-dates {
   text-transform: none;
 }
 
+.content-header.white-img .content-h1 {
+  color: black;
+}
+
+.content-header.white-img .top-event-place.blog-view-descr {
+  color: #999999;
+}
+
+.main-content__grey-border {
+  background: #f9f9f9;
+  border-top: 1px solid #e2e2e2;
+}
+
 aside.items-aside .date-no-border .ttl {
   line-height: 36px;
 }
@@ -10904,11 +10918,19 @@ aside.items-aside .blog-item-def .item-title {
   height: auto;
 }
 
+.content-main__side-header {
+  font-size: 36px;
+  color: #e15e32;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
 .content-page {
   padding-top: 30px;
 }
 
-.page-text .content-intro {
+.page-text .lead {
   font-family: "PT Sans it", sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -11099,6 +11121,11 @@ blockquote a {
 
 blockquote a:hover {
   color: #e15e32;
+}
+
+.ff-col {
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) and (max-height: 767px) {
@@ -13297,6 +13324,11 @@ blockquote a:hover {
   .lightbox-next {
     right: 30px;
   }
+
+  .ff-col {
+    margin-top: 100px;
+    margin-bottom: 90px;
+  }
 }
 @media (min-width: 992px) {
   .single-paging {
@@ -15247,9 +15279,8 @@ blockquote a:hover {
     color: #999999;
   }
 
-  main.content-main {
-    min-height: 1000px;
-    padding-bottom: 100px;
+  .text-contain {
+    padding-bottom: 50px;
   }
 
   .event-h1 {
@@ -15387,6 +15418,12 @@ blockquote a:hover {
     line-height: 30px;
   }
 
+  .content-main__center-list, .content-header__center-list {
+    width: 900px;
+    margin: 0 auto;
+    float: none;
+  }
+
   .img-side-right {
     max-width: 280px;
   }
@@ -15493,6 +15530,11 @@ blockquote a:hover {
   .lightbox-next {
     right: 30px;
   }
+
+  .ff-col {
+    margin-top: 150px;
+    margin-bottom: 120px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .col-xm-6 {
@@ -15500,6 +15542,10 @@ blockquote a:hover {
     float: left;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .col-xm-offset-3 {
+    margin-left: 25%;
   }
 
   .visible-xm-block {
