@@ -248,7 +248,7 @@
 
 .button-dropdown.hidd .hidden-dv {}
 
-.events-tiles .button-dropdown #weeks-tab.hidden-dv {position: absolute;width: 220px;top: 70px;left: 0;display: none!important;z-index: 7;}
+.events-tiles .button-dropdown #weeks-tab.hidden-dv {position: absolute;width: 100%;top: 70px;left: 0;display: none!important;z-index: 8;}
 .events-tiles .button-dropdown.pressed #weeks-tab.hidden-dv {display: block!important;}
 }
 
@@ -289,7 +289,7 @@
 /* ========================================================================
  * Custom buttons "Tab"
  * ======================================================================== */
-.tab-custom {display: block;float: left;position: relative;padding: 16px 0;margin-right: 40px;cursor: pointer;}
+.tab-custom {display: block;width: 100%;float: left;position: relative;padding: 16px 0;margin-right: 40px;cursor: pointer;}
 .tab-custom:last-child  {margin-right: 0;}
 .tab-custom .dropdown-text-title {font-family: $pt-sans;font-size: 24px;line-height: 24px;color:$reddy-color;@include transitions(.3s);}
 .tab-custom	.dropdown-text-dates {font-family: $pt-sans;font-size: 12px;line-height: 18px;color:$light-black-color;@include transitions(.3s);}
@@ -319,7 +319,7 @@ table.club-table tr.padding-b-no td {padding-top: 0;padding-bottom: 0;}
 
 @media screen and (max-width: ($screen-lg)-1) {
 
-.tab-custom {width: 206px;margin-right: 0;padding: 16px 12px;border-bottom: 1px solid $lighter-grey-color;}
+.tab-custom {margin-right: 0;padding: 16px 12px;border-bottom: 1px solid $lighter-grey-color;}
 .tab-custom:last-child {border-bottom: none;}
 .tab-custom .tab-custom-line, .tab-custom:hover .tab-custom-line, .tab-custom.pressed .tab-custom-line {display: none;}
 
@@ -331,6 +331,7 @@ table.club-table tr.padding-b-no td {padding-top: 0;padding-bottom: 0;}
 
 @media screen and (min-width: $screen-lg) {
 
+.tab-custom {width: auto;}
 .tab-custom:hover .tab-custom-line, .tab-custom.hover .tab-custom-line {opacity: 1;background:$orange-color;@include transitions(.3s);}
 
 }
