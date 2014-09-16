@@ -59,15 +59,39 @@ $(function() {
         //     var defaultTileSlide = new TileSlide(document.querySelector('.slider-default'));
         // };
         $topEventsSLider.slick({
-            slidesToShow: 1,
-            fade: true,
-            dots: true,
-            arrows: false,
+            slidesToShow: 3,
+            arrows: true,
             easing: 'easeInExpo',
-            // autoplay: false,
             draggable: false,
             speed: 900,
-            swipe: false
+            swipe: true,
+            dots: true,
+            infinite:false,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false,
+                    dots: true
+                }
+            }, {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: false
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
+                }
+            }]
         });
 
         this.fullHeightSlides();
@@ -112,11 +136,11 @@ $(function() {
         partnerSlider();
     };
 
-    cubeObj.menuPreventClick = function(){
+    cubeObj.menuPreventClick = function() {
         var $menuLink = $('.dropdown-toggle');
 
-        $menuLink.click(function(){
-            
+        $menuLink.click(function() {
+
         });
     };
 
