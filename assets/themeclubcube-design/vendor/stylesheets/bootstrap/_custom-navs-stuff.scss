@@ -12,31 +12,26 @@
 /* ========================================================================
  * Custom buttons "Next-Prev"
  * ======================================================================== */
-.left-pag, .right-pag {display: block;cursor: pointer;}
+.left-pag, .right-pag {display: block;width: 140px;cursor: pointer;}
 .left-pag {float: left;}
 .right-pag {float: right;}
-.left-pag .pad-arr, .right-pag .pad-arr {display: block;width: 40px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
-.left-pag .pad-arr {float: left;}
-.right-pag .pad-arr {float: right;}
+.left-pag .pad-arr, .right-pag .pad-arr {display: block;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
+.left-pag .pad-arr {margin-right: 90px;}
+.right-pag .pad-arr {margin-left: 90px;}
 .left-pag.sm .pad-arr, .right-pag.sm .pad-arr {height: 52px;}
 .left-pag .pad-arr i, .right-pag .pad-arr i {display: inline-block;width: 20px;height: 28px;margin-top: 21px;background-image:url(../images/sprites.png);background-repeat: no-repeat;vertical-align: middle;}
 .left-pag .pad-arr i {background-position: -330px -39px;}
 .right-pag .pad-arr i {background-position: -361px -39px;}
 .left-pag.sm .pad-arr i, .right-pag.sm .pad-arr i {margin-top: 13px;}
-.left-pag .pad-text, .right-pag .pad-text {display: block;padding: 13px 14px;border:1px solid $light-reddy-color;@include transitions(.3s);}
-.left-pag .pad-text {float: right;border-left:0 none;}
-.right-pag .pad-text {float: left;border-right:0 none;}
+.left-pag .pad-text, .right-pag .pad-text {display: block;padding: 13px 0;@include transitions(.3s);}
+.left-pag .pad-text {text-align: left;}
+.right-pag .pad-text {text-align: right;}
 .left-pag .pad-title, .right-pag .pad-title {display: block;text-transform: uppercase;font-family:$pt-sans ;font-size:24px;line-height:24px;color:$orange-color;@include transitions(.3s);}
 .left-pag .pad-dates, .right-pag .pad-dates {display: block;font-family:$pt-sans;font-size: 12px;line-height: 18px;color:$reddy-color;@include transitions(.3s);}
 
-.left-pag:hover .pad-arr, .left-pag.hover .pad-arr, .right-pag:hover .pad-arr, .right-pag.hover .pad-arr {background:$orange-color;@include transitions(.3s);}
-.left-pag:hover .pad-title, .left-pag.hover .pad-title, .right-pag:hover .pad-title, .right-pag.hover .pad-title {color:$orange-color;@include transitions(.3s);}
-.left-pag:hover .pad-text, .left-pag.hover .pad-text {border:1px solid $orange-border-light;border-left:0 none;@include transitions(.3s);}
-.right-pag:hover .pad-text, .right-pag.hover .pad-text {border:1px solid $orange-border-light;border-right:0 none;@include transitions(.3s);}
 
 .left-pag.off, .right-pag.off {cursor: default;}
 .left-pag.off .pad-arr, .right-pag.off .pad-arr {background:$ccc-color;@include transitions(.3s);}
-.left-pag.off .pad-text, .right-pag.off .pad-text  {border:1px solid $e6e6e6;@include transitions(.3s);}
 .left-pag.off .pad-text {border-left:0 none;@include transitions(.3s);}
 .right-pag.off .pad-text {border-right:0 none;@include transitions(.3s);}
 .left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates  {color:$ccc-color;@include transitions(.3s);}
@@ -47,10 +42,25 @@
 .right-pag.pressed .pad-text {border-right:0 none;}
 .left-pag.pressed .pad-title, .right-pag.pressed .pad-title {color:$d35a33;}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
 
+.left-pag, .right-pag {width: auto;}
 .left-pag .pad-arr, .right-pag .pad-arr {width: 55px;}
 .left-pag .pad-text, .right-pag .pad-text {padding: 13px 18px;}
+.left-pag .pad-text, .right-pag .pad-text {padding: 13px 14px;border:1px solid $light-reddy-color;@include transitions(.3s);}
+.left-pag .pad-arr {float: left;margin-right: 0;}
+.right-pag .pad-arr {float: right;margin-left: 0;}
+.left-pag .pad-text {float: right;border-left:0 none;}
+.right-pag .pad-text {float: left;border-right:0 none;}
+.left-pag .pad-text {text-align:right;}
+.right-pag .pad-text {text-align:left;} 
+
+.left-pag:hover .pad-arr, .left-pag.hover .pad-arr, .right-pag:hover .pad-arr, .right-pag.hover .pad-arr {background:$orange-color;@include transitions(.3s);}
+.left-pag:hover .pad-title, .left-pag.hover .pad-title, .right-pag:hover .pad-title, .right-pag.hover .pad-title {color:$orange-color;@include transitions(.3s);}
+.left-pag:hover .pad-text, .left-pag.hover .pad-text {border:1px solid $orange-border-light;border-left:0 none;@include transitions(.3s);}
+.right-pag:hover .pad-text, .right-pag.hover .pad-text {border:1px solid $orange-border-light;border-right:0 none;@include transitions(.3s);}
+
+.left-pag.off .pad-text, .right-pag.off .pad-text  {border:1px solid $e6e6e6;@include transitions(.3s);}
 
 }
 

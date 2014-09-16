@@ -114,6 +114,10 @@ $(function() {
 
     cubeObj.menuPreventClick = function(){
         var $menuLink = $('.dropdown-toggle');
+
+        $menuLink.click(function(){
+            
+        });
     };
 
     //
