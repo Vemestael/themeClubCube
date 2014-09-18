@@ -188,6 +188,7 @@
 				self.navigation('next');
 			};
 		}, self.options.interval);
+		// console.log(self.options.interval);
 	};
 
 	// TileSlide.prototype.buildDots = functions() {

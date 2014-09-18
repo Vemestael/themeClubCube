@@ -6861,6 +6861,10 @@ header.header-top .home-btn {
   background: #e2e2e2;
 }
 
+.dropdown-menu > li.active span, .dropdown-menu > li.active a, .dropdown-menu > li.active a:hover, .dropdown-menu > li.active span:hover {
+  background: #e2e2e2;
+}
+
 .dropdown-menu > li > a, .dropdown-menu > li > span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
   padding: 17px 30px;
   color: black;
@@ -7193,6 +7197,7 @@ header.header-top .home-btn {
   margin-right: 15px;
   float: left;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .fb-soc .fb-icon, .tw-soc .tw-icon {
@@ -7295,7 +7300,7 @@ header.header-top .home-btn {
 }
 
 .guest-slider {
-  display: block;
+  margin-right: 10px;
 }
 
 .time-arr {
@@ -11666,7 +11671,7 @@ blockquote a:hover {
   }
 
   .guest-slider {
-    display: block;
+    margin-right: 20px;
   }
 
   .video-btn .left-btn {
@@ -12437,6 +12442,10 @@ blockquote a:hover {
 
   .top-events .head .event-dates {
     width: 250px;
+  }
+
+  .guest-slider {
+    margin-right: 20px;
   }
 
   .play-btn.video-play, .play-btn.watch-play {
@@ -13843,6 +13852,10 @@ blockquote a:hover {
   .scroll-down.active:hover .l-s-arr:before, .scroll-down.active:hover .r-s-arr:before, .scroll-down.active:hover .l-s-arr:after, .scroll-down.active:hover .r-s-arr:after {
     -webkit-animation: downUp 1s ease;
     animation: downUp 1s ease;
+  }
+
+  .guest-slider {
+    display: block;
   }
 
   @-webkit-keyframes upDown {
@@ -16017,6 +16030,7 @@ blockquote a:hover {
   bottom: auto;
   width: 45px;
   height: 55px;
+  z-index: 6;
   cursor: pointer;
   overflow: hidden;
 }

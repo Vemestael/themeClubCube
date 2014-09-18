@@ -272,7 +272,8 @@ header.header-top .home-btn {margin-top: 14px;}
 .navbar-nav .open .dropdown-menu, .navbar-nav .open .dropdown-menu li {background:$white-color;}
 .dropdown-menu>li {border-bottom: none;border-top: 1px solid $btn-default-border;}
 .dropdown-menu>li>a, .dropdown-menu>li>span {display: block;font-size:14px;}
-.dropdown-menu>li>a.active, .dropdown-menu>li>span.active, .dropdown-menu>li>a.active:hover, .dropdown-menu>li>span.active:hover {background:$lighter-grey-color;}
+// .dropdown-menu>li>a.active, .dropdown-menu>li>span.active, .dropdown-menu>li>a.active:hover, .dropdown-menu>li>span.active:hover {background:$lighter-grey-color;}
+.dropdown-menu>li.active span, .dropdown-menu>li.active a, .dropdown-menu>li.active a:hover, .dropdown-menu>li.active span:hover {background:$lighter-grey-color;}
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {padding: 17px 30px;color:$black-color;border-bottom: 1px solid transparent;}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>span:hover {background:inherit;}
 
@@ -336,7 +337,7 @@ header.header-top .home-btn {margin-top: 14px;}
 .socials {width: 100%;text-align:left;float: left;margin-top:$xs-horizontal-gutter;}
 .share {float: left;margin-right:$grid-gutter-width/2;}
 .slider .share {font-family: $verdana;}
-.fb-soc, .tw-soc {margin-right:$grid-gutter-width/2;float: left;margin-bottom: 10px;}
+.fb-soc, .tw-soc {margin-right:$grid-gutter-width/2;float: left;margin-bottom: 10px;cursor: pointer;}
 .fb-soc .fb-icon, .tw-soc .tw-icon {display: block;float: left;margin-right:$grid-gutter-width/3;background-image: url(../images/sprites.png);background-repeat: no-repeat;}
 .fb-soc .fb-icon {width: 8px;height: 18px;background-position: -6px -43px;}
 .tw-soc .tw-icon {width: 18px;height: 18px;background-position: -29px -43px;}
@@ -350,7 +351,8 @@ header.header-top .home-btn {margin-top: 14px;}
 .navbar-header {padding-right: 0;}
 .navbar-toggle {margin-right: 0;padding: 4px 0px;margin-top: 4px;margin-bottom: 10px;}
 .o-h .slider-heading, .o-h .event-about {padding-left: 0;padding-right: 0;}
-.guest-slider {display: block;}
+// .guest-slider {display: block;}
+.guest-slider {margin-right: 10px;}
 .time-arr {display: none;}
 .scroll-down {display: block;position: absolute;max-width:280px;height: 50px;bottom: 0;left: 0;right: 0;margin: 0 auto;z-index: 16;background: transparent;border:1px solid $white-color;border-bottom: none;opacity: .3;cursor: pointer;@include transitions(.3s);overflow: hidden;}
 .scroll-down .scroll-down-inner {display: block;width: 175px;float: left;position: relative;color:$white-color;text-transform: uppercase;text-align: center;font-family: $pt-sans-bold;font-size: 18px;line-height: 50px;}
@@ -1184,7 +1186,7 @@ header .row, .header-top .row  {margin-left: 0;margin-right: 0;}
 .navbar-toggle {margin-right: 0;padding: 4px 0px;margin-top: 4px;margin-bottom: 10px;}
 .o-h .event-about {padding-left: 0;padding-right: 0;}
 .o-h .slider-heading {padding-left: 0;padding-right: 15px;}
-.guest-slider {display: block;}
+.guest-slider {margin-right: 20px;}
 
 //Video
 .video-btn .left-btn  {width: 91px;height: 92px;background:url('../images/play-btn-left.png') left top no-repeat;background-size: contain;float: left;padding-top: 0;cursor: pointer;}
@@ -1376,6 +1378,8 @@ main {padding-bottom: 50px;}
 .date-event, .top-event-descr .top-event-place {margin-right: 12px;}
 .top-event img.img-responsive {max-width: none;}
 .top-events .head .event-dates {width: 250px;}
+.guest-slider {margin-right: 20px;}
+
 
 //Video 
 .play-btn.video-play, .play-btn.watch-play {position: relative;}
@@ -1714,6 +1718,7 @@ header .navbar-collapse .dropdown.open:hover .dropdown-menu {display: block;}
 .scroll-down:hover {width: 280px;opacity: 1;@include transitions(.3s);}
 .scroll-down:hover .l-s-arr:before, .scroll-down:hover .r-s-arr:before, .scroll-down:hover .l-s-arr:after, .scroll-down:hover .r-s-arr:after  {-webkit-animation: upDown 1s ease;animation: upDown 1s ease;} 
 .scroll-down.active:hover .l-s-arr:before, .scroll-down.active:hover .r-s-arr:before, .scroll-down.active:hover .l-s-arr:after, .scroll-down.active:hover .r-s-arr:after  {-webkit-animation: downUp 1s ease;animation: downUp 1s ease;} 
+.guest-slider {display: block;}
 
 @-webkit-keyframes upDown {
 	0% { top: 22px;}

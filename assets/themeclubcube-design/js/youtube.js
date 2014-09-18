@@ -75,8 +75,8 @@ function onPlayerReady(event) {
     $playBtn.on('click touchend', function() {
         console.log('Play!');
 
-        $('.slider').slickPause();
-        // tileSlide.stopSlide();
+        // $('.slider').slickPause();
+        tileSlide.stopSlide();
         _eventTarget.playVideo();
         setTimeout(function() {
             hideControls();
@@ -87,8 +87,8 @@ function onPlayerReady(event) {
             _eventTarget.pauseVideo();
             showControls();
             setTimeout(function() {
-                // tileSlide.playSlide();
-                $('.slider').slickPlay();
+                tileSlide.playSlide();
+                // $('.slider').slickPlay();
             }, 3000);
             videoOnOff = true;
         });
@@ -102,8 +102,8 @@ function onPlayerReady(event) {
         });
     });
     $pattern.off('click touchend');
-    $('.slider').slickPlay();
-    // tileSlide.playSlide();
+    // $('.slider').slickPlay();
+    tileSlide.playSlide();
 };
 
 function onPlayerStateChange(event) {
@@ -129,8 +129,8 @@ function onPlayerStateChange(event) {
     if (event.data === 0) {
         showControls();
         setTimeout(function() {
-            // tileSlide.playSlide();
-            $('.slider').slickPlay();
+            tileSlide.playSlide();
+            // $('.slider').slickPlay();
         }, 3000);
     };
 };
