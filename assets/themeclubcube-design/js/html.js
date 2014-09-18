@@ -107,12 +107,12 @@ $(function() {
 
     //Defaul slider page
     cubeObj.defaultSlider = function() {
-        var $sliderNode = $('.slider');
-        var $topEventsSLider = $('.top-events-sliders');
-        window.tileSlide = new TileSlide(document.querySelector('.slider-default'), {
-            dots: true
-        });
-        this.fullHeightSlides();
+        // var $sliderNode = $('.slider');
+        // var $topEventsSLider = $('.top-events-sliders');
+        // window.tileSlide = new TileSlide(document.querySelector('.slider-default'), {
+        //     dots: true
+        // });
+        // this.fullHeightSlides();
     };
 
     cubeObj.partnersSlider = function() {
@@ -623,6 +623,16 @@ $(function() {
         //     window.defaultTileSlide = new TileSlide(document.querySelector('.slider-default'));
         // };
         // $('.datepicker.dropdown-menu').addClass('whity');
+
+        var $sliderNode = $('.slider');
+        var $topEventsSLider = $('.top-events-sliders');
+        window.tileSlide = new TileSlide(document.querySelector('.slider-default'), {
+            dots: true,
+            interval: 8000
+        });
+
+        this.fullHeightSlides();
+
         $('.default-slider-tickets').slick({
             slidesToShow: 1,
             dots: true,
@@ -633,16 +643,46 @@ $(function() {
             speed: 300,
             vertical: true
         });
-        $('.default-gallery-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            // fade: true,
-            easing: 'easeOutExpo',
-            infinite: false,
-            autoplay: false,
-            draggable: false,
-            speed: 300
-        });
+        if (window.innerWidth > 479) {
+            $('.default-gallery-slider').slick({
+                slidesToShow: 3,
+                arrows: true,
+                easing: 'easeInExpo',
+                draggable: false,
+                speed: 900,
+                swipe: true,
+                dots: false,
+                infinite: false,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        arrows: true,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: false,
+                        arrows: true,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        arrows: true,
+                        dots: false
+                    }
+                }]
+            });
+        };
     };
 
 
@@ -1093,6 +1133,7 @@ $(function() {
         //If it's default slider
         if ($('.slider-default').length) {
             this.defaultSlider();
+            this.defaults();
             this.fullHeightSLider();
             this.headerToTop();
             this.addVideosDefault();
@@ -1105,7 +1146,6 @@ $(function() {
         this.btnToogle();
         this.responsiveImg();
         this.videoImgResponsive();
-        this.defaults();
         if ($('section.all-events.events-tiles').length) {
             this.eventsTile();
         };

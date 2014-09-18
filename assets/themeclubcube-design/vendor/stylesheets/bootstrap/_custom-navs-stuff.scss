@@ -109,6 +109,8 @@
 .button-arrow-left.off:before, .partners-slider .slick-prev.off:before, .partners-slider .slick-disabled:before, .partners-slider .slick-disabled:hover:before, .top-events-sliders .slick-disabled:before , .top-events-sliders .slick-disabled:hover:before {border-left: 1px solid $ccc-color;border-bottom: 1px solid $ccc-color;@include transitions(.3s);}
 .button-arrow-left.pressed:before, .partners-slider .slick-prev.pressed:before, .partners-slider .slick-next.pressed:before, .default-gallery-slider .slick-prev.pressed:before {border-left: 1px solid $d35a33;border-bottom: 1px solid $d35a33;@include transitions(.3s);}
 
+.default-gallery-slider .slick-disabled:before, .default-gallery-slider .slick-disabled:hover:before {border-left: 1px solid $ccc-color;border-bottom: 1px solid $ccc-color;@include transitions(.3s);cursor: default;}
+
 .partners-slider .slick-next, .partners-slider .slick-prev {opacity: 1;background-image: none;}
 
 .partners-slider .slick-prev {left: 20px;}

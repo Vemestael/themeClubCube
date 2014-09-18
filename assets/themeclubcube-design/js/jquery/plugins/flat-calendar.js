@@ -128,24 +128,6 @@ $(document).ready(function() {
 				$(this).find('.line-bott').removeClass('active orange');
 			});
 		});
-
-		//Colorize month days
-		// function addColorDays() {
-		// 	var $allDays = $('.flat-day');
-
-		// 	$allDays.each(function(){
-		// 		var $calendarDay = $(this).find('.calendar-day');
-		// 		console.log($calendarDay.text());
-		// 		for (var i = 0; i < self.weekDays.length; i++) {
-		// 			if (($calendarDay.text() === self.weekDays[i]) && !($calendarDay.parent().hasClass('old'))) {
-		// 				$calendarDay.addClass(self.daysClasses[i]);
-		// 				$calendarDay.parent().find('.calendar-date').addClass(self.daysClasses[i]);
-		// 			};
-		// 		};
-		// 	});
-		// };
-
-		// addColorDays();
 	};
 
 
@@ -215,5 +197,5 @@ $(document).ready(function() {
 	};
 
 	// Add global variable
-//	window.flatCalObj = new FlatCalObj($('.flat-calendar'));
+	window.flatCalObj = new FlatCalObj($('.flat-calendar'));
 });

@@ -7620,6 +7620,7 @@ header.header-top .home-btn {
   height: 300px;
   position: relative;
   padding: 30px 23px;
+  margin: 0 15px;
   margin-bottom: 34px;
 }
 
@@ -9675,7 +9676,7 @@ aside .event-dates {
 }
 
 .all-events.events-list {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .all-events h1 {
@@ -10437,6 +10438,10 @@ aside .event-dates {
 .line-bott.grey, .line-bott.greyd {
   display: block;
   border-bottom: 5px solid #e2e2e2;
+}
+
+.flat-calendar {
+  display: none;
 }
 
 .flat-calendar:hover {
@@ -11945,6 +11950,142 @@ blockquote a:hover {
     padding-bottom: 0;
   }
 
+  .default-gallery-slider .slick-prev, .default-gallery-slider .slick-next {
+    display: block;
+    background: none;
+  }
+
+  .default-gallery-slider .slick-prev {
+    top: -70px;
+    right: 80px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .default-gallery-slider .slick-next {
+    top: -70px;
+    right: 15px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .ticket-event-date {
+    position: relative;
+    height: 180px;
+    width: 9.1569%;
+    float: left;
+    padding: 0;
+    background: #e15e32;
+    color: white;
+    border-bottom: 1px solid #e3e3e3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .ticket-event-img {
+    display: block;
+    position: relative;
+    height: 180px;
+    width: 26.453%;
+    float: left;
+    padding: 0;
+    border-bottom: 1px solid #e3e3e3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .ticket-event-img img {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .ticket-event-lineup {
+    position: relative;
+    height: 180px;
+    width: 55.2325%;
+    float: left;
+    padding: 20px 20px;
+    border-bottom: 1px solid #e3e3e3;
+    background: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .ticket-event-lineup h3, .ticket-event-lineup h2 {
+    font-family: "PT Sans bold", sans-serif;
+    font-size: 20px;
+    color: #5c323e;
+    margin: 0;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .ticket-event-lineup h3 a, .ticket-event-lineup h2 a {
+    color: #5c323e;
+  }
+
+  .ticket-event-lineup .ticket-line-up {
+    height: 65px;
+    font-size: 14px;
+    color: #a82743;
+  }
+
+  .default-tickets .ticket-event-lineup hr {
+    display: block;
+  }
+
+  .default-tickets .ticket-event-lineup .ticket-line-cont {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .ticket-event-lineup .ticket-line-cont .ticket-line-up.sh, .ticket-event-lineup .ticket-line-cont .ticket-line-up.hid {
+    position: absolute;
+    float: left;
+  }
+
+  .ticket-event-lineup .ticket-line-cont .ticket-line-up.sh {
+    left: 0;
+    top: 0;
+  }
+
+  .ticket-event-lineup .ticket-line-cont .ticket-line-up.hid {
+    left: 600px;
+    top: 0;
+  }
+
+  .ticket-event-lineup .ticket-line-up .brown-color {
+    font-family: "PT Sans bold", sans-serif;
+  }
+
+  .ticket-line-up div {
+    padding: 0;
+  }
+
+  .default-slider-tickets {
+    margin-bottom: 50px;
+  }
+
+  .ticket-event-lineup hr {
+    border-top: 1px solid #eed4d9;
+    margin-top: 13px;
+    margin-bottom: 12px;
+  }
+
+  .ticket-event-price {
+    position: relative;
+    height: 180px;
+    width: 9.1569%;
+    float: left;
+    background: #a82743;
+    color: white;
+    border-bottom: 1px solid #e3e3e3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   .paging .event-dates {
     width: 230px;
     height: auto;
@@ -12056,6 +12197,10 @@ blockquote a:hover {
 
   .content-page {
     padding-top: 50px;
+  }
+
+  .flat-calendar {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) and (min-height: 768px) {
@@ -13039,6 +13184,25 @@ blockquote a:hover {
     margin-bottom: 60px;
   }
 
+  .default-gallery-slider .slick-prev, .default-gallery-slider .slick-next {
+    display: block;
+    background: none;
+  }
+
+  .default-gallery-slider .slick-prev {
+    top: -70px;
+    right: 80px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .default-gallery-slider .slick-next {
+    top: -70px;
+    right: 15px;
+    left: auto;
+    bottom: auto;
+  }
+
   .blog-item-def {
     padding: 30px;
   }
@@ -13054,6 +13218,10 @@ blockquote a:hover {
 
   .default-slider-tickets .slick-dots li {
     margin-right: 20px;
+  }
+
+  .default-slider-tickets .slick-dots li:last-child {
+    margin-right: 0;
   }
 
   .default-slider-tickets .slick-dots li button:before {
@@ -13192,6 +13360,10 @@ blockquote a:hover {
   .all-events.events-list .events-tile-datapicker .datepicker.dropdown-menu.whity {
     right: 0;
     left: auto;
+  }
+
+  .flat-calendar {
+    display: block;
   }
 
   .line-up {
@@ -13482,6 +13654,10 @@ blockquote a:hover {
 
   .scroll-down .scroll-down-inner {
     font-size: 24px;
+  }
+
+  .flat-calendar {
+    display: block;
   }
 }
 @media (min-width: 1200px) {
@@ -14687,14 +14863,14 @@ blockquote a:hover {
   }
 
   .default-gallery-slider .slick-prev {
-    top: -116px;
+    top: -112px;
     right: 80px;
     left: auto;
     bottom: auto;
   }
 
   .default-gallery-slider .slick-next {
-    top: -116px;
+    top: -112px;
     right: 0;
     left: auto;
     bottom: auto;
@@ -15233,7 +15409,7 @@ blockquote a:hover {
   }
 
   .all-events.events-list {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .all-events .rows {
@@ -15475,6 +15651,10 @@ blockquote a:hover {
     margin-bottom: 0;
   }
 
+  .flat-calendar {
+    display: block;
+  }
+
   .all-blogs {
     padding-top: 50px;
     background: white;
@@ -15665,6 +15845,25 @@ blockquote a:hover {
 
   .visible-xm-block {
     display: block;
+  }
+
+  .default-gallery-slider .slick-prev, .default-gallery-slider .slick-next {
+    display: block;
+    background: none;
+  }
+
+  .default-gallery-slider .slick-prev {
+    top: -70px;
+    right: 80px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .default-gallery-slider .slick-next {
+    top: -70px;
+    right: 15px;
+    left: auto;
+    bottom: auto;
   }
 }
 /* ========================================================================
@@ -16081,6 +16280,14 @@ blockquote a:hover {
   border-bottom: 1px solid #d35a33;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.default-gallery-slider .slick-disabled:before, .default-gallery-slider .slick-disabled:hover:before {
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: default;
 }
 
 .partners-slider .slick-next, .partners-slider .slick-prev {
