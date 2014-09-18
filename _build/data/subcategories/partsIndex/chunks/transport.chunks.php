@@ -4,6 +4,22 @@ $chunks = array();
 
 $tmp = array(
     // Index
+    'eventsListPromoIndex' => array(
+        'file' => 'partsIndex/eventsListPromoIndex',
+        'description' => '',
+    ),
+    'eventsItemPromoIndex' => array(
+        'file' => 'partsIndex/eventsItemPromoIndex',
+        'description' => '',
+    ),
+    'eventsListFixedPromoIndex' => array(
+        'file' => 'partsIndex/eventsListFixedPromoIndex',
+        'description' => '',
+    ),
+    'eventsItemFixedPromoIndex' => array(
+        'file' => 'partsIndex/eventsItemFixedPromoIndex',
+        'description' => '',
+    ),
     'eventsListIndex' => array(
         'file' => 'partsIndex/eventsListIndex',
         'description' => '',

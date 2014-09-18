@@ -40,36 +40,25 @@ appMakeBeCool.gateway.addClass('FormContacts', function(properties, $, $window, 
         _globals.contactFormSuccessMessage = $(_properties.contactFormSuccessMessage);
     },
 
-    _setup = function() {},
-
-    _setBinds = function() {
-        _binds().setContactBinds();
-        _binds().setCheckboxBinds();
+    _setup = function() {
+        if(_globals.contactForm.length) {
+            _globals.contactForm.validate();
+            _globals.contactForm.ajaxForm({
+                dataType:  'json',
+                beforeSubmit: _formContactBeforeSubmit,
+                success:   _formContactSuccess
+            });
+        }
     },
 
+    _setBinds = function() {},
+
     _binds = function() {
-        return {
-            setContactBinds: function() {
-                _globals.contactForm.validate();
-                _globals.contactForm.ajaxForm({
-                    dataType:  'json',
-                    beforeSubmit: _formContactBeforeSubmit,
-                    success:   _formContactSuccess
-                });
-            },
-            setCheckboxBinds: function() {
-                $document.ready(function(e, data) {
-                    $('input[type=checkbox] + label').click(function() {
-                        $(this).toggleClass('checked');
-                        var id=$(this).attr('for');
-                    });
-                });
-            }
-        };
+        return {}
     },
 
     _triggers = function(){
-        return {};
+        return {}
     },
 
     _setCustomMethods = function() {
@@ -77,9 +66,7 @@ appMakeBeCool.gateway.addClass('FormContacts', function(properties, $, $window, 
         _formContacts.globals.customDestroy = function() {};
     },
 
-    _formContactBeforeSubmit = function(arr, $form, options){
-
-    },
+    _formContactBeforeSubmit = function(arr, $form, options){},
 
     _formContactSuccess = function(response){
         if(response.success) {

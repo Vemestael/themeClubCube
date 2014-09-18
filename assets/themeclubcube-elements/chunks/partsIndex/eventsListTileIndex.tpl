@@ -3,9 +3,11 @@
 		<div class="row head more-button-bott">
 			<h2>[[%lf_events_head:htmlent]]</h2>
 		</div>
-		<div class="top-events-sliders">
-			<div class="row">
-				[[+output]]
+		<div class="top-events-sliders" id="topEventsSliders">
+			<div class="top-evt-slide">
+				<div class="row">
+					[[+output]]
+				</div>
 			</div>
 		</div>
 		<div class="row more-button-bott dark">

@@ -121,6 +121,8 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
                     _triggers().imagesComplete();
                 }
             });
+        } else {
+            _triggers().imagesComplete();
         }
     },
 

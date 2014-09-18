@@ -48,6 +48,11 @@ $tmp = array(
         'value' => false,
         'area' => 'themeclubcube_style_index',
     ),
+    'style_events_promo_slider' => array(
+        'xtype' => 'numberfield',
+        'value' => 1,
+        'area' => 'themeclubcube_style_index',
+    ),
 
     // resources
     'partners_resource' => array(
@@ -66,6 +71,11 @@ $tmp = array(
         'area' => 'themeclubcube_resources',
     ),
     'events_resource' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themeclubcube_resources',
+    ),
+    'ajax_form_contacts' => array(
         'xtype' => 'numberfield',
         'value' => '',
         'area' => 'themeclubcube_resources',

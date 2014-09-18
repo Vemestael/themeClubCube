@@ -24,6 +24,8 @@ $_lang['setting_themeclubcube.style_index_events_list'] = 'I would like to event
 $_lang['setting_themeclubcube.style_index_events_list_desc'] = 'You can choose several options for display of articles from the events on the home page: 1 = List as tickets, 2 = List as tiles.';
 $_lang['setting_themeclubcube.style_events_time_format'] = 'Time format on event';
 $_lang['setting_themeclubcube.style_events_time_format_desc'] = 'You can choose several options for display of time in events start time: true = am/pm, false=24h';
+$_lang['setting_themeclubcube.style_events_promo_slider'] = 'I would like to promo events on the slider on main page';
+$_lang['setting_themeclubcube.style_events_promo_slider_desc'] = 'You can choose several options for display of promo slider from the events on the home page: 1 = Big slider, 2 = Fixed size slider.';
 
 // resource
 $_lang['setting_themeclubcube.gallery_resource'] = 'Gallery resource ID';

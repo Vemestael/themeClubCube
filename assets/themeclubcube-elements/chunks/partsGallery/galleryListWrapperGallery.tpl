@@ -1,0 +1,1 @@
+[[+output:notempty=`[[+output]]`:isempty=`<p>[[%lf_gallery_empty]]</p>`]]

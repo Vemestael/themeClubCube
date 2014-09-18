@@ -1,4 +1,4 @@
 [[$metaBase]]
 [[$headerBase]]
 [[$galleryItemContent]]
-[[$footerBase]]
+[[$footerBase? &gallClose=`1`]]

@@ -39,9 +39,9 @@
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 footer-block">
 				<div class="subscribe-here soc-marg">
-					<h6>[[%lf_footer_subscribe_head:htmlent]]</h6>
+					<div class="footer-header">[[%lf_footer_subscribe_head:htmlent]]</div>
 					<p>[[%lf_footer_subscribe_line:htmlent]]</p>
-					<!-- TODO Подключить и проверить форму подписки. Добавить Плагин unisender-->
+					<!--TODO Подключить и проверить форму подписки. Добавить Плагин unisender-->
 					<form action="#" id="email-footer-form">
 						<div class="subscribe">
 							<input type="email" name="email" id="email-subscribe" placeholder="[[%lf_footer_subscribe_email_placeholder:htmlent]]">
@@ -97,5 +97,6 @@
 		</div>
 	</div>
 </footer>
+[[+gallClose:is=`1`:then=`</div>`:esle=``]]
 </body>
 </html>

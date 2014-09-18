@@ -3,7 +3,8 @@ appMakeBeCool.gateway.addClass('BlogAnimate', function(properties, $, $window, $
     var _blogAnimate = this,
     _defaults = {
         // elements
-        blogs: '.blog-item'
+        blogs: '.blog-item',
+        blogsTile: '.blog-item-def'
 
         // prop
         // data
@@ -13,6 +14,7 @@ appMakeBeCool.gateway.addClass('BlogAnimate', function(properties, $, $window, $
     _globals = {
         // elements
         blogs: null,
+        blogsTile: null,
 
         // prop
         preloaded: false
@@ -35,11 +37,15 @@ appMakeBeCool.gateway.addClass('BlogAnimate', function(properties, $, $window, $
 
     _config = function() {
         _globals.blogs = $(_properties.blogs);
+        _globals.blogsTile = $(_properties.blogsTile);
     },
 
     _setup = function() {
         if(_globals.blogs.length){
             new EventAnimate( _globals.blogs);
+        }
+        if(_globals.blogsTile.length){
+            new EventAnimate( _globals.blogsTile);
         }
     },
 

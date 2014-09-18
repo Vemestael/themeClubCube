@@ -16,6 +16,9 @@ if ($object && $object->xpdo) {
 //                        )
 //                    )),
 //                ),
+                'indexSlider' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
                 'indexEvents' => array(
                     array('class' => 'modSnippet','name' => 'pdoResources'),
                 ),
@@ -28,8 +31,23 @@ if ($object && $object->xpdo) {
                 'indexPartners' => array(
                     array('class' => 'modSnippet','name' => 'pdoResources'),
                 ),
-                'listResources' => array(
+                'blogList' => array(
                     array('class' => 'modSnippet','name' => 'pdoPage'),
+                ),
+                'eventsListAll' => array(
+                    array('class' => 'modSnippet','name' => 'pdoPage'),
+                ),
+                'eventsListWeek' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'galleryList' => array(
+                    array('class' => 'modSnippet','name' => 'pdoPage'),
+                ),
+                'asideEvents' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'asideBlog' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
                 ),
             );
 

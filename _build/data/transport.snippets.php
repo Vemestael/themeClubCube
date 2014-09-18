@@ -15,6 +15,18 @@ $tmp = array(
         'file' => 'getDate',
         'description' => '',
     ),
+    'getWeeksEvents' => array(
+        'file' => 'getWeeksEvents',
+        'description' => '',
+    ),
+    'getParamsWeeksEvents' => array(
+        'file' => 'getParamsWeeksEvents',
+        'description' => '',
+    ),
+    'parseMIGXTV' => array(
+        'file' => 'parseMIGXTV',
+        'description' => '',
+    ),
 );
 
 foreach ($tmp as $k => $v) {

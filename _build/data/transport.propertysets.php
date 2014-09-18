@@ -3,11 +3,33 @@
 $propertysets = array();
 
 $tmp = array(
+    'indexSlider' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '0',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'timeStart',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'ASC',
+        ),
+    ),
     'indexEvents' => array(
         array(
             'name' => 'limit',
             'type' => 'numberfield',
-            'value' => '12',
+            'value' => '0',
         )
         ,array(
             'name' => 'depth',
@@ -31,17 +53,17 @@ $tmp = array(
             'type' => 'numberfield',
             'value' => '12',
         )
-    ,array(
+        ,array(
             'name' => 'depth',
             'type' => 'numberfield',
             'value' => '1',
         )
-    ,array(
+        ,array(
             'name' => 'sotrby',
             'type' => 'textfield',
             'value' => 'publeshedon',
         )
-    ,array(
+        ,array(
             'name' => 'sortdir',
             'type' => 'textfield',
             'value' => 'DESC',
@@ -85,38 +107,138 @@ $tmp = array(
             'type' => 'textfield',
             'value' => 'menuindex',
         )
-    )
-    ,'listResources' => array(
+    ),
+    'blogList' => array(
         array(
-            'name' => 'includeTVs',
-            'type' => 'textfield',
-            'value' => 'img',
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '3',
         )
-        ,array(
-                'name' => 'processTVs',
-                'type' => 'textfield',
-                'value' => 'img',
-            )
-        ,array(
-                'name' => 'tvPrefix',
-                'type' => 'textfield',
-                'value' => '',
-            )
-        ,array(
-                'name' => 'parents',
-                'type' => 'textfield',
-                'value' => '[[*id]]',
-            )
-        ,array(
-                'name' => 'limit',
-                'type' => 'numberfield',
-                'value' => '10',
-            )
         ,array(
             'name' => 'depth',
             'type' => 'numberfield',
             'value' => '1',
         )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'publeshedon',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'DESC',
+        )
+    ),
+    'eventsListAll' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '3',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'timeStart',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'ASC',
+        )
+    ),
+    'eventsListWeek' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '0',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'timeStart',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'ASC',
+        )
+    ),
+    'galleryList' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '6',
+        )
+            ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'publeshedon',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'DESC',
+        )
+    ),
+    'asideBlog' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '3',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'publeshedon',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'DESC',
+        )
+    ),
+    'asideEvents' => array(
+        array(
+            'name' => 'limit',
+            'type' => 'numberfield',
+            'value' => '2',
+        )
+        ,array(
+            'name' => 'depth',
+            'type' => 'numberfield',
+            'value' => '1',
+        )
+        ,array(
+            'name' => 'sotrby',
+            'type' => 'textfield',
+            'value' => 'timeStart',
+        )
+        ,array(
+            'name' => 'sortdir',
+            'type' => 'textfield',
+            'value' => 'ASC',
+        ),
     ),
 );
 

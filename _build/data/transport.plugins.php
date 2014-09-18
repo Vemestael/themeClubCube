@@ -9,7 +9,14 @@ $tmp = array(
 		'events' => array(
 			'OnHandleRequest' => array()
 		)
-	)
+	),
+    'clearCache' => array(
+        'file' => 'clearCache',
+        'description' => '',
+        'events' => array(
+            'OnBeforeCacheUpdate' => array()
+        )
+    )
 );
 
 foreach ($tmp as $k => $v) {

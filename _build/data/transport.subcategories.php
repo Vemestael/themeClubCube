@@ -28,6 +28,18 @@ $tmp = array(
     'partsIndex' => array(
         'chunks'
     ),
+    //Blog
+    'partsBlog' => array(
+        'chunks'
+    ),
+    //Events
+    'partsEvents' => array(
+        'chunks'
+    ),
+    //Gallery
+    'partsGallery' => array(
+        'chunks'
+    ),
     //Contacts
     'partsContacts' => array(
         'chunks'

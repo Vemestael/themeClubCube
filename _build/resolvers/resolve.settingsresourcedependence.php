@@ -10,6 +10,7 @@ if ($object && $object->xpdo) {
                 'themeclubcube.blog_resource' => 'blog',
                 'themeclubcube.gallery_resource' => 'gallery',
                 'themeclubcube.events_resource' => 'events',
+                'themeclubcube.ajax_form_contacts' => 'formcontacts',
             );
 
             $context_key = 'web';

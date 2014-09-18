@@ -10,6 +10,30 @@ $tmp = array(
         'file' => 'common/pageWrapperCommon',
         'description' => '',
     ),
+    'blogItemAsideCommon' => array(
+        'file' => 'common/blogItemAsideCommon',
+        'description' => '',
+    ),
+    'blogListAsideCommon' => array(
+        'file' => 'common/blogListAsideCommon',
+        'description' => '',
+    ),
+    'eventsListAsideCommon' => array(
+        'file' => 'common/eventsListAsideCommon',
+        'description' => '',
+    ),
+    'eventsItemAsideCommon' => array(
+        'file' => 'common/eventsItemAsideCommon',
+        'description' => '',
+    ),
+    'eventsListAsideCenterCommon' => array(
+        'file' => 'common/eventsListAsideCenterCommon',
+        'description' => '',
+    ),
+    'eventsItemAsideCenterCommon' => array(
+        'file' => 'common/eventsItemAsideCenterCommon',
+        'description' => '',
+    ),
 );
 
 // Save chunks for setup options

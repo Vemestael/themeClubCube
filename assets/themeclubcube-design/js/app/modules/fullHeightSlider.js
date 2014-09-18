@@ -6,9 +6,12 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
         slider: '#fullHeghtSlider',
         imgSlider: '#fullHeghtSlider .container-fluidss img.img-responsive',
         videos: '.video-bg',
+        rowss: '.rowss',
         // prop
         // data
         // classes ans styles
+        sliderClass: 'slider',
+        sliderDefaultClass: 'slider-default',
         imgResponsiveClass: 'img-responsive',
         heightToWindowClass: 'height-to-window'
     },
@@ -19,10 +22,13 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
         imgSlider: null,
         videos: null,
         tileSlide: null,
+        rowss: null,
 
         // prop
         windowHeight: 0,
         windowWidth: 0,
+        sliderHeight: 0,
+        slideNodeHeight: 0,
         preloaded: false
     },
 
@@ -45,13 +51,35 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
         _globals.slider = $(_properties.slider);
         _globals.imgSlider = $(_properties.imgSlider);
         _globals.videos = $(_properties.videos);
+        _globals.rowss = $(_properties.rowss);
         _globals.windowHeight = $window.height();
         _globals.windowWidth = $window.width();
     },
 
     _setup = function() {
-        _globals.tileSlide = new TileSlide(document.querySelector(_properties.slider));
         if(_globals.slider.length) {
+            if(_globals.slider.hasClass(_properties.sliderClass)) {
+                _triggers().bigSlider();
+            }
+            _globals.sliderHeight = _globals.slider.height();
+            _globals.slideNodeHeight = _globals.rowss.height();
+
+            var sliderTopPadding = (_globals.sliderHeight - _globals.slideNodeHeight) / 2;
+
+            if (_globals.slideNodeHeight < _globals.sliderHeight) {
+                _globals.rowss.css('top', sliderTopPadding + (_globals.slider.hasClass(_properties.sliderDefaultClass) ? 10 : 40));
+            } else {
+                _globals.rowss.css('top', '140px');
+            };
+            if ((_globals.slideNodeHeight < _globals.sliderHeight) && (window.devicePixelRatio === 2) && ((_globals.windowWidth) === 1024)) {
+                _globals.rowss.css('top', ((_globals.sliderHeight / 2 - _globals.slideNodeHeight)) + 40);
+            };
+
+            var tileOptions = {};
+            if(_globals.slider.hasClass(_properties.sliderDefaultClass)){
+                tileOptions = {dots: true}
+            }
+            _globals.tileSlide = new TileSlide(document.querySelector(_properties.slider), tileOptions);
             _globals.imgSlider.each(function() {
                 var node = this;
                 _changeClass(node);
@@ -75,10 +103,12 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
             setActionBind: function(){
                 _fullHeightSlider.bind($window, _fullHeightSlider.globals.classType+'_Action', function(e, data, el) {
                     var _options = $.extend({action: 'play'}, data);
-                    if(_options.action == 'stop') {
-                        _globals.tileSlide.stopSlide();
-                    } else if(_options.action == 'play') {
-                        _globals.tileSlide.playSlide();
+                    if(_globals.tileSlide){
+                        if(_options.action == 'stop') {
+                            _globals.tileSlide.stopSlide();
+                        } else if(_options.action == 'play') {
+                            _globals.tileSlide.playSlide();
+                        }
                     }
                 })
             }
@@ -86,16 +116,23 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
     },
 
     _triggers = function(){
-        return {};
+        return {
+            bigSlider: function(data){
+                _fullHeightSlider.trigger(_fullHeightSlider.globals.classType+'_BigSlider', data);
+            }
+        };
     },
 
     _changeClass = function(node){
-        if (_globals.windowHeight > _globals.windowWidth) {
+        if (_globals.windowHeight > _globals.windowWidth && _globals.slider.hasClass(_properties.sliderClass)) {
             $(node).removeClass(_properties.imgResponsiveClass).addClass(_properties.heightToWindowClass);
-        };
-        if (_globals.windowHeight < _globals.windowWidth) {
+        }
+        if (_globals.windowHeight < _globals.windowWidth  && _globals.slider.hasClass(_properties.sliderClass)) {
             $(node).removeClass(_properties.imgResponsiveClass).addClass(_properties.heightToWindowClass);
-        };
+        }
+        if ((_globals.windowHeight < 1200) && _globals.slider.hasClass(_properties.sliderDefaultClass)) {
+            $(node).removeClass(_properties.imgResponsiveClass).addClass(_properties.heightToWindowClass);
+        }
     },
 
     _addVideos = function(){

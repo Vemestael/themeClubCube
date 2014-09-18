@@ -14,8 +14,12 @@ $tmp = array(
         'file' => 'galleryList',
         'description' => 'Gallery list template',
     ),
+    'galleryBigList' => array(
+        'file' => 'galleryBigList',
+        'description' => 'Gallery list as big item template',
+    ),
     'galleryItem' => array(
-        'file' => 'galleryList',
+        'file' => 'galleryItem',
         'description' => 'Gallery item template',
     ),
     'blogList' => array(
@@ -28,7 +32,19 @@ $tmp = array(
     ),
     'blogItem' => array(
         'file' => 'blogItem',
-        'description' => 'Blog item template',
+        'description' => 'Blog item with aside in footer template',
+    ),
+    'blogItemWithoutImage' => array(
+        'file' => 'blogItemWithoutImage',
+        'description' => 'Blog item with aside in footer and without big image on header template',
+    ),
+    'blogItemAside' => array(
+        'file' => 'blogItemAside',
+        'description' => 'Blog item with aside template',
+    ),
+    'blogItemAsideWithoutImage' => array(
+        'file' => 'blogItemAsideWithoutImage',
+        'description' => 'Blog item with aside and without big image on header template',
     ),
     'eventsList' => array(
         'file' => 'eventsList',
@@ -45,6 +61,18 @@ $tmp = array(
     'text' => array(
         'file' => 'text',
         'description' => 'Text template',
+    ),
+    'textAside' => array(
+        'file' => 'textAside',
+        'description' => 'Text with aside template',
+    ),
+    'textAsideWithImage' => array(
+        'file' => 'textAsideWithImage',
+        'description' => 'Text with aside and with image template',
+    ),
+    'textWithImage' => array(
+        'file' => 'textWithImage',
+        'description' => 'Text with image template',
     ),
     'contacts' => array(
         'file' => 'contacts',

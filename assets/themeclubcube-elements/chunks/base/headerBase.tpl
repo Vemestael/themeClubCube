@@ -19,18 +19,28 @@
 					</button>
 					<span class="home-btn">Home</span>
 				</div>
-				<a href="" class="navbar-brand first"></a>
+                [[*id:is=`[[++site_start]]`:then=`
+                    <span class="navbar-brand first">
+                        <img src="[[++themeclubcube.design_url]]images/logo-w.png" alt="[[++site_name]]" class="site-logo">
+                    </span>
+                `:else=`
+                    <a href="[[++site_url]]" class="navbar-brand first">
+                        <img src="[[++themeclubcube.design_url]]images/logo-w.png" alt="[[++site_name]]" class="site-logo">
+                    </a>
+                `]]
 			</div>
 			<nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
+					[[- TODO убрать ссылки с активных пунктов меню]]
 					[[pdoMenu@mainMenu?
 						&startId=`0`
 						&level=`2`
 						&tplParentRow=`@INLINE
 						<li class="[[+classnames]] dropdown">
-							<a href="#" class="dropdown-toggle main-heading-a" [[+attributes]]>[[+menutitle]]<b class="caret"></b></a>
+							<a href="[[+link]]" class="dropdown-toggle main-heading-a" [[+attributes]] data-toggle="dropdown">[[+menutitle]]<b class="caret"></b></a>
 							<ul class="dropdown-menu">[[+wrapper]]</ul>
 						</li>`
+                        &tplHere=`@INLINE <li class="[[+classnames]]"><span>[[+menutitle]]</span></li>`
 						&tplOuter=`@INLINE [[+wrapper]]`
 					]]
 				</ul>

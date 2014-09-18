@@ -63,6 +63,9 @@ $tmp = array(
         'caption' => 'Top event',
         'description' => 'if checked, event show in top event on main page',
         'type' => 'checkbox',
+        /**
+         * TODO не работает параметр, проверить
+         */
         'els' => 'On==1',
         'default_text' => '0',
         'display' => 'default',

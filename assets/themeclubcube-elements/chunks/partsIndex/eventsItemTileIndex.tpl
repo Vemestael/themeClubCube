@@ -1,7 +1,7 @@
 [[+idx:mod=`4`:is=`0`:then=`</div></div><div class="top-evt-slide"><div class="row">`:else=``]]
 <div class="col-lg-4 col-md-4 col-sm-4">
 	<article class="top-event">
-		<img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:notempty=`[[+longtitle:htmlent]]`:default=`[[+pagetitle:htmlent]]`]]"
+		<img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
 			data-imgsrc="<520:[[+img:phpthumbof=`w=464&h=330&zc=1`]],
 				<800:[[+img:phpthumbof=`w=350&h=249&zc=1`]],
 				<1280:[[+img:phpthumbof=`w=547&h=389&zc=1`]],
@@ -14,7 +14,7 @@
 				<div class="week-day">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
 			</div>
 			<div class="item-title">
-				<a href="[[~[[+id]]]]" title="[[+longtitle:notempty=`[[+longtitle:htmlent]]`:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a>
+				<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
 			</div>
 			<div class="ticket-triangle-left"></div>
 			<div class="ticket-triangle-right"></div>
@@ -52,5 +52,6 @@
 				</div>
 			</div>
 		</div>
+        <a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event__link"></a>
 	</article>
 </div>

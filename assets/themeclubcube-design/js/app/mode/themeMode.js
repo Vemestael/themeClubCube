@@ -38,6 +38,11 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.utils.extend(_globals.siteObj.classes.BlogAnimate, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.Partners, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.ScrollAtOnce, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.MenuToTop, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.TopEventsSlider, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.FormContacts, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.GalleryPage, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.Sharrre, _globals.siteObj.base.Class);
     },
 
     _instantiateClasses = function() {
@@ -48,6 +53,11 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.createClassInstance('blogAnimate', _globals.siteObj.classes.BlogAnimate, {classId: 'BlogAnimate'});
         _globals.siteObj.createClassInstance('partners', _globals.siteObj.classes.Partners, {classId: 'Partners'});
         _globals.siteObj.createClassInstance('scrollAtOnce', _globals.siteObj.classes.ScrollAtOnce, {classId: 'ScrollAtOnce'});
+        _globals.siteObj.createClassInstance('menuToTop', _globals.siteObj.classes.MenuToTop, {classId: 'MenuToTop'});
+        _globals.siteObj.createClassInstance('topEventsSlider', _globals.siteObj.classes.TopEventsSlider, {classId: 'TopEventsSlider'});
+        _globals.siteObj.createClassInstance('formContacts', _globals.siteObj.classes.FormContacts, {classId: 'FormContacts'});
+        _globals.siteObj.createClassInstance('galleryPage', _globals.siteObj.classes.GalleryPage, {classId: 'GalleryPage'});
+        _globals.siteObj.createClassInstance('sharrre', _globals.siteObj.classes.Sharrre, {classId: 'Sharrre'});
     },
 
     _setup = function() {
@@ -57,6 +67,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
     _setBinds = function() {
         _binds().setCompleteBind();
         _binds().setImage_CompleteBind();
+        _binds().setFullHeightSlider_BigSliderBind();
         _binds().setScrollAtOnce_ToggleBind();
     },
 	
@@ -75,6 +86,15 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
                     _themeMode.trigger('EventAnimate_Init', data);
                     _themeMode.trigger('BlogAnimate_Init', data);
                     _themeMode.trigger('Partners_Init', data);
+                    _themeMode.trigger('MenuToTop_Init', data);
+                    _themeMode.trigger('TopEventsSlider_Init', data);
+                    _themeMode.trigger('FormContacts_Init', data);
+                    _themeMode.trigger('GalleryPage_Init', data);
+                    _themeMode.trigger('Sharrre_Init', data);
+                });
+            },
+            setFullHeightSlider_BigSliderBind: function(){
+                _themeMode.bind($window, 'FullHeightSlider_BigSlider', function(e, data){
                     _themeMode.trigger('ScrollAtOnce_Init', data);
                 });
             },

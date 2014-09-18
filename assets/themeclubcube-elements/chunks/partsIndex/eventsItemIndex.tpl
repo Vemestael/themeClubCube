@@ -18,7 +18,7 @@
 		<div class="rombs"></div>
 	</div>
 	<div class="ticket-event-img img-contain">
-		<img class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:notempty=`[[+longtitle:htmlent]]`:default=`[[+pagetitle:htmlent]]`]]"
+		<img class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
 			data-imgsrc="<520:[[+img:phpthumbof=`w=464&h=330&zc=1`]],
 				<800:[[+img:phpthumbof=`w=350&h=249&zc=1`]],
 				<1280:[[+img:phpthumbof=`w=547&h=389&zc=1`]],
@@ -29,7 +29,7 @@
 		<div class="rombs"></div>
 	</div>
 	<div class="ticket-event-lineup">
-		<h2><a href="[[~[[+id]]]]" title="[[+longtitle:notempty=`[[+longtitle:htmlent]]`:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h2>
+		<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h3>
 		<hr>
 		<div class="ticket-line-cont">
 			<div class="ticket-line-up sh">

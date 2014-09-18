@@ -18,12 +18,28 @@ $tmp = array(
         'file' => 'content/galleryListContent',
         'description' => '',
     ),
+    'galleryBigListContent' => array(
+        'file' => 'content/galleryBigListContent',
+        'description' => '',
+    ),
     'galleryItemContent' => array(
         'file' => 'content/galleryItemContent',
         'description' => '',
     ),
     'blogItemContent' => array(
         'file' => 'content/blogItemContent',
+        'description' => '',
+    ),
+    'blogItemWithoutImageContent' => array(
+        'file' => 'content/blogItemWithoutImageContent',
+        'description' => '',
+    ),
+    'blogItemAsideContent' => array(
+        'file' => 'content/blogItemAsideContent',
+        'description' => '',
+    ),
+    'blogItemAsideWithoutImageContent' => array(
+        'file' => 'content/blogItemAsideWithoutImageContent',
         'description' => '',
     ),
     'blogListContent' => array(
@@ -44,6 +60,26 @@ $tmp = array(
     ),
     'eventsItemContent' => array(
         'file' => 'content/eventsItemContent',
+        'description' => '',
+    ),
+    'textContent' => array(
+        'file' => 'content/textContent',
+        'description' => '',
+    ),
+    'textAsideContent' => array(
+        'file' => 'content/textAsideContent',
+        'description' => '',
+    ),
+    'textAsideWithImageContent' => array(
+        'file' => 'content/textAsideWithImageContent',
+        'description' => '',
+    ),
+    'textWithImageContent' => array(
+        'file' => 'content/textWithImageContent',
+        'description' => '',
+    ),
+    'contactsContent' => array(
+        'file' => 'content/contactsContent',
         'description' => '',
     ),
 );

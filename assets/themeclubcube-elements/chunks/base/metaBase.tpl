@@ -10,7 +10,7 @@
 
 		<meta name="cmsmagazine" content="a39ef97fd1d4cf6d3e103f0ff48ea4f6" />
 
-        <meta property="og:title" content="[[*longtitle:notempty=`[[*longtitle]]`:default=`[[*pagetitle]] / [[++site_name]]`]]" />
+        <meta property="og:title" content="[[*longtitle:default=`[[*pagetitle]] / [[++site_name]]`]]" />
         <meta property="og:description" content="[[*description:notempty=`[[*description:htmlent]]`:default=`[[%lf_description:htmlent]]`]]" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="[[~[[*id]]? &scheme=`full`]]" />
@@ -32,15 +32,15 @@
             &jsSources=`
 				[[++themeclubcube.design_url]]js/otherlibs/bootstrap.min.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.imgpreload.js
-                ,[[++themeclubcube.design_url]]js/jquery/plugins/form/jquery.form.js
+                ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.form.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/validation/jquery.validate.js
-				[[++cultureKey:notis=`en`:then=`,[[++themeclubcube.design_url]]js/jquery/plugins/validation/localization/messages_[[++cultureKey]].js`:else=``]]
 				,[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.min.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/tileSlide.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/topEventsAnimate.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/tinyAnimations.js
-				,[[++themeclubcube.design_url]]js/jquery/plugins/flat-calendar.js
+				,[[++themeclubcube.design_url]]js/jquery/plugins/imagelightbox/imagelightbox.js
+                ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.sharrre.js
 				,[[++themeclubcube.design_url]]js/app/lib/site.js
 				,[[++themeclubcube.design_url]]js/app/lib/siteMode.js
 				,[[++themeclubcube.design_url]]js/app/mode/themeMode.js
@@ -51,13 +51,21 @@
 				,[[++themeclubcube.design_url]]js/app/modules/blogAnimate.js
 				,[[++themeclubcube.design_url]]js/app/modules/partners.js
 				,[[++themeclubcube.design_url]]js/app/modules/scrollAtOnce.js
+				,[[++themeclubcube.design_url]]js/app/modules/menuToTop.js
+				,[[++themeclubcube.design_url]]js/app/modules/topEventsSlider.js
+				,[[++themeclubcube.design_url]]js/app/modules/formContacts.js
+				,[[++themeclubcube.design_url]]js/app/modules/galleryPage.js
+                ,[[++themeclubcube.design_url]]js/app/modules/sharrre.js
 				,[[++themeclubcube.design_url]]js/init.js
             `
             &cssSources=`
-				[[++themeclubcube.design_url]]css/style.min.css
-				,[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.css
+				[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick-custom.css
+				,[[++themeclubcube.design_url]]css/style.min.css
             `
         ]]
+		<script>
+			var designUrl = '[[++themeclubcube.design_url]]';
+		</script>
         
         <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
