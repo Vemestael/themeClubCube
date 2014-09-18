@@ -39,8 +39,10 @@ $(function() {
     cubeObj.slider = function() {
         var $sliderNode = $('.slider');
         var $topEventsSLider = $('.top-events-sliders');
-        window.tileSlide = new TileSlide(document.querySelector('.slider'), {dots: false,
-            interval: 8000});
+        window.tileSlide = new TileSlide(document.querySelector('.slider'), {
+            dots: false,
+            interval: 8000
+        });
         // $sliderNode.slick({
         //     // slidesToShow: 1,
         //     // fade: true,
@@ -59,41 +61,46 @@ $(function() {
         // if (document.querySelector('.slider-default')) {
         //     var defaultTileSlide = new TileSlide(document.querySelector('.slider-default'));
         // };
-        $topEventsSLider.slick({
-            slidesToShow: 3,
-            arrows: true,
-            easing: 'easeInExpo',
-            draggable: false,
-            speed: 900,
-            swipe: true,
-            dots: true,
-            infinite:false,
-            responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false,
-                    dots: true
-                }
-            }, {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: false,
-                    dots: false
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    dots: false
-                }
-            }]
-        });
+        if (window.innerWidth > 479) {
+            $topEventsSLider.slick({
+                slidesToShow: 3,
+                arrows: false,
+                easing: 'easeInExpo',
+                draggable: false,
+                speed: 900,
+                swipe: true,
+                dots: true,
+                infinite: false,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        arrows: false,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: false,
+                        arrows: false,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        arrows: false,
+                        dots: true
+                    }
+                }]
+            });
+        };
 
         this.fullHeightSlides();
     };
