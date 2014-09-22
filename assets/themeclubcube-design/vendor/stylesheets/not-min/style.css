@@ -6838,6 +6838,12 @@ header.header-top .home-btn {
   line-height: 14px;
 }
 
+header .nav > li.active span, header .nav > li.active a {
+  background: #e2e2e2;
+  padding: 18px 15px;
+  line-height: 14px;
+}
+
 .dropdown-menu {
   position: relative;
   float: none;
@@ -13730,14 +13736,12 @@ blockquote a:hover {
     overflow: visible !important;
   }
 
-  header .nav > li > a.dropdown-toggle.main-heading-a, header .navbar-nav > li > a, li.dropdown > span.dropdown-toggle {
+  header .nav > li > a.dropdown-toggle.main-heading-a, header .navbar-nav > li > a, li.dropdown > span.dropdown-toggle, header .navbar-nav > li > span {
     font-size: 16px;
+    line-height: 14px;
     background: transparent;
     color: white;
-  }
-
-  header .nav > li.dropdown:hover, header .nav > li.dropdown:first-child:hover {
-    border-top: 1px solid white;
+    padding: 18px 15px;
   }
 
   header .dropdown > .dropdown-menu, .header-top .dropdown > .dropdown-menu {
@@ -13751,7 +13755,7 @@ blockquote a:hover {
 
   header .dropdown > .dropdown-menu {
     left: 0;
-    top: 52px;
+    top: 50px;
   }
 
   header .navbar-collapse .dropdown.open > .dropdown-menu {
@@ -13766,8 +13770,13 @@ blockquote a:hover {
     border-top: 1px solid transparent;
   }
 
-  header .main-navig .nav > li:hover {
+  header .main-navig .nav > li:hover, header .main-navig .nav > li.active, header .nav > li.dropdown:first-child:hover {
     background: url("../images/bg-tr.png") left top;
+    border-top: 1px solid white;
+  }
+
+  header .nav > li.active a, header .nav > li.active span {
+    background: transparent;
   }
 
   .header-top .navbar-collapse, header .navbar-collapse {
@@ -13830,13 +13839,22 @@ blockquote a:hover {
     background: #a82743;
   }
 
-  .header-top .main-navig .nav > li:hover {
+  header.header-top .main-navig .nav > li:hover, header.header-top .main-navig .nav > li.active, .header-top .nav > li.dropdown:first-child:hover {
     border-top: none;
     background: #912a41;
   }
 
   .header-top .nav > li, .header-top .nav > li.dropdown, .header-top .nav > li.dropdown:first-child, .header-top .nav > li.dropdown:first-child:hover, .header-top .nav > li.dropdown {
     border-top: none;
+  }
+
+  .header-top .nav > li.active a, .header-top .nav > li.active span {
+    background: transparent;
+    padding: 19px 15px 23px;
+  }
+
+  .header-top .dropdown-menu > .active > a, .header-top .dropdown-menu > .active > a:focus, .header-top .dropdown-menu > .active > a:hover {
+    color: black;
   }
 
   .home-btn {
@@ -13888,6 +13906,14 @@ blockquote a:hover {
     background: #e5e5e5;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .dropdown-menu > li > a, .dropdown-menu > li > span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+    border-bottom: none;
+  }
+
+  .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    border-top: none;
   }
 
   .top-events .navbar-nav > li.dropdown, .top-events .navbar-nav > li.dropdown:hover {

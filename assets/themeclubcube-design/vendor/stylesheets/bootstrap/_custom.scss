@@ -267,6 +267,9 @@ header.header-top .home-btn {margin-top: 14px;}
 .nav.nav-top>li>a:hover, .nav.nav-top>li>.nav>li>span:hover {background:$white-color;color:$black-color;border-top: 1px solid $light-grey;}
 .nav.nav-top .dropdown-menu li a, .nav.nav-top .dropdown-menu li span {padding: 17px 20px;}
 .navbar-nav>li>a, .nav>li>a.dropdown-toggle.main-heading-a, .nav>li>span.dropdown-toggle.main-heading-a  {display: block;padding: 18px 15px;line-height: $reg-font-size;}
+header .nav>li.active span, header .nav>li.active a {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
+// header .main-navig .nav>li.active, header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
+// .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li:hover, .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
 // .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
 // .nav>li.dropdown, .nav>li.dropdown:first-child,
 
@@ -1705,14 +1708,16 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 header {height: 106px;padding:27px 0;background:url('../images/header-shad.png') left top repeat-x;}
 header .main-navig {margin-right: 0;float: left}
 header #navbar-collapse-1 {margin-right: 8.33333%;float: right;overflow: visible!important;}
-header .nav>li>a.dropdown-toggle.main-heading-a, header .navbar-nav>li>a, li.dropdown>span.dropdown-toggle {font-size: $md-font-size;background: transparent;color:$white-color;}
-header .nav>li.dropdown:hover, header .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
+header .nav>li>a.dropdown-toggle.main-heading-a, header .navbar-nav>li>a, li.dropdown>span.dropdown-toggle, header .navbar-nav>li>span {font-size: $md-font-size;line-height: 14px;background: transparent;color:$white-color;padding: 18px 15px;}
+// header .nav>li.dropdown:hover, header .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
 header .dropdown>.dropdown-menu, .header-top .dropdown>.dropdown-menu {position: absolute;min-width: 200px;left: 0;top: 56px; @include box-shadow(0 6px 12px rgba(0,0,0,.175));}
-header .dropdown>.dropdown-menu {left: 0;top: 52px;}
+header .dropdown>.dropdown-menu {left: 0;top: 50px;}
 header .navbar-collapse .dropdown.open>.dropdown-menu {display: none;}
 header .navbar-collapse .dropdown.open:hover .dropdown-menu {display: block;}
 header .nav>li.dropdown, header .nav>li.dropdown:first-child, header .nav>li.dropdown, header .nav>li {border-top: 1px solid transparent;}
-header .main-navig .nav>li:hover {background:url('../images/bg-tr.png') left top;}
+header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .nav>li.dropdown:first-child:hover {background:url('../images/bg-tr.png') left top;border-top: 1px solid $white-color;}
+header .nav>li.active a, header .nav>li.active span {background: transparent;}
+
 
 .header-top .navbar-collapse, header .navbar-collapse {width: auto;@include box-shadow(none);}
 .header-top .nav>li>a.dropdown-toggle.main-heading-a, .header-top .navbar-nav>li>a, .header-top .navbar-nav>li>span {font-size: $reg-font-size;color:$white-color;background:transparent;padding: 19px 15px 23px;}
@@ -1725,9 +1730,10 @@ header .main-navig .nav>li:hover {background:url('../images/bg-tr.png') left top
 .header-top .navbar-brand.first {margin-top: 12px;}
 .header-top .row, header .row {margin-left: -15px;margin-right: -15px;}
 .header-top .nav>li, .header-top .nav>li:first-child {border-top: none;background:$red-color;}
-.header-top .main-navig .nav>li:hover {border-top: none;background:$dark-reddy-color;}
+header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>li.active, .header-top .nav>li.dropdown:first-child:hover {border-top: none;background:$dark-reddy-color;}
 .header-top .nav>li, .header-top .nav>li.dropdown, .header-top .nav>li.dropdown:first-child, .header-top .nav>li.dropdown:first-child:hover, .header-top .nav>li.dropdown {border-top: none;}
-
+.header-top .nav>li.active a, .header-top .nav>li.active span {background: transparent;padding: 19px 15px 23px;}
+.header-top .dropdown-menu>.active>a, .header-top .dropdown-menu>.active>a:focus, .header-top .dropdown-menu>.active>a:hover {color:$black-color;}
 
 .home-btn {display: none;}
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {padding-right: auto;overflow-y: hidden!important;}
@@ -1739,6 +1745,8 @@ header .main-navig .nav>li:hover {background:url('../images/bg-tr.png') left top
 .dropdown:hover .dropdown-menu {display: block;}
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {padding:17px 20px;}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>span:hover {background:$hover-li-a;@include transitions(.3s);}
+.dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {border-bottom: none;}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {border-top: none;}
 .top-events .navbar-nav>li.dropdown, .top-events .navbar-nav>li.dropdown:hover {border-right: none;border-left: none;}
 
 
