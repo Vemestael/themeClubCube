@@ -34,6 +34,7 @@ function onPlayerReady(event) {
     var $slickPrev = $('.slick-prev');
     var $slickNext = $('.slick-next');
     var $slickDots = $('.slick-dots');
+    var $scrollDownBtn = $('.scroll-down');
     var videoOnOff = false;
 
     function getTime(seconds) {
@@ -60,6 +61,7 @@ function onPlayerReady(event) {
         $slickNext.fadeOut();
         $bgImg.fadeOut();
         $slickDots.fadeOut();
+        $scrollDownBtn.fadeOut();
         $sPattern.fadeOut();
     };
 
@@ -69,23 +71,23 @@ function onPlayerReady(event) {
         $slickNext.fadeIn();
         $bgImg.fadeIn();
         $slickDots.fadeIn();
+        $scrollDownBtn.fadeIn();
         $sPattern.fadeIn();
     };
 
     $playBtn.on('click touchend', function() {
-        console.log('Play!');
 
         // $('.slider').slickPause();
         tileSlide.stopSlide();
         _eventTarget.playVideo();
         setTimeout(function() {
             hideControls();
-        }, 100);
+        }, 200);
         videoOnOff = false;
 
         $pattern.on('click touchend', function() {
-            _eventTarget.pauseVideo();
             showControls();
+            _eventTarget.pauseVideo();
             setTimeout(function() {
                 tileSlide.playSlide();
                 // $('.slider').slickPlay();

@@ -401,20 +401,22 @@ $(function() {
             var $slideClickNext = $('.slick-next');
             var slideClickHeight = $slideClick.height();
             var slideClickTop = (window.innerHeight - slideClickHeight) / 2;
-            var sliderTopPadding = (sliderHeight - slideNodeHeight) / 2;
+            var sliderTopPadding = (windowHeight - slideNodeHeight) / 2;
 
             // $slideClick.css('top', slideClickTop);
             // $slideClickNext.css('top', slideClickTop);
-            if ((slideNodeHeight < sliderHeight) && ($('.slider').length)) {
+            if ((windowWidth > 479) && (windowHeight < 400) && ($('.slider').length)) {
+                $rows.css('top', 55);
+            } else if ((slideNodeHeight < windowHeight) && ($('.slider').length)) {
                 $rows.css('top', sliderTopPadding + 10);
-            } else if ((slideNodeHeight < sliderHeight) && ($('.slider-default').length)) {
+            } else if ((slideNodeHeight < windowHeight) && ($('.slider-default').length)) {
                 $rows.css('top', sliderTopPadding + 10);
             } else {
                 $rows.css('top', '110px');
             };
-            if ((slideNodeHeight < sliderHeight) && (window.devicePixelRatio === 2) && ((windowWidth) === 1024)) {
-                $rows.css('top', ((sliderHeight / 2 - slideNodeHeight)) + 40);
-            };
+            // if ((slideNodeHeight < windowHeight) && (window.devicePixelRatio === 2) && ((windowWidth) === 1024)) {
+            //     $rows.css('top', (((windowHeight / 2) - slideNodeHeight)) + 40);
+            // };
             // if (slideNodeHeight > $(window).outerHeight()) {
             //     console.log($(window).outerHeight(), slideNodeHeight);
             // };
@@ -490,14 +492,39 @@ $(function() {
     //Fullscreen Iframe sizing
     cubeObj.addVideos = function() {
         var $iframes = $('.video-bg');
-        if (window.innerWidth > window.innerHeight) {
-            $iframes.width(document.body.clientWidth);
-            $iframes.height((document.body.clientWidth / 1.77) + 40);
-            // $iframes.height((window.innerWidth / 1.77));
-        } else {
-            $iframes.width(window.innerWidth);
-            $iframes.height(window.innerHeight + 40);
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+        // if (window.innerWidth > window.innerHeight) {
+        //     $iframes.width(document.body.clientWidth);
+        //     $iframes.height((document.body.clientWidth / 1.77) + 40);
+        //     // $iframes.height((window.innerWidth / 1.77));
+        // } else {
+        //     $iframes.width(window.innerWidth);
+        //     $iframes.height(window.innerHeight + 40);
+        // };
+
+        //if width is bigger than height
+        if (windowWidth > windowHeight) {
+            // $iframes.width(windowWidth);
+            // $iframes.height(windowWidth / 1.777);
+            var videoWidth = windowHeight * 1.77669;
+            var videoHeight = windowWidth / 1.77669;
+            if (videoWidth > windowWidth) {
+                $iframes.width(videoWidth);
+                $iframes.height(videoWidth / 1.77669);
+                $iframes.css('left', -((videoWidth - windowWidth) / 2));
+            } else if (videoHeight > windowHeight) {
+                videoHeight += 40;
+                $iframes.height(videoHeight);
+                $iframes.width(videoHeight * 1.77669);
+                $iframes.css('top', -((videoHeight - windowHeight - 35) / 2));
+                $iframes.css('left', -(((videoHeight * 1.77669) - windowWidth) / 2));
+            };
+        } else if (windowWidth < windowHeight) {
+            $iframes.height(windowHeight);
+            $iframes.width(windowWidth);
         };
+
         $(window).resize(function() {
             cubeObj.addVideos();
         });

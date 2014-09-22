@@ -31,10 +31,10 @@
 
 
 .left-pag.off, .right-pag.off {cursor: default;}
-.left-pag.off .pad-arr, .right-pag.off .pad-arr {background:$ccc-color;@include transitions(.3s);}
+.left-pag.off .pad-arr, .right-pag.off .pad-arr, .left-pag.off:hover .pad-arr, .right-pag.off:hover .pad-arr  {background:$ccc-color;@include transitions(.3s);}
 .left-pag.off .pad-text {border-left:0 none;@include transitions(.3s);}
 .right-pag.off .pad-text {border-right:0 none;@include transitions(.3s);}
-.left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates  {color:$ccc-color;@include transitions(.3s);}
+.left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates, .right-pag.off:hover .pad-title, .right-pag.off:hover .pad-dates  {color:$ccc-color;@include transitions(.3s);}
 
 .left-pag.pressed .pad-arr, .right-pag.pressed .pad-arr {background:$d35a33;}
 .left-pag.pressed .pad-text, .right-pag.pressed .pad-text {border:1px solid $d35a33;}
@@ -61,7 +61,7 @@
 .right-pag:hover .pad-text, .right-pag.hover .pad-text {border:1px solid $orange-border-light;border-right:0 none;@include transitions(.3s);}
 
 .left-pag.off .pad-text, .right-pag.off .pad-text  {border:1px solid $e6e6e6;@include transitions(.3s);}
-
+.left-pag.off:hover .pad-title, .right-pag.off:hover .pad-title {color:$ccc-color;@include transitions(.3s);}
 }
 
 

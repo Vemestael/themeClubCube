@@ -1,0 +1,81 @@
+/* ========================================================================
+ * Header
+ * ======================================================================== */
+header {}
+.header-top {background: #;}/*Red*/
+
+
+/* ========================================================================
+ * Footer
+ * ======================================================================== */
+.contact-us {background: linear-gradient;}/*Red*/
+.welcome {background: #;}/*Orange*/
+.welcome-inner .corner-welcome {border-left: 30px solid #;}/*Orange*/
+#subscribe-btn {background: #;}/*Red*/
+footer a {color:#;}/*Orange*/
+
+
+/* ========================================================================
+ * Buttons
+ * ======================================================================== */
+blockquote {border-left: 5px solid #;}/*Red*/
+blockquote a {color:#;}/*Orange*/
+
+.read-more.off, .read-more.off:hover {background:#;}/*Grey off*/
+.read-more {background:#;}/*Red*/
+.read-more.hover, .read-more:hover {background:#;}/*Orange*/
+.read-more.pressed {background: #;}/*Orange pressed*/
+
+.left-pag.off .pad-arr, .right-pag.off .pad-arr, .left-pag.off:hover .pad-arr, .right-pag.off:hover .pad-arr  {background:#;@include transitions(.3s);}/*Grey off*/
+.left-pag.off:hover .pad-title, .right-pag.off:hover .pad-title {color:#;}/*Grey off*/
+.left-pag .pad-arr, .right-pag .pad-arr {background:#;@include transitions(.3s);}/*Orange*/
+.left-pag.pressed .pad-arr, .right-pag.pressed .pad-arr, .left-pag:hover .pad-arr, .right-pag:hover .pad-arr {background:#;}/*Orange Hover*/
+.left-pag.pressed .pad-title, .right-pag.pressed .pad-title, .left-pag:hover .pad-title, .right-pag:hover .pad-title {color:#;}/*Orange Pressed*/
+
+.button-slider.off {background-color:#;border:2px solid #;}/*Grey off*/
+.button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#;border:2px solid #;}/*Red*/
+.button-slider.pressed, .top-events-sliders .slick-dots li.slick-active button, .default-slider-tickets .slick-dots li.slick-active button {border:2px solid $light-grey;background: transparent;}
+.button-slider.hover {border:2px solid #;}/*Orange pressed*/
+
+
+/* ========================================================================
+ * Main
+ * ======================================================================== */
+.date-event {background: #;}/*Orange*/
+.popup-evt {background:#linear-gradient;}/*Red*/
+.gallery {background:#linear-gradient;}/*Red*/
+.blog-item-def {background: #eaeaea;}
+.blog-item-def:hover {background: #f7e9e5;}
+
+
+/* ========================================================================
+ * Event list
+ * ======================================================================== */
+.ticket-event-date {background: #;}/*Orange*/
+.ticket-event-price {background: #;}/*Red*/
+.ticket-event-lineup .ticket-line-up {color:;}/*Red*/
+
+
+/* ========================================================================
+ * Events tiles
+ * ======================================================================== */
+
+
+/* ========================================================================
+ * Events view
+ * ======================================================================== */
+ .top-line-up {background: #;}/*Dark brown*/
+ .bottom-line-up {background: #;}/*Light brown*/
+ .socials.brown-sc {color:#;}/*Dark brown*/
+ .ttl {color:#;}/*Orange*/
+ .page-text ul li:before {background: #;}/*Red*/
+ .page-text ol li:before {background: #;}/*Red*/
+ .page-text .footnote {color:#;}/*Orange*/
+
+
+/* ========================================================================
+ * Content view
+ * ======================================================================== */
+ .blog-item-categ {color:#;}/*Orange*/
+ .content-header.white-no-img .event-about.view-evt .date {background:#;}/*Orange*/
+ .content-header.white-no-img .event-about.view-evt .slider-heading.event-h1 {color:#;}/*Orange*/
