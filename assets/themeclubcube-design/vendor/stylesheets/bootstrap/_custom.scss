@@ -178,12 +178,6 @@ input:focus{outline:none;}
 .container-fluidss .pattern {z-index: 8;}
 .slick-prev, .slick-next {z-index: 11;top: 0;bottom: 0;margin: auto;}
 
-//Tooltips
-.tooltip {font-size: 14px;line-height: 20px;}
-.tooltip-inner {max-width: 340px;background-color: $orange-color;padding: 20px;text-align: left;}
-.tooltip.top .tooltip-arrow {bottom: -60px;border-top-color:$orange-color;border-width: 40px 40px 40px 0;}
-.tooltip.in.top {opacity:1;}
-
 //Tables
 // table.club-table {width: 100%;}
 .club-table {margin-bottom: 35px;}
@@ -193,8 +187,8 @@ table.club-table > tbody > tr > td, table.club-table > tbody > tr > th, table.cl
 table.club-table thead tr th:first-child, table.club-table tbody tr td:first-child {padding-left: 20px;}
 table.club-table thead tr th:last-child, table.club-table tbody tr td:last-child {padding-right: 20px;}
 table.club-table thead tr th {text-transform: uppercase;font-family: $pt-sans-bold;font-size: $reg-font-size;line-height: 30px;}
-table.club-table tr.white {background:$white-color;}
-table.club-table tr.grey {background:$efefef;}
+// table.club-table tr.white {background:$white-color;}
+// table.club-table tr.grey {background:$efefef;}
 table.club-table tbody tr td {font-family: $pt-sans;font-size:$reg-font-size; }
 .club-table > tbody > tr > td, .club-table > tbody > tr > th, .club-table > tfoot > tr > td, .club-table > tfoot > tr > th, .club-table > thead > tr > td, .club-table > thead > tr > th {vertical-align: middle;}
 
@@ -1707,7 +1701,7 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 //Header
 header {height: 106px;padding:27px 0;background:url('../images/header-shad.png') left top repeat-x;}
 header .main-navig {margin-right: 0;float: left}
-header #navbar-collapse-1 {margin-right: 8.33333%;float: right;overflow: visible!important;}
+header #navbar-collapse-1 {margin-right: 8.33333%;right: float;overflow: visible!important;}
 header .nav>li>a.dropdown-toggle.main-heading-a, header .navbar-nav>li>a, li.dropdown>span.dropdown-toggle, header .navbar-nav>li>span {font-size: $md-font-size;line-height: 14px;background: transparent;color:$white-color;padding: 18px 15px;}
 // header .nav>li.dropdown:hover, header .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
 header .dropdown>.dropdown-menu, .header-top .dropdown>.dropdown-menu {position: absolute;min-width: 200px;left: 0;top: 56px; @include box-shadow(0 6px 12px rgba(0,0,0,.175));}

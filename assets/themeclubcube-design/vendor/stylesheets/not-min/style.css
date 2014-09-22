@@ -6426,28 +6426,6 @@ input:focus {
   margin: auto;
 }
 
-.tooltip {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.tooltip-inner {
-  max-width: 340px;
-  background-color: #e15e32;
-  padding: 20px;
-  text-align: left;
-}
-
-.tooltip.top .tooltip-arrow {
-  bottom: -60px;
-  border-top-color: #e15e32;
-  border-width: 40px 40px 40px 0;
-}
-
-.tooltip.in.top {
-  opacity: 1;
-}
-
 .club-table {
   margin-bottom: 35px;
 }
@@ -6480,14 +6458,6 @@ table.club-table thead tr th {
   font-family: "PT Sans bold", sans-serif;
   font-size: 14px;
   line-height: 30px;
-}
-
-table.club-table tr.white {
-  background: white;
-}
-
-table.club-table tr.grey {
-  background: #efefef;
 }
 
 table.club-table tbody tr td {
@@ -13732,7 +13702,7 @@ blockquote a:hover {
 
   header #navbar-collapse-1 {
     margin-right: 8.33333%;
-    float: right;
+    right: float;
     overflow: visible !important;
   }
 
@@ -17771,6 +17741,8 @@ table.club-table label {
   border: 2px solid #cccccc;
   font-family: "PT Sans it", sans-serif;
   font-size: 18px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -18015,6 +17987,55 @@ input.submit:hover {
   background-color: #e15e32;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+/* ========================================================================
+* Error states
+* ======================================================================== */
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+  color: black;
+}
+
+.has-error .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #e15e32;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.has-error .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* ========================================================================
+* Tooltips
+* ======================================================================== */
+.tooltip {
+  font-size: 14px;
+  line-height: 20px;
+  z-index: 12;
+}
+
+.tooltip-inner {
+  max-width: none;
+  background-color: #e15e32;
+  padding: 20px;
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-top-color: #e15e32;
+  border-width: 25px 34px 40px 0;
+}
+
+.tooltip.in {
+  opacity: 1;
 }
 
 /* ========================================================================
