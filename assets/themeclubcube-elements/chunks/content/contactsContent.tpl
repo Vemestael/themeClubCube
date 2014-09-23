@@ -37,21 +37,17 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-4 col-sm-8">
-									<button type="submit" class="btn btn-default">[[%lf_contact_send:htmlent]]</button>
+									<button type="submit" class="btn btn-default submit">[[%lf_contact_send:htmlent]]</button>
 								</div>
 							</div>
 						</form>
-						<div id="successMessage" class="hidden">
+						<div id="successMessage" style="display: none;">
 							<p>[[%lf_contact_successMessage:htmlent? &namespace=`sitelang` &language=`[[++cultureKey]]`]]</p>
 						</div>
 					</div>
 				</div>
 			</main>
-		</div>
-	</div>
-	<div class="container absi">
-		<div class="row absi-inner">
-			<aside class="col-lg-12 col-md-12 col-sm-12 items-aside">
+            <aside class="col-lg-4 col-md-12 col-sm-12 items-aside">
 				[[$eventsListAsideCommon]]
 
 				[[$blogListAsideCommon]]

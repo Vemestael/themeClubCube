@@ -8,7 +8,7 @@
 			<div class="o-h">
 				<div class="slider-heading col-sm-6 col-lg-12">[[+pagetitle:htmlent]]</div>
 				<div class="event-about visible-sm visible-xs visible-md col-sm-6">
-					<time class="date" datetime="2014-09-23">
+					<time class="date" datetime="[[+timeStart]]">
 						<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
 						<div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
 						<div class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
@@ -36,7 +36,7 @@
 		</div>
 		<div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
 			<div class="event-about">
-				<time class="date" datetime="2014-09-23">
+				<time class="date" datetime="[[+timeStart]]">
                     <div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
                     <div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
                     <div class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
@@ -58,8 +58,8 @@
 			</div>
 			<div class="socials">
 				<div class="share">[[%lf_share]]</div>
-                <div class="fb-soc" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>
-                <div class="tw-soc" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>
+                <div class="fb-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>
+                <div class="tw-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>
 			</div>
 		</div>
 	</div>

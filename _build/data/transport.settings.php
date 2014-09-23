@@ -11,7 +11,7 @@ $tmp = array(
 	),
     'design_url' => array(
         'xtype' => 'textfield',
-        'value' => '{assets_url}'.PKG_NAME_LOWER.'-design/',
+        'value' => '/assets/'.PKG_NAME_LOWER.'-design/',
         'area' => 'themeclubcube_main',
     ),
 

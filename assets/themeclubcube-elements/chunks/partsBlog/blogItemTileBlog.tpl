@@ -2,7 +2,7 @@
 	<article class="blog-item-def">
 		<div class="item-title">
 			<div class="item-aside">
-				<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle]]</a>
+				<h2><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle]]</a></h2>
 				<time class="top-event-place">[[+publishedon:dateAgo]]</time>
 			</div>
 		</div>

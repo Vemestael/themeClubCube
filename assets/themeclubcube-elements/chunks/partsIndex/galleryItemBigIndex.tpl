@@ -1,5 +1,4 @@
-[[+idx:mod=`4`:is=`0`:then=`</div><div class="slide-gall-item"><div class="row">`:else=``]]
-<div class="col-md-4 col-sm-4">
+<div>
 	<article class="gallery-default-item">
 		<div class="img-cont">
 			<img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-h-responsive img-preload"

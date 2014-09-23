@@ -8,7 +8,7 @@ if ($object && $object->xpdo) {
             /* list of tvs and templates for each */
             $tvs = array(
                 'img' => array(
-                    'templates' => array('partners','galleryItem','blogItem'),
+                    'templates' => array('partners','galleryItem','blogItem','404'),
                     'sources' => array(
                         'web' => 'Uploads'
                     )

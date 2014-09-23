@@ -1,12 +1,13 @@
 <?php
-if ($object && $object->xpdo) {
+if ($object->xpdo) {
+    /* @var modX $modx */
+    $modx =& $object->xpdo;
     switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         case xPDOTransport::ACTION_INSTALL:
         case xPDOTransport::ACTION_UPGRADE:
-            $modx =& $object->xpdo;
 
             /* list of tvs and templates for each */
-            $categoryId = $modx->getObject('modCategory', array('category'=>PKG_NAME))->get('id');
+            $categoryId = $modx->getObject('modCategory', array('category'=>'themeClubCube'))->get('id');
             $tvs = array(
                 'gallery' => array(
                     'category' => $categoryId,

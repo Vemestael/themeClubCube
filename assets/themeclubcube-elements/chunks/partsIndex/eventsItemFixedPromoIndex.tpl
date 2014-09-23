@@ -7,11 +7,11 @@
 		<div class="col-lg-10 col-lg-offset-1 col-md-5 col-md-offset-1 text-left slide-title">
 			<div class="slider-heading col-sm-8 col-lg-6">[[+pagetitle:htmlent]]</div>
 			<div class="event-about col-sm-4 col-lg-6">
-				<div class="date">
+                <time class="date vid-date" datetime="[[+timeStart]]">
 					<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
 					<div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
 					<div class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
-				</div>
+				</time>
 				<div class="col-lg-6 col-sm-6 event-times">
 					<div class="slider-heading time-evt">
 						<span class="trs">[[%lf_events_start:htmlent]]</span>

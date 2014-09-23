@@ -70,7 +70,9 @@ appMakeBeCool.gateway.addClass('FormContacts', function(properties, $, $window, 
 
     _formContactSuccess = function(response){
         if(response.success) {
-            _globals.contactFormSuccessMessage.slideDown('slow');
+            _globals.contactForm.slideUp('slow', function(){
+                _globals.contactFormSuccessMessage.slideDown('slow');
+            });
         } else {
             for (var key in response.errors) {
                 var el = $('#'+key);

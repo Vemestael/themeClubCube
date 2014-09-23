@@ -137,9 +137,9 @@ if ($object && $object->xpdo) {
                 /*  */
                 $resources = array(
                     'childs' => array(
-                        'index' => array(
+                        'home' => array(
                             'template' => $tpl_index->get('id'),
-                            'pagetitle' => 'index',
+                            'pagetitle' => 'Home',
                             'longtitle' => '',
                             'description' => '',
                             'introtext' => '',
@@ -177,6 +177,9 @@ if ($object && $object->xpdo) {
                             'context_key' => 'web',
                             'menutitle' => '',
                             'group' => 'technical',
+                            'tvs' => array(
+                                'img' => '404.png'
+                            )
                         ),
                         'sitemap' => array(
                             'template' => 0,
@@ -200,7 +203,7 @@ if ($object && $object->xpdo) {
                             'content_type' => 2, //XML
                             'group' => 'technical',
                         ),
-                        '404' => array(
+                        'ajax' => array(
                             'template' => 0,
                             'pagetitle' => 'ajax',
                             'longtitle' => '',

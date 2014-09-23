@@ -78,6 +78,10 @@ $tmp = array(
         'file' => 'contacts',
         'description' => 'Contact page template',
     ),
+    '404' => array(
+        'file' => '404',
+        'description' => 'Not found page template',
+    ),
 );
 
 // Save chunks for setup options

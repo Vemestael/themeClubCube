@@ -7,15 +7,6 @@ if ($object && $object->xpdo) {
 
             /* list of property sets, and elements associated with each */
             $sets = array(
-//                'indexResources' => array(
-//                    array('class' => 'modSnippet','name' => 'pdoResources', 'properties' => array(
-//                        array(
-//                            'name' => 'parents',
-//                            'type' => 'textfield',
-//                            'value' => $modx->getObject('TicketsSection', array('alias' => 'blog',))->get('id'),
-//                        )
-//                    )),
-//                ),
                 'indexSlider' => array(
                     array('class' => 'modSnippet','name' => 'pdoResources'),
                 ),

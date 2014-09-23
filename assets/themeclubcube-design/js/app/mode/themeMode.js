@@ -40,6 +40,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.utils.extend(_globals.siteObj.classes.ScrollAtOnce, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.MenuToTop, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.TopEventsSlider, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.GallerySlider, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.FormContacts, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.GalleryPage, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.Sharrre, _globals.siteObj.base.Class);
@@ -55,6 +56,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.createClassInstance('scrollAtOnce', _globals.siteObj.classes.ScrollAtOnce, {classId: 'ScrollAtOnce'});
         _globals.siteObj.createClassInstance('menuToTop', _globals.siteObj.classes.MenuToTop, {classId: 'MenuToTop'});
         _globals.siteObj.createClassInstance('topEventsSlider', _globals.siteObj.classes.TopEventsSlider, {classId: 'TopEventsSlider'});
+        _globals.siteObj.createClassInstance('gallerySlider', _globals.siteObj.classes.GallerySlider, {classId: 'GallerySlider'});
         _globals.siteObj.createClassInstance('formContacts', _globals.siteObj.classes.FormContacts, {classId: 'FormContacts'});
         _globals.siteObj.createClassInstance('galleryPage', _globals.siteObj.classes.GalleryPage, {classId: 'GalleryPage'});
         _globals.siteObj.createClassInstance('sharrre', _globals.siteObj.classes.Sharrre, {classId: 'Sharrre'});
@@ -83,11 +85,12 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
                 _themeMode.bind($window, 'Images_ImagesComplete', function(e, data){
                     _themeMode.trigger('FullHeightSlider_Init', data);
                     _themeMode.trigger('LoaderMain_End', data);
+                    _themeMode.trigger('TopEventsSlider_Init', data);
+                    _themeMode.trigger('GallerySlider_Init', data);
                     _themeMode.trigger('EventAnimate_Init', data);
                     _themeMode.trigger('BlogAnimate_Init', data);
                     _themeMode.trigger('Partners_Init', data);
                     _themeMode.trigger('MenuToTop_Init', data);
-                    _themeMode.trigger('TopEventsSlider_Init', data);
                     _themeMode.trigger('FormContacts_Init', data);
                     _themeMode.trigger('GalleryPage_Init', data);
                     _themeMode.trigger('Sharrre_Init', data);

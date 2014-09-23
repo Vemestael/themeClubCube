@@ -1,3 +1,4 @@
-[[$metaBase? ?notfound=`1`]]
+[[$metaBase]]
+[[$headerBase]]
 [[$404content]]
-[[$footerBase? ?notfound=`1`]]
+[[$footerBase]]

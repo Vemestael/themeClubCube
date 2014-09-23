@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
     <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>[[*longtitle:notempty=`[[*longtitle:htmlent]]`:default=`[[*pagetitle:htmlent]][[%lf_site_name:htmlent]]`]]</title>
         <meta name="description" content="[[*description:notempty=`[[*description:htmlent]]`:default=`[[%lf_description:htmlent]]`]]" />
         <base href="[[++site_url]]" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="[[*pagetitle:htmlent]]">
 
-		<meta name="cmsmagazine" content="a39ef97fd1d4cf6d3e103f0ff48ea4f6" />
+		[[-<meta name="cmsmagazine" content="a39ef97fd1d4cf6d3e103f0ff48ea4f6" />]]
 
         <meta property="og:title" content="[[*longtitle:default=`[[*pagetitle]] / [[++site_name]]`]]" />
         <meta property="og:description" content="[[*description:notempty=`[[*description:htmlent]]`:default=`[[%lf_description:htmlent]]`]]" />
@@ -17,11 +21,11 @@
         <meta property="og:image" content="[[*img:notempty=`[[++site_url:replace=`/[[++cultureKey]]/==`]][[*img]]`:default=`[[++site_url]]assets/design/images/logo.png`]]" />
         <meta property="og:site_name" content="[[++site_name]]" />
 
+        <meta http-equiv="x-dns-prefetch-control" content="on">
         <link rel="dns-prefetch" href="http://code.jquery.com" />
         <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="http://www.google-analytics.com" /> 
 
-        <link rel="author" href="humans.txt" />
         <link rel="icon" href="[[++site_url]]favicon.ico" type="image/x-icon" /> 
         <link rel="shortcut icon" href="[[++site_url]]favicon.ico" type="image/x-icon" />
         
@@ -35,7 +39,6 @@
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.form.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/validation/jquery.validate.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.min.js
-				,[[++themeclubcube.design_url]]js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/tileSlide.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/topEventsAnimate.js
 				,[[++themeclubcube.design_url]]js/jquery/plugins/tinyAnimations.js
@@ -52,7 +55,8 @@
 				,[[++themeclubcube.design_url]]js/app/modules/partners.js
 				,[[++themeclubcube.design_url]]js/app/modules/scrollAtOnce.js
 				,[[++themeclubcube.design_url]]js/app/modules/menuToTop.js
-				,[[++themeclubcube.design_url]]js/app/modules/topEventsSlider.js
+				,[[++themeclubcube.design_url]]js/app/modules/gallerySlider.js
+                ,[[++themeclubcube.design_url]]js/app/modules/topEventsSlider.js
 				,[[++themeclubcube.design_url]]js/app/modules/formContacts.js
 				,[[++themeclubcube.design_url]]js/app/modules/galleryPage.js
                 ,[[++themeclubcube.design_url]]js/app/modules/sharrre.js

@@ -55,9 +55,9 @@ if ($object->xpdo) {
                     )
                 ),
                 'molt' => array(
-                    'signature' => 'molt-0.0.1-beta',
+                    'signature' => 'molt-1.0.1-beta',
                     'options' => array(
-                        'version_major' => 0,
+                        'version_major' => 1,
                         'version_minor:>=' =>  0,
                     )
                 ),
@@ -97,6 +97,7 @@ if ($object->xpdo) {
 				}
 			}
 			$success = true;
+            $modx->cacheManager->refresh();
 			break;
 
 		case xPDOTransport::ACTION_UNINSTALL:

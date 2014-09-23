@@ -1,5 +1,4 @@
-[[+idx:mod=`4`:is=`0`:then=`</div></div><div class="top-evt-slide"><div class="row">`:else=``]]
-<div class="col-lg-4 col-md-4 col-sm-4">
+<div class="">
 	<article class="top-event">
 		<img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
 			data-imgsrc="<520:[[+img:phpthumbof=`w=464&h=330&zc=1`]],

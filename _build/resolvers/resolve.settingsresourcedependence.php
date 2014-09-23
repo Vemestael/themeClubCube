@@ -11,6 +11,7 @@ if ($object && $object->xpdo) {
                 'themeclubcube.gallery_resource' => 'gallery',
                 'themeclubcube.events_resource' => 'events',
                 'themeclubcube.ajax_form_contacts' => 'formcontacts',
+                'error_page' => '404',
             );
 
             $context_key = 'web';

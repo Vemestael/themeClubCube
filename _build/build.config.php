@@ -6,7 +6,7 @@ define('PKG_NAME_LOWER', strtolower(PKG_NAME));
 
 define('PKG_VERSION', '0.0.1');
 define('PKG_RELEASE', 'dev');
-define('PKG_AUTO_INSTALL', true);
+define('PKG_AUTO_INSTALL', false);
 define('PKG_NAMESPACE_PATH', '{core_path}components/'.PKG_NAME_LOWER.'/');
 
 /* define paths */
@@ -62,6 +62,7 @@ $BUILD_RESOLVERS = array(
 
     'contenttype',
     'settings',
+    'htaccess',
     'sources',
 
     'tv.create',
@@ -74,6 +75,4 @@ $BUILD_RESOLVERS = array(
 
     'usergroups',
     'users',
-
-    'htaccess',
 );

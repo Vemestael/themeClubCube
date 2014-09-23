@@ -7,11 +7,9 @@
 				<div class="gall-slide-prev"></div>
 			</div>
 		</div>
-		<div class="default-gallery-slider">
-			<div class="slide-gall-item">
-				<div class="row">
-					[[+output]]
-				</div>
+        <div class="row slide-gall-item">
+            <div class="default-gallery-slider">
+                [[+output]]
 			</div>
 		</div>
 		<div class="row more-button-bott">

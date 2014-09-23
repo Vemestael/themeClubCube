@@ -3,7 +3,7 @@ appMakeBeCool.gateway.addClass('Partners', function(properties, $, $window, $doc
     var _partners = this,
     _defaults = {
         // elements
-        partners: '.partners-slider'
+        partners: '#partnersSlider'
         // prop
         // data
         // classes ans styles
