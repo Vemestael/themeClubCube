@@ -28,6 +28,22 @@
 - на активной странице span вместо ссылки на нее саму (в главном меню), должен иметь класс active, чтобы он выделялся цветом как активная страница.
 
 
+22.10
+
+- сделал формы с .error. 
+
+Синтаксис как в бутстрапе: class="form-group has-error"и добавляется стиль для инпутов. Для того, чтобы при эрроре появлялся тултип сверху от 
+инпута, нужно ему писать это: 
+
+	<input class="form-control tooltips-show" type="email" name="" id="" data-toggle="tooltip" titile data-original-title="Enter valid Email" >
+
+А потом вызывать ДжаваСкриптом так:
+
+ 	$('.has-error .form-control.tooltips-show').tooltip({container: 'body', placement: 'top', trigger: 'manual'});
+  	$('.has-error .form-control.tooltips-show').tooltip('show');
+
+
+
 
 ========================================================================
 *************Главная:

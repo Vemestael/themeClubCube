@@ -442,7 +442,7 @@ select.form-control:focus {border:2px solid $ccc-color;@include transitions(.3s)
 .form-horizontal .control-label {padding-top: 11px;}
 table.club-table .form-group {margin-bottom: 0;}
 table.club-table label {margin-bottom: 0;}
-.form-control {height: auto;padding: 11px 14px;border:2px solid $ccc-color;font-family: $pt-sans-it;font-size: 18px;@include transitions(.3s);}
+.form-control {height: auto;padding: 11px 14px;border:2px solid $ccc-color;font-family: $pt-sans-it;font-size: 18px;-webkit-box-shadow: none;box-shadow: none;@include transitions(.3s);}
 .control-label.off {color: $ccc-color;@include transitions(.3s);}
 .form-control.pressed {border:2px solid $reddy-color;@include transitions(.3s);}
 
@@ -513,6 +513,23 @@ textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$blac
 .btn:focus {outline:none;}
 .btn-default {background-color:$red-color;@include transitions(.3s);}
 .btn-default:hover {background-color:$orange-color;@include transitions(.3s);}
+
+ /* ========================================================================
+ * Error states
+ * ======================================================================== */
+.has-error {}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {color:$black-color;}
+.has-error .form-control {-webkit-box-shadow: none;box-shadow: none;border-color:$orange-color;@include transitions(.3s);color:#555;}
+.has-error .form-control:focus {-webkit-box-shadow: none;box-shadow: none;}
+
+
+ /* ========================================================================
+ * Tooltips
+ * ======================================================================== */
+.tooltip {font-size: 14px;line-height: 20px;z-index: 12;}
+.tooltip-inner {max-width: none;background-color: $orange-color;padding: 20px;}
+.tooltip.top .tooltip-arrow {bottom: -60px;left: 0;right: 0;margin: auto;border-top-color:$orange-color;border-width: 25px 34px 40px 0;}
+.tooltip.in {opacity:1;}
 
 
  /* ========================================================================

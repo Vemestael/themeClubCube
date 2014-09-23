@@ -800,9 +800,9 @@
                                             <td>Text error</td>
                                             <td colspan="3">
                                                 <form action="" class="form-horizontal" role="form">
-                                                    <div class="form-group">
+                                                    <div class="form-group has-error">
                                                         <div class="col-xs-8">
-                                                            <input class="form-control" type="email" name="" id="">
+                                                            <input class="form-control tooltips-show" type="email" name="" id="" data-toggle="tooltip" titile data-original-title="Enter valid Email" >
                                                         </div>
                                                         <div class="col-xs-4">
                                                             <input class="btn btn-default" type="submit" value="Submit">
@@ -1020,14 +1020,16 @@
         <script src="js/jquery/plugins/tinyAnimations.js"></script>
         <script>
         $(document).ready(function(){
-        var events = new EventAnimate($('.top-event'));
-        var blogs = new EventAnimate($('.blog-item-def'));
-        $('.tooltips-show').tooltip();
+            var events = new EventAnimate($('.top-event'));
+            var blogs = new EventAnimate($('.blog-item-def'));
+            $('.tooltips-show').tooltip({container: 'body', placement: 'top', trigger: 'hover'});
+            $('.has-error .form-control.tooltips-show').tooltip({container: 'body', placement: 'top',trigger: 'manual'});
+            $('.has-error .form-control.tooltips-show').tooltip('show');
+            tinyAnimations.buttonSlider($('.button-slider'));
+            tinyAnimations.buttonArrow($('.button-arrow-left'));
+            tinyAnimations.radioButton($('.rb-lb'));
+            tinyAnimations.checkboxButton($('.chb-lb'));
         });
-        tinyAnimations.buttonSlider($('.button-slider'));
-        tinyAnimations.buttonArrow($('.button-arrow-left'));
-        tinyAnimations.radioButton($('.rb-lb'));
-        tinyAnimations.checkboxButton($('.chb-lb'));
         </script>
     </body>
 </html>
