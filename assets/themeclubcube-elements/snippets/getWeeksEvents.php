@@ -7,6 +7,7 @@ $properties['tpl'] = !empty($properties['tpl']) ? $properties['tpl'] : 'weeksEve
 $properties['tplCurrent'] = !empty($properties['tplCurrent']) ? $properties['tplCurrent'] : 'weeksCurrentEvents';
 $properties['startDate'] = !empty($_GET['startDate']) ? $_GET['startDate'] : null;
 $properties['endDate'] = !empty($_GET['endDate']) ? $_GET['endDate'] : null;
+$properties['id'] = !empty($properties['id']) ? $properties['id'] : $modx->resource->id;
 
 $output = '';
 $cacheOptions = array(

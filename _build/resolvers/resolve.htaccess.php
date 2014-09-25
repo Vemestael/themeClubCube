@@ -10,7 +10,7 @@ $htaccesMain =
 "AddDefaultCharset utf-8
 Options +FollowSymlinks
 RewriteEngine On
-RewriteBase /
+RewriteBase ".MODX_BASE_URL."
 
 # Rewrite www.domain.com -> domain.com
 RewriteCond %{HTTP_HOST} ^www.example.com$

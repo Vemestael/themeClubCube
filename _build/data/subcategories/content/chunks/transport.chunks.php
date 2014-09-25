@@ -70,6 +70,14 @@ $tmp = array(
         'file' => 'content/textAsideContent',
         'description' => '',
     ),
+    'textAsideRightContent' => array(
+        'file' => 'content/textAsideRightContent',
+        'description' => '',
+    ),
+    'textAsideRightWithImageContent' => array(
+        'file' => 'content/textAsideRightWithImageContent',
+        'description' => '',
+    ),
     'textAsideWithImageContent' => array(
         'file' => 'content/textAsideWithImageContent',
         'description' => '',

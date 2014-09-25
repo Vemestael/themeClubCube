@@ -7,6 +7,9 @@ if ($object && $object->xpdo) {
 
             /* list of property sets, and elements associated with each */
             $sets = array(
+                'mainMenu' => array(
+                    array('class' => 'modSnippet','name' => 'pdoMenu'),
+                ),
                 'indexSlider' => array(
                     array('class' => 'modSnippet','name' => 'pdoResources'),
                 ),

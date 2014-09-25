@@ -4,7 +4,7 @@
  *
  * @return string
  */
-function getSnippetContent($filename) {
+function getSnippetContentForPlugin($filename) {
     $file = trim(file_get_contents($filename));
     preg_match('#\<\?php(.*)#is', $file, $data);
 
@@ -30,7 +30,7 @@ if ($object && $object->xpdo) {
                 if(is_file(MODX_CORE_PATH.'components/'.$v['package'].'/elements/plugins/plugin.'.$v['file'].'.php')){
                     $plugin = $modx->getObject('modPlugin',array('name' => $k));
                     $plugin->fromArray(array(
-                        'plugincode' => getSnippetContent(MODX_CORE_PATH.'components/'.$v['package'].'/elements/plugins/plugin.'.$v['file'].'.php'),
+                        'plugincode' => getSnippetContentForPlugin(MODX_CORE_PATH.'components/'.$v['package'].'/elements/plugins/plugin.'.$v['file'].'.php'),
                     ),'',true,true);
 
                     $events = array();

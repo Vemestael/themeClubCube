@@ -12,6 +12,7 @@ $_lang['lf_footer_subscribe_head'] = 'Mailing list';
 $_lang['lf_footer_subscribe_line'] = 'Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!';
 $_lang['lf_footer_subscribe_email_placeholder'] = 'Your E-mail';
 $_lang['lf_footer_subscribe_send'] = 'Subscribe';
+$_lang['lf_footer_subscribe_success'] = 'Thank you';
 
 $_lang['lf_footer_follow_head'] = 'Follow us';
 $_lang['lf_footer_follow_line'] = 'To be up-to-date with us';

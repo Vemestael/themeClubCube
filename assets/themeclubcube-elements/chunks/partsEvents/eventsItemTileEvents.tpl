@@ -57,4 +57,3 @@
 		</div>
 	</article>
 </div>
-[[+idx:mod=`43:is=`0`:then=`</div><div class="row">`:else=``]]

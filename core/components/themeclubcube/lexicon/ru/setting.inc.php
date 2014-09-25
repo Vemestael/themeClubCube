@@ -36,3 +36,7 @@ $_lang['setting_themeclubcube.partners_resource'] = 'Partners resource ID';
 $_lang['setting_themeclubcube.partners_resource_desc'] = 'Resource ID for a list of partners';
 $_lang['setting_themeclubcube.events_resource'] = 'Events resource ID';
 $_lang['setting_themeclubcube.events_resource_desc'] = 'Resource ID for a list of events';
+$_lang['setting_themeclubcube.ajax_form_subscribe'] = 'Ajax form subscribe resource ID';
+$_lang['setting_themeclubcube.ajax_form_subscribe_desc'] = 'Resource ID for a ajax form subscribe';
+$_lang['setting_themeclubcube.ajax_form_contacts'] = 'Ajax form contacts resource ID';
+$_lang['setting_themeclubcube.ajax_form_contacts_desc'] = 'Resource ID for a ajax form contacts';

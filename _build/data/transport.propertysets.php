@@ -3,6 +3,13 @@
 $propertysets = array();
 
 $tmp = array(
+    'mainMenu' => array(
+        array(
+            'name' => 'level',
+            'type' => 'numberfield',
+            'value' => '2',
+        )
+    ),
     'indexSlider' => array(
         array(
             'name' => 'limit',
@@ -112,7 +119,7 @@ $tmp = array(
         array(
             'name' => 'limit',
             'type' => 'numberfield',
-            'value' => '3',
+            'value' => '6',
         )
         ,array(
             'name' => 'depth',
@@ -134,7 +141,7 @@ $tmp = array(
         array(
             'name' => 'limit',
             'type' => 'numberfield',
-            'value' => '3',
+            'value' => '6',
         )
         ,array(
             'name' => 'depth',
@@ -178,7 +185,7 @@ $tmp = array(
         array(
             'name' => 'limit',
             'type' => 'numberfield',
-            'value' => '6',
+            'value' => '12',
         )
             ,array(
             'name' => 'depth',

@@ -7,6 +7,10 @@ $tmp = array(
 		'file' => 'formContacts',
 		'description' => '',
 	),
+    'formSubscribe' => array(
+        'file' => 'formSubscribe',
+        'description' => '',
+    ),
     'time' => array(
         'file' => 'time',
         'description' => '',

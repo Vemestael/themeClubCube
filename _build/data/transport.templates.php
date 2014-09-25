@@ -62,6 +62,10 @@ $tmp = array(
         'file' => 'text',
         'description' => 'Text template',
     ),
+    'textWithImage' => array(
+        'file' => 'textWithImage',
+        'description' => 'Text with image template',
+    ),
     'textAside' => array(
         'file' => 'textAside',
         'description' => 'Text with aside template',
@@ -70,9 +74,13 @@ $tmp = array(
         'file' => 'textAsideWithImage',
         'description' => 'Text with aside and with image template',
     ),
-    'textWithImage' => array(
-        'file' => 'textWithImage',
-        'description' => 'Text with image template',
+    'textAsideRight' => array(
+        'file' => 'textAsideRight',
+        'description' => 'Text with aside on right template',
+    ),
+    'textAsideRightWithImage' => array(
+        'file' => 'textAsideWithImage',
+        'description' => 'Text with aside on right and with image template',
     ),
     'contacts' => array(
         'file' => 'contacts',

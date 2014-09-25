@@ -38,17 +38,21 @@
 				</address>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 footer-block">
+                [[++themeclubcube.unisender_api_key:notempty=`
 				<div class="subscribe-here soc-marg">
 					<div class="footer-header">[[%lf_footer_subscribe_head:htmlent]]</div>
 					<p>[[%lf_footer_subscribe_line:htmlent]]</p>
-					<!--TODO Подключить и проверить форму подписки. Добавить Плагин unisender-->
-					<form action="#" id="email-footer-form">
+					<form action="[[~[[++themeclubcube.ajax_form_subscribe]]]]" id="email-footer-form" method="post">
 						<div class="subscribe">
-							<input type="email" name="email" id="email-subscribe" placeholder="[[%lf_footer_subscribe_email_placeholder:htmlent]]">
+							<input type="email" class="email required" required name="email" id="email-subscribe" placeholder="[[%lf_footer_subscribe_email_placeholder:htmlent]]">
 							<button type="submit" id="subscribe-btn" >[[%lf_footer_subscribe_send:htmlent]]</button>
 						</div>
 					</form>
+                    <div id="successSubscribe" style="display: none;">
+                        [[%lf_footer_subscribe_success:htmlent]]
+                    </div>
 				</div>
+                `]]
 			</div>
 			<div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
 				<div class="soc-marg soc-webs">

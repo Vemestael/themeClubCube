@@ -1,4 +1,4 @@
-[[+idx:mod=`5`:is=`0`:then=`</div><div class="clear-mard clearfix visible-lg"></div><div class="row">`:else=``]]
+[[+idx:mod=`4`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="clear-mard clearfix visible-lg"></div><div class="row">`]]`:esle=``]]
 <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6 gall-item">
 	<div class="img-gal">
 		<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-overfl">
@@ -14,7 +14,7 @@
 	</div>
 	<div class="item-title">
 		<div class="item-aside">
-			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
+			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]] - [[+idx:mod=`4`]]</a></h3>
 			<time class="top-event-place">[[+publishedon:dateAgo]]</time>
 		</div>
 		[[getImageList?

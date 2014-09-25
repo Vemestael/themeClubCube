@@ -3,7 +3,7 @@
 		<div class="row head more-button-bott">
 			<h2>[[%lf_events_head:htmlent]]</h2>
 		</div>
-		<div class="default-slider-tickets">
+		<div class="default-slider-tickets" id="ticketsSlider">
 			<div class="rows default-tickets">
 				[[+output]]
 			</div>

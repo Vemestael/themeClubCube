@@ -87,6 +87,41 @@ class uniApi {
     }
 }
 
+function validateEmail($email){
+    $pattern = "/^[^@]{1,64}\@[^\@]{1,255}$/";
+    $condition = @preg_match($pattern, $email);
+    if (!$condition) {
+        return true;
+    }
+
+    $email_array = explode("@", $email);
+    $local_array = explode(".", $email_array[0]);
+    for ($i = 0; $i < sizeof($local_array); $i++) {
+        $pattern = "/^(([A-Za-z0-9!#$%&'*+\/=?^_`{|}~-][A-Za-z0-9!#$%&'*+\/=?^_`{|}~\.-]{0,63})|(\"[^(\\|\")]{0,62}\"))$/";
+        $condition = @preg_match($pattern,$local_array[$i]);
+        if (!$condition) {
+            return true;
+        }
+    }
+
+    $pattern = "^\[?[0-9\.]+\]?$";
+    $condition = @preg_match($pattern, $email_array[1]);
+    if (!$condition) {
+        $domain_array = explode(".", $email_array[1]);
+        if (sizeof($domain_array) < 2) {
+            return true;
+        }
+        for ($i = 0; $i < sizeof($domain_array); $i++) {
+            $pattern = "/^(([A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9])|([A-Za-z0-9]+))$/";
+            $condition = @preg_match($pattern,$domain_array[$i]);
+            if (!$condition) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 $properties =& $scriptProperties;
 
 $properties['email'] = isset($_POST['email']) ? $_POST['email'] : null;
@@ -96,37 +131,7 @@ $errors = array(
 );
 
 /* email */
-$pattern = "/^[^@]{1,64}\@[^\@]{1,255}$/";
-$condition = @preg_match($pattern, $properties['email']);
-if (!$condition) {
-    $errors['email'] = true;
-}
-
-$email_array = explode("@", $properties['email']);
-$local_array = explode(".", $email_array[0]);
-for ($i = 0; $i < sizeof($local_array); $i++) {
-    $pattern = "/^(([A-Za-z0-9!#$%&'*+/=?^_`{|}~-][A-Za-z0-9!#$%&'*+/=?^_`{|}~\.-]{0,63})|(\"[^(\\|\")]{0,62}\"))$/";
-    $condition = @preg_match($pattern,$local_array[$i]);
-    if (!$condition) {
-        $errors['email'] = true;
-    }
-}
-
-$pattern = "^\[?[0-9\.]+\]?$";
-$condition = @preg_match($pattern, $email_array[1]);
-if (!$condition) {
-    $domain_array = explode(".", $email_array[1]);
-    if (sizeof($domain_array) < 2) {
-        $errors['email'] = true;
-    }
-    for ($i = 0; $i < sizeof($domain_array); $i++) {
-        $pattern = "/^(([A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9])|([A-Za-z0-9]+))$/";
-        $condition = @preg_match($pattern,$domain_array[$i]);
-        if (!$condition) {
-            $errors['email'] = true;
-        }
-    }
-}
+$errors['email'] = validateEmail($fields['email']);
 /* end email */
 
 $output = array('success'=>true);

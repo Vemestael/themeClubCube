@@ -11,7 +11,7 @@ $tmp = array(
 	),
     'design_url' => array(
         'xtype' => 'textfield',
-        'value' => '/assets/'.PKG_NAME_LOWER.'-design/',
+        'value' => '{assets_url}'.PKG_NAME_LOWER.'-design/',
         'area' => 'themeclubcube_main',
     ),
 
@@ -76,6 +76,11 @@ $tmp = array(
         'area' => 'themeclubcube_resources',
     ),
     'ajax_form_contacts' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themeclubcube_resources',
+    ),
+    'ajax_form_subscribe' => array(
         'xtype' => 'numberfield',
         'value' => '',
         'area' => 'themeclubcube_resources',

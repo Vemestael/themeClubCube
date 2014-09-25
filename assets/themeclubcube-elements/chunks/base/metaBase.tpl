@@ -57,9 +57,12 @@
 				,[[++themeclubcube.design_url]]js/app/modules/menuToTop.js
 				,[[++themeclubcube.design_url]]js/app/modules/gallerySlider.js
                 ,[[++themeclubcube.design_url]]js/app/modules/topEventsSlider.js
+                ,[[++themeclubcube.design_url]]js/app/modules/ticketsEventsSlider.js
 				,[[++themeclubcube.design_url]]js/app/modules/formContacts.js
+                ,[[++themeclubcube.design_url]]js/app/modules/formSubscribe.js
 				,[[++themeclubcube.design_url]]js/app/modules/galleryPage.js
                 ,[[++themeclubcube.design_url]]js/app/modules/sharrre.js
+                ,[[++themeclubcube.design_url]]js/app/modules/eventsTickets.js
 				,[[++themeclubcube.design_url]]js/init.js
             `
             &cssSources=`

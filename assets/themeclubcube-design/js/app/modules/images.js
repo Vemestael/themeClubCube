@@ -112,9 +112,9 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
                         //Remove preloader els
                         if (_options.usePreloader) _removeImgPreloader(img);
                         //Replace src with this data imgsrc
-                        img.attr('src', $this.src);
+                        $(img).attr('src', $this.src);
                         //Remove the attr so that imgsrc does not evaluate as true for any image that's already been src replaced
-                        img.attr(_properties.imgDataSrc, '');
+                        $(img).attr(_properties.imgDataSrc, '');
                     }, _properties.simulatedDelay)
                 },
                 all: function(){

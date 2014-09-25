@@ -3,11 +3,10 @@ appMakeBeCool.gateway.addClass('GallerySlider', function(properties, $, $window,
     var _gallerySlider = this,
         _defaults = {
             // elements
-            slider: '#galleryIndex',
+            slider: '#gallerySliderInMain',
             // prop
             // data
             // classes ans styles
-            sliderClass: 'gallery-default'
         },
         _properties = $.extend(_defaults, properties),
         _globals = {
@@ -40,7 +39,7 @@ appMakeBeCool.gateway.addClass('GallerySlider', function(properties, $, $window,
         },
 
         _setup = function() {
-            if (_globals.slider.length && _globals.slider.hasClass(_properties.sliderClass)) {
+            if (_globals.slider.length) {
                 if (_globals.windowWidth > 479) {
                     _globals.slider.slick({
                         slidesToShow: 3,
