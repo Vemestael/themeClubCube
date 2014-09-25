@@ -6783,6 +6783,10 @@ header.header-top .home-btn {
   border-top: none;
 }
 
+.nav > li > a {
+  border-top: none;
+}
+
 .nav > li > a.dropdown-toggle.main-heading-a, .nav > li > span.dropdown-toggle.main-heading-a {
   padding: 10px 20px;
 }
@@ -6812,6 +6816,10 @@ header .nav > li.active span, header .nav > li.active a {
   background: #e2e2e2;
   padding: 18px 15px;
   line-height: 14px;
+}
+
+header .navbar-nav > li > span, .dropdown-menu > li.active span {
+  cursor: default;
 }
 
 .dropdown-menu {
@@ -6847,6 +6855,10 @@ header .nav > li.active span, header .nav > li.active a {
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > span:hover {
   background: inherit;
+}
+
+.dropdown-menu > li > a, .dropdown-menu > li > span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+  border-bottom: none;
 }
 
 .main-navig .navbar-nav {
@@ -8706,14 +8718,6 @@ header .nav > li.active span, header .nav > li.active a {
   transition: all 0.3s ease;
 }
 
-.img-overfl:hover img {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .bord-fr {
   position: absolute;
   bottom: -2px;
@@ -9101,7 +9105,7 @@ header .nav > li.active span, header .nav > li.active a {
   overflow: hidden;
 }
 
-#email-subscribe {
+.subscribe-here .subscribe input {
   width: 60%;
   max-width: 60%;
   display: block;
@@ -9114,7 +9118,7 @@ header .nav > li.active span, header .nav > li.active a {
   border: none;
 }
 
-#subscribe-btn {
+.subscribe-here .subscribe button {
   max-width: 40%;
   width: 93px;
   font-family: "PT Sans reg", sans-serif;
@@ -9695,6 +9699,7 @@ aside .event-dates {
 
 .ticket-event {
   height: 180px;
+  position: relative;
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -13702,7 +13707,7 @@ blockquote a:hover {
 
   header #navbar-collapse-1 {
     margin-right: 8.33333%;
-    right: float;
+    float: right;
     overflow: visible !important;
   }
 
@@ -13839,10 +13844,6 @@ blockquote a:hover {
   .navbar-brand.first, .navbar-brand.sec {
     width: 114px;
     height: 44px;
-  }
-
-  .nav > li > a {
-    border-top: none;
   }
 
   .navbar-collapse .caret {
@@ -15185,6 +15186,10 @@ blockquote a:hover {
     box-sizing: border-box;
   }
 
+  .ticket-event:hover .ticket-event-price {
+    background: #e15e32;
+  }
+
   .ticket-event-price .ticket-price, .ticket-event-price .ticket-doll {
     font-family: Verdana, sans-serif;
     font-size: 24px;
@@ -15402,6 +15407,14 @@ blockquote a:hover {
 
   .gallery-default-item .bottom .item-img {
     margin-right: 40px;
+  }
+
+  .img-overfl:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .blog-item-def {
@@ -17967,6 +17980,7 @@ input.submit:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #d35a33;
+  color: white;
 }
 
 .btn:hover {

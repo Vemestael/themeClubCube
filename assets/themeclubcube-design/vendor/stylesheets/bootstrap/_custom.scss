@@ -256,12 +256,14 @@ header.header-top .home-btn {margin-top: 14px;}
 .navbar-nav>li>a, li.dropdown>span.dropdown-toggle, .navbar-nav>li>span {font-size:16px;background:$white-color;color:$black-color;text-align: left;}
 .nav>li, .nav>li:hover {border-top: 1px solid $light-grey;}
 .nav>li:first-child, .nav>li:first-child:hover {border-top: none;}
+.nav>li>a {border-top: none;}
 .nav>li>a.dropdown-toggle.main-heading-a, .nav>li>span.dropdown-toggle.main-heading-a {padding: 10px 20px;}
 .nav>li>a.dropdown-toggle.main-heading-a, .navbar-nav>li>a, .navbar-nav>li>a.main-heading-a, .navbar-nav>li>span.main-heading-a, .nav>li>span {display: block;font-size: $reg-font-size;}
 .nav.nav-top>li>a:hover, .nav.nav-top>li>.nav>li>span:hover {background:$white-color;color:$black-color;border-top: 1px solid $light-grey;}
 .nav.nav-top .dropdown-menu li a, .nav.nav-top .dropdown-menu li span {padding: 17px 20px;}
 .navbar-nav>li>a, .nav>li>a.dropdown-toggle.main-heading-a, .nav>li>span.dropdown-toggle.main-heading-a  {display: block;padding: 18px 15px;line-height: $reg-font-size;}
 header .nav>li.active span, header .nav>li.active a {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
+header .navbar-nav > li > span, .dropdown-menu>li.active span {cursor: default;}
 // header .main-navig .nav>li.active, header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
 // .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li:hover, .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
 // .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
@@ -276,6 +278,7 @@ header .nav>li.active span, header .nav>li.active a {background:$lighter-grey-co
 .dropdown-menu>li.active span, .dropdown-menu>li.active a, .dropdown-menu>li.active a:hover, .dropdown-menu>li.active span:hover {background:$lighter-grey-color;}
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {padding: 17px 30px;color:$black-color;border-bottom: 1px solid transparent;}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>span:hover {background:inherit;}
+.dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {border-bottom: none;}
 
 // .main-navig {margin-right: -$xs-gutter/2;padding-right: 0;min-width: 154px;float: right;}
 .main-navig .navbar-nav {margin: 0;}
@@ -612,7 +615,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 .img-gal {position:relative;margin-bottom:$grid-gutter-width / 2;}
 .img-overfl {display: block;overflow: hidden;border: 1px solid rgba(255, 255, 255, .25);}
 .img-overfl img {@include transitions(.3s);}
-.img-overfl:hover img {-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);@include transitions(.3s);}
+// .img-overfl:hover img {-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);@include transitions(.3s);}
 .bord-fr {position:absolute;bottom: -2px;left: 4px;right: 4px;border-bottom:1px solid $blui-color;}
 .bord-sc {position:absolute;bottom: -4px;left: 4px;right: 4px;border-bottom:1px solid $blui-color;margin: 0 4px;} 
 .gall-item .item-title .top-event-title {font-size: $btn-cust-font-size;line-height: $btn-cust-font-size;}
@@ -695,8 +698,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', end
 .footer-header {color:$white-color;text-transform:uppercase;font-size:$header45-font-size;margin-top: 0px;margin-bottom:18px;}
 .subscribe-here {width: 100%;}
 .subscribe-here .subscribe {background:$white-color;padding:7px;overflow: hidden;}
-#email-subscribe {width: 60%;max-width: 60%;display: block;padding: 10px 8px;float: left;font-family: $pt-sans;font-size:$reg-font-size;color:$middle-black-color;font-style:italic;border:none;}
-#subscribe-btn {max-width: 40%;width: 93px;font-family: $pt-sans;float: right;background:$red-color; font-size:$sm-font-size;color:$white-color;padding:10px 17px;outline:none;border:none;text-transform: uppercase;}
+.subscribe-here .subscribe input {width: 60%;max-width: 60%;display: block;padding: 10px 8px;float: left;font-family: $pt-sans;font-size:$reg-font-size;color:$middle-black-color;font-style:italic;border:none;}
+.subscribe-here .subscribe button {max-width: 40%;width: 93px;font-family: $pt-sans;float: right;background:$red-color; font-size:$sm-font-size;color:$white-color;padding:10px 17px;outline:none;border:none;text-transform: uppercase;}
+// #email-subscribe {width: 60%;max-width: 60%;display: block;padding: 10px 8px;float: left;font-family: $pt-sans;font-size:$reg-font-size;color:$middle-black-color;font-style:italic;border:none;}
+// #subscribe-btn {max-width: 40%;width: 93px;font-family: $pt-sans;float: right;background:$red-color; font-size:$sm-font-size;color:$white-color;padding:10px 17px;outline:none;border:none;text-transform: uppercase;}
 .social-icons {display: block;list-style:none;padding-left:0;}
 .social-icons li {float: left;margin-right:$margin-sm/2;margin-bottom:$margin-sm/2;}
 .social-icons li a {display: block;width: 50px;height: 50px;background:$white-color;border-bottom: none;@include transitions(.3s);}
@@ -801,7 +806,7 @@ aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 .events-tickets {padding-top: $margin-mdl;}
 .events-tickets .top-event-title {font-family: $pt-sans-bold;font-size: $md-font-size;}
 .events-tickets .top-event-place {font-family: $pt-sans;font-size: $sm-font-size;}
-.ticket-event {height: 180px;overflow: hidden;margin-bottom: $margin-mdl-min;}
+.ticket-event {height: 180px;position: relative;overflow: hidden;margin-bottom: $margin-mdl-min;}
 .ticket-event.last {margin-bottom: 0;}
 .ticket-event.last {margin-bottom: 0;}
 .ticket-text {color:$brown-color;text-transform: none;}
@@ -1701,7 +1706,7 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 //Header
 header {height: 106px;padding:27px 0;background:url('../images/header-shad.png') left top repeat-x;}
 header .main-navig {margin-right: 0;float: left}
-header #navbar-collapse-1 {margin-right: 8.33333%;right: float;overflow: visible!important;}
+header #navbar-collapse-1 {margin-right: 8.33333%;float:right;overflow: visible!important;}
 header .nav>li>a.dropdown-toggle.main-heading-a, header .navbar-nav>li>a, li.dropdown>span.dropdown-toggle, header .navbar-nav>li>span {font-size: $md-font-size;line-height: 14px;background: transparent;color:$white-color;padding: 18px 15px;}
 // header .nav>li.dropdown:hover, header .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
 header .dropdown>.dropdown-menu, .header-top .dropdown>.dropdown-menu {position: absolute;min-width: 200px;left: 0;top: 56px; @include box-shadow(0 6px 12px rgba(0,0,0,.175));}
@@ -1732,7 +1737,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .home-btn {display: none;}
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {padding-right: auto;overflow-y: hidden!important;}
 .navbar-brand.first, .navbar-brand.sec {width: 114px;height: 44px;}
-.nav>li>a {border-top: none;}
+// .nav>li>a {border-top: none;}
 .navbar-collapse .caret {float: none;margin-right: 0;display: inline-block;margin-top: 0;}
 .nav.navbar-nav.navbar-right {min-width: auto!important;max-width: auto!important;-webkit-box-shadow: none;box-shadow: none;}
 .dropdown-menu {position: absolute;float: left;}
@@ -2006,6 +2011,7 @@ aside .blog-item-def .item-title {overflow: visible;}
 .ticket-line-up div {padding: 0;}
 .ticket-event-lineup hr {border-top:1px solid $light-pink-color;margin-top: 13px;margin-bottom: 12px;}
 .ticket-event-price {display: block;position: relative;height: 180px;width: 9.759%;float: left;padding: 18px;background:$red-color;color:$white-color;border-bottom: 1px solid $light-greys-color;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.ticket-event:hover .ticket-event-price {background:$orange-color;}
 .ticket-event-price .ticket-price, .ticket-event-price .ticket-doll {font-family: $verdana;font-size: $content-h3;line-height:$content-h3;}
 .ticket-event-price .ticket-price {position: static;color:$text-pink-color;margin-bottom: 2px;text-align: left;}
 .ticket-event-price .ticket-doll {display: block;margin-top: 10px;color:$white-color;}
@@ -2043,7 +2049,7 @@ aside .blog-item-def .item-title {overflow: visible;}
 .gallery-default-item:hover img.img-h-responsive {-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s;opacity: 1;}
 .gallery-default-item:hover .top-gallery-title hr, .gallery-default-item:hover .top-gallery-title .gallery-default-dates, .gallery-default-item:hover .bottom {opacity: .5;-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s;}
 .gallery-default-item .bottom .item-img {margin-right: $ver-gutter;}
-
+.img-overfl:hover img {-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);@include transitions(.3s);}
 
 //Blog
 .blog-item-def {padding: $margin-sm $margin-mdl-min $margin-mdl-min $margin-mdl-min;}

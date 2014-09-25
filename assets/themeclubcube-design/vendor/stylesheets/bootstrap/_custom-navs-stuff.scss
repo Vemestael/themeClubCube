@@ -508,7 +508,7 @@ textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$blac
  input.submit:hover {background:$orange-color;@include transitions(.3s);}
 
 .btn {font-size: $header5-font-size;color:$white-color;border:none;padding: 13px 16px;text-transform: uppercase;border-radius: 0;}
-.btn:active {-webkit-box-shadow: none;box-shadow: none;background-color:$d35a33;}
+.btn:active {-webkit-box-shadow: none;box-shadow: none;background-color:$d35a33;color:$white-color;}
 .btn:hover {color:$white-color;}
 .btn:focus {outline:none;}
 .btn-default {background-color:$red-color;@include transitions(.3s);}
