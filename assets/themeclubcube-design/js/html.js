@@ -78,12 +78,11 @@ $(function() {
         if (window.innerWidth > 479) {
             $topEventsSLider.slick({
                 slidesToShow: 3,
-                arrows: false,
                 easing: 'easeInExpo',
                 draggable: false,
                 speed: 900,
                 swipe: true,
-                dots: true,
+                dots: false,
                 infinite: false,
                 responsive: [{
                     breakpoint: 1024,
@@ -91,8 +90,7 @@ $(function() {
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: false,
-                        arrows: false,
-                        dots: true
+                        dots: false
                     }
                 }, {
                     breakpoint: 900,
@@ -100,7 +98,6 @@ $(function() {
                         slidesToShow: 2,
                         slidesToScroll: 2,
                         infinite: false,
-                        arrows: false,
                         dots: true
                     }
                 }, {
@@ -492,6 +489,13 @@ $(function() {
         var regEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
         $EmailFooterForm.submit(function(event) {
             if (regEmail.test($emailInput.val()) === true) {
+                $('#email-subscribe').tooltip('destroy');
+                $('#email-subscribe').tooltip({
+                    container: 'body',
+                    placement: 'top',
+                    title: 'No Email',
+                    trigger: 'manual'
+                }).tooltip('show');
                 
             } else if ($('#email-subscribe').val().length === 0) {
                 $('#email-subscribe').tooltip('destroy');
