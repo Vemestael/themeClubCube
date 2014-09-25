@@ -42,9 +42,9 @@
 					<div class="footer-header">[[%lf_footer_subscribe_head:htmlent]]</div>
 					<p>[[%lf_footer_subscribe_line:htmlent]]</p>
 					<!--TODO Подключить и проверить форму подписки. Добавить Плагин unisender-->
-					<form action="#" id="email-footer-form">
+					<form action="#" id="email-footer-form" novalidate>
 						<div class="subscribe">
-							<input type="email" name="email" id="email-subscribe" placeholder="[[%lf_footer_subscribe_email_placeholder:htmlent]]">
+							<input type="email" name="email" id="email-subscribe" placeholder="[[%lf_footer_subscribe_email_placeholder:htmlent]]" data-toggle="tooltip" data-placement="top">
 							<button type="submit" id="subscribe-btn" >[[%lf_footer_subscribe_send:htmlent]]</button>
 						</div>
 					</form>

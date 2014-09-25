@@ -425,7 +425,7 @@ input[type="checkbox"]:checked + label.chb-lb.active:after {width: 12px;height: 
 /* ========================================================================
  * Bootstrap inputs
  * ======================================================================== */
-input.form-control:focus, textarea:focus {border:2px solid $reddy-color!important;@include transitions(.3s);}
+input.form-control:focus, textarea:focus {border:2px solid $reddy-color!important; -webkit-box-shadow:inset 0 0 5px $reddy-color;box-shadow:inset 0 0 5px $reddy-color;@include transitions(.3s);}
 select.form-control:focus {border:2px solid $ccc-color;@include transitions(.3s);}
 .form-control:focus, textarea:focus {	
     box-shadow: none;
@@ -439,12 +439,13 @@ select.form-control:focus {border:2px solid $ccc-color;@include transitions(.3s)
 .input-group {width: 100%;}
 .form-group {overflow: hidden;}
 .control-label {font-family:$pt-sans;font-size: 18px;font-weight: normal;}
-.form-horizontal .control-label {padding-top: 11px;}
+.form-horizontal .control-label {padding-top: 13px;}
 table.club-table .form-group {margin-bottom: 0;}
 table.club-table label {margin-bottom: 0;}
 .form-control {height: auto;padding: 11px 14px;border:2px solid $ccc-color;font-family: $pt-sans-it;font-size: 18px;-webkit-box-shadow: none;box-shadow: none;@include transitions(.3s);}
 .control-label.off {color: $ccc-color;@include transitions(.3s);}
 .form-control.pressed {border:2px solid $reddy-color;@include transitions(.3s);}
+label.error {font-size: 12px;line-height: 12px;color:$orange-color;padding: 12px 15px 5px 15px;}
 
 /* ========================================================================
  * Custom inputs "Text"
@@ -502,7 +503,7 @@ textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$blac
  * Custom inputs "Text error"
  * ======================================================================== */
  input.required {font-family: $pt-sans;color:$black-color!important;font-size: 18px!important;@include transitions(.3s);}
- input.error {border:2px solid $orange-color!important;@include transitions(.3s);}
+ input.error, textarea.error {border:2px solid $orange-color!important;@include transitions(.3s);}
  table.club-table input.required {width: 626px;}
  input.submit {display: block;float: left;font-family: $pt-sans;font-size: 18px;font-weight: normal;text-transform: uppercase;color:$white-color;padding: 13px 16px;background:$reddy-color;outline: none;border:none;@include transitions(.3s);margin-left: 15px;margin-right: 15px;}
  input.submit:hover {background:$orange-color;@include transitions(.3s);}
@@ -531,6 +532,16 @@ textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$blac
 .tooltip.top .tooltip-arrow {bottom: -60px;left: 0;right: 0;margin: auto;border-top-color:$orange-color;border-width: 25px 34px 40px 0;}
 .tooltip.in {opacity:1;}
 
+form {position: relative;z-index: 5;}
+.suc.loader {position: absolute;width: 100%;top: 0;left: 0;z-index: 10;background:url('../images/mute-form.png') left top repeat;}
+.suc.loader .loader {position: absolute;width: 50px;height: 50px;top: 0;right: 0;bottom: 0;left: 0;z-index: 11;margin: auto;}
+footer .suc.loader .loader {width: 35px;height: 35px;}
+footer .suc.loader .loader .fr-bl, footer .suc.loader .loader .fth-bl, footer .suc.loader .loader .sc-bl, footer .suc.loader .loader .thr-bl {width: 15px;height: 15px;}
+.subscribe {position: relative;}
+.subscribe label {display: none;position: absolute;top: -85px;left: 40px;font-size: 14px;line-height: 20px;z-index: 12;}
+.subscribe label.error {display: block;}
+.subscribe-label-inner {display: block;max-width: none;background-color: $orange-color;padding: 20px;color: $white-color;text-align: center;}
+.subscribe-label-arrow {display: block;position: absolute;width: 0;height: 0;border-color: transparent;border-style: solid;bottom: -60px;left: 0;right: 0;margin: auto;border-top-color:$orange-color;border-width: 25px 34px 40px 0;}
 
  /* ========================================================================
  * Tables

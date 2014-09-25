@@ -1176,12 +1176,27 @@
                         <div class="subscribe-here soc-marg">
                             <div class="footer-header">Mailing list</div>
                             <p>Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!</p>
-                            <form action="#" id="email-footer-form">
+                            <form action="#" id="email-footer-form" novalidate>
                                 <div class="subscribe">
-                                    <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail">
+                                    <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail" data-toggle="tooltip" data-placement="top">
+                                    <label for="email-subscribe" class="error">
+                                        <span class="subscribe-label-arrow"></span>
+                                        <span class="subscribe-label-inner">No email</span>
+                                    </label>
                                     <button type="submit" value="Subscribe" id="subscribe-btn" >Subscribe</button>
                                 </div>
+                                <div id="loaderContactForm" class="suc loader">
+                                <div class="loader">
+                                    <div class="fr-bl"></div>
+                                    <div class="sc-bl"></div>
+                                    <div class="thr-bl"></div>
+                                    <div class="fth-bl"></div>
+                                </div>
+                            </div>
                             </form>
+                            <div id="successContactForm" class="suc">
+                                <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>You were subscribed</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 footer-block last">

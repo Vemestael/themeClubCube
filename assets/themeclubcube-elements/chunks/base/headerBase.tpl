@@ -10,7 +10,7 @@
 <header id="header">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="navbar-header col-lg-4 col-lg-offset-1">
+			<div class="navbar-header col-lg-2 col-lg-offset-1">
 				<div class="tile">
 					<button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 						<span class="icon-bar"></span>

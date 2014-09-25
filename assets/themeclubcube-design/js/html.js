@@ -33,12 +33,12 @@ $(function() {
             var windowHeight = window.innerHeight;
             var windowWidth = window.innerWidth;
 
-            $slides.each(function(){
+            $slides.each(function() {
                 var _img = $(this).find('.bg-tile').first().find('img');
                 var _imgHeight = $(_img).height();
                 var _imgWidth = $(_img).width();
                 console.log(_imgHeight, _imgWidth, windowHeight, windowWidth);
-                $(this).css('left', - ((_imgWidth - windowWidth) / 2));
+                $(this).css('left', -((_imgWidth - windowWidth) / 2));
                 $(this).width(_imgWidth);
             });
 
@@ -490,15 +490,27 @@ $(function() {
         var $subscribeBtn = $('#subscribe-btn');
         var $EmailFooterForm = $('#email-footer-form');
         var regEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-        var nodesToInsert = '<div class="popup-error"><div class="popup-error-inner"><div class="corner-error"></div><span class="popup-error-title"></span></div>';
         $EmailFooterForm.submit(function(event) {
-            $('#email-footer-form>.popup-error').remove();
-            if ($emailInput.val() === '') {
+            if (regEmail.test($emailInput.val()) === true) {
+                
+            } else if ($('#email-subscribe').val().length === 0) {
+                $('#email-subscribe').tooltip('destroy');
+                $('#email-subscribe').tooltip({
+                    container: 'body',
+                    placement: 'top',
+                    title: 'No Email',
+                    trigger: 'manual'
+                }).tooltip('show');
                 event.preventDefault();
-                $EmailFooterForm.prepend('<div class="popup-error"><div class="popup-error-inner"><div class="corner-error"></div><span class="popup-error-title">' + 'Enter Email' + '</span></div>');
             } else if (regEmail.test($emailInput.val()) === false) {
+                $('#email-subscribe').tooltip('destroy');
+                $('#email-subscribe').tooltip({
+                    container: 'body',
+                    placement: 'top',
+                    title: 'Please, enter valid Email',
+                    trigger: 'manual'
+                }).tooltip('show');
                 event.preventDefault();
-                $EmailFooterForm.prepend('<div class="popup-error"><div class="popup-error-inner"><div class="corner-error"></div><span class="popup-error-title">' + 'Enter valid Email' + '</span></div>');
             };
         });
     };
