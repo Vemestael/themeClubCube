@@ -7647,6 +7647,14 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   cursor: default;
 }
 
+.header-top .nav li.active li.active a, .header-top .nav li.active li a {
+  background: white;
+}
+
+.header-top .nav li.active li.active span {
+  padding: 17px 30px;
+}
+
 .dropdown-menu {
   position: relative;
   float: none;
@@ -9853,7 +9861,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   margin-bottom: 25px;
 }
 
-.address-list > li.last {
+.address-list > li.last, .address-list li:last-child {
   margin-bottom: 0;
 }
 
@@ -14645,6 +14653,12 @@ blockquote a:hover {
     background: transparent;
   }
 
+  header nav ul li.dropdown.active ul li.active span {
+    background: #e5e5e5;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
   .header-top .navbar-collapse, header .navbar-collapse {
     width: auto;
     -webkit-box-shadow: none;
@@ -14723,6 +14737,10 @@ blockquote a:hover {
     color: black;
   }
 
+  .header-top .nav li.active li.active span {
+    padding: 19px 15px 23px;
+  }
+
   .home-btn {
     display: none;
   }
@@ -14781,6 +14799,12 @@ blockquote a:hover {
   .top-events .navbar-nav > li.dropdown, .top-events .navbar-nav > li.dropdown:hover {
     border-right: none;
     border-left: none;
+  }
+
+  .header-top nav ul li.dropdown.active ul li.active span {
+    background: #e5e5e5;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .slider .rowss {
@@ -17881,7 +17905,7 @@ table.club-table .button-more {
   display: block;
   float: left;
   width: 55px;
-  height: 70px;
+  border: 1px solid #a82743;
   background: #a82743;
   text-align: center;
   -webkit-transition: all 0.3s ease;
@@ -17920,6 +17944,7 @@ table.club-table .button-more {
 
 .button-dropdown:hover .button-dropdown-arr, .button-dropdown.hover .button-dropdown-arr {
   background: #e15e32;
+  border: 1px solid #e15e32;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -17984,6 +18009,18 @@ table.club-table .button-more {
 
 .button-dropdown.sm .button-dropdown-arr i {
   margin-top: 19px;
+}
+
+.all-events .button-dropdown .button-dropdown-arr {
+  height: 54px;
+}
+
+.all-events .button-dropdown .button-dropdown-arr i {
+  margin: 17px auto 0;
+}
+
+.all-events .button-dropdown #weeks-tab.hidden-dv {
+  top: 100%;
 }
 
 @media screen and (max-width: 1199px) {

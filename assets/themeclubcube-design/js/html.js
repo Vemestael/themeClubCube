@@ -45,6 +45,7 @@ $(function() {
                     $(this).css('left', 0);
                 } else {
                     $(this).css('left', -((_imgWidth - windowWidth) / 2));
+                    $(this).css('top', 0);
                     $(this).width(_imgWidth);
                 };
             });

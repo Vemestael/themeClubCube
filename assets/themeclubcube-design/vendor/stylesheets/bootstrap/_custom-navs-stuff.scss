@@ -230,13 +230,13 @@
 .button-dropdown .button-dropdown-text {display: block;float: left;padding: 14px 18px;border: 1px solid $light-reddy-color;border-right: none;@include transitions(.3s);}
 .button-dropdown .button-dropdown-text .dropdown-text-title {font-family: $pt-sans;font-size:24px;line-height: 24px;color: $reddy-color;@include transitions(.3s);}
 .button-dropdown .button-dropdown-text .dropdown-text-dates {font-family: $pt-sans;font-size:12px;line-height: 16px;color: $light-black-color;@include transitions(.3s);}
-.button-dropdown .button-dropdown-arr {display: block;float: left;width: 55px;height: 70px;background:$reddy-color;text-align: center;@include transitions(.3s);}
+.button-dropdown .button-dropdown-arr {display: block;float: left;width: 55px;border: 1px solid $reddy-color;background:$reddy-color;text-align: center;@include transitions(.3s);}
 .button-dropdown .button-dropdown-arr i {display: inline-block;height: 20px;width: 30px;margin: 0 auto;margin-top: 27px;background-image: url(../images/sprites.png);background-repeat: no-repeat;background-position: -121px -80px;}
 
 .button-dropdown:hover .button-dropdown-text, .button-dropdown.hover .button-dropdown-text {border: 1px solid $light-reddy-color;border-right: none;@include transitions(.3s);}
 .button-dropdown:hover .dropdown-text-title, .button-dropdown.hover .dropdown-text-title{color: $orange-color;@include transitions(.3s);}
 .button-dropdown:hover .dropdown-text-dates, .button-dropdown.hover .dropdown-text-dates {color:$light-black-color;@include transitions(.3s);}
-.button-dropdown:hover .button-dropdown-arr, .button-dropdown.hover .button-dropdown-arr {background:$orange-color;@include transitions(.3s);}
+.button-dropdown:hover .button-dropdown-arr, .button-dropdown.hover .button-dropdown-arr {background:$orange-color;border: 1px solid $orange-color;@include transitions(.3s);}
 
 .button-dropdown.off {cursor: default;}
 .button-dropdown.off .button-dropdown-text {border: 1px solid $e6e6e6;border-right: none;@include transitions(.3s);}
@@ -253,6 +253,10 @@
 .button-dropdown.sm .button-dropdown-arr i {margin-top: 19px;}
 
 .button-dropdown .hidden-dv {}
+
+.all-events .button-dropdown .button-dropdown-arr {height: 54px;}
+.all-events .button-dropdown .button-dropdown-arr i {margin: 17px auto 0;}
+.all-events .button-dropdown #weeks-tab.hidden-dv {top: 100%;}
 
 @media screen and (max-width: ($screen-lg)-1) {
 

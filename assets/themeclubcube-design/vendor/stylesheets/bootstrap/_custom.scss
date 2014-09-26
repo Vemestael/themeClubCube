@@ -270,6 +270,8 @@ header .navbar-nav > li > span, .dropdown-menu>li.active span {cursor: default;}
 // .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li:hover, .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
 // .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
 // .nav>li.dropdown, .nav>li.dropdown:first-child,
+.header-top .nav li.active li.active a, .header-top .nav li.active li a {background:$white-color;}
+.header-top .nav li.active li.active span {padding: 17px 30px;}
 
 
 .dropdown-menu {position: relative;float: none;-webkit-box-shadow: none;box-shadow: none;}
@@ -685,7 +687,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 .welcome-inner .corner-welcome {position:absolute;width: 0;height: 0;bottom:-43px;left:0;z-index:2; border-left:30px solid $orange-color;border-top:25px solid transparent;border-bottom:30px solid transparent;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);}
 .address-list {display: block;list-style:none;margin-top:75px;margin-bottom: 0;padding-left:0px;}
 .address-list>li {overflow: hidden;margin-bottom:$margin-sm-plus;}
-.address-list>li.last {margin-bottom: 0;}
+.address-list>li.last, .address-list li:last-child {margin-bottom: 0;}
 .address-list>li>a {display: block;margin-top:4px;font-size:$reg-font-size;color:$reddy-transp;border-bottom:1px solid;float: left;}
 .address-list>li>a:hover {text-decoration:none;}
 .address-list>li ul {display: block;max-width: 68%;float: left;list-style:none;padding-left:0;}
@@ -1731,6 +1733,7 @@ header .navbar-collapse .dropdown.open:hover .dropdown-menu {display: block;}
 header .nav>li.dropdown, header .nav>li.dropdown:first-child, header .nav>li.dropdown, header .nav>li {border-top: 1px solid transparent;}
 header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .nav>li.dropdown:first-child:hover {background:url('../images/bg-tr.png') left top;border-top: 1px solid $white-color;}
 header .nav>li.active a, header .nav>li.active span {background: transparent;}
+header nav ul li.dropdown.active ul li.active span {background:$hover-li-a;@include transitions(.3s);}
 
 
 .header-top .navbar-collapse, header .navbar-collapse {width: auto;@include box-shadow(none);}
@@ -1748,6 +1751,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .header-top .nav>li, .header-top .nav>li.dropdown, .header-top .nav>li.dropdown:first-child, .header-top .nav>li.dropdown:first-child:hover, .header-top .nav>li.dropdown {border-top: none;}
 .header-top .nav>li.active a, .header-top .nav>li.active span {background: transparent;padding: 19px 15px 23px;}
 .header-top .dropdown-menu>.active>a, .header-top .dropdown-menu>.active>a:focus, .header-top .dropdown-menu>.active>a:hover {color:$black-color;}
+.header-top .nav li.active li.active span {padding: 19px 15px 23px;}
 
 .home-btn {display: none;}
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {padding-right: auto;overflow-y: hidden!important;}
@@ -1762,6 +1766,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {border-bottom: none;}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {border-top: none;}
 .top-events .navbar-nav>li.dropdown, .top-events .navbar-nav>li.dropdown:hover {border-right: none;border-left: none;}
+.header-top nav ul li.dropdown.active ul li.active span {background:$hover-li-a;@include transitions(.3s);}
 
 
 //Slider
