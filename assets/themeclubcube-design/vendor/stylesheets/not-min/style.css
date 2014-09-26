@@ -6540,6 +6540,10 @@ input:focus {
   display: none;
 }
 
+.slick-next, .slick-prev {
+  z-index: 5;
+}
+
 .slick-next:before, .slick-prev:before {
   content: none;
 }
@@ -8890,6 +8894,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 .video-about .month, .video-about .year {
   font-size: 10px;
   line-height: 10px;
+  margin: 3px 0;
 }
 
 .video-about .day {
@@ -9461,7 +9466,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 .item-title .item-aside .top-event-place {
   display: block;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 16px;
   text-transform: none;
 }
 
@@ -10111,7 +10116,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   transition: all 0.3s ease;
 }
 
-#email-footer-form {
+.contact-us form {
   position: relative;
 }
 
@@ -11860,6 +11865,11 @@ aside.items-aside .blog-item-def .item-title {
   font-family: "PT Sans reg", sans-serif;
 }
 
+.page-text a {
+  color: #e15e32;
+  border-bottom: 1px solid;
+}
+
 .page-text ul {
   margin-left: 0;
   padding-left: 5px;
@@ -13292,6 +13302,7 @@ blockquote a:hover {
     bottom: auto;
     right: 60px;
     left: auto;
+    z-index: 5;
   }
 
   .top-events-sliders .slick-next {
@@ -13300,6 +13311,7 @@ blockquote a:hover {
     bottom: auto;
     right: 0px;
     left: auto;
+    z-index: 5;
   }
 
   .get-in .price {
@@ -13487,7 +13499,8 @@ blockquote a:hover {
 
   .video-about .month, .video-about .year {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 18px;
+    margin: 10px 0;
   }
 
   .video-about .day {
@@ -15277,6 +15290,7 @@ blockquote a:hover {
     bottom: auto;
     right: 60px;
     left: auto;
+    z-index: 5;
   }
 
   .top-events-sliders .slick-next {
@@ -15285,6 +15299,7 @@ blockquote a:hover {
     bottom: auto;
     right: 0px;
     left: auto;
+    z-index: 5;
   }
 
   .nav.nav-top > li > a {

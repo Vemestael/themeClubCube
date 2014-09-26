@@ -38,10 +38,37 @@ $(function() {
                 var _imgHeight = $(_img).height();
                 var _imgWidth = $(_img).width();
                 console.log(_imgHeight, _imgWidth, windowHeight, windowWidth);
-                $(this).css('left', -((_imgWidth - windowWidth) / 2));
-                $(this).width(_imgWidth);
+                if (windowWidth > windowHeight) {
+                    $(this).width(windowWidth);
+                    $(this).height(_imgHeight);
+                    $(this).css('top', -((_imgHeight - windowHeight) / 2));
+                    $(this).css('left', 0);
+                } else {
+                    $(this).css('left', -((_imgWidth - windowWidth) / 2));
+                    $(this).width(_imgWidth);
+                };
             });
+            // slider
+            // var images = [];
+            // $('#slider .s-panel img').each(function() {
+            //     images.push($(this).attr('src'));
+            // });
+            // var optionSliderMain = {
+            //     images: images,
+            //     imageWidth: 1500,
+            //     imageHeight: 955,
+            //     slideDirection: 'N',
+            //     slideShowSpeed: 1000,
+            //     nextSlideDelay: 10000,
+            //     transitionEffect: 'fade',
+            //     sequenceMode: 'normal',
+            //     anchoring: 'left center',
+            //     anchoringImg: 'left center',
+            //     buttonPrev: '#prev',
+            //     buttonNext: '#next'
 
+            // }
+            // $('#slider').bgStretcher(optionSliderMain);
         };
         $(window).resize(function() {
             fullHeight();
@@ -496,7 +523,7 @@ $(function() {
                     title: 'No Email',
                     trigger: 'manual'
                 }).tooltip('show');
-                
+
             } else if ($('#email-subscribe').val().length === 0) {
                 $('#email-subscribe').tooltip('destroy');
                 $('#email-subscribe').tooltip({
