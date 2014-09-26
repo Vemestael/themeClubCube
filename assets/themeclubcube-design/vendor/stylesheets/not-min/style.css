@@ -6596,7 +6596,7 @@ input:focus {
   position: absolute;
 }
 
-.loader-container.active .fr-bl, .subscribe-here .fr-bl {
+.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl {
   top: 0;
   left: 0;
   background: #d1dd6f;
@@ -6606,7 +6606,7 @@ input:focus {
   animation: frstLoad 2s ease-in-out infinite;
 }
 
-.loader-container.active .sc-bl, .subscribe-here .sc-bl {
+.loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl {
   top: 0;
   right: 0;
   background: #e98666;
@@ -6616,7 +6616,7 @@ input:focus {
   animation: scndLoad 2s ease-in-out infinite;
 }
 
-.loader-container.active .thr-bl, .subscribe-here .thr-bl {
+.loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl {
   bottom: 0;
   right: 0;
   background: #bf5e72;
@@ -6626,7 +6626,7 @@ input:focus {
   animation: thrdLoad 2s ease-in-out infinite;
 }
 
-.loader-container.active .fth-bl, .subscribe-here .fth-bl {
+.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl {
   bottom: 0;
   left: 0;
   background: #85666e;
@@ -7694,6 +7694,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   display: block;
   float: right;
   margin-top: 8px;
+  margin-left: 8px !important;
 }
 
 .top-events .navbar-nav > li.dropdown {
@@ -8981,6 +8982,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 .top-events-sliders .slick-prev, .top-events-sliders .slick-next {
   display: none;
   background: none;
+  z-index: 5;
 }
 
 .top-events-sliders .slick-dots {
@@ -9934,27 +9936,26 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 }
 
 .subscribe-here .subscribe input {
-  width: 60%;
-  max-width: 60%;
+  width: 55%;
   display: block;
-  padding: 10px 8px;
+  padding: 6px 8px;
   float: left;
   font-family: "PT Sans reg", sans-serif;
   font-size: 14px;
   color: #666666;
   font-style: italic;
-  border: none;
+  border: 2px solid transparent;
 }
 
 .subscribe-here .subscribe button {
-  max-width: 40%;
-  width: 93px;
+  max-width: 45%;
+  max-height: 42px;
   font-family: "PT Sans reg", sans-serif;
   float: right;
   background: #a82743;
   font-size: 12px;
   color: white;
-  padding: 10px 17px;
+  padding: 12px 17px;
   outline: none;
   border: none;
   text-transform: uppercase;
@@ -9972,11 +9973,15 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   height: 55px;
 }
 
+.suc-title {
+  color: #333333;
+}
+
 .subscribe-here .suc .glyphicon {
   margin-right: 15px;
 }
 
-.suc-title {
+.subscribe-here .suc-title {
   font-size: 22px;
   line-height: 55px;
   text-align: center;
@@ -18975,6 +18980,7 @@ form {
 .suc.loader {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 10;
@@ -19010,7 +19016,7 @@ footer .suc.loader .loader .fr-bl, footer .suc.loader .loader .fth-bl, footer .s
 .subscribe label {
   display: none;
   position: absolute;
-  top: -85px;
+  bottom: 65px;
   left: 40px;
   font-size: 14px;
   line-height: 20px;
