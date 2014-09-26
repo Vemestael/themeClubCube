@@ -194,7 +194,7 @@ if ($object && $object->xpdo) {
                         'alias' => 'sitemap',
                         'uri' => 'sitemap',
                         'link_attributes' => '',
-                        'content' => '[[pdoSitemap? &parents=`-2,`]]',
+                        'content' => '[[pdoSitemap]]',
                         'isfolder' => false,
                         'published' => true,
                         'publishedon' => time(),

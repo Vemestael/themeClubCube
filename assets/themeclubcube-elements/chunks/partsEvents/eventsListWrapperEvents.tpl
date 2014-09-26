@@ -1,1 +1,1 @@
-[[+output:notempty=`[[+output]]`:isempty=`<p>[[%lf_events_empty]]</p>`]]
+[[+output:default=`<p>[[%lf_events_empty]]</p>`]]

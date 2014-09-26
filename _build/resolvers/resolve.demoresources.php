@@ -811,8 +811,8 @@ $content_about_template = '
         <p></p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h3>3 цветовые схемы и ручная настройка</h3>
-        <p></p>
+        <h3>Цветовые схемы</h3>
+        <p>Включено 3 цветовых схемы и ручная настройка</p>
     </div>
     <div class="col-md-4 col-sm-4">
         <h3>Настраиваемый шаблон главной страницы</h3>
@@ -861,6 +861,16 @@ $content_about_template = '
         <p></p>
     </div>
 </div>
+';
+
+$content_manual = '
+<p>Где настраивать шаблон, показать скрины конфигов и как туда попасть.</p>
+<h2>Настройка главной страницы</h2>
+<p></p>
+<h2>Настройкка Google Analytics</h2>
+<p></p>
+<h2>Настройкка Unisender</h2>
+<p></p>
 ';
 
 if ($object && $object->xpdo) {
@@ -3786,6 +3796,26 @@ if ($object && $object->xpdo) {
                                     'context_key' => 'web',
                                     'menutitle' => '',
                                 ),
+                                'manual' => array(
+                                    'template' => $tpl_text->get('id'),
+                                    'pagetitle' => 'Manual',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'manual',
+                                    'uri' => 'manual',
+                                    'link_attributes' => '',
+                                    'content' => $content_manual,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time(),
+                                    'hidemenu' => false,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                ),
                                 'elements' => array(
                                     'template' => $tpl_text->get('id'),
                                     'pagetitle' => 'Design elements',
@@ -3802,6 +3832,27 @@ if ($object && $object->xpdo) {
                                     'hidemenu' => false,
                                     'cacheable' => true,
                                     'searchable' => true,
+                                    'richtext' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                ),
+                                'unisender' => array(
+                                    'class_key' => 'modWebLink',
+                                    'template' => 0,
+                                    'pagetitle' => 'Unisender',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'unisender',
+                                    'uri' => 'unisender',
+                                    'link_attributes' => '',
+                                    'content' => 'http://www.unisender.com/?a=makebecool&amp;chan=clubcube',
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time(),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => false,
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',

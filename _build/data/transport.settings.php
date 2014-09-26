@@ -21,7 +21,7 @@ $tmp = array(
         'value' => '',
         'area' => 'themeclubcube_subscribe',
     ),
-    'unisender_tag_id' => array(
+    'unisender_list_ids' => array(
         'xtype' => 'textfield',
         'value' => '',
         'area' => 'themeclubcube_subscribe',

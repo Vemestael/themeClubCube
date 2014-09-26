@@ -8,6 +8,11 @@ $tmp = array(
             'name' => 'level',
             'type' => 'numberfield',
             'value' => '2',
+        ),
+        array(
+            'name' => 'useWeblinkUrl',
+            'type' => 'combo-boolean',
+            'value' => false,
         )
     ),
     'indexSlider' => array(

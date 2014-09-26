@@ -31,3 +31,5 @@ if($modx->getCacheManager() && is_null($output = $modx->cacheManager->get($cache
     $modx->cacheManager->set($cacheKey, $output, 0, $cacheOptions);
 }
 $modx->setPlaceholders($output);
+
+return ;

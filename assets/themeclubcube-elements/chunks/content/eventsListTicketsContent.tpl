@@ -16,7 +16,7 @@
 	<div class="container gr-bg">
 		<div class="rows events-tickets default-tickets">
 			[[!getParamsWeeksEvents]]
-			[[!+week:notempty=`
+            [[!+week:is=`1`:then=`
 				[[!pdoResources@eventsListWeek?
 					&parents=`[[*id]]`
 					&includeTVs=`img,timeStart,price,lineUp,topEvent`
@@ -27,7 +27,7 @@
 					&tpl=`eventsItemEvents`
 					&tvFilters=`[[!+params]]`
 				]]
-			`:isempty=`
+			`:else=`
 				[[!pdoPage@eventsListAll?
 					&parents=`[[*id]]`
 					&includeTVs=`img,timeStart,lineUp,price`
@@ -75,7 +75,7 @@
 			`]]
 		</div>
 	</div>
-	[[!+week:isempty=`
-	[[!+page.nav]]
+    [[!+week:is=`1`:then=``:else=`
+        [[!+page.nav]]
 	`]]
 </main>

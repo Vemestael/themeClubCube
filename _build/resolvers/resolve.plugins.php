@@ -30,6 +30,7 @@ if ($object && $object->xpdo) {
                 if(is_file(MODX_CORE_PATH.'components/'.$v['package'].'/elements/plugins/plugin.'.$v['file'].'.php')){
                     $plugin = $modx->getObject('modPlugin',array('name' => $k));
                     $plugin->fromArray(array(
+                        'static' => 1,
                         'plugincode' => getSnippetContentForPlugin(MODX_CORE_PATH.'components/'.$v['package'].'/elements/plugins/plugin.'.$v['file'].'.php'),
                     ),'',true,true);
 

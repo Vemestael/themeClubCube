@@ -153,7 +153,7 @@ if($errorCheck) {
 } else {
     $uni = new uniApi($modx->getOption('unisender_api_key'));
 
-    $uni->subscribe($properties['email'], $modx->getOption('unisender_tag_id'));
+    $uni->subscribe($properties['email'], $modx->getOption('unisender_list_ids'));
 }
 
 return json_encode($output);

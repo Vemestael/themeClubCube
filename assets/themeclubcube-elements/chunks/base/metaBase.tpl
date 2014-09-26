@@ -12,10 +12,8 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="[[*pagetitle:htmlent]]">
 
-		[[-<meta name="cmsmagazine" content="a39ef97fd1d4cf6d3e103f0ff48ea4f6" />]]
-
-        <meta property="og:title" content="[[*longtitle:default=`[[*pagetitle]] / [[++site_name]]`]]" />
-        <meta property="og:description" content="[[*description:notempty=`[[*description:htmlent]]`:default=`[[%lf_description:htmlent]]`]]" />
+        <meta property="og:title" content="[[*longtitle:htmlent:default=`[[*pagetitle:htmlent]] / [[++site_name]]`]]" />
+        <meta property="og:description" content="[[*description:htmlent:default=`[[%lf_description:htmlent]]`]]" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="[[~[[*id]]? &scheme=`full`]]" />
         <meta property="og:image" content="[[*img:notempty=`[[++site_url:replace=`/[[++cultureKey]]/==`]][[*img]]`:default=`[[++site_url]]assets/design/images/logo.png`]]" />
