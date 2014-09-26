@@ -37,7 +37,7 @@ $(function() {
                 var _img = $(this).find('.bg-tile').first().find('img');
                 var _imgHeight = $(_img).height();
                 var _imgWidth = $(_img).width();
-                console.log(_imgHeight, _imgWidth, windowHeight, windowWidth);
+                console.log(_img, _imgHeight, _imgWidth, windowHeight, windowWidth);
                 if (windowWidth > windowHeight) {
                     $(this).width(windowWidth);
                     $(this).height(_imgHeight);

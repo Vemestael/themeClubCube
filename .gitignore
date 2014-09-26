@@ -6,3 +6,5 @@ nbproject
 
 /_packages/*
 !/_packages/*.zip
+/node_modules
+/Gruntfile.js
