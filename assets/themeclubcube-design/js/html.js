@@ -3,36 +3,50 @@ $(function() {
     var cubeObj = {};
 
     cubeObj.fullHeightSlides = function() {
-        function fullHeightSlides() {
-            var $imgSlider = $('.slider .container-fluidss img.img-responsive');
-            var $defaildSlider = $('.slider-default .container-fluidss img.img-responsive');
-            var windowHeight = $(window).height();
-            var windowWidth = $(window).width();
+        function fullHeight() {
+            // var $imgSlider = $('.slider .container-fluidss img.img-responsive');
+            // var $defaildSlider = $('.slider-default .container-fluidss img.img-responsive');
+            // var windowHeight = $(window).height();
+            // var windowWidth = $(window).width();
 
-            function count(node) {
-                if ((windowHeight > windowWidth) && ($('.slider').length)) {
-                    $(node).removeClass('img-responsive').addClass('height-to-window');
-                };
-                if ((windowHeight < windowWidth) && ($('.slider').length)) {
-                    $(node).removeClass('img-responsive').addClass('height-to-window');
-                };
-                if ((windowWidth < 1200) && ($('.slider-default').length)) {
-                    $(node).removeClass('img-responsive').addClass('height-to-window');
-                };
-            };
-            $imgSlider.each(function() {
-                var node = this;
-                count(node);
+            // function count(node) {
+            //     if ((windowHeight > windowWidth) && ($('.slider').length)) {
+            //         $(node).removeClass('img-responsive').addClass('height-to-window');
+            //     };
+            //     if ((windowHeight < windowWidth) && ($('.slider').length)) {
+            //         $(node).removeClass('img-responsive').addClass('height-to-window');
+            //     };
+            //     if ((windowWidth < 1200) && ($('.slider-default').length)) {
+            //         $(node).removeClass('img-responsive').addClass('height-to-window');
+            //     };
+            // };
+            // $imgSlider.each(function() {
+            //     var node = this;
+            //     count(node);
+            // });
+            // $defaildSlider.each(function() {
+            //     var node = this;
+            //     count(node);
+            // });
+            var $slider = $('#slider');
+            var $slides = $slider.find('.s-panel');
+            var windowHeight = window.innerHeight;
+            var windowWidth = window.innerWidth;
+
+            $slides.each(function() {
+                var _img = $(this).find('.bg-tile').first().find('img');
+                var _imgHeight = $(_img).height();
+                var _imgWidth = $(_img).width();
+                console.log(_imgHeight, _imgWidth, windowHeight, windowWidth);
+                $(this).css('left', -((_imgWidth - windowWidth) / 2));
+                $(this).width(_imgWidth);
             });
-            $defaildSlider.each(function() {
-                var node = this;
-                count(node);
-            });
+
         };
         $(window).resize(function() {
-            fullHeightSlides();
+            fullHeight();
         });
-        fullHeightSlides();
+        fullHeight();
     };
 
     // Fullscreen Slider
@@ -41,7 +55,7 @@ $(function() {
         var $topEventsSLider = $('.top-events-sliders');
         window.tileSlide = new TileSlide(document.querySelector('.slider'), {
             dots: false,
-            interval: 8000
+            interval: 80000
         });
         // $sliderNode.slick({
         //     // slidesToShow: 1,
@@ -64,12 +78,11 @@ $(function() {
         if (window.innerWidth > 479) {
             $topEventsSLider.slick({
                 slidesToShow: 3,
-                arrows: false,
                 easing: 'easeInExpo',
                 draggable: false,
                 speed: 900,
                 swipe: true,
-                dots: true,
+                dots: false,
                 infinite: false,
                 responsive: [{
                     breakpoint: 1024,
@@ -77,8 +90,7 @@ $(function() {
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: false,
-                        arrows: false,
-                        dots: true
+                        dots: false
                     }
                 }, {
                     breakpoint: 900,
@@ -86,7 +98,6 @@ $(function() {
                         slidesToShow: 2,
                         slidesToScroll: 2,
                         infinite: false,
-                        arrows: false,
                         dots: true
                     }
                 }, {
@@ -476,15 +487,34 @@ $(function() {
         var $subscribeBtn = $('#subscribe-btn');
         var $EmailFooterForm = $('#email-footer-form');
         var regEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-        var nodesToInsert = '<div class="popup-error"><div class="popup-error-inner"><div class="corner-error"></div><span class="popup-error-title"></span></div>';
         $EmailFooterForm.submit(function(event) {
-            $('#email-footer-form>.popup-error').remove();
-            if ($emailInput.val() === '') {
+            if (regEmail.test($emailInput.val()) === true) {
+                $('#email-subscribe').tooltip('destroy');
+                $('#email-subscribe').tooltip({
+                    container: 'body',
+                    placement: 'top',
+                    title: 'No Email',
+                    trigger: 'manual'
+                }).tooltip('show');
+                
+            } else if ($('#email-subscribe').val().length === 0) {
+                $('#email-subscribe').tooltip('destroy');
+                $('#email-subscribe').tooltip({
+                    container: 'body',
+                    placement: 'top',
+                    title: 'No Email',
+                    trigger: 'manual'
+                }).tooltip('show');
                 event.preventDefault();
-                $EmailFooterForm.prepend('<div class="popup-error"><div class="popup-error-inner"><div class="corner-error"></div><span class="popup-error-title">' + 'Enter Email' + '</span></div>');
             } else if (regEmail.test($emailInput.val()) === false) {
+                $('#email-subscribe').tooltip('destroy');
+                $('#email-subscribe').tooltip({
+                    container: 'body',
+                    placement: 'top',
+                    title: 'Please, enter valid Email',
+                    trigger: 'manual'
+                }).tooltip('show');
                 event.preventDefault();
-                $EmailFooterForm.prepend('<div class="popup-error"><div class="popup-error-inner"><div class="corner-error"></div><span class="popup-error-title">' + 'Enter valid Email' + '</span></div>');
             };
         });
     };
