@@ -31,6 +31,10 @@ $tmp = array(
         'file' => 'parseMIGXTV',
         'description' => '',
     ),
+    'getIdResourceForAlias' => array(
+        'file' => 'getIdResourceForAlias',
+        'description' => '',
+    ),
 );
 
 foreach ($tmp as $k => $v) {

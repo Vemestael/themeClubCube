@@ -16,17 +16,15 @@
 		<div class="ticket-triangle-bt"></div>
 		<div class="rombs"></div>
 	</div>
-	<div class="ticket-event-img img-contain">
-		<img class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
-			 data-imgsrc="<520:[[+img:phpthumbof=`w=464&h=330&zc=1`]],
-			<800:[[+img:phpthumbof=`w=350&h=249&zc=1`]],
-			<1280:[[+img:phpthumbof=`w=547&h=389&zc=1`]],
-			>1900:[[+img:phpthumbof=`w=573&h=407&zc=1`]]"
-			 src="[[+img:pthumb=`w=359&h=179&zc=c&f=jpg`]]">
+	<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="ticket-event-img img-contain">
+        <img class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
+             data-imgsrc="<1200:[[+img:phpthumbof=`w=250&h=180&zc=1`]],
+				>1200:[[+img:phpthumbof=`w=360&h=180&zc=1`]]"
+             src="[[-+img:pthumb=`w=359&h=179&zc=c&f=jpg`]]">
 		<div class="ticket-triangle-top"></div>
 		<div class="ticket-triangle-bt"></div>
 		<div class="rombs"></div>
-	</div>
+	</a>
 	<div class="ticket-event-lineup">
 		<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h3>
 		<hr>

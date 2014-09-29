@@ -1,12 +1,11 @@
 <div class="some-events row">
 	<div class="col-lg-12 col-md-4 col-sm-6">
 		<article class="top-event">
-			<img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
-				data-imgsrc="<520:[[+img:phpthumbof=`w=464&h=330&zc=1`]],
-					<800:[[+img:phpthumbof=`w=350&h=249&zc=1`]],
-					<1280:[[+img:phpthumbof=`w=547&h=389&zc=1`]],
-					>1900:[[+img:phpthumbof=`w=573&h=407&zc=1`]]"
-				src="[[+img:pthumb=`w=359&h=179&zc=c&f=jpg`]]">
+            <img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
+                 data-imgsrc="<479:[[+img:phpthumbof=`w=450&h=360&zc=1`]],
+				<899:[[+img:phpthumbof=`w=355&h=360&zc=1`]],
+				>1200:[[+img:phpthumbof=`w=360&h=360&zc=1`]]"
+                 src="[[-+img:pthumb=`w=394&h=398&zc=c&f=jpg`]]">
 			<div class="top-event-descr">
 				<div class="date-event">
 					<div class="month">[[%lf_month.[[+timeStart:strtotime:date=`%m`]]]]</div>

@@ -9,8 +9,12 @@
 			[[+output]]
 		</div>
 		<div class="row more-button-bott">
-			<a href="[[~[[++themeclubcube.gallery_resource]]]]" title="[[%lf_gallery_more:htmlent]]" class="btn-custom"><span class="btn-custom-text">[[%lf_gallery_more:htmlent]]</span>
-				<span class="plus-arr"></span>
+			<a href="[[~[[++themeclubcube.gallery_resource]]]]" title="[[%lf_gallery_more:htmlent]]" class="button-more">
+                <div class="button-filter-arr">
+                    <div class="button-filter-line left"></div>
+                    <div class="button-filter-line right"></div>
+                </div>
+                <span class="button-filter-text">[[%lf_gallery_more:htmlent]]</span>
 			</a>
 		</div>
 	</div>

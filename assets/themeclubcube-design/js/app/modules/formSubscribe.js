@@ -4,7 +4,8 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
     _defaults = {
         // elements
         form: '#email-footer-form',
-        formSuccessMessage: '#successSubscribe'
+        formSuccessMessage: '#successSubscribe',
+        formSuccessLoader: '#loaderSubscribeForm'
 
         // prop
         // data
@@ -15,6 +16,7 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
         // elements
         form: null,
         formSuccessMessage: null,
+        formSuccessLoader: null,
 
         // prop
         preloaded: false
@@ -38,11 +40,33 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
     _config = function() {
         _globals.form = $(_properties.form);
         _globals.formSuccessMessage = $(_properties.formSuccessMessage);
+        _globals.formSuccessLoader = $(_properties.formSuccessLoader);
     },
 
     _setup = function() {
         if(_globals.form.length) {
-            _globals.form.validate();
+            _globals.form.validate({
+                errorElement: 'span',
+                errorPlacement: function(error, element) {
+                    if($(element).hasClass('error') && !$('label[for='+$(element).attr('id')+']').length){
+                        var label = $('<label/>');
+                        label.addClass('error').attr('for', $(element).attr('id'));
+
+                        var arrow = $('<span/>');
+                        arrow.addClass('subscribe-label-arrow');
+
+                        error.addClass('subscribe-label-inner').removeClass('error');
+
+                        error.insertAfter(element).wrap(label);
+                        arrow.insertBefore(error);
+                    } else if($(element).hasClass('valid')){
+                        $(error).parent('label').remove();
+                    }
+                },
+                success: function(label){
+                    $('label[for=email-subscribe]').remove();
+                }
+            });
             _globals.form.ajaxForm({
                 dataType:  'json',
                 beforeSubmit: _formBeforeSubmit,
@@ -66,7 +90,9 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
         _formSubscribe.globals.customDestroy = function() {};
     },
 
-    _formBeforeSubmit = function(arr, $form, options){},
+    _formBeforeSubmit = function(arr, $form, options){
+        _globals.formSuccessLoader.removeClass('hide');
+    },
 
     _formSuccess = function(response){
         if(response.success) {
@@ -74,6 +100,7 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
                 _globals.formSuccessMessage.slideDown('slow');
             });
         } else {
+            _globals.formSuccessLoader.addClass('hide');
             for (var key in response.errors) {
                 var el = $('#'+key);
                 el.addClass('error');

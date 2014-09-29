@@ -9,7 +9,7 @@ if ($object && $object->xpdo) {
             $users = array(
                 'Manager' => array(
                     'username' => 'manager',
-                    'password' => 'managersite',
+                    'password' => 'testmanager',
                     'profile' => array(
                         'fullname' => 'Manager',
                         'email' => 'manager@manager.site'

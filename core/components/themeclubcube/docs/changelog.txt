@@ -1,5 +1,5 @@
 Changelog for themeClubCube.
 
-themeClubCube 0.0.1
+themeClubCube 1.0.0 pl
 ==============
-- Initial release.
+- Initial release with the implementation of the template.

@@ -73,8 +73,10 @@
 				imgInsertion = '';
 			for (var i = 0; i < self.tiles; i++) {
 				imgInsertion += '<div class="bg-tile"><div class="bg-img"><img src="' + img.src + '" /></div></div>';
-			};
-			panel.removeChild(img);
+			}
+            if($(panel).children('img').length > 0) {
+			    panel.removeChild(img);
+            }
 			panel.innerHTML = imgInsertion + panel.innerHTML;
 		});
 

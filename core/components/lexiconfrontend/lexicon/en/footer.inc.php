@@ -25,4 +25,5 @@ $_lang['lf_footer_follow_pinterest'] = '#';
 $_lang['lf_footer_follow_youtube'] = '#';
 $_lang['lf_footer_follow_flickr'] = '#';
 
-$_lang['lf_footer_copyrigt'] = '- Cube Club. All Rights Reserved.';
+$_lang['lf_footer_copyright'] = 'Сopyright';
+$_lang['lf_footer_copyright_text'] = '- Cube Club. All Rights Reserved.';

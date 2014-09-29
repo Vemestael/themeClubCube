@@ -131,7 +131,7 @@ $errors = array(
 );
 
 /* email */
-$errors['email'] = validateEmail($fields['email']);
+$errors['email'] = validateEmail($properties['email']);
 /* end email */
 
 $output = array('success'=>true);

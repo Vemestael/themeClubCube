@@ -47,16 +47,24 @@
 							<input type="email" class="email required" required name="email" id="email-subscribe" placeholder="[[%lf_footer_subscribe_email_placeholder:htmlent]]">
 							<button type="submit" id="subscribe-btn" >[[%lf_footer_subscribe_send:htmlent]]</button>
 						</div>
+                        <div id="loaderSubscribeForm" class="suc loader hide">
+                            <div class="loader">
+                                <div class="fr-bl"></div>
+                                <div class="sc-bl"></div>
+                                <div class="thr-bl"></div>
+                                <div class="fth-bl"></div>
+                            </div>
+                        </div>
 					</form>
-                    <div id="successSubscribe" style="display: none;">
-                        [[%lf_footer_subscribe_success:htmlent]]
+                    <div id="successSubscribe" class="suc" style="display: none;">
+                        <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>[[%lf_footer_subscribe_success:htmlent]]</div>
                     </div>
 				</div>
                 `]]
 			</div>
 			<div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
 				<div class="soc-marg soc-webs">
-					<h6>[[%lf_footer_follow_head:htmlent]]</h6>
+                    <div class="footer-header">[[%lf_footer_follow_head:htmlent]]</div>
 					<p>[[%lf_footer_follow_line:htmlent]]</p>
 					<ul class="social-icons">
 						[[%lf_footer_follow_facebook:notempty=`

@@ -1,1 +1,1 @@
-[[+output:default=`<p>[[%lf_events_empty]]</p>`]]
+[[+output:default=`<p class="hdr">[[%lf_events_empty]]</p>`]]

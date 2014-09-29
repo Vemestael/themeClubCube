@@ -1,13 +1,8 @@
 --------------------
 themeClubCube
 --------------------
-Author: Andrei Gadashevich <gav.andrei@makebecool.com>,
+Author: MakeBeCool dasign studio <themes@makebecool.com>,
 --------------------
 
-/**
- * TODO Написать описание
- */
-Write About
-
 Feel free to suggest ideas/improvements/bugs on Email:
-support@makebecool.com
+themes@makebecool.com

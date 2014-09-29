@@ -61,6 +61,7 @@
 				,[[++themeclubcube.design_url]]js/app/modules/galleryPage.js
                 ,[[++themeclubcube.design_url]]js/app/modules/sharrre.js
                 ,[[++themeclubcube.design_url]]js/app/modules/eventsTickets.js
+                ,[[++themeclubcube.design_url]]js/app/modules/dropDownClick.js
 				,[[++themeclubcube.design_url]]js/init.js
             `
             &cssSources=`

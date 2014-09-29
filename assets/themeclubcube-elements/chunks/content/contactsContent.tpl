@@ -40,9 +40,17 @@
 									<button type="submit" class="btn btn-default submit">[[%lf_contact_send:htmlent]]</button>
 								</div>
 							</div>
+                            <div id="loaderContactsForm" class="suc loader hide">
+                                <div class="loader">
+                                    <div class="fr-bl"></div>
+                                    <div class="sc-bl"></div>
+                                    <div class="thr-bl"></div>
+                                    <div class="fth-bl"></div>
+                                </div>
+                            </div>
 						</form>
-						<div id="successMessage" style="display: none;">
-							<p>[[%lf_contact_successMessage:htmlent? &namespace=`sitelang` &language=`[[++cultureKey]]`]]</p>
+						<div id="successMessage" class="suc" style="display: none;">
+                            <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>[[%lf_contact_successMessage:htmlent? &namespace=`sitelang` &language=`[[++cultureKey]]`]]</div>
 						</div>
 					</div>
 				</div>

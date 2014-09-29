@@ -93,8 +93,6 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
                 if (_options.usePreloader) _addImgPreloader($this);
                 imagesSrc.push(imgsrc);
                 images.push($this);
-//                console.log(imgsrc);
-
             }
             i++;
         });
@@ -104,11 +102,13 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
         var baseLength = global.siteUrl.length;
         if(imagesSrc.length){
             $.imgpreload(imagesSrc, {
-                each: function () {
+                each: function (i) {
                     var $this = this;
                     setTimeout(function () {
-                        var j = $.inArray($this.src.substr(baseLength-1), imagesSrc);
+                        var j = $.inArray(global.baseUrl+$this.src.substr(baseLength), imagesSrc);
                         var img = images[j];
+                        imagesSrc.splice(j,1);
+                        images.splice(j,1);
                         //Remove preloader els
                         if (_options.usePreloader) _removeImgPreloader(img);
                         //Replace src with this data imgsrc

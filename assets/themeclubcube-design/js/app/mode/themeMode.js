@@ -47,6 +47,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.utils.extend(_globals.siteObj.classes.GalleryPage, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.Sharrre, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.EventsTickets, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.DropDownClick, _globals.siteObj.base.Class);
     },
 
     _instantiateClasses = function() {
@@ -66,6 +67,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.createClassInstance('galleryPage', _globals.siteObj.classes.GalleryPage, {classId: 'GalleryPage'});
         _globals.siteObj.createClassInstance('sharrre', _globals.siteObj.classes.Sharrre, {classId: 'Sharrre'});
         _globals.siteObj.createClassInstance('eventsTickets', _globals.siteObj.classes.EventsTickets, {classId: 'EventsTickets'});
+        _globals.siteObj.createClassInstance('dropDownClick', _globals.siteObj.classes.DropDownClick, {classId: 'DropDownClick'});
     },
 
     _setup = function() {
@@ -103,6 +105,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
                     _themeMode.trigger('GalleryPage_Init', data);
                     _themeMode.trigger('Sharrre_Init', data);
                     _themeMode.trigger('EventsTickets_Init', data);
+                    _themeMode.trigger('DropDownClick_Init', data);
                 });
             },
             setFullHeightSlider_BigSliderBind: function(){
