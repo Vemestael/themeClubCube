@@ -412,7 +412,7 @@ bottom: 20px;text-align: center;width: 100%;z-index: 12;}
 .slider-default p {display: none;font-family: $verdana; color:$white-color;font-size: $reg-font-size;line-height:$reg-font-size+10;}
 .slider-default .rowss .slide-desc .socials {position: absolute;left: 0;font-family: $verdana;color:$white-color;margin-top: 28px;}
 .slider-default .rowss .slide-desc .socials .tw-soc, .slider-default .date {margin-right: 0px;}
-.slider-default .date .month, .slider-default .date .year {font-family: $verdana;font-size: $reg-font-size;}
+.slider-default .date .month, .slider-default .date .year {font-family: $verdana;font-size: $reg-font-size;line-height: $reg-font-size;}
 .slider-default .date .day {font-family: $verdana;font-size: $content-h2;}
 // .slider-default .rowss .slide-desc .get-in .price {background: $white-color;font-family: $verdana;font-size: $reg-font-size;color: $black-color;float: left;margin-right: 0;padding: 10px;margin-top: 0;margin-bottom: 0;}
 // .slider-default .rowss .slide-desc .get-in .price .trs {margin-right: 0;}
@@ -494,7 +494,7 @@ bottom: 20px;text-align: center;width: 100%;z-index: 12;}
 .video-title .video-about {display: block;}
 .video-title .v-inform {display: none;}
 .video-about {margin-bottom: 10px;}
-.video-about .month, .video-about .year {font-size: 10px;line-height: 10px;margin: 3px 0;}
+.video-about .month, .video-about .year {font-size: 10px;line-height: 10px;margin: 0;}
 .video-about .day {font-size: 21px;line-height: 21px;}
 .video-about .date {padding: 0px 12px;margin-top: 3px;}
 .h3-hidden-xs {margin-top: 40px;color:$white-color;font-family: $verdana;font-size:$reg-font-size;line-height: $header5-font-size;font-weight: normal;text-transform: uppercase; }
@@ -709,12 +709,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 // #subscribe-btn {max-width: 40%;width: 93px;font-family: $pt-sans;float: right;background:$red-color; font-size:$sm-font-size;color:$white-color;padding:10px 17px;outline:none;border:none;text-transform: uppercase;}
 .subscribe-here .suc {display: block;width: 100%;height: 55px;}
 .subscribe-here .suc.loader {display: block;position: absolute;height: 55px;}
-.suc-title {color:$light-black-color;}
+.suc-title {color:$light-black-color;font-size: 22px;line-height: 55px;}
+.suc .glyphicon {margin-right: 15px;}
 .subscribe-here .suc .glyphicon {margin-right: 15px;}
 .subscribe-here .suc-title {font-size: 22px;line-height: 55px;text-align: center;color:$white-color;}
 .social-icons {display: block;list-style:none;padding-left:0;}
 .social-icons li {float: left;margin-right:$margin-sm/2;margin-bottom:$margin-sm/2;}
-.social-icons li a {display: block;width: 50px;height: 50px;background:$white-color;border-bottom: none;@include transitions(.3s);}
+.social-icons li a {display: block;width: 50px;height: 50px;background:$white-color;border-bottom: none;@include transitions(.3s);text-align: center;}
+.social-icons li a i {line-height: 50px;font-size: 30px;}
 .soc-icon-fb, .soc-icon-g, .soc-icon-in, .soc-icon-tw, .soc-icon-skype, .soc-icon-pint, .soc-icon-yout, .soc-icon-th {display: block;width: 50px;height: 50px;background-image: url(../images/sprites.png);background-repeat: no-repeat;cursor: pointer;}
 .soc-icon-fb {background-position: -11px -362px;@include transitions(.3s);}
 .soc-icon-g {background-position: -60px -359px;@include transitions(.3s);}
@@ -733,6 +735,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 .soc-icon-yout:hover {background-position: -326px -407px;@include transitions(.3s);}
 .soc-icon-th:hover {background-position: -383px -408px;@include transitions(.3s);}
 .social-icons li a:hover {background:$orange-color;@include transitions(.3s);}
+.social-icons li a i {color:$reddy-color;@include transitions(.3s);}
+.social-icons li a:hover i {color:$white-color;@include transitions(.3s);}
 .contact-us form {position: relative;}
 .popup-error {position:absolute;top: -100px;left: 0;background:$orange-color;padding:$margin-sm;-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);box-shadow: 0 0 15px rgba(0,0,0,.3);}
 .popup-error-inner {position: relative;}
@@ -976,13 +980,13 @@ aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 .slider-default .event-about .slider-heading {font-size: 16px;line-height: 16px;}
 .slider-default .rowss .slide-title .slider-heading {padding-left: 0;padding-right: 0;}
 .slider-default .event-about {display: block;margin-bottom: 0;}
-.slider-default .event-about .date {margin-top: 0;padding: 3px 10px;margin-right: 10px;}
+.slider-default .event-about .date {margin-top: 0;padding: 0px 10px;margin-right: 10px;}
 .slider-default .event-about .event-times .slider-heading {padding-bottom: 5px;}
 // .slider-default .rowss .slide-title .get-in {padding-right: 0;padding-left: 0;}
 // .slider-default .rowss .slide-title .get-in .price {font-size: 14px;line-height: 14px;background:$white-color;padding: 10px;float: left;margin: 0;}
 // .slider-default .rowss .slide-title .get-in .price .trs {margin-right: 5px;opacity: 1;}
 // .slider-default .rowss .slide-title .get-in .get-into {font-size: 14px;line-height: 14px;padding: 10px;float: left;}
-.slider-default .rowss .slide-title .socials {color:$white-color;padding-left: 0;padding-right: 0;}
+.slider-default .rowss .slide-title .socials {width: auto;color:$white-color;padding-left: 0;padding-right: 0;}
 
 //Default video
 .slider-default .video-about.default {display: none;}
@@ -1186,7 +1190,7 @@ line-height: $reg-font-size;;}
 .slide-to-left {display: block;position:absolute;width: 10%;height: 100%;top: 0;left: 0;background:url('../images/slide-l-shad.png') -35px top repeat-y;}
 .slide-to-right {display: block;position:absolute;width: 10%;height: 100%;top: 0;right: 0;background:url('../images/slide-r-shad.png') 45px top repeat-y;}
 .event-about, .video-about {display: none;overflow: hidden;margin-bottom:$margin-mdl;}
-.event-about .date {;background:$white-color;text-align:center;color:$black-color;margin-right:$grid-gutter-width/2; padding:3px 16px;margin-top: 10px; float: left;}
+.event-about .date {background:$white-color;text-align:center;color:$black-color;margin-right:$grid-gutter-width/2; padding:3px 16px;margin-top: 10px; float: left;}
 .video-about .date {background:$white-color;text-align:center;color:$black-color;padding:$font-size-base/2 $margin-sm;margin-top: 10px; float: right;}
 .event-about h1 {text-align:left;line-height:$header2-font-size;}
 .slider p {display: none;}
@@ -1545,7 +1549,7 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 .slider-default .rowss .slide-title .event-times .slider-heading {font-weight: normal;}
 .slider-default p {display: block; font-size: 14px;line-height: 24px;color:$white-color;padding-left: 0;}
 .slider-default .rowss .slide-list li {font-size: $header4-font-size;line-height: 30px;}
-.slider-default .date .month, .slider-default .date .year {font-size: 15px;line-height: 28px;}
+.slider-default .date .month, .slider-default .date .year {font-size: 15px;line-height: 15px;}
 .slider-default .date .day {font-size: 30px;line-height: 30px;}
 .slider-default .rowss .event-about .slider-heading {font-size: 36px;line-height: 36px;}
 .slider-default p.slider-texts {padding-left: 0;padding-right: 0;margin-top: 25px;margin-bottom: 0;}
@@ -1766,7 +1770,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {border-bottom: none;}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {border-top: none;}
 .top-events .navbar-nav>li.dropdown, .top-events .navbar-nav>li.dropdown:hover {border-right: none;border-left: none;}
-.header-top nav ul li.dropdown.active ul li.active span {background:$hover-li-a;@include transitions(.3s);}
+.header-top nav ul li.dropdown.active ul li.active span {display: block;white-space: nowrap;background:$hover-li-a;@include transitions(.3s);}
 
 
 //Slider
@@ -1786,7 +1790,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .socials {text-align:left;margin-top:$margin-mdl;}
 .video-desc .socials {margin-left: 300px;margin-top: 50px;}
 .slider-heading.time-evt {text-align: left;padding-bottom: 0;}
-.event-about .date {width: 90px;padding: 0 16px;}
+.event-about .date {padding: 0 15px;}
 .event-about .day, .video-about .day {font-size: 38px;line-height: 38px;font-weight: bold;}
 .event-about .month, .event-about .year, .video-about .month, .video-about .year {font-size: 18px;line-height: 18px;padding: 10px 0;}
 .get-in {margin-top:30px;}
@@ -1885,7 +1889,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .left-evt-inner {margin-right: 20px;}
 .popup-evt {padding: 20px 20px 20px 0;}
 .poput-evt-inner {padding-left: 35px;}
-
+.items-aside:before {display: none;content:none;}
 
 
 //Gallery
@@ -1907,7 +1911,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .blog-item .item-title {height: auto;color:$light-black-color;overflow: hidden;}
 .copyrights-bottom, .contact-us .container  {padding-left: auto;padding-right: auto;}
 .contact-us .container {padding-left: 15px;padding-right: 15px;}
-.welcome {width: 296px;height: auto;top:-40px;left: 0px;}
+.welcome {width: 296px;height: auto;top: auto;bottom: 74%;left: 0;}
 .welcome-inner {height: auto;}
 .address-list {padding-left:16px;}
 .soc-marg {margin-top:52px;border-top:none;}
@@ -1944,7 +1948,7 @@ footer .copyrigts {font-size: $reg-font-size;}
 .slider-default .rowss .slide-desc p {display: block;font-family: $verdana; color:$white-color;font-size: $reg-font-size;line-height:$reg-font-size+10;}
 .slider-default .rowss .slide-desc .socials {position: absolute;right: 0;font-family: $verdana;color:$white-color;margin-top: 28px;}
 .slider-default .rowss .slide-desc .socials .tw-soc, .slider-default .date {margin-right: 0px;}
-.slider-default .date .month, .slider-default .date .year {font-family: $verdana;font-size: $reg-font-size;}
+.slider-default .date .month, .slider-default .date .year {font-family: $verdana;font-size: $reg-font-size;line-height: $reg-font-size;}
 .slider-default .date .day {font-family: $verdana;font-size: $content-h2;}
 // .slider-default .rowss .slide-desc .get-in .price {font-family: $verdana;font-size: $content-h2;color: $white-color;}
 .sect.top-events-default {padding-bottom: 112px;}
@@ -1992,18 +1996,19 @@ aside .blog-item-def .item-title {overflow: visible;}
 .slider-default .date {padding: 0px 15px;margin-top: 6px;margin-right: 10px;}
 .slider-default .date.vid-date {margin-right: 0;}
 .slider-default .slide-title .event-about .event-times {padding-top: 0;}
-.slider-default .date .month, .slider-default .date .year {font-size: 15px;line-height: 30px;}
+.slider-default .date .month, .slider-default .date .year {font-size: 15px;line-height: 15px;}
 .slider-default .date .day {font-size: 30px;line-height: 30px;}
 .slider-default .rowss .slide-list li {line-height: 36px;}
 .slider-default .slide-title .half-line {padding-left: 0;margin-top: 25px;margin-bottom: 25px;}
 .slider-default .slide-title .half-line hr {display: block;margin-top: 0;margin-bottom: 0;}
 .slider-default .event-about {margin-bottom: 0;}
-.slider-default .event-about .date {padding: 3px 15px;}
+.slider-default .event-about .date {padding: 0px 15px;}
 // .slider-default .price {color:$black-color;float: left;font-size: 22px;line-height: 26px;padding: 20px;background:$white-color;margin-right: 0;}
 // .slider-default .get-into {font-size: 22px;line-height: 26px;padding: 20px;float: left;}
 // .slider-default .rowss .slide-title .get-in {margin-top: 0;padding-left: 15px;padding-right: 15px;}
 .slider-default .socials {position: absolute;top: 28px;right: 0;margin-top: 0;color:$white-color;}
 // .slider-default .rowss .slide-title .get-in .price, .slider-default .rowss .slide-title .get-in .get-into {font-size: 22px;line-height: 26px;padding: 20px;}
+.slider-default .get-in {margin-left: 59.8%;}
 .slider-default .rowss .slide-title .slider-heading {font-size: $header2-font-size;line-height: $header2-font-size;}
 .slider-default .video-about.default {display: block;}
 .slider-default .rowss .slider-heading.video-heading {width: 50%;padding-right: 0;float: left;}

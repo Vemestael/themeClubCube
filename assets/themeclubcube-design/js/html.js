@@ -37,7 +37,6 @@ $(function() {
                 var _img = $(this).find('.bg-tile').first().find('img');
                 var _imgHeight = $(_img).height();
                 var _imgWidth = $(_img).width();
-                console.log(_img, _imgHeight, _imgWidth, windowHeight, windowWidth);
                 if (windowWidth > windowHeight) {
                     $(this).width(windowWidth);
                     $(this).height(_imgHeight);
@@ -83,7 +82,7 @@ $(function() {
         var $topEventsSLider = $('.top-events-sliders');
         window.tileSlide = new TileSlide(document.querySelector('.slider'), {
             dots: false,
-            interval: 80000
+            interval: 5000
         });
         // $sliderNode.slick({
         //     // slidesToShow: 1,
@@ -157,25 +156,44 @@ $(function() {
     cubeObj.partnersSlider = function() {
         //Slider for partners
         function partnerSlider() {
-            if (window.innerWidth < 768) {
-                $('.partners-slider').slick({
-                    dots: false,
-                    infinite: false,
-                    speed: 400,
-                    slidesToShow: 1,
-                    touchMove: false,
-                    slidesToScroll: 1
-                });
-            } else {
-                $('.partners-slider').slick({
-                    dots: false,
-                    infinite: false,
-                    speed: 300,
-                    slidesToShow: 5,
-                    touchMove: false,
-                    slidesToScroll: 1
-                });
-            };
+            // if (window.innerWidth < 768) {
+            $('.partners-slider').slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 5,
+                touchMove: false,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        dots: false,
+                        infinite: false,
+                        speed: 400,
+                        slidesToShow: 1,
+                        touchMove: false,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+            // } else {
+            //     $('.partners-slider').slick({
+            //         dots: false,
+            //         infinite: false,
+            //         speed: 300,
+            //         slidesToShow: 5,
+            //         touchMove: false,
+            //         slidesToScroll: 1
+            //     });
+            // };
         };
         $(window).resize(function() {
             partnerSlider();
@@ -568,23 +586,23 @@ $(function() {
             var videoWidth = windowHeight * 1.77669;
             var videoHeight = windowWidth / 1.77669;
             if (videoWidth > windowWidth) {
-                videoWidth+=200;
+                videoWidth += 200;
                 $iframes.width(videoWidth);
                 $iframes.height(videoWidth / 1.77669);
                 $iframes.css('left', -((videoWidth - windowWidth) / 2));
                 $iframes.css('top', 0);
-                console.log('videoWidth > windowWidth');
+                // console.log('videoWidth > windowWidth');
             } else if (videoHeight > windowHeight) {
                 videoHeight += 40;
                 $iframes.height(videoHeight);
                 $iframes.width(videoHeight * 1.77669);
                 $iframes.css('top', -((videoHeight - windowHeight - 35) / 2));
                 $iframes.css('left', -(((videoHeight * 1.77669) - windowWidth) / 2));
-                console.log('videoHeight > windowHeight');
+                // console.log('videoHeight > windowHeight');
             };
         } else if (windowWidth < windowHeight) {
 
-            $iframes.height(windowHeight+200);
+            $iframes.height(windowHeight + 200);
             $iframes.width(windowWidth);
             $iframes.css('top', -100);
             $iframes.css('left', 0);
@@ -619,7 +637,7 @@ $(function() {
         var $btnHider = $('.button-dropdown');
         $btnHider.on('touchstart touchend click', function(event) {
             event.preventDefault();
-            console.log('clicked');
+            // console.log('clicked');
             var $hidedDive = $(event.target).find('.hidden-dv');
             if ($hidedDive.hasClass('hide')) {
                 // $hidedDive.show();
@@ -856,7 +874,7 @@ $(function() {
             $('#weeks-tab a').on('click touchend', function(event) {
                 event.preventDefault();
                 findPressedTabNumber(this);
-                console.log(currentTabNumber);
+                // console.log(currentTabNumber);
                 if (currentTabNumber === 0) {
                     $leftPaging.addClass('off');
                     $rightPaging.removeClass('off');
@@ -1034,7 +1052,7 @@ $(function() {
 
         //Counts current image on init of gallery
         function countImages() {
-            console.log('Init images count');
+            // console.log('Init images count');
             var $galleryTiles = $('.gallery-tile');
             var imagesLength = $galleryTiles.length;
             var $currentImg = $('#imagelightbox');
@@ -1053,7 +1071,7 @@ $(function() {
             var $galleryTiles = $('.gallery-tile');
             var $target = $('.gallery-tile' + '[href="' + $openedImage.attr('src') + '"]');
             var index = $target.index('.gallery-tile');
-            console.log(index);
+            // console.log(index);
             $imagesCounter.text((index + 1) + '/' + $galleryTiles.length);
         };
 

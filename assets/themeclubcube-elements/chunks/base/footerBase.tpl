@@ -68,28 +68,28 @@
 					<p>[[%lf_footer_follow_line:htmlent]]</p>
 					<ul class="social-icons">
 						[[%lf_footer_follow_facebook:notempty=`
-							<li><a href="[[%lf_footer_follow_facebook:htmlent]]"><span class="soc-icon-fb"></span></a></li>
+							<li><a href="[[%lf_footer_follow_facebook:htmlent]]"> <i class="fa fa-facebook"></i></a></li>
 						`]]
 						[[%lf_footer_follow_gplus:notempty=`
-							<li><a href="[[%lf_footer_follow_gplus:htmlent]]"><span class="soc-icon-g"></span></a></li>
+							<li><a href="[[%lf_footer_follow_gplus:htmlent]]"><i class="fa fa-google-plus"></i></a></li>
 						`]]
 						[[%lf_footer_follow_linkedin:notempty=`
-							<li><a href="[[%lf_footer_follow_linkedin:htmlent]]"><span class="soc-icon-in"></span></a></li>
+							<li><a href="[[%lf_footer_follow_linkedin:htmlent]]"><i class="fa fa-linkedin"></i></a></li>
 						`]]
 						[[%lf_footer_follow_twitter:notempty=`
-							<li><a href="[[%lf_footer_follow_twitter:htmlent]]"><span class="soc-icon-tw"></span></a></li>
+							<li><a href="[[%lf_footer_follow_twitter:htmlent]]"><i class="fa fa-twitter"></i></a></li>
 						`]]
 						[[%lf_footer_follow_skype:notempty=`
-							<li><a href="skype:[[%lf_footer_follow_skype:htmlent]]?call"><span class="soc-icon-skype"></span></a></li>
+							<li><a href="skype:[[%lf_footer_follow_skype:htmlent]]?call"><i class="fa fa-skype"></i></a></li>
 						`]]
 						[[%lf_footer_follow_skype:notempty=`
-							<li><a href="[[%lf_footer_follow_pinterest:htmlent]]"><span class="soc-icon-pint"></span></a></li>
+							<li><a href="[[%lf_footer_follow_pinterest:htmlent]]"><i class="fa fa-pinterest"></i></a></li>
 						`]]
 						[[%lf_footer_follow_youtube:notempty=`
-							<li><a href="[[%lf_footer_follow_youtube:htmlent]]"><span class="soc-icon-yout"></span></a></li>
+							<li><a href="[[%lf_footer_follow_youtube:htmlent]]"><i class="fa fa-youtube-play"></i></a></li>
 						`]]
 						[[%lf_footer_follow_flickr:notempty=`
-							<li><a href="[[%lf_footer_follow_flickr:htmlent]]"><span class="soc-icon-th"></span></a></li>
+							<li><a href="[[%lf_footer_follow_flickr:htmlent]]"><i class="fa fa-flickr"></i></a></li>
 						`]]
 					</ul>
 				</div>

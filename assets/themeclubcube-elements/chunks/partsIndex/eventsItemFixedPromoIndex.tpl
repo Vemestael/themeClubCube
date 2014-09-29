@@ -5,8 +5,8 @@
 	<div class="pattern"></div>
 	<div class="rowss">
 		<div class="col-lg-10 col-lg-offset-1 col-md-5 col-md-offset-1 text-left slide-title">
-			<div class="slider-heading col-sm-8 col-lg-6">[[+pagetitle:htmlent]]</div>
-			<div class="event-about col-sm-4 col-lg-6">
+			<div class="slider-heading col-sm-7 col-lg-6">[[+pagetitle:htmlent]]</div>
+			<div class="event-about col-sm-5 col-lg-6">
                 <time class="date vid-date" datetime="[[+timeStart]]">
 					<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
 					<div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
@@ -26,7 +26,7 @@
 			</div>
 			<p class="col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 slider-texts">[[+introtext:htmlent]]</p>
 			<hr class="col-sm-12 col-md-12">
-			<ul class="slide-list col-sm-6 col-md-6 col-lg-6">
+			<ul class="slide-list col-sm-12 col-md-6 col-lg-6">
 				[[getImageList?
 					&tpl=`@CODE:<li>[[+name:htmlent]] </li>`
 					&tvname=`lineUp`
@@ -35,12 +35,12 @@
 				]]
 			</ul>
 			<hr>
-			<div class="get-in col-lg-offset-7">
+			<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="get-in col-lg-offset-7">
 				<span class="price">
 					<span class="trs">[[%lf_events_price:htmlent]]</span>&nbsp;[[+price:htmlent]]
 				</span>
-				<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="get-into">[[%lf_events_get_in:htmlent]]</a>
-			</div>
+				<span class="get-into">[[%lf_events_get_in:htmlent]]</span>
+			</a>
 			<div class="socials col-sm-12 col-md-12 col-md-offset-0 col-lg-3">
 				<div class="share">[[%lf_share]]</div>
                 <div class="fb-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>

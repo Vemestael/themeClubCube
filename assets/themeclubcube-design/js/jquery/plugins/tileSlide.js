@@ -8,6 +8,7 @@
 		this.tiles = 4;
 		this.timing = null;
 		this.current = 1;
+		this.isClicked = false;
 		this.panels = [].slice.call(document.querySelectorAll('.s-panel'));
 		this.slides = [].slice.call(document.querySelectorAll('.container-fluidss'));
 		this.panelsCount = this.panels.length;
@@ -40,7 +41,8 @@
 			};
 		};
 		var $dots = $('.tileslide-dots li button');
-		$dots.on('click', function() {
+		$dots.on('click touchend', function() {
+			self.isClicked = true;
 			dotClick(this);
 		});
 	};
@@ -74,9 +76,9 @@
 			for (var i = 0; i < self.tiles; i++) {
 				imgInsertion += '<div class="bg-tile"><div class="bg-img"><img src="' + img.src + '" /></div></div>';
 			}
-            if($(panel).children('img').length > 0) {
-			    panel.removeChild(img);
-            }
+			if ($(panel).children('img').length > 0) {
+				panel.removeChild(img);
+			}
 			panel.innerHTML = imgInsertion + panel.innerHTML;
 		});
 
@@ -166,6 +168,14 @@
 				self.resetTransforms(currentPanel);
 
 				self.isAnimating = false;
+
+
+				if ((self.isAnimating === false) && (self.isClicked === true)) {
+					clearInterval(self.timing);
+					console.log('Interval cleared');
+					self.isClicked = false;
+					self.runSlider();
+				};
 			};
 		if (true) {
 			currentPanel.addEventListener('webkitTransitionEnd', onTransitionEnd);
@@ -186,16 +196,15 @@
 	TileSlide.prototype.runSlider = function() {
 		var self = this;
 		self.timing = setInterval(function() {
-			if (self.pause === false) {
+			if ((self.pause === false) && (self.isClicked === false)) {
 				self.navigation('next');
+				console.timeEnd('Slider test');
+				console.time('Slider test');
 			};
 		}, self.options.interval);
-		// console.log(self.options.interval);
+		console.log('Slider is running');
 	};
 
-	// TileSlide.prototype.buildDots = functions() {
-
-	// };
 
 	//Apply transforms
 	TileSlide.prototype.applyTransforms = function(panel) {
@@ -221,15 +230,19 @@
 		var nextButt = document.querySelector('.slick-next');
 		prevButt.addEventListener('click', function() {
 			self.navigation('prev');
+			self.isClicked = true;
 		});
 		prevButt.addEventListener('touchstart', function() {
 			self.navigation('prev');
+			self.isClicked = true;
 		});
 		nextButt.addEventListener('click', function() {
 			self.navigation('next');
+			self.isClicked = true;
 		});
 		nextButt.addEventListener('touchstart', function() {
 			self.navigation('next');
+			self.isClicked = true;
 		});
 
 		$(document).ready(function() {

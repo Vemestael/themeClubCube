@@ -41,7 +41,7 @@ appMakeBeCool.gateway.addClass('TicketsEventsSlider', function(properties, $, $w
                 _globals.slider.slick({
                     slidesToShow: 1,
                     arrows: false,
-                    dots: true,
+                    dots: false,
                     easing: 'easeInExpo',
                     autoplay: false,
                     autoplaySpeed: 4200,

@@ -1,19 +1,40 @@
 /*
 
-Normal:#a82743; (Red)
-Hover:#e15e32; (Orange)
-Active:#d35a33; (Orange pressed)
+Normal:#3c9a8e; (Red)
+Hover:#3da698; (Orange)
+Active:#bc4153; (Orange pressed)
+Normal border:;
+Hover border: #d3e8e6;
 
-Light red border: #e9cfd5;
-Light brown:#5c323e; 
-Light brown top border:#6c4651;
-Dark brown:#251419; 
+Light brown:#b33e4d; 
+Light brown top border:#ba515f;
+Dark brown:#48191f; 
 
-Linear-gradient footer: #a82743 - #5c323e
+Linear-gradient footer: #3c9a8e - #b33e4d
 Popup event linear gradient: #bd3b3d - #8f2c41
-Gallery linear gradient: #5c323e - #a82743
+Gallery linear gradient: #b33e4d - #3c9a8e
 
+==============================================
 
+==============================================
+Normal: #3c9a8e; (Mint)
+Hover: #3da698; (Light Mint)
+Active: #bc4153; (Raspberry)
+Normal border: #d3e6e4;
+Hover border: #d3e8e6;
+
+Light brown: #b33e4d;
+Light brown top border: #ba515f;
+Dark brown: #48191f;
+
+Linear-gradient footer: #3c9a8e - #c74355 (в Футере)
+Popup event linear gradient: #3da698 - #3c9a8e (в попапе ТопИвента)
+Gallery linear gradient: #b33e4d - #c74355 (на Галлерее главной страницы)
+
+.fr-bl {background:#3da698;} первый квардрат
+.sc-bl {background:#5b8b85;} второй квардрат
+.thr-bl {background:#b33e4d;} третий квардрат
+.fth-bl {background:#955960;} четвертый квардрат
 
 
 
@@ -24,132 +45,139 @@ Gallery linear gradient: #5c323e - #a82743
 /* ========================================================================
  * Loader
  * ======================================================================== */
-.loader-container.active .fr-bl {background:#d1dd6f;}
-.loader-container.active .sc-bl {background:#e98666;}
-.loader-container.active .thr-bl {background:#bf5e72;}
-.loader-container.active .fth-bl {background:#85666e;}
+.loader-container.active .fr-bl {background:#3da698;}
+.loader-container.active .sc-bl {background:#5b8b85;}
+.loader-container.active .thr-bl {background:#b33e4d;}
+.loader-container.active .fth-bl {background:#955960;}
 
 
 /* ========================================================================
  * Header
  * ======================================================================== */
-.header-top {background: #a82743;}/*Red*/
-
+.header-top {background: #3c9a8e;}/*Red*/
+.header-top .nav>li, .header-top .nav>li:first-child {background: #3c9a8e;}
 
 /* ========================================================================
  * Footer
  * ======================================================================== */
 .contact-us {
-background: #812d40; /* Old browsers */
-background: -moz-linear-gradient(183deg, #a82743 0%, #5c323e 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, 183deg, color-stop(0%,#a82743), color-stop(100%,#5c323e)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* IE10+ */
-background: linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', endColorstr='#5c323e',GradientType=0 ); /* IE6-9 */}
-}/*Red liear gradient*/
-.welcome {background: #e15e32;}/*Orange*/
-.welcome-inner .corner-welcome {border-left: 30px solid #e15e32;}/*Orange*/
-#subscribe-btn {background: #a82743;}/*Red*/
-footer a {color:#e15e32;}/*Orange*/
+background: #3c9a8e; /* Old browsers */
+background: -moz-linear-gradient(183deg, #3c9a8e 0%, #c74355 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, 183deg, color-stop(0%,#3c9a8e), color-stop(100%,#c74355)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(183deg, #3c9a8e 0%,#c74355 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(183deg, #3c9a8e 0%,#c74355 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(183deg, #3c9a8e 0%,#c74355 100%); /* IE10+ */
+background: linear-gradient(183deg, #3c9a8e 0%,#c74355 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9a8e', endColorstr='#c74355',GradientType=0 ); /* IE6-9 */}/*Red liear gradient*/
+
+footer .welcome-inner .corner-welcome {border-left: 30px solid #3c9a8e;}/*Orange*/
+footer .welcome {background: #3c9a8e!important;color:#000;}/*Orange*/
+footer .subscribe-here .subscribe button {background: #3c9a8e;}/*Red*/
+footer a {color:#3da698;}/*Orange*/
 
 
 /* ========================================================================
  * Buttons
  * ======================================================================== */
-blockquote {border-left: 5px solid #a82743;}/*Red*/
-blockquote a {color:#e15e32;}/*Orange*/
+blockquote {border-left: 5px solid #3c9a8e;}/*Red*/
+blockquote a {color:#3da698;}/*Orange*/
 
-.read-more {background:#a82743;}/*Red*/
-.read-more.hover, .read-more:hover {background:#e15e32;}/*Orange*/
-.read-more.pressed {background: #d35a33;}/*Orange pressed*/
+.read-more {background:#3c9a8e;}/*Red*/
+.read-more.hover, .read-more:hover {background:#3da698;}/*Orange*/
+.read-more.pressed {background: #bc4153;}/*Orange pressed*/
 
-.left-pag .pad-arr, .right-pag .pad-arr {background:#e15e32;@include transitions(.3s);}/*Orange*/
+.left-pag .pad-arr, .right-pag .pad-arr {background:#3da698;@include transitions(.3s);}/*Orange*/
 .left-pag.pressed .pad-arr, .right-pag.pressed .pad-arr, .left-pag:hover .pad-arr, .right-pag:hover .pad-arr {background:#;}/*Orange Hover*/
-.left-pag.pressed .pad-title, .right-pag.pressed .pad-title, .left-pag:hover .pad-title, .right-pag:hover .pad-title {color:#d35a33;}/*Orange Pressed*/
+.left-pag.pressed .pad-title, .right-pag.pressed .pad-title, .left-pag:hover .pad-title, .right-pag:hover .pad-title {color:#bc4153;}/*Orange Pressed*/
 
-.button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#a82743;border:2px solid #a82743;}/*Red*/
-.button-slider.hover {border:2px solid #d35a33;}/*Orange pressed*/
+.button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#3c9a8e;border:2px solid #3c9a8e;}/*Red*/
+.button-slider.hover {border:2px solid #bc4153;}/*Orange pressed*/
 
-.button-arrow-left:before, .default-gallery-slider .slick-prev:before, .partners-slider .slick-prev:before, .top-events-sliders .slick-prev:before {border-left: 1px solid #a82743; border-bottom: 1px solid #a82743;}/*Red*/
-.button-arrow-left.hover:before, .button-arrow-left:hover:before, .button-arrow-right:before, .default-gallery-slider .slick-next.hover:hover, .default-gallery-slider .slick-next:hover:before, .default-gallery-slider .slick-prev.hover:before, .default-gallery-slider .slick-prev:hover:before, .partners-slider .slick-next.hover:before, .partners-slider .slick-next.hover:hover:before, .partners-slider .slick-next:before:hover, .partners-slider .slick-next:hover:before, .partners-slider .slick-prev:hover:before {border-left: 1px solid #e15e32; border-bottom: 1px solid #e15e32;}/*Orange*/
-.button-arrow-left:before, .default-gallery-slider .slick-prev:before, .partners-slider .slick-prev:before, .top-events-sliders .slick-prev:before {border-left: 1px solid #;border-bottom: 1px solid #;}/*Orange Hover*/
+.button-arrow-left:before, .default-gallery-slider .slick-prev:before, .partners-slider .slick-prev:before, .top-events-sliders .slick-prev:before {border-left: 1px solid #3c9a8e; border-bottom: 1px solid #3c9a8e;}/*Red*/
+.button-arrow-left.hover:before, .button-arrow-left:hover:before, .button-arrow-right:before, .default-gallery-slider .slick-next.hover:hover, .default-gallery-slider .slick-next:hover:before, .default-gallery-slider .slick-prev.hover:before, .default-gallery-slider .slick-prev:hover:before, .partners-slider .slick-next.hover:before, .partners-slider .slick-next.hover:hover:before, .partners-slider .slick-next:before:hover, .partners-slider .slick-next:hover:before, .partners-slider .slick-prev:hover:before {border-left: 1px solid #3da698; border-bottom: 1px solid #3da698;}/*Orange*/
+.button-arrow-left:before, .default-gallery-slider .slick-prev:before, .partners-slider .slick-prev:before, .top-events-sliders .slick-prev:before {border-left: 1px solid #3c9a8e;border-bottom: 1px solid #3c9a8e;}/*Orange Hover*/
+.button-arrow-right:before, .default-gallery-slider .slick-next:before, .partners-slider .slick-next:before, .top-events-sliders .slick-next:before {border-left: 1px solid #3c9a8e;border-bottom: 1px solid #3c9a8e;}/*Orange Hover*/
 
-.button-filter.checked .button-filter-text, .button-filter.unchecked .button-filter-text {color: #a82743;}/*Red*/
-.button-filter.checked .button-filter-line.left, .button-filter.checked .button-filter-line.right, .button-filter.unchecked .button-filter-line.left, .button-filter.unchecked .button-filter-line.right {background: #a82743;}/*Red*/
+.button-filter.checked .button-filter-text, .button-filter.unchecked .button-filter-text {color: #3c9a8e;}/*Red*/
+.button-filter.checked .button-filter-line.left, .button-filter.checked .button-filter-line.right, .button-filter.unchecked .button-filter-line.left, .button-filter.unchecked .button-filter-line.right {background: #3c9a8e;}/*Red*/
+.button-filter.unchecked.hover, .button-filter.unchecked:hover {background: #3c9a8e;border: 1px solid #3c9a8e;}
 
-.button-more {border: 1px solid #e9cfd5;}/*Light red border*/
-.button-more .button-filter-text {color:#a82743;}/*Red*/
-.button-more .button-filter-line.left, .button-more .button-filter-line.right {background: #a82743;}/*Red*/
-.button-more.hover, .button-more:hover {background: #e15e32;border: 1px solid #e15e32;}/*Orange*/
-.button-more.pressed {background: #d35a33;border: 1px solid #d35a33;}/*Orange pressed*/
+.button-more {border: 1px solid #d3e8e6;}/*Light red border*/
+.button-more .button-filter-text {color:#3c9a8e;}/*Red*/
+.button-more .button-filter-line.left, .button-more .button-filter-line.right {background: #3c9a8e;}/*Red*/
+.button-more.hover, .button-more:hover {background: #3da698;border: 1px solid #3da698;}/*Orange*/
+.button-more.pressed {background: #bc4153;border: 1px solid #bc4153;}/*Orange pressed*/
 
-.button-dropdown .button-dropdown-text {border: 1px solid #e9cfd5;border-right: none;}/*Light red border*/
-.button-dropdown .button-dropdown-text .dropdown-text-title {color:#a82743;}/*Red*/
-.button-dropdown .button-dropdown-arr {background: #a82743;}/*Red*/
-.button-dropdown.hover .button-dropdown-text, .button-dropdown:hover .button-dropdown-text {border: 1px solid #e9cfd5;}/*Light red border*/
-.button-dropdown.hover .dropdown-text-title, .button-dropdown:hover .dropdown-text-title {color:#e15e32;}/*Orange Hover*/
-.button-dropdown.hover .button-dropdown-arr, .button-dropdown:hover .button-dropdown-arr {background: #e15e32;}/*Orange Hover*/
-.button-dropdown.pressed .button-dropdown-text {border: 1px solid #d35a33;}/*Orange pressed*/
-.button-dropdown.pressed .dropdown-text-title {color: #d35a33;}/*Orange pressed*/
-.button-dropdown.pressed .button-dropdown-arr {background: #d35a33;}/*Orange pressed*/
+.button-dropdown .button-dropdown-text {border: 1px solid #d3e8e6;border-right: none;}/*Light red border*/
+.button-dropdown .button-dropdown-text .dropdown-text-title {color:#3c9a8e;}/*Red*/
+.button-dropdown .button-dropdown-arr {background: #3c9a8e;}/*Red*/
+.button-dropdown.hover .button-dropdown-text, .button-dropdown:hover .button-dropdown-text {border: 1px solid #d3e8e6;}/*Light red border*/
+.button-dropdown.hover .dropdown-text-title, .button-dropdown:hover .dropdown-text-title {color:#3da698;}/*Orange Hover*/
+.button-dropdown.hover .button-dropdown-arr, .button-dropdown:hover .button-dropdown-arr {background: #3da698;}/*Orange Hover*/
+.button-dropdown.pressed .button-dropdown-text {border: 1px solid #bc4153;}/*Orange pressed*/
+.button-dropdown.pressed .dropdown-text-title {color: #bc4153;}/*Orange pressed*/
+.button-dropdown.pressed .button-dropdown-arr {background: #bc4153;}/*Orange pressed*/
 
-.dropdown-list .button-dropdown-text .dropdown-text-title {color: #a82743;}/*Red*/
-.dropdown-list .button-dropdown-text.hover .dropdown-text-title, .dropdown-list .button-dropdown-text:hover .dropdown-text-title {color: #e15e32;}/*Orange Hover*/
-.dropdown-list .button-dropdown-text.pressed .dropdown-text-title {color: #d35a33;}/*Orange pressed*/
+.dropdown-list .button-dropdown-text .dropdown-text-title {color: #3c9a8e;}/*Red*/
+.dropdown-list .button-dropdown-text.hover .dropdown-text-title, .dropdown-list .button-dropdown-text:hover .dropdown-text-title {color: #3da698;}/*Orange Hover*/
+.dropdown-list .button-dropdown-text.pressed .dropdown-text-title {color: #bc4153;}/*Orange pressed*/
 
-.tab-custom .dropdown-text-title {color: #a82743;}/*Red*/
-.tab-custom.hover .dropdown-text-title, .tab-custom:hover .dropdown-text-title {color: #e15e32;}/*Orange Hover*/
-.tab-custom.hover .tab-custom-line, .tab-custom:hover .tab-custom-line {background: #e15e32;}/*Orange Hover*/
-.tab-custom.pressed .dropdown-text-title {color: #d35a33;}/*Orange pressed*/
-.tab-custom.pressed .tab-custom-line {background: #d35a33;}/*Orange pressed*/
+.tab-custom .dropdown-text-title {color: #3c9a8e;}/*Red*/
+.tab-custom.hover .dropdown-text-title, .tab-custom:hover .dropdown-text-title {color: #3da698;}/*Orange Hover*/
+.tab-custom.hover .tab-custom-line, .tab-custom:hover .tab-custom-line {background: #3da698;}/*Orange Hover*/
+.tab-custom.pressed .dropdown-text-title {color: #bc4153;}/*Orange pressed*/
+.tab-custom.pressed .tab-custom-line {background: #bc4153;}/*Orange pressed*/
 
 
-input.form-control:focus, textarea:focus {border: 2px solid #a82743!important;}/*Red*/
-.select-dropdown.pressed select.form-control, .select-dropdown.pressed select.form-control:focus, .select-dropdown.pressed:hover select.form-control, .select-dropdown:hover select.form-control {border: 2px solid #a82743!important;}/*Red*/
-.select-dropdown.pressed:after, .select-dropdown:hover:after {background: #a82743;}/*Red*/
+input.form-control:focus, textarea:focus {border: 2px solid #3c9a8e!important;}/*Red*/
+.select-dropdown.pressed select.form-control, .select-dropdown.pressed select.form-control:focus, .select-dropdown.pressed:hover select.form-control, .select-dropdown:hover select.form-control {border: 2px solid #3c9a8e!important;}/*Red*/
+.select-dropdown.pressed:after, .select-dropdown:hover:after {background: #3c9a8e;}/*Red*/
 
-.has-error .form-control {border-color: #e15e32;}/*Orange*/
-.btn-default {background-color: #a82743;}/*Red*/
-.btn-default:hover {background-color: #e15e32;}/*Orange*/
-.btn:active {background-color: #d35a33;}/*Orange pressed*/
+.has-error .form-control {border-color: #3da698;}/*Orange*/
+.btn-default {background-color: #3c9a8e;}/*Red*/
+.btn-default:hover {background-color: #3da698;}/*Orange*/
+.btn:active {background-color: #bc4153;}/*Orange pressed*/
 
 /* ========================================================================
  * Main
  * ======================================================================== */
-.date-event {background: #a82743;}/*Orange*/
+.date-event {background: #3c9a8e;}/*Orange*/
 .popup-evt {
-background: #bd3b3d; /* Old browsers */
-background: -moz-linear-gradient(-135deg, #bd3b3d 0%, #8f2c41 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#bd3b3d), color-stop(100%,#8f2c41)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-135deg, #bd3b3d 0%,#8f2c41 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-135deg, #bd3b3d 0%,#8f2c41 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-135deg, #bd3b3d 0%,#8f2c41 100%); /* IE10+ */
-background: linear-gradient(135deg, #bd3b3d 0%,#8f2c41 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd3b3d', endColorstr='#8f2c41',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: #3da698; /* Old browsers */
+background: -moz-linear-gradient(-135deg, #3da698 0%, #3c9a8e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3da698), color-stop(100%,#3c9a8e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-135deg, #3da698 0%,#3c9a8e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-135deg, #3da698 0%,#3c9a8e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-135deg, #3da698 0%,#3c9a8e 100%); /* IE10+ */
+background: linear-gradient(135deg, #3da698 0%,#3c9a8e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da698', endColorstr='#3c9a8e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }/*Red*/
 .gallery {
-background: #5c323e; /* Old browsers */
-background: -moz-linear-gradient(-97deg, #5c323e 0%, #a82743 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5c323e), color-stop(100%,#a82743)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-97deg, #5c323e 0%,#a82743 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-97deg, #5c323e 0%,#a82743 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-97deg, #5c323e 0%,#a82743 100%); /* IE10+ */
-background: linear-gradient(135deg, #5c323e 0%,#a82743 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', endColorstr='#a82743',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: #b33e4d; /* Old browsers */
+background: -moz-linear-gradient(-97deg, #b33e4d 0%, #c74355 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#b33e4d), color-stop(100%,#c74355)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-97deg, #b33e4d 0%,#c74355 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-97deg, #b33e4d 0%,#c74355 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-97deg, #b33e4d 0%,#c74355 100%); /* IE10+ */
+background: linear-gradient(135deg, #b33e4d 0%,#c74355 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b33e4d', endColorstr='#c74355',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }/*Red*/
 .blog-item-def {background: #eaeaea;}
 .blog-item-def:hover {background: #f7e9e5;}
 
+/* ========================================================================
+ * Blogs
+ * ======================================================================== */
+.blog-item-categ:hover {color: #3c9a8e;}
+
 
 /* ========================================================================
  * Event list
  * ======================================================================== */
-.ticket-event-date {background: #e15e32;}/*Orange*/
-.ticket-event-price {background: #a82743;}/*Red*/
-.ticket-event-lineup .ticket-line-up {color:#a82743;}/*Red*/
+.ticket-event-date {background: #3da698;}/*Orange*/
+.ticket-event-price {background: #3c9a8e;}/*Red*/
+.ticket-event-lineup .ticket-line-up {color:#3c9a8e;}/*Red*/
 
 
 /* ========================================================================
@@ -160,18 +188,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 /* ========================================================================
  * Events view
  * ======================================================================== */
- .top-line-up {background: #251419;}/*Dark brown*/
- .bottom-line-up {background: #5c323e;border-top: 1px solid #6c4651;}/*Light brown*/
- .socials.brown-sc {color:#251419;}/*Dark brown*/
- .ttl {color:#e15e32;}/*Orange*/
- .page-text ul li:before {background: #a82743;}/*Red*/
- .page-text ol li:before {background: #a82743;}/*Red*/
- .page-text .footnote {color:#e15e32;}/*Orange*/
+ .top-line-up {background: #48191f;}/*Dark brown*/
+ .bottom-line-up {background: #b33e4d;border-top: 1px solid #ba515f;}/*Light brown*/
+ .socials.brown-sc {color:#48191f;}/*Dark brown*/
+ .ttl {color:#3da698;}/*Orange*/
+ .page-text ul li:before {background: #3c9a8e;}/*Red*/
+ .page-text ol li:before {background: #3c9a8e;}/*Red*/
+ .page-text .footnote {color:#3da698;}/*Orange*/
 
 
 /* ========================================================================
  * Content view
  * ======================================================================== */
- .blog-item-categ {color:#e15e32;}/*Orange*/
- .content-header.white-no-img .event-about.view-evt .date {background:#e15e32;}/*Orange*/
- .content-header.white-no-img .event-about.view-evt .slider-heading.event-h1 {color:#e15e32;}/*Orange*/
+ .blog-item-categ {color:#3da698;}/*Orange*/
+ .content-header.white-no-img .event-about.view-evt .date {background:#3da698;}/*Orange*/
+ .content-header.white-no-img .event-about.view-evt .slider-heading.event-h1 {color:#3da698;}/*Orange*/

@@ -57,7 +57,7 @@ appMakeBeCool.gateway.addClass('TopEventsSlider', function(properties, $, $windo
                                 slidesToScroll: 3,
                                 infinite: false,
                                 arrows: false,
-                                dots: true
+                                dots: false
                             }
                         }, {
                             breakpoint: 900,
@@ -66,7 +66,7 @@ appMakeBeCool.gateway.addClass('TopEventsSlider', function(properties, $, $windo
                                 slidesToScroll: 2,
                                 infinite: false,
                                 arrows: false,
-                                dots: true
+                                dots: false
                             }
                         }, {
                             breakpoint: 480,
