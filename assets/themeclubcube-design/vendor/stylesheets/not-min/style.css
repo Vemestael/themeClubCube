@@ -12209,7 +12209,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 
 .social-icons li a i {
   line-height: 50px;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .soc-icon-fb, .soc-icon-g, .soc-icon-in, .soc-icon-tw, .soc-icon-skype, .soc-icon-pint, .soc-icon-yout, .soc-icon-th {
@@ -12804,7 +12804,8 @@ aside .event-dates {
 }
 
 .line-mg {
-  border-top: 1px solid #e77e5b;
+  border-top: 1px solid white;
+  opacity: .3;
   margin: 0 10px;
 }
 
@@ -16524,7 +16525,7 @@ blockquote a:hover {
   }
 
   .event-about.view-evt .date {
-    padding: 7px 16px;
+    padding: 0px 16px;
   }
 
   .empt .fb-soc, .empt .tw-soc {
@@ -18221,7 +18222,8 @@ blockquote a:hover {
   }
 
   .line-mg {
-    border-top: 1px solid #e77e5b;
+    border-top: 1px solid white;
+    opacity: .3;
     margin: 0 10px;
   }
 
@@ -18787,8 +18789,9 @@ blockquote a:hover {
     line-height: 44px;
   }
 
-  .view-evt .date {
-    padding: 12px 16px;
+  .event-about.view-evt .date {
+    width: 90px;
+    padding: 0 16px;
   }
 
   .view-evt .month, .view-evt .year {
@@ -21177,6 +21180,7 @@ input.submit:hover {
 
 .btn-default {
   background-color: #a82743;
+  color: white !important;
   border-bottom: none !important;
   color: white;
   -webkit-transition: all 0.3s ease;

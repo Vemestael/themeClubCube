@@ -6,14 +6,17 @@ Normal:							#a82743; (Red)
 Dark Normal: 					#912a41; ()
 Hover:							#e15e32; (Orange)
 Active:							#d35a33; (Orange pressed)
-Marengo:						#f7e9e5; 
-Normal border:;
+Marengo:						#f7e9e5;
+Footer welcome p:				#fc9; 
+Footer text color:				#ae828c;
+Normal border:					#e9cfd5;
 Hover border: 					#e9cfd5; 
 TilesBorder:					#e77e5b; (Light orange)
 
 Light brown:					#5c323e; 
 Light brown top border:			#6c4651;
 Dark brown:						#251419; 
+
 
 Linear-gradient footer: 		#a82743 - #5c323e
 Popup event linear gradient: 	#bd3b3d - #8f2c41
@@ -25,10 +28,10 @@ Gallery linear gradient: 		#5c323e - #a82743
 /* ========================================================================
  * Loader
  * ======================================================================== */
-.loader-container.active .fr-bl {background:#d1dd6f;}
-.loader-container.active .sc-bl {background:#e98666;}
-.loader-container.active .thr-bl {background:#bf5e72;}
-.loader-container.active .fth-bl {background:#85666e;}
+.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl {background:#d1dd6f;}
+.loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl {background:#e98666;}
+.loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl {background:#bf5e72;}
+.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl {background:#85666e;}
 
 /* ========================================================================
  * Header
@@ -40,18 +43,21 @@ Gallery linear gradient: 		#5c323e - #a82743
 /* ========================================================================
  * Footer
  * ======================================================================== */
-.contact-us {
-background: #812d40; /* Old browsers */
-background: -moz-linear-gradient(183deg, #a82743 0%, #5c323e 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, 183deg, color-stop(0%,#a82743), color-stop(100%,#5c323e)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* IE10+ */
-background: linear-gradient(183deg, #a82743 0%,#5c323e 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', endColorstr='#5c323e',GradientType=0 ); /* IE6-9 */}
+.contact-us {background: #5c323e; /* Old browsers */
+background: -moz-linear-gradient(-7deg, #5c323e 0%, #812d40 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#5c323e), color-stop(100%,#812d40)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-7deg, #5c323e 0%,#812d40 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-7deg, #5c323e 0%,#812d40 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-7deg, #5c323e 0%,#812d40 100%); /* IE10+ */
+background: linear-gradient(-7deg, #5c323e 0%,#812d40 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', endColorstr='#812d40',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }/*Red liear gradient*/
 .welcome {background: #e15e32;}/*Orange*/
+.welcome p {color: #fc9;}
 .welcome-inner .corner-welcome {border-left: 30px solid #e15e32;}/*Orange*/
+.address-list>li ul li {color: #ae828c;}
+.address-list>li>a {color:#e15e32;}
+.contact-us p {color: #ae828c;}
 #subscribe-btn {background: #a82743;}/*Red*/
 footer a {color:#e15e32;}/*Orange*/
 footer a:hover {color: #e15e32;}/*Orange*/
@@ -65,12 +71,24 @@ blockquote {border-left: 5px solid #a82743;}/*Red*/
 blockquote a {color:#e15e32;}/*Orange*/
 
 .read-more {background:#a82743;}/*Red*/
+.read-more:active {background:#d35a33;}/*Orange pressed*/
 .read-more.hover, .read-more:hover {background:#e15e32;}/*Orange*/
 .read-more.pressed {background: #d35a33;}/*Orange pressed*/
 
 .left-pag .pad-arr, .right-pag .pad-arr {background:#e15e32;@include transitions(.3s);}/*Orange*/
 .left-pag.pressed .pad-arr, .right-pag.pressed .pad-arr, .left-pag:hover .pad-arr, .right-pag:hover .pad-arr {background:#;}/*Orange Hover*/
 .left-pag.pressed .pad-title, .right-pag.pressed .pad-title, .left-pag:hover .pad-title, .right-pag:hover .pad-title {color:#d35a33;}/*Orange Pressed*/
+
+.left-pag .pad-title, .right-pag .pad-title {color: #e15e32;}
+.left-pag .pad-dates, .right-pag .pad-dates {color: #a82743;}
+
+@media screen and (min-width: 480px) {
+.left-pag .pad-text, .right-pag .pad-text {border: 1px solid #e9cfd5;}
+.left-pag:hover .pad-text, .left-pag.hover .pad-text {border:1px solid #e9cfd5;}
+.right-pag:hover .pad-text, .right-pag.hover .pad-text {border:1px solid #e9cfd5;}
+.left-pag.hover .pad-arr, .left-pag:hover .pad-arr, .right-pag.hover .pad-arr, .right-pag:hover .pad-arr {background: #e15e32;}
+}
+
 
 .button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#a82743;border:2px solid #a82743;}/*Red*/
 .button-slider.hover {border:2px solid #d35a33;}/*Orange pressed*/
@@ -82,8 +100,7 @@ blockquote a {color:#e15e32;}/*Orange*/
 
 .button-filter.checked .button-filter-text, .button-filter.unchecked .button-filter-text {color: #a82743;}/*Red*/
 .button-filter.checked .button-filter-line.left, .button-filter.checked .button-filter-line.right, .button-filter.unchecked .button-filter-line.left, .button-filter.unchecked .button-filter-line.right {background: #a82743;}/*Red*/
-.button-filter.unchecked.hover, .button-filter.unchecked:hover {background: #a82743;border: 1px solid #a82743;}
-
+.button-filter.unchecked.hover, .button-filter.unchecked:hover, .button-filter.unchecked.pressed {background: #a82743;border: 1px solid #a82743;}
 
 .button-more {border: 1px solid #e9cfd5;}/*Light red border*/
 .button-more .button-filter-text {color:#a82743;}/*Red*/
@@ -108,7 +125,6 @@ blockquote a {color:#e15e32;}/*Orange*/
 .button-dropdown .tab-custom.pressed .dropdown-text-title, .button-dropdown .tab-custom:hover .dropdown-text-title, .button-dropdown.pressed .tab-custom.pressed .dropdown-text-title, .button-dropdown.pressed .tab-custom:hover .dropdown-text-title {color: #e15e32;}/*Orange*/
 .tab-custom.hover .tab-custom-line, .tab-custom:hover .tab-custom-line {background: #e15e32;}/*Orange*/
 
-
 .tab-custom .dropdown-text-title {color: #a82743;}/*Red*/
 .tab-custom.hover .dropdown-text-title, .tab-custom:hover .dropdown-text-title {color: #e15e32;}/*Orange Hover*/
 .tab-custom.hover .tab-custom-line, .tab-custom:hover .tab-custom-line {background: #e15e32;}/*Orange Hover*/
@@ -127,6 +143,14 @@ input.form-control:focus, textarea:focus {border: 2px solid #a82743!important;}/
 .tooltip-inner {background-color: #e15e32;}
 .tooltip.top .tooltip-arrow {border-top-color: #e15e32;}
 
+textarea.pressed, .form-control.pressed {border: 2px solid #a82743;}
+label.error {color:#e15e32;}
+
+.subscribe-label-inner {background-color: #e15e32;}
+.subscribe-label-arrow {border-top-color:#e15e32;}
+
+.middle-paging li a, .middle-paging li span {color: #a82743;border: 1px solid #e9cfd5;}
+
 /* ========================================================================
  * Main
  * ======================================================================== */
@@ -141,17 +165,14 @@ background: -ms-linear-gradient(-135deg, #bd3b3d 0%,#8f2c41 100%); /* IE10+ */
 background: linear-gradient(135deg, #bd3b3d 0%,#8f2c41 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd3b3d', endColorstr='#8f2c41',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }/*Red*/
-.gallery {
-background: #5c323e; /* Old browsers */
-background: -moz-linear-gradient(-97deg, #5c323e 0%, #a82743 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5c323e), color-stop(100%,#a82743)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-97deg, #5c323e 0%,#a82743 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-97deg, #5c323e 0%,#a82743 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-97deg, #5c323e 0%,#a82743 100%); /* IE10+ */
-background: linear-gradient(135deg, #5c323e 0%,#a82743 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', endColorstr='#a82743',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}/*Red*/
+.gallery {background: #a82743; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #a82743 0%, #5c323e 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a82743), color-stop(100%,#5c323e)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #a82743 0%,#5c323e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #a82743 0%,#5c323e 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #a82743 0%,#5c323e 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, #a82743 0%,#5c323e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', endColorstr='#5c323e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}/*Red*/
 
 
 /* ========================================================================
@@ -173,7 +194,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
  * ======================================================================== */
 .ticket-event-lineup h2 a, .ticket-event-lineup h3 a {color: #5c323e;} /*Light brown*/
 .ticket-event:hover .ticket-event-price {background: #e15e32;}/*Orange*/
-.line-mg {border-top: 1px solid #e77e5b;}/*Light orange*/
 
 
 /* ========================================================================
@@ -184,8 +204,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
  .socials.brown-sc {color:#251419;}/*Dark brown*/
  .ttl {color:#e15e32;}/*Orange*/
  .page-text ul li:before {background: #a82743;}/*Red*/
- .page-text ol li:before {background: #a82743;}/*Red*/
+ .page-text ol li:before {color: #a82743;}/*Red*/
  .page-text .footnote {color:#e15e32;}/*Orange*/
+.line-up-arrow {border-left: 40px solid #5c323e;}
+.line-up-title {color: #d3a8af;}
+.bottom-line-up ul li .under-descr {color: #e15e32;}/*Orange*/
+.event-line-up a, .bottom-line-up ul li .under-descr {color:#e15e32;}
 
 
 /* ========================================================================
@@ -194,4 +218,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
  .blog-item-categ {color:#e15e32;}/*Orange*/
  .content-header.white-no-img .event-about.view-evt .date {background:#e15e32;}/*Orange*/
  .content-header.white-no-img .event-about.view-evt .slider-heading.event-h1 {color:#e15e32;}/*Orange*/
-
+.page-text a {color: #e15e32;}

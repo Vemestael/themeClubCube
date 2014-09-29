@@ -1,0 +1,28 @@
+Normal:					#a82743; (Red)
+Dark Normal: 				#912a41; ()
+Hover:					#e15e32; (Orange)
+
+
+Active:					#d35a33; (Orange pressed)
+Marengo:				#f7e9e5;
+
+
+Normal border:	#;
+Hover border: 				#e9cfd5; 
+
+
+Light brown:				#5c323e; 
+Light brown top border:			#6c4651;
+Dark brown:				#251419; 
+
+
+Href color: 				#e15e32; (Orange)
+Href hover color: 			#e15e32; (Orange)
+
+Footer welcome p:			#fc9; 
+Footer text color:			#ae828c;
+
+
+Linear-gradient footer: 		#a82743 - #5c323e
+Popup event linear gradient: 		#bd3b3d - #8f2c41
+Gallery linear gradient: 		#5c323e - #a82743
