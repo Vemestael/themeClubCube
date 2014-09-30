@@ -720,24 +720,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 .social-icons {display: block;list-style:none;padding-left:0;}
 .social-icons li {float: left;margin-right:$margin-sm/2;margin-bottom:$margin-sm/2;}
 .social-icons li a {display: block;width: 50px;height: 50px;background:$white-color;border-bottom: none;@include transitions(.3s);text-align: center;}
-.social-icons li a i {line-height: 50px;font-size: 27px;}
-.soc-icon-fb, .soc-icon-g, .soc-icon-in, .soc-icon-tw, .soc-icon-skype, .soc-icon-pint, .soc-icon-yout, .soc-icon-th {display: block;width: 50px;height: 50px;background-image: url(../images/sprites.png);background-repeat: no-repeat;cursor: pointer;}
-.soc-icon-fb {background-position: -11px -362px;@include transitions(.3s);}
-.soc-icon-g {background-position: -60px -359px;@include transitions(.3s);}
-.soc-icon-in {background-position: -113px -361px;@include transitions(.3s);}
-.soc-icon-tw {background-position: -169px -362px;@include transitions(.3s);}
-.soc-icon-skype {background-position: -222px -362px;@include transitions(.3s);}
-.soc-icon-pint {background-position: -272px -362px;@include transitions(.3s);}
-.soc-icon-yout {background-position: -326px -363px;@include transitions(.3s);}
-.soc-icon-th {background-position: -383px -364px;@include transitions(.3s);}
-.soc-icon-fb:hover {background-position: -11px -406px;@include transitions(.3s);}
-.soc-icon-g:hover {background-position: -60px -402px;@include transitions(.3s);}
-.soc-icon-in:hover {background-position: -113px -407px;@include transitions(.3s);}
-.soc-icon-tw:hover {background-position: -169px -405px;@include transitions(.3s);}
-.soc-icon-skype:hover {background-position: -222px -406px;@include transitions(.3s);}
-.soc-icon-pint:hover {background-position: -272px -407px;@include transitions(.3s);}
-.soc-icon-yout:hover {background-position: -326px -407px;@include transitions(.3s);}
-.soc-icon-th:hover {background-position: -383px -408px;@include transitions(.3s);}
+.social-icons li a i {line-height: 51px;font-size: 27px;}
+// .soc-icon-fb, .soc-icon-g, .soc-icon-in, .soc-icon-tw, .soc-icon-skype, .soc-icon-pint, .soc-icon-yout, .soc-icon-th {display: block;width: 50px;height: 50px;background-image: url(../images/sprites.png);background-repeat: no-repeat;cursor: pointer;}
+// .soc-icon-fb {background-position: -11px -362px;@include transitions(.3s);}
+// .soc-icon-g {background-position: -60px -359px;@include transitions(.3s);}
+// .soc-icon-in {background-position: -113px -361px;@include transitions(.3s);}
+// .soc-icon-tw {background-position: -169px -362px;@include transitions(.3s);}
+// .soc-icon-skype {background-position: -222px -362px;@include transitions(.3s);}
+// .soc-icon-pint {background-position: -272px -362px;@include transitions(.3s);}
+// .soc-icon-yout {background-position: -326px -363px;@include transitions(.3s);}
+// .soc-icon-th {background-position: -383px -364px;@include transitions(.3s);}
+// .soc-icon-fb:hover {background-position: -11px -406px;@include transitions(.3s);}
+// .soc-icon-g:hover {background-position: -60px -402px;@include transitions(.3s);}
+// .soc-icon-in:hover {background-position: -113px -407px;@include transitions(.3s);}
+// .soc-icon-tw:hover {background-position: -169px -405px;@include transitions(.3s);}
+// .soc-icon-skype:hover {background-position: -222px -406px;@include transitions(.3s);}
+// .soc-icon-pint:hover {background-position: -272px -407px;@include transitions(.3s);}
+// .soc-icon-yout:hover {background-position: -326px -407px;@include transitions(.3s);}
+// .soc-icon-th:hover {background-position: -383px -408px;@include transitions(.3s);}
 .social-icons li a:hover {background:$orange-color;@include transitions(.3s);}
 .social-icons li a i {color:$reddy-color;@include transitions(.3s);}
 .social-icons li a:hover i {color:$white-color;@include transitions(.3s);}
