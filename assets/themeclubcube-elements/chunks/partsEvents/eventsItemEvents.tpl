@@ -52,7 +52,7 @@
 		<div class="rombs"></div>
 	</div>
 	<div class="ticket-event-price">
-		<div class="ticket-price uppercase"><span class="hidden-xs hidden-sm">[[%lf_events_price:htmlent]]<br></span><span class="ticket-doll uppercase">[[+price:htmlent]]</span></div>
+		<div class="ticket-price uppercase"><span class="hidden-xs hidden-sm hidden-md">[[%lf_events_price:htmlent]]<br></span><span class="ticket-doll uppercase">[[+price:htmlent]]</span></div>
 		<div class="ticket-arrow-right"></div>
 		<div class="ticket-triangle-top"></div>
 		<div class="ticket-triangle-bt"></div>

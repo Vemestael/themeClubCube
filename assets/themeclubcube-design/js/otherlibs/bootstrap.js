@@ -553,6 +553,11 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
       //Custom menu tile
         $('.tile').addClass('active')
+        if ($(window).width() < 1025) {
+          $('header').addClass('header-top muted-header');
+          $('.loader-container').css({'z-index':'20'}).fadeIn();
+          $('.loader-container .backstage').addClass('white');
+        };
 
     this.transitioning = 1
 
@@ -602,6 +607,16 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
         //Custom menu tile
         $('.tile').removeClass('active')
+        if ($(window).width() < 1025) {
+          $('header').removeClass('muted-header');
+          if (($(window).scrollTop() < $('#fullHeghtSlider').height()) || ($(window).scrollTop() < $('#slider').height()) || ($(window).scrollTop() < $('.slider-default').height())) {
+            $('header').removeClass('header-top muted-header');
+          } else {
+            $('header').removeClass('muted-header');
+          };
+          $('.loader-container').css({'z-index':'9999'}).fadeOut();
+          $('.loader-container .backstage').removeClass('white');
+        };
     }
 
     if (!$.support.transition) return complete.call(this)

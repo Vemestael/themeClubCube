@@ -4,7 +4,7 @@
 	</div>
 	<div class="pattern"></div>
 	<div class="rowss">
-		<div class="col-lg-10 col-lg-offset-1 col-md-5 col-md-offset-1 text-left slide-title">
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-left slide-title">
 			<div class="slider-heading col-sm-7 col-lg-6">[[+pagetitle:htmlent]]</div>
 			<div class="event-about col-sm-5 col-lg-6">
                 <time class="date vid-date" datetime="[[+timeStart]]">
@@ -24,7 +24,7 @@
 			<div class="half-line visible-lg col-lg-12">
 				<hr class="col-lg-4">
 			</div>
-			<p class="col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 slider-texts">[[+introtext:htmlent]]</p>
+			<p class="col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 slider-texts hidden-sm hidden-md">[[+introtext:htmlent]]</p>
 			<hr class="col-sm-12 col-md-12">
 			<ul class="slide-list col-sm-12 col-md-6 col-lg-6">
 				[[getImageList?

@@ -423,7 +423,8 @@ $(function() {
             var headerParentHeight = $headerParent.height();
 
             if ($sliderDefault.length) {
-                if ($(window).scrollTop() >= $sliderDefault.height()) {
+                // if ($(window).scrollTop() >= $sliderDefault.height()) {
+                if ($(window).scrollTop() > $header.height()) {
                     $header.addClass('header-top');
                 };
             } else if ($(window).scrollTop() >= headerParentHeight) {
@@ -431,7 +432,8 @@ $(function() {
             };
             $(document).scroll(function() {
                 if ($sliderDefault.length) {
-                    if ($(window).scrollTop() >= $sliderDefault.height()) {
+                    // if ($(window).scrollTop() >= $sliderDefault.height()) {
+                    if ($(window).scrollTop() > $header.height()) {
                         $header.addClass('header-top active');
                     } else {
                         $header.removeClass('header-top active');
@@ -745,7 +747,7 @@ $(function() {
 
         $('.default-slider-tickets').slick({
             slidesToShow: 1,
-            dots: true,
+            dots: false,
             easing: 'easeInExpo',
             autoplay: false,
             autoplaySpeed: 4200,

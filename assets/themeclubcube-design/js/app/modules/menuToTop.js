@@ -42,7 +42,8 @@ appMakeBeCool.gateway.addClass('MenuToTop', function(properties, $, $window, $do
     },
 
     _setup = function() {
-        _globals.headerSize = _globals.headerSlider.length != 0 ? _globals.headerSlider.height() : _globals.headerSlider.height();
+        // _globals.headerSize = _globals.headerSlider.length != 0 ? _globals.headerSlider.height() : _globals.headerSlider.height();
+        _globals.headerSize = _globals.header.height();
         if ($window.scrollTop() >= _globals.headerSize) {
             _globals.header.addClass(_properties.class);
         };

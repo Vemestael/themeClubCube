@@ -1,5 +1,5 @@
 [[+idx:mod=`4`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="clear-mard clearfix visible-lg"></div><div class="row">`]]`:esle=``]]
-<div class="col-lg-3 col-md-6 col-xs-12 col-sm-6 gall-item">
+<div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
 	<div class="img-gal">
 		<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-overfl">
             <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-responsive img-preload"

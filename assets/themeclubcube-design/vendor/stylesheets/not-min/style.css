@@ -8751,6 +8751,10 @@ input:focus {
   background: #f9f9f9;
 }
 
+.loader-container .backstage.white {
+  background: white;
+}
+
 .loader-container .loader {
   display: block;
   position: absolute;
@@ -9700,12 +9704,14 @@ header.header-top .home-btn {
   left: 0;
   padding-right: 0;
   margin-right: 0;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
 .header-top .navbar-toggle {
   margin-top: 10px;
+}
+
+.header-top.muted-header {
+  z-index: 22;
 }
 
 .navbar-nav {
@@ -9762,6 +9768,7 @@ header.header-top .home-btn {
 }
 
 .navbar-collapse {
+  max-height: auto !important;
   padding-left: 0;
   overflow-y: auto !important;
 }
@@ -10613,7 +10620,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   border-image: none;
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .gallery-default .row.head {
@@ -11143,7 +11150,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 }
 
 .top-events.sect {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .top-events h2 {
@@ -11186,7 +11193,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 }
 
 .default-slider-tickets {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .top-events-sliders .slick-dots li {
@@ -11257,6 +11264,10 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 
 .top-event.last {
   margin-bottom: 0;
+}
+
+.top-events.sect .more-button-bott {
+  padding-top: 30px;
 }
 
 .top-events .top-event {
@@ -11773,7 +11784,7 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 }
 
 .sect.blog {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .right-col {
@@ -11986,8 +11997,9 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 .welcome {
   position: absolute;
   z-index: 9;
-  min-height: 106px;
-  top: -40px;
+  height: auto;
+  top: auto;
+  bottom: 74%;
   right: -20px;
   left: -20px;
   background: #e15e32;
@@ -12604,7 +12616,7 @@ aside .event-dates {
 
 .line-up-arrow {
   position: absolute;
-  bottom: -45px;
+  bottom: -44px;
   left: 0;
   border-right: 40px solid transparent;
   border-bottom: 45px solid transparent;
@@ -12812,7 +12824,7 @@ aside .event-dates {
 .ticket-event-date {
   position: relative;
   height: 180px;
-  width: 18.601%;
+  width: 22.601%;
   float: left;
   padding: 0;
   background: #e15e32;
@@ -12842,7 +12854,7 @@ aside .event-dates {
 .ticket-event-lineup {
   position: relative;
   height: 180px;
-  width: 62.798%;
+  width: 53.798%;
   float: left;
   padding: 20px 23px;
   border-bottom: 1px solid #e3e3e3;
@@ -12852,11 +12864,13 @@ aside .event-dates {
 }
 
 .ticket-event-lineup h3, .ticket-event-lineup h2 {
+  max-height: 124px;
   font-family: "PT Sans bold", sans-serif;
   font-size: 20px;
   color: #5c323e;
   margin: 0;
   line-height: 24px;
+  overflow: hidden;
 }
 
 .ticket-event-lineup h3 a, .ticket-event-lineup h2 a {
@@ -12913,7 +12927,7 @@ aside .event-dates {
   display: table;
   position: relative;
   height: 180px;
-  width: 18.601%;
+  width: 22.601%;
   float: left;
   background: #a82743;
   color: white;
@@ -13563,6 +13577,7 @@ aside .event-dates {
 }
 
 .slider-default .event-about .date {
+  width: 75px;
   margin-top: 0;
   padding: 0px 10px;
   margin-right: 10px;
@@ -13688,7 +13703,7 @@ aside .event-dates {
   min-height: 100%;
   z-index: 12;
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   background: black;
 }
 
@@ -13955,6 +13970,7 @@ aside .event-dates {
 
 .content-header .content-h1, .content-header .top-event-place.blog-view-descr {
   color: white;
+  margin: 10px 0;
 }
 
 .content-h1 {
@@ -14239,6 +14255,18 @@ blockquote a:hover {
     height: 50px;
   }
 
+  .header-top .navbar-collapse, header .navbar-collapse {
+    top: 106px;
+  }
+
+  .header-top.muted-header {
+    z-index: 22;
+  }
+
+  .header-top.muted-header .navbar-collapse {
+    z-index: 23;
+  }
+
   .navbar-toggle {
     display: block;
     margin-right: 0;
@@ -14343,8 +14371,7 @@ blockquote a:hover {
   }
 
   .main-navig .navbar-nav {
-    width: 650px;
-    margin: 0 auto !important;
+    margin: 0 40px !important;
     float: none !important;
   }
 
@@ -15020,7 +15047,9 @@ blockquote a:hover {
 
   .welcome {
     width: 330px;
-    top: -30px;
+    height: auto;
+    top: auto;
+    bottom: 74%;
     left: -15px;
   }
 
@@ -15159,7 +15188,7 @@ blockquote a:hover {
   }
 
   .default-slider-tickets {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .ticket-event-lineup hr {
@@ -15333,6 +15362,18 @@ blockquote a:hover {
     margin-top: 10px;
   }
 
+  .header-top .navbar-collapse, header .navbar-collapse {
+    top: 106px;
+  }
+
+  .header-top.muted-header {
+    z-index: 22;
+  }
+
+  .header-top.muted-header .navbar-collapse {
+    z-index: 23;
+  }
+
   .navbar-toggle {
     display: block;
     margin-right: 0;
@@ -15393,8 +15434,7 @@ blockquote a:hover {
   }
 
   .main-navig .navbar-nav {
-    width: 650px;
-    margin: 0 auto !important;
+    margin: 0 40px !important;
   }
 
   .navbar-collapse.main-navig, .navbar-collapse.collapsing {
@@ -15455,7 +15495,7 @@ blockquote a:hover {
   }
 
   .top-events.sect {
-    padding-bottom: 90px;
+    padding-bottom: 40px;
   }
 
   .slider-heading {
@@ -15846,7 +15886,7 @@ blockquote a:hover {
   }
 
   .blog h2 {
-    text-align: right;
+    text-align: center;
   }
 
   .blog-item .top-event-title {
@@ -15934,7 +15974,8 @@ blockquote a:hover {
   .welcome {
     width: 295px;
     height: auto;
-    top: -40px;
+    top: auto;
+    bottom: 74%;
     left: -15px;
   }
 
@@ -16205,6 +16246,7 @@ blockquote a:hover {
   .slider-default .date .month, .slider-default .date .year {
     font-size: 15px;
     line-height: 15px;
+    margin: 10px 0;
   }
 
   .slider-default .date .day {
@@ -18048,7 +18090,7 @@ blockquote a:hover {
 
   .default-gallery-slider .slick-next {
     top: -112px;
-    right: 0;
+    right: 15px;
     left: auto;
     bottom: auto;
   }
@@ -18514,6 +18556,10 @@ blockquote a:hover {
     height: 452px;
     position: relative;
     padding: 60px;
+    margin-bottom: 34px;
+  }
+
+  .gallery-default-item.last {
     margin-bottom: 0;
   }
 
@@ -18952,6 +18998,11 @@ blockquote a:hover {
 
   blockquote {
     margin-left: 22px;
+  }
+
+  .all-blogs-container .gallery-default-item {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .gall-close .content-header {
@@ -20081,10 +20132,6 @@ table.club-table .button-more {
   transition: all 0.3s ease;
 }
 
-section.gallery .button-more .button-filter-text {
-  color: white;
-}
-
 /* ========================================================================
  * Custom buttons "Button Dropdown"
  * ======================================================================== */
@@ -20784,38 +20831,43 @@ label.chb-lb:before {
   top: 3px;
   border: 2px solid #a82743;
   background: transparent;
+  color: #a82743;
 }
 
 input[type="checkbox"] + label.chb-lb:after {
   display: inline-block;
-  content: '';
   position: absolute;
-  width: 12px;
-  height: 10px;
-  left: 5px;
-  top: 8px;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 3px;
   background: transparent;
   border-radius: 50%;
 }
 
 input[type="checkbox"] + label.chb-lb:hover:after, input[type="checkbox"] + label.chb-lb.hover-lb:hover:after, input[type="checkbox"]:checked + label.chb-lb.hover-lb:after, input[type="checkbox"]:checked + label.chb-lb.hover-lb:hover:after {
-  width: 12px;
-  height: 10px;
-  left: 4px;
-  top: 9px;
-  background-image: url("../images/sprites.png");
-  background-repeat: no-repeat;
-  background-position: -307px -78px;
+  font-family: FontAwesome;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  line-height: 20px;
+  font-size: 15px;
+  color: #a82743;
 }
 
 input[type="checkbox"]:checked + label.rb-lb:after {
-  width: 12px;
-  height: 10px;
-  left: 4px;
-  top: 9px;
-  background-image: url("../images/sprites.png");
-  background-repeat: no-repeat;
-  background-position: -307px -107px;
+  font-family: FontAwesome;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 label.chb-lb.off-lb {
@@ -20827,13 +20879,15 @@ label.chb-lb.off-lb:before {
 }
 
 input[type="checkbox"].off-chb:checked + label.chb-lb.off-lb:after, input[type="checkbox"].off-chb:checked + label.chb-lb.off-lb:hover:after {
-  width: 12px;
-  height: 10px;
-  left: 4px;
-  top: 9px;
-  background-image: url("../images/sprites.png");
-  background-repeat: no-repeat;
-  background-position: -307px -137px;
+  font-family: FontAwesome;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 input[type="checkbox"].off-chb + label.chb-lb.off-lb:hover:after {
@@ -20842,38 +20896,42 @@ input[type="checkbox"].off-chb + label.chb-lb.off-lb:hover:after {
 
 label.chb-lb.off-lb {
   color: #cccccc;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 input[type="checkbox"].pressed-chb:checked + label.chb-lb.pressed-lb:after, input[type="checkbox"] + label.chb-lb.hover-lb:hover:after {
-  width: 12px;
-  height: 10px;
-  left: 4px;
-  top: 9px;
-  background-image: url("../images/sprites.png");
-  background-repeat: no-repeat;
-  background-position: -307px -78px;
+  font-family: FontAwesome;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 input[type="checkbox"].pressed-chb:checked + label.chb-lb.pressed-lb:hover:after, input[type="checkbox"] + label.chb-lb.pressed-lb:after {
-  width: 12px;
-  height: 10px;
-  left: 4px;
-  top: 9px;
-  background-image: url("../images/sprites.png");
-  background-repeat: no-repeat;
-  background-position: -307px -78px;
+  font-family: FontAwesome;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 input[type="checkbox"]:checked + label.chb-lb.active:after {
-  width: 12px;
-  height: 10px;
-  left: 4px;
-  top: 9px;
-  background-image: url("../images/sprites.png");
-  background-repeat: no-repeat;
-  background-position: -307px -107px;
+  font-family: FontAwesome;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 /* ========================================================================
@@ -20896,8 +20954,6 @@ select.form-control:focus {
 
 input.form-control:focus, textarea:focus {
   border: 2px solid #a82743 !important;
-  -webkit-box-shadow: inset 0 0 5px #a82743;
-  box-shadow: inset 0 0 5px #a82743;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

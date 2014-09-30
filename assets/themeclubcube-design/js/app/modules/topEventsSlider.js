@@ -48,7 +48,7 @@ appMakeBeCool.gateway.addClass('TopEventsSlider', function(properties, $, $windo
                         draggable: false,
                         speed: 900,
                         swipe: true,
-                        dots: true,
+                        dots: false,
                         infinite: false,
                         responsive: [{
                             breakpoint: 1024,
