@@ -1,6 +1,7 @@
 <section class="blog sect" id="blogIndex">
 	<div class="container">
-		<div class="row head more-button-bott">
+		<!-- <div class="row head more-button-bott"> -->
+		<div class="row head">
 			<h2>[[%lf_blog_head:htmlent]]</h2>
 		</div>
 		<div class="row">

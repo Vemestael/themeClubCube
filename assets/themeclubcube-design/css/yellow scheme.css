@@ -3,14 +3,16 @@
  * ======================================================================== */
 /*
 Normal:							#e0b13b; (Red)
-Dark Normal: 					#c29628; ()
+Dark Normal: 					#c29628; 
 Hover:							#404040; (Orange)
 Active:							#333333; (Orange pressed)
 Marengo:						#ffffff; 
-Normal border:;
-Hover border: 					#d4d4d4; 
-TilesBorder:					#e77e5b; (Light orange)
 
+Normal border:				 	#e0f6ed;
+Hover border: 					#d4d4d4;
+Press border: 					#dfe1df;
+
+TilesBorder:					#e77e5b; (Light orange)
 Light brown:					#404040; 
 Light brown top border:			#535353;
 Dark brown:						#1a1a1a; 
@@ -42,7 +44,7 @@ Gallery linear gradient: 		#404040 - #e0b13b
  * ======================================================================== */
 
 .header-top {background: #e0b13b;}/*Red*/
-.header-top .nav>li, .header-top .nav>li:first-child {background: #e0b13b;}
+.header-top .nav>li, .header-top .nav>li:first-child {background: #fff;}
 .header-top .nav>li.dropdown:first-child:hover, header.header-top .main-navig .nav>li.active, header.header-top .main-navig .nav>li:hover {background: rgba(0,0,0,.2);}
 
 /* ========================================================================
@@ -67,7 +69,7 @@ footer a:hover {color: #404040;}/*Orange*/
 .social-icons li a i {color: #404040;}/*Orange*/
 .address-list>li ul li {color: rgba(255,255,255,.4);}
 .address-list>li>a {color:#e0b13b;}
-.contact-us p {color: rgba(255,255,255,.4);}
+.contact-us p {color: #fff;}
 .copyrights-bottom p {color:#333;}
 .copyrights-bottom a, .copyrights-bottom a:hover {color:#e0b13b;}/*Orange*/
 
@@ -237,14 +239,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', end
  * ======================================================================== */
  .top-line-up {background: #1a1a1a;}/*Dark brown*/
  .bottom-line-up {background: #404040;border-top: 1px solid #535353;}/*Light brown*/
- .socials.brown-sc {color:#1a1a1a;}/*Dark brown*/
+/* .socials.brown-sc {color:#1a1a1a;}/*Dark brown*/
  .ttl {color:#404040;}/*Orange*/
+ .dt {color: #1a1a1a;}/*Dark brown*/
  .page-text ul li:before {background: #e0b13b;}/*Red*/
  .page-text ol li:before {color: #e0b13b;}/*Red*/
  .page-text .footnote {color:#404040;}/*Orange*/
 .line-up-arrow {border-left: 40px solid #404040;}
 .bottom-line-up ul li .under-descr {color: #404040;}/*Orange*/
 .event-line-up a, .bottom-line-up ul li .under-descr {color:#e0b13b;}
+.line-up-title {color:rgba(255,255,255,.7);}
 
 /* ========================================================================
  * Content view
@@ -255,3 +259,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', end
  .content-main__side-header {color: #404040;}/*Orange*/
 .page-text a {color: #e0b13b;-webkit-transition: all .3s ease;transition: all .3s ease;}
 .page-text a:hover {color:#404040;-webkit-transition: all .3s ease;transition: all .3s ease;}
+
+
+@media screen and (min-width: 1200px) {
+.header-top .nav > li, .header-top .nav > li:first-child {background:#e0b13b;}
+}

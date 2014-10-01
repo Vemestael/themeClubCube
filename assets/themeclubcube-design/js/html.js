@@ -1136,7 +1136,7 @@ $(function() {
             this.scrollAtOnce();
             this.headerToTop();
             this.fullHeightSLider();
-            this.addVideos();
+            // this.addVideos();
             this.partnersSlider();
         };
 
@@ -1146,7 +1146,7 @@ $(function() {
             this.defaults();
             this.fullHeightSLider();
             this.headerToTop();
-            this.addVideosDefault();
+            // this.addVideosDefault();
             this.partnersSlider();
             var defaultBlogs = new EventAnimate($('.blog-item-def'));
         };

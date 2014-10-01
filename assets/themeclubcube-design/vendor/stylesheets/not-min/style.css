@@ -8629,7 +8629,8 @@ input:focus {
 
 .sect h2 {
   font-family: "PT Sans bold", sans-serif;
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .empt {
@@ -9843,6 +9844,10 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   padding: 17px 30px;
 }
 
+.header-top .nav > li, .header-top .nav > li:first-child {
+  background: white;
+}
+
 .dropdown-menu {
   position: relative;
   float: none;
@@ -10539,6 +10544,10 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   content: none;
 }
 
+.default-gallery-slider .slick-dots {
+  display: none;
+}
+
 .slider-default .slide-title hr {
   margin-bottom: 15px;
   margin-top: 15px;
@@ -11161,8 +11170,8 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 .header-top {
   width: 100%;
   background: #a82743;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   padding: 0;
 }
 
@@ -14987,9 +14996,13 @@ blockquote a:hover {
     bottom: auto;
   }
 
+  .ticket-event {
+    height: 190px;
+  }
+
   .ticket-event-date {
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 9.1569%;
     float: left;
     padding: 0;
@@ -15003,7 +15016,7 @@ blockquote a:hover {
   .ticket-event-img {
     display: block;
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 26.453%;
     float: left;
     padding: 0;
@@ -15015,11 +15028,15 @@ blockquote a:hover {
   .ticket-event-img img {
     -webkit-transform: none;
     transform: none;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: none;
+    min-width: inherit;
   }
 
   .ticket-event-lineup {
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 55.2325%;
     float: left;
     padding: 20px 20px;
@@ -15094,7 +15111,7 @@ blockquote a:hover {
 
   .ticket-event-price {
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 9.1569%;
     float: left;
     background: #a82743;
@@ -15958,6 +15975,10 @@ blockquote a:hover {
   .ticket-event-img img {
     -webkit-transform: none;
     transform: none;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: none;
+    min-width: inherit;
   }
 
   .ticket-event-lineup {
@@ -16884,6 +16905,10 @@ blockquote a:hover {
 
   .header-top .nav li.active li.active span {
     padding: 19px 15px 23px;
+  }
+
+  .header-top .nav > li, .header-top .nav > li:first-child {
+    background: #a82743;
   }
 
   .home-btn {
@@ -18128,7 +18153,7 @@ blockquote a:hover {
   }
 
   .ticket-event {
-    height: 180px;
+    height: 190px;
     overflow: hidden;
     margin-bottom: 30px;
   }
@@ -18166,7 +18191,7 @@ blockquote a:hover {
 
   .ticket-event-date {
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 5.7%;
     float: left;
     padding: 0;
@@ -18180,7 +18205,7 @@ blockquote a:hover {
   .ticket-event-img {
     display: block;
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 31.5%;
     float: left;
     padding: 0;
@@ -18190,14 +18215,17 @@ blockquote a:hover {
   }
 
   .ticket-event-img img {
-    width: 100%;
     -webkit-transform: none;
     transform: none;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: none;
+    min-width: inherit;
   }
 
   .ticket-event-lineup {
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 53%;
     float: left;
     padding: 16px 30px;
@@ -18268,7 +18296,7 @@ blockquote a:hover {
   .ticket-event-price {
     display: block;
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 9.759%;
     float: left;
     padding: 18px;
@@ -19010,6 +19038,10 @@ blockquote a:hover {
     right: 15px;
     left: auto;
     bottom: auto;
+  }
+
+  .gallery-default-item {
+    height: 261px;
   }
 }
 /* ========================================================================

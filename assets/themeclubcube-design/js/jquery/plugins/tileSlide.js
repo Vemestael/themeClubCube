@@ -172,7 +172,6 @@
 
 				if ((self.isAnimating === false) && (self.isClicked === true)) {
 					clearInterval(self.timing);
-					console.log('Interval cleared');
 					self.isClicked = false;
 					self.runSlider();
 				};
@@ -185,12 +184,18 @@
 	};
 
 	TileSlide.prototype.stopSlide = function() {
-		// clearInterval(self.timing);
+		var self = this;
+		clearInterval(self.timing);
 		this.pause = true;
 	};
 
 	TileSlide.prototype.playSlide = function() {
-		this.pause = false;
+		// var self = this;
+		// this.pause = false;
+		// setTimeout(function() {
+		// 	self.runSlider();
+		// }, self.options.interval);
+		// console.log('Played');
 	};
 
 	TileSlide.prototype.runSlider = function() {
@@ -198,11 +203,10 @@
 		self.timing = setInterval(function() {
 			if ((self.pause === false) && (self.isClicked === false)) {
 				self.navigation('next');
-				console.timeEnd('Slider test');
-				console.time('Slider test');
+				// console.timeEnd('Slider test');
+				// console.time('Slider test');
 			};
 		}, self.options.interval);
-		console.log('Slider is running');
 	};
 
 
@@ -226,6 +230,7 @@
 	//Events binding
 	TileSlide.prototype.events = function() {
 		var self = this;
+		var scrollDirection = '';
 		var prevButt = document.querySelector('.slick-prev');
 		var nextButt = document.querySelector('.slick-next');
 		prevButt.addEventListener('click', function() {
@@ -245,7 +250,16 @@
 			self.isClicked = true;
 		});
 
-		$(document).ready(function() {
+		$( window ).scroll(function(event) {
+			if (($(document).scrollTop() >= $(self.node).height()) && (self.pause === false)) {
+				self.stopSlide();
+			} else if ((self.isAnimating === false) && (self.pause === true) && ($(document).scrollTop() <= $(self.node).height())) {
+				self.pause = false;
+				self.runSlider();
+			};
+		});
+
+		$(window).load(function() {
 			self.runSlider();
 		});
 	};

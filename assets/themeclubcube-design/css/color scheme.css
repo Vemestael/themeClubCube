@@ -6,13 +6,12 @@ Normal:							#a82743; (Red)
 Dark Normal: 					#912a41; ()
 Hover:							#e15e32; (Orange)
 Active:							#d35a33; (Orange pressed)
-Marengo:						#f7e9e5;
-Footer welcome p:				#fc9; 
-Footer text color:				#ae828c;
-Normal border:					#e9cfd5;
-Hover border: 					#e9cfd5; 
-TilesBorder:					#e77e5b; (Light orange)
 
+Normal border:				 	#e9cfd5;
+Hover border: 					#f4dad1;
+Press border: 					#d35a33;
+
+TilesBorder:					#e77e5b; (Light orange)
 Light brown:					#5c323e; 
 Light brown top border:			#6c4651;
 Dark brown:						#251419; 
@@ -37,8 +36,8 @@ Gallery linear gradient: 		#5c323e - #a82743
  * Header
  * ======================================================================== */
 .header-top {background: #a82743;}/*Red*/
-.header-top .nav>li, .header-top .nav>li:first-child {background: #a82743;}
-.header-top .nav>li.dropdown:first-child:hover, header.header-top .main-navig .nav>li.active, header.header-top .main-navig .nav>li:hover {background: #912a41;}
+.header-top .nav>li, .header-top .nav>li:first-child {background: #fff;}
+.header-top .nav>li.dropdown:first-child:hover, header.header-top .main-navig .nav>li.active, header.header-top .main-navig .nav>li:hover {background: rgba(0,0,0,.2);}
 
 /* ========================================================================
  * Footer
@@ -53,11 +52,11 @@ background: linear-gradient(-7deg, #5c323e 0%,#812d40 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', endColorstr='#812d40',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }/*Red liear gradient*/
 .welcome {background: #e15e32;}/*Orange*/
-.welcome p {color: #fc9;}
+.welcome p {color: #fff;}
 .welcome-inner .corner-welcome {border-left: 30px solid #e15e32;}/*Orange*/
-.address-list>li ul li {color: #ae828c;}
+.address-list>li ul li {color: rgba(255,255,255,.4);}
 .address-list>li>a {color:#e15e32;}
-.contact-us p {color: #ae828c;}
+.contact-us p {color: #fff;}
 #subscribe-btn {background: #a82743;}/*Red*/
 footer a {color:#e15e32;}/*Orange*/
 footer a:hover {color: #e15e32;}/*Orange*/
@@ -234,16 +233,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', end
  * ======================================================================== */
  .top-line-up {background: #251419;}/*Dark brown*/
  .bottom-line-up {background: #5c323e;border-top: 1px solid #6c4651;}/*Light brown*/
- .socials.brown-sc {color:#251419;}/*Dark brown*/
+/* .socials.brown-sc {color:#251419;}/*Dark brown*/
  .ttl {color:#e15e32;}/*Orange*/
+ .dt {color: #5c323e;}/*Dark brown*/
  .page-text ul li:before {background: #a82743;}/*Red*/
  .page-text ol li:before {color: #a82743;}/*Red*/
  .page-text .footnote {color:#e15e32;}/*Orange*/
 .line-up-arrow {border-left: 40px solid #5c323e;}
-.line-up-title {color: #d3a8af;}
 .bottom-line-up ul li .under-descr {color: #e15e32;}/*Orange*/
 .event-line-up a, .bottom-line-up ul li .under-descr {color:#e15e32;}
-
+.line-up-title {color:rgba(255,255,255,.7);}
 
 /* ========================================================================
  * Content view
@@ -254,3 +253,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', end
  .content-main__side-header {color: #e15e32;}/*Orange*/
 .page-text a {color: #e15e32;-webkit-transition: all .3s ease;transition: all .3s ease;}
 .page-text a:hover {color:#e15e32;-webkit-transition: all .3s ease;transition: all .3s ease;}
+
+@media screen and (min-width: 1200px) {
+.header-top .nav > li, .header-top .nav > li:first-child {background:#a82743;}
+}
