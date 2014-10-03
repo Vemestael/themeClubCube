@@ -267,8 +267,11 @@ header.header-top .home-btn {margin-top: 14px;}
 .nav.nav-top>li>a:hover, .nav.nav-top>li>.nav>li>span:hover {background:$white-color;color:$black-color;border-top: 1px solid $light-grey;}
 .nav.nav-top .dropdown-menu li a, .nav.nav-top .dropdown-menu li span {padding: 17px 20px;}
 .navbar-nav>li>a, .nav>li>a.dropdown-toggle.main-heading-a, .nav>li>span.dropdown-toggle.main-heading-a  {display: block;padding: 18px 15px;line-height: $reg-font-size;}
-header .nav>li.active span, header .nav>li.active a {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
+header .nav>li.active span, header .nav>li.active a {padding: 18px 15px;line-height: 14px;}
+header .nav>li.active span, header .nav > li.dropdown.active a {background:#f2f2f2;color: #666;}
+.header-top .nav>li.dropdown.active>ul>li>a {color: $black-color;}
 header .navbar-nav > li > span, .dropdown-menu>li.active span {cursor: default;}
+
 // header .main-navig .nav>li.active, header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
 // .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li:hover, .header-top .main-navig .nav>li.active, .header-top .main-navig .nav>li.active {background:$lighter-grey-color;padding: 18px 15px;line-height: 14px;}
 // .nav>li.dropdown:first-child:hover {border-top: 1px solid $white-color;}
@@ -282,7 +285,8 @@ header .navbar-nav > li > span, .dropdown-menu>li.active span {cursor: default;}
 .dropdown-menu>li {border-bottom: none;border-top: 1px solid $btn-default-border;}
 .dropdown-menu>li>a, .dropdown-menu>li>span {display: block;font-size:14px;}
 // .dropdown-menu>li>a.active, .dropdown-menu>li>span.active, .dropdown-menu>li>a.active:hover, .dropdown-menu>li>span.active:hover {background:$lighter-grey-color;}
-.dropdown-menu>li.active span, .dropdown-menu>li.active a, .dropdown-menu>li.active a:hover, .dropdown-menu>li.active span:hover {background:$lighter-grey-color;}
+.dropdown-menu>li.active span, .dropdown-menu>li.active a {background:#f2f2f2;color: #666;}
+.dropdown-menu>li.active a:hover, .dropdown-menu>li.active span:hover {background:$lighter-grey-color;}
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {padding: 17px 30px;color:$black-color;border-bottom: 1px solid transparent;}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>span:hover {background:inherit;}
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {border-bottom: none;}
@@ -1751,7 +1755,7 @@ header .nav>li.dropdown, header .nav>li.dropdown:first-child, header .nav>li.dro
 header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .nav>li.dropdown:first-child:hover {background:url('../images/bg-tr.png') left top;border-top: 1px solid $white-color;}
 header .nav>li.active a, header .nav>li.active span {background: transparent;}
 header nav ul li.dropdown.active ul li.active span {background:$hover-li-a;@include transitions(.3s);}
-
+header .nav>li.active span {background:transparent;color: $white-color;;}
 
 .header-top .navbar-collapse, header .navbar-collapse {width: auto;@include box-shadow(none);}
 .header-top .nav>li>a.dropdown-toggle.main-heading-a, .header-top .navbar-nav>li>a, .header-top .navbar-nav>li>span {font-size: $reg-font-size;color:$white-color;background:transparent;padding: 19px 15px 23px;}
@@ -1770,6 +1774,8 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .header-top .dropdown-menu>.active>a, .header-top .dropdown-menu>.active>a:focus, .header-top .dropdown-menu>.active>a:hover {color:$black-color;}
 .header-top .nav li.active li.active span {padding: 19px 15px 23px;}
 .header-top .nav > li, .header-top .nav > li:first-child {background:$red-color;}
+.header-top .nav>li.dropdown.active>ul>li>a:hover {background:$hover-li-a;}
+
 
 .home-btn {display: none;}
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {padding-right: auto;overflow-y: hidden!important;}
@@ -1784,7 +1790,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 .dropdown-menu>li>a, .dropdown-menu>li>span, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {border-bottom: none;}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {border-top: none;}
 .top-events .navbar-nav>li.dropdown, .top-events .navbar-nav>li.dropdown:hover {border-right: none;border-left: none;}
-.header-top nav ul li.dropdown.active ul li.active span {display: block;white-space: nowrap;background:$hover-li-a;@include transitions(.3s);}
+.header-top nav ul li.dropdown.active ul li.active span {display: block;white-space: nowrap;background: #f2f2f2;color:#666;@include transitions(.3s);cursor: pointer;}
 
 
 //Slider

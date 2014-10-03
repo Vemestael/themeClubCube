@@ -9830,9 +9830,17 @@ header.header-top .home-btn {
 }
 
 header .nav > li.active span, header .nav > li.active a {
-  background: #e2e2e2;
   padding: 18px 15px;
   line-height: 14px;
+}
+
+header .nav > li.active span, header .nav > li.dropdown.active a {
+  background: #f2f2f2;
+  color: #666;
+}
+
+.header-top .nav > li.dropdown.active > ul > li > a {
+  color: black;
 }
 
 header .navbar-nav > li > span, .dropdown-menu > li.active span {
@@ -9872,7 +9880,12 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   font-size: 14px;
 }
 
-.dropdown-menu > li.active span, .dropdown-menu > li.active a, .dropdown-menu > li.active a:hover, .dropdown-menu > li.active span:hover {
+.dropdown-menu > li.active span, .dropdown-menu > li.active a {
+  background: #f2f2f2;
+  color: #666;
+}
+
+.dropdown-menu > li.active a:hover, .dropdown-menu > li.active span:hover {
   background: #e2e2e2;
 }
 
@@ -16831,6 +16844,11 @@ blockquote a:hover {
     transition: all 0.3s ease;
   }
 
+  header .nav > li.active span {
+    background: transparent;
+    color: white;
+  }
+
   .header-top .navbar-collapse, header .navbar-collapse {
     width: auto;
     -webkit-box-shadow: none;
@@ -16917,6 +16935,10 @@ blockquote a:hover {
     background: #a82743;
   }
 
+  .header-top .nav > li.dropdown.active > ul > li > a:hover {
+    background: #e5e5e5;
+  }
+
   .home-btn {
     display: none;
   }
@@ -16980,9 +17002,11 @@ blockquote a:hover {
   .header-top nav ul li.dropdown.active ul li.active span {
     display: block;
     white-space: nowrap;
-    background: #e5e5e5;
+    background: #f2f2f2;
+    color: #666;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
 
   .slider .rowss {
