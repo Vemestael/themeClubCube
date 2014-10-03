@@ -8,3 +8,5 @@ nbproject
 !/_packages/*.zip
 /node_modules
 /Gruntfile.js
+/.sass-cache
+/package.json
