@@ -87,6 +87,8 @@
 		this.next = document.createElement('div');
 		this.prev.className = 'slick-prev';
 		this.next.className = 'slick-next';
+		this.node.appendChild(this.prev);
+		this.node.appendChild(this.next);
 
 		//If dots are needed — add dots
 		if (this.options.dots === true) {
