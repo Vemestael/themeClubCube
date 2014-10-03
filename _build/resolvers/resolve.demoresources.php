@@ -150,12 +150,54 @@ $content_index_demo1 = '
 [[$footerBase]]
 ';
 
-$content_article_blog6 = '
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt placerat risus, nec pharetra nibh. Donec hendrerit eros non sapien tempor vestibulum. Etiam eu tempus enim. Donec vehicula lectus vitae magna gravida pulvinar. Praesent id dolor tincidunt, malesuada turpis nec, maximus massa. Aenean luctus eget quam sit amet lobortis. Suspendisse et augue varius, blandit quam id, efficitur ipsum. Sed finibus ipsum at velit consectetur iaculis. Etiam volutpat faucibus mauris ut dictum. Duis mattis augue ut ultrices feugiat.</p>
-<p>Donec sed elementum sapien. In id ante quis tellus viverra facilisis. Mauris lobortis vestibulum diam. Etiam viverra ac orci molestie dapibus. Aenean pharetra quis nulla ut vestibulum. Nullam dapibus porta magna eu placerat. Maecenas in libero nibh. Suspendisse nec dolor tortor. Nunc convallis felis eu elementum finibus. Vestibulum faucibus nisi massa. Ut cursus velit in lacus tristique accumsan. Quisque pellentesque metus ac sapien lobortis, id efficitur neque maximus. Nullam at nisi vestibulum, pharetra libero vitae, gravida turpis. Integer congue mi viverra, ornare mauris eget, mollis massa. Nam eleifend, mauris vitae posuere auctor, magna felis porttitor magna, quis laoreet dui mauris vitae elit.</p>
-<p>Nullam sed nulla in turpis ultricies consectetur non eget quam. Donec aliquet eu urna sed maximus. Curabitur placerat varius aliquam. Nulla ante odio, ullamcorper at dignissim a, imperdiet sit amet lorem. Nulla hendrerit ullamcorper est, at aliquam quam rhoncus vel. Maecenas gravida libero eget dolor rutrum, feugiat blandit nibh malesuada. Curabitur tincidunt imperdiet leo, ut maximus massa scelerisque ac. Vivamus id mauris facilisis, fringilla elit quis, consequat velit. In nulla tellus, porta eu laoreet varius, accumsan id quam. Nullam molestie sodales mollis. Nulla accumsan sapien non posuere eleifend. Maecenas scelerisque in dui vel volutpat. Aliquam id massa non lorem facilisis dignissim in quis urna. Phasellus ac egestas nisi.</p>
-<p>Sed at iaculis dolor, vel semper augue. Quisque suscipit nunc volutpat pellentesque sodales. Cras vitae euismod erat. Aenean euismod lorem rhoncus, mollis orci eu, finibus massa. Nunc gravida efficitur orci vitae sollicitudin. Aliquam varius dictum consectetur. In ullamcorper dapibus tincidunt. Nunc neque mi, pharetra eu eros quis, pharetra suscipit metus. Phasellus at ultrices arcu, id fringilla lectus.</p>
-<p>Curabitur vel nibh at tortor faucibus facilisis vel nec neque. Nunc ut tempus libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam placerat augue velit, ut sodales odio eleifend in. In vehicula lacinia finibus. Nullam condimentum elit et mi dignissim pretium. Praesent auctor, dolor sit amet hendrerit molestie, arcu tortor volutpat tellus, quis sagittis justo felis id odio. Vestibulum dolor ex, accumsan ut efficitur sed, faucibus luctus ex. Ut venenatis euismod fringilla. Donec nec aliquet lacus.</p>
+$content_text = '
+<p>Old unsatiable our now but considered travelling impression.
+In excuse hardly summer in basket misery. By rent an part need.
+At wrong of of water those linen. Needed oppose seemed how all.
+Very mrs shed shew gave you. Oh shutters do removing reserved wandered an.
+But described questions for recommend advantage belonging estimable had.
+Pianoforte reasonable as so am inhabiting. Chatty design remark and his abroad figure but its.</p>
+<ul>
+<li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
+<li>Could death since do we hoped is in.</li>
+<li>Exquisite no my attention extensive.</li>
+<li>The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.</li>
+<li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
+</ul>
+<p>Few hills tears are weeks saw. Partiality insensible celebrated is in. Am offended as wandered thoughts greatest an friendly.
+Evening covered in he exposed fertile to. Horses seeing at played plenty nature to expect we. Young say led stood hills own thing get.</p>
+<p>Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing
+attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous
+insensible. It recommend be resolving pretended middleton.</p>
+<ol>
+<li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
+<li>Could death since do we hoped is in.</li>
+<li>Exquisite no my attention extensive.</li>
+<li>The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.</li>
+<li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as.
+Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
+</ol>
+<p>She who arrival end how fertile enabled. Brother she add yet see minuter natural smiling article painted.
+Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished.
+Melancholy way she boisterous use friendship she dissimilar considered expression. Sex quick arose mrs lived. Mr things
+do plenty others an vanity myself waited to. Always parish tastes at as mr father dining at.</p>
+<p>Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four.
+Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or
+to admiration remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.</p>
+<p>She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end.
+Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in.
+Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye.
+Five with seen put need tore add neat. Bringing it is he returned received raptures.</p>
+<p>Village did removed enjoyed explain nor ham saw calling talking. Securing as informed declared or margaret.
+Joy horrible moreover man feelings own shy. Request norland neither mistake for yet. Between the for morning assured
+country believe. On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir
+end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.</p>
+<p>In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence.
+Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably.
+Unfeeling are had allowance own perceived abilities.</p>
+<p>He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy.
+Unaffected at ye of compliment alteration to. Place voice no arise along to. Parlors waiting so against me no.
+Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor.</p>
 ';
 
 $content_contacts = '
@@ -916,6 +958,152 @@ $content_manual = '
 <img src="assets/uploads/manual/settings.png" alt="theme settings">
 ';
 
+$lineUp = array(
+    array(
+        "MIGX_id" => 1,
+        'name' => 'DJ Supbass',
+        'location' => "Detroit"
+    ),
+    array(
+        "MIGX_id" => 2,
+        'name' => 'Alexander Grooves',
+        'location' => "Moscow"
+    ),
+    array(
+        "MIGX_id" => 3,
+        'name' => 'Itchy:Pitchy',
+        'location' => "Saint Petersburg"
+    ),
+    array(
+        "MIGX_id" => 4,
+        'name' => 'Depeche Code',
+        'location' => "Bratislava"
+    ),
+    array(
+        "MIGX_id" => 5,
+        'name' => 'Caesar Loves Bay',
+        'location' => "London"
+    ),
+    array(
+        "MIGX_id" => 6,
+        'name' => 'Oscar from San Diego',
+        'location' => "Auckland"
+    ),
+    array(
+        "MIGX_id" => 7,
+        'name' => 'DJ Biz',
+        'location' => "NY"
+    ),
+    array(
+        "MIGX_id" => 8,
+        'name' => 'DJ Bonus Score',
+        'location' => "Transylvania"
+    )
+);
+
+$gallery = array(
+    array(
+        "MIGX_id" => 1,
+        'title' => 1,
+        'image' => "gallery/Gallery_01_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 2,
+        'title' => 2,
+        'image' => "gallery/Gallery_02_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 3,
+        'title' => 3,
+        'image' => "gallery/Gallery_03_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 4,
+        'title' => 4,
+        'image' => "gallery/Gallery_04_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 5,
+        'title' => 5,
+        'image' => "gallery/Gallery_05_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 6,
+        'title' => 6,
+        'image' => "gallery/Gallery_06_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 7,
+        'title' => 7,
+        'image' => "gallery/Gallery_07_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 8,
+        'title' => 8,
+        'image' => "gallery/Gallery_08_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 9,
+        'title' => 9,
+        'image' => "gallery/Gallery_09_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 10,
+        'title' => 10,
+        'image' => "gallery/Gallery_10_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 11,
+        'title' => 11,
+        'image' => "gallery/Gallery_11_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 12,
+        'title' => 12,
+        'image' => "gallery/Gallery_12_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 13,
+        'title' => 13,
+        'image' => "gallery/Gallery_13_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 14,
+        'title' => 14,
+        'image' => "gallery/Gallery_14_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 15,
+        'title' => 15,
+        'image' => "gallery/Gallery_15_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 16,
+        'title' => 16,
+        'image' => "gallery/Gallery_16_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 17,
+        'title' => 17,
+        'image' => "gallery/Gallery_17_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 18,
+        'title' => 18,
+        'image' => "gallery/Gallery_18_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 19,
+        'title' => 19,
+        'image' => "gallery/Gallery_19_Retina.jpg"
+    ),
+    array(
+        "MIGX_id" => 20,
+        'title' => 20,
+        'image' => "gallery/Gallery_20_Retina.jpg"
+    ),
+);
+
 if ($object && $object->xpdo) {
     switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         case xPDOTransport::ACTION_INSTALL:
@@ -940,6 +1128,9 @@ if ($object && $object->xpdo) {
                     'blogList',
                     'blogListTile',
                     'blogItem',
+                    'blogItemWithoutImage',
+                    'blogItemAside',
+                    'blogItemAsideWithoutImage',
                     'partners',
                     'text',
                     'textAside',
@@ -1169,14 +1360,14 @@ if ($object && $object->xpdo) {
                                         'event1:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 1',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event1',
-                                            'uri' => 'eventslist/events/event1',
+                                            'alias' => 'daily-bass-ocean',
+                                            'uri' => 'eventslist/events/daily-bass-ocean',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (1 * 60),
@@ -1194,49 +1385,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/130197.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (-14 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_01_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event2:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 2',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event2',
-                                            'uri' => 'eventslist/events/event2',
+                                            'alias' => 'hip-hop-x-oh-trap',
+                                            'uri' => 'eventslist/events/hip-hop-x-oh-trap',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (2 * 60),
@@ -1254,49 +1419,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/20130125-rhcp-x600-1359132290.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (21 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_02_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (2 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event3:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 3',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event3',
-                                            'uri' => 'eventslist/events/event3',
+                                            'alias' => 'streets-love-invasion',
+                                            'uri' => 'eventslist/events/streets-love-invasion',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (3 * 60),
@@ -1314,49 +1453,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/Paramore-11.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (28 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_03_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (3 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event4:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 4',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event4',
-                                            'uri' => 'eventslist/events/event4',
+                                            'alias' => 'californication-nights',
+                                            'uri' => 'eventslist/events/californication-nights',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (4 * 60),
@@ -1374,50 +1487,26 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/the-police.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (35 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_04_Retina.jpg',
+                                                'promoImg' => 'slider/Slider_01.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (4 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'topEvent' => 1,
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp),
+                                                'promoEvent' => 1,
+                                                'topEvent' => 1
                                             ),
                                         ),
                                         'event5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 5',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event5',
-                                            'uri' => 'eventslist/events/event5',
+                                            'alias' => 'mash-up-your-heads-christmas-night',
+                                            'uri' => 'eventslist/events/mash-up-your-heads-christmas-night',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (5 * 60),
@@ -1435,50 +1524,26 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/top-ev.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (42 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_05_Retina.jpg',
+                                                'promoImg' => 'slider/Slider_02.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (5 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'topEvent' => 1,
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp),
+                                                'promoEvent' => 1,
+                                                'topEvent' => 1
                                             ),
                                         ),
                                         'event6:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 6',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event6',
-                                            'uri' => 'eventslist/events/event6',
+                                            'alias' => 'discover-paparazzi-madness',
+                                            'uri' => 'eventslist/events/discover-paparazzi-madness',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (6 * 60),
@@ -1496,52 +1561,26 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/top-ev2.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (49 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_06_Retina.jpg',
+                                                'promoImg' => 'slider/Slider_03.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (6 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'topEvent' => 1,
+                                                'lineUp' => $modx->toJson($lineUp),
                                                 'promoEvent' => 1,
-                                                'promoImg' => 'slider/Celebrities-Paramore-005.jpg',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'topEvent' => 1
                                             ),
                                         ),
                                         'event7:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 7',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event7',
-                                            'uri' => 'eventslist/events/event7',
+                                            'alias' => 'daily-bass-ocean-7',
+                                            'uri' => 'eventslist/events/daily-bass-ocean-7',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (7 * 60),
@@ -1559,39 +1598,292 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/top-ev3.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (56 * 24 * 60 * 60)),
-                                                'price' => '10$',
-                                                'topEvent' => 1,
+                                                'img' => 'events/EventsTiles_07_Retina.jpg',
+                                                'promoImg' => 'slider/Slider_04.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (7 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp),
                                                 'promoEvent' => 1,
-                                                'promoImg' => 'slider/1375702763_thirty-seconds-to-mars-do-or-die.jpg',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'topEvent' => 1
+                                            ),
+                                        ),
+                                        'event8:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'hip-hop-x-oh-trap-8',
+                                            'uri' => 'eventslist/events/hip-hop-x-oh-trap-8',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (8 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_08_Retina.jpg',
+                                                'promoImg' => 'slider/Slider_05.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (8 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp),
+                                                'promoEvent' => 1,
+                                                'topEvent' => 1
+                                            ),
+                                        ),
+                                        'event9:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Streets Love Invasion',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'streets-love-invasion-9',
+                                            'uri' => 'eventslist/events/streets-love-invasion-9',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (9 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_09_Retina.jpg',
+                                                'promoImg' => 'slider/Slider_06.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (9 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp),
+                                                'promoEvent' => 1,
+                                                'topEvent' => 1
+                                            ),
+                                        ),
+                                        'event10:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Californication Nights',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'californication-nights-10',
+                                            'uri' => 'eventslist/events/californication-nights-10',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (10 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_10_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (10 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp),
+                                                'topEvent' => 1
+                                            ),
+                                        ),
+                                        'event11:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'mash-up-your-heads-christmas-night-11',
+                                            'uri' => 'eventslist/events/mash-up-your-heads-christmas-night-11',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (11 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_11_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (11 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event12:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Discover Paparazzi Madness',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'discover-paparazzi-madness-12',
+                                            'uri' => 'eventslist/events/discover-paparazzi-madness-12',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (12 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_12_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (12 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event13:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Daily Bass Ocean',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'daily-bass-ocean-13',
+                                            'uri' => 'eventslist/events/daily-bass-ocean-13',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (13 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_13_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (13 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event14:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'hip-hop-x-oh-trap-14',
+                                            'uri' => 'eventslist/events/hip-hop-x-oh-trap-14',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (14 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_14_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (14 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event15:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Streets Love Invasion',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'streets-love-invasion-15',
+                                            'uri' => 'eventslist/events/streets-love-invasion-15',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (15 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_15_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (15 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                     ),
@@ -1627,14 +1919,14 @@ if ($object && $object->xpdo) {
                                         'event1:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 1',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event1',
-                                            'uri' => 'eventslist/events2/event1',
+                                            'alias' => 'daily-bass-ocean',
+                                            'uri' => 'eventslist/events2/daily-bass-ocean',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (1 * 60),
@@ -1652,49 +1944,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/130197.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (-14 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_01_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event2:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 2',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event2',
-                                            'uri' => 'eventslist/events2/event2',
+                                            'alias' => 'hip-hop-x-oh-trap',
+                                            'uri' => 'eventslist/events2/hip-hop-x-oh-trap',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (2 * 60),
@@ -1712,49 +1978,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/20130125-rhcp-x600-1359132290.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (21 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_02_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (2 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event3:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 3',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event3',
-                                            'uri' => 'eventslist/events2/event3',
+                                            'alias' => 'streets-love-invasion',
+                                            'uri' => 'eventslist/events2/streets-love-invasion',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (3 * 60),
@@ -1772,49 +2012,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/Paramore-11.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (28 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_03_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (3 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event4:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 4',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event4',
-                                            'uri' => 'eventslist/events2/event4',
+                                            'alias' => 'californication-nights',
+                                            'uri' => 'eventslist/events2/californication-nights',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (4 * 60),
@@ -1832,50 +2046,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/the-police.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (35 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_04_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (4 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'topEvent' => 1,
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 5',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event5',
-                                            'uri' => 'eventslist/events2/event5',
+                                            'alias' => 'mash-up-your-heads-christmas-night',
+                                            'uri' => 'eventslist/events2/mash-up-your-heads-christmas-night',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (5 * 60),
@@ -1893,50 +2080,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/top-ev.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (42 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_05_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (5 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'topEvent' => 1,
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event6:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 6',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event6',
-                                            'uri' => 'eventslist/events2/event6',
+                                            'alias' => 'discover-paparazzi-madness',
+                                            'uri' => 'eventslist/events2/discover-paparazzi-madness',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (6 * 60),
@@ -1954,52 +2114,23 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/top-ev2.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (49 * 24 * 60 * 60)),
+                                                'img' => 'events/EventsTiles_06_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (6 * 24 * 60 * 60)),
                                                 'price' => '5$',
-                                                'topEvent' => 1,
-                                                'promoEvent' => 1,
-                                                'promoImg' => 'slider/Celebrities-Paramore-005.jpg',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
                                         'event7:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsItem->get('id'),
-                                            'pagetitle' => 'Event 7',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'event7',
-                                            'uri' => 'eventslist/events2/event7',
+                                            'alias' => 'daily-bass-ocean-7',
+                                            'uri' => 'eventslist/events2/daily-bass-ocean-7',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (7 * 60),
@@ -2017,66 +2148,317 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'events/top-ev3.jpg',
-                                                'timeStart' => date('Y-m-d H:i:00', time() + (56 * 24 * 60 * 60)),
-                                                'price' => '10$',
-                                                'topEvent' => 1,
-                                                'promoEvent' => 1,
-                                                'promoImg' => 'slider/1375702763_thirty-seconds-to-mars-do-or-die.jpg',
-                                                'lineUp' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 3,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 4,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 5,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 6,
-                                                        'name' => 'Andrew Feeling',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 7,
-                                                        'name' => 'Shalim',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 8,
-                                                        'name' => 'Stay B',
-                                                        'location' => "donetsk"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 9,
-                                                        'name' => 'Someone',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 10,
-                                                        'name' => 'Dranga',
-                                                        'location' => "mariupol"
-                                                    ),
-                                                ))
+                                                'img' => 'events/EventsTiles_07_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (7 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
                                             ),
                                         ),
+                                        'event8:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'hip-hop-x-oh-trap-8',
+                                            'uri' => 'eventslist/events2/hip-hop-x-oh-trap-8',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (8 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_08_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (8 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event9:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Streets Love Invasion',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'streets-love-invasion-9',
+                                            'uri' => 'eventslist/events2/streets-love-invasion-9',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (9 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_09_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (9 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event10:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Californication Nights',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'californication-nights-10',
+                                            'uri' => 'eventslist/events2/californication-nights-10',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (10 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_10_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (10 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event11:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'mash-up-your-heads-christmas-night-11',
+                                            'uri' => 'eventslist/events2/mash-up-your-heads-christmas-night-11',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (11 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_11_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (11 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event12:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Discover Paparazzi Madness',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'discover-paparazzi-madness-12',
+                                            'uri' => 'eventslist/events2/discover-paparazzi-madness-12',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (12 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_12_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (12 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event13:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Daily Bass Ocean',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'daily-bass-ocean-13',
+                                            'uri' => 'eventslist/events2/daily-bass-ocean-13',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (13 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_13_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (13 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event14:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'hip-hop-x-oh-trap-14',
+                                            'uri' => 'eventslist/events2/hip-hop-x-oh-trap-14',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (14 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_14_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (14 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                        'event15:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_eventsItem->get('id'),
+                                            'pagetitle' => 'Streets Love Invasion',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'streets-love-invasion-15',
+                                            'uri' => 'eventslist/events2/streets-love-invasion-15',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (15 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'events/EventsTiles_15_Retina.jpg',
+                                                'timeStart' => date('Y-m-d H:i:00', time() + (15 * 24 * 60 * 60)),
+                                                'price' => '5$',
+                                                'lineUp' => $modx->toJson($lineUp)
+                                            ),
+                                        ),
+                                    ),
+                                ),
+                                'eventItem' => array(
+                                    'template' => $tpl_eventsItem->get('id'),
+                                    'pagetitle' => 'Open event',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'open-event',
+                                    'uri' => 'eventslist/open-event',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (11 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'img' => 'events/EventsTiles_11_Retina.jpg',
+                                        'timeStart' => date('Y-m-d H:i:00', time() + (11 * 24 * 60 * 60)),
+                                        'price' => '5$',
+                                        'lineUp' => $modx->toJson($lineUp)
                                     ),
                                 ),
                             ),
@@ -2159,19 +2541,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/gall-1.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_01_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery2:Ticket' => array(
@@ -2202,19 +2573,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/gall-2.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_02_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery3:Ticket' => array(
@@ -2245,19 +2605,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/paramore-paramore-8253970-850-680.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_03_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery4:Ticket' => array(
@@ -2288,19 +2637,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Red-Hot-Chili-Peppers-Kiev.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_04_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery5:Ticket' => array(
@@ -2331,19 +2669,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Red-Hot-Chili-Peppers-Kiev.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_05_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery6:Ticket' => array(
@@ -2374,19 +2701,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_06_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery7:Ticket' => array(
@@ -2417,19 +2733,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev-big.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_07_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery8:Ticket' => array(
@@ -2460,19 +2765,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev-big2.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_08_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery9:Ticket' => array(
@@ -2503,19 +2797,360 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev-big3.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_09_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery10:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 10',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery10',
+                                            'uri' => 'gallerylist/gallery/gallery10',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (10 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_10_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery11:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 11',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery11',
+                                            'uri' => 'gallerylist/gallery/gallery11',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (11 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_11_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery12:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 1',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery12',
+                                            'uri' => 'gallerylist/gallery/gallery12',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (12 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_12_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery13:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 13',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery13',
+                                            'uri' => 'gallerylist/gallery/gallery13',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (13 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_13_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery14:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 14',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery14',
+                                            'uri' => 'gallerylist/gallery/gallery14',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (14 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_14_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery15:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 15',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery15',
+                                            'uri' => 'gallerylist/gallery/gallery15',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (15 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_15_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery16:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 16',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery16',
+                                            'uri' => 'gallerylist/gallery/gallery16',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (16 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_16_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery17:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 17',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery17',
+                                            'uri' => 'gallerylist/gallery/gallery17',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (17 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_17_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery18:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 18',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery18',
+                                            'uri' => 'gallerylist/gallery/gallery18',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (18 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_18_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery19:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 19',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery19',
+                                            'uri' => 'gallerylist/gallery/gallery19',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (19 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_19_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery20:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 20',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery20',
+                                            'uri' => 'gallerylist/gallery/gallery20',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (20 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_20_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                     )
@@ -2577,19 +3212,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/gall-1.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_01_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery2:Ticket' => array(
@@ -2620,19 +3244,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/gall-2.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_02_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery3:Ticket' => array(
@@ -2663,19 +3276,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/paramore-paramore-8253970-850-680.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_03_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery4:Ticket' => array(
@@ -2706,19 +3308,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Red-Hot-Chili-Peppers-Kiev.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_04_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery5:Ticket' => array(
@@ -2749,19 +3340,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Red-Hot-Chili-Peppers-Kiev.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_05_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery6:Ticket' => array(
@@ -2792,19 +3372,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_06_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery7:Ticket' => array(
@@ -2835,19 +3404,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev-big.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_07_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery8:Ticket' => array(
@@ -2878,19 +3436,8 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev-big2.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_08_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery9:Ticket' => array(
@@ -2921,22 +3468,394 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/top-ev-big3.jpg',
-                                                'gallery' => $modx->toJson(array(
-                                                    array(
-                                                        "MIGX_id" => 1,
-                                                        'title' => 1,
-                                                        'image' => "gallery/gall-1.jpg"
-                                                    ),
-                                                    array(
-                                                        "MIGX_id" => 2,
-                                                        'title' => 2,
-                                                        'image' => "gallery/gall-2.jpg"
-                                                    )
-                                                ))
+                                                'img' => 'gallery/Gallery_09_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery10:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 10',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery10',
+                                            'uri' => 'gallerylist/gallery2/gallery10',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (10 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_10_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery11:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 11',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery11',
+                                            'uri' => 'gallerylist/gallery2/gallery11',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (11 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_11_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery12:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 1',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery12',
+                                            'uri' => 'gallerylist/gallery2/gallery12',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (12 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_12_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery13:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 13',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery13',
+                                            'uri' => 'gallerylist/gallery2/gallery13',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (13 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_13_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery14:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 14',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery14',
+                                            'uri' => 'gallerylist/gallery2/gallery14',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (14 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_14_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery15:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 15',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery15',
+                                            'uri' => 'gallerylist/gallery2/gallery15',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (15 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_15_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery16:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 16',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery16',
+                                            'uri' => 'gallerylist/gallery2/gallery16',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (16 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_16_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery17:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 17',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery17',
+                                            'uri' => 'gallerylist/gallery2/gallery17',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (17 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_17_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery18:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 18',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery18',
+                                            'uri' => 'gallerylist/gallery2/gallery18',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (18 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_18_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery19:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 19',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery19',
+                                            'uri' => 'gallerylist/gallery2/gallery19',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (19 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_19_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
+                                            ),
+                                        ),
+                                        'gallery20:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_galleryItem->get('id'),
+                                            'pagetitle' => 'Gallery 20',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'gallery20',
+                                            'uri' => 'gallerylist/gallery2/gallery20',
+                                            'link_attributes' => '',
+                                            'content' => '',
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (20 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'gallery/Gallery_20_Retina.jpg',
+                                                'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                     )
+                                ),
+                                'galleryItem' => array(
+                                    'template' => $tpl_galleryItem->get('id'),
+                                    'pagetitle' => 'Open Gallery',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'gallery-item',
+                                    'uri' => 'gallerylist/gallery-item',
+                                    'link_attributes' => '',
+                                    'content' => '',
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (1 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'img' => 'gallery/Gallery_01_Retina.jpg',
+                                        'gallery' => $modx->toJson($gallery)
+                                    ),
                                 ),
                             )
                         ),
@@ -2993,14 +3912,14 @@ if ($object && $object->xpdo) {
                                         'article-blog1:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 1',
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog1',
-                                            'uri' => 'bloglist/blog/article-blog1',
+                                            'alias' => 'a-disco-ball',
+                                            'uri' => 'bloglist/blog/a-disco-ball',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (1 * 60),
@@ -3018,20 +3937,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/gal-1.jpg',
+                                                'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog2:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 2',
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog2',
-                                            'uri' => 'bloglist/blog/article-blog2',
+                                            'alias' => 'sound-card-mixer',
+                                            'uri' => 'bloglist/blog/sound-card-mixer',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (2 * 60),
@@ -3055,14 +3974,14 @@ if ($object && $object->xpdo) {
                                         'article-blog3:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 3',
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog3',
-                                            'uri' => 'bloglist/blog/article-blog3',
+                                            'alias' => 'a-turntable-is-a-musical',
+                                            'uri' => 'bloglist/blog/a-turntable-is-a-musical',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (3 * 60),
@@ -3080,20 +3999,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/top-ev3.jpg',
+                                                'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog4:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 4',
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog4',
-                                            'uri' => 'bloglist/blog/article-blog4',
+                                            'alias' => 'a-disco-ball-4',
+                                            'uri' => 'bloglist/blog/a-disco-ball-4',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (4 * 60),
@@ -3111,20 +4030,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/gal-1.jpg',
+                                                'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 5',
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => getIntroDemo($content_article_blog6),
-                                            'alias' => 'article-blog5',
-                                            'uri' => 'bloglist/blog/article-blog5',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-5',
+                                            'uri' => 'bloglist/blog/a-disco-ball-5',
                                             'link_attributes' => '',
-                                            'content' => $content_article_blog6,
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (5 * 60),
@@ -3142,20 +4061,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => '',
+                                                'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog6:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 6',
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => getIntroDemo($content_article_blog6),
-                                            'alias' => 'article-blog6',
-                                            'uri' => 'bloglist/blog/article-blog6',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-6',
+                                            'uri' => 'bloglist/blog/sound-card-mixer-6',
                                             'link_attributes' => '',
-                                            'content' => $content_article_blog6,
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (6 * 60),
@@ -3173,9 +4092,443 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/top-ev3.jpg',
+                                                'img' => '',
                                             ),
-                                        )
+                                        ),
+                                        'article-blog7:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-7',
+                                            'uri' => 'bloglist/blog/a-turntable-is-a-musical-7',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (3 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog8:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-8',
+                                            'uri' => 'bloglist/blog/a-disco-ball-8',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (8 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog9:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-9',
+                                            'uri' => 'bloglist/blog/a-disco-ball-9',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (9 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog10:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-10',
+                                            'uri' => 'bloglist/blog/sound-card-mixer-10',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (10 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => '',
+                                            ),
+                                        ),
+                                        'article-blog11:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-11',
+                                            'uri' => 'bloglist/blog/a-turntable-is-a-musical-11',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (11 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog12:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-12',
+                                            'uri' => 'bloglist/blog/a-disco-ball-12',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (4 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog13:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-13',
+                                            'uri' => 'bloglist/blog/a-disco-ball-13',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (13 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog14:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-14',
+                                            'uri' => 'bloglist/blog/sound-card-mixer-14',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (14 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => '',
+                                            ),
+                                        ),
+                                        'article-blog15:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-15',
+                                            'uri' => 'bloglist/blog/a-turntable-is-a-musical-15',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (15 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog16:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-16',
+                                            'uri' => 'bloglist/blog/a-disco-ball-16',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (16 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog17:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-17',
+                                            'uri' => 'bloglist/blog/a-disco-ball-17',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (17 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog18:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-18',
+                                            'uri' => 'bloglist/blog/sound-card-mixer-18',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (18 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => '',
+                                            ),
+                                        ),
+                                        'article-blog19:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-19',
+                                            'uri' => 'bloglist/blog/a-turntable-is-a-musical-19',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (19 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog20:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-20',
+                                            'uri' => 'bloglist/blog/a-disco-ball-20',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (20 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
                                     )
                                 ),
                                 'blog2:TicketsSection' => array(
@@ -3209,14 +4562,14 @@ if ($object && $object->xpdo) {
                                         'article-blog1:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 1',
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog1',
-                                            'uri' => 'bloglist/blog2/article-blog1',
+                                            'alias' => 'a-disco-ball',
+                                            'uri' => 'bloglist/blog2/a-disco-ball',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (1 * 60),
@@ -3234,20 +4587,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/gal-1.jpg',
+                                                'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog2:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 2',
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog2',
-                                            'uri' => 'bloglist/blog2/article-blog2',
+                                            'alias' => 'sound-card-mixer',
+                                            'uri' => 'bloglist/blog2/sound-card-mixer',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (2 * 60),
@@ -3271,14 +4624,14 @@ if ($object && $object->xpdo) {
                                         'article-blog3:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 3',
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog3',
-                                            'uri' => 'bloglist/blog2/article-blog3',
+                                            'alias' => 'a-turntable-is-a-musical',
+                                            'uri' => 'bloglist/blog2/a-turntable-is-a-musical',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (3 * 60),
@@ -3296,20 +4649,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/top-ev3.jpg',
+                                                'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog4:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 4',
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
-                                            'alias' => 'article-blog4',
-                                            'uri' => 'bloglist/blog2/article-blog4',
+                                            'alias' => 'a-disco-ball-4',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-4',
                                             'link_attributes' => '',
-                                            'content' => '',
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (4 * 60),
@@ -3327,20 +4680,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/gal-1.jpg',
+                                                'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 5',
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => getIntroDemo($content_article_blog6),
-                                            'alias' => 'article-blog5',
-                                            'uri' => 'bloglist/blog2/article-blog5',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-5',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-5',
                                             'link_attributes' => '',
-                                            'content' => $content_article_blog6,
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (5 * 60),
@@ -3358,20 +4711,20 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => '',
+                                                'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog6:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_blogItem->get('id'),
-                                            'pagetitle' => 'Article Blog 6',
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => getIntroDemo($content_article_blog6),
-                                            'alias' => 'article-blog6',
-                                            'uri' => 'bloglist/blog2/article-blog6',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-6',
+                                            'uri' => 'bloglist/blog2/sound-card-mixer-6',
                                             'link_attributes' => '',
-                                            'content' => $content_article_blog6,
+                                            'content' => $content_text,
                                             'isfolder' => false,
                                             'published' => true,
                                             'publishedon' => time() + (6 * 60),
@@ -3389,10 +4742,565 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'blog/top-ev3.jpg',
+                                                'img' => '',
                                             ),
-                                        )
+                                        ),
+                                        'article-blog7:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-7',
+                                            'uri' => 'bloglist/blog2/a-turntable-is-a-musical-7',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (3 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog8:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-8',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-8',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (8 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog9:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-9',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-9',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (9 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog10:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-10',
+                                            'uri' => 'bloglist/blog2/sound-card-mixer-10',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (10 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => '',
+                                            ),
+                                        ),
+                                        'article-blog11:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-11',
+                                            'uri' => 'bloglist/blog2/a-turntable-is-a-musical-11',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (11 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog12:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-12',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-12',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (4 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog13:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-13',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-13',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (13 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog14:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-14',
+                                            'uri' => 'bloglist/blog2/sound-card-mixer-14',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (14 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => '',
+                                            ),
+                                        ),
+                                        'article-blog15:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-15',
+                                            'uri' => 'bloglist/blog2/a-turntable-is-a-musical-15',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (15 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog16:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-16',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-16',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (16 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog17:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-17',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-17',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (17 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog18:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'sound-card-mixer-18',
+                                            'uri' => 'bloglist/blog2/sound-card-mixer-18',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (18 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => '',
+                                            ),
+                                        ),
+                                        'article-blog19:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-turntable-is-a-musical-19',
+                                            'uri' => 'bloglist/blog2/a-turntable-is-a-musical-19',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (19 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                            ),
+                                        ),
+                                        'article-blog20:Ticket' => array(
+                                            'class_key' => 'Ticket',
+                                            'template' => $tpl_blogItem->get('id'),
+                                            'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
+                                            'longtitle' => '',
+                                            'description' => '',
+                                            'introtext' => '',
+                                            'alias' => 'a-disco-ball-20',
+                                            'uri' => 'bloglist/blog2/a-disco-ball-20',
+                                            'link_attributes' => '',
+                                            'content' => $content_text,
+                                            'isfolder' => false,
+                                            'published' => true,
+                                            'publishedon' => time() + (20 * 60),
+                                            'hidemenu' => true,
+                                            'cacheable' => true,
+                                            'searchable' => true,
+                                            'richtext' => true,
+                                            'uri_override' => true,
+                                            'context_key' => 'web',
+                                            'menutitle' => '',
+                                            'show_in_tree' => 0,
+                                            'syncsite' => 0,
+                                            'properties' => array(
+                                                'disable_jevix' => true,
+                                                'process_tags' => false,
+                                            ),
+                                            'tvs' => array(
+                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                            ),
+                                        ),
                                     )
+                                ),
+                                'blogItem1' => array(
+                                    'template' => $tpl_blogItem->get('id'),
+                                    'pagetitle' => 'Open Blog (With image)',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'blog-item1',
+                                    'uri' => 'bloglist/blog-item1',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (1 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'img' => 'blog/Blog_01_Retina.jpg',
+                                    ),
+                                ),
+                                'blogItem2' => array(
+                                    'template' => $tpl_blogItemWithoutImage->get('id'),
+                                    'pagetitle' => 'Open Blog (No image)',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'blog-item2',
+                                    'uri' => 'bloglist/blog-item2',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (2 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'img' => '',
+                                    ),
+                                ),
+                                'blogItem3' => array(
+                                    'template' => $tpl_blogItemAside->get('id'),
+                                    'pagetitle' => 'Open Blog Aside (With image)',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'blog-item3',
+                                    'uri' => 'bloglist/blog-item3',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (3 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'img' => 'blog/Blog_02_Retina.jpg',
+                                    ),
+                                ),
+                                'blogItem4' => array(
+                                    'class_key' => 'Ticket',
+                                    'template' => $tpl_blogItemAsideWithoutImage->get('id'),
+                                    'pagetitle' => 'Open Blog Aside (No image)',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'blog-item4',
+                                    'uri' => 'bloglist/blog-item4',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (4 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'img' => 'blog/Blog_03_Retina.jpg',
+                                    ),
                                 ),
                             )
                         ),
@@ -3796,12 +5704,12 @@ if ($object && $object->xpdo) {
                                 'about' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_text->get('id'),
-                                    'pagetitle' => 'About template',
+                                    'pagetitle' => 'Features',
                                     'longtitle' => '',
                                     'description' => '',
                                     'introtext' => '',
-                                    'alias' => 'about',
-                                    'uri' => 'about',
+                                    'alias' => 'features',
+                                    'uri' => 'features',
                                     'link_attributes' => '',
                                     'content' => $content_about_template,
                                     'isfolder' => false,

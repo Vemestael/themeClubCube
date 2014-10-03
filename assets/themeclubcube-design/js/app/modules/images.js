@@ -9,7 +9,7 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
 
         // prop
         imgDataSrc2x: 'data-src2x',
-        imgDataSrc: 'data-imgsrc',
+        imgDataSrc: 'data-src',
         simulatedDelay: 2,
         loaderClass: '.loading',
 
@@ -115,6 +115,7 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
                         $(img).attr('src', $this.src);
                         //Remove the attr so that imgsrc does not evaluate as true for any image that's already been src replaced
                         $(img).attr(_properties.imgDataSrc, '');
+                        $(img).attr(_properties.imgDataSrc2x, '');
                     }, _properties.simulatedDelay)
                 },
                 all: function(){

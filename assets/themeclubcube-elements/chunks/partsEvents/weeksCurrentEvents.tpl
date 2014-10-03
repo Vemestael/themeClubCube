@@ -3,7 +3,7 @@
 		[[+weekNum:isempty=`[[%lf_events_all]]`]]
 		[[+weekNum:is=`1`:then=`[[%lf_events_this_week]]`]]
 		[[+weekNum:is=`2`:then=`[[%lf_events_next_week]]`]]
-		[[+weekNum:gt=`2`:then=`[[+weekNum]] [[%weeks later]]`]]
+		[[+weekNum:gt=`2`:then=`[[+weekNum]] [[%lf_events_later_week]]`]]
 	</div>
 	<div class="dropdown-text-dates">[[+weekNum:notempty=`[[+startDate:date=`%d`]] [[%lf_month.[[+startDate:date=`%m`]]]] ... [[+endDate:date=`%d`]] [[%lf_month.[[+endDate:date=`%m`]]]]`]]</div>
 </div>

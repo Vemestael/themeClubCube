@@ -18,9 +18,9 @@
 	</div>
 	<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="ticket-event-img img-contain">
         <img class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
-             data-imgsrc="<1200:[[+img:phpthumbof=`w=250&h=180&zc=1`]],
-				>1200:[[+img:phpthumbof=`w=360&h=180&zc=1`]]"
-             src="[[-+img:pthumb=`w=359&h=179&zc=c&f=jpg`]]">
+             data-src=">0:[[+img:phpthumbof=`w=360&h=190&zc=1`]]"
+             data-src2x=">0:[[+img:phpthumbof=`w=720&h=380&zc=1`]]"
+             src="">
 		<div class="ticket-triangle-top"></div>
 		<div class="ticket-triangle-bt"></div>
 		<div class="rombs"></div>

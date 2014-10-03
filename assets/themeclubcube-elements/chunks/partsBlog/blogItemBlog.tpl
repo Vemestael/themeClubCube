@@ -11,10 +11,12 @@
 		<div class="blog-img">
 			<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">
                 <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-responsive img-preload"
-                     data-imgsrc="<479:[[+img:phpthumbof=`w=450&h=253&zc=1`]],
-						<767:[[+img:phpthumbof=`w=354&h=199&zc=1`]],
-						<899:[[+img:phpthumbof=`w=220&h=124&zc=1`]],
-						>1200:[[+img:phpthumbof=`w=360&h=203&zc=1`]]"
+                     data-src="<768:[[+img:phpthumbof=`w=360&h=202&zc=1`]],
+						>767:[[+img:phpthumbof=`w=325&h=182&zc=1`]],
+						>1199:[[+img:phpthumbof=`w=430&h=243&zc=1`]]"
+                     data-src2x="<768:[[+img:phpthumbof=`w=720&h=404&zc=1`]],
+						>767:[[+img:phpthumbof=`w=650&h=364&zc=1`]],
+                        >1199:[[+img:phpthumbof=`w=860&h=486&zc=1`]]"
                      src="[[-+img:pthumb=`w=360&h=172&zc=c&f=jpg`]]">
 			</a>
 		</div>
