@@ -1,8 +1,8 @@
 [[+idx:mod=`5`:is=`0`:then=`</div><div class="clear-mard clearfix visible-lg"></div><div class="row">`:else=``]]
 <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6 gall-item">
 	<div class="img-gal">
-		<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-overfl">
-			<img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-responsive img-preload"
+		<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="img-overfl">
+			<img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="img-responsive img-preload"
                  data-src="<768:[[+img:phpthumbof=`w=360&h=202&zc=1`]],
 					>767:[[+img:phpthumbof=`w=485&h=272&zc=1`]],
 					>1199:[[+img:phpthumbof=`w=360&h=202&zc=1`]]"
@@ -16,7 +16,7 @@
 	</div>
 	<div class="item-title">
 		<div class="item-aside">
-			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
+			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
 			<time class="top-event-place">[[+publishedon:dateAgo]]</time>
 		</div>
 		[[getImageList?

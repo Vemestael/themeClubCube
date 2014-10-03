@@ -2,7 +2,7 @@
 <div class="col-md-4 col-sm-4">
 	<article class="gallery-default-item">
 		<div class="img-cont">
-            <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="img-h-responsive img-preload"
+            <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="img-h-responsive img-preload"
                  data-src="<768:[[+img:phpthumbof=`w=330&h=415&zc=1`]],
 					>767:[[+img:phpthumbof=`w=295&h=370&zc=1`]],
 					>1199:[[+img:phpthumbof=`w=360&h=452&zc=1`]]"
@@ -12,7 +12,7 @@
                  src="">
 		</div>
 		<div class="top-gallery-title">
-			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h3>
+			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h3>
 			<hr>
 			<time class="gallery-default-dates">[[+publishedon:dateAgo]]</time>
 		</div>
@@ -30,6 +30,6 @@
 		</div>
 		<div class="bord-fr"></div>
 		<div class="bord-sc"></div>
-		<a class="top-href" href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></a>
+		<a class="top-href" href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"></a>
 	</article>
 </div>

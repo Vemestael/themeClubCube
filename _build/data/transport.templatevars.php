@@ -63,10 +63,7 @@ $tmp = array(
         'caption' => 'Top event',
         'description' => 'if checked, event show in top event on main page',
         'type' => 'checkbox',
-        /**
-         * TODO не работает параметр, проверить
-         */
-        'els' => 'On==1',
+        'elements' => 'On==1',
         'default_text' => '0',
         'display' => 'default',
     ),
@@ -75,7 +72,7 @@ $tmp = array(
         'caption' => 'Promo event',
         'description' => 'if checked, event show in big slider on main page',
         'type' => 'checkbox',
-        'els' => 'On==1',
+        'elements' => 'On==1',
         'default_text' => '0',
         'display' => 'default',
     ),

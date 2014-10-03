@@ -3,11 +3,11 @@
 	<article class="blog-item-def">
 		<div class="item-title">
 			<div class="item-aside">
-				<h2><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle]]</a></h2>
+				<h2><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle]]</a></h2>
 				<time class="top-event-place">[[+publishedon:dateAgo]]</time>
 			</div>
 		</div>
 		<p>[[+introtext:html]]</p>
-		<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="read-more">[[%lf_blog_item_more:htmlent]]</a>
+		<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="read-more">[[%lf_blog_item_more:htmlent]]</a>
 	</article>
 </div>

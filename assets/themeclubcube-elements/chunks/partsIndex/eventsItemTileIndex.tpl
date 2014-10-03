@@ -1,6 +1,6 @@
 <div class="">
 	<article class="top-event">
-		<img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
+		<img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"
              data-src="<768:[[+img:phpthumbof=`w=330&h=330&zc=1`]],
                 <1200:[[+img:phpthumbof=`w=345&h=345&zc=1`]],
 				>1199:[[+img:phpthumbof=`w=360&h=360&zc=1`]]"
@@ -15,7 +15,7 @@
 				<div class="week-day">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
 			</div>
 			<div class="item-title">
-				<h3><a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
+				<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
 			</div>
 			<div class="ticket-triangle-left"></div>
 			<div class="ticket-triangle-right"></div>
@@ -53,6 +53,6 @@
 				</div>
 			</div>
 		</div>
-        <a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event__link"></a>
+        <a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event__link"></a>
 	</article>
 </div>

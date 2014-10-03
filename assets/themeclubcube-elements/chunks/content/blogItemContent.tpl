@@ -2,7 +2,7 @@
     [[*img:notempty=`
         <img src="[[*img:pthumb=`w=1900&h=306&zc=c&f=jpg&fltr[]=blur|55`]]" class="img-responsive img-preload"
              alt="[[*pagetitle:htmlent]]"
-             title="[[*longtitle:default=`[[*pagetitle:htmlent]]`]]">
+             title="[[*longtitle:htmlent:default=`[[*pagetitle:htmlent]]`]]">
         <div class="pattern"></div>
     `]]
     <div class="container z-top">

@@ -1,6 +1,6 @@
 <div class="container-fluidss">
 	<div class="s-panel">
-		<img class="img-preload" src="[[+promoImg]]" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">
+		<img class="img-preload" src="[[+promoImg]]" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">
 	</div>
 	<div class="pattern"></div>
 	<div class="rowss">
@@ -35,7 +35,7 @@
 				]]
 			</ul>
 			<hr>
-			<a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="get-in col-lg-offset-7">
+			<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="get-in col-lg-offset-7">
 				<span class="price">
 					<span class="trs">[[%lf_events_price:htmlent]]</span>&nbsp;[[+price:htmlent]]
 				</span>
@@ -43,8 +43,8 @@
 			</a>
 			<div class="socials col-sm-12 col-md-12 col-md-offset-0 col-lg-3">
 				<div class="share">[[%lf_share]]</div>
-                <div class="fb-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>
-                <div class="tw-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"></div>
+                <div class="fb-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"></div>
+                <div class="tw-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"></div>
 			</div>
 		</div>
 	</div>

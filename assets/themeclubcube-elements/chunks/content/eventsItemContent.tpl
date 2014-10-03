@@ -1,6 +1,6 @@
 <section class="fullwidth-bg event-view ">
 	[[*img:notempty=`
-		<img src="[[*img:pthumb=`w=1900&h=338&zc=c&f=jpg&fltr[]=blur|55`]]" class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">
+		<img src="[[*img:pthumb=`w=1900&h=338&zc=c&f=jpg&fltr[]=blur|55`]]" class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">
 	`]]
 	<div class="pattern"></div>
 	<div class="container z-top">
@@ -56,8 +56,8 @@
 						<div class="empt">
 							<div class="socials brown-sc pull-right">
 								<div class="share">[[%lf_share]]</div>
-                                <div class="fb-soc ver2" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:default=`[[*pagetitle:htmlent]]`]]"></div>
-                                <div class="tw-soc ver2" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:default=`[[*pagetitle:htmlent]]`]]"></div>
+                                <div class="fb-soc ver2" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:htmlent:default=`[[*pagetitle:htmlent]]`]]"></div>
+                                <div class="tw-soc ver2" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:htmlent:default=`[[*pagetitle:htmlent]]`]]"></div>
 							</div>
 						</div>
 					</div>

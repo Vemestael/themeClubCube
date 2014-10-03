@@ -33,8 +33,8 @@
 			</div>
 			<div class="socials pull-right">
 				<div class="share">[[%lf_share]]</div>
-                <div class="fb-soc ver1" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:default=`[[*pagetitle:htmlent]]`]]"></div>
-                <div class="tw-soc ver1" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:default=`[[*pagetitle:htmlent]]`]]"></div>
+                <div class="fb-soc ver1" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:htmlent:default=`[[*pagetitle:htmlent]]`]]"></div>
+                <div class="tw-soc ver1" data-url="[[~[[*id]]? &scheme=`full`]]" data-text="[[*longtitle:htmlent:default=`[[*pagetitle:htmlent]]`]]"></div>
 			</div>
 		</div>
 	</div>

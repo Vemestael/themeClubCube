@@ -1,11 +1,14 @@
 [[+idx:mod=`3`:is=`0`:then=`</div><div class="row">`:else=``]]
 <div class="col-sm-6 col-md-6">
     <article class="top-event">
-        <img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]"
-             data-imgsrc="<479:[[+img:phpthumbof=`w=450&h=360&zc=1`]],
-				<899:[[+img:phpthumbof=`w=355&h=360&zc=1`]],
-				>1200:[[+img:phpthumbof=`w=360&h=360&zc=1`]]"
-             src="[[-+img:pthumb=`w=394&h=398&zc=c&f=jpg`]]">
+        <img class="img-h-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"
+             data-src="<768:[[+img:phpthumbof=`w=330&h=330&zc=1`]],
+                <1200:[[+img:phpthumbof=`w=345&h=345&zc=1`]],
+				>1199:[[+img:phpthumbof=`w=360&h=360&zc=1`]]"
+             data-src2x="<768:[[+img:phpthumbof=`w=660&h=660&zc=1`]],
+                <1200:[[+img:phpthumbof=`w=690&h=690&zc=1`]],
+				>1199:[[+img:phpthumbof=`w=720&h=720&zc=1`]]"
+             src="">
         <div class="top-event-descr">
             <div class="date-event">
                 <div class="month">[[%lf_month.[[+timeStart:strtotime:date=`%m`]]]]</div>
@@ -13,7 +16,7 @@
                 <div class="week-day">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
             </div>
             <div class="item-title">
-                <a class="top-event-title" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a>
+                <a class="top-event-title" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a>
             </div>
             <div class="ticket-triangle-left"></div>
             <div class="ticket-triangle-right"></div>
@@ -51,6 +54,6 @@
                 </div>
             </div>
         </div>
-        <a href="[[~[[+id]]]]" title="[[+longtitle:default=`[[+pagetitle:htmlent]]`]]" class="top-event__link"></a>
+        <a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event__link"></a>
     </article>
 </div>
