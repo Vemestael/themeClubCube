@@ -43,7 +43,6 @@ appMakeBeCool.gateway.addClass('TopEventsSlider', function(properties, $, $windo
                 if (_globals.windowWidth > 479) {
                     _globals.slider.slick({
                         slidesToShow: 3,
-                        arrows: false,
                         easing: 'easeInExpo',
                         draggable: false,
                         speed: 900,
@@ -56,7 +55,6 @@ appMakeBeCool.gateway.addClass('TopEventsSlider', function(properties, $, $windo
                                 slidesToShow: 3,
                                 slidesToScroll: 3,
                                 infinite: false,
-                                arrows: false,
                                 dots: false
                             }
                         }, {
@@ -65,7 +63,6 @@ appMakeBeCool.gateway.addClass('TopEventsSlider', function(properties, $, $windo
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
                                 infinite: false,
-                                arrows: false,
                                 dots: false
                             }
                         }, {

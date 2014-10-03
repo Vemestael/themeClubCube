@@ -62,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', end
 .welcome {background: #404040;}/*Orange*/
 .welcome p {color: #fff;}
 .welcome-inner .corner-welcome {border-left: 30px solid #404040;}/*Orange*/
-#subscribe-btn {background: #e0b13b;}/*Red*/
+.subscribe-here .subscribe button {background: #e0b13b;}/*Red*/
 footer a {color:#404040;}/*Orange*/
 footer a:hover {color: #404040;}/*Orange*/
 .social-icons li a:hover {background: #404040;}/*Orange*/

@@ -349,22 +349,69 @@ $(function() {
             var $sliderDefault = $('.slider-default');
             var headerParentHeight = $headerParent.height();
 
-            if ($sliderDefault.length) {
-                // if ($(window).scrollTop() >= $sliderDefault.height()) {
-                if ($(window).scrollTop() > $header.height()) {
-                    $header.addClass('header-top');
+            if ($('.slider').length || $('.slider-default').length) {
+                if (($(window).scrollTop() > $('.slider').height()) && (!$header.hasClass('header-top'))) {
+                    $header.addClass('header-top active');
+                    setTimeout(function() {
+                        $header.removeClass('active');
+                    }, 2000);
+                    ;
+                    console.log('Init Slider page added header-top class');
+                    $('body').css('position','inherit');
+                } else {
+                    console.log('Init Slider page header-top class is exists');
                 };
-            } else if ($(window).scrollTop() >= headerParentHeight) {
-                $header.addClass('header-top');
+            } else {
+                if (!$header.hasClass('header-top')) {
+                    $header.addClass('header-top active');
+                    setTimeout(function() {
+                        $header.removeClass('active');
+                    }, 2000);
+                    console.log('Init nonSlider page added header-top class');
+                } else {
+                    console.log('Init nonSlider page header-top class exists');
+                };
             };
+            // if ($sliderDefault.length) {
+            //     // if ($(window).scrollTop() >= $sliderDefault.height()) {
+            //     if ($(window).scrollTop() > $header.height()) {
+            //         $header.addClass('header-top');
+            //     };
+            // } else if ($(window).scrollTop() >= headerParentHeight) {
+            //     $header.addClass('header-top');
+            // };
             $(document).scroll(function() {
-                if ($sliderDefault.length) {
-                    // if ($(window).scrollTop() >= $sliderDefault.height()) {
-                    if ($(window).scrollTop() > $header.height()) {
+                // if ($sliderDefault.length) {
+                //     // if ($(window).scrollTop() >= $sliderDefault.height()) {
+                //     if (($(window).scrollTop() > $header.height()) && ($header.hasClass('header-top') !== true)) {
+                //         $header.addClass('header-top active');
+                //     } else {
+                //         $header.removeClass('header-top active');
+                //     }
+                // };
+                if ($('.slider').length || $('.slider-default').length) {
+                    if (($(window).scrollTop() > $('.slider').height()) && (!$header.hasClass('header-top'))) {
                         $header.addClass('header-top active');
-                    } else {
+                        setTimeout(function() {
+                            $header.removeClass('active');
+                        }, 2000);
+                        $('body').css('position','inherit');
+                        console.log('Slider page added header-top class');
+                    } else if (($(window).scrollTop() <= $header.height()) && ($header.hasClass('header-top'))) {
                         $header.removeClass('header-top active');
-                    }
+                        console.log('Slider page removed header-top class');
+                        $('body').css('position','relative');
+                    };
+                } else {
+                    if (!$header.hasClass('header-top')) {
+                        $header.addClass('header-top active');
+                        setTimeout(function() {
+                            $header.removeClass('active');
+                        }, 2000);
+                        console.log('Non slider page added header-top class');
+                    } else {
+                        console.log('Non slider page header-top class exists');
+                    };
                 };
             });
         };
@@ -650,6 +697,7 @@ $(function() {
             autoplay: false,
             autoplaySpeed: 4200,
             draggable: false,
+            infinite: false,
             speed: 300,
             vertical: true
         });

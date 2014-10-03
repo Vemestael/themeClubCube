@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/yellow scheme.css">
         <link rel="stylesheet" href="css/hurricane color scheme.css">
         <link rel="stylesheet" href="css/mint scheme.css">
+        <link rel="stylesheet" href="css/max-hurricane scheme.css">
+        <link rel="stylesheet" href="css/turbo color scheme.css">
         <script src="js/jquery/jquery-1.11.0.min.js"></script>
         <script src="js/otherlibs/bootstrap.js"></script>
         <script src="js/jquery/plugins/slick/slick.min.js"></script>
@@ -215,10 +217,10 @@
                                     <tbody>
                                         <tr>
                                             <td>Button 1</td>
-                                            <td> <a href="" class="read-more off">Read more</a></td>
-                                            <td> <a href="" class="read-more">Read more</a></td>
-                                            <td> <a href="" class="read-more hover">Read more</a></td>
-                                            <td> <a href="" class="read-more pressed">Read more</a></td>
+                                            <td> <button class="read-more off">Read more</button></td>
+                                            <td> <button class="read-more">Read more</button></td>
+                                            <td> <button class="read-more hover">Read more</button></td>
+                                            <td> <button class="read-more pressed">Read more</button></td>
                                         </tr>
                                         <tr>
                                             <td>Button 2</td>
@@ -594,11 +596,11 @@
                                             <td>Radio</td>
                                             <td>
                                                 <div class="radio-b">
-                                                    <input class="off-rb" type="radio" name="" id="radio1" >
+                                                    <input class="off-rb" type="radio" name="" id="radio1" disabled>
                                                     <label class="off-lb rb-lb" for="radio1">Radio 1</label>
-                                                    <input class="off-rb" type="radio" name="" id="radio12" >
+                                                    <input class="off-rb" type="radio" name="" id="radio12" disabled>
                                                     <label class="off-lb rb-lb" for="radio12">Radio 2</label>
-                                                    <input class="off-rb" type="radio" name="" id="radio2" checked>
+                                                    <input class="off-rb" type="radio" name="" id="radio2" checked disabled>
                                                     <label class="off-lb rb-lb" for="radio2">Radio 3</label>
                                                 </div>
                                             </td>
@@ -637,9 +639,9 @@
                                             <td>Checkbox</td>
                                             <td>
                                                 <div class="checkbox-b">
-                                                    <input class="off-chb" type="checkbox" name="" id="checkbox1" checked>
+                                                    <input class="off-chb" type="checkbox" name="" id="checkbox1" checked disabled>
                                                     <label class="chb-lb off-lb" for="checkbox1">Checkbox 1</label>
-                                                    <input class="off-chb" type="checkbox" name="" id="checkbox2" checked>
+                                                    <input class="off-chb" type="checkbox" name="" id="checkbox2" checked disabled>
                                                     <label class="chb-lb off-lb" for="checkbox2">Checkbox 2</label>
                                                 </div>
                                             </td>
@@ -824,7 +826,7 @@
                     </main>
                     <aside class="col-lg-4 col-md-12 col-sm-12 items-aside">
                         <div class="row">
-                            <div class="col-sm-6 col-md-12 col-lg-12">
+                            <div class="col-xm-6 col-sm-6 col-md-6 col-lg-12">
                                 <div class="event-dates input-append date">
                                     <div class="ev-date-left date-no-border">
                                         <div class="ttl">this post Event</div>
@@ -877,7 +879,7 @@
                                     <a href="#" class="top-event__link"></a>
                                 </article>
                             </div>
-                            <div class="col-sm-6 col-md-12 col-lg-12">
+                            <div class="col-xm-6 col-sm-6 col-md-6 col-lg-12">
                                 <div class="event-dates input-append date">
                                     <div class="ev-date-left date-no-border">
                                         <div class="ttl">More in blog</div>
@@ -1018,8 +1020,7 @@
         <script src="js/loader.js"></script>
         <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
         <script src="js/html.js"></script>
-        <script src="js/jquery/plugins/topEventsAnimate.js"></script>
-        <script src="js/jquery/plugins/tinyAnimations.js"></script>
+        <script src="js/jquery/plugins/topEventsAnimate.js"></script>    
         <script>
         $(document).ready(function(){
             var events = new EventAnimate($('.top-event'));
@@ -1027,10 +1028,10 @@
             $('.tooltips-show').tooltip({container: 'body', placement: 'top', trigger: 'hover'});
             // $('.has-error .form-control.tooltips-show').tooltip({container: 'body', placement: 'top',trigger: 'manual'});
             // $('.has-error .form-control.tooltips-show').tooltip('show');
-            tinyAnimations.buttonSlider($('.button-slider'));
-            tinyAnimations.buttonArrow($('.button-arrow-left'));
-            tinyAnimations.radioButton($('.rb-lb'));
-            tinyAnimations.checkboxButton($('.chb-lb'));
+            // tinyAnimations.buttonSlider($('.button-slider'));
+            // tinyAnimations.buttonArrow($('.button-arrow-left'));<script src="js/jquery/plugins/tinyAnimations.js">
+            // tinyAnimations.radioButton($('.rb-lb'));
+            // tinyAnimations.checkboxButton($('.chb-lb'));
         });
         </script>
     </body>

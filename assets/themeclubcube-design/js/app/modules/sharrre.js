@@ -81,7 +81,7 @@ appMakeBeCool.gateway.addClass('Sharrre', function(properties, $, $window, $docu
                 text: $(this).data('text') != 'undefined' ? $(this).data('text') : '',
                 enableHover: false,
                 enableTracking: true,
-                template: '<i class="tw-share-brown"></i><span class="numbers"><span class="triangle"></span><span class="tw-numbers">{total}</span></span>',
+                template: '<i class="fa fa-twitter"></i><span class="numbers"><span class="triangle"></span><span class="tw-numbers">{total}</span></span>',
                 click: function(api, options){
                     api.simulateClick();
                     api.openPopup('twitter');
@@ -95,7 +95,7 @@ appMakeBeCool.gateway.addClass('Sharrre', function(properties, $, $window, $docu
                 text: $(this).data('text') != 'undefined' ? $(this).data('text') : '',
                 enableHover: false,
                 enableTracking: true,
-                template: '<i class="fb-share-brown"></i><span class="numbers"><span class="triangle"></span><span class="fb-numbers">{total}</span></span>',
+                template: '<i class="fa fa-facebook"></i><span class="numbers"><span class="triangle"></span><span class="fb-numbers">{total}</span></span>',
                 click: function(api, options){
                     api.simulateClick();
                     api.openPopup('facebook');
