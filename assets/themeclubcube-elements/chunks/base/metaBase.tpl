@@ -67,6 +67,7 @@
             &cssSources=`
 				[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick-custom.css
 				,[[++themeclubcube.design_url]]css/style.min.css
+                ,[[++themeclubcube.design_url]]css/[[++themeclubcube.color_scheme]]-color.css
             `
         ]]
 		<script>

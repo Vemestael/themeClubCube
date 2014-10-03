@@ -32,6 +32,7 @@
 					&tvname=`lineUp`
 					&docid=`[[+id]]`
 					&outputSeparator=``
+                    &limit=`5`
 				]]
 			</ul>
 			<hr>

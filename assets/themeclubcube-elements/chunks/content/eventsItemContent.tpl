@@ -10,7 +10,7 @@
 			</div>
 			<div class="col-md-4 col-sm-4"><div class="event-about view-evt">
 					<div class="date">
-						<div class="month">[[%lf_month.[[*timeStart:strtotime:date=`%m`]]]]</div>
+						<div class="month">[[%lf_month_short.[[*timeStart:strtotime:date=`%m`]]]]</div>
 						<div class="day">[[*timeStart:strtotime:date=`%d`]]</div>
 						<div class="year">[[%lf_week.[[*timeStart:strtotime:date=`%w`]]]]</div>
 					</div>
@@ -45,12 +45,12 @@
 									]]
 								</ul>
 							</div>
-							[[-<div class="pull-right col-md-4 col-sm-4 text-right line-up-contacts">
+							<div class="pull-right col-md-4 col-sm-4 text-right line-up-contacts">
 								<ul>
-									<li><i class="letter-img-white"></i><a href="mailto:tickets@cumeclub.com" class="border-bottom">tickets@cumeclub.com</a></li>
-									<li><span class="pull-right"><i class="phone-img-white"></i>(096) 977-60-11</span></li>
+									<li><i class="letter-img-white"></i><a href="mailto:[[%lf_event_email]]" class="border-bottom">[[%lf_event_email]]</a></li>
+									<li><span class="pull-right"><i class="phone-img-white"></i>[[%lf_event_phone]]</span></li>
 								</ul>
-							</div>]]
+							</div>
 						</div>
 						<div class="line-up-arrow"></div>
 						<div class="empt">

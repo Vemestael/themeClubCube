@@ -18,6 +18,8 @@ $_lang['lf_events_later_week'] = 'weeks later';
 $_lang['lf_events_all'] = 'All events';
 $_lang['lf_events_all_sub'] = 'all upcoming events';
 $_lang['lf_events_empty'] = 'There are no events for the selected period';
+$_lang['lf_event_email'] = 'tickets@cubeclub.cube';
+$_lang['lf_event_phone'] = '+0 000 000 000 00';
 
 $_lang['lf_gallery_head'] = 'Gallery';
 $_lang['lf_gallery_more'] = 'More photos';
@@ -69,10 +71,10 @@ $_lang['lf_month_short.10'] = 'Oct';
 $_lang['lf_month_short.11'] = 'Nov';
 $_lang['lf_month_short.12'] = 'Dec';
 
-$_lang['lf_week.0']='Mon';
-$_lang['lf_week.1']='Tue';
-$_lang['lf_week.2']='Wed';
-$_lang['lf_week.3']='Thu';
-$_lang['lf_week.4']='Fri';
-$_lang['lf_week.5']='Sat';
-$_lang['lf_week.6']='Sun';
+$_lang['lf_week.0']='Mo';
+$_lang['lf_week.1']='Tu';
+$_lang['lf_week.2']='We';
+$_lang['lf_week.3']='Th';
+$_lang['lf_week.4']='Fr';
+$_lang['lf_week.5']='Sa';
+$_lang['lf_week.6']='Su';

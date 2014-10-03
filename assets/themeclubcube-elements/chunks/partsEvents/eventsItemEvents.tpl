@@ -1,7 +1,7 @@
 <article class="ticket-event">
 	<div class="ticket-event-date">
 		<div class="date-event">
-			<div class="month">[[%lf_month.[[+timeStart:strtotime:date=`%m`]]]]</div>
+			<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
 			<div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
 			<div class="week-day">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
 		</div>

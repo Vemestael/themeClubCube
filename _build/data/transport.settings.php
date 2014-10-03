@@ -14,6 +14,11 @@ $tmp = array(
         'value' => '{assets_url}'.PKG_NAME_LOWER.'-design/',
         'area' => 'themeclubcube_main',
     ),
+    'color_scheme' => array(
+        'xtype' => 'textfield',
+        'value' => 'dafault',
+        'area' => 'themeclubcube_main',
+    ),
 
     //subscribe
     'unisender_api_key' => array(

@@ -832,87 +832,88 @@ $content_design_elements = '
 ';
 
 $content_about_template = '
+<h2>DESIGN</h2>
+<div class="row">
+    <div class="col-md-4 col-sm-4">
+        <h4>More than 20 unique pages</h4>
+        <p>Each page is provided with at least two display options, feel free to experiment.</p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <h4>Color themes</h4>
+        <p>Theme includes 4 color schemes and manual tuning. Change the template to your taste.</p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <h4>Custom template home page</h4>
+        <p>Each block on the main page has 2 design. You can choose any one you like.</p>
+    </div>
+</div>
+<h2>TEMPLATE</h2>
 <div class="row">
     <div class="col-md-4 col-sm-4">
         <h4>Bootstrap 3</h4>
-        <p>Шаблон реализует все преимущества этого framework.</p>
+        <p>Template provides all the advantages of this framework.</p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h4>Высокая скорость работы</h4>
-        <p>Используется pdoTools для высокой скорости работы. Каждый реализованный snippet использует систему кэширования MODX.</p>
+        <h4>High working speed</h4>
+        <p>PdoTools used for high-speed operation. Each implemented snippet uses a caching system MODX.</p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h4>SEO оптимизация</h4>
-        <p>Грамотная настройка url, логика вывода title и description и много дургих мелких деталей, которые влияют на SEO.</p>
-    </div>
-</div>
-<h2>Дизайн</h2>
-<div class="row">
-    <div class="col-md-4 col-sm-4">
-        <h4>Более 20 шаблонов страниц</h4>
-        <p>Каждая страница обеспечена минимум двумя вариантами отображения, вы можете экспериментировать.</p>
-    </div>
-    <div class="col-md-4 col-sm-4">
-        <h4>Цветовые схемы</h4>
-        <p>Включено 3 цветовых схемы и ручная настройка. Изменяйте шаблон под свой вкус.</p>
-    </div>
-    <div class="col-md-4 col-sm-4">
-        <h4>Настраиваемый шаблон главной страницы</h4>
-        <p>Каждый блок на главной странице имеет 2 дизайна. Вы можете выбирать любой понравившийся.</p>
+        <h4>SEO optimized</h4>
+        <p>Smart setting url, logic output title and description, and many other small details that affect the SEO.</p>
     </div>
 </div>
-<h2>Администрирование</h2>
+<h2>ADMINISTRATION</h2>
 <div class="row">
     <div class="col-md-4 col-sm-4">
-        <h4>Полная поддержка мультиязычности</h4>
-        <p>Все тексты шаблона вставлены через lexicon. Вы можете с легкостью перевести шаблон на нужный язык, не затрагивая код.</p>
+        <h4>Full multilingual support</h4>
+        <p>All texts are inserted through the template lexicon. You can easily transfer the pattern to the desired language, without affecting the code.</p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h4>Включено 3 языка</h4>
-        <p>Мы уже включили 3 языка: английский, украинский и русский.</p>
+        <h4>3 languages included</h4>
+        <p>We have included 3 languages: English, Ukrainian and Russian.</p>
     </div>
      <div class="col-md-4 col-sm-4">
-        <h4>Спецальный пользователь для редактирования контента</h4>
+        <h4>Special user to edit content</h4>
         <p>Если вы не самостоятельно редактируете контент, а вашему помощнику не нужно видеть все возможности MODX, передайте ему спецальный доступ только для контента.</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4 col-sm-4">
-        <h4>Unisender</h4>
-        <p>Мы интегрировали в шаблон подписку для отдного из лучших, удобных и дешевых сервисов email рассылки - <a href="[[~[[getIdResourceForAlias? &alias=`unisender`]]]]" target="_blank">unisender</a>.</p>
+        <h4>If you do not edit your own content and your assistant does not need to see all the features of MODX, give him a special only access the content</h4>
+        <p>We have integrated a template subscription for one of the best, convenient and cheap email mailing services - <a href="[[~[[getIdResourceForAlias? &alias=`unisender`]]]]" target="_blank">unisender</a>.</p>
     </div>
 </div>
-<h2>Разработка</h2>
+<h2>DEVELOPMENT</h2>
 <div class="row">
     <div class="col-md-4 col-sm-4">
-        <h4>Удобен для разработчиков</h4>
-        <p>Мы сами разработчики и поэтому понимаем что нужно нашим коллегам для комфортной работы.</p>
+        <h4>Developers friendly</h4>
+        <p>We are developers and therefore we understand the needs of our colleagues for comfortable operation.</p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h4>Less включен</h4>
-        <p>Мы включили в пакет все less скрипты, чтобы вы могли изменять все что вам угодно и как вам угодно.</p>
+        <h4>SASS included</h4>
+        <p>We have included in the package all Less scripts, that you can change, all you want and how you want.</p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h4>Расширяемый js</h4>
-        <p>Весь js шаблона реализован с помощью модулей. Вы можете легко добавлять, изменять, отключать модули, не переживая что что-то нарушите в другом функционале.</p>
+        <h4>Extendable JS</h4>
+        <p>All template js implemented using modules. You can easily add, modify, disable modules without worrying that something will break in the other functional.</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4 col-sm-4">
-        <h4>Лучшие практики разработки корпоративных сайтов</h4>
-        <p>У нас есть опыт разработки корпоративных сайтов и мы решили собрать и перенести лучшие практики в шаблон.</p>
+        <h4>Best practices in the development of corporate websites</h4>
+        <p>We have development experience of corporate websites, and we decided to collect and transfer the best practices in the template.</p>
     </div>
     <div class="col-md-4 col-sm-4">
-        <h4>Возможность установить демо контент</h4>
-        <p>Вы можете развернуть точно такой же демо сайт без каких-либо усилий.</p>
+        <h4>Deploy the demo content</h4>
+        <p>You can deploy the exact same demo site without any effort.</p>
     </div>
 </div>
 ';
 
 $content_manual = '
-<p>Все настройки шаблона можно найти в "System Setting", раздел "themeclubcube".</p>
-<h2>Настройка главной страницы</h2>
-<p>За настройку главной страницы отвечают 5 параметров:</p>
+<p>All template settings can be found in the "System Setting", section "themeclubcube".</p>
+<h2>Setting up the main page</h2>
+<p>These 5 parameters corresponding for setting up the main page:</p>
 <ul>
 <li>style_events_promo_slider</li>
 <li>style_index_blog_list</li>
@@ -921,40 +922,42 @@ $content_manual = '
 <li>style_index_gallery_list</li>
 </ul>
 <h4>style_events_promo_slider</h4>
-<p>Слайдер имеет 2 состояния: большой, растягивающийся на весь экран и фиксированных размеров. Изменяя эту настройку вы можете выбирать нужный вам вариант.</p>
+<p>Slider has two states: a large (stretched to full screen) and fixed size. Changing this setting, you can select your desired option.</p>
 <h4>style_index_blog_list</h4>
-<p>Статьи в блоге имеют 2 вида дизайна: в виде плиток без изображений и с большими превью, на всю ширину плитки.</p>
+<p>Blog entries are 2 types of design: tiles without images and large previews (full width of the tile).</p>
 <h4>style_index_events_list</h4>
-<p>События могут быть оформлены двумя разными стилями: в виде плиток с картинкой на фоне и в виде билетов.</p>
+<p>Events can be designed in 2 different styles: tiles with a picture in the background and in the form of tickets.</p>
 <h4>style_events_time_format</h4>
-<p>Эта настройка влияет на стиль отображения времени для событий, он может быть в формате am/pm или 24 часа.</p>
+<p>This setting affects the style of the time for the event, it can be in the format of am/pm or 24 hours.</p>
 <h4>style_index_gallery_list</h4>
-<p>Настройка вывода галереи. Галерея может выводиться в виде списка небольших плиток на цветном фоне или в виде слайдера с большими превью.</p>
-<h2>Настройкка Google Analytics</h2>
-<p>Для включения google analitycs необходимо прописать свой Tracking ID в настройке "ga_tracking_id"</p>
-<h2>Настройкка Unisender</h2>
-<p>Ван нужно сделать 3 простых шага:</p>
+<p>Setting the gallery output. The gallery can be displayed as a list of small tiles on a colored background, or as a slider with large thumbs.</p>
+<h2>Google Analytics settings</h2>
+<p>To activate the google analytics need to register your Tracking ID to set up "ga_tracking_id".</p>
+<h2>Color sheme setting</h2>
+<p>Setting "color_scheme". Options: yellow, turbo, max-hurricane, mint</p>
+<h2>Unisender settings</h2>
+<p>You need to do 3 simple steps:</p>
 <ul>
-<li>Зарегестрироваться на <a href="[[~[[getIdResourceForAlias? &alias=`unisender`]]]]" target="_blank">unisender</a></li>
-<li>Получить Api key</li>
-<li>Создать список рассылки и получить его номер</li>
+<li>Register on <a href="[[~[[getIdResourceForAlias? &alias=`unisender`]]]]" target="_blank">unisender</a></li>
+<li>Get Api key</li>
+<li>Create a mailing list and get his number</li>
 </ul>
-<h4>Регистрация</h4>
-<p>Регистрация очень простая, вы с ней без проблем справитесь.</p>
+<h4>Register</h4>
+<p>Registration is very simple, with it you can handle without problems.</p>
 <h4>Api key</h4>
-<p>Авторизируйтесь в unisender и перейдите в информацию о пользователе. Там вы найдете Api key.</p>
+<p>Please login to unisender and go to the information about the user. There you will find Api key.</p>
 <img src="assets/uploads/manual/unisender-api-key.png" alt="unisender api key">
-<p>Добавьте его в настройку "unisender_api_key"</p>
-<h4>Список рассылки</h4>
-<p>Необходимо создать список рассылки и получить его номер.</p>
+<p>Add it to the tune "unisender_api_key"</p>
+<h4>Mailing list</h4>
+<p>It is necessary to create a mailing list and get the number.</p>
 <img src="assets/uploads/manual/unisender-create-list.png" alt="unisender api key">
-<p>Номер списка рассылки можно посмотреть в url</p>
+<p>Number of mailing list can be found in the url</p>
 <img src="assets/uploads/manual/unisender-list-id.png" alt="unisender list id">
-<p>Заносим полученый номер в настройку "unisender_list_ids"</p>
-<h2>Пользователь для редактирования контента</h2>
+<p>Put the resulting number in the setting "unisender_list_ids"</p>
+<h2>User to edit content</h2>
 <p>manager: testmanager</p>
 <hr>
-<p>Все настройки хорошо описаны.</p>
+<p>All settings are well described.</p>
 <img src="assets/uploads/manual/settings.png" alt="theme settings">
 ';
 
@@ -1005,102 +1008,102 @@ $gallery = array(
     array(
         "MIGX_id" => 1,
         'title' => 1,
-        'image' => "gallery/Gallery_01_Retina.jpg"
+        'image' => "gallery/Gallery_01_Original.jpg"
     ),
     array(
         "MIGX_id" => 2,
         'title' => 2,
-        'image' => "gallery/Gallery_02_Retina.jpg"
+        'image' => "gallery/Gallery_02_Original.jpg"
     ),
     array(
         "MIGX_id" => 3,
         'title' => 3,
-        'image' => "gallery/Gallery_03_Retina.jpg"
+        'image' => "gallery/Gallery_03_Original.jpg"
     ),
     array(
         "MIGX_id" => 4,
         'title' => 4,
-        'image' => "gallery/Gallery_04_Retina.jpg"
+        'image' => "gallery/Gallery_04_Original.jpg"
     ),
     array(
         "MIGX_id" => 5,
         'title' => 5,
-        'image' => "gallery/Gallery_05_Retina.jpg"
+        'image' => "gallery/Gallery_05_Original.jpg"
     ),
     array(
         "MIGX_id" => 6,
         'title' => 6,
-        'image' => "gallery/Gallery_06_Retina.jpg"
+        'image' => "gallery/Gallery_06_Original.jpg"
     ),
     array(
         "MIGX_id" => 7,
         'title' => 7,
-        'image' => "gallery/Gallery_07_Retina.jpg"
+        'image' => "gallery/Gallery_07_Original.jpg"
     ),
     array(
         "MIGX_id" => 8,
         'title' => 8,
-        'image' => "gallery/Gallery_08_Retina.jpg"
+        'image' => "gallery/Gallery_08_Original.jpg"
     ),
     array(
         "MIGX_id" => 9,
         'title' => 9,
-        'image' => "gallery/Gallery_09_Retina.jpg"
+        'image' => "gallery/Gallery_09_Original.jpg"
     ),
     array(
         "MIGX_id" => 10,
         'title' => 10,
-        'image' => "gallery/Gallery_10_Retina.jpg"
+        'image' => "gallery/Gallery_10_Original.jpg"
     ),
     array(
         "MIGX_id" => 11,
         'title' => 11,
-        'image' => "gallery/Gallery_11_Retina.jpg"
+        'image' => "gallery/Gallery_11_Original.jpg"
     ),
     array(
         "MIGX_id" => 12,
         'title' => 12,
-        'image' => "gallery/Gallery_12_Retina.jpg"
+        'image' => "gallery/Gallery_12_Original.jpg"
     ),
     array(
         "MIGX_id" => 13,
         'title' => 13,
-        'image' => "gallery/Gallery_13_Retina.jpg"
+        'image' => "gallery/Gallery_13_Original.jpg"
     ),
     array(
         "MIGX_id" => 14,
         'title' => 14,
-        'image' => "gallery/Gallery_14_Retina.jpg"
+        'image' => "gallery/Gallery_14_Original.jpg"
     ),
     array(
         "MIGX_id" => 15,
         'title' => 15,
-        'image' => "gallery/Gallery_15_Retina.jpg"
+        'image' => "gallery/Gallery_15_Original.jpg"
     ),
     array(
         "MIGX_id" => 16,
         'title' => 16,
-        'image' => "gallery/Gallery_16_Retina.jpg"
+        'image' => "gallery/Gallery_16_Original.jpg"
     ),
     array(
         "MIGX_id" => 17,
         'title' => 17,
-        'image' => "gallery/Gallery_17_Retina.jpg"
+        'image' => "gallery/Gallery_17_Original.jpg"
     ),
     array(
         "MIGX_id" => 18,
         'title' => 18,
-        'image' => "gallery/Gallery_18_Retina.jpg"
+        'image' => "gallery/Gallery_18_Original.jpg"
     ),
     array(
         "MIGX_id" => 19,
         'title' => 19,
-        'image' => "gallery/Gallery_19_Retina.jpg"
+        'image' => "gallery/Gallery_19_Original.jpg"
     ),
     array(
         "MIGX_id" => 20,
         'title' => 20,
-        'image' => "gallery/Gallery_20_Retina.jpg"
+        'image' => "gallery/Gallery_20_Original.jpg"
     ),
 );
 
@@ -1332,6 +1335,7 @@ if ($object && $object->xpdo) {
                                     'parentCheck' => true,
                                     'class_key' => 'TicketsSection',
                                     'template' => $tpl_eventsList->get('id'),
+                                    'menuindex' => 0,
                                     'pagetitle' => 'Events',
                                     'longtitle' => '',
                                     'description' => '',
@@ -1891,6 +1895,7 @@ if ($object && $object->xpdo) {
                                 'events2:TicketsSection' => array(
                                     'class_key' => 'TicketsSection',
                                     'template' => $tpl_eventsListTickets->get('id'),
+                                    'menuindex' => 1,
                                     'pagetitle' => 'Events ver.2',
                                     'longtitle' => '',
                                     'description' => '',
@@ -2430,6 +2435,7 @@ if ($object && $object->xpdo) {
                                 ),
                                 'eventItem' => array(
                                     'template' => $tpl_eventsItem->get('id'),
+                                    'menuindex' => 2,
                                     'pagetitle' => 'Open event',
                                     'longtitle' => '',
                                     'description' => '',
@@ -2487,6 +2493,7 @@ if ($object && $object->xpdo) {
                                     'parentCheck' => true,
                                     'class_key' => 'TicketsSection',
                                     'template' => $tpl_galleryList->get('id'),
+                                    'menuindex' => 0,
                                     'pagetitle' => 'Gallery',
                                     'longtitle' => '',
                                     'description' => '',
@@ -2515,7 +2522,7 @@ if ($object && $object->xpdo) {
                                         'gallery1:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 1',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2540,14 +2547,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_01_Retina.jpg',
+                                                'img' => 'gallery/Gallery_01_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery2:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 2',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2572,14 +2579,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_02_Retina.jpg',
+                                                'img' => 'gallery/Gallery_02_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery3:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 3',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2604,14 +2611,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_03_Retina.jpg',
+                                                'img' => 'gallery/Gallery_03_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery4:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 4',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2636,14 +2643,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_04_Retina.jpg',
+                                                'img' => 'gallery/Gallery_04_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 5',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2668,14 +2675,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_05_Retina.jpg',
+                                                'img' => 'gallery/Gallery_05_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery6:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 6',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2700,14 +2707,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_06_Retina.jpg',
+                                                'img' => 'gallery/Gallery_06_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery7:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 7',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2732,14 +2739,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_07_Retina.jpg',
+                                                'img' => 'gallery/Gallery_07_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery8:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 8',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2764,14 +2771,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_08_Retina.jpg',
+                                                'img' => 'gallery/Gallery_08_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery9:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 9',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2796,14 +2803,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_09_Retina.jpg',
+                                                'img' => 'gallery/Gallery_09_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery10:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 10',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2828,14 +2835,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_10_Retina.jpg',
+                                                'img' => 'gallery/Gallery_10_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery11:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 11',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2860,14 +2867,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_11_Retina.jpg',
+                                                'img' => 'gallery/Gallery_11_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery12:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 1',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2892,14 +2899,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_12_Retina.jpg',
+                                                'img' => 'gallery/Gallery_12_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery13:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 13',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2924,14 +2931,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_13_Retina.jpg',
+                                                'img' => 'gallery/Gallery_13_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery14:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 14',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2956,14 +2963,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_14_Retina.jpg',
+                                                'img' => 'gallery/Gallery_14_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery15:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 15',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2988,14 +2995,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_15_Retina.jpg',
+                                                'img' => 'gallery/Gallery_15_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery16:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 16',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3020,14 +3027,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_16_Retina.jpg',
+                                                'img' => 'gallery/Gallery_16_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery17:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 17',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3052,14 +3059,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_17_Retina.jpg',
+                                                'img' => 'gallery/Gallery_17_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery18:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 18',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3084,14 +3091,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_18_Retina.jpg',
+                                                'img' => 'gallery/Gallery_18_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery19:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 19',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3116,14 +3123,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_19_Retina.jpg',
+                                                'img' => 'gallery/Gallery_19_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery20:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 20',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3148,7 +3155,7 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_20_Retina.jpg',
+                                                'img' => 'gallery/Gallery_20_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
@@ -3158,6 +3165,7 @@ if ($object && $object->xpdo) {
                                     'parentCheck' => true,
                                     'class_key' => 'TicketsSection',
                                     'template' => $tpl_galleryBigList->get('id'),
+                                    'menuindex' => 1,
                                     'pagetitle' => 'Gallery ver.2',
                                     'longtitle' => '',
                                     'description' => '',
@@ -3186,7 +3194,7 @@ if ($object && $object->xpdo) {
                                         'gallery1:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 1',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3211,14 +3219,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_01_Retina.jpg',
+                                                'img' => 'gallery/Gallery_01_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery2:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 2',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3243,14 +3251,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_02_Retina.jpg',
+                                                'img' => 'gallery/Gallery_02_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery3:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 3',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3275,14 +3283,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_03_Retina.jpg',
+                                                'img' => 'gallery/Gallery_03_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery4:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 4',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3307,14 +3315,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_04_Retina.jpg',
+                                                'img' => 'gallery/Gallery_04_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 5',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3339,14 +3347,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_05_Retina.jpg',
+                                                'img' => 'gallery/Gallery_05_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery6:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 6',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3371,14 +3379,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_06_Retina.jpg',
+                                                'img' => 'gallery/Gallery_06_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery7:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 7',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3403,14 +3411,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_07_Retina.jpg',
+                                                'img' => 'gallery/Gallery_07_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery8:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 8',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3435,14 +3443,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_08_Retina.jpg',
+                                                'img' => 'gallery/Gallery_08_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery9:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 9',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3467,14 +3475,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_09_Retina.jpg',
+                                                'img' => 'gallery/Gallery_09_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery10:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 10',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3499,14 +3507,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_10_Retina.jpg',
+                                                'img' => 'gallery/Gallery_10_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery11:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 11',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3531,14 +3539,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_11_Retina.jpg',
+                                                'img' => 'gallery/Gallery_11_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery12:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 1',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3563,14 +3571,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_12_Retina.jpg',
+                                                'img' => 'gallery/Gallery_12_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery13:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 13',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3595,14 +3603,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_13_Retina.jpg',
+                                                'img' => 'gallery/Gallery_13_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery14:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 14',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3627,14 +3635,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_14_Retina.jpg',
+                                                'img' => 'gallery/Gallery_14_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery15:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 15',
+                                            'pagetitle' => 'Streets Love Invasion',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3659,14 +3667,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_15_Retina.jpg',
+                                                'img' => 'gallery/Gallery_15_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery16:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 16',
+                                            'pagetitle' => 'Californication Nights',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3691,14 +3699,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_16_Retina.jpg',
+                                                'img' => 'gallery/Gallery_16_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery17:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 17',
+                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3723,14 +3731,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_17_Retina.jpg',
+                                                'img' => 'gallery/Gallery_17_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery18:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 18',
+                                            'pagetitle' => 'Discover Paparazzi Madness',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3755,14 +3763,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_18_Retina.jpg',
+                                                'img' => 'gallery/Gallery_18_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery19:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 19',
+                                            'pagetitle' => 'Daily Bass Ocean',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3787,14 +3795,14 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_19_Retina.jpg',
+                                                'img' => 'gallery/Gallery_19_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
                                         'gallery20:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryItem->get('id'),
-                                            'pagetitle' => 'Gallery 20',
+                                            'pagetitle' => 'Hip-Hop X OH!Trap',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -3819,7 +3827,7 @@ if ($object && $object->xpdo) {
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'img' => 'gallery/Gallery_20_Retina.jpg',
+                                                'img' => 'gallery/Gallery_20_Original.jpg',
                                                 'gallery' => $modx->toJson($gallery)
                                             ),
                                         ),
@@ -3827,6 +3835,7 @@ if ($object && $object->xpdo) {
                                 ),
                                 'galleryItem' => array(
                                     'template' => $tpl_galleryItem->get('id'),
+                                    'menuindex' => 2,
                                     'pagetitle' => 'Open Gallery',
                                     'longtitle' => '',
                                     'description' => '',
@@ -3882,6 +3891,7 @@ if ($object && $object->xpdo) {
                                     'parentCheck' => true,
                                     'class_key' => 'TicketsSection',
                                     'template' => $tpl_blogList->get('id'),
+                                    'menuindex' => 0,
                                     'pagetitle' => 'Blog',
                                     'longtitle' => '',
                                     'description' => '',
@@ -3913,7 +3923,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball',
                                             'uri' => 'bloglist/blog/a-disco-ball',
                                             'link_attributes' => '',
@@ -3944,7 +3954,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer',
                                             'uri' => 'bloglist/blog/sound-card-mixer',
                                             'link_attributes' => '',
@@ -3975,7 +3985,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical',
                                             'uri' => 'bloglist/blog/a-turntable-is-a-musical',
                                             'link_attributes' => '',
@@ -4006,7 +4016,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-4',
                                             'uri' => 'bloglist/blog/a-disco-ball-4',
                                             'link_attributes' => '',
@@ -4037,7 +4047,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-5',
                                             'uri' => 'bloglist/blog/a-disco-ball-5',
                                             'link_attributes' => '',
@@ -4068,7 +4078,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-6',
                                             'uri' => 'bloglist/blog/sound-card-mixer-6',
                                             'link_attributes' => '',
@@ -4099,7 +4109,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-7',
                                             'uri' => 'bloglist/blog/a-turntable-is-a-musical-7',
                                             'link_attributes' => '',
@@ -4130,7 +4140,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-8',
                                             'uri' => 'bloglist/blog/a-disco-ball-8',
                                             'link_attributes' => '',
@@ -4161,7 +4171,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-9',
                                             'uri' => 'bloglist/blog/a-disco-ball-9',
                                             'link_attributes' => '',
@@ -4192,7 +4202,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-10',
                                             'uri' => 'bloglist/blog/sound-card-mixer-10',
                                             'link_attributes' => '',
@@ -4223,7 +4233,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-11',
                                             'uri' => 'bloglist/blog/a-turntable-is-a-musical-11',
                                             'link_attributes' => '',
@@ -4254,7 +4264,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-12',
                                             'uri' => 'bloglist/blog/a-disco-ball-12',
                                             'link_attributes' => '',
@@ -4285,7 +4295,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-13',
                                             'uri' => 'bloglist/blog/a-disco-ball-13',
                                             'link_attributes' => '',
@@ -4316,7 +4326,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-14',
                                             'uri' => 'bloglist/blog/sound-card-mixer-14',
                                             'link_attributes' => '',
@@ -4347,7 +4357,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-15',
                                             'uri' => 'bloglist/blog/a-turntable-is-a-musical-15',
                                             'link_attributes' => '',
@@ -4378,7 +4388,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-16',
                                             'uri' => 'bloglist/blog/a-disco-ball-16',
                                             'link_attributes' => '',
@@ -4409,7 +4419,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-17',
                                             'uri' => 'bloglist/blog/a-disco-ball-17',
                                             'link_attributes' => '',
@@ -4440,7 +4450,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-18',
                                             'uri' => 'bloglist/blog/sound-card-mixer-18',
                                             'link_attributes' => '',
@@ -4471,7 +4481,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-19',
                                             'uri' => 'bloglist/blog/a-turntable-is-a-musical-19',
                                             'link_attributes' => '',
@@ -4502,7 +4512,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-20',
                                             'uri' => 'bloglist/blog/a-disco-ball-20',
                                             'link_attributes' => '',
@@ -4532,6 +4542,7 @@ if ($object && $object->xpdo) {
                                 'blog2:TicketsSection' => array(
                                     'class_key' => 'TicketsSection',
                                     'template' => $tpl_blogListTile->get('id'),
+                                    'menuindex' => 1,
                                     'pagetitle' => 'Blog ver.2',
                                     'longtitle' => '',
                                     'description' => '',
@@ -4563,7 +4574,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball',
                                             'uri' => 'bloglist/blog2/a-disco-ball',
                                             'link_attributes' => '',
@@ -4594,7 +4605,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer',
                                             'uri' => 'bloglist/blog2/sound-card-mixer',
                                             'link_attributes' => '',
@@ -4625,7 +4636,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical',
                                             'uri' => 'bloglist/blog2/a-turntable-is-a-musical',
                                             'link_attributes' => '',
@@ -4656,7 +4667,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-4',
                                             'uri' => 'bloglist/blog2/a-disco-ball-4',
                                             'link_attributes' => '',
@@ -4687,7 +4698,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-5',
                                             'uri' => 'bloglist/blog2/a-disco-ball-5',
                                             'link_attributes' => '',
@@ -4718,7 +4729,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-6',
                                             'uri' => 'bloglist/blog2/sound-card-mixer-6',
                                             'link_attributes' => '',
@@ -4749,7 +4760,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-7',
                                             'uri' => 'bloglist/blog2/a-turntable-is-a-musical-7',
                                             'link_attributes' => '',
@@ -4780,7 +4791,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-8',
                                             'uri' => 'bloglist/blog2/a-disco-ball-8',
                                             'link_attributes' => '',
@@ -4811,7 +4822,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-9',
                                             'uri' => 'bloglist/blog2/a-disco-ball-9',
                                             'link_attributes' => '',
@@ -4842,7 +4853,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-10',
                                             'uri' => 'bloglist/blog2/sound-card-mixer-10',
                                             'link_attributes' => '',
@@ -4873,7 +4884,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-11',
                                             'uri' => 'bloglist/blog2/a-turntable-is-a-musical-11',
                                             'link_attributes' => '',
@@ -4904,7 +4915,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-12',
                                             'uri' => 'bloglist/blog2/a-disco-ball-12',
                                             'link_attributes' => '',
@@ -4935,7 +4946,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-13',
                                             'uri' => 'bloglist/blog2/a-disco-ball-13',
                                             'link_attributes' => '',
@@ -4966,7 +4977,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-14',
                                             'uri' => 'bloglist/blog2/sound-card-mixer-14',
                                             'link_attributes' => '',
@@ -4997,7 +5008,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-15',
                                             'uri' => 'bloglist/blog2/a-turntable-is-a-musical-15',
                                             'link_attributes' => '',
@@ -5028,7 +5039,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-16',
                                             'uri' => 'bloglist/blog2/a-disco-ball-16',
                                             'link_attributes' => '',
@@ -5059,7 +5070,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-17',
                                             'uri' => 'bloglist/blog2/a-disco-ball-17',
                                             'link_attributes' => '',
@@ -5090,7 +5101,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'Sound card mixer is the analog part of a sound card that routes and mixes sound signals.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'sound-card-mixer-18',
                                             'uri' => 'bloglist/blog2/sound-card-mixer-18',
                                             'link_attributes' => '',
@@ -5121,7 +5132,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A turntable is a musical device DJ`s use to play records, aka vinyl.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-turntable-is-a-musical-19',
                                             'uri' => 'bloglist/blog2/a-turntable-is-a-musical-19',
                                             'link_attributes' => '',
@@ -5152,7 +5163,7 @@ if ($object && $object->xpdo) {
                                             'pagetitle' => 'A disco ball is a roughly spherical object that reflects light directed at it in many directions.',
                                             'longtitle' => '',
                                             'description' => '',
-                                            'introtext' => '',
+                                            'introtext' => getIntroDemo($content_text),
                                             'alias' => 'a-disco-ball-20',
                                             'uri' => 'bloglist/blog2/a-disco-ball-20',
                                             'link_attributes' => '',
@@ -5181,6 +5192,7 @@ if ($object && $object->xpdo) {
                                 ),
                                 'blogItem1' => array(
                                     'template' => $tpl_blogItem->get('id'),
+                                    'menuindex' => 2,
                                     'pagetitle' => 'Open Blog (With image)',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5210,6 +5222,7 @@ if ($object && $object->xpdo) {
                                 ),
                                 'blogItem2' => array(
                                     'template' => $tpl_blogItemWithoutImage->get('id'),
+                                    'menuindex' => 3,
                                     'pagetitle' => 'Open Blog (No image)',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5239,6 +5252,7 @@ if ($object && $object->xpdo) {
                                 ),
                                 'blogItem3' => array(
                                     'template' => $tpl_blogItemAside->get('id'),
+                                    'menuindex' => 4,
                                     'pagetitle' => 'Open Blog Aside (With image)',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5269,6 +5283,7 @@ if ($object && $object->xpdo) {
                                 'blogItem4' => array(
                                     'class_key' => 'Ticket',
                                     'template' => $tpl_blogItemAsideWithoutImage->get('id'),
+                                    'menuindex' => 5,
                                     'pagetitle' => 'Open Blog Aside (No image)',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5520,6 +5535,7 @@ if ($object && $object->xpdo) {
                                 'text' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_text->get('id'),
+                                    'menuindex' => 0,
                                     'pagetitle' => 'Text',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5541,6 +5557,7 @@ if ($object && $object->xpdo) {
                                 'textWithImage' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_textWithImage->get('id'),
+                                    'menuindex' => 1,
                                     'pagetitle' => 'Text with image',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5565,6 +5582,7 @@ if ($object && $object->xpdo) {
                                 'textAside' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_textAside->get('id'),
+                                    'menuindex' => 2,
                                     'pagetitle' => 'Text aside',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5586,6 +5604,7 @@ if ($object && $object->xpdo) {
                                 'textAsideWithImage' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_textAsideWithImage->get('id'),
+                                    'menuindex' => 3,
                                     'pagetitle' => 'Text aside with image',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5610,6 +5629,7 @@ if ($object && $object->xpdo) {
                                 'textAsideRight' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_textAsideRight->get('id'),
+                                    'menuindex' => 4,
                                     'pagetitle' => 'Text aside right',
                                     'longtitle' => '',
                                     'description' => '',
@@ -5631,6 +5651,7 @@ if ($object && $object->xpdo) {
                                 'textAsideRightWithImage' => array(
                                     'parentCheck' => true,
                                     'template' => $tpl_textAsideRightWithImage->get('id'),
+                                    'menuindex' => 5,
                                     'pagetitle' => 'Text aside right with image',
                                     'longtitle' => '',
                                     'description' => '',

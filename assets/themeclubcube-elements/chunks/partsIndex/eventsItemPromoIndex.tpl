@@ -26,10 +26,11 @@
 			<hr>
 			<div class="slider-description">
 				[[getImageList?
-				&tpl=`@CODE:<span class="guest-slider">[[+name:htmlent]] </span>`
-				&tvname=`lineUp`
-				&docid=`[[+id]]`
-				&outputSeparator=``
+                    &tpl=`@CODE:<span class="guest-slider">[[+name:htmlent]] </span>`
+                    &tvname=`lineUp`
+                    &docid=`[[+id]]`
+                    &outputSeparator=``
+                    &limit=`5`
 				]]
 			</div>
 			<hr>

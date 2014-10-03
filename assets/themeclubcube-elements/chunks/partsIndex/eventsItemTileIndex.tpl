@@ -10,7 +10,7 @@
 			src="">
 		<div class="top-event-descr">
 			<div class="date-event">
-				<div class="month">[[%lf_month.[[+timeStart:strtotime:date=`%m`]]]]</div>
+				<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
 				<div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
 				<div class="week-day">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
 			</div>
@@ -35,10 +35,11 @@
 					<div class="left-evt-inner">[[%lf_events_lineup:htmlent]]</div>
 					<div class="right-evt-inner">
 						[[getImageList?
-							&tpl=`@CODE:<div><span class="evt-guest">[[+name:htmlent]] </span><span class="sm-tx">([[+location:htmlent]])</span></div>`
+							&tpl=`@CODE:<div><span class="evt-guest">[[+name:htmlent]]</span><span class="sm-tx">([[+location:htmlent]])</span></div>`
 							&tvname=`lineUp`
 							&docid=`[[+id]]`
 							&outputSeparator=``
+                            &limit=`5`
 						]]
 					</div>
 				</div>

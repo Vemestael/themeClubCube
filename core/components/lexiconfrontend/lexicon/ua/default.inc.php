@@ -18,6 +18,8 @@ $_lang['lf_events_later_week'] = 'тижнів потому';
 $_lang['lf_events_all'] = 'Всі події';
 $_lang['lf_events_all_sub'] = 'всі майбутні події';
 $_lang['lf_events_empty'] = 'Нема подій за обраний період.';
+$_lang['lf_event_email'] = 'tickets@cubeclub.cube';
+$_lang['lf_event_phone'] = '+0 000 000 000 00';
 
 $_lang['lf_gallery_head'] = 'Галерея';
 $_lang['lf_gallery_more'] = 'Більше фотографій';
@@ -69,10 +71,10 @@ $_lang['lf_month_short.10'] = 'Жов';
 $_lang['lf_month_short.11'] = 'Лис';
 $_lang['lf_month_short.12'] = 'Гру';
 
-$_lang['lf_week.0']='Пон';
-$_lang['lf_week.1']='Ввт';
-$_lang['lf_week.2']='Срд';
-$_lang['lf_week.3']='Чтв';
-$_lang['lf_week.4']='Птн';
-$_lang['lf_week.5']='Суб';
-$_lang['lf_week.6']='Нед';
+$_lang['lf_week.0']='Пн';
+$_lang['lf_week.1']='Вт';
+$_lang['lf_week.2']='Ср';
+$_lang['lf_week.3']='Чт';
+$_lang['lf_week.4']='Пн';
+$_lang['lf_week.5']='Сб';
+$_lang['lf_week.6']='Нд';
