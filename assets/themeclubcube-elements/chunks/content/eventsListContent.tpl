@@ -63,12 +63,12 @@
                             <div class="pad-title">[[%lf_page_prev:htmlent]]</div>
                         </div>
                     </div>`
-                    &tplPageNextEmpty=`@INLINE <div class="event-dates input-append date pull-right off">
-                        <div class="ev-date-right right-paging">
-                            <i class="arr-right"></i>
+                    &tplPageNextEmpty=`@INLINE <div class="right-pag sm off">
+                        <div class="pad-arr">
+                            <i></i>
                         </div>
-                        <div class="ev-date-left">
-                            <div class="ttl">[[%lf_page_next:htmlent]]</div>
+                        <div class="pad-text">
+                            <div class="pad-title">[[%lf_page_next:htmlent]]</div>
                         </div>
                     </div>`
                 ]]

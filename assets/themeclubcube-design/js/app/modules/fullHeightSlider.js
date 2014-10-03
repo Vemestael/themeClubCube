@@ -85,7 +85,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                 _changeClass(node);
             });
         }
-        _addVideos();
+        // _addVideos();
     },
 
     _setBinds = function() {

@@ -8623,16 +8623,6 @@ input:focus {
   overflow: hidden;
 }
 
-.sect {
-  padding-bottom: 70px;
-}
-
-.sect h2 {
-  font-family: "PT Sans bold", sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .empt {
   overflow: hidden;
 }
@@ -8728,6 +8718,30 @@ input:focus {
 
 .slick-next:before, .slick-prev:before {
   content: none;
+}
+
+h2 {
+  color: #010101;
+}
+
+.sect {
+  padding-bottom: 70px;
+}
+
+.sect h2 {
+  font-family: "PT Sans bold", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sect h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+main {
+  padding-bottom: 50px;
+  background: #f9f9f9;
 }
 
 .loader-container {
@@ -9478,20 +9492,6 @@ table.club-table tbody tr td {
 
 .club-table > tbody > tr > td, .club-table > tbody > tr > th, .club-table > tfoot > tr > td, .club-table > tfoot > tr > th, .club-table > thead > tr > td, .club-table > thead > tr > th {
   vertical-align: middle;
-}
-
-h2 {
-  color: #010101;
-}
-
-.sect h2 {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-main {
-  padding-bottom: 50px;
-  background: #f9f9f9;
 }
 
 .btn-custom {
@@ -10451,8 +10451,12 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   overflow: hidden;
 }
 
-.slider-default .slide-to-left, .slider-default .slide-to-right, .slider-default .slick-prev, .slider-default .slick-next {
+.slider-default .slick-prev, .slider-default .slick-next {
   display: none;
+}
+
+.slider-default .slide-to-left, .slider-default .slide-to-right {
+  z-index: 10;
 }
 
 .slider-default .rowss {
@@ -14147,7 +14151,6 @@ blockquote a:hover {
   margin-bottom: 80px;
 }
 
-/***Mobile reverse***/
 @media screen and (max-width: 768px) and (max-height: 400px) {
   .play-btn {
     padding-top: 0 !important;
@@ -14964,6 +14967,12 @@ blockquote a:hover {
     border-bottom: none;
   }
 
+  .blog-item .top-event-title {
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+  }
+
   .partners {
     height: 180px;
   }
@@ -15506,6 +15515,10 @@ blockquote a:hover {
     z-index: 5;
   }
 
+  .default-slider-tickets .slick-next, .default-slider-tickets .slick-prev {
+    top: -110px;
+  }
+
   .get-in .price {
     float: left;
     font-size: 22px;
@@ -15824,6 +15837,9 @@ blockquote a:hover {
     font-family: "PT Sans reg", sans-serif;
     font-size: 24px;
     line-height: 26px;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
   }
 
   .blog-item .item-title {
@@ -16441,6 +16457,11 @@ blockquote a:hover {
 
   .paging .event-dates.off {
     border: 1px solid #cbcbcb;
+    cursor: default;
+  }
+
+  .paging .event-dates.off .right-paging, .paging .event-dates.off .left-paging {
+    cursor: default;
   }
 
   .paging .event-dates.off .ttl, .paging .event-dates.off .dt {
@@ -17540,6 +17561,10 @@ blockquote a:hover {
     z-index: 5;
   }
 
+  .default-slider-tickets .slick-next, .default-slider-tickets .slick-prev {
+    top: -120px;
+  }
+
   .nav.nav-top > li > a {
     line-height: 15px;
     padding: 19px 15px 22px;
@@ -17645,6 +17670,12 @@ blockquote a:hover {
   .blog .btn-dropdown .btn-custom-org, .blog .btn-dropdown .btn-custom {
     display: block;
     float: left;
+  }
+
+  .blog-item .top-event-title {
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
   }
 
   .partners {
@@ -21161,6 +21192,10 @@ select.form-control option:hover, select.form-control option:focus {
   border: 2px solid #a82743 !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.select-dropdown.off:hover select.form-control {
+  border: 2px solid #e2e2e2;
 }
 
 .select-dropdown.off select.form-control, .select-dropdown.off:hover select.form-control {

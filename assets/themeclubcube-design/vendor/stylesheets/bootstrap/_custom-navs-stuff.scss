@@ -518,6 +518,7 @@ select.form-control option {font-family:$pt-sans;color:$black-color;padding: 11p
 select.form-control option:hover, select.form-control option:focus {background: $reddy-color;@include transitions(.3s);}
 
 .select-dropdown:hover select.form-control {border:2px solid $reddy-color!important;@include transitions(.3s);}
+.select-dropdown.off:hover select.form-control {border:2px solid $lighter-grey-color;}
 
 .select-dropdown.off select.form-control, .select-dropdown.off:hover select.form-control {border:2px solid $lighter-grey-color;background:$bg-f9-color;@include transitions(.3s);cursor: default;}
 .select-dropdown.off:after, .select-dropdown.off:hover:after {background:$lighter-grey-color;@include transitions(.3s);cursor: default;}

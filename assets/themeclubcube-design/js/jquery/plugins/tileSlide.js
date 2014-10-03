@@ -85,14 +85,15 @@
 		//Insert navigation for slider
 		this.prev = document.createElement('div');
 		this.next = document.createElement('div');
-		this.prev.className = 'slick-prev';
-		this.next.className = 'slick-next';
-		this.node.appendChild(this.prev);
-		this.node.appendChild(this.next);
+		// this.prev.className = 'slick-prev';
+		// this.next.className = 'slick-next';
 
 		//If dots are needed — add dots
 		if (this.options.dots === true) {
 			this.addDots();
+		} else {
+			this.node.appendChild(this.prev);
+			this.node.appendChild(this.next);
 		};
 
 		//Init first slider to current
@@ -250,7 +251,7 @@
 			self.isClicked = true;
 		});
 
-		$( window ).scroll(function(event) {
+		$(window).scroll(function(event) {
 			if (($(document).scrollTop() >= $(self.node).height()) && (self.pause === false)) {
 				self.stopSlide();
 			} else if ((self.isAnimating === false) && (self.pause === true) && ($(document).scrollTop() <= $(self.node).height())) {
