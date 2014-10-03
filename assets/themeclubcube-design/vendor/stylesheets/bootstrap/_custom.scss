@@ -715,7 +715,7 @@ main.content-main {background:none;}
 .fullwidth-bg img.img-responsive {max-width: none;}
 aside {padding-bottom: 50px;overflow: hidden;}
 aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
-.main-content {position: relative;padding-bottom: 40px;}
+.main-content {position: relative;padding-bottom: 40px;background: #f9f9f9;}
 .text-contain {position: relative;z-index: 9;}
 .content-main {background:$white-color;padding-bottom: 20px;}
 .event-view {height: 346px;position: relative;background:url('../images/event-veiw.jpg') center no-repeat;padding-top: 100px;overflow: hidden;}
@@ -897,6 +897,7 @@ aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 // Animation top blogs
 // -------------------------
 .all-blogs-container {perspective: 1300px;overflow: hidden;}
+.all-blogs-container.white .gall-item .item-title .top-event-title, .all-blogs-container.white .gall-item .item-title .top-event-place, .all-blogs-container.white .item-icons {color: $black-color;}
 .blog-item, .blog-item-def {opacity: 0;display: block;}
 .blog-item.shown, .blog-item-def.shown {opacity: 1;}
 .blog-item.active, .blog-item-def.active {transform-style: preserve-3d;transform: translateZ(0px) translateY(200px) rotateX(0deg);-webkit-animation: eventsAnimation .5s ease-in-out forwards;animation: eventsAnimation .5s ease forwards;}
@@ -1055,6 +1056,7 @@ blockquote a:hover {color:$orange-color;}
 // 404
 // -------------------------
 .ff-col {margin-top: 80px;margin-bottom: 80px;}
+.for-for {background: #f9f9f9;}
 
 
 // Mobile reverse
