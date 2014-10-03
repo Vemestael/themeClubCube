@@ -15506,26 +15506,40 @@ blockquote a:hover {
     cursor: pointer;
   }
 
-  .top-events-sliders .slick-prev, .default-slider-tickets .slick-prev {
+  .top-events-sliders .slick-prev {
     height: 50px;
-    top: -70px;
+    top: -110px;
     bottom: auto;
     right: 60px;
     left: auto;
     z-index: 5;
   }
 
-  .top-events-sliders .slick-next, .default-slider-tickets .slick-next {
+  .top-events-sliders .slick-next {
     height: 50px;
-    top: -70px;
+    top: -110px;
     bottom: auto;
     right: 0px;
     left: auto;
     z-index: 5;
   }
 
-  .default-slider-tickets .slick-next, .default-slider-tickets .slick-prev {
+  .default-slider-tickets .slick-prev {
+    height: 50px;
     top: -110px;
+    bottom: auto;
+    right: 60px;
+    left: auto;
+    z-index: 5;
+  }
+
+  .default-slider-tickets .slick-next {
+    height: 50px;
+    top: -110px;
+    bottom: auto;
+    right: 0px;
+    left: auto;
+    z-index: 5;
   }
 
   .get-in .price {
@@ -17552,26 +17566,40 @@ blockquote a:hover {
     margin-top: 0px;
   }
 
-  .top-events-sliders .slick-prev, .default-slider-tickets .slick-prev {
+  .top-events-sliders .slick-prev {
     height: 50px;
-    top: -70px;
+    top: -120px;
     bottom: auto;
     right: 60px;
     left: auto;
     z-index: 5;
   }
 
-  .top-events-sliders .slick-next, .default-slider-tickets .slick-next {
+  .top-events-sliders .slick-next {
     height: 50px;
-    top: -70px;
+    top: -120px;
     bottom: auto;
     right: 0px;
     left: auto;
     z-index: 5;
   }
 
-  .default-slider-tickets .slick-next, .default-slider-tickets .slick-prev {
+  .default-slider-tickets .slick-prev {
+    height: 50px;
     top: -120px;
+    bottom: auto;
+    right: 60px;
+    left: auto;
+    z-index: 5;
+  }
+
+  .default-slider-tickets .slick-next {
+    height: 50px;
+    top: -120px;
+    bottom: auto;
+    right: 0px;
+    left: auto;
+    z-index: 5;
   }
 
   .nav.nav-top > li > a {
@@ -17809,6 +17837,10 @@ blockquote a:hover {
   .slider-default .slick-prev, .slider-default .slick-next, .default-slider-tickets .slick-prev, .default-slider-tickets .slick-next {
     display: none;
     background: none;
+  }
+
+  .default-slider-tickets .slick-next, .default-slider-tickets .slick-prev {
+    top: -110px;
   }
 
   .slider-default .slick-dots li {
