@@ -13,6 +13,7 @@ button:active {border: 0;}
 .read-more.off {cursor: default;}
 .read-more.off, .read-more.off:hover {background:$ccc-color;}
 
+.read-more {outline: none;border: none;}
 
 /* ========================================================================
  * Custom buttons "Next-Prev"

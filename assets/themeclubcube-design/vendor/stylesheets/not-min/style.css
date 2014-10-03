@@ -14160,6 +14160,13 @@ blockquote a:hover {
   background: #f9f9f9;
 }
 
+.map-contacts {
+  display: block;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 768px) and (max-height: 400px) {
   .play-btn {
     padding-top: 0 !important;
@@ -19224,6 +19231,11 @@ button:active {
 
 .read-more.off, .read-more.off:hover {
   background: #cccccc;
+}
+
+.read-more {
+  outline: none;
+  border: none;
 }
 
 /* ========================================================================
