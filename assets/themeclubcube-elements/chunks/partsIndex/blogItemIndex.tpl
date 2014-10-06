@@ -1,4 +1,4 @@
-[[+idx:mod=`4`:is=`0`:then=`</div><div class="row">`:else=``]]
+[[+idx:mod=`3`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="row">`]]`:else=``]]
 <div class="col-md-4 col-sm-4">
 	<article class="blog-item [[+img:default=`no-img`]]">
 		<div class="item-title">

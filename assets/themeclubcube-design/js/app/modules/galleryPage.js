@@ -64,7 +64,6 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
 
     _setup = function() {
         _globals.galleryLightBox = _globals.allImgContainers.imageLightbox({
-            selector: 'id="imagelightbox"', // string;
             allowedTypes: 'png|jpg|jpeg|gif', // string;
             animationSpeed: 250, // integer;
             preloadNext: true, // bool;            silently preload the next image

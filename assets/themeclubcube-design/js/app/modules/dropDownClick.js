@@ -38,13 +38,12 @@ appMakeBeCool.gateway.addClass('DropDownClick', function(properties, $, $window,
     },
 
     _setup = function() {
-        _globals.dropdown.hover(function(){
-//            $(_properties.dropdownToggle, this).trigger('click');
-            _dropDownClick.unbind($(_properties.dropdownToggle, this), 'click');
-            _dropDownClick.bind($(_properties.dropdownToggle, this), 'click', function(e, data, el) {
-                window.location = $(el).attr('href');
-            });
-        });
+//        _globals.dropdown.hover(function(){
+//            _dropDownClick.unbind($(_properties.dropdownToggle, this), 'click');
+//            _dropDownClick.bind($(_properties.dropdownToggle, this), 'click', function(e, data, el) {
+//                window.location = $(el).attr('href');
+//            });
+//        });
     },
 
     _setBinds = function() {},

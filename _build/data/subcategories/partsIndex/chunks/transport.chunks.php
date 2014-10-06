@@ -32,6 +32,10 @@ $tmp = array(
         'file' => 'partsIndex/eventsItemIndex',
         'description' => '',
     ),
+    'eventsItemLastIndex' => array(
+        'file' => 'partsIndex/eventsItemLastIndex',
+        'description' => '',
+    ),
     'eventsItemTileIndex' => array(
         'file' => 'partsIndex/eventsItemTileIndex',
         'description' => '',

@@ -16,6 +16,14 @@ $tmp = array(
         'events' => array(
             'OnBeforeCacheUpdate' => array()
         )
+    ),
+    'changeColorSheme' => array(
+        'file' => 'changeColorSheme',
+        'description' => '',
+        'events' => array(
+            'OnHandleRequest' => array(),
+            'OnLoadWebDocument' => array()
+        )
     )
 );
 

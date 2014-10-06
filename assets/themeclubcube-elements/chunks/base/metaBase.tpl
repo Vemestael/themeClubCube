@@ -24,8 +24,8 @@
         <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="http://www.google-analytics.com" /> 
 
-        <link rel="icon" href="[[++site_url]]assets/design/images/favicon.ico" type="image/x-icon" /> 
-        <link rel="shortcut icon" href="[[++site_url]]favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="[[++themeclubcube.design_url]]images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="[[++themeclubcube.design_url]]images/favicon.ico" type="image/x-icon" />
         
         [[Molt?
             &minifyCss=`1`

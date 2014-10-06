@@ -5,7 +5,7 @@ $_lang['setting_themeclubcube.ga_tracking_id_desc'] = '';
 $_lang['setting_themeclubcube.design_url'] = 'Url к дизайну шаблона';
 $_lang['setting_themeclubcube.design_url_desc'] = 'Этот URL указывает на расположение каталога базовых стилей и скриптов для шаблона.';
 $_lang['setting_themeclubcube.color_scheme'] = 'Color for you site';
-$_lang['setting_themeclubcube.color_scheme_desc'] = 'Options: yellow, turbo, max-hurricane, mint';
+$_lang['setting_themeclubcube.color_scheme_desc'] = 'Options: default, gold, basketball, blueberry';
 
 $_lang['setting_themeclubcube.unisender_api_key'] = 'Unisender Api key (необходимо)';
 $_lang['setting_themeclubcube.unisender_api_key_desc'] = 'Ключ доступа к API.';
