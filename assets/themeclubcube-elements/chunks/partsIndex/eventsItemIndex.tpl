@@ -1,4 +1,4 @@
-[[+idx:mod=`4`:is=`0`:then=`</div><div class="rows default-tickets">`:else=``]]
+[[+idx:mod=`3`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="rows default-tickets">`]]`:else=``]]
 <article class="ticket-event">
 	<div class="ticket-event-date">
 		<div class="date-event">

@@ -16,7 +16,7 @@ $tmp = array(
     ),
     'color_scheme' => array(
         'xtype' => 'textfield',
-        'value' => 'dafault',
+        'value' => 'default',
         'area' => 'themeclubcube_main',
     ),
     'demo' => array(

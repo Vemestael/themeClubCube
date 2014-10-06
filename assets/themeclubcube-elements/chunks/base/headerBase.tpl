@@ -57,28 +57,28 @@
                             <i class="fa fa-tint"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="active">
+                            <li [[++themeclubcube.color_scheme:is=`default`:then=`class="active"`]]>
                                 [[++themeclubcube.color_scheme:is=`default`:then=`
                                     <span><i class="color-ic color-ic-reg"></i>Origin</span>
                                 `:else=`
                                     <a href="?color=default"><i class="color-ic color-ic-reg"></i>Origin</a>
                                 `]]
                             </li>
-                            <li>
+                            <li [[++themeclubcube.color_scheme:is=`gold`:then=`class="active"`]]>
                                 [[++themeclubcube.color_scheme:is=`gold`:then=`
                                     <span><i class="color-ic color-ic-gd"></i>Gold</span>
                                 `:else=`
                                     <a href="?color=gold"><i class="color-ic color-ic-gd"></i>Gold</a>
                                 `]]
                             </li>
-                            <li>
+                            <li [[++themeclubcube.color_scheme:is=`basketball`:then=`class="active"`]] >
                                 [[++themeclubcube.color_scheme:is=`basketball`:then=`
                                     <span><i class="color-ic color-ic-bb"></i>Basketball</span>
                                 `:else=`
                                     <a href="?color=basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
                                 `]]
                             </li>
-                            <li class="last">
+                            <li class="last [[++themeclubcube.color_scheme:is=`blueberry`:then=`active`]]">
                                 [[++themeclubcube.color_scheme:is=`blueberry`:then=`
                                     <span><i class="color-ic color-ic-bbr"></i>Blueberry</span>
                                 `:else=`

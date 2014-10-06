@@ -72,18 +72,18 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                 _globals.rowss.css('top', sliderTopPadding + (_globals.slider.hasClass(_properties.sliderDefaultClass) ? 10 : 40));
             } else {
                 _globals.rowss.css('top', '140px');
-            };
+            }
             if ((_globals.slideNodeHeight < _globals.sliderHeight) && (window.devicePixelRatio === 2) && ((_globals.windowWidth) === 1024)) {
                 _globals.rowss.css('top', ((_globals.sliderHeight / 2 - _globals.slideNodeHeight)) + 40);
-            };
+            }
 
             var tileOptions = {};
             if(_globals.slider.hasClass(_properties.sliderDefaultClass)){
                 tileOptions = {dots: true}
-            };
+            }
             if (!_globals.tileNode.length) {
                 _globals.tileSlide = new TileSlide(document.querySelector(_properties.slider), tileOptions);
-            };
+            }
             _globals.imgSlider.each(function() {
                 var node = this;
                 _changeClass(node);

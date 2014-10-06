@@ -118,6 +118,7 @@ $content_index_demo1 = '
 	&tvPrefix=``
 	&tplWrapper=`eventsListIndex`
 	&tpl=`eventsItemIndex`
+	&tplLast=`eventsItemLastIndex`
 	&tvFilters=`timeStart>=[[getDate? &format=`Y-m-d 00:00:00`]],topEvent==1`
 ]]
 
