@@ -21,7 +21,7 @@ $tmp = array(
         'file' => 'changeColorSheme',
         'description' => '',
         'events' => array(
-            'OnHandleRequest' => array(),
+            'OnWebPageInit' => array(),
             'OnLoadWebDocument' => array()
         )
     )

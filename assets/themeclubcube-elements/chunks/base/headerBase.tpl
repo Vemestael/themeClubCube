@@ -56,33 +56,33 @@
                         <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
                             <i class="fa fa-tint"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li [[++themeclubcube.color_scheme:is=`default`:then=`class="active"`]]>
-                                [[++themeclubcube.color_scheme:is=`default`:then=`
+                        <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
+                            <li [[+color:is=`default`:then=`class="active"`]]>
+                                [[+color:is=`default`:then=`
                                     <span><i class="color-ic color-ic-reg"></i>Origin</span>
                                 `:else=`
-                                    <a href="?color=default"><i class="color-ic color-ic-reg"></i>Origin</a>
+                                    <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
                                 `]]
                             </li>
-                            <li [[++themeclubcube.color_scheme:is=`gold`:then=`class="active"`]]>
-                                [[++themeclubcube.color_scheme:is=`gold`:then=`
+                            <li [[+color:is=`gold`:then=`class="active"`]]>
+                                [[+color:is=`gold`:then=`
                                     <span><i class="color-ic color-ic-gd"></i>Gold</span>
                                 `:else=`
-                                    <a href="?color=gold"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                    <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
                                 `]]
                             </li>
-                            <li [[++themeclubcube.color_scheme:is=`basketball`:then=`class="active"`]] >
-                                [[++themeclubcube.color_scheme:is=`basketball`:then=`
+                            <li [[+color:is=`basketball`:then=`class="active"`]] >
+                                [[+color:is=`basketball`:then=`
                                     <span><i class="color-ic color-ic-bb"></i>Basketball</span>
                                 `:else=`
-                                    <a href="?color=basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                    <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
                                 `]]
                             </li>
                             <li class="last [[++themeclubcube.color_scheme:is=`blueberry`:then=`active`]]">
-                                [[++themeclubcube.color_scheme:is=`blueberry`:then=`
+                                [[+color:is=`blueberry`:then=`
                                     <span><i class="color-ic color-ic-bbr"></i>Blueberry</span>
                                 `:else=`
-                                    <a href="?color=blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
+                                    <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
                                 `]]
                             </li>
                         </ul>

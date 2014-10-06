@@ -30,6 +30,7 @@
         [[Molt?
             &minifyCss=`1`
             &minifyJs=`1`
+            &cssRegister=`placeholder`
             &cacheFolder=`[[++themeclubcube.design_url]]min/`
             &jsSources=`
 				[[++themeclubcube.design_url]]js/otherlibs/bootstrap.js
@@ -70,6 +71,7 @@
                 ,[[++themeclubcube.design_url]]css/[[++themeclubcube.color_scheme]]-color.css
             `
         ]]
+        [[+Molt.css]]
 		<script>
 			var designUrl = '[[++themeclubcube.design_url]]';
 		</script>
