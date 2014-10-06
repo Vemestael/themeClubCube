@@ -16936,9 +16936,9 @@ blockquote a:hover {
     transition: all 0.3s ease;
   }
 
-  header .nav > li.active span {
+  header .nav > li.active > span {
     background: transparent;
-    color: white;
+    color: #fff;
   }
 
   header .color-btn {

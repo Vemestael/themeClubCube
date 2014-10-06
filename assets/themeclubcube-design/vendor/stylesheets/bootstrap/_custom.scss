@@ -1715,7 +1715,7 @@ header .nav>li.dropdown, header .nav>li.dropdown:first-child, header .nav>li.dro
 header .main-navig .nav>li:hover, header .main-navig .nav>li.active, header .nav>li.dropdown:first-child:hover {background:url('../images/bg-tr.png') left top;border-top: 1px solid $white-color;}
 header .nav>li.active a, header .nav>li.active span {background: transparent;}
 header nav ul li.dropdown.active ul li.active span {background:$hover-li-a;@include transitions(.3s);}
-header .nav>li.active span {background:transparent;color: $white-color;}
+header .nav>li.active>span {background:transparent;color: #fff;}
 header .color-btn {padding: 17px 15px!important}
 .header-top .navbar-collapse, header .navbar-collapse {width: auto;@include box-shadow(none);}
 .header-top .nav>li>a.dropdown-toggle.main-heading-a, .header-top .navbar-nav>li>a, .header-top .navbar-nav>li>span {font-size: $reg-font-size;color:$white-color;background:transparent;padding: 21px 15px 21px;}
@@ -1750,6 +1750,7 @@ nav>ul>li.dropdown>ul>li.active>span {cursor: pointer;}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {border-top: none;}
 .top-events .navbar-nav>li.dropdown, .top-events .navbar-nav>li.dropdown:hover {border-right: none;border-left: none;}
 .header-top nav ul li.dropdown.active ul li.active span {display: block;white-space: nowrap;background: #f2f2f2;color:#666;@include transitions(.3s);cursor: pointer;}
+
 .header-top .color-btn {padding: 18px 15px 16px 15px!important}
 .color-btn i {font-size: 22px;color: $white-color;}
 
