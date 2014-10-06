@@ -40,12 +40,14 @@
 				]]
 			</ul>
 			<hr>
-			<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="get-in col-lg-offset-7">
-				<span class="price">
-					<span class="trs">[[%lf_events_price:htmlent]]</span>&nbsp;[[+price:htmlent]]
-				</span>
-				<span class="get-into">[[%lf_events_get_in:htmlent]]</span>
-			</a>
+			<div class="col-lg-4 col-lg-offset-7 get-in-contain">
+				<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="get-in col-lg-offset-7">
+					<span class="price">
+						<span class="trs">[[%lf_events_price:htmlent]]</span>&nbsp;[[+price:htmlent]]
+					</span>
+					<span class="get-into">[[%lf_events_get_in:htmlent]]</span>
+				</a>
+			</div>
 			<div class="socials col-sm-12 col-md-12 col-md-offset-0 col-lg-3">
 				<div class="share">[[%lf_share]]</div>
                 <div class="fb-soc ver1" data-url="[[~[[+id]]? &scheme=`full`]]" data-text="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"></div>
