@@ -107,8 +107,11 @@ blockquote a {color:#ec1c24;}/*Orange*/
 
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#d7515c;border:2px solid #d7515c!important;}/*Red*/
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#d7515c;border:2px solid #d7515c;}/*Red*/
-.button-slider {border: 2px solid #fff !important;}
-.button-slider.hover {border:2px solid #d7515c;}/*Red*/
+.slider-default .button-slider {border: 2px solid #fff !important;background: #fff !important;}
+.slider-default .button-slider.pressed {border: 2px solid #cbcbcb !important;background: transparent !important;}
+.button-slider {background: #d7515c;border:2px solid #d7515c;}
+.button-slider.hover, .button-slider:hover, .button-slider.pressed, .button-slider.pressed:hover {border:2px solid #d7515c;}/*Red*/
+.button-slider.hover {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
 
 .button-arrow-left:before, .default-gallery-slider .slick-prev:before, .partners-slider .slick-prev:before, .top-events-sliders .slick-prev:before {border-left: 1px solid #d7515c; border-bottom: 1px solid #d7515c;}/*Red*/
 .button-arrow-left.hover:before, .button-arrow-left:hover:before, .button-arrow-right:before, .default-gallery-slider .slick-next.hover:hover, .default-gallery-slider .slick-next:hover:before, .default-gallery-slider .slick-prev.hover:before, .default-gallery-slider .slick-prev:hover:before, .partners-slider .slick-next.hover:before, .partners-slider .slick-next.hover:hover:before, .partners-slider .slick-next:before:hover, .partners-slider .slick-next:hover:before, .partners-slider .slick-prev:hover:before {border-left: 1px solid #ec1c24; border-bottom: 1px solid #ec1c24;}/*Orange*/
