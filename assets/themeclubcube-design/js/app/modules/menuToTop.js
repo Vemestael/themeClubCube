@@ -8,6 +8,7 @@ appMakeBeCool.gateway.addClass('MenuToTop', function(properties, $, $window, $do
 
             // classes ans styles
             headerSliderClass: 'slider-default',
+            navClass:'.navbar-collapse',
             class: 'header-top active',
             activeClass: 'active'
         },
@@ -40,6 +41,7 @@ appMakeBeCool.gateway.addClass('MenuToTop', function(properties, $, $window, $do
         _config = function() {
             _globals.header = $(_properties.header);
             _globals.headerSlider = $(_properties.headerSlider);
+            _globals.navBar = $(_properties.navClass);
         },
 
         _setup = function() {
@@ -84,7 +86,7 @@ appMakeBeCool.gateway.addClass('MenuToTop', function(properties, $, $window, $do
                                 setTimeout(function() {
                                     _globals.header.removeClass(_properties.activeClass);
                                 }, 2000);
-                            } else if (($(window).scrollTop() <= _globals.headerSize) && (_globals.header.hasClass('header-top'))) {
+                            } else if (($(window).scrollTop() <= _globals.headerSize) && (_globals.header.hasClass('header-top')) && (!_globals.navBar.hasClass('in'))) {
                                 _globals.header.removeClass(_properties.class);
                             };
                         } else {

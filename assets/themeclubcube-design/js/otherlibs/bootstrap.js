@@ -555,6 +555,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         $('.tile').addClass('active')
         if ($(window).width() < 1025) {
           $('header').addClass('header-top muted-header');
+          $('body').addClass('muted-scroll');
           $('.loader-container').css({'z-index':'20'}).fadeIn();
           $('.loader-container .backstage').addClass('white');
         };
@@ -614,6 +615,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
           } else {
             $('header').removeClass('muted-header');
           };
+          $('body').removeClass('muted-scroll');
           $('.loader-container').css({'z-index':'9999'}).fadeOut();
           $('.loader-container .backstage').removeClass('white');
         };

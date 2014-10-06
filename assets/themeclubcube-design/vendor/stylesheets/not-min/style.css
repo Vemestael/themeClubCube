@@ -8749,6 +8749,11 @@ main {
   background: #f9f9f9;
 }
 
+.muted-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .loader-container {
   display: block;
   position: fixed;
