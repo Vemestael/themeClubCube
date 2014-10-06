@@ -36,7 +36,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="col-sm-offset-4 col-sm-12">
                                             <button type="submit" class="btn btn-default submit">[[%lf_contact_send:htmlent]]</button>
                                         </div>
                                     </div>

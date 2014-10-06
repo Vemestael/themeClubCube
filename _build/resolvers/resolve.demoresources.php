@@ -151,24 +151,38 @@ $content_index_demo1 = '
 ';
 
 $content_text = '
-<p>Old unsatiable our now but considered travelling impression.
+<p class="lead">Old unsatiable our now but considered travelling impression.
 In excuse hardly summer in basket misery. By rent an part need.
 At wrong of of water those linen. Needed oppose seemed how all.
 Very mrs shed shew gave you. Oh shutters do removing reserved wandered an.
 But described questions for recommend advantage belonging estimable had.
 Pianoforte reasonable as so am inhabiting. Chatty design remark and his abroad figure but its.</p>
+<div class="img-full-width">
+    <figure class="content-figure">
+        <img src="assets/uploads/blog/Open blog/Content_06_wide.jpg" alt="" title="The 1975">
+        <figcaption>Band is rocking out</figcaption>
+    </figure>
+</div>
 <ul>
 <li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
 <li>Could death since do we hoped is in.</li>
 <li>Exquisite no my attention extensive.</li>
 <li>The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.</li>
-<li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
+<li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if
+agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
 </ul>
 <p>Few hills tears are weeks saw. Partiality insensible celebrated is in. Am offended as wandered thoughts greatest an friendly.
 Evening covered in he exposed fertile to. Horses seeing at played plenty nature to expect we. Young say led stood hills own thing get.</p>
-<p>Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing
+<h2>Part one</h2>
+<p>Out too the been like hard off. <a href="#" titile="Improve enquire link">Improve enquire</a> welcome own beloved matters her. As insipidity so mr unsatiable increasing
 attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous
 insensible. It recommend be resolving pretended middleton.</p>
+<div class="img-side-right">
+    <figure class="content-figure">
+        <img src="assets/uploads/blog/Open blog/Content_03.jpg" alt="Always parish tastes at as mr father dining at" title="Always parish tastes at as mr father dining at">
+        <figcaption>Night life</figcaption>
+    </figure>
+</div>
 <ol>
 <li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
 <li>Could death since do we hoped is in.</li>
@@ -181,23 +195,27 @@ Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfor
 Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished.
 Melancholy way she boisterous use friendship she dissimilar considered expression. Sex quick arose mrs lived. Mr things
 do plenty others an vanity myself waited to. Always parish tastes at as mr father dining at.</p>
+<h3>Part two</h3>
 <p>Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four.
 Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or
 to admiration remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.</p>
+<blockquote>
 <p>She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end.
 Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in.
 Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye.
 Five with seen put need tore add neat. Bringing it is he returned received raptures.</p>
+</blockquote>
 <p>Village did removed enjoyed explain nor ham saw calling talking. Securing as informed declared or margaret.
 Joy horrible moreover man feelings own shy. Request norland neither mistake for yet. Between the for morning assured
 country believe. On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir
 end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.</p>
-<p>In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence.
-Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably.
+<p>Shall there whose those stand she end<span class="footnote">*</span>. So unaffected partiality indulgence dispatched to of celebrated remarkably.
 Unfeeling are had allowance own perceived abilities.</p>
 <p>He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy.
 Unaffected at ye of compliment alteration to. Place voice no arise along to. Parlors waiting so against me no.
 Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor.</p>
+<hr>
+<span class="footnote-main"><span class="footnote">*&nbsp;</span>– In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence.</span>
 ';
 
 $content_contacts = '
@@ -874,12 +892,12 @@ $content_about_template = '
     </div>
      <div class="col-md-4 col-sm-4">
         <h4>Special user to edit content</h4>
-        <p>Если вы не самостоятельно редактируете контент, а вашему помощнику не нужно видеть все возможности MODX, передайте ему спецальный доступ только для контента.</p>
+        <p>If you do not edit your own content and your assistant does not need to see all the features of MODX, give him a special only access the content.</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4 col-sm-4">
-        <h4>If you do not edit your own content and your assistant does not need to see all the features of MODX, give him a special only access the content</h4>
+        <h4>Unisender</h4>
         <p>We have integrated a template subscription for one of the best, convenient and cheap email mailing services - <a href="[[~[[getIdResourceForAlias? &alias=`unisender`]]]]" target="_blank">unisender</a>.</p>
     </div>
 </div>

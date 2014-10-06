@@ -55,7 +55,7 @@ if ($object->xpdo) {
                     )
                 ),
                 'molt' => array(
-                    'signature' => 'molt-1.0.1-beta',
+                    'signature' => 'molt-1.0.2-beta',
                     'options' => array(
                         'version_major' => 1,
                         'version_minor:>=' =>  0,
