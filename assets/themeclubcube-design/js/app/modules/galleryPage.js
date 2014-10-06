@@ -82,6 +82,7 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
             }, // function/bool;   calls function when the image load begins
             onLoadEnd: function() {
                 _galleryLoader(false);
+                _showGalleryPicture();
                 _imgCounter();
             } // function/bool;   calls function when the image finishes loading
         })
@@ -191,10 +192,10 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
             $(prevNavigation).appendTo('body');
             $(nextNavigation).appendTo('body');
 
-            $('.lightbox-prev').on('click touchend', function() {
+            $('.lightbox-prev').unbind('click touchend').bind('click touchend', function() {
                 _clickGalleryNavigation('left');
             });
-            $('.lightbox-next').on('click touchend', function() {
+            $('.lightbox-next').unbind('click touchend').bind('click touchend', function() {
                 _clickGalleryNavigation('right');
             });
         } else {
