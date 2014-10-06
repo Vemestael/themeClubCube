@@ -50,6 +50,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
 
     _config = function() {
         _globals.slider = $(_properties.slider);
+        _globals.sliderDefault = $('.'+ _properties.sliderDefaultClass);
         _globals.imgSlider = $(_properties.imgSlider);
         _globals.videos = $(_properties.videos);
         _globals.rowss = $(_properties.rowss);

@@ -6,7 +6,7 @@
         <title>[[*longtitle:notempty=`[[*longtitle:htmlent]]`:default=`[[*pagetitle:htmlent]][[%lf_site_name:htmlent]]`]]</title>
         <meta name="description" content="[[*description:notempty=`[[*description:htmlent]]`:default=`[[%lf_description:htmlent]]`]]" />
         <base href="[[++site_url]]" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">

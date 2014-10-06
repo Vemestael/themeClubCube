@@ -40,7 +40,7 @@
                         <div class="pad-title">[[%lf_page_prev:htmlent]]</div>
                     </div>
                 </div>`
-				&tplPageNextEmpty=`@INLINE <div class="right-pag off">
+				&tplPageNextEmpty=`@INLINE <div class="right-pag sm off">
 					<div class="pad-arr">
 						<i></i>
 					</div>

@@ -443,7 +443,9 @@ $(function() {
             } else if ((slideNodeHeight < windowHeight) && ($('.slider').length)) {
                 $rows.css('top', sliderTopPadding + 10);
             } else if ((slideNodeHeight < windowHeight) && ($('.slider-default').length)) {
-                $rows.css('top', sliderTopPadding + 10);
+                // $rows.css('top', sliderTopPadding + 10);
+                 $rows.css('top', (sliderHeight - slideNodeHeight)/2 + 20);
+                console.log('Default slider <');
             } else {
                 $rows.css('top', '110px');
             };
