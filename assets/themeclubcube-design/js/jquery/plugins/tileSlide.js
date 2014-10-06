@@ -74,7 +74,7 @@
 			var img = panel.querySelector('img'),
 				imgInsertion = '';
 			for (var i = 0; i < self.tiles; i++) {
-				imgInsertion += '<div class="bg-tile"><div class="bg-img"><img src="' + img.src + '" /></div></div>';
+				imgInsertion += '<div class="bg-tile"><div class="bg-img"><img src="' + $(img).attr('src') + '" /></div></div>';
 			}
 			if ($(panel).children('img').length > 0) {
 				panel.removeChild(img);

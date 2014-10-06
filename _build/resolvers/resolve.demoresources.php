@@ -21,6 +21,7 @@ function createDocsDemo(&$modx, $context_key, $node, $doc = null){
             $pid = ($doc ? $doc->id : 0);
             $params = array_merge($base_params, $options);
             $params['parent']    =  $pid;
+            $modx->log(modX::LOG_LEVEL_INFO,'Start create resource '.$params['pagetitle'].'.');
             if(!$doc__ = $modx->getObject($classKey,
                 $params['parentCheck'] ?
                     array(
@@ -158,7 +159,7 @@ At wrong of of water those linen. Needed oppose seemed how all.
 Very mrs shed shew gave you.</p>
 <div class="img-full-width">
     <figure class="content-figure">
-        <img src="assets/uploads/blog/Open blog/Content_07_wide.jpg" alt="" title="One but not alone">
+        <img src="assets/uploads/blog/open/Content_07_wide.jpg" alt="" title="One but not alone">
         <figcaption>One but not alone</figcaption>
     </figure>
 </div>
@@ -187,7 +188,7 @@ Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfor
 Themselves at dispatched interested insensible am be prosperous reasonably it. </p>
 <div class="img-side-right">
     <figure class="content-figure">
-        <img src="assets/uploads/blog/Open blog/Content_01.jpg" alt="" title="Be free">
+        <img src="assets/uploads/blog/open/Content_01.jpg" alt="" title="Be free">
         <figcaption>Swim as you like</figcaption>
     </figure>
 </div>
@@ -1203,18 +1204,17 @@ if ($object && $object->xpdo) {
                     'textAsideRightWithImage',
                     'textWithImage',
                     'contacts',
-                    '404',
                 );
                 $templateVarPrefix = 'tpl_';
                 foreach($templateNames as $templateName){
                     $varName = $templateVarPrefix.$templateName;
+                    $modx->log(modX::LOG_LEVEL_INFO,'Find template '.$templateName);
                     if(!$$varName  = $modx->getObject('modTemplate', array('templatename'  => $templateName)   ) ){
                         $modx->log(xPDO::LOG_LEVEL_ERROR, "Could not get Template with name '{$templateName}'");
-                        return false;
+                        continue;
                     }
                 }
 
-                /*  */
                 $resources = array(
                     'childs' => array(
                         'home' => array(
@@ -1253,117 +1253,6 @@ if ($object && $object->xpdo) {
                                     'hidemenu' => false,
                                     'cacheable' => true,
                                     'searchable' => true,
-                                    'richtext' => true,
-                                    'uri_override' => true,
-                                    'context_key' => 'web',
-                                    'menutitle' => '',
-                                ),
-                            )
-                        ),
-                        '404' => array(
-                            'template' => $tpl_404->get('id'),
-                            'pagetitle' => '404',
-                            'longtitle' => '',
-                            'description' => '',
-                            'introtext' => '',
-                            'alias' => '404',
-                            'uri' => '404',
-                            'link_attributes' => '',
-                            'content' => '',
-                            'isfolder' => false,
-                            'published' => true,
-                            'publishedon' => time(),
-                            'hidemenu' => true,
-                            'cacheable' => true,
-                            'searchable' => false,
-                            'richtext' => false,
-                            'context_key' => 'web',
-                            'menutitle' => '',
-                            'group' => 'technical',
-                            'tvs' => array(
-                                'img' => '404.png'
-                            )
-                        ),
-                        'sitemap' => array(
-                            'template' => 0,
-                            'pagetitle' => 'sitemap',
-                            'longtitle' => '',
-                            'description' => '',
-                            'introtext' => '',
-                            'alias' => 'sitemap',
-                            'uri' => 'sitemap',
-                            'link_attributes' => '',
-                            'content' => '[[pdoSitemap? &parents=`-2,`]]',
-                            'isfolder' => false,
-                            'published' => true,
-                            'publishedon' => time(),
-                            'hidemenu' => true,
-                            'cacheable' => true,
-                            'searchable' => false,
-                            'richtext' => false,
-                            'context_key' => 'web',
-                            'menutitle' => '',
-                            'content_type' => 2, //XML
-                            'group' => 'technical',
-                        ),
-                        'ajax' => array(
-                            'template' => 0,
-                            'pagetitle' => 'ajax',
-                            'longtitle' => '',
-                            'description' => '',
-                            'introtext' => '',
-                            'alias' => 'ajax',
-                            'uri' => 'ajax',
-                            'link_attributes' => '',
-                            'content' => '',
-                            'isfolder' => true,
-                            'published' => false,
-                            'publishedon' => time(),
-                            'hidemenu' => true,
-                            'cacheable' => true,
-                            'searchable' => false,
-                            'richtext' => false,
-                            'context_key' => 'web',
-                            'menutitle' => '',
-                            'group' => 'technical',
-                            'childs' => array(
-                                'formContacts' => array(
-                                    'template' => 0,
-                                    'pagetitle' => 'formContacts',
-                                    'longtitle' => '',
-                                    'description' => '',
-                                    'introtext' => '',
-                                    'alias' => 'formcontacts',
-                                    'uri' => 'ajax/formcontacts',
-                                    'link_attributes' => '',
-                                    'content' => '[[!formContacts]]',
-                                    'isfolder' => false,
-                                    'published' => true,
-                                    'publishedon' => time(),
-                                    'hidemenu' => true,
-                                    'cacheable' => true,
-                                    'searchable' => false,
-                                    'richtext' => true,
-                                    'uri_override' => true,
-                                    'context_key' => 'web',
-                                    'menutitle' => '',
-                                ),
-                                'formSubscribe' => array(
-                                    'template' => 0,
-                                    'pagetitle' => 'formSubscribe',
-                                    'longtitle' => '',
-                                    'description' => '',
-                                    'introtext' => '',
-                                    'alias' => 'formsubscribe',
-                                    'uri' => 'ajax/formsubscribe',
-                                    'link_attributes' => '',
-                                    'content' => '[[!formSubscribe]]',
-                                    'isfolder' => false,
-                                    'published' => true,
-                                    'publishedon' => time(),
-                                    'hidemenu' => true,
-                                    'cacheable' => true,
-                                    'searchable' => false,
                                     'richtext' => true,
                                     'uri_override' => true,
                                     'context_key' => 'web',
@@ -5731,26 +5620,6 @@ if ($object && $object->xpdo) {
                                 ),
                             )
                         ),
-                        'contacts' => array(
-                            'template' => $tpl_contacts->get('id'),
-                            'pagetitle' => 'Contacts',
-                            'longtitle' => '',
-                            'description' => '',
-                            'introtext' => '',
-                            'alias' => 'contacts',
-                            'uri' => 'contacts',
-                            'link_attributes' => '',
-                            'content' => $content_contacts,
-                            'isfolder' => false,
-                            'published' => true,
-                            'publishedon' => time(),
-                            'hidemenu' => false,
-                            'cacheable' => true,
-                            'searchable' => true,
-                            'richtext' => true,
-                            'context_key' => 'web',
-                            'menutitle' => '',
-                        ),
                         'aboutList' => array(
                             'class_key' => 'modWebLink',
                             'template' => 0,
@@ -5761,7 +5630,7 @@ if ($object && $object->xpdo) {
                             'alias' => 'aboutlist',
                             'uri' => 'aboutlist',
                             'link_attributes' => '',
-                            'content' => $modx->getObject('modResource', array('alias' => 'about','context_key' => 'web',))->get('id'),
+                            'content' => $modx->getObject('modResource', array('alias' => 'text','context_key' => 'web',))->get('id'),
                             'isfolder' => true,
                             'published' => true,
                             'publishedon' => time(),
@@ -5773,7 +5642,6 @@ if ($object && $object->xpdo) {
                             'menutitle' => '',
                             'childs' => array(
                                 'about' => array(
-                                    'parentCheck' => true,
                                     'template' => $tpl_text->get('id'),
                                     'pagetitle' => 'Features',
                                     'longtitle' => '',

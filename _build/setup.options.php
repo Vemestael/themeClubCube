@@ -76,7 +76,7 @@ switch ($modx->getOption('manager_language')) {
         break;
     default:
         $output .=
-            '<label for="demo_data"Setup Demo resources?</label>
+            '<label for="demo_data">Setup Demo resources?</label>
             <input type="checkbox" name="demo_data" id="demo_data" value="1" />
         ';
 }

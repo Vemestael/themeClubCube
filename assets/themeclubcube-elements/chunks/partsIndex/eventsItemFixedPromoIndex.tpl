@@ -3,8 +3,8 @@
 		<img class="img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"
              data-src="<768:[[+promoImg:phpthumbof=`w=960&h=640&zc=1`]],
                 <1200:[[+promoImg:phpthumbof=`w=1152&h=768&zc=1`]],
-				>1199:[[+promoImg]]"
-             src="[[-+promoImg]]">>
+				>1199:/themeclubcube/[[+promoImg]]"
+             src="[[-+promoImg]]">
 	</div>
 	<div class="pattern"></div>
 	<div class="rowss">

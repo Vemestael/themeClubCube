@@ -96,7 +96,8 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
     _binds = function() {
         return {
             setScrollButtonBind: function(){
-                _globals.scrollButton.on('click touchend', function() {
+                _globals.scrollButton.unbind('click touchend');
+                _globals.scrollButton.bind('click touchend', function() {
                     if (_globals.galleryText.hasClass('active')) {
                         _globals.scrollButton.find('.scroll-down-inner').text('about this event');
                         _globals.galleryContainer.animate({
