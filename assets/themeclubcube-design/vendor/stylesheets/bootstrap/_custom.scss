@@ -1990,9 +1990,9 @@ aside .blog-item-def .item-title {overflow: visible;}
 .slider-default .slide-title .half-line {padding-left: 0;margin-top: 25px;margin-bottom: 25px;}
 .slider-default .slide-title .half-line hr {display: block;margin-top: 0;margin-bottom: 0;}
 .slider-default .event-about {margin-bottom: 0;}
-.slider-default .event-about .date {padding: 0px 15px;}
+.slider-default .event-about .date {padding: 0px 15px;margin-top: 5px;}
 .slider-default .socials {position: absolute;top: 28px;right: 0;margin-top: 0;color:$white-color;}
-.slider-default .get-in {margin-left: 59.8%;}
+.slider-default .get-in {position: absolute;bottom: -80px;margin-left: 55.5%;}
 .slider-default .rowss .slide-title .slider-heading {font-size: $header2-font-size;line-height: $header2-font-size;}
 .slider-default .video-about.default {display: block;}
 .slider-default .rowss .slider-heading.video-heading {width: 50%;padding-right: 0;float: left;}
