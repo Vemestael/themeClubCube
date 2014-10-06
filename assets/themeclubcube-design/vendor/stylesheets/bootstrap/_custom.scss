@@ -403,6 +403,7 @@ bottom: 20px;text-align: center;width: 100%;z-index: 12;}
 .slider-default .rowss .slide-desc .socials .tw-soc, .slider-default .date {margin-right: 0px;}
 .slider-default .date .month, .slider-default .date .year {font-family: $verdana;font-size: $reg-font-size;line-height: $reg-font-size;}
 .slider-default .date .day {font-family: $verdana;font-size: $content-h2;}
+.get-in-contain .get-in {margin-left: -15px;margin-right: -15px;}
 .sect.top-events-default {padding-bottom: 112px;}
 .sect.top-events-default .row.head {margin-bottom: $margin-sm-plus;}
 .sect.top-events-default h2 {margin-right: 0px;margin-bottom: 0;}
@@ -1993,12 +1994,13 @@ aside .blog-item-def .item-title {overflow: visible;}
 .slider-default .event-about {margin-bottom: 0;}
 .slider-default .event-about .date {padding: 0px 15px;margin-top: 5px;}
 .slider-default .socials {position: absolute;top: 28px;right: 0;margin-top: 0;color:$white-color;}
-.slider-default .get-in {position: absolute;bottom: -80px;margin-left: 55.5%;}
+// .slider-default .get-in {position: absolute;bottom: -80px;margin-left: 55.5%;}
 .slider-default .rowss .slide-title .slider-heading {font-size: $header2-font-size;line-height: $header2-font-size;}
 .slider-default .video-about.default {display: block;}
 .slider-default .rowss .slider-heading.video-heading {width: 50%;padding-right: 0;float: left;}
 .slider-default .video-about.default {float: right;}
-
+.get-in-contain {position: absolute;left: 0;bottom: -80px;}
+.get-in-contain .get-in {margin-left: -6px;}
 // Top events
 // -------------------------
 .sect.top-events-default .row.head {margin-bottom: $margin-mdl;}
