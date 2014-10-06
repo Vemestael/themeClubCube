@@ -235,8 +235,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484b', end
  .top-line-up {background: #242629;}/*Dark brown*/
  .bottom-line-up {background: #595f67;border-top: 1px solid #696f76;}/*Light brown*/
 /* .socials.brown-sc {color:#242629;}/*Dark brown*/
- .ttl {color:#595f67;}/*Orange*/
- .dt {color: #242629;}/*Dark brown*/
+/* .ttl {color:#595f67;}*//*Orange*/
+/* .dt {color: #242629;}*//*Dark brown*/
  .page-text ul li:before {background: #8a95a6;}/*Red*/
  .page-text ol li:before {color: #8a95a6;}/*Red*/
  .page-text .footnote {color:#595f67;}/*Orange*/

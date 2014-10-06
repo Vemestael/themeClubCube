@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Clubs</title>
+        <title>Event view</title>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta property="og:title" content="" />
@@ -13,11 +13,11 @@
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="js/css/slick.css">
         <link rel="stylesheet" href="css/style.min.css">
-        <link rel="stylesheet" href="css/gold-color.css">
+          <link rel="stylesheet" href="css/gold-color.css">
         <link rel="stylesheet" href="css/basketball-color.css">
         <link rel="stylesheet" href="css/blueberry-color.css">
         <script src="js/jquery/jquery-1.11.0.min.js"></script>
-        <script src="js/otherlibs/bootstrap.min.js"></script>
+        <script src="js/otherlibs/bootstrap.js"></script>
         <script src="js/jquery/plugins/slick/slick.min.js"></script>
         <!--[if IE]>
         <script src="assets/js/html5.js"></script>
@@ -46,22 +46,21 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             </button>
-                            <span class="home-btn">404</span>
+                            <span class="home-btn">Home</span>
                         </div>
-                        <a href="index.html" class="navbar-brand first">
-                            <img src="images/logo-w.png" alt="" class="site-logo">
-                        </a>
+                        <span class="navbar-brand first">
+                        <img src="images/logo-w.png" alt="" class="site-logo">
+                        </span>
                     </div>
-                    <nav class="collapse navbar-collapse col-lg-6 main-navig" id="navbar-collapse-1">
+                    <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home
+                                <a href="#" class="dropdown-toggle main-heading-a">Home
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="active">
-                                        <!-- <a href="index.html">Main slider</a> -->
-                                        <span>Main slider</span>
+                                    <li>
+                                        <a href="index.html">Main slider</a>
                                     </li>
                                     <li class="last">
                                         <a href="default-slider.html">Default slider</a>
@@ -69,7 +68,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events
+                                <a href="#" class="dropdown-toggle main-heading-a">Events
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -82,7 +81,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About
+                                <a href="#" class="dropdown-toggle main-heading-a">About
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -93,7 +92,7 @@
                                         <a href="content-view.html">Content view</a>
                                     </li>
                                     <li>
-                                        <a href="content-view-default.html">Content default</a>
+                                        <span>Content default</span>
                                     </li>
                                     <li class="last">
                                         <a href="content-view-default-image.html">Content default image</a>
@@ -101,7 +100,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Media
+                                <a href="#" class="dropdown-toggle main-heading-a">Media
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -110,53 +109,100 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle main-heading-a">Blog
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="active">
-                                        <!-- <a href="blog-list.html">Blog list</a> -->
-                                        <span>Blog list</span>
+                                    <li>
+                                        <a href="blog-list.html">Blog list</a>
                                     </li>
                                     <li class="last">
                                         <a href="blog-list-default.html">Default blog</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="active">
-                                <span>404</span>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle main-heading-a">Contacts</a>
                             </li>
-<li class="dropdown left-dropdow">
-    <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
-        <i class="fa fa-tint"></i>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-right">
-        <li class="active">
-            <span><i class="color-ic color-ic-reg"></i>Origin</span>
-        </li>
-        <li>
-            <a href="blog-list-default.html"><i class="color-ic color-ic-gd"></i>Gold</a>
-        </li>
-        <li >
-            <a href="blog-list-default.html"><i class="color-ic color-ic-bb"></i>Basketball</a>
-        </li>
-        <li class="last">
-            <a href="blog-list-default.html"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
-        </li>
-    </ul>
-</li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-        <div class="for-for">
-            <div class="container">
+        <section class="content-header white-img">
+            <div class="container z-top">
                 <div class="row">
-                    <div class="col-xs-8 col-xm-6 col-sm-6 col-lg-4 col-xs-offset-2 col-xm-offset-3 col-sm-offset-3 col-lg-offset-4 ff-col">
-                        <img src="images/404.png" alt="" class="img-responsive">
+                    <div class="col-xs-12 col-sm-12 col-md-12 content-header__center-list">
+                        <h1 class="content-h1 text-left">Contacts</h1>
                     </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-content main-content__grey-border">
+            <div class="container text-contain">
+                <div class="row">
+                    <main class="col-xs-12 col-sm-12 col-md-12 content-main content-main__center-list">
+                    <div class="content-page">
+                        <div class="page-text">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2>Address:</h2>
+                                    <ul>
+                                        <li><b>Country:</b> Ukraine</li>
+                                        <li><b>City:</b> Mariupol</li>
+                                        <li><b>Address:</b> Kazanceva 7b, office 29</li>
+                                        <li><b>Phone:</b>+38 (000) 000 00 00</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2>Напишите нам</h2>
+                                    <form class="form-horizontal" id="contactForm" action="ajax/formcontacts" method="POST" novalidate="novalidate">
+                                        <div class="form-group">
+                                            <label for="inputName" class=" control-label"></label>
+                                            <div class="">
+                                                <input type="text" name="name" class="form-control required" required="" id="inputName" placeholder="Имя:" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail" class="control-label"></label>
+                                            <div class="">
+                                                <input type="email" name="email" class="form-control required email" required="" id="inputEmail" placeholder="E-mail:" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputMessage" class=" control-label"></label>
+                                            <div class="">
+                                                <textarea name="message" class="form-control" rows="3" required="" id="inputMessage" aria-required="true"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="">
+                                                <button type="submit" class="btn btn-default submit">Отправить</button>
+                                            </div>
+                                        </div>
+                                        <div id="loaderContactsForm" class="suc loader hide">
+                                            <div class="loader">
+                                                <div class="fr-bl"></div>
+                                                <div class="sc-bl"></div>
+                                                <div class="thr-bl"></div>
+                                                <div class="fth-bl"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="successMessage" class="suc" style="display: none;">
+                                        <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>Спасибо, ваше сообщение отправлено</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </main>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="map-canvas" class="map-contacts"></div>
                 </div>
             </div>
         </div>
@@ -197,27 +243,12 @@
                         <div class="subscribe-here soc-marg">
                             <div class="footer-header">Mailing list</div>
                             <p>Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!</p>
-                            <form action="#" id="email-footer-form" novalidate>
+                            <form action="#" id="email-footer-form">
                                 <div class="subscribe">
-                                    <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail" data-toggle="tooltip" data-placement="top">
-                                    <label for="email-subscribe" class="error">
-                                        <span class="subscribe-label-arrow"></span>
-                                        <span class="subscribe-label-inner">No email</span>
-                                    </label>
+                                    <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail">
                                     <button type="submit" value="Subscribe" id="subscribe-btn" >Subscribe</button>
                                 </div>
-                                <div id="loaderContactForm" class="suc loader">
-                                    <div class="loader">
-                                        <div class="fr-bl"></div>
-                                        <div class="sc-bl"></div>
-                                        <div class="thr-bl"></div>
-                                        <div class="fth-bl"></div>
-                                    </div>
-                                </div>
                             </form>
-                            <div id="successContactForm" class="suc">
-                                <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>You were subscribed</div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
@@ -284,12 +315,17 @@
         <script src="js/loader.js"></script>
         <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
         <script src="js/html.js"></script>
-        <script src="js/jquery/plugins/topEventsAnimate.js"></script>
-        <script src="js/jquery/plugins/tinyAnimations.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
         <script>
-        $(document).ready(function(){
-        var events = new EventAnimate($('.blog-item'));
-        });
+        function initialize() {
+        var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(-34.397, 150.644)
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </body>
 </html>
