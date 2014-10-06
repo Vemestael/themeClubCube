@@ -5,27 +5,21 @@
 $eventName = $modx->event->name;
 
 switch($eventName) {
-    case 'OnHandleRequest':
+    case 'OnWebPageInit':
         if($modx->context->get('key') != "mgr"){
-            if(isset($_GET['color'])) {
-                $color = $_GET['color'];
+            if(isset($_GET['color']) || isset($_SESSION['color'])) {
+                $color = $_GET['color'] ? $_GET['color'] : $_SESSION['color'];
                 $colors = array('default', 'gold', 'basketball', 'blueberry');
                 if(!in_array($color, $colors)) {
                     continue;
                 }
-                $setting = $modx->getObject('modSystemSetting', 'themeclubcube.color_scheme');
-                $setting->set('value', $color);
-                $setting->save();
+                $_SESSION['color'] = $color;
 
-                if (!$modx->getService('molt','Molt',$modx->getOption('molt_core_path',null,$modx->getOption('core_path').'components/molt/').'model/molt/',$scriptProperties)) {continue;}
-                if (!$Molt = new Molt($modx, array('cacheFolder' => $modx->getOption('themeclubcube.design_url').'min/'))) {
-                    continue;
-                }
-
-                $Molt->clearCache();
-
-                $modx->cacheManager->refresh();
+                $modx->regClientCSS($modx->getOption('themeclubcube.design_url').'css/'.$color.'-color.css');
+            } else {
+                $color = 'default';
             }
+            $modx->setPlaceholder('color', $color);
         }
         break;
     case 'OnLoadWebDocument':
