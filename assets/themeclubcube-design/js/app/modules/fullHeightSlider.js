@@ -75,7 +75,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                 } else if ((_globals.slideNodeHeight < _globals.windowHeight) && (_globals.sliderDefault.length)) {
                     _globals.rowss.css('top', (_globals.sliderHeight - _globals.slideNodeHeight) / 2 - 20);
                 } else {
-                    _globals.rowss.css('top', '110px');
+                    _globals.rowss.css('top', '130px');
                 }
                 if ((_globals.slideNodeHeight < _globals.sliderHeight) && (window.devicePixelRatio === 2) && ((_globals.windowWidth) === 1024)) {
                     _globals.rowss.css('top', ((_globals.sliderHeight / 2 - _globals.slideNodeHeight)) + 40);

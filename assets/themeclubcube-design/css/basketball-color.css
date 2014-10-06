@@ -103,6 +103,10 @@ blockquote a {color:#f1632c;}/*Orange*/
 .left-pag.hover .pad-arr, .left-pag:hover .pad-arr, .right-pag.hover .pad-arr, .right-pag:hover .pad-arr {background: #f1632c;}
 }
 
+@media screen and (min-width: 768px) {
+.left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text  {border:1px solid #e6e6e6 !important;}
+}
+
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#9ab1b7;border:2px solid #9ab1b7!important;}/*Red*/
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#9ab1b7;border:2px solid #9ab1b7;}/*Red*/
 .slider-default .button-slider.pressed {border: 2px solid #cbcbcb !important;background: transparent !important;}

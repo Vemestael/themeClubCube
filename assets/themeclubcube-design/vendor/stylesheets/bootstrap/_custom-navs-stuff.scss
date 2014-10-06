@@ -60,6 +60,8 @@ button:active {border: 0;}
 .left-pag .pad-text {text-align:right;}
 .right-pag .pad-text {text-align:left;} 
 
+.paging .left-pag .pad-arr, .paging .right-pag .pad-arr {}
+
 .left-pag:hover .pad-arr, .left-pag.hover .pad-arr, .right-pag:hover .pad-arr, .right-pag.hover .pad-arr {background:$orange-color;@include transitions(.3s);}
 .left-pag:hover .pad-title, .left-pag.hover .pad-title, .right-pag:hover .pad-title, .right-pag.hover .pad-title {color:$orange-color;@include transitions(.3s);}
 .left-pag:hover .pad-text, .left-pag.hover .pad-text {border:1px solid $orange-border-light;border-left:0 none;@include transitions(.3s);}

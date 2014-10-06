@@ -97,13 +97,16 @@ blockquote a {color:#404040;}/*Orange*/
 .left-pag .pad-dates, .right-pag .pad-dates {color: #999;}
 .left-pag.off .pad-dates, .right-pag.off .pad-dates, .left-pag.off .pad-title, .right-pag.off .pad-title {color: #ccc !important;}
 
-.left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text  {border:1px solid #e6e6e6 !important;}
 .left-pag.off .pad-title, .right-pag.off .pad-title, .left-pag.off:hover .pad-title, .right-pag.off:hover .pad-title, .left-pag.off:hover:active .pad-title, .right-pag.off:hover:active .pad-title {color:#ccc !important;}
 
 @media screen and (min-width: 480px) {
 .left-pag .pad-text, .right-pag .pad-text {border: 1px solid #f4ebd3;}
 .left-pag:hover .pad-text, .left-pag.hover .pad-text {border:1px solid #d4d4d4;}
 .left-pag.hover .pad-arr, .left-pag:hover .pad-arr, .right-pag.hover .pad-arr, .right-pag:hover .pad-arr {background: #404040;}
+}
+
+@media screen and (min-width: 768px) {
+.left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text  {border:1px solid #e6e6e6 !important;}
 }
 
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#e0b13b;border:2px solid #e0b13b !important;}/*Red*/

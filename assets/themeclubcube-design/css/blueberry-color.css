@@ -94,7 +94,6 @@ blockquote a {color:#ec1c24;}/*Orange*/
 .left-pag .pad-dates, .right-pag .pad-dates {color: #999;}
 .left-pag.off .pad-dates, .right-pag.off .pad-dates, .left-pag.off .pad-title, .right-pag.off .pad-title {color: #ccc !important;}
 
-.left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text  {border:1px solid #e6e6e6 !important;}
 .left-pag.off:hover .pad-title, .right-pag.off:hover .pad-title, .left-pag.off:hover:active .pad-title, .right-pag.off:hover:active .pad-title {color:#ccc !important;}
 
 
@@ -104,7 +103,9 @@ blockquote a {color:#ec1c24;}/*Orange*/
 .right-pag:hover .pad-text, .right-pag.hover .pad-text {border:1px solid #f6cdce;}
 .left-pag.hover .pad-arr, .left-pag:hover .pad-arr, .right-pag.hover .pad-arr, .right-pag:hover .pad-arr {background: #ec1c24;}
 }
-
+@media screen and (min-width: 768px) {
+.left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text  {border:1px solid #e6e6e6 !important;}
+}
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#d7515c;border:2px solid #d7515c!important;}/*Red*/
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#d7515c;border:2px solid #d7515c;}/*Red*/
 .slider-default .button-slider {border: 2px solid #fff !important;background: #fff !important;}

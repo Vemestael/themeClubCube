@@ -1913,7 +1913,7 @@ footer .copyrigts {font-size: $reg-font-size;}
 
 // Default slider
 // -------------------------
-.slider-default {position: relative;height: 600px;overflow: hidden;}
+.slider-default {position: relative;height: 600px;min-height: 600px;overflow: hidden;}
 .slider-default .slide-title {position: relative;}
 .slider-default .rowss {position: absolute;width: 100%;top: 188px;z-index: 8;left: 0;margin: 0 auto;max-width: 1596px;right: 0;}
 .slider-default .rowss .slider-heading {font-family: $verdana!important;font-size: $header2-font-size;line-height: $header2-font-size;font-weight: normal;}
