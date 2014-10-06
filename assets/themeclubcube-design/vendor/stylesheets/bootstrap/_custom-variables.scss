@@ -1,7 +1,6 @@
+// Colors
+// -------------------------
 $link-hover-color:      #fff;
-//** Custom theme styles
-
-//** Colors
 $white-color:                 #fff;
 $black-color:                 #000;
 $h2-color:                    #010101;
@@ -53,17 +52,20 @@ $margin-sm-plus:              25px;
 $margin-sm:                   20px;
 $margin-xs: 				  12px;
 
-//** Content margins
+// Content margins
+// -------------------------
 $p-margin: 					   20px;
 $p-line-height: 			   30px;
 $h2-margin-top: 			   30px;
 $h2-margin-bottom: 			   10px;
 
-//** Responsive gutter
+// Responsive gutter
+// -------------------------
 $xs-gutter:                    40px;
 $xs-horizontal-gutter:         35px;
 
-//** Fonts
+// Fonts
+// -------------------------
 $header1-font-size:            60px;
 $header2-font-size:            48px;
 $header3-font-size:            36px;
@@ -72,9 +74,8 @@ $header4-font-size:            24px;
 $header45-font-size: 		   22px;
 $header5-font-size:            18px;
 
-
-
-//** Contetnt fonts
+// Contetnt fonts
+// -------------------------
 @font-face {
 	font-family: 'PT Sans reg';
 	src: url('../fonts/pt_sans-web-regular.eot');
@@ -115,7 +116,6 @@ $verdana: 					   Verdana, sans-serif;
 
 $content-h2: 				   30px;
 $content-h3: 				   24px;
-   
 $md-font-size:                 16px;
 $reg-font-size:                14px;
 $sm-font-size:                 12px;
@@ -125,13 +125,16 @@ $btn-cust-font-size:           20px;
 
 $line-height-md: 			   20px;
 
-//** Buttons
+// Buttons
+// -------------------------
 $orange-border-light:          #f4dad1;
 
 // Scrollbar
+// -------------------------
 $dark-red-color: 			   #772533;
 
-//** Hr
+// Hr
+// -------------------------
 $light-pink-color:             #eed4d9;
 $light-white-color:            #c9bdbc;
 

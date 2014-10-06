@@ -14,7 +14,7 @@
         </div>
     </section>
     <div class="container gr-bg tab-content">
-        <div class="tab-pane show">
+        <div class="tab-pane show row">
             [[!getParamsWeeksEvents]]
             [[!+week:is=`1`:then=`
                 [[!pdoResources@eventsListWeek?

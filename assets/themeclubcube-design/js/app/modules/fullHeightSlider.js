@@ -11,6 +11,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
         // data
         // classes ans styles
         sliderClass: 'slider',
+        tileClass:'.bg-tile', 
         sliderDefaultClass: 'slider-default',
         imgResponsiveClass: 'img-responsive',
         heightToWindowClass: 'height-to-window'
@@ -52,6 +53,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
         _globals.imgSlider = $(_properties.imgSlider);
         _globals.videos = $(_properties.videos);
         _globals.rowss = $(_properties.rowss);
+        _globals.tileNode = $(_properties.tileClass);
         _globals.windowHeight = $window.height();
         _globals.windowWidth = $window.width();
     },
@@ -78,8 +80,10 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
             var tileOptions = {};
             if(_globals.slider.hasClass(_properties.sliderDefaultClass)){
                 tileOptions = {dots: true}
-            }
-            _globals.tileSlide = new TileSlide(document.querySelector(_properties.slider), tileOptions);
+            };
+            if (!_globals.tileNode.length) {
+                _globals.tileSlide = new TileSlide(document.querySelector(_properties.slider), tileOptions);
+            };
             _globals.imgSlider.each(function() {
                 var node = this;
                 _changeClass(node);

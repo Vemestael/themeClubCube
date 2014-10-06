@@ -254,8 +254,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82743', end
  .event-line-up a, .bottom-line-up ul li .under-descr {color:#e15e32;}
  .line-up-arrow {border-left: 40px solid #5c323e;}
  .line-up-title {color:rgba(255,255,255,.7);}
- .ttl {color:#e15e32;}/*Orange*/
- .dt {color: #5c323e;}/*Dark brown*/
+/* .ttl {color:#e15e32;}*//*Orange*/
+/* .dt {color: #5c323e;}*//*Dark brown*/
  .page-text ul li:before {background: #a82743;}/*Red*/
  .page-text ol li:before {color: #a82743;}/*Red*/
  .page-text .footnote {color:#e15e32;}/*Orange*/

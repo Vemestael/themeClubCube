@@ -14,10 +14,10 @@
 				<div class="content-page">
 					<div class="page-text">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 contact-block">
 						        [[*content]]
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 contact-block">
                                 <h2>[[%lf_contact_head:htmlent]]</h2>
                                 <form class="form-horizontal" id="contactForm" action="[[~[[++themeclubcube.ajax_form_contacts]]]]" method="POST">
                                     <div class="form-group">
@@ -36,8 +36,8 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-sm-offset-4 col-sm-12">
-                                            <button type="submit" class="btn btn-default submit">[[%lf_contact_send:htmlent]]</button>
+                                        <div class="col-sm-8">
+                                            <button type="submit" class="read-more submit">[[%lf_contact_send:htmlent]]</button>
                                         </div>
                                     </div>
                                     <div id="loaderContactsForm" class="suc loader hide">

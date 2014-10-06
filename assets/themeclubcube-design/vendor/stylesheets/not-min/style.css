@@ -8644,6 +8644,11 @@ input:focus {
   padding-right: 0;
 }
 
+.null-m {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .mr-bl {
   padding-top: 45px;
 }
@@ -9654,12 +9659,12 @@ table.club-table tbody tr td {
 }
 .header-top .nav > li > a.dropdown-toggle.main-heading-a, .header-top .nav > li > span.dropdown-toggle.main-heading-a, .header-top .nav > li > span {
   font-size: 14px;
-  padding: 18px 15px 23px 15px;
+  padding: 18px 15px;
   line-height: 14px;
 }
 
 .header-top .nav.nav-top > li > a, .header-top .nav.nav-top > li > span {
-  padding: 18px 15px 22px 15px;
+  padding: 18px 15px;
   line-height: 14px;
 }
 
@@ -9782,6 +9787,7 @@ header.header-top .home-btn {
 }
 
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {
+  max-height: 460px;
   overflow-y: auto !important;
 }
 
@@ -9922,6 +9928,11 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
 .top-events .navbar-nav > li.dropdown:hover {
   border-right: 1px solid white;
   border-left: 1px solid transparent;
+}
+
+.color-btn i {
+  font-size: 22px;
+  color: black;
 }
 
 .slider .container-fluidss {
@@ -12627,11 +12638,14 @@ aside .event-dates {
 .date-no-border .dt {
   font-size: 14px;
   font-weight: normal;
+  color: #999999;
 }
 
 .date-no-border .ttl {
   text-transform: uppercase;
   font-size: 36px;
+  font-weight: bold;
+  color: #333333;
 }
 
 .absi {
@@ -12882,7 +12896,7 @@ aside .event-dates {
 
 .ticket-event-price .ticket-price span {
   color: white;
-  opacity: .5;
+  opacity: .6;
 }
 
 .ticket-event-price .ticket-price span.ticket-doll {
@@ -13998,7 +14012,7 @@ aside.items-aside .blog-item-def .item-title {
 
 .img-side-right {
   display: block;
-  max-width: 50%;
+  max-width: 45%;
   margin: 20px 0 20px 30px;
   float: right;
 }
@@ -14010,7 +14024,7 @@ aside.items-aside .blog-item-def .item-title {
 .img-full-width {
   display: block;
   width: 100%;
-  margin: 35px 0;
+  margin: 25px 0;
   overflow: hidden;
 }
 
@@ -14053,7 +14067,7 @@ aside.items-aside .blog-item-def .item-title {
   font-family: "PT Sans reg", sans-serif;
   list-style: none;
   position: relative;
-  padding-left: 20px;
+  padding-left: 25px;
   color: #333333;
 }
 
@@ -14075,10 +14089,13 @@ aside.items-aside .blog-item-def .item-title {
 .page-text ol li {
   font-family: "PT Sans reg", sans-serif;
   counter-increment: myIndex;
+  padding-left: 25px;
   color: #333333;
 }
 
 .page-text ol li:before {
+  position: absolute;
+  left: 18px;
   content: counter(myIndex) " ";
   color: #a82743;
   padding-right: 7px;
@@ -14091,6 +14108,7 @@ aside.items-aside .blog-item-def .item-title {
 
 .page-text .footnote {
   color: #e15e32;
+  font-size: 18px;
 }
 
 .page-text p {
@@ -14158,6 +14176,13 @@ blockquote a:hover {
 
 .for-for {
   background: #f9f9f9;
+}
+
+.map-contacts {
+  display: block;
+  height: 400px;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) and (max-height: 400px) {
@@ -14280,6 +14305,10 @@ blockquote a:hover {
 
   .dropdown-menu > li > a, .dropdown-menu > li > span {
     font-size: 14px;
+  }
+
+  .dropdown-menu > li.active a, .dropdown-menu > li.active span {
+    padding-left: 30px;
   }
 
   .navbar-brand.first {
@@ -15387,6 +15416,7 @@ blockquote a:hover {
   }
 
   .navbar-collapse.main-navig, .navbar-collapse.collapsing {
+    max-height: 700px;
     width: 100%;
     background: white;
   }
@@ -15394,6 +15424,10 @@ blockquote a:hover {
   .nav.navbar-nav.navbar-right {
     -webkit-box-shadow: none;
     box-shadow: none;
+  }
+
+  .dropdown-menu > li.active a, .dropdown-menu > li.active span {
+    padding-left: 30px;
   }
 
   .navbar-right .dropdown-menu {
@@ -16893,6 +16927,10 @@ blockquote a:hover {
     color: white;
   }
 
+  header .color-btn {
+    padding: 17px 15px !important;
+  }
+
   .header-top .navbar-collapse, header .navbar-collapse {
     width: auto;
     -webkit-box-shadow: none;
@@ -16903,7 +16941,7 @@ blockquote a:hover {
     font-size: 14px;
     color: white;
     background: transparent;
-    padding: 19px 15px 23px;
+    padding: 21px 15px 21px;
   }
 
   .header-top .navbar-collapse, header .navbar-collapse {
@@ -16983,6 +17021,15 @@ blockquote a:hover {
     background: #e5e5e5;
   }
 
+  nav > ul > li.dropdown > ul > li.active > span {
+    cursor: pointer;
+  }
+
+  .header-top .dropdown > .dropdown-menu-right, header .dropdown > .dropdown-menu-right {
+    left: auto !important;
+    right: 0 !important;
+  }
+
   .home-btn {
     display: none;
   }
@@ -17051,6 +17098,15 @@ blockquote a:hover {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     cursor: pointer;
+  }
+
+  .header-top .color-btn {
+    padding: 18px 15px 16px 15px !important;
+  }
+
+  .color-btn i {
+    font-size: 22px;
+    color: white;
   }
 
   .slider .rowss {
@@ -19001,6 +19057,15 @@ blockquote a:hover {
     line-height: 48px;
   }
 
+  .page-text .contact-block h2 {
+    margin-bottom: 22px;
+  }
+
+  .page-text .contact-block p {
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+
   .top-event-place.blog-view-descr {
     font-size: 13px;
     line-height: 30px;
@@ -19017,7 +19082,7 @@ blockquote a:hover {
   }
 
   .img-full-width {
-    margin: 45px 0;
+    margin: 30px 0;
   }
 
   .page-text .content-intro {
@@ -19044,8 +19109,14 @@ blockquote a:hover {
     padding-left: 25px;
   }
 
+  .page-text ol li {
+    padding-left: 25px;
+  }
+
   .page-text ol li:before {
-    padding-right: 10px;
+    position: absolute;
+    left: 38px;
+    padding-right: 0px;
   }
 
   blockquote {
@@ -19185,9 +19256,6 @@ button:active {
   border: 0;
 }
 
-/* ========================================================================
- * Custom buttons "Read more"
- * ======================================================================== */
 .read-more {
   display: block;
   padding: 10px 17px;
@@ -19226,9 +19294,11 @@ button:active {
   background: #cccccc;
 }
 
-/* ========================================================================
- * Custom buttons "Next-Prev"
- * ======================================================================== */
+.read-more {
+  outline: none;
+  border: none;
+}
+
 .left-pag, .right-pag {
   display: block;
   width: 140px;
@@ -19452,21 +19522,26 @@ button:active {
     transition: all 0.3s ease;
   }
 
+  .left-pag .pad-title, .right-pag .pad-title {
+    color: #333 !important;
+  }
+
+  .left-pag .pad-dates, .right-pag .pad-dates {
+    color: #999 !important;
+  }
+
   .left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #e6e6e6 !important;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
   .left-pag.off:hover .pad-title, .right-pag.off:hover .pad-title, .left-pag.off:hover:active .pad-title, .right-pag.off:hover:active .pad-title {
-    color: #cccccc;
+    color: #cccccc !important;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }
-/* ========================================================================
- * Custom buttons "Button Slider"
- * ======================================================================== */
 .button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {
   display: block;
   width: 18px;
@@ -19541,9 +19616,6 @@ button:active {
     background: transparent;
   }
 }
-/* ========================================================================
- * Custom buttons "Button Arrow"
- * ======================================================================== */
 .button-arrow-left, .partners-slider .slick-prev, .partners-slider .slick-next {
   display: block;
   position: relative;
@@ -19662,9 +19734,6 @@ button:active {
   position: absolute;
 }
 
-/* ========================================================================
- * Custom buttons "Button Filter Checked"
- * ======================================================================== */
 table.club-table .button-filter.checked, .button-filter.checked:last-child {
   margin-right: 0;
 }
@@ -19839,9 +19908,6 @@ table.club-table .button-filter.checked, .button-filter.checked:last-child {
   transition: all 0.3s ease;
 }
 
-/* ========================================================================
- * Custom buttons "Button Filter Unchecked"
- * ======================================================================== */
 table.club-table .button-filter.unchecked, .button-filter.unchecked:last-child {
   margin-right: 0;
 }
@@ -20015,9 +20081,6 @@ table.club-table .button-filter.unchecked, .button-filter.unchecked:last-child {
   transition: all 0.3s ease;
 }
 
-/* ========================================================================
- * Custom buttons "Button More Blogs"
- * ======================================================================== */
 .button-more {
   display: inline-block;
   padding: 12px 19px;
@@ -20215,9 +20278,6 @@ table.club-table .button-more {
   transition: all 0.3s ease;
 }
 
-/* ========================================================================
- * Custom buttons "Button Dropdown"
- * ======================================================================== */
 .button-dropdown {
   display: block;
   height: 70px;
@@ -20485,9 +20545,6 @@ table.club-table .button-more {
   color: #333333;
 }
 
-/* ========================================================================
- * Custom buttons "Dropdown List"
- * ======================================================================== */
 .dropdown-list {
   display: block;
   float: left;
@@ -20569,9 +20626,6 @@ table.club-table .button-more {
   transition: all 0.3s ease;
 }
 
-/* ========================================================================
- * Custom buttons "Tab"
- * ======================================================================== */
 .tab-custom {
   display: block;
   width: 100%;
@@ -20732,9 +20786,6 @@ table.club-table tr.padding-b-no td {
     transition: all 0.3s ease;
   }
 }
-/* ========================================================================
- * Custom buttons "menu"
- * ======================================================================== */
 ul.mob-menu {
   display: block;
   float: left;
@@ -20796,9 +20847,6 @@ ul.mob-menu li a.pressed {
   transition: all 0.3s ease;
 }
 
-/* ========================================================================
- * Custom buttons "Radio"
- * ======================================================================== */
 .radio-b {
   display: block;
 }
@@ -20922,9 +20970,6 @@ input[type="radio"]:checked + label.rb-lb.active:after {
   background: #a82743;
 }
 
-/* ========================================================================
- * Custom buttons "Checkbox"
- * ======================================================================== */
 .checkbox-b {
   display: block;
 }
@@ -21067,9 +21112,6 @@ input[type="checkbox"]:checked + label.chb-lb.active:after {
   font-size: 13px;
 }
 
-/* ========================================================================
- * Bootstrap inputs
- * ======================================================================== */
 select.form-control:focus {
   border: 2px solid #cccccc;
   -webkit-transition: all 0.3s ease;
@@ -21154,9 +21196,6 @@ label.error {
 /* ========================================================================
 * Custom inputs "Subscribe"
 * ======================================================================== */
-/* ========================================================================
-* Custom inputs "Select"
-* ======================================================================== */
 .select-dropdown {
   display: inline-block;
   width: 100%;
@@ -21236,7 +21275,7 @@ select.form-control option:hover, select.form-control option:focus {
 }
 
 .select-dropdown.off:hover select.form-control {
-  border: 2px solid #e2e2e2;
+  border: 2px solid #e2e2e2 !important;
 }
 
 .select-dropdown.off select.form-control, .select-dropdown.off:hover select.form-control {
@@ -21274,9 +21313,6 @@ select.form-control option:hover, select.form-control option:focus {
   border: 2px solid #e2e2e2;
 }
 
-/* ========================================================================
-* Custom inputs "Textarea"
-* ======================================================================== */
 textarea {
   display: block;
   float: left;
@@ -21306,9 +21342,6 @@ textarea.pressed {
   transition: all 0.3s ease;
 }
 
-/* ========================================================================
-* Custom inputs "Text error"
-* ======================================================================== */
 input.required {
   font-family: "PT Sans reg", sans-serif;
   color: black !important;
@@ -21400,9 +21433,6 @@ input.submit:hover {
   background-color: #d35a33;
 }
 
-/* ========================================================================
-* Error states
-* ======================================================================== */
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
   color: black;
 }
@@ -21421,9 +21451,6 @@ input.submit:hover {
   box-shadow: none;
 }
 
-/* ========================================================================
-* Tooltips
-* ======================================================================== */
 .tooltip {
   font-size: 14px;
   line-height: 20px;
@@ -21528,11 +21555,57 @@ footer .suc.loader .loader .fr-bl, footer .suc.loader .loader .fth-bl, footer .s
   border-width: 25px 34px 40px 0;
 }
 
-/* ========================================================================
-* Tables
-* ======================================================================== */
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
   background-color: #efefef;
+}
+
+.color-ic {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+  float: left;
+}
+
+.color-ic:before {
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  content: '';
+  font-family: FontAwesome;
+  content: "\f00c";
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  visibility: hidden;
+}
+
+nav > ul > li.dropdown > ul > li > a:hover .color-ic:before {
+  visibility: visible;
+}
+
+nav > ul > li.dropdown > ul > li.active > span .color-ic:before {
+  visibility: visible;
+}
+
+.color-ic-reg {
+  background: #a82743;
+}
+
+.color-ic-gd {
+  background: #e0b13b;
+}
+
+.color-ic-bb {
+  background: #f1632c;
+}
+
+.color-ic-bbr {
+  background: #ec1c24;
 }
 
 .ps-container .ps-scrollbar-x-rail {
