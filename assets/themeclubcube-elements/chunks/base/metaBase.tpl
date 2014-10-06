@@ -32,7 +32,7 @@
             &minifyJs=`1`
             &cacheFolder=`[[++themeclubcube.design_url]]min/`
             &jsSources=`
-				[[++themeclubcube.design_url]]js/otherlibs/bootstrap.min.js
+				[[++themeclubcube.design_url]]js/otherlibs/bootstrap.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.imgpreload.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/jquery.form.js
                 ,[[++themeclubcube.design_url]]js/jquery/plugins/validation/jquery.validate.js
