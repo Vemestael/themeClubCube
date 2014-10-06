@@ -10837,6 +10837,10 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   margin: 0 0 30px;
 }
 
+.all-blogs-container .top-event-title, .all-blogs-container .top-event-place, .all-blogs-container .item-icons {
+  color: black;
+}
+
 .gall-slider-control {
   display: none;
 }

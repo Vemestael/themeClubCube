@@ -435,6 +435,7 @@ bottom: 20px;text-align: center;width: 100%;z-index: 12;}
 .blog-item-def .item-title .item-aside {width: 100%;}
 .blog-item-def .item-title .top-event-title {color:$black-color;font-family: $pt-sans-bold;font-size: $header5-font-size;line-height: $header5-font-size + 2;}
 .blog-item-def p {font-weight: normal;line-height: 22px;-webkit-touch-callout: none;margin: 0 0 $margin-mdl-min;}
+.all-blogs-container .top-event-title, .all-blogs-container .top-event-place, .all-blogs-container .item-icons {color:$black-color;}
 .gall-slider-control {display: none;}
 .default-gallery-slider .slick-prev , .default-gallery-slider .slick-next {display: none;background:none;}
 .gall-slide-prev {display: block;width: 37px;height: 53px;float: right;background-image: url(../images/sprites.png);background-repeat: no-repeat;background-position: -441px -286px;cursor: pointer;}

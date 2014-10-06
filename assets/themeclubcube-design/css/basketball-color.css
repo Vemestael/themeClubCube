@@ -103,10 +103,13 @@ blockquote a {color:#f1632c;}/*Orange*/
 .left-pag.hover .pad-arr, .left-pag:hover .pad-arr, .right-pag.hover .pad-arr, .right-pag:hover .pad-arr {background: #f1632c;}
 }
 
-.button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#9ab1b7;border:2px solid #9ab1b7!important;}/*Red*/
-.button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#9ab1b7;border:2px solid #9ab1b7;}/*Red*/
-.button-slider.hover {border:2px solid #9ab1b7;}/*Red*/
-.button-slider {border: 2px solid #fff !important;}
+.top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#9ab1b7;border:2px solid #9ab1b7!important;}/*Red*/
+.top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#9ab1b7;border:2px solid #9ab1b7;}/*Red*/
+.slider-default .button-slider.pressed {border: 2px solid #cbcbcb !important;background: transparent !important;}
+.slider-default .button-slider {border: 2px solid #fff !important;}
+.button-slider.hover, .button-slider:hover {background: transparent;border:2px solid #e25e2e;}
+.button-slider.hover {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+.button-slider {border:2px solid #9ab1b7;background: transparent;}
 
 .button-arrow-left:before, .default-gallery-slider .slick-prev:before, .partners-slider .slick-prev:before, .top-events-sliders .slick-prev:before {border-left: 1px solid #9ab1b7; border-bottom: 1px solid #9ab1b7;}/*Red*/
 .button-arrow-left.hover:before, .button-arrow-left:hover:before, .button-arrow-right:before, .default-gallery-slider .slick-next.hover:hover, .default-gallery-slider .slick-next:hover:before, .default-gallery-slider .slick-prev.hover:before, .default-gallery-slider .slick-prev:hover:before, .partners-slider .slick-next.hover:before, .partners-slider .slick-next.hover:hover:before, .partners-slider .slick-next:before:hover, .partners-slider .slick-next:hover:before, .partners-slider .slick-prev:hover:before {border-left: 1px solid #f1632c; border-bottom: 1px solid #f1632c;}/*Orange*/
