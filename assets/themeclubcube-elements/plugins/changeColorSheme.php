@@ -9,7 +9,7 @@ switch($eventName) {
         if($modx->context->get('key') != "mgr"){
             if(isset($_GET['color'])) {
                 $color = $_GET['color'];
-                $colors = array('default','yellow', 'turbo', 'max-hurricane', 'mint');
+                $colors = array('default', 'gold', 'basketball', 'blueberry');
                 if(!in_array($color, $colors)) {
                     continue;
                 }

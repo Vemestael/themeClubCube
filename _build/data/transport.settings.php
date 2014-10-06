@@ -19,6 +19,11 @@ $tmp = array(
         'value' => 'dafault',
         'area' => 'themeclubcube_main',
     ),
+    'demo' => array(
+        'xtype' => 'numberfield',
+        'value' => '0',
+        'area' => 'themeclubcube_main',
+    ),
 
     //subscribe
     'unisender_api_key' => array(

@@ -154,35 +154,25 @@ $content_text = '
 <p class="lead">Old unsatiable our now but considered travelling impression.
 In excuse hardly summer in basket misery. By rent an part need.
 At wrong of of water those linen. Needed oppose seemed how all.
-Very mrs shed shew gave you. Oh shutters do removing reserved wandered an.
-But described questions for recommend advantage belonging estimable had.
-Pianoforte reasonable as so am inhabiting. Chatty design remark and his abroad figure but its.</p>
+Very mrs shed shew gave you.</p>
 <div class="img-full-width">
     <figure class="content-figure">
-        <img src="assets/uploads/blog/Open blog/Content_06_wide.jpg" alt="" title="The 1975">
-        <figcaption>Band is rocking out</figcaption>
+        <img src="assets/uploads/blog/Open blog/Content_07_wide.jpg" alt="" title="One but not alone">
+        <figcaption>One but not alone</figcaption>
     </figure>
 </div>
+<p>Few hills tears are weeks saw. Partiality insensible celebrated is in. Am offended as wandered thoughts greatest an friendly.
+Evening covered in he exposed fertile to. Horses seeing at played plenty nature to expect we. Young say led stood hills own thing get.</p>
 <ul>
 <li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
 <li>Could death since do we hoped is in.</li>
-<li>Exquisite no my attention extensive.</li>
+<li>Exquisite no my <a href="#" titile="attention extensive link">attention extensive</a>.</li>
 <li>The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.</li>
-<li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if
-agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
+<li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
 </ul>
-<p>Few hills tears are weeks saw. Partiality insensible celebrated is in. Am offended as wandered thoughts greatest an friendly.
-Evening covered in he exposed fertile to. Horses seeing at played plenty nature to expect we. Young say led stood hills own thing get.</p>
-<h2>Part one</h2>
-<p>Out too the been like hard off. <a href="#" titile="Improve enquire link">Improve enquire</a> welcome own beloved matters her. As insipidity so mr unsatiable increasing
+<p>Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing
 attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous
 insensible. It recommend be resolving pretended middleton.</p>
-<div class="img-side-right">
-    <figure class="content-figure">
-        <img src="assets/uploads/blog/Open blog/Content_03.jpg" alt="Always parish tastes at as mr father dining at" title="Always parish tastes at as mr father dining at">
-        <figcaption>Night life</figcaption>
-    </figure>
-</div>
 <ol>
 <li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
 <li>Could death since do we hoped is in.</li>
@@ -191,31 +181,83 @@ insensible. It recommend be resolving pretended middleton.</p>
 <li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as.
 Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
 </ol>
+<h2>New life</h2>
 <p>She who arrival end how fertile enabled. Brother she add yet see minuter natural smiling article painted.
-Themselves at dispatched interested insensible am be prosperous reasonably it. In either so spring wished.
-Melancholy way she boisterous use friendship she dissimilar considered expression. Sex quick arose mrs lived. Mr things
+Themselves at dispatched interested insensible am be prosperous reasonably it. </p>
+<div class="img-side-right">
+    <figure class="content-figure">
+        <img src="assets/uploads/blog/Open blog/Content_01.jpg" alt="" title="Be free">
+        <figcaption>Swim as you like</figcaption>
+    </figure>
+</div>
+<p>In either so spring wished. Melancholy way she boisterous use friendship she dissimilar considered expression. Sex quick arose mrs lived. Mr things
 do plenty others an vanity myself waited to. Always parish tastes at as mr father dining at.</p>
-<h3>Part two</h3>
 <p>Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four.
 Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or
 to admiration remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.</p>
-<blockquote>
-<p>She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end.
-Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in.
+<p>She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end. We highest ye friends is exposed equally in.
 Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye.
 Five with seen put need tore add neat. Bringing it is he returned received raptures.</p>
+<h3>True story of rock</h3>
+<p>The foundations of rock music are in rock and roll, which originated in the United States during the late 1940s and early 1950s, and quickly spread to much of the rest of the world. Its immediate origins lay in a melding of various black musical genres of the time, including rhythm and blues and gospel music, with country and western. In 1951, Cleveland, Ohio disc jockey Alan Freed began playing rhythm and blues music for a multi-racial audience, and is credited with first using the phrase "rock and roll" to describe the music.</p>
+<blockquote>
+<p>"I like playing music because it`s a good living and I get satisfaction from it. But I can`t feed my family with satisfaction."</p>
+<p><b>James Hetfield</b></p>
 </blockquote>
-<p>Village did removed enjoyed explain nor ham saw calling talking. Securing as informed declared or margaret.
-Joy horrible moreover man feelings own shy. Request norland neither mistake for yet. Between the for morning assured
-country believe. On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir
-end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.</p>
-<p>Shall there whose those stand she end<span class="footnote">*</span>. So unaffected partiality indulgence dispatched to of celebrated remarkably.
-Unfeeling are had allowance own perceived abilities.</p>
-<p>He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy.
-Unaffected at ye of compliment alteration to. Place voice no arise along to. Parlors waiting so against me no.
-Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor.</p>
+<h4>The ultimate rock genres</h4>
+<div class="table-responsive">
+<table class="club-table table-striped">
+    <thead>
+        <tr>
+            <th>Genres</th>
+            <th>Best band</th>
+            <th>Best Album</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alternative rock‎</td>
+            <td><a href="https://en.wikipedia.org/wiki/Seether" title="Seether wiki">Seether</a></td>
+            <td>Disclaimer</td>
+            <td>2002</td>
+        </tr>
+        <tr>
+            <td>Funk rock</td>
+            <td><a href="http://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers" title="Red Hot Chili Peppers wiki">Red Hot Chili Peppers</a></td>
+            <td>Blood Sugar Sex Magik</td>
+            <td>1991</td>
+        </tr>
+        <tr>
+            <td>Thrash metal</td>
+            <td><a href="http://en.wikipedia.org/wiki/Metallica" title="Metallica wiki">Metallica</a></td>
+            <td>Master of Puppets<span class="footnote">*</span></td>
+            <td>1986</td>
+        </tr>
+        <tr>
+            <td>Sludge</td>
+            <td><a href="http://en.wikipedia.org/wiki/Down_(band)" title="Down wiki">Down</a></td>
+            <td>NOLA</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>Post-metal</td>
+            <td><a href="http://en.wikipedia.org/wiki/Tool_(band)" title="Tool wiki">Tool</a></td>
+            <td>10,000 Days</td>
+            <td>2006</td>
+        </tr>
+    </tbody>
+</table>
+</div>
 <hr>
-<span class="footnote-main"><span class="footnote">*&nbsp;</span>– In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence.</span>
+<span class="footnote-main"><span class="footnote">*&nbsp;</span>– In our humble opinion</span>
+<p>Progressive rock, a term sometimes used interchangeably with art rock, was an attempt to move beyond established musical
+formulas by experimenting with different instruments, song types, and forms. From the mid-1960s The Left Banke, The Beatles,
+The Rolling Stones and The Beach Boys, had pioneered the inclusion of harpsichords, wind and string sections on their recordings
+to produce a form of Baroque rock and can be heard in singles like Procol Harum`s "A Whiter Shade of Pale" (1967), with
+its Bach inspired introduction. The Moody Blues used a full orchestra on their album Days of Future Passed (1967) and
+subsequently created orchestral sounds with synthesisers. Classical orchestration, keyboards and synthesisers were a
+frequent edition to the established rock format of guitars, bass and drums in subsequent progressive rock.</p>
 ';
 
 $content_contacts = '

@@ -16,6 +16,11 @@ if ($object && $object->xpdo) {
                 'tickets.section_content_default' => '',
             );
 
+            $options['demo_data'] = 1;
+            if($options['demo_data']) {
+                $settings['themeclubcube.demo'] = 1;
+            }
+
             foreach ($settings as $k => $v) {
                 /* @var modSystemSetting $setting */
                 $setting = $modx->getObject('modSystemSetting', array('key' => $k));

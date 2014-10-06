@@ -15,6 +15,7 @@
 	&tvPrefix=``
 	&tplWrapper=`[[++themeclubcube.style_index_events_list:is=`1`:then=`eventsListIndex`:else=`eventsListTileIndex`]]`
 	&tpl=`[[++themeclubcube.style_index_events_list:is=`1`:then=`eventsItemIndex`:else=`eventsItemTileIndex`]]`
+    &tplLast=`[[++themeclubcube.style_index_events_list:is=`1`:then=`eventsItemLastIndex`:else=`eventsItemTileIndex`]]`
 	&tvFilters=`timeStart>=[[getDate? &format=`Y-m-d 00:00:00`]],topEvent==1`
 ]]
 

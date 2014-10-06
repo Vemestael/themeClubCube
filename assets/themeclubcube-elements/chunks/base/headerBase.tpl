@@ -51,6 +51,43 @@
                         &tplHere=`@INLINE <li class="[[+classnames]]"><span>[[+menutitle]]</span></li>`
 						&tplOuter=`@INLINE [[+wrapper]]`
 					]]
+                    [[++themeclubcube.demo:is=`1`:then=`
+                    <li class="dropdown left-dropdow">
+                        <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
+                            <i class="fa fa-tint"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="active">
+                                [[++themeclubcube.color_scheme:is=`default`:then=`
+                                    <span><i class="color-ic color-ic-reg"></i>Origin</span>
+                                `:else=`
+                                    <a href="?color=default"><i class="color-ic color-ic-reg"></i>Origin</a>
+                                `]]
+                            </li>
+                            <li>
+                                [[++themeclubcube.color_scheme:is=`gold`:then=`
+                                    <span><i class="color-ic color-ic-gd"></i>Gold</span>
+                                `:else=`
+                                    <a href="?color=gold"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                `]]
+                            </li>
+                            <li>
+                                [[++themeclubcube.color_scheme:is=`basketball`:then=`
+                                    <span><i class="color-ic color-ic-bb"></i>Basketball</span>
+                                `:else=`
+                                    <a href="?color=basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                `]]
+                            </li>
+                            <li class="last">
+                                [[++themeclubcube.color_scheme:is=`blueberry`:then=`
+                                    <span><i class="color-ic color-ic-bbr"></i>Blueberry</span>
+                                `:else=`
+                                    <a href="?color=blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
+                                `]]
+                            </li>
+                        </ul>
+                    </li>
+                    `]]
 				</ul>
 			</nav>
 		</div>

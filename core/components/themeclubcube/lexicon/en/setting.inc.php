@@ -5,7 +5,7 @@ $_lang['setting_themeclubcube.ga_tracking_id_desc'] = '';
 $_lang['setting_themeclubcube.design_url'] = 'Url to the design template';
 $_lang['setting_themeclubcube.design_url_desc'] = 'This url points to the base directory location of styles, scripts needed for the template.';
 $_lang['setting_themeclubcube.color_scheme'] = 'Color for you site';
-$_lang['setting_themeclubcube.color_scheme_desc'] = 'Options: default, yellow, turbo, max-hurricane, mint';
+$_lang['setting_themeclubcube.color_scheme_desc'] = 'Options: default, gold, basketball, blueberry';
 
 $_lang['setting_themeclubcube.unisender_api_key'] = 'Unisender Api key (necessary)';
 $_lang['setting_themeclubcube.unisender_api_key_desc'] = 'Key to access the API.';

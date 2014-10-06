@@ -1,5 +1,5 @@
 [[+idx:mod=`4`:is=`0`:then=`</div><div class="rows default-tickets">`:else=``]]
-<article class="ticket-event">
+<article class="ticket-event last">
 	<div class="ticket-event-date">
 		<div class="date-event">
 			<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
