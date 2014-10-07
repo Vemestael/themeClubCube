@@ -40,7 +40,7 @@
 				]]
 			</ul>
 			<hr>
-			<div class="col-lg-4 col-lg-offset-7 get-in-contain">
+			<div class="col-lg-4 col-lg-offset-7 col-sm-5 get-in-contain">
 				<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="get-in col-lg-offset-7">
 					<span class="price">
 						<span class="trs">[[%lf_events_price:htmlent]]</span>&nbsp;[[+price:htmlent]]

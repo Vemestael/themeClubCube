@@ -168,6 +168,7 @@ main {padding-bottom: 50px;background:$bg-f9-color;}
 @media screen and (min-aspect-ratio:1280/850) {
 	.bg-img img {display: block;width: 200%;height: auto;position: absolute;}
 }
+.slider-default .bg-img img {display: block;width: 200%;height: auto;position: absolute;}
 .bg-tile:nth-child(2) .bg-img img, .bg-tile:nth-child(4) .bg-img img {left: -100%;}
 .bg-tile:nth-child(3) .bg-img img, .bg-tile:nth-child(4) .bg-img img {top: -100%;}
 .container-fluidss.current .bg-img, .container-fluidss.slick-active .bg-img {-webkit-transition: transform 1.1s ease-in-out;transition: transform 1.1s ease-in-out;}
@@ -942,7 +943,7 @@ aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 .slider-default .event-about .slider-heading {font-size: 16px;line-height: 16px;}
 .slider-default .rowss .slide-title .slider-heading {padding-left: 0;padding-right: 0;}
 .slider-default .event-about {display: block;margin-bottom: 0;}
-.slider-default .event-about .date {width: 75px;margin-top: 0;padding: 0px 10px;margin-right: 10px;}
+.slider-default .event-about .date {margin-top: 0;padding: 0px 10px;margin-right: 10px;}
 .slider-default .event-about .event-times .slider-heading {padding-bottom: 5px;}
 .slider-default .rowss .slide-title .socials {width: auto;color:$white-color;padding-left: 0;padding-right: 0;}
 
@@ -1994,7 +1995,7 @@ aside .blog-item-def .item-title {overflow: visible;}
 .slider-default .slide-title .half-line {padding-left: 0;margin-top: 25px;margin-bottom: 25px;}
 .slider-default .slide-title .half-line hr {display: block;margin-top: 0;margin-bottom: 0;}
 .slider-default .event-about {margin-bottom: 0;}
-.slider-default .event-about .date {padding: 0px 15px;margin-top: 5px;}
+.slider-default .event-about .date {padding: 0px 15px;margin-top: 5px;margin-right: 7px;}
 .slider-default .socials {position: absolute;top: 28px;right: 0;margin-top: 0;color:$white-color;}
 // .slider-default .get-in {position: absolute;bottom: -80px;margin-left: 55.5%;}
 .slider-default .rowss .slide-title .slider-heading {font-size: $header2-font-size;line-height: $header2-font-size;}
