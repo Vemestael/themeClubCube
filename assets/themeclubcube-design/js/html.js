@@ -1037,7 +1037,8 @@ $(function() {
             $allImgContainers = $('.gallery-tile');
             if (!$('.imageLightboxWrap').length) {
                 var wrapper = '<div class="imageLightboxWrap"></div>';
-                var loader = '<img class="loader-gif" src="images/ajax-loader.gif" alt="">';
+                // var loader = '<img class="loader-gif" src="images/ajax-loader.gif" alt="">';
+                var loader = '<div class="loader-gall"><div class="fr-bl"></div><div class="sc-bl"></div><div class="thr-bl"></div><div class="fth-bl"></div></div>';
                 var prevNavigation = '<div class="lightbox-prev"></div>';
                 var nextNavigation = '<div class="lightbox-next"></div>';
                 $(wrapper).appendTo('body');
@@ -1055,7 +1056,7 @@ $(function() {
                 $('.imageLightboxWrap').fadeIn();
                 $('.lightbox-prev').show();
                 $('.lightbox-next').show();
-                $('.loader-gif').show();
+                $('.loader-gall').show();
             };
             $scrollButton.hide();
             $galleryCount.hide();
@@ -1069,7 +1070,7 @@ $(function() {
             var $wrapper = $('.imageLightboxWrap');
             var $prevNavigation = $('.lightbox-prev');
             var $nextNavigation = $('.lightbox-next');
-            var $loader = $('.loader-gif');
+            var $loader = $('.loader-gall');
             $loader.hide();
             $wrapper.fadeOut();
             $prevNavigation.hide();

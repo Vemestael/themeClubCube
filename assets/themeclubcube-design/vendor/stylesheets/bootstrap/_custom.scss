@@ -46,11 +46,12 @@ main {padding-bottom: 50px;background:$bg-f9-color;}
 .loader-container .loader {display: block;position: absolute;width: 50px;height: 50px;top: 0;right: 0;bottom: 0;left: 0;margin: auto;}
 .loader-container .loader .loader-inner {display: block;position: relative;width: 100%;height: 100%;}
 .fr-bl, .sc-bl, .thr-bl, .fth-bl {display: block;width: 20px;height: 20px;position: absolute;}
-.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl {top: 0;left: 0;background:#d1dd6f;@include transitions(.3s);-webkit-animation: frstLoad 3s ease infinite;animation: frstLoad 2s ease-in-out infinite;}
-.loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl {top: 0;right: 0;background:#e98666;@include transitions(.3s);-webkit-animation: scndLoad 3s ease infinite;animation: scndLoad 2s ease-in-out infinite;}
-.loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl {bottom: 0;right: 0;background:#bf5e72;@include transitions(.3s);-webkit-animation: thrdLoad 3s ease infinite;animation: thrdLoad 2s ease-in-out infinite;}
-.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl {bottom: 0;left: 0;background:#85666e;@include transitions(.3s);-webkit-animation: frthLoad 3s ease infinite;animation: frthLoad 2s ease-in-out infinite;}
-.loader-gif {display: block;position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto;z-index: 12;}
+.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl, .loader-gall .fr-bl {top: 0;left: 0;background:#808080;@include transitions(.3s);-webkit-animation: frstLoad 3s ease infinite;animation: frstLoad 2s ease-in-out infinite;}
+.loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl, .loader-gall .sc-bl {top: 0;right: 0;background:#808080;@include transitions(.3s);-webkit-animation: scndLoad 3s ease infinite;animation: scndLoad 2s ease-in-out infinite;}
+.loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl, .loader-gall .thr-bl {bottom: 0;right: 0;background:#808080;@include transitions(.3s);-webkit-animation: thrdLoad 3s ease infinite;animation: thrdLoad 2s ease-in-out infinite;}
+.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl, .loader-gall .fth-bl {bottom: 0;left: 0;background:#808080;@include transitions(.3s);-webkit-animation: frthLoad 3s ease infinite;animation: frthLoad 2s ease-in-out infinite;}
+.loader-gif, .loader-gall {display: block;width: 34px;height: 34px;position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto;z-index: 12;}
+.loader-gall .fr-bl, .loader-gall .sc-bl, .loader-gall .thr-bl, .loader-gall .fth-bl {width: 15px;height: 15px;} 
 
 @-webkit-keyframes frstLoad {
 	0% {opacity: .3;@include transitions(.3s);}
@@ -2000,7 +2001,7 @@ aside .blog-item-def .item-title {overflow: visible;}
 .slider-default .video-about.default {display: block;}
 .slider-default .rowss .slider-heading.video-heading {width: 50%;padding-right: 0;float: left;}
 .slider-default .video-about.default {float: right;}
-.get-in-contain {position: absolute;left: 0;bottom: -80px;}
+.get-in-contain {position: absolute;left: 0;bottom: -50px;}
 .get-in-contain .get-in {margin-left: -6px;}
 // Top events
 // -------------------------

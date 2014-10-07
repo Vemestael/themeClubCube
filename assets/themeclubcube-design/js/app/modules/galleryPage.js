@@ -184,7 +184,8 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
     _showGalleryPicture = function() {
         if (!$(_properties.imageLightBoxWrap).length) {
             var wrapper = '<div class="imageLightboxWrap"></div>';
-            var loader = '<img class="loader-gif" src="'+ designUrl +'images/ajax-loader.gif" alt="">';
+            // var loader = '<img class="loader-gif" src="'+ designUrl +'images/ajax-loader.gif" alt="">';
+            var loader = '<div class="loader-gall"><div class="fr-bl"></div><div class="sc-bl"></div><div class="thr-bl"></div><div class="fth-bl"></div></div>';
             var prevNavigation = '<div class="lightbox-prev"></div>';
             var nextNavigation = '<div class="lightbox-next"></div>';
             $(wrapper).appendTo('body');
@@ -202,7 +203,7 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
             $(_properties.imageLightBoxWrap).fadeIn();
             $('.lightbox-prev').show();
             $('.lightbox-next').show();
-            $('.loader-gif').show();
+            $('.loader-gall').show();
         };
         _globals.scrollButton.hide();
         _globals.galleryCount.hide();
@@ -214,7 +215,7 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
         var $wrapper = $(_properties.imageLightBoxWrap);
         var $prevNavigation = $('.lightbox-prev');
         var $nextNavigation = $('.lightbox-next');
-        var $loader = $('.loader-gif');
+        var $loader = $('.loader-gall');
         $loader.hide();
         $wrapper.fadeOut();
         $prevNavigation.hide();
@@ -225,7 +226,7 @@ appMakeBeCool.gateway.addClass('GalleryPage', function(properties, $, $window, $
     },
 
     _galleryLoader = function(flag) {
-        var $loader = $('.loader-gif');
+        var $loader = $('.loader-gall');
         if (flag === true) {
             $loader.show();
         } else {

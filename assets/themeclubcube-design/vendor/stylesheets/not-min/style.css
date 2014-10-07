@@ -8806,48 +8806,50 @@ main {
   position: absolute;
 }
 
-.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl {
+.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl, .loader-gall .fr-bl {
   top: 0;
   left: 0;
-  background: #d1dd6f;
+  background: #808080;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-animation: frstLoad 3s ease infinite;
   animation: frstLoad 2s ease-in-out infinite;
 }
 
-.loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl {
+.loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl, .loader-gall .sc-bl {
   top: 0;
   right: 0;
-  background: #e98666;
+  background: #808080;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-animation: scndLoad 3s ease infinite;
   animation: scndLoad 2s ease-in-out infinite;
 }
 
-.loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl {
+.loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl, .loader-gall .thr-bl {
   bottom: 0;
   right: 0;
-  background: #bf5e72;
+  background: #808080;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-animation: thrdLoad 3s ease infinite;
   animation: thrdLoad 2s ease-in-out infinite;
 }
 
-.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl {
+.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl, .loader-gall .fth-bl {
   bottom: 0;
   left: 0;
-  background: #85666e;
+  background: #808080;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-animation: frthLoad 3s ease infinite;
   animation: frthLoad 2s ease-in-out infinite;
 }
 
-.loader-gif {
+.loader-gif, .loader-gall {
   display: block;
+  width: 35px;
+  height: 35px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -8855,6 +8857,11 @@ main {
   right: 0;
   margin: auto;
   z-index: 12;
+}
+
+.loader-gall .fr-bl, .loader-gall .sc-bl, .loader-gall .thr-bl, .loader-gall .fth-bl {
+  width: 15px;
+  height: 15px;
 }
 
 @-webkit-keyframes frstLoad {
@@ -18333,7 +18340,7 @@ blockquote a:hover {
   .get-in-contain {
     position: absolute;
     left: 0;
-    bottom: -80px;
+    bottom: -50px;
   }
 
   .get-in-contain .get-in {

@@ -26,10 +26,10 @@ Gallery linear gradient: 		#da626c - #d7515c
 /* ========================================================================
  * Loader
  * ======================================================================== */
-.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl {background:#d1dd6f;}
+/*.loader-container.active .fr-bl, .subscribe-here .fr-bl, .suc.loader .fr-bl {background:#d1dd6f;}
 .loader-container.active .sc-bl, .subscribe-here .sc-bl, .suc.loader .sc-bl {background:#e98666;}
 .loader-container.active .thr-bl, .subscribe-here .thr-bl, .suc.loader .thr-bl {background:#bf5e72;}
-.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl {background:#85666e;}
+.loader-container.active .fth-bl, .subscribe-here .fth-bl, .suc.loader .fth-bl {background:#85666e;}*/
 
 /* ========================================================================
  * Header
