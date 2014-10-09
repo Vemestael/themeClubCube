@@ -3,7 +3,8 @@ appMakeBeCool.gateway.addClass('TicketsEventsSlider', function(properties, $, $w
     var _ticketsEventsSlider = this,
         _defaults = {
             // elements
-            slider: '#ticketsSlider'
+            slider: '#ticketsSlider',
+            defaultSlider: '.default-slider-tickets'
             // prop
             // data
             // classes ans styles
@@ -12,7 +13,7 @@ appMakeBeCool.gateway.addClass('TicketsEventsSlider', function(properties, $, $w
         _globals = {
             // elements
             slider: null,
-
+            defaultSlider: null,
             // prop
             preloaded: false
         },
@@ -34,10 +35,11 @@ appMakeBeCool.gateway.addClass('TicketsEventsSlider', function(properties, $, $w
 
         _config = function() {
             _globals.slider = $(_properties.slider);
+            _globals.defaultSlider = $(_properties.defaultSlider);
         },
 
         _setup = function() {
-            if (_globals.slider.length) {
+            if ((_globals.slider.length) && (!_globals.slider.hasClass(_properties.defaultSlider))) {
                 _globals.slider.slick({
                     slidesToShow: 1,
                     dots: false,
@@ -48,6 +50,44 @@ appMakeBeCool.gateway.addClass('TicketsEventsSlider', function(properties, $, $w
                     infinite: false,
                     speed: 300,
                     vertical: true
+                });
+            } else if ((_globals.slider.length) && (_globals.slider.hasClass(_properties.defaultSlider))) {
+                _globals.slider.slick({
+                    slidesToShow: 1,
+                    dots: false,
+                    easing: 'easeInExpo',
+                    autoplay: false,
+                    arrows: true,
+                    autoplaySpeed: 4200,
+                    draggable: false,
+                    infinite: false,
+                    speed: 300,
+                    vertical: true,
+                    responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            arrows:true,
+                            slidesToShow: 1,
+                            infinite: false,
+                            dots: false
+                        }
+                    }, {
+                        breakpoint: 768,
+                        settings: {
+                            arrows:true,
+                            slidesToShow: 1,
+                            infinite: false,
+                            dots: false
+                        }
+                    }, {
+                        breakpoint: 320,
+                        settings: {
+                            arrows:false,
+                            slidesToShow: 1,
+                            infinite: false,
+                            dots: false
+                        }
+                    }]
                 });
             }
         },
