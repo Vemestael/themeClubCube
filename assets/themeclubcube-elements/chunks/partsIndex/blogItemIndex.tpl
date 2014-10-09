@@ -1,5 +1,5 @@
 [[+idx:mod=`3`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="row">`]]`:else=``]]
-<div class="col-md-4 col-sm-4">
+<div class="col-md-4 col-sm-4 col-xm-6">
 	<article class="blog-item [[+img:default=`no-img`]]">
 		<div class="item-title">
 			<div class="item-aside">
