@@ -91,6 +91,9 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
             //If there is an imgsrc and preloading img
             if ($this.hasClass(_properties.imgPreloadClass) && imgsrc) {
                 if (_options.usePreloader) _addImgPreloader($this);
+                if(imgsrc.indexOf(global.baseUrl) !== 0){
+                    imgsrc = global.baseUrl+imgsrc;
+                }
                 imagesSrc.push(imgsrc);
                 images.push($this);
             }
