@@ -237,6 +237,7 @@ table.club-table tbody tr td {font-family: $pt-sans;font-size:$reg-font-size; }
 .header-top .nav.nav-top>li>a, .header-top .nav.nav-top>li>span {padding: 18px 15px;line-height: $reg-font-size;}
 .header-top .top-events .navbar-nav>li.dropdown {border-top: none;border-left: 1px solid transparent;border-right: 1px solid transparent;}
 .header-top .navbar-nav>li.dropdown:hover {background:$dark-reddy-color;}
+.navbar-toggle {border: 0;}
 :focus {outline: none;}
 header {position:absolute;width: 100%;top: 0;height: 50px;z-index: 30;padding:10px 0;background:url('../images/header-shad.png') left -55px repeat;-webkit-transform: translate3d(0,0,0);}
 header .nav.nav-top>li>a {border-top: 1px solid $lighter-grey-color;}

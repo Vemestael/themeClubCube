@@ -109,6 +109,7 @@ blockquote a {color:#404040;}/*Orange*/
 .left-pag.off .pad-text, .right-pag.off .pad-text, .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text  {border:1px solid #e6e6e6 !important;}
 }
 
+.button-slider, .default-slider-tickets .slick-dots li button, .top-events-sliders .slick-dots li button {background: #e0b13b;border:2px solid #e0b13b}
 .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {background-color:#e0b13b;border:2px solid #e0b13b !important;}/*Red*/
 .button-slider.hover, .button-slider:hover {border:2px solid #e0b13b;background: transparent;}/*Orange pressed*/
 .slider-default .button-slider {border: 2px solid #fff !important;background: #fff !important;}
