@@ -199,6 +199,7 @@ input.form-control:focus, textarea:focus {border: 2px solid #9ab1b7!important;}/
 .select-dropdown.pressed select.form-control, .select-dropdown.pressed select.form-control:focus, .select-dropdown.pressed:hover select.form-control, .select-dropdown:hover select.form-control {border: 2px solid #9ab1b7!important;}/*Red*/
 .select-dropdown.pressed:after, .select-dropdown:hover:after {background: #9ab1b7;}/*Red*/
 .select-dropdown.off:hover select.form-control {border: 2px solid #e2e2e2;} 
+input.error, textarea.error {border-color: #f1632c !important;}
 
 .has-error .form-control {border-color: #f1632c;}/*Orange*/
 .btn-default {background-color: #9ab1b7;}/*Red*/
