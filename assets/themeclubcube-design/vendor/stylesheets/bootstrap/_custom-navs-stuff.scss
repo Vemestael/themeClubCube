@@ -37,7 +37,7 @@ button:active {border: 0;}
 .left-pag.off .pad-arr, .right-pag.off .pad-arr, .left-pag.off:hover .pad-arr, .right-pag.off:hover .pad-arr, .left-pag.off:hover:active .pad-arr, .right-pag.off:hover:active .pad-arr, .left-pag.off:hover:active .pad-arr, .right-pag.off:hover:active .pad-arr  {background:$ccc-color;@include transitions(.3s);}
 .left-pag.off .pad-text {border-left:0 none;@include transitions(.3s);}
 .right-pag.off .pad-text {border-right:0 none;@include transitions(.3s);}
-.left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates, .right-pag.off:hover .pad-title, .right-pag.off:hover .pad-dates  {color:$ccc-color;@include transitions(.3s);}
+.left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates, .right-pag.off:hover .pad-title, .right-pag.off:hover .pad-dates  {color:$ccc-color !important;@include transitions(.3s);}
 .left-pag.off:hover:active .pad-dates, .right-pag.off:hover:active .pad-dates {color:$ccc-color;}
 .left-pag.off:hover:active .pad-text, .right-pag.off:hover:active .pad-text, .left-pag.off:hover .pad-text {border:1px solid $e6e6e6;}
 
@@ -90,11 +90,12 @@ button:active {border: 0;}
 .button-slider.pressed, .slider-default .button-slider.pressed, .top-events-sliders .slick-dots li.slick-active button, .default-slider-tickets .slick-dots li.slick-active button {border:2px solid $light-grey;background: transparent;-webkit-transform:rotate(45deg);transform:rotate(45deg);}
 .button-slider.pressed:hover, .button-slider.off:hover, .button-slider.hover:hover, .top-events-sliders .slick-dots li.slick-active button:hover, .default-slider-tickets .slick-dots li.slick-active button:hover {-webkit-animation:none;animation:none;}
 
-@keyframes buttonRotate {
+@-webkit-keyframes buttonRotate {
 	from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
 	to {-webkit-transform:rotate(45deg);transform:rotate(45deg);background: transparent;}
 }
-@-webkit-keyframes buttonRotate {
+
+@keyframes buttonRotate {
 	from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
 	to {-webkit-transform:rotate(45deg);transform:rotate(45deg);background: transparent;}
 }

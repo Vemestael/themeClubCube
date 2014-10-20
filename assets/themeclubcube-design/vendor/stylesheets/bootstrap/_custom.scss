@@ -319,6 +319,7 @@ header .navbar-nav > li > span, .dropdown-menu>li.active span {cursor: default;}
 .video-about .date {background:$white-color;text-align:center;color:$black-color;padding:$font-size-base/2 $margin-sm;margin-top: 10px; float: right;}
 .event-about h1 {text-align:left;line-height:$header2-font-size;}
 .slider p {display: none;}
+time .day, time .month, time .year {display: block;}
 .event-about.visible-xs {margin-bottom: 25px;}
 .event-about.visible-xs .date {padding: 3px 10px;margin-top: 0px;margin-right: 10px;}
 .event-about.visible-xs .day {font-size: $md-font-size;line-height: $md-font-size;}
@@ -1741,7 +1742,7 @@ header.header-top .main-navig .nav>li:hover, header.header-top .main-navig .nav>
 nav>ul>li.dropdown>ul>li.active>span {cursor: pointer;}
 .header-top .dropdown>.dropdown-menu-right, header .dropdown>.dropdown-menu-right {left: auto !important;right: 0 !important;}
 .home-btn {display: none;}
-.navbar-collapse.main-navig, .navbar-collapse.collapsing {padding-right: auto;overflow-y: hidden!important;}
+.navbar-collapse.main-navig, .navbar-collapse.collapsing {padding-right: 0;overflow-y: hidden!important;}
 .navbar-brand.first, .navbar-brand.sec {width: 114px;height: 44px;}
 .navbar-collapse .caret {float: none;margin-right: 0;display: inline-block;margin-top: 0;}
 .nav.navbar-nav.navbar-right {min-width: auto!important;max-width: auto!important;-webkit-box-shadow: none;box-shadow: none;}
@@ -1905,7 +1906,7 @@ nav>ul>li.dropdown>ul>li.active>span {cursor: pointer;}
 // -------------------------
 .partners {height: 180px;overflow-x: hidden;}
 .blog-item .item-title {height: auto;color:$light-black-color;overflow: hidden;}
-.copyrights-bottom, .contact-us .container  {padding-left: auto;padding-right: auto;}
+.copyrights-bottom {padding-left: 0;padding-right: 0;}
 .contact-us .container {padding-left: 15px;padding-right: 15px;}
 .welcome {width: 296px;height: auto;top: auto;bottom: 74%;left: 0;}
 .welcome-inner {height: auto;}
@@ -2036,7 +2037,7 @@ aside .blog-item-def .item-title {overflow: visible;}
 .ticket-event-price .ticket-price, .ticket-event-price .ticket-doll {font-family: $verdana;font-size: $content-h3;line-height:$content-h3;}
 .ticket-event-price .ticket-price {position: static;color:$text-pink-color;margin-bottom: 2px;text-align: left;}
 .ticket-event-price .ticket-doll {display: block;margin-top: 10px;color:$white-color;}
-.ticket-arrow-right {position: absolute;display: inline-block;float: left;width: 30px;height: 25px;background-position: -186px -39px;vertical-align: middle;bottom: 17px;margin:none;left: 17px;right: auto;background-image:url(../images/sprites.png);background-repeat: no-repeat;}
+.ticket-arrow-right {position: absolute;display: inline-block;float: left;width: 30px;height: 25px;background-position: -186px -39px;vertical-align: middle;bottom: 17px;margin:0;left: 17px;right: auto;background-image:url(../images/sprites.png);background-repeat: no-repeat;}
 .ticket-triangle-top {position: absolute;width: 18px;height: 9px;background-image:url('../images/sprites.png');background-repeat: no-repeat;top: -1px;left: -9px;background-position: -229px -56px;vertical-align: middle;}
 .ticket-triangle-bt {position: absolute;width: 18px;height: 9px;background-image:url('../images/sprites.png');background-repeat: no-repeat;bottom: -2px;left: -9px;background-position: -266px -40px;vertical-align: middle;}
 .ticket-triangle-top.last {top: -1px;right: -9px!important;left:auto;}

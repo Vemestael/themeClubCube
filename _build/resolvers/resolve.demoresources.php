@@ -168,7 +168,7 @@ Evening covered in he exposed fertile to. Horses seeing at played plenty nature 
 <ul>
 <li>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he.</li>
 <li>Could death since do we hoped is in.</li>
-<li>Exquisite no my <a href="#" titile="attention extensive link">attention extensive</a>.</li>
+<li>Exquisite no my <a href="#" title="attention extensive link">attention extensive</a>.</li>
 <li>The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.</li>
 <li>Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do.</li>
 </ul>
@@ -877,7 +877,7 @@ $content_design_elements = '
                 <form action="" class="form-horizontal" role="form">
                     <div class="form-group has-error">
                         <div class="col-xs-8">
-                            <input class="form-control tooltips-show" type="email" name="" id="" data-toggle="tooltip" titile data-original-title="Enter valid Email" >
+                            <input class="form-control tooltips-show" type="email" name="" id="" data-toggle="tooltip" title data-original-title="Enter valid Email" >
                         </div>
                         <div class="col-xs-4">
                             <input class="btn btn-default" type="submit" value="Submit">

@@ -13,9 +13,9 @@
 				<div class="slider-heading col-sm-6 col-lg-12">[[+pagetitle:htmlent]]</div>
 				<div class="event-about visible-sm visible-xs visible-md col-sm-6">
 					<time class="date" datetime="[[+timeStart]]">
-						<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
-						<div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
-						<div class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
+						<span class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</span>
+						<span class="day">[[+timeStart:strtotime:date=`%d`]]</span>
+						<span class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</span>
 					</time>
 					<div class="col-lg-6 col-sm-6">
 						<div class="slider-heading time-evt">
@@ -42,9 +42,9 @@
 		<div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
 			<div class="event-about">
 				<time class="date" datetime="[[+timeStart]]">
-                    <div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
-                    <div class="day">[[+timeStart:strtotime:date=`%d`]]</div>
-                    <div class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</div>
+                    <span class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</span>
+                    <span class="day">[[+timeStart:strtotime:date=`%d`]]</span>
+                    <span class="year">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</span>
 				</time>
 				<div class="col-lg-6 ">
 					<div class="slider-heading time-evt">

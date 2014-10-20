@@ -10136,6 +10136,10 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   display: none;
 }
 
+time .day, time .month, time .year {
+  display: block;
+}
+
 .event-about.visible-xs {
   margin-bottom: 25px;
 }
@@ -17066,7 +17070,7 @@ blockquote a:hover {
   }
 
   .navbar-collapse.main-navig, .navbar-collapse.collapsing {
-    padding-right: auto;
+    padding-right: 0;
     overflow-y: hidden !important;
   }
 
@@ -17813,9 +17817,9 @@ blockquote a:hover {
     overflow: hidden;
   }
 
-  .copyrights-bottom, .contact-us .container {
-    padding-left: auto;
-    padding-right: auto;
+  .copyrights-bottom {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contact-us .container {
@@ -18553,7 +18557,7 @@ blockquote a:hover {
     background-position: -186px -39px;
     vertical-align: middle;
     bottom: 17px;
-    margin: none;
+    margin: 0;
     left: 17px;
     right: auto;
     background-image: url(../images/sprites.png);
@@ -19455,7 +19459,7 @@ button:active {
 }
 
 .left-pag.off .pad-title, .left-pag.off .pad-dates, .right-pag.off .pad-title, .right-pag.off .pad-dates, .right-pag.off:hover .pad-title, .right-pag.off:hover .pad-dates {
-  color: #cccccc;
+  color: #cccccc !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -19632,7 +19636,7 @@ button:active {
   animation: none;
 }
 
-@keyframes buttonRotate {
+@-webkit-keyframes buttonRotate {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -19644,7 +19648,7 @@ button:active {
     background: transparent;
   }
 }
-@-webkit-keyframes buttonRotate {
+@keyframes buttonRotate {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
