@@ -1,1 +1,1 @@
-<span class="brown-color">[[+name:htmlent]]</span> ([[+location:htmlent]]) /
+<span class="brown-color">[[+name:htmlent]]</span> ([[+location:htmlent]])&nbsp;/&nbsp;

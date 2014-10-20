@@ -4,22 +4,22 @@
 		<div class="item-title">
 			<div class="item-aside">
 				<h2><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle]]</a></h2>
-				<time class="top-event-place">[[+publishedon:dateAgo]]</time>
+				<time class="top-event-place" datetime="[[+publishedon:date=`%Y-%m-%d %H:%M`]]">[[+publishedon:dateAgo]]</time>
 			</div>
 		</div>
 		[[+img:notempty=`
-		<div class="blog-img">
-			<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">
-                <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent:htmlent]]`]]" class="img-responsive img-preload"
-                     data-src="<768:[[+img:phpthumbof=`w=360&h=202&zc=1`]],
-						>767:[[+img:phpthumbof=`w=325&h=182&zc=1`]],
-						>1199:[[+img:phpthumbof=`w=430&h=243&zc=1`]]"
-                     data-src2x="<768:[[+img:phpthumbof=`w=720&h=404&zc=1`]],
-						>767:[[+img:phpthumbof=`w=650&h=364&zc=1`]],
-                        >1199:[[+img:phpthumbof=`w=860&h=486&zc=1`]]"
-                     src="[[-+img:pthumb=`w=360&h=172&zc=c&f=jpg`]]">
-			</a>
-		</div>
+            <div class="blog-img">
+                <a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">
+                    <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent:htmlent]]`]]" class="img-responsive img-preload"
+                         data-src="<768:[[+img:phpthumbof=`w=360&h=202&zc=1`]],
+                            >767:[[+img:phpthumbof=`w=325&h=182&zc=1`]],
+                            >1199:[[+img:phpthumbof=`w=430&h=243&zc=1`]]"
+                         data-src2x="<768:[[+img:phpthumbof=`w=720&h=404&zc=1`]],
+                            >767:[[+img:phpthumbof=`w=650&h=364&zc=1`]],
+                            >1199:[[+img:phpthumbof=`w=860&h=486&zc=1`]]"
+                         src="[[-+img:pthumb=`w=360&h=172&zc=c&f=jpg`]]">
+                </a>
+            </div>
 		`:default=`
             <div class="lines-no-img">
                 <div class="part-no-img"></div>

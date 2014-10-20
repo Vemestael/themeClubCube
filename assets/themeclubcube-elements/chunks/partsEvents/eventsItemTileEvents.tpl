@@ -37,6 +37,7 @@
 						[[parseMIGXTV?
 							&tpl=`lineUpItemEvents`
 							&input=`[[+lineUp]]`
+                            &limit=`5`
 						]]
 						[[-!getImageList?
 							&tpl=`@CODE:<div><span class="evt-guest">[[+name:htmlent]] </span><span class="sm-tx">([[+location:htmlent]])</span></div>`
