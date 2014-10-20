@@ -17,7 +17,7 @@
 	<div class="item-title">
 		<div class="item-aside">
 			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]] - [[+idx:mod=`4`]]</a></h3>
-			<time class="top-event-place">[[+publishedon:dateAgo]]</time>
+			<time class="top-event-place" datetime="[[+publishedon:date=`%Y-%m-%d %H:%M`]]">[[+publishedon:dateAgo]]</time>
 		</div>
 		[[getImageList?
             &tpl=`@CODE: `
