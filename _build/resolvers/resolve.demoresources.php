@@ -757,7 +757,7 @@ $content_design_elements = '
         <tr>
             <td>Text field</td>
             <td>
-                <form action="" role="form">
+                <form action="#" role="form">
                     <div class="form-group">
                         <label class="sr-only" for="input-13">Subscribe:</label>
                         <input type="text" class="form-control off" id="input-13"  placeholder="Subscribe:" disabled>
@@ -765,7 +765,7 @@ $content_design_elements = '
                 </form>
             </td>
             <td>
-                <form action="" role="form">
+                <form action="#" role="form">
                     <div class="form-group">
                         <label class="sr-only" for="input-14">Subscribe:</label>
                         <input type="text" class="form-control" id="input-14" placeholder="Subscribe:">
@@ -773,7 +773,7 @@ $content_design_elements = '
                 </form>
             </td>
             <td>
-                <form action="" role="form">
+                <form action="#" role="form">
                     <div class="form-group">
                         <label class="sr-only" for="input-15">Subscribe:</label>
                         <input type="text" class="form-control pressed" id="input-15" placeholder="myemail@mail.com">
@@ -784,7 +784,7 @@ $content_design_elements = '
         <tr>
             <td>Text field + label</td>
             <td>
-                <form action="" class="form-horizontal" role="form">
+                <form action="#" class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="emeil1" class="col-sm-3 control-label off">Subscribe:</label>
                         <div class="col-sm-9">
@@ -794,7 +794,7 @@ $content_design_elements = '
                 </form>
             </td>
             <td>
-                <form action="" class="form-horizontal" role="form">
+                <form action="#" class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="emeil2" class="col-sm-3 control-label">Subscribe:</label>
                         <div class="col-sm-9">
@@ -804,7 +804,7 @@ $content_design_elements = '
                 </form>
             </td>
             <td>
-                <form action="" class="form-horizontal" role="form">
+                <form action="#" class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="emeil3" class="col-sm-3 control-label pressed">Subscribe:</label>
                         <div class="col-sm-9">
@@ -817,9 +817,9 @@ $content_design_elements = '
         <tr>
             <td>Text dropdown</td>
             <td>
-                <form action="" role="form">
+                <form action="#" role="form">
                     <span class="select-dropdown off">
-                    <select name="" id="" class="form-control" disabled>
+                    <select name="" id="dd1" class="form-control" disabled>
                         <option value="Option 1" class="option">Option 1</option>
                         <option value="Option 2" class="option">Option 2</option>
                         <option value="Option 3" class="option">Option 3</option>
@@ -828,9 +828,9 @@ $content_design_elements = '
                 </form>
             </td>
             <td>
-                <form action="" role="form">
+                <form action="#" role="form">
                     <span class="select-dropdown">
-                    <select name="" id="" class="form-control">
+                    <select name="" id="dd2" class="form-control">
                         <option value="Option 1" class="option">Option 1</option>
                         <option value="Option 2" class="option">Option 2</option>
                         <option value="Option 3" class="option">Option 3</option>
@@ -839,9 +839,9 @@ $content_design_elements = '
                 </form>
             </td>
             <td>
-                <form action="" role="form">
+                <form action="#" role="form">
                     <span class="select-dropdown pressed">
-                    <select name="" id="" class="form-control">
+                    <select name="" id="dd3" class="form-control">
                         <option value="Option 1" class="option">Option 1</option>
                         <option value="Option 2" class="option">Option 2</option>
                         <option value="Option 3" class="option">Option 3</option>
@@ -854,19 +854,19 @@ $content_design_elements = '
             <td>Text multiline</td>
             <td>
                 <form action="" role="form">
-                    <textarea class="form-control off" name="" id="" cols="20" rows="5" disabled>Your message:
+                    <textarea class="form-control off" name="" id="ta1" cols="20" rows="5" disabled>Your message:
                     </textarea>
                 </form>
             </td>
             <td>
                 <form action="" role="form">
-                    <textarea class="form-control" name="" id="" cols="20" rows="5">Your message:
+                    <textarea class="form-control" name="" id="ta2" cols="20" rows="5">Your message:
                     </textarea>
                 </form>
             </td>
             <td>
                 <form action="" role="form">
-                    <textarea class="form-control pressed" name="" id="" cols="20" rows="5">Your message:
+                    <textarea class="form-control pressed" name="" id="ta3" cols="20" rows="5">Your message:
                     </textarea>
                 </form>
             </td>
@@ -877,7 +877,7 @@ $content_design_elements = '
                 <form action="" class="form-horizontal" role="form">
                     <div class="form-group has-error">
                         <div class="col-xs-8">
-                            <input class="form-control tooltips-show" type="email" name="" id="" data-toggle="tooltip" title data-original-title="Enter valid Email" >
+                            <input class="form-control tooltips-show" type="email" name="" id="te1" data-toggle="tooltip" title data-original-title="Enter valid Email" >
                         </div>
                         <div class="col-xs-4">
                             <input class="btn btn-default" type="submit" value="Submit">
