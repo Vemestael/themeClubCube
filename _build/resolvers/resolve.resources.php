@@ -142,6 +142,7 @@ if ($object && $object->xpdo) {
             $resources = array(
                 'childs' => array(
                     'home' => array(
+                        'parentCheck' => true,
                         'template' => $tpl_index->get('id'),
                         'pagetitle' => 'Home',
                         'longtitle' => '',

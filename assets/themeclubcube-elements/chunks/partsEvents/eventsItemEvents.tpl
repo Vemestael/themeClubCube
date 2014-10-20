@@ -36,6 +36,7 @@
 						[[parseMIGXTV?
 							&tpl=`lineUpInTicketsItemEvents`
 							&input=`[[+lineUp]]`
+                            &limit=`5`
 						]]
 					</p>
 				</div>

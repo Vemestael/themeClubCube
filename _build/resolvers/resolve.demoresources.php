@@ -268,7 +268,7 @@ $content_contacts = '
 <li><b>Country:</b> Ukraine</li>
 <li><b>City:</b> Mariupol</li>
 <li><b>Address:</b> Kazanceva 7b, office 29</li>
-<li><b>Phone:</b>+38 (000) 000 00 00</li>
+<li><b>Phone:</b> +38 (000) 000 00 00</li>
 </ul>
 ';
 
@@ -1175,6 +1175,7 @@ if ($object && $object->xpdo) {
         case xPDOTransport::ACTION_UPGRADE:
             $modx =& $object->xpdo;
 
+//            $options['demo_data'] = 1;
             if($options['demo_data']) {
                 $modx->log(modX::LOG_LEVEL_INFO,'Setup demo resources');
                 /*
@@ -1247,7 +1248,7 @@ if ($object && $object->xpdo) {
                                     'alias' => 'index',
                                     'uri' => 'indexlist/index',
                                     'link_attributes' => '',
-                                    'content' => $content_index_demo1,
+                                    'content' => '',
                                     'isfolder' => false,
                                     'published' => true,
                                     'publishedon' => time(),
@@ -5746,6 +5747,26 @@ if ($object && $object->xpdo) {
                                 ),
                             )
                         ),
+                        'contacts' => array(
+                            'template' => $tpl_contacts->get('id'),
+                            'pagetitle' => 'Contacts',
+                            'longtitle' => '',
+                            'description' => '',
+                            'introtext' => '',
+                            'alias' => 'contacts',
+                            'uri' => 'contacts',
+                            'link_attributes' => '',
+                            'content' => $content_contacts,
+                            'isfolder' => false,
+                            'published' => true,
+                            'publishedon' => time(),
+                            'hidemenu' => false,
+                            'cacheable' => true,
+                            'searchable' => true,
+                            'richtext' => true,
+                            'context_key' => 'web',
+                            'menutitle' => '',
+                        )
                     )
                 );
                 createDocsDemo($modx, 'web', $resources, null);

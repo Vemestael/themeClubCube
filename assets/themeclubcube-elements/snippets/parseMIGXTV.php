@@ -7,6 +7,7 @@ $migx->working_context = isset($modx->resource) ? $modx->resource->get('context_
 $properties =& $scriptProperties;
 
 $properties['input'] = !empty($properties['input']) ? $modx->fromJSON($properties['input']) : null;
+$properties['limit'] = !empty($properties['limit']) ? (int)$properties['limit'] : 0;
 $properties['tpl'] = !empty($properties['tpl']) ? $properties['tpl'] : null;
 
 $output = '';
@@ -19,8 +20,14 @@ $cacheKey = 'parseMIGXTV/'.md5(serialize($properties));
 
 if($modx->getCacheManager() && is_null($output = $modx->cacheManager->get($cacheKey, $cacheOptions))) {
     if (!$properties['input'] || empty($properties['tpl'])) return '';
+    $i = 0;
     foreach ($properties['input'] as $row) {
         $output .= $modx->getChunk($properties['tpl'], $row);
+        $i++;
+
+        if($properties['limit'] != 0 && $properties['limit'] == $i) {
+            break;
+        }
     }
     $modx->cacheManager->set($cacheKey, $output, 0, $cacheOptions);
 }
