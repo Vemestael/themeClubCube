@@ -5548,7 +5548,7 @@ if ($object && $object->xpdo) {
                                     'context_key' => 'web',
                                     'menutitle' => '',
                                     'tvs' => array(
-                                        'img' => 'blog/top-ev3.jpg',
+                                        'img' => 'blog/Blog_03_Retina.jpg',
                                     ),
                                 ),
                                 'textAside' => array(
@@ -5593,7 +5593,7 @@ if ($object && $object->xpdo) {
                                     'context_key' => 'web',
                                     'menutitle' => '',
                                     'tvs' => array(
-                                        'img' => 'blog/top-ev3.jpg',
+                                        'img' => 'blog/Blog_03_Retina.jpg',
                                     ),
                                 ),
                                 'textAsideRight' => array(
@@ -5638,7 +5638,7 @@ if ($object && $object->xpdo) {
                                     'context_key' => 'web',
                                     'menutitle' => '',
                                     'tvs' => array(
-                                        'img' => 'blog/top-ev3.jpg',
+                                        'img' => 'blog/Blog_03_Retina.jpg',
                                     ),
                                 ),
                             )
