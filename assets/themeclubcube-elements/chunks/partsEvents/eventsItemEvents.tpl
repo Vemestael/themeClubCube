@@ -20,7 +20,7 @@
         <img class="img-responsive img-preload" alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]"
              data-src=">0:[[+img:phpthumbof=`w=360&h=190&zc=1`]]"
              data-src2x=">0:[[+img:phpthumbof=`w=720&h=380&zc=1`]]"
-             src="">
+             src="[[+img:phpthumbof=`w=360&h=190&zc=1`]]">
 		<div class="ticket-triangle-top"></div>
 		<div class="ticket-triangle-bt"></div>
 		<div class="rombs"></div>

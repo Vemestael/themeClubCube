@@ -8,6 +8,6 @@
              data-src2x="<768:[[+image:phpthumbof=`w=720&h=404&zc=1`]],
                 >767:[[+image:phpthumbof=`w=970&h=544&zc=1`]],
 				>1199:[[+image:phpthumbof=`w=720&h=404&zc=1`]]"
-             src="">
+             src="[[+image:phpthumbof=`w=360&h=202&zc=1`]]">
 	</a>
 </div>

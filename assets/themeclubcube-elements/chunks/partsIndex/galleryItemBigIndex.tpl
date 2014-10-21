@@ -8,7 +8,7 @@
                  data-src2x="<768:[[+img:phpthumbof=`w=660&h=830&zc=1`]],
                     >767:[[+img:phpthumbof=`w=590&h=740&zc=1`]],
 				    >1199:[[+img:phpthumbof=`w=720&h=904&zc=1`]]"
-                 src="">
+                 src="[[+img:phpthumbof=`w=330&h=415&zc=1`]]">
 		</div>
 		<div class="top-gallery-title">
 			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h3>

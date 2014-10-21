@@ -85,9 +85,9 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
         $context.find('['+_properties.imgDataSrc+']').each(function () {
             var $this = $(this);
             var imgsrc = $this.attr('src');
-            if(imgsrc == '') {
+            //if(imgsrc == '') { // src должен быть заполнен по требованиям валидации
                 imgsrc = _makeImageResponsive($this);
-            }
+            //}
             //If there is an imgsrc and preloading img
             if ($this.hasClass(_properties.imgPreloadClass) && imgsrc) {
                 if (_options.usePreloader) _addImgPreloader($this);

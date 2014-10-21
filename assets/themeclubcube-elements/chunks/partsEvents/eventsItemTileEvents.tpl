@@ -7,7 +7,7 @@
              data-src2x="<768:[[+img:phpthumbof=`w=660&h=660&zc=1`]],
                 <1200:[[+img:phpthumbof=`w=690&h=690&zc=1`]],
 				>1199:[[+img:phpthumbof=`w=720&h=720&zc=1`]]"
-             src="">
+             src="[[+img:phpthumbof=`w=330&h=330&zc=1`]]">
 		<div class="top-event-descr">
 			<div class="date-event">
 				<div class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</div>
