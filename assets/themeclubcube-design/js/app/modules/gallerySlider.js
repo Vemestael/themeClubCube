@@ -57,7 +57,7 @@ appMakeBeCool.gateway.addClass('GallerySlider', function(properties, $, $window,
                                 slidesToScroll: 3,
                                 infinite: false,
                                 arrows: false,
-                                dots: true
+                                dots: false
                             }
                         }, {
                             breakpoint: 900,
@@ -66,7 +66,7 @@ appMakeBeCool.gateway.addClass('GallerySlider', function(properties, $, $window,
                                 slidesToScroll: 2,
                                 infinite: false,
                                 arrows: false,
-                                dots: true
+                                dots: false
                             }
                         }, {
                             breakpoint: 480,
@@ -75,7 +75,7 @@ appMakeBeCool.gateway.addClass('GallerySlider', function(properties, $, $window,
                                 slidesToScroll: 1,
                                 infinite: false,
                                 arrows: false,
-                                dots: true
+                                dots: false
                             }
                         }]
                     });

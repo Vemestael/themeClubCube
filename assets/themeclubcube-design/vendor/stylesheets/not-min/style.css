@@ -9810,7 +9810,6 @@ header.header-top .home-btn {
 }
 
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {
-  max-height: 460px;
   overflow-y: auto !important;
 }
 
@@ -13744,7 +13743,7 @@ aside .event-dates {
   position: fixed;
   width: 314px;
   max-width: 320px;
-  z-index: 14;
+  z-index: 15;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

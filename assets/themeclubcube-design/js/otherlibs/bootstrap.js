@@ -556,6 +556,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         if ($(window).width() < 1025) {
           $('header').addClass('header-top muted-header');
           $('body').addClass('muted-scroll');
+          $('#navbar-collapse-1').css('max-height', $(window).height())
           $('.loader-container').css({'z-index':'20'}).fadeIn();
           $('.loader-container .backstage').addClass('white');
         };
@@ -610,6 +611,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         $('.tile').removeClass('active')
         if ($(window).width() < 1025) {
           $('header').removeClass('muted-header');
+          $('#navbar-collapse-1').css('max-height', 'none')
           if (($(window).scrollTop() < $('#fullHeghtSlider').height()) || ($(window).scrollTop() < $('#slider').height()) || ($(window).scrollTop() < $('.slider-default').height())) {
             $('header').removeClass('header-top muted-header');
           } else {

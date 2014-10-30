@@ -1,5 +1,5 @@
-[[+idx:mod=`4`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="row">`]]`:else=``]]
-<div class="col-sm-6 col-md-4 col-lg-3">
+[[-+idx:mod=`4`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="row">`]]`:else=``]]
+<div class="col-xm-6 col-sm-6 col-md-4 col-lg-3">
 	<a href="[[+image]]" class="gallery-tile">
         <img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="img-responsive img-preload"
              data-src="<768:[[+image:phpthumbof=`w=360&h=202&zc=1`]],
