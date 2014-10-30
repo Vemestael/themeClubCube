@@ -165,10 +165,18 @@ main {padding-bottom: 50px;background:$bg-f9-color;}
 .bg-tile:nth-child(3), .bg-tile:nth-child(4) {top: 50%;}
 .bg-img {width: 100%;height: 100%;}
 .bg-img img {display: block;height: 200%;position: absolute;}
+.slider-default .bg-img img {display: block;height: 200%;width: auto;position: absolute;}
+
 @media screen and (min-aspect-ratio:1280/850) {
 	.bg-img img {display: block;width: 200%;height: auto;position: absolute;}
+	.slider-default .bg-img img {display: block;width: 200%;height: auto;position: absolute;}
 }
-.slider-default .bg-img img {display: block;width: 200%;height: auto;position: absolute;}
+@media screen and (min-aspect-ratio:1024/768) {
+
+	.slider-default .bg-img img {display: block;width: 200%;height: auto;position: absolute;}
+}
+
+
 .bg-tile:nth-child(2) .bg-img img, .bg-tile:nth-child(4) .bg-img img {left: -100%;}
 .bg-tile:nth-child(3) .bg-img img, .bg-tile:nth-child(4) .bg-img img {top: -100%;}
 .container-fluidss.current .bg-img, .container-fluidss.slick-active .bg-img {-webkit-transition: transform 1.1s ease-in-out;transition: transform 1.1s ease-in-out;}
@@ -1611,7 +1619,9 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 .view-evt .month, .view-evt .year {font-family: $verdana;font-size: 15px;line-height: 15px;}
 .view-evt .day {font-family: $verdana;font-size: 30px;line-height: 30px;}
 .event-view .event-about.view-evt {margin-top: 3px;}
-.event-about.view-evt .date {padding:0px 16px;}
+.event-about.view-evt .date {padding: 0px 15px;}
+.event-about.view-evt .date .month {padding-bottom: 5px;}
+.event-about.view-evt .date .year {padding-top: 5px;}
 .empt .fb-soc, .empt .tw-soc {margin-bottom: 0;}
 .items-aside {padding-bottom: 80px;}
 .items-aside .event-dates {width: 100%;}
@@ -1695,6 +1705,10 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 // Events list 
 // -------------------------
 .flat-calendar {display: block;}
+.event-about.view-evt .date {padding: 0px 15px;}
+.event-about.view-evt .date .month {padding-bottom: 5px;}
+.event-about.view-evt .date .year {padding-top: 5px;}
+
 
 }
 
