@@ -1,5 +1,12 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.1 pl
+==============
+- Fixed mobile menu overflow to the height of the viewport
+- Removed dots in the gallery slider (second type of main page)
+- Fixed gallery view page in tablet and mobile (removed .row for the each 4 gallery items)
+
+
 themeClubCube 1.0.0 pl
 ==============
 - Initial release with the implementation of the template.

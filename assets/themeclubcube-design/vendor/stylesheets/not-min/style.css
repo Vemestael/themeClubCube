@@ -9393,6 +9393,13 @@ main {
   position: absolute;
 }
 
+.slider-default .bg-img img {
+  display: block;
+  height: 200%;
+  width: auto;
+  position: absolute;
+}
+
 @media screen and (min-aspect-ratio: 1280 / 850) {
   .bg-img img {
     display: block;
@@ -9400,14 +9407,22 @@ main {
     height: auto;
     position: absolute;
   }
-}
-.slider-default .bg-img img {
-  display: block;
-  width: 200%;
-  height: auto;
-  position: absolute;
-}
 
+  .slider-default .bg-img img {
+    display: block;
+    width: 200%;
+    height: auto;
+    position: absolute;
+  }
+}
+@media screen and (min-aspect-ratio: 1024 / 768) {
+  .slider-default .bg-img img {
+    display: block;
+    width: 200%;
+    height: auto;
+    position: absolute;
+  }
+}
 .bg-tile:nth-child(2) .bg-img img, .bg-tile:nth-child(4) .bg-img img {
   left: -100%;
 }
@@ -9810,7 +9825,6 @@ header.header-top .home-btn {
 }
 
 .navbar-collapse.main-navig, .navbar-collapse.collapsing {
-  max-height: 460px;
   overflow-y: auto !important;
 }
 
@@ -13744,7 +13758,7 @@ aside .event-dates {
   position: fixed;
   width: 314px;
   max-width: 320px;
-  z-index: 14;
+  z-index: 15;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -16615,7 +16629,15 @@ blockquote a:hover {
   }
 
   .event-about.view-evt .date {
-    padding: 0px 16px;
+    padding: 0px 15px;
+  }
+
+  .event-about.view-evt .date .month {
+    padding-bottom: 5px;
+  }
+
+  .event-about.view-evt .date .year {
+    padding-top: 5px;
   }
 
   .empt .fb-soc, .empt .tw-soc {
@@ -16869,6 +16891,18 @@ blockquote a:hover {
 
   .flat-calendar {
     display: block;
+  }
+
+  .event-about.view-evt .date {
+    padding: 0px 15px;
+  }
+
+  .event-about.view-evt .date .month {
+    padding-bottom: 5px;
+  }
+
+  .event-about.view-evt .date .year {
+    padding-top: 5px;
   }
 }
 @media (min-width: 1200px) {

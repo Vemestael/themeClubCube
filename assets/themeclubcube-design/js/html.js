@@ -35,10 +35,10 @@ $(function() {
     cubeObj.slider = function() {
         var $sliderNode = $('.slider');
         var $topEventsSLider = $('.top-events-sliders');
-        window.tileSlide = new TileSlide(document.querySelector('.slider'), {
-            dots: false,
-            interval: 5000
-        });
+        // window.tileSlide = new TileSlide(document.querySelector('.slider'), {
+        //     dots: false,
+        //     interval: 5000
+        // });
         if (window.innerWidth > 479) {
             $topEventsSLider.slick({
                 slidesToShow: 3,
@@ -77,7 +77,7 @@ $(function() {
             });
         };
 
-        this.fullHeightSlides();
+        // this.fullHeightSlides();
     };
 
     //Defaul slider page
@@ -257,7 +257,7 @@ $(function() {
                 $('header').addClass('header-top active');
                 // Pause slider
                 // $('.slider').slickPause();
-                tileSlide.stopSlide();
+                // tileSlide.stopSlide();
 
             } else if (($(window).scrollTop() <= $slider.outerHeight()) && (_scrollValue < scrollTopValue) && (scrollToogle === true)) {
                 scrollToogle = false;
@@ -265,7 +265,7 @@ $(function() {
                 $('header').removeClass('header-top active');
                 // Autoplay slider
                 // $('.slider').slickPlay();
-                tileSlide.playSlide();
+                // tileSlide.playSlide();
             };
             scrollTopValue = _scrollValue;
         });
@@ -292,7 +292,7 @@ $(function() {
 
                 // Pause slider
                 // $('.slider').slickPause();
-                tileSlide.stopSlide();
+                // tileSlide.stopSlide();
                 scrollToogle = true;
                 return false;
             } else if (($(document).scrollTop() <= ($slider.height())) && (scrollDirection === 'up')) {
@@ -313,7 +313,7 @@ $(function() {
 
                 // Autoplay slider
                 // $('.slider').slickPlay();
-                tileSlide.playSlide();
+                // tileSlide.playSlide();
                 scrollToogle = false;
                 return false;
             };
