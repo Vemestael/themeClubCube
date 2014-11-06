@@ -1,5 +1,9 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.2 pl
+==============
+- Local fixes
+
 themeClubCube 1.0.1 pl
 ==============
 - Fixed mobile menu overflow to the height of the viewport

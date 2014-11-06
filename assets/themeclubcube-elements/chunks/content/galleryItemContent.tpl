@@ -50,6 +50,22 @@
 			<div class="row">
 				<div class="col-md-8 col-sm-8">
 					<h1 class="content-h1 text-left">[[*pagetitle]]</h1>
+					 <!-- <div class="top-event-place">2<small>nd</small> dancefloor</div>
+					 Ask about it  -->
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="event-about view-evt">
+						<div class="date">
+							<div class="month">[[%lf_month_short.[[*timeStart:strtotime:date=`%m`]]]]</div>
+							<div class="day">[[*timeStart:strtotime:date=`%d`]]</div>
+							<div class="year">[[%lf_week.[[*timeStart:strtotime:date=`%w`]]]]</div>
+						</div>
+						<div class="col-lg-6 col-sm-7">
+							<h1 class="slider-heading event-h1 text-left">
+								[[++themeclubcube.style_events_time_format:is=`1`:then=`[[*timeStart:strtotime:date=`%I:%M %p`]]`:else=`[[*timeStart:strtotime:date=`%H:%M`]]`]]
+							</h1>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

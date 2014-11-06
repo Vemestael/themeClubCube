@@ -10,6 +10,7 @@
 				    >1199:[[+img:phpthumbof=`w=720&h=904&zc=1`]]"
                  src="[[+img:phpthumbof=`w=330&h=415&zc=1`]]">
 		</div>
+		<div class="gallery-default-item__pattern"></div>
 		<div class="top-gallery-title">
 			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]">[[+pagetitle:htmlent]]</a></h3>
 			<hr>
