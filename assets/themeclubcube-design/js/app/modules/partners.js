@@ -69,6 +69,7 @@ appMakeBeCool.gateway.addClass('Partners', function(properties, $, $window, $doc
                 infinite: false,
                 speed: 300,
                 slidesToShow: 5,
+                pauseOnHover: false,
                 touchMove: false,
                 slidesToScroll: 1,
                 responsive: [{

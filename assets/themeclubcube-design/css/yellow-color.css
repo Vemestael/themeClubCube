@@ -65,6 +65,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', end
 .subscribe-here .subscribe button {background: #e0b13b;}/*Red*/
 footer a {color:#404040;}/*Orange*/
 footer a:hover {color: #404040;}/*Orange*/
+.subscribe-here form.error {border: 2px solid #404040;}/*Orange*/
+.subscribe-here .subscribe input.error {border: 2px solid transparent !important;}
 .social-icons li a:hover {background: #404040;}/*Orange*/
 .social-icons li a i {color: #404040;}/*Orange*/
 .address-list>li ul li {color: rgba(255,255,255,.4);}

@@ -12260,6 +12260,18 @@ time .day, time .month, time .year {
   text-transform: uppercase;
 }
 
+.subscribe-here .subscribe input {
+  border: 2px solid transparent !important;
+}
+
+.subscribe-here .subscribe input.error {
+  border: 2px solid transparent !important;
+}
+
+.subscribe-here form {
+  border: 2px solid #fff;
+}
+
 .subscribe-here .suc {
   display: block;
   width: 100%;
@@ -14538,6 +14550,10 @@ blockquote a:hover {
     margin-top: 10px;
   }
 
+  .slider-heading-ttl {
+    word-wrap: break-word;
+  }
+
   .slick-slider {
     margin-bottom: 0;
   }
@@ -15555,6 +15571,10 @@ blockquote a:hover {
   .slider-heading {
     font-size: 48px;
     line-height: 48px;
+  }
+
+  .slider-heading-ttl {
+    word-wrap: break-word;
   }
 
   .event-about.visible-xs {
@@ -16863,6 +16883,10 @@ blockquote a:hover {
 
   .partners {
     height: 180px;
+  }
+
+  .slider-heading-ttl {
+    word-wrap: break-word;
   }
 
   .img-side-right {
