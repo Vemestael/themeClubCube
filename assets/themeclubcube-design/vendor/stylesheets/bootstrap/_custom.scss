@@ -706,6 +706,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c323e', end
 .subscribe-here .subscribe input {border: 2px solid transparent !important;}
 .subscribe-here .subscribe input.error {border: 2px solid transparent !important;}
 .subscribe-here form {border: 2px solid #fff;}
+.subscribe-here form.error {border: 2px solid #e15e32;}
 .subscribe-here .suc {display: block;width: 100%;height: 55px;}
 .subscribe-here .suc.loader {display: block;position: absolute;height: 55px;}
 .suc-title {color:$light-black-color;font-size: 22px;line-height: 55px;}
