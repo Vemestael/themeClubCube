@@ -12272,6 +12272,10 @@ time .day, time .month, time .year {
   border: 2px solid #fff;
 }
 
+.subscribe-here form.error {
+  border: 2px solid #e15e32;
+}
+
 .subscribe-here .suc {
   display: block;
   width: 100%;
@@ -17291,8 +17295,8 @@ blockquote a:hover {
     color: white;
     font-family: Verdana, sans-serif;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 30px;
     text-align: right;
   }
 

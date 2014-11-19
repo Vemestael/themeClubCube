@@ -1799,7 +1799,7 @@ nav>ul>li.dropdown>ul>li.active>span {cursor: pointer;}
 .slide-to-left {display: block;position:absolute;width: 10%;height: 100%;top: 0;left: 0;background:url('../images/slide-l-shad.png') -25px top repeat-y;}
 .slide-to-right {display: block;position:absolute;width: 10%;height: 100%;top: 0;right: 0;background:url('../images/slide-r-shad.png') right top repeat-y;}
 .slider-heading {color:$white-color;font-family: $verdana;font-weight:normal;font-size:$header1-font-size;line-height:$header1-font-size;margin-top:0;margin-bottom:0;padding-bottom: 0;text-shadow:0 0 4px rgba(0,0,0,.1);text-align: right}
-.slider-description {max-height: none;color:$white-color;font-family: $verdana;font-weight:normal;font-size:36px;line-height:36px;text-align: right;}
+.slider-description {max-height: none;color:$white-color;font-family: $verdana;font-weight:normal;font-size:30px;line-height:30px;text-align: right;}
 .slick-prev {position:absolute;height: 136px;width: 69px;background:url('../images/slide-l.png') center no-repeat;left: 15px;cursor:pointer;}
 .slick-next {position:absolute;height: 136px;width: 69px;background:url('../images/slide-r.png') center no-repeat;right: 15px;cursor:pointer;}
 .slider p {display: block;line-height:24px;font-family: $verdana;font-size: $reg-font-size;}
