@@ -99,9 +99,7 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
             }
             i++;
         });
-        /**
-         * TODO перенести функционал в бест практиклс
-         */
+
         var baseLength = global.siteUrl.length;
         if(imagesSrc.length){
             $.imgpreload(imagesSrc, {

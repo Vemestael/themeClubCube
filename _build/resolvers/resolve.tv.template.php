@@ -80,9 +80,6 @@ if ($object && $object->xpdo) {
                     $rank++;
                 }
 
-                /*
-                 * TODO перенести условие на проверку source в базовый шаблон
-                 */
                 if(isset($relations['sources'])) {
                     $sourceElements = $modx->getCollection('sources.modMediaSourceElement',array(
                         'object' => $tv->get('id'),
