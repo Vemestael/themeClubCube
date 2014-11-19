@@ -5,9 +5,6 @@
 * @package modxss
 */
 $subpackages = array(
-    /*
-     * TODO перенести в базовый шаблон новую версию компонента
-     */
     'pdotools' => 'pdotools-1.9.3-pl1',
     'jevix' => 'jevix-1.2.0-pl2',
     'resizer' => 'resizer-1.0.1-pl',

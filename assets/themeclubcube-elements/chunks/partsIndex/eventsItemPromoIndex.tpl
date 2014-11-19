@@ -10,7 +10,7 @@
 	<div class="rowss">
 		<div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
 			<div class="o-h">
-				<div class="slider-heading col-sm-6 col-lg-12">[[+pagetitle:htmlent]]</div>
+				<div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">[[+pagetitle:htmlent]]</div>
 				<div class="event-about visible-sm visible-xs visible-md col-sm-6">
 					<time class="date" datetime="[[+timeStart]]">
 						<span class="month">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</span>

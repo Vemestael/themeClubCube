@@ -59,8 +59,11 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
 
                         error.insertAfter(element).wrap(label);
                         arrow.insertBefore(error);
+
+                        _globals.form.addClass('error');
                     } else if($(element).hasClass('valid')){
                         $(error).parent('label').remove();
+                        _globals.form.removeClass('error');
                     }
                 },
                 success: function(label){

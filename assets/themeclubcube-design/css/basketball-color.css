@@ -62,6 +62,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#133a47', end
 .contact-us p {color: rgba(255,255,255,.5);}
 .subscribe-here .subscribe button {background: #f1632c;}/*Orange*/
 .subscribe-here .subscribe button:active {background: #f1632c;}/*Orange pressed*/
+.subscribe-here form.error {border: 2px solid #f1632c;}/*Orange*/
+.subscribe-here .subscribe input.error {border: 2px solid transparent !important;}
 .social-icons li a:hover {background: #f1632c;}/*Orange*/
 .social-icons li a i {color: #f1632c;}/*Orange*/
 .copyrights-bottom p {color:#333;}

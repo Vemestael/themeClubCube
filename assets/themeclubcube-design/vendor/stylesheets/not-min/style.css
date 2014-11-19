@@ -10725,6 +10725,16 @@ time .day, time .month, time .year {
   margin-bottom: 0;
 }
 
+.gallery-default-item__pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .top-href {
   display: block;
   position: absolute;
@@ -12248,6 +12258,18 @@ time .day, time .month, time .year {
   outline: none;
   border: none;
   text-transform: uppercase;
+}
+
+.subscribe-here .subscribe input {
+  border: 2px solid transparent !important;
+}
+
+.subscribe-here .subscribe input.error {
+  border: 2px solid transparent !important;
+}
+
+.subscribe-here form {
+  border: 2px solid #fff;
 }
 
 .subscribe-here .suc {
@@ -14528,6 +14550,10 @@ blockquote a:hover {
     margin-top: 10px;
   }
 
+  .slider-heading-ttl {
+    word-wrap: break-word;
+  }
+
   .slick-slider {
     margin-bottom: 0;
   }
@@ -15302,6 +15328,18 @@ blockquote a:hover {
     width: 100%;
   }
 
+  .event-about.view-evt .date {
+    padding: 0px 15px;
+  }
+
+  .event-about.view-evt .date .month {
+    padding: 10px 0 5px 0;
+  }
+
+  .event-about.view-evt .date .year {
+    padding: 5px 0 10px 0;
+  }
+
   .absi .absi-inner {
     margin: 0 auto;
   }
@@ -15533,6 +15571,10 @@ blockquote a:hover {
   .slider-heading {
     font-size: 48px;
     line-height: 48px;
+  }
+
+  .slider-heading-ttl {
+    word-wrap: break-word;
   }
 
   .event-about.visible-xs {
@@ -16633,11 +16675,11 @@ blockquote a:hover {
   }
 
   .event-about.view-evt .date .month {
-    padding-bottom: 5px;
+    padding: 10px 0 5px 0;
   }
 
   .event-about.view-evt .date .year {
-    padding-top: 5px;
+    padding: 5px 0 10px 0;
   }
 
   .empt .fb-soc, .empt .tw-soc {
@@ -16843,6 +16885,10 @@ blockquote a:hover {
     height: 180px;
   }
 
+  .slider-heading-ttl {
+    word-wrap: break-word;
+  }
+
   .img-side-right {
     max-width: 280px;
   }
@@ -16898,11 +16944,11 @@ blockquote a:hover {
   }
 
   .event-about.view-evt .date .month {
-    padding-bottom: 5px;
+    padding: 10px 0 5px 0;
   }
 
   .event-about.view-evt .date .year {
-    padding-top: 5px;
+    padding: 5px 0 10px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -18777,6 +18823,12 @@ blockquote a:hover {
   }
 
   .gallery-default-item:hover .top-gallery-title hr, .gallery-default-item:hover .top-gallery-title .gallery-default-dates, .gallery-default-item:hover .bottom {
+    opacity: .5;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+  }
+
+  .gallery-default-item:hover .top-gallery-title {
     opacity: .5;
     -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;

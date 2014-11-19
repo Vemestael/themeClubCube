@@ -1,5 +1,11 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.2 pl
+==============
+- Fixed css in the styles for main and event pages.
+- Update version subpackeges Molt to molt-1.0.2-beta
+- add img tv to more templates
+
 themeClubCube 1.0.1 pl
 ==============
 - Fixed mobile menu overflow to the height of the viewport

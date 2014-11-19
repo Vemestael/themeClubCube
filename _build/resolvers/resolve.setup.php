@@ -16,9 +16,6 @@ if ($object->xpdo) {
 		case xPDOTransport::ACTION_UPGRADE:
 			/* Checking and installing required packages */
 			$packages = array(
-                /*
-                 * TODO перенести в базовый шаблон новую версию компонента
-                 */
 				'pdoTools' => array(
                     'signature' => 'pdotools-1.9.3-pl1',
                     'options' => array(
