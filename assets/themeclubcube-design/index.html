@@ -10,14 +10,12 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="Home ver.1">
-
-        <meta property="og:title" content="Home ver.1 / MODX Revolution" />
+        <meta property="og:title" content="Theme Club Cube" />
         <meta property="og:description" content="Development templates for MODX form MakeBeCool.com design studio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://sites.makebecool.com/themeclubcube/" />
         <meta property="og:image" content="http://sites.makebecool.com/themeclubcube/assets/design/images/logo.png" />
-        <meta property="og:site_name" content="MODX Revolution" />
-
+        <meta property="og:site_name" content="Theme Club Cube" />
         <meta http-equiv="x-dns-prefetch-control" content="on"/>
         <link rel="dns-prefetch" href="http://code.jquery.com" />
         <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
@@ -38,9 +36,9 @@
         <![endif]-->
     </head>
     <body>
-        <div class="loader-container">
+        <div id="loaderContainer" class="loader-container">
             <div class="backstage"></div>
-            <div class="loader">
+            <div id="loader" class="loader">
                 <div class="fr-bl"></div>
                 <div class="sc-bl"></div>
                 <div class="thr-bl"></div>
@@ -1242,8 +1240,49 @@
     </div>
 </div>
 </footer>
-<script src="js/loader.js"></script>
-<!-- <script src="js/youtube.js"></script> -->
+<script>
+            var global = {
+                siteUrl: 'http://sites.makebecool.com/themeclubcube/',
+                baseUrl: '/themeclubcube/',
+                assetsUrl: '/themeclubcube/assets/',
+                cultureKey: 'en'
+            }
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/otherlibs/bootstrap.js"></script>
+        <script src="js/jquery/plugins/jquery.imgpreload.js"></script>
+        <script src="js/jquery/plugins/jquery.form.js"></script>
+        <script src="js/jquery/plugins/validation/jquery.validate.js"></script>
+        <script src="js/jquery/plugins/slick/slick.min.js"></script>
+        <script src="js/jquery/plugins/tileSlide.js"></script>
+        <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+        <script src="js/jquery/plugins/tinyAnimations.js"></script>
+        <script src="js/jquery/plugins/imagelightbox/imagelightbox.js"></script>
+        <script src="js/jquery/plugins/jquery.sharrre.js"></script>
+        <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+        <script src="js/app/lib/site.js"></script>
+        <script src="js/app/lib/siteMode.js"></script>
+        <script src="js/app/mode/themeMode.js"></script>
+        <script src="js/app/modules/images.js"></script>
+        <script src="js/app/modules/loaderMain.js"></script>
+        <script src="js/app/modules/fullHeightSlider.js"></script>
+        <script src="js/app/modules/eventAnimate.js"></script>
+        <script src="js/app/modules/blogAnimate.js"></script>
+        <script src="js/app/modules/partners.js"></script>
+        <script src="js/app/modules/scrollAtOnce.js"></script>
+        <script src="js/app/modules/menuToTop.js"></script>
+        <script src="js/app/modules/gallerySlider.js"></script>
+        <script src="js/app/modules/topEventsSlider.js"></script>
+        <script src="js/app/modules/ticketsEventsSlider.js"></script>
+        <script src="js/app/modules/formContacts.js"></script>
+        <script src="js/app/modules/formSubscribe.js"></script>
+        <script src="js/app/modules/galleryPage.js"></script>
+        <script src="js/app/modules/sharrre.js"></script>
+        <script src="js/app/modules/eventsTickets.js"></script>
+        <script src="js/app/modules/dropDownClick.js"></script>
+        <script src="js/init-html.js"></script>
+<!--<script src="js/loader.js"></script>
+<script src="js/youtube.js"></script>
 <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
 <script src="js/jquery/plugins/tileSlide.js"></script>
 <script src="js/html.js"></script>
@@ -1254,6 +1293,6 @@ $(document).ready(function(){
 var events = new EventAnimate($('.top-event'));
 var blogs = new EventAnimate($('.blog-item'));
 });
-</script>
+</script>-->
 </body>
 </html>

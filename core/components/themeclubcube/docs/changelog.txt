@@ -1,11 +1,21 @@
 Changelog for themeClubCube.
 
+<<<<<<< HEAD
 themeClubCube 1.0.2 pl
 ==============
 - Fixed css in the styles for main and event pages.
 - Update version subpackeges Molt to molt-1.0.2-beta
 - add img tv to more templates
 - line up on main slider max 3 items
+=======
+themeClubCube 1.0.3 pl
+==============
+- Fixed description main header line-up font-fize and line-height from 36 to 30 px.
+
+themeClubCube 1.0.2 pl
+==============
+- Local fixes
+>>>>>>> c2d4740f8b09d10d5fdba38163ceb33d6de17db6
 
 themeClubCube 1.0.1 pl
 ==============
