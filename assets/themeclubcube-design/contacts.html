@@ -20,14 +20,13 @@
         <link rel="dns-prefetch" href="http://code.jquery.com" />
         <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="js/css/slick.css">
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="stylesheet" href="css/gold-color.css">
         <link rel="stylesheet" href="css/basketball-color.css">
         <link rel="stylesheet" href="css/blueberry-color.css">
-        <script src="js/jquery/jquery-1.11.0.min.js"></script>
-        <script src="js/otherlibs/bootstrap.js"></script>
-        <script src="js/jquery/plugins/slick/slick.js"></script>
         <!--[if IE]>
         <script src="js/otherlibs/html5.js"></script>
         <![endif]-->
@@ -61,78 +60,109 @@
                         <img src="images/logo-w.png" alt="" class="site-logo">
                         </span>
                     </div>
-                    <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
+                     <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a">Home
-                                    <b class="caret"></b>
-                                </a>
+                            <li class="first dropdown">
+                                <a href="indexlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="index.html">Main slider</a>
+                                    <li class="first">
+                                        <a href="home-ver.1.html">Home ver.1</a>
                                     </li>
                                     <li class="last">
-                                        <a href="default-slider.html">Default slider</a>
+                                        <a href="home-ver.2.html">Home ver.2</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a">Events
-                                    <b class="caret"></b>
-                                </a>
+                                <a href="eventslist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
+                                    <li class="first">
+                                        <a href="events.html">Events</a>
+                                    </li>
                                     <li>
-                                        <a href="events-list.html">Events list</a>
+                                        <a href="events-ver.2.html">Events ver.2</a>
                                     </li>
                                     <li class="last">
-                                        <a href="events-tile.html">Events tiles</a>
+                                        <a href="open-event.html">Open event</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" dropdown">
+                                <a href="gallerylist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Gallery<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="first">
+                                        <a href="#">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gallery ver.2</a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="gallery-item.html">Open Gallery</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a">About
-                                    <b class="caret"></b>
+                                <a href="bloglist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog<b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="event-view.html">Event view</a>
+                                    <li class="first">
+                                        <a href="blog.html">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="content-view.html">Content view</a>
+                                        <a href="blog2.html">Blog ver.2</a>
                                     </li>
                                     <li>
-                                        <span>Content default</span>
+                                        <a href="blog-item1.html">Open Blog (With image)</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-item2.html">Open Blog (No image)</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-item3.html">Open Blog Aside (With image)</a>
                                     </li>
                                     <li class="last">
-                                        <a href="content-view-default-image.html">Content default image</a>
+                                        <a href="blog-item4.html">Open Blog Aside (No image)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" dropdown">
+                                <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="first">
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Manual</a>
+                                    </li>
+                                    <li>
+                                        <a href="404.html">404</a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="design-elements.html">Design elements</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a">Media
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="last">
-                                        <a href="gallery.html">Gallery</a>
-                                    </li>
-                                </ul>
+                                <a href="#" class="dropdown-toggle main-heading-a">Contacts</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a">Blog
-                                    <b class="caret"></b>
+                            <li class="dropdown left-dropdow">
+                                <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
+                                    <i class="fa fa-tint"></i>
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
                                     <li>
-                                        <a href="blog-list.html">Blog list</a>
+                                        <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
                                     </li>
-                                    <li class="last">
-                                        <a href="blog-list-default.html">Default blog</a>
+                                    <li>
+                                        <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                    </li>
+                                    <li>
+                                        <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                    </li>
+                                    <li class="last ">
+                                        <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <span>Contacts</span>
                             </li>
                         </ul>
                     </nav>
@@ -362,20 +392,5 @@
         <script src="js/app/modules/eventsTickets.js"></script>
         <script src="js/app/modules/dropDownClick.js"></script>
         <script src="js/init-html.js"></script>
-        <!--<script src="js/loader.js"></script>
-        <script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
-        <script src="js/html.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-        <script>
-        function initialize() {
-        var mapOptions = {
-        zoom: 8,
-        center: new google.maps.LatLng(-34.397, 150.644)
-        };
-        map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-        </script>-->
     </body>
 </html>
