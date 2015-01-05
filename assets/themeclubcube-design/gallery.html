@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home ver.1/ Theme Club Cube</title>
+    <meta name="description" content="Development templates for MODX form MakeBeCool.com design studio" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Home ver.1">
+    <meta property="og:title" content="Theme Club Cube" />
+    <meta property="og:description" content="Development templates for MODX form MakeBeCool.com design studio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://sites.makebecool.com/themeclubcube/" />
+    <meta property="og:image" content="http://sites.makebecool.com/themeclubcube/assets/design/images/logo.png" />
+    <meta property="og:site_name" content="Theme Club Cube" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="http://code.jquery.com" />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="js/css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/gold-color.css">
+    <link rel="stylesheet" href="css/basketball-color.css">
+    <link rel="stylesheet" href="css/blueberry-color.css">
+    <!--[if IE]>
+        <script src="js/otherlibs/html5.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/otherlibs/css3-mediaqueries.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div id="loaderContainer" class="loader-container">
+        <div class="backstage"></div>
+        <div id="loader" class="loader">
+            <div class="fr-bl"></div>
+            <div class="sc-bl"></div>
+            <div class="thr-bl"></div>
+            <div class="fth-bl"></div>
+        </div>
+    </div>
+    <header class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header col-lg-4 col-lg-offset-1">
+                    <div class="tile">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="home-btn">Home</span>
+                    </div>
+                    <a href="index.html" class="navbar-brand first">
+                        <img src="images/logo-w.png" alt="" class="site-logo">
+                    </a>
+                </div>
+                <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="first dropdown">
+                            <a href="indexlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="home-ver.1.html">Home ver.1</a>
+                                </li>
+                                <li class="last">
+                                    <a href="home-ver.2.html">Home ver.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="eventslist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="events-ver.2.html">Events ver.2</a>
+                                </li>
+                                <li class="last">
+                                    <a href="open-event.html">Open event</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown active">
+                            <a href="gallerylist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Gallery<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first active">
+                                    <span>Gallery</span>
+                                </li>
+                                <li>
+                                    <a href="gallery-ver.2.html">Gallery ver.2</a>
+                                </li>
+                                <li class="last">
+                                    <a href="gallery-item.html">Open Gallery</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="bloglist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog<b class="caret"></b>
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blog2.html">Blog ver.2</a>
+                                </li>
+                                <li>
+                                    <a href="blog-item1.html">Open Blog (With image)</a>
+                                </li>
+                                <li>
+                                    <a href="blog-item2.html">Open Blog (No image)</a>
+                                </li>
+                                <li>
+                                    <a href="blog-item3.html">Open Blog Aside (With image)</a>
+                                </li>
+                                <li class="last">
+                                    <a href="blog-item4.html">Open Blog Aside (No image)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown">
+                            <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="feature.html">Features</a>
+                                </li>
+                                <li>
+                                    <a href="manual.html">Manual</a>
+                                </li>
+                                <li>
+                                    <a href="404.html">404</a>
+                                </li>
+                                <li class="last">
+                                    <a href="design-elements.html">Design elements</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="contacts.html" class="dropdown-toggle main-heading-a">Contacts</a>
+                        </li>
+                        <li class="dropdown left-dropdow">
+                            <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
+                                <i class="fa fa-tint"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
+                                <li>
+                                    <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
+                                </li>
+                                <li>
+                                    <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                </li>
+                                <li>
+                                    <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                </li>
+                                <li class="last ">
+                                    <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="all-blogs blog">
+        <div class="container">
+            <div class="row head">
+                <div class="col-sm-6 col-md-6 col-lg-6 all-blogs-h1">
+                    <h1>GALLERY</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container gr-bg all-blogs-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery20" title="Hip-Hop X OH!Trap" class="img-overfl">
+                            <img alt="Hip-Hop X OH!Trap" title="Hip-Hop X OH!Trap" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_03_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery20" title="Hip-Hop X OH!Trap" class="top-event-title">Hip-Hop X OH!Trap - 1</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:59">19 november 2014, 12:59</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery19" title="Daily Bass Ocean" class="img-overfl">
+                            <img alt="Daily Bass Ocean" title="Daily Bass Ocean" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_02_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery19" title="Daily Bass Ocean" class="top-event-title">Daily Bass Ocean - 2</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:58">19 november 2014, 12:58</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery18" title="Discover Paparazzi Madness" class="img-overfl">
+                            <img alt="Discover Paparazzi Madness" title="Discover Paparazzi Madness" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_04_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery18" title="Discover Paparazzi Madness" class="top-event-title">Discover Paparazzi Madness - 3</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:57">19 november 2014, 12:57</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery17" title="Mash Up Your Heads: Christmas Night" class="img-overfl">
+                            <img alt="Mash Up Your Heads: Christmas Night" title="Mash Up Your Heads: Christmas Night" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_06_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery17" title="Mash Up Your Heads: Christmas Night" class="top-event-title">Mash Up Your Heads: Christmas Night - 0</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:56">19 november 2014, 12:56</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-mard clearfix visible-lg"></div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery16" title="Californication Nights" class="img-overfl">
+                            <img alt="Californication Nights" title="Californication Nights" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_02_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery16" title="Californication Nights" class="top-event-title">Californication Nights - 1</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:55">19 november 2014, 12:55</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery15" title="Streets Love Invasion" class="img-overfl">
+                            <img alt="Streets Love Invasion" title="Streets Love Invasion" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_08_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery15" title="Streets Love Invasion" class="top-event-title">Streets Love Invasion - 2</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:54">19 november 2014, 12:54</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery14" title="Hip-Hop X OH!Trap" class="img-overfl">
+                            <img alt="Hip-Hop X OH!Trap" title="Hip-Hop X OH!Trap" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_09_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery14" title="Hip-Hop X OH!Trap" class="top-event-title">Hip-Hop X OH!Trap - 3</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:53">19 november 2014, 12:53</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery13" title="Daily Bass Ocean" class="img-overfl">
+                            <img alt="Daily Bass Ocean" title="Daily Bass Ocean" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_10_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery13" title="Daily Bass Ocean" class="top-event-title">Daily Bass Ocean - 0</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:52">19 november 2014, 12:52</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-mard clearfix visible-lg"></div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery12" title="Discover Paparazzi Madness" class="img-overfl">
+                            <img alt="Discover Paparazzi Madness" title="Discover Paparazzi Madness" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_11_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery12" title="Discover Paparazzi Madness" class="top-event-title">Discover Paparazzi Madness - 1</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:51">19 november 2014, 12:51</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery11" title="Mash Up Your Heads: Christmas Night" class="img-overfl">
+                            <img alt="Mash Up Your Heads: Christmas Night" title="Mash Up Your Heads: Christmas Night" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_12_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery11" title="Mash Up Your Heads: Christmas Night" class="top-event-title">Mash Up Your Heads: Christmas Night - 2</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:50">19 november 2014, 12:50</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery10" title="Californication Nights" class="img-overfl">
+                            <img alt="Californication Nights" title="Californication Nights" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_03_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery10" title="Californication Nights" class="top-event-title">Californication Nights - 3</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:49">19 november 2014, 12:49</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
+                    <div class="img-gal">
+                        <a href="gallerylist/gallery/gallery9" title="Streets Love Invasion" class="img-overfl">
+                            <img alt="Streets Love Invasion" title="Streets Love Invasion" class="img-responsive img-preload" data-src="" data-src2x="" src="../uploads/gallery/Gallery_14_Original.jpg">
+                        </a>
+                        <div class="bord-fr"></div>
+                        <div class="bord-sc"></div>
+                    </div>
+                    <div class="item-title">
+                        <div class="item-aside">
+                            <h3><a href="gallerylist/gallery/gallery9" title="Streets Love Invasion" class="top-event-title">Streets Love Invasion - 0</a></h3>
+                            <time class="top-event-place" datetime="2014-11-19 12:48">19 november 2014, 12:48</time>
+                        </div>
+
+                        <div class="item-icons">
+                            <div class="icon-row">
+                                <div class="pict-sm photo-cm"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rows paging single-paging">
+                <div class="left-pag sm off">
+                    <div class="pad-arr"><i></i>
+                    </div>
+                    <div class="pad-text">
+                        <div class="pad-title">Prev</div>
+                    </div>
+                </div>
+                <ul class="middle-paging">
+                    <li class="off"><span>1</span>
+                    </li>
+                    <li><a href="/themeclubcube/gallerylist/gallery?page=2">2</a>
+                    </li>
+                </ul>
+                <a class="right-pag sm" href="/themeclubcube/gallerylist/gallery?page=2">
+                    <div class="pad-arr"><i></i>
+                    </div>
+                    <div class="pad-text">
+                        <div class="pad-title">Next</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 footer-block">
+                    <div class="welcome">
+                        <div class="welcome-inner">
+                            <div class="corner-welcome"></div>
+                            <p>We like to create cool parties and we love to chat with like-minded</p>
+                            <span class="welcome-title">Do not hesitate to say hello!</span>
+                        </div>
+                    </div>
+                    <address>
+                        <ul class="address-list">
+                            <li>
+                                <div class="letter"></div>
+                                <a href="mailto:hello@cubeclub.com">hello@cubeclub.com</a>
+                            </li>
+                            <li>
+                                <div class="phone-foot"></div>
+                                <ul>
+                                    <li>+38 (050) 588-46-37</li>
+                                    <li>+38 (097) 798-45-12</li>
+                                </ul>
+                            </li>
+                            <li class="last">
+                                <div class="baloone-foot"></div>
+                                <ul>
+                                    <li>87500 Mariupol, Ukraine, ul. Kazantsev 7b, 2nd floor, office. 29</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 footer-block">
+                    <div class="subscribe-here soc-marg">
+                        <div class="footer-header">Mailing list</div>
+                        <p>Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!</p>
+                        <form action="#" id="email-footer-form">
+                            <div class="subscribe">
+                                <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail">
+                                <button type="submit" value="Subscribe" id="subscribe-btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
+                    <div class="soc-marg soc-webs">
+                        <div class="footer-header">Follow us</div>
+                        <p>To be up-to-date with us</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-flickr"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="copyrigts">Copyright 2014 — Cube Club Theme by
+                            <a href="#">makebecool</a> / All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    var global = {
+        siteUrl: 'http://sites.makebecool.com/themeclubcube/',
+        baseUrl: '/themeclubcube/',
+        assetsUrl: '/themeclubcube/assets/',
+        cultureKey: 'en'
+    }
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/otherlibs/bootstrap.js"></script>
+    <script src="js/jquery/plugins/jquery.imgpreload.js"></script>
+    <script src="js/jquery/plugins/jquery.form.js"></script>
+    <script src="js/jquery/plugins/validation/jquery.validate.js"></script>
+    <script src="js/jquery/plugins/slick/slick.min.js"></script>
+    <script src="js/jquery/plugins/tileSlide.js"></script>
+    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="js/jquery/plugins/tinyAnimations.js"></script>
+    <script src="js/jquery/plugins/imagelightbox/imagelightbox.js"></script>
+    <script src="js/jquery/plugins/jquery.sharrre.js"></script>
+    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="js/app/lib/site.js"></script>
+    <script src="js/app/lib/siteMode.js"></script>
+    <script src="js/app/mode/themeMode.js"></script>
+    <script src="js/app/modules/images.js"></script>
+    <script src="js/app/modules/loaderMain.js"></script>
+    <script src="js/app/modules/fullHeightSlider.js"></script>
+    <script src="js/app/modules/eventAnimate.js"></script>
+    <script src="js/app/modules/blogAnimate.js"></script>
+    <script src="js/app/modules/partners.js"></script>
+    <script src="js/app/modules/scrollAtOnce.js"></script>
+    <script src="js/app/modules/menuToTop.js"></script>
+    <script src="js/app/modules/gallerySlider.js"></script>
+    <script src="js/app/modules/topEventsSlider.js"></script>
+    <script src="js/app/modules/ticketsEventsSlider.js"></script>
+    <script src="js/app/modules/formContacts.js"></script>
+    <script src="js/app/modules/formSubscribe.js"></script>
+    <script src="js/app/modules/galleryPage.js"></script>
+    <script src="js/app/modules/sharrre.js"></script>
+    <script src="js/app/modules/eventsTickets.js"></script>
+    <script src="js/app/modules/dropDownClick.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
