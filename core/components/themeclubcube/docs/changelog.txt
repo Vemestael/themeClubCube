@@ -1,5 +1,10 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.3 pl
+==============
+- Fixed description main header line-up font-fize and line-height from 36 to 30 px.
+- Fixed tv images on event
+
 themeClubCube 1.0.2 pl
 ==============
 - Fixed css in the styles for main and event pages.

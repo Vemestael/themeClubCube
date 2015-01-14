@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-        <head>
+    <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home ver.1/ Theme Club Cube</title>
@@ -54,13 +54,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             </button>
-                            <span class="home-btn">Home</span>
+                            <span class="home-btn">404</span>
                         </div>
-                        <span class="navbar-brand first">
-                        <img src="images/logo-w.png" alt="" class="site-logo">
-                        </span>
+                        <a href="index.html" class="navbar-brand first">
+                            <img src="images/logo-w.png" alt="" class="site-logo">
+                        </a>
                     </div>
-                     <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
+                    <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="first dropdown">
                                 <a href="indexlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home<b class="caret"></b></a>
@@ -125,16 +125,16 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class=" dropdown">
+                            <li class="active dropdown">
                                 <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li class="first">
                                         <a href="feature.html">Features</a>
                                     </li>
                                     <li>
-                                        <a href="manual.html">Manual</a>
+                                        <span>Manual</span>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <a href="404.html">404</a>
                                     </li>
                                     <li class="last">
@@ -142,8 +142,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
-                                <span>Contacts</span>
+                            <li class="dropdown">
+                                <a href="contacts.html" class="dropdown-toggle main-heading-a">Contacts</a>
                             </li>
                             <li class="dropdown left-dropdow">
                                 <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
@@ -172,8 +172,8 @@
         <section class="content-header white-img">
             <div class="container z-top">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 content-header__center-list">
-                        <h1 class="content-h1 text-left">Contacts</h1>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1 class="content-h1 text-left">Features</h1>
                     </div>
                 </div>
             </div>
@@ -181,67 +181,36 @@
         <div class="main-content main-content__grey-border">
             <div class="container text-contain">
                 <div class="row">
-                    <main class="col-xs-12 col-sm-12 col-md-12 content-main content-main__center-list">
+                    <main class="col-lg-12 col-md-12 col-sm-12 content-main">
                     <div class="content-page">
-                        <div class="page-text">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>Address:</h2>
-                                    <ul>
-                                        <li><b>Country:</b> Ukraine</li>
-                                        <li><b>City:</b> Mariupol</li>
-                                        <li><b>Address:</b> Kazanceva 7b, office 29</li>
-                                        <li><b>Phone:</b>+38 (000) 000 00 00</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h2>Напишите нам</h2>
-                                    <form class="form-horizontal" id="contactForm" action="ajax/formcontacts" method="POST" novalidate="novalidate">
-                                        <div class="form-group">
-                                            <label for="inputName" class=" control-label"></label>
-                                            <div class="">
-                                                <input type="text" name="name" class="form-control required" required="" id="inputName" placeholder="Имя:" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputEmail" class="control-label"></label>
-                                            <div class="">
-                                                <input type="email" name="email" class="form-control required email" required="" id="inputEmail" placeholder="E-mail:" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputMessage" class=" control-label"></label>
-                                            <div class="">
-                                                <textarea name="message" class="form-control" rows="3" required="" id="inputMessage" aria-required="true"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="">
-                                                <button type="submit" class="btn btn-default submit">Отправить</button>
-                                            </div>
-                                        </div>
-                                        <div id="loaderContactsForm" class="suc loader hide">
-                                            <div class="loader">
-                                                <div class="fr-bl"></div>
-                                                <div class="sc-bl"></div>
-                                                <div class="thr-bl"></div>
-                                                <div class="fth-bl"></div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div id="successMessage" class="suc" style="display: none;">
-                                        <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>Спасибо, ваше сообщение отправлено</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="page-text"> 
+                            <p>All template settings can be found in the "System Setting", section "themeclubcube".</p>
+                            <h2>Setting up the main page</h2>
+                            <p>These 5 parameters corresponding for setting up the main page:</p>
+                            <ul>
+                                <li>style_events_promo_slider</li>
+                                <li>style_index_blog_list</li>
+                                <li>style_index_events_list</li>
+                                <li>style_events_time_format</li>
+                                <li>style_index_gallery_list</li>
+                            </ul>
+                            <h4>style_events_promo_slider</h4>
+                            <p>Slider has two states: a large (stretched to full screen) and fixed size. Changing this setting, you can select your desired option.</p>
+                            <h4>style_index_blog_list</h4>
+                            <p>Blog entries are 2 types of design: tiles without images and large previews (full width of the tile).</p>
+                            <h4>style_index_events_list</h4>
+                            <p>Events can be designed in 2 different styles: tiles with a picture in the background and in the form of tickets.</p>
+                            <h4>style_events_time_format</h4>
+                            <p>This setting affects the style of the time for the event, it can be in the format of am/pm or 24 hours.</p>
+                            <h4>style_index_gallery_list</h4>
+                            <p>Setting the gallery output. The gallery can be displayed as a list of small tiles on a colored background, or as a slider with large thumbs.</p>
+                            <h2>Google Analytics settings</h2>
+                            <p>To activate the google analytics need to register your Tracking ID to set up "ga_tracking_id".</p>
+                            <h2>Color sheme setting</h2>
+                            <p>Setting "color_scheme". Options: yellow, turbo, max-hurricane, mint</p>
                         </div>
                     </div>
                     </main>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="map-canvas" class="map-contacts"></div>
                 </div>
             </div>
         </div>
@@ -282,12 +251,27 @@
                         <div class="subscribe-here soc-marg">
                             <div class="footer-header">Mailing list</div>
                             <p>Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!</p>
-                            <form action="#" id="email-footer-form">
+                            <form action="#" id="email-footer-form" novalidate>
                                 <div class="subscribe">
-                                    <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail">
+                                    <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail" data-toggle="tooltip" data-placement="top">
+                                    <label for="email-subscribe" class="error">
+                                        <span class="subscribe-label-arrow"></span>
+                                        <span class="subscribe-label-inner">No email</span>
+                                    </label>
                                     <button type="submit" value="Subscribe" id="subscribe-btn" >Subscribe</button>
                                 </div>
+                                <div id="loaderContactForm" class="suc loader">
+                                    <div class="loader">
+                                        <div class="fr-bl"></div>
+                                        <div class="sc-bl"></div>
+                                        <div class="thr-bl"></div>
+                                        <div class="fth-bl"></div>
+                                    </div>
+                                </div>
                             </form>
+                            <div id="successContactForm" class="suc">
+                                <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>You were subscribed</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
@@ -352,12 +336,12 @@
             </div>
         </footer>
         <script>
-            var global = {
-                siteUrl: 'http://sites.makebecool.com/themeclubcube/',
-                baseUrl: '/themeclubcube/',
-                assetsUrl: '/themeclubcube/assets/',
-                cultureKey: 'en'
-            }
+        var global = {
+        siteUrl: 'http://sites.makebecool.com/themeclubcube/',
+        baseUrl: '/themeclubcube/',
+        assetsUrl: '/themeclubcube/assets/',
+        cultureKey: 'en'
+        }
         </script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/otherlibs/bootstrap.js"></script>

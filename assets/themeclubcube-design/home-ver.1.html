@@ -10,26 +10,23 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="Home ver.1">
-
-        <meta property="og:title" content="Home ver.1 / MODX Revolution" />
+        <meta property="og:title" content="Theme Club Cube" />
         <meta property="og:description" content="Development templates for MODX form MakeBeCool.com design studio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://sites.makebecool.com/themeclubcube/" />
         <meta property="og:image" content="http://sites.makebecool.com/themeclubcube/assets/design/images/logo.png" />
-        <meta property="og:site_name" content="MODX Revolution" />
-
+        <meta property="og:site_name" content="Theme Club Cube" />
         <meta http-equiv="x-dns-prefetch-control" content="on"/>
         <link rel="dns-prefetch" href="http://code.jquery.com" />
         <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="js/css/slick.css">
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="stylesheet" href="css/gold-color.css">
         <link rel="stylesheet" href="css/basketball-color.css">
         <link rel="stylesheet" href="css/blueberry-color.css">
-        <script src="js/jquery/jquery-1.11.0.min.js"></script>
-        <script src="js/otherlibs/bootstrap.js"></script>
-        <script src="js/jquery/plugins/slick/slick.js"></script>
         <!--[if IE]>
         <script src="js/otherlibs/html5.js"></script>
         <![endif]-->
@@ -38,9 +35,9 @@
         <![endif]-->
     </head>
     <body>
-        <div class="loader-container">
+        <div id="loaderContainer" class="loader-container">
             <div class="backstage"></div>
-            <div class="loader">
+            <div id="loader" class="loader">
                 <div class="fr-bl"></div>
                 <div class="sc-bl"></div>
                 <div class="thr-bl"></div>
@@ -63,95 +60,107 @@
                         <img src="images/logo-w.png" alt="" class="site-logo">
                         </span>
                     </div>
-                    <nav class="collapse navbar-collapse col-lg-6 main-navig" id="navbar-collapse-1">
+                    <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <span>Main slider</span>
+                            <li class="first dropdown active">
+                                <a href="indexlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home<b class="caret"></b></a>
+                                <ul class="active dropdown-menu">
+                                    <li class="first active">
+                                        <span>Home ver.1</span>
                                     </li>
                                     <li class="last">
-                                        <a href="default-slider.html">Default slider</a>
+                                        <a href="home-ver.2.html">Home ver.2</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events
-                                    <b class="caret"></b>
-                                </a>
+                                <a href="eventslist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
+                                    <li class="first">
+                                        <a href="events.html">Events</a>
+                                    </li>
                                     <li>
-                                        <a href="events-list.html">Events list</a>
+                                        <a href="events-ver.2.html">Events ver.2</a>
                                     </li>
                                     <li class="last">
-                                        <a href="events-tile.html">Events tiles</a>
+                                        <a href="open-event.html">Open event</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About
-                                    <b class="caret"></b>
-                                </a>
+                            <li class=" dropdown">
+                                <a href="gallerylist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Gallery<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="event-view.html">Event view</a>
-                                    </li>
-                                    <li>
-                                        <a href="content-view.html">Content view</a>
-                                    </li>
-                                    <li>
-                                        <a href="content-view-default.html">Content default</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="content-view-default-image.html">Content default image</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Media
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="last">
+                                    <li class="first">
                                         <a href="gallery.html">Gallery</a>
                                     </li>
+                                    <li>
+                                        <a href="gallery-ver.2.html">Gallery ver.2</a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="gallery-item.html">Open Gallery</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog
-                                    <b class="caret"></b>
+                                <a href="bloglist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog<b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <li class="first">
+                                        <a href="blog.html">Blog</a>
+                                    </li>
                                     <li>
-                                        <a href="blog-list.html">Blog list</a>
+                                        <a href="blog2.html">Blog ver.2</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-item1.html">Open Blog (With image)</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-item2.html">Open Blog (No image)</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-item3.html">Open Blog Aside (With image)</a>
                                     </li>
                                     <li class="last">
-                                        <a href="blog-list-default.html">Default blog</a>
+                                        <a href="blog-item4.html">Open Blog Aside (No image)</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="404.html">404</a>
+                            <li class=" dropdown">
+                                <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="first">
+                                        <a href="feature.html">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="manual.html">Manual</a>
+                                    </li>
+                                    <li>
+                                        <a href="404.html">404</a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="design-elements.html">Design elements</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="contacts.html" class="dropdown-toggle main-heading-a">Contacts</a>
                             </li>
                             <li class="dropdown left-dropdow">
                                 <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
                                     <i class="fa fa-tint"></i>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="active">
-                                        <span><i class="color-ic color-ic-reg"></i>Origin</span>
+                                <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
+                                    <li>
+                                        <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
                                     </li>
                                     <li>
-                                        <a href="blog-list-default.html"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                        <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
                                     </li>
-                                    <li >
-                                        <a href="blog-list-default.html"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                    <li>
+                                        <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
                                     </li>
-                                    <li class="last">
-                                        <a href="blog-list-default.html"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
+                                    <li class="last ">
+                                        <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
                                     </li>
                                 </ul>
                             </li>
@@ -160,70 +169,75 @@
                 </div>
             </div>
         </header>
-        <div id="slider" class="slider">
+        <div id="fullHeghtSlider" class="slider">
             <div class="container-fluidss">
-                <!--  <iframe class="video-bg" id="UTxcRtKhT7w" src="https://www.youtube.com/embed/9IvX7ndOzIc?html5=1?controls=0&enablejsapi=1&rel=0&hd=1&showinfo=0&autohide=0&modestbranding=1&theme=light&wmode=opaque&origin=http://ottomen.com.ua" frameborder="0" allowfullscreen="0" width="100%" height="100%"></iframe> -->
                 <div class="s-panel">
-                    <img src="../uploads/slider/the_1975.jpg" alt="" >
+                    <img src="../uploads/slider/Slider_01.jpg" alt="" >
                 </div>
                 <div class="pattern"></div>
                 <div class="rowss">
-                    <div class="col-lg-4 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title video-title">
-                        <div class="slider-heading video-heading">Watch Now</div>
-                        <hr class="video-hr">
-                        <div class="slider-description">the 1975</div>
-                        <hr class="video-hr">
-                        <div class="video-about">
-                            <time class="date vid-date" datetime="2014-09-23">
-                            <span class="month">SEP</span>
-                            <span class="day">23</span>
-                            <span class="year">2014</span>
-                            </time>
-                            <div class="v-inform text-right">
-                                <div class="v-place">cube live</div>
-                                <div class="v-day">wednesday</div>
+                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                        <div class="o-h">
+                            <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Californication Nights</div>
+                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                                <time class="date" datetime="2014-11-23 12:39:00">
+                                <span class="month">Nov</span>
+                                <span class="day">23</span>
+                                <span class="year">Mo</span>
+                                </time>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="slider-heading time-evt">
+                                        <span class="trs">start</span>
+                                    </div>
+                                    <div class="slider-heading time-evt">
+                                        12:39
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr class="visible-sm video">
+                        <hr>
+                        <div class="slider-description">
+                            <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="col-lg-6 col-md-10 col-md-offset-1 col-lg-offset-0 text-left video-desc">
-                        <div class="play-btn video-play">
-                            <div class="video-btn">
-                                <div class="left-btn"></div>
-                                <div class="right-arrow">
-                                    <div class="play-title-text">play</div>
+                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                        <div class="event-about">
+                            <time class="date" datetime="2014-11-23 12:39:00">
+                            <span class="month">Nov</span>
+                            <span class="day">23</span>
+                            <span class="year">Mo</span>
+                            </time>
+                            <div class="col-lg-6 ">
+                                <div class="slider-heading time-evt">
+                                <span class="trs">start</span></div>
+                                <div class="slider-heading time-evt">
+                                    12:39
                                 </div>
-                            </div>
-                            <div class="time-arr">
-                                <div class="black-triangle"></div>
-                                <div class="video-time"></div>
                             </div>
                         </div>
-                        <div class="slider-event-lineup"><span class="guest-slider">the 1975</span></div>
-                        <hr class="visible-sm">
-                        <div class="socials col-md-offset-0">
+                        <p>Old unsatiable our now but considered travelling impression.
+                        In excuse hardly summer in basket misery. By rent an part need.
+                        At wrong of of water those linen. Needed oppose seemed how all.
+                        Very m</p>
+                        <!-- Added href instead of div.get-in -->
+                        <a href="eventslist/events/californication-nights" title="Californication Nights" class="get-in">
+                            <span class="price">
+                            <span class="trs">price</span>&nbsp;5$
+                            </span>
+                            <span class="get-into">GET IN!</span>
+                        </a>
+                        <div class="socials">
                             <div class="share">SHARE:</div>
-                            <div class="fb-soc">
-                                <div class="fb-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="fb-numbers">1 457</span>
-                                </div>
-                            </div>
-                            <div class="tw-soc">
-                                <div class="tw-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="tw-numbers">1 457</span>
-                                </div>
-                            </div>
+                            <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="fb-icon"></div><div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span></div></div>
+                            <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="tw-icon"></div><div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span></div></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-fluidss">
                 <div class="s-panel">
-                    <img src="../uploads/slider/club.jpg" alt="">
+                    <img src="../uploads/slider/Slider_02.jpg" alt="">
                 </div>
                 <div class="pattern"></div>
                 <div class="rowss">
@@ -288,7 +302,7 @@
             </div>
             <div class="container-fluidss">
                 <div class="s-panel">
-                    <img src="../uploads/slider/daft-punk-_0.jpg" alt="" >
+                    <img src="../uploads/slider/Slider_03.jpg" alt="" >
                 </div>
                 <div class="pattern"></div>
                 <div class="rowss">
@@ -352,142 +366,154 @@
                 </div>
             </div>
             <div class="container-fluidss">
-                <!--           <iframe class="video-bg" id="GC63HGcsfEg" src="https://www.youtube.com/embed/GC63HGcsfEg?html5=1?controls=0&enablejsapi=1&rel=0&showinfo=0&autohide=0&modestbranding=1&theme=light&wmode=opaque&origin=http://ottomen.com.ua" frameborder="0" allowfullscreen="0" width="100%" height="100%"></iframe> -->
                 <div class="s-panel">
-                    <img src="../uploads/slider/1375702763_thirty-seconds-to-mars-do-or-die.jpg" alt="" >
+                    <img src="../uploads/slider/Slider_04.jpg" alt="" >
                 </div>
                 <div class="pattern"></div>
                 <div class="rowss">
-                    <div class="col-lg-4 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title video-title">
-                        <div class="slider-heading video-heading">Watch Now</div>
-                        <hr class="video-hr">
-                        <div class="slider-description">Do or die</div>
-                        <hr class="video-hr">
-                        <div class="video-about">
-                            <time class="date vid-date" datetime="2014-09-23">
-                            <span class="month">SEPT</span>
+                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                        <div class="o-h">
+                            <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Californication Nights</div>
+                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                                <time class="date" datetime="2014-11-23 12:39:00">
+                                <span class="month">Nov</span>
+                                <span class="day">23</span>
+                                <span class="year">Mo</span>
+                                </time>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="slider-heading time-evt">
+                                        <span class="trs">start</span>
+                                    </div>
+                                    <div class="slider-heading time-evt">
+                                        12:39
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="slider-description">
+                            <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                        <div class="event-about">
+                            <time class="date" datetime="2014-11-23 12:39:00">
+                            <span class="month">Nov</span>
                             <span class="day">23</span>
-                            <span class="year">2014</span>
+                            <span class="year">Mo</span>
                             </time>
-                            <div class="v-inform text-right">
-                                <div class="v-place">cube live</div>
-                                <div class="v-day">wednesday</div>
-                            </div>
-                        </div>
-                        <hr class="visible-sm video">
-                    </div>
-                    <div class="col-lg-6 col-md-10 col-md-offset-1 col-lg-offset-0 text-left video-desc">
-                        <div class="play-btn video-play">
-                            <div class="video-btn">
-                                <div class="left-btn"></div>
-                                <div class="right-arrow">
-                                    <div class="play-title-text">play</div>
+                            <div class="col-lg-6 ">
+                                <div class="slider-heading time-evt">
+                                <span class="trs">start</span></div>
+                                <div class="slider-heading time-evt">
+                                    12:39
                                 </div>
                             </div>
-                            <div class="time-arr">
-                                <div class="black-triangle"></div>
-                                <div class="video-time">1h:22min:39sec</div>
-                            </div>
                         </div>
-                        <div class="slider-event-lineup"><span class="guest-slider">Do or die video</span></div>
-                        <hr class="visible-sm">
-                        <div class="socials col-md-offset-0">
+                        <p>Old unsatiable our now but considered travelling impression.
+                        In excuse hardly summer in basket misery. By rent an part need.
+                        At wrong of of water those linen. Needed oppose seemed how all.
+                        Very m</p>
+                        <!-- Added href instead of div.get-in -->
+                        <a href="eventslist/events/californication-nights" title="Californication Nights" class="get-in">
+                            <span class="price">
+                            <span class="trs">price</span>&nbsp;5$
+                            </span>
+                            <span class="get-into">GET IN!</span>
+                        </a>
+                        <div class="socials">
                             <div class="share">SHARE:</div>
-                            <div class="fb-soc">
-                                <div class="fb-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="fb-numbers">1 457</span>
-                                </div>
-                            </div>
-                            <div class="tw-soc">
-                                <div class="tw-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="tw-numbers">1 457</span>
-                                </div>
-                            </div>
+                            <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="fb-icon"></div><div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span></div></div>
+                            <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="tw-icon"></div><div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span></div></div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="container-fluidss">
                 <div class="s-panel">
-                    <img src="../uploads/slider/Celebrities-Paramore-005.jpg" alt="">
+                    <img src="../uploads/slider/Slider_05.jpg" alt="">
                 </div>
                 <div class="pattern"></div>
                 <div class="rowss">
-                    <div class="col-lg-4 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title video-title">
-                        <div class="slider-heading video-heading">Watch now</div>
-                        <hr class="video-hr">
-                        <div class="slider-description">Paramoure</div>
-                        <hr class="video-hr">
-                        <div class="video-about">
-                            <time class="date vid-date" datetime="2014-09-23">
-                            <span class="month">SEPT</span>
-                            <span class="day">23</span>
-                            <span class="year">2014</span>
-                            </time>
-                            <div class="v-inform text-right">
-                                <div class="v-place">cube live</div>
-                                <div class="v-day">wednesday</div>
+                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                        <div class="o-h">
+                            <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Daily Bass Ocean</div>
+                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                                <time class="date" datetime="2014-11-26 12:39:00">
+                                <span class="month">Nov</span>
+                                <span class="day">26</span>
+                                <span class="year">Th</span>
+                                </time>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="slider-heading time-evt">
+                                        <span class="trs">start</span>
+                                    </div>
+                                    <div class="slider-heading time-evt">
+                                        12:39
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr class="visible-sm video">
+                        <hr>
+                        <div class="slider-description">
+                            <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="col-lg-6 col-md-10 col-md-offset-1 col-lg-offset-0 text-left video-desc">
-                        <div class="play-btn watch-play">
-                            <div class="watch-btn">
-                                <div class="left-btn"></div>
-                                <div class="right-arrow">
-                                    <div class="play-title-text">watch</div>
+                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                        <div class="event-about">
+                            <time class="date" datetime="2014-11-26 12:39:00">
+                            <span class="month">Nov</span>
+                            <span class="day">26</span>
+                            <span class="year">Th</span>
+                            </time>
+                            <div class="col-lg-6 ">
+                                <div class="slider-heading time-evt">
+                                <span class="trs">start</span></div>
+                                <div class="slider-heading time-evt">
+                                    12:39
                                 </div>
-                            </div>
-                            <div class="time-arr photos">
-                                <div class="black-triangle"></div>
-                                <div class="video-time">547 shots</div>
                             </div>
                         </div>
-                        <div class="h3-hidden-xs"><span class="guest-slider">Stay B</span><span class="guest-slider"> Andrew Feeling</span> <span class="guest-slider">Someone Else</span></div>
-                        <hr class="visible-sm">
-                        <div class="socials col-md-offset-0">
+                        <p>Old unsatiable our now but considered travelling impression.
+                        In excuse hardly summer in basket misery. By rent an part need.
+                        At wrong of of water those linen. Needed oppose seemed how all.
+                        Very m</p>
+                        <!-- Added href instead of div.get-in -->
+                        <a href="eventslist/events/daily-bass-ocean-7" title="Daily Bass Ocean" class="get-in">
+                            <span class="price">
+                            <span class="trs">price</span>&nbsp;5$
+                            </span>
+                            <span class="get-into">GET IN!</span>
+                        </a>
+                        <div class="socials">
                             <div class="share">SHARE:</div>
-                            <div class="fb-soc">
-                                <div class="fb-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="fb-numbers">1 457</span>
-                                </div>
-                            </div>
-                            <div class="tw-soc">
-                                <div class="tw-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="tw-numbers">1 457</span>
-                                </div>
-                            </div>
+                            <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/daily-bass-ocean-7" data-text="Daily Bass Ocean"><div class="fb-icon"></div><div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span></div></div>
+                            <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/daily-bass-ocean-7" data-text="Daily Bass Ocean"><div class="tw-icon"></div><div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span></div></div>
                         </div>
                     </div>
                 </div>
             </div>
             <span class="slide-to-left"></span>
             <span class="slide-to-right"></span>
-            <div class="scroll-down">
+            <div id="scrollDownButt" class="scroll-down">
                 <div class="l-s-arr"></div>
                 <div class="scroll-down-inner">Scroll down</div>
                 <div class="r-s-arr"></div>
             </div>
         </div>
-        <section class="top-events sect">
+        <section id="topEvents" class="top-events sect">
             <div class="container">
                 <div class="row head">
                     <h2 class="text-center">Top Events</h2>
                 </div>
                 <div class="row">
-                    <div class="top-events-sliders">
+                    <div id="topEventsSliders" class="top-events-sliders">
                         <div class="">
                             <article class="top-event">
-                                <img class="img-h-responsive" src="../uploads/events/top-ev.jpg" alt="">
+                                <img class="img-h-responsive" src="../uploads/events/EventsTiles_13_Retina.jpg" alt="">
                                 <div class="top-event-descr">
                                     <div class="date-event">
                                         <div class="month">APRIL</div>
@@ -537,7 +563,7 @@
                         </div>
                         <div class="">
                             <article class="top-event">
-                                <img class="img-h-responsive" src="../uploads/events/top-ev2.jpg" alt="">
+                                <img class="img-h-responsive" src="../uploads/events/EventsTiles_11_Retina.jpg" alt="">
                                 <div class="top-event-descr">
                                     <div class="date-event">
                                         <div class="month">APRIL</div>
@@ -587,7 +613,7 @@
                         </div>
                         <div class="">
                             <article class="top-event">
-                                <img class="img-h-responsive" src="../uploads/events/top-ev3.jpg" alt="">
+                                <img class="img-h-responsive" src="../uploads/events/EventsTiles_05_Retina.jpg" alt="">
                                 <div class="top-event-descr">
                                     <div class="date-event">
                                         <div class="month">APRIL</div>
@@ -637,7 +663,7 @@
                         </div>
                         <div class="">
                             <article class="top-event">
-                                <img class="img-h-responsive" src="../uploads/events/Paramore-11.jpg" alt="">
+                                <img class="img-h-responsive" src="../uploads/events/EventsTiles_12_Retina.jpg" alt="">
                                 <div class="top-event-descr">
                                     <div class="date-event">
                                         <div class="month">MAY</div>
@@ -687,7 +713,7 @@
                         </div>
                         <div class="">
                             <article class="top-event">
-                                <img class="img-h-responsive" src="../uploads/events/130197.jpg" alt="">
+                                <img class="img-h-responsive" src="../uploads/events/EventsTiles_07_Retina.jpg" alt="">
                                 <div class="top-event-descr">
                                     <div class="date-event">
                                         <div class="month">SEPT</div>
@@ -737,7 +763,7 @@
                         </div>
                         <div class="">
                             <article class="top-event last">
-                                <img class="img-h-responsive" src="../uploads/events/20130125-rhcp-x600-1359132290.jpg" alt="">
+                                <img class="img-h-responsive" src="../uploads/events/EventsTiles_10_Retina.jpg" alt="">
                                 <div class="top-event-descr">
                                     <div class="date-event">
                                         <div class="month">NOV</div>
@@ -787,10 +813,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="row more-button-bott dark">
+                    <a href="eventslist/events" title="More events" class="button-more">
+                        <div class="button-filter-arr">
+                            <div class="button-filter-line left"></div>
+                            <div class="button-filter-line right"></div>
+                        </div>
+                        <span class="button-filter-text">More events</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="gallery sect">
+    <section id="galleryIndex" class="gallery sect">
         <div class="container">
             <div class="row head">
                 <div class="col-lg-12 text-center">
@@ -801,7 +836,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_02_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -822,7 +857,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_16_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -847,7 +882,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_12_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -868,7 +903,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_09_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -892,7 +927,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_11_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -913,7 +948,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_10_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -938,7 +973,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_15_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -959,7 +994,7 @@
                 <div class="col-xm-6 col-sm-6 col-lg-3 gall-item">
                     <div class="img-gal">
                         <a href="#" class="img-overfl">
-                            <img class="img-responsive" src="../uploads/gallery/the-1975-virtuose-paris.jpg.pagespeed.ce.XaPxQv9Kdg.jpg" alt="" title="">
+                            <img class="img-responsive" src="../uploads/gallery/Gallery_03_Original.jpg" alt="" title="">
                         </a>
                         <div class="bord-fr"></div>
                         <div class="bord-sc"></div>
@@ -990,7 +1025,7 @@
             </div>
         </div>
     </section>
-    <section class="blog sect">
+    <section id="blogIndex" class="blog sect">
         <div class="container">
             <div class="row head">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-col">
@@ -1042,7 +1077,7 @@
                             </div>
                         </div>
                         <a href="#" class="blog-img">
-                            <img src="../uploads/blog/gal-1.jpg" alt="" class="img-responsive" title="">
+                            <img src="../uploads/blog/Blog_01_Retina.jpg" alt="" class="img-responsive" title="">
                         </a>
                         <p>But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</p>
                         <a href="#" class="read-more">Read more</a>
@@ -1077,7 +1112,7 @@
                             </div>
                         </div>
                         <a href="#" class="blog-img">
-                            <img src="../uploads/blog/top-ev3.jpg" alt="" class="img-responsive" title="">
+                            <img src="../uploads/blog/Blog_03_Retina.jpg" alt="" class="img-responsive" title="">
                         </a>
                         <p>But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</p>
                         <a href="#" class="read-more">Read more</a>
@@ -1098,30 +1133,30 @@
     <div class="partners">
         <div class="container">
             <div class="row partners-img">
-                <div class="center-block text-center partners-slider">
+                <div id="partnersSlider" class="center-block text-center partners-slider">
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor1.jpg" alt="Vendor1" title="Vendor1">
+                        <img src="../uploads/partners/partner1.jpg" alt="Vendor1" title="Vendor1">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor2.jpg" alt="Vendor2" title="Vendor2">
+                        <img src="../uploads/partners/partner2.jpg" alt="Vendor2" title="Vendor2">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor3.jpg" alt="Vendor3" title="Vendor3">
+                        <img src="../uploads/partners/partner3.jpg" alt="Vendor3" title="Vendor3">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor4.jpg" alt="Vendor4" title="Vendor4">
+                        <img src="../uploads/partners/partner4.jpg" alt="Vendor4" title="Vendor4">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor5.jpg" alt="Vendor5" title="Vendor5">
+                        <img src="../uploads/partners/partner5.jpg" alt="Vendor5" title="Vendor5">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor6.jpg" alt="Vendor6" title="Vendor6">
+                        <img src="../uploads/partners/partner6.jpg" alt="Vendor6" title="Vendor6">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor5.jpg" alt="Vendor7" title="Vendor7">
+                        <img src="../uploads/partners/partner1.jpg" alt="Vendor7" title="Vendor7">
                     </div>
                     <div class="partner-item">
-                        <img src="../uploads/vendors/vendor6.jpg" alt="Vendor8" title="Vendor8">
+                        <img src="../uploads/partners/partner2.jpg" alt="Vendor8" title="Vendor8">
                     </div>
                 </div>
             </div>
@@ -1242,18 +1277,46 @@
     </div>
 </div>
 </footer>
-<script src="js/loader.js"></script>
-<!-- <script src="js/youtube.js"></script> -->
-<script src="js/jquery/plugins/bootstrap-datapicker/bootstrap-datepicker.js"></script>
+<script>
+var global = {
+siteUrl: 'http://sites.makebecool.com/themeclubcube/',
+baseUrl: '/themeclubcube/',
+assetsUrl: '/themeclubcube/assets/',
+cultureKey: 'en'
+}
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/otherlibs/bootstrap.js"></script>
+<script src="js/jquery/plugins/jquery.imgpreload.js"></script>
+<script src="js/jquery/plugins/jquery.form.js"></script>
+<script src="js/jquery/plugins/validation/jquery.validate.js"></script>
+<script src="js/jquery/plugins/slick/slick.min.js"></script>
 <script src="js/jquery/plugins/tileSlide.js"></script>
-<script src="js/html.js"></script>
 <script src="js/jquery/plugins/topEventsAnimate.js"></script>
 <script src="js/jquery/plugins/tinyAnimations.js"></script>
-<script>
-$(document).ready(function(){
-var events = new EventAnimate($('.top-event'));
-var blogs = new EventAnimate($('.blog-item'));
-});
-</script>
+<script src="js/jquery/plugins/imagelightbox/imagelightbox.js"></script>
+<script src="js/jquery/plugins/jquery.sharrre.js"></script>
+<script src="js/jquery/plugins/topEventsAnimate.js"></script>
+<script src="js/app/lib/site.js"></script>
+<script src="js/app/lib/siteMode.js"></script>
+<script src="js/app/mode/themeMode.js"></script>
+<script src="js/app/modules/images.js"></script>
+<script src="js/app/modules/loaderMain.js"></script>
+<script src="js/app/modules/fullHeightSlider.js"></script>
+<script src="js/app/modules/eventAnimate.js"></script>
+<script src="js/app/modules/blogAnimate.js"></script>
+<script src="js/app/modules/partners.js"></script>
+<script src="js/app/modules/scrollAtOnce.js"></script>
+<script src="js/app/modules/menuToTop.js"></script>
+<script src="js/app/modules/gallerySlider.js"></script>
+<script src="js/app/modules/topEventsSlider.js"></script>
+<script src="js/app/modules/ticketsEventsSlider.js"></script>
+<script src="js/app/modules/formContacts.js"></script>
+<script src="js/app/modules/formSubscribe.js"></script>
+<script src="js/app/modules/galleryPage.js"></script>
+<script src="js/app/modules/sharrre.js"></script>
+<script src="js/app/modules/eventsTickets.js"></script>
+<script src="js/app/modules/dropDownClick.js"></script>
+<script src="js/init.js"></script>
 </body>
 </html>
