@@ -3,8 +3,9 @@ button:hover {border: 0;}
 button:active {border: 0;}
 
 
-// Custom buttons "Read more"
-// -------------------------
+/*!
+ * Custom buttons "Read more"
+ */
 .read-more {display: block;padding:10px 17px;border-bottom: none!important;font-size:$sm-font-size;background:$reddy-color;color:$white-color!important;float: left;text-transform: uppercase;cursor: pointer;}
 .read-more:hover {background:$orange-color;@include transitions(.3s);}
 .read-more:active, .read-more:hover:active {background:$orange-a-color;}
@@ -14,8 +15,9 @@ button:active {border: 0;}
 .read-more.off, .read-more.off:hover {background:$ccc-color;}
 .read-more {outline: none;border: none;}
 
-// Custom buttons "Next-Prev"
-// -------------------------
+/*!
+ * Custom buttons "Next-Prev"
+ */
 .left-pag, .right-pag {display: block;width: 140px;cursor: pointer;}
 .left-pag {float: left;}
 .right-pag {float: right;}
@@ -75,8 +77,9 @@ button:active {border: 0;}
 }
 
 
-// Custom buttons "Button Slider"
-// -------------------------
+/*!
+ * Custom buttons "Button Slider"
+ */
 .button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {display: block;width: 18px;height: 18px;background-color:$reddy-color;border:2px solid $reddy-color;cursor: pointer;@include transitions(.3s);}
 
 .slider-default .button-slider {background:$white-color;border:2px solid $white-color;@include transitions(.3s);}
@@ -101,8 +104,9 @@ button:active {border: 0;}
 }
 
 
-// Custom buttons "Button Arrow"
-// -------------------------
+/*!
+ * Custom buttons "Button Arrow"
+ */
 .button-arrow-left, .partners-slider .slick-prev, .partners-slider .slick-next {display: block;position: relative;width: 45px;height: 55px;cursor: pointer;overflow: hidden;}
 .default-gallery-slider .slick-prev, .default-gallery-slider .slick-next {display: block;width: 45px;height: 55px;cursor: pointer;overflow: hidden;}
 .button-arrow-left:before, .partners-slider .slick-prev:before, .default-gallery-slider .slick-prev:before, .top-events-sliders .slick-prev:before, .default-slider-tickets .slick-prev:before {display: block;content: '';position: absolute;width: 38px;height: 38px;top: 9px;left: 10px;border-left: 1px solid $reddy-color;border-bottom: 1px solid $reddy-color;-webkit-transform:rotate(45deg);transform:rotate(45deg);}
@@ -138,8 +142,10 @@ button:active {border: 0;}
 }
 .partners-slider .slick-prev, .partners-slider .slick-next {position: absolute;}
 
-// Custom buttons "Button Filter Checked"
-// -------------------------
+
+/*!
+ * Custom buttons "Button Filter Checked"
+ */
  table.club-table .button-filter.checked, .button-filter.checked:last-child {margin-right: 0;}
 .button-filter.checked {margin-right: 15px;} 
 
@@ -166,8 +172,9 @@ button:active {border: 0;}
 .button-filter.checked.pressed .button-filter-line.right {width: 25px;left: 0px;top: 11px;background:$white-color;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);@include transitions(.3s);}
 
 
-// Custom buttons "Button Filter Unchecked"
-// -------------------------
+/*!
+ * Custom buttons "Button Filter Unchecked"
+ */
  table.club-table .button-filter.unchecked, .button-filter.unchecked:last-child {margin-right: 0;}
 .button-filter.unchecked {margin-right: 15px;}
 
@@ -193,8 +200,9 @@ button:active {border: 0;}
 .button-filter.unchecked.pressed .button-filter-line.left {width: 16px;left: -6px;top: 14px;background:$white-color;-webkit-transform:rotate(45deg);transform:rotate(45deg);@include transitions(.3s);}
 .button-filter.unchecked.pressed .button-filter-line.right {width: 25px;left: 3px;top: 11px;background:$white-color;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);@include transitions(.3s);}
 
-// Custom buttons "Button More Blogs"
-// -------------------------
+/*!
+ * Custom buttons "Button More Blogs"
+ */
 .button-more {display: inline-block;padding: 12px 19px;border:1px solid $light-reddy-color;background:transparent;cursor: pointer;@include transitions(.3s);}
  table.club-table .button-more {float: left;}
 .button-more .button-filter-text {float: left;font-family: $pt-sans;font-size: 20px;line-height: 22px;color:$reddy-color;margin-left: 20px;}
@@ -224,8 +232,9 @@ button:active {border: 0;}
 .button-more.pressed .button-filter-line.right {background:$white-color;width: 20px;top: 5px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);@include transitions(.3s);}
 
 
-// Custom buttons "Button Dropdown"
-// -------------------------
+/*!
+ * Custom buttons "Button Dropdown"
+ */
 .button-dropdown {display: block;height: 70px;position: relative;float: left;cursor: pointer;}
 .button-dropdown .button-dropdown-text {display: block;float: left;padding: 14px 18px;border: 1px solid $light-reddy-color;border-right: none;@include transitions(.3s);}
 .button-dropdown .button-dropdown-text .dropdown-text-title {font-family: $pt-sans;font-size:24px;line-height: 24px;color: $reddy-color;@include transitions(.3s);}
@@ -294,8 +303,9 @@ button:active {border: 0;}
 .button-dropdown:hover .hidden-dv .dropdown-text-title {color:$reddy-color;}
 .button-dropdown:hover .hidden-dv .dropdown-text-dates {color:$light-black-color;}
 
-// Custom buttons "Dropdown List"
-// -------------------------
+/*!
+ * Custom buttons "Dropdown List"
+ */
 .dropdown-list {display: block;float: left;border:7px solid $lighter-grey-color;cursor: pointer;}
 .club-table .dropdown-list {width: 220px;}
 .dropdown-list .button-dropdown-text {padding: 15px;background:$white-color;border-bottom: 1px solid $lighter-grey-color;@include transitions(.3s);}
@@ -315,8 +325,9 @@ button:active {border: 0;}
 
 .dropdown-list .button-dropdown-text.pressed .dropdown-text-title {color:$orange-a-color;@include transitions(.3s);}
 
-// Custom buttons "Tab"
-// -------------------------
+/*!
+ * Custom buttons "Tab"
+ */
 .tab-custom {display: block;width: 100%;float: left;position: relative;padding: 16px 0;margin-right: 40px;cursor: pointer;}
 .tab-custom:last-child  {margin-right: 0;}
 .tab-custom .dropdown-text-title {font-family: $pt-sans;font-size: 24px;line-height: 24px;color:$reddy-color;@include transitions(.3s);}
@@ -365,8 +376,9 @@ table.club-table tr.padding-b-no td {padding-top: 0;padding-bottom: 0;}
 
 }
 
-// Custom buttons "menu"
-// -------------------------
+/*!
+ * Custom buttons "menu"
+ */
 ul.mob-menu {display: block;float: left;list-style: none;margin-bottom: 0;padding-left: 0;box-shadow: 0 0 15px rgba(0,0,0,0.25);}
 ul.mob-menu {padding-left: 0;list-style:none;}
 ul.mob-menu li:before {display: none;content: none;}
@@ -403,8 +415,9 @@ input[type="radio"].pressed-rb:checked + label.rb-lb.pressed-lb:after, input[typ
 input[type="radio"].pressed-rb:checked + label.rb-lb.pressed-lb:hover:after, input[type="radio"] + label.rb-lb.pressed-lb:after {width: 8px;height: 8px;left: 6px;top: 9px;}
 input[type="radio"]:checked + label.rb-lb.active:after {width: 10px;height: 10px;left: 5px;top: 8px;background:$reddy-color;}
 
-// Custom buttons "Checkbox"
-// -------------------------
+/*!
+ * Custom buttons "Checkbox"
+ */
 .checkbox-b {display: block;}
 .checkbox-b label.chb-lb {width: 100%;}
 input[type="checkbox"] {display: none;}
@@ -427,8 +440,9 @@ input[type="checkbox"].pressed-chb:checked + label.chb-lb.pressed-lb:hover:after
 input[type="checkbox"]:checked + label.chb-lb.active:after {font-family: FontAwesome;content: "\f00c";width: 20px;height: 20px;text-align: center;left: 0;top: 3px;line-height: 20px;font-size: 13px;}
 
 
-// Bootstrap inputs
-// -------------------------
+/*!
+ * Bootstrap inputs
+ */
 select.form-control:focus {border:2px solid $ccc-color;@include transitions(.3s);}
 .form-control:focus, textarea:focus {	
     box-shadow: none;
@@ -452,9 +466,9 @@ table.club-table label {margin-bottom: 0;}
 .form-control.pressed {border:2px solid $reddy-color;@include transitions(.3s);}
 label.error {font-size: 12px;line-height: 12px;color:$orange-color;padding: 12px 15px 5px 15px;}
 
-/* ========================================================================
+/*!
  * Custom inputs "Text"
- * ======================================================================== */
+ */
 //  table.club-table input.text-input {height: auto;width: 280px;}
 //  input.text-input {display: block;float: left;padding: 11px 14px;border:2px solid $ccc-color;background:$white-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
 //  input.text-input[placeholder] {font-family: $pt-sans-it;color:$grey-color;font-size: 18px;@include transitions(.3s);}
@@ -476,8 +490,9 @@ label.error {font-size: 12px;line-height: 12px;color:$orange-color;padding: 12px
 
 // .subscr-input.pressed {border:2px solid $reddy-color!important;font-family:$pt-sans;@include transitions(.3s);}
 
-// Custom inputs "Select"
-// -------------------------
+/*!
+ * Custom inputs "Select"
+ */
 .select-dropdown {display: inline-block;width: 100%;position: relative;}
 select.form-control {display: block;height: 53px;float: left;position: relative;outline: none;border:2px solid $ccc-color;padding: 11px 14px;font-family: $pt-sans-it;font-size: 18px;font-weight: normal;color:$grey-color;cursor: pointer;-webkit-appearance:none;
 -moz-appearance:none;appearance:none;text-overflow: '';text-indent: 0.1px;@include transitions(.3s);}
@@ -499,14 +514,16 @@ select.form-control option:hover, select.form-control option:focus {background: 
 
 .select-dropdown.off:hover select.form-control {border:2px solid $lighter-grey-color;}
 
-// Custom inputs "Textarea"
-// -------------------------
+/*!
+ * Custom inputs "Textarea"
+ */
 textarea {display: block;float: left;padding: 11px 14px;font-family: $pt-sans-it;color:$grey-color;border:2px solid $ccc-color;font-size: 18px;@include transitions(.3s);resize: none;}
 textarea.off, textarea.off:focus {border:2px solid $lighter-grey-color;color:$ccc-color;background: $bg-f9-color;@include transitions(.3s);}
 textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$black-color;@include transitions(.3s);}
 
-// Custom inputs "Text error"
-// -------------------------
+/*!
+ * Custom inputs "Text error"
+ */
  input.required {font-family: $pt-sans;color:$black-color!important;font-size: 18px!important;@include transitions(.3s);}
  input.error, textarea.error {border:2px solid $orange-color!important;@include transitions(.3s);}
  table.club-table input.required {width: 626px;}
@@ -523,15 +540,17 @@ textarea.pressed {border:2px solid $reddy-color;font-family:$pt-sans;color:$blac
 .btn-default:focus {background-color:$red-color;}
 .btn-default:active:focus {background-color:$d35a33;}
 
-// Error states
-// -------------------------
+/*!
+ * Error states
+ */
 .has-error {}
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {color:$black-color;}
 .has-error .form-control {-webkit-box-shadow: none;box-shadow: none;border-color:$orange-color;@include transitions(.3s);color:#555;}
 .has-error .form-control:focus {-webkit-box-shadow: none;box-shadow: none;}
 
-// Tooltips
-// -------------------------
+/*!
+ * Tooltips
+ */
 .tooltip {font-size: 14px;line-height: 20px;z-index: 12;}
 .tooltip-inner {max-width: none;background-color: $orange-color;padding: 20px;}
 .tooltip.top .tooltip-arrow {bottom: -60px;left: 0;right: 0;margin: auto;border-top-color:$orange-color;border-width: 25px 34px 40px 0;}
@@ -548,12 +567,14 @@ footer .suc.loader .loader .fr-bl, footer .suc.loader .loader .fth-bl, footer .s
 .subscribe-label-inner {display: block;max-width: none;background-color: $orange-color;padding: 20px;color: $white-color;text-align: center;}
 .subscribe-label-arrow {display: block;position: absolute;width: 0;height: 0;border-color: transparent;border-style: solid;bottom: -60px;left: 0;right: 0;margin: auto;border-top-color:$orange-color;border-width: 25px 34px 40px 0;}
 
-// Tables
-// -------------------------
+/*!
+ * Tables
+ */
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {background-color:$efefef;}
 
-// Color drop
-// -------------------------
+/*!
+ * Color drop
+ */
 .color-ic {display: inline-block;position: relative;width: 18px;height: 18px;margin-right: 16px;float: left;}
 .color-ic:before {display: block;position: absolute;left: 2px;top: 0;width: 18px;height: 18px;content: '';font-family: FontAwesome;content: "\f00c";color: #fff;font-size: 12px;line-height: 18px;visibility: hidden;}
 nav>ul>li.dropdown>ul>li>a:hover .color-ic:before {visibility: visible;}
