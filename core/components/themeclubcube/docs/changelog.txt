@@ -1,5 +1,9 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.4 pl
+==============
+- Added fixes in the HTML standalone template
+
 themeClubCube 1.0.3 pl
 ==============
 - Fixed local version of HTML template
