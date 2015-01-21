@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/*!
+ * Colors
+ */
+/*!
+ * Content margins
+ */
+/*!
+ * Responsive gutter
+ */
+/*!
+ * Fonts
+ */
+/*!
+ * Contetnt fonts
+ */
 @font-face {
   font-family: 'PT Sans reg';
   src: url("../fonts/pt_sans-web-regular.eot");
@@ -20,6 +35,15 @@
   font-weight: normal;
   font-style: normal;
 }
+/*!
+ * Buttons
+ */
+/*!
+ * Scrollbar
+ */
+/*!
+ * Hr
+ */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -8591,6 +8615,9 @@ input.dt {
   content: "\f20c";
 }
 
+/*!
+ * Global styles
+ */
 html, body {
   height: 100%;
   font-family: "PT Sans reg", sans-serif;
@@ -8775,6 +8802,9 @@ main {
   border: 0;
 }
 
+/*!
+ * Loader
+ */
 .loader-container {
   display: block;
   position: fixed;
@@ -9261,6 +9291,9 @@ main {
     transition: all 0.3s ease;
   }
 }
+/*!
+ * Tile slider
+ */
 .slider {
   width: 100%;
   height: 100%;
@@ -9445,6 +9478,9 @@ main {
   margin: auto;
 }
 
+/*!
+ * Tables
+ */
 .club-table {
   margin-bottom: 35px;
 }
@@ -9488,6 +9524,9 @@ table.club-table tbody tr td {
   vertical-align: middle;
 }
 
+/*!
+ * Custom buttons
+ */
 .btn-custom {
   color: #999;
   border: 1px solid #ccc;
@@ -9622,6 +9661,9 @@ table.club-table tbody tr td {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Header
+ */
 .header-top {
   position: fixed !important;
   left: 0;
@@ -9926,6 +9968,9 @@ header .navbar-nav > li > span, .dropdown-menu > li.active span {
   color: #000;
 }
 
+/*!
+ * Slider
+ */
 .slider .container-fluidss {
   overflow: hidden;
 }
@@ -10433,6 +10478,9 @@ time .day, time .month, time .year {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Video
+ */
 .slider-heading.video-heading {
   font-size: 30px;
   line-height: 30px;
@@ -10451,6 +10499,9 @@ time .day, time .month, time .year {
   display: none;
 }
 
+/*!
+ * Default slider
+ */
 .slider-default {
   position: relative;
   max-height: 100%;
@@ -10883,6 +10934,9 @@ time .day, time .month, time .year {
   cursor: pointer;
 }
 
+/*!
+ * Play video
+ */
 .video-bg {
   position: relative;
   top: 0;
@@ -11090,6 +11144,9 @@ time .day, time .month, time .year {
   color: #fff;
 }
 
+/*!
+ * Play button
+ */
 .video-btn .left-btn {
   width: 91px;
   height: 92px;
@@ -11169,6 +11226,9 @@ time .day, time .month, time .year {
   text-transform: uppercase;
 }
 
+/*!
+ * Watch button
+ */
 .watch-btn .left-btn {
   width: 91px;
   height: 92px;
@@ -11197,6 +11257,9 @@ time .day, time .month, time .year {
   margin-left: 10px;
 }
 
+/*!
+ * Top Events
+ */
 .top-events {
   position: relative;
   overflow: hidden;
@@ -11677,6 +11740,9 @@ time .day, time .month, time .year {
   max-width: none;
 }
 
+/*!
+ * Gallery
+ */
 .gallery {
   background: #a82743;
   /* Old browsers */
@@ -11825,6 +11891,9 @@ time .day, time .month, time .year {
   font-size: 12px;
 }
 
+/*!
+ * Blog
+ */
 .left-col {
   text-align: center;
 }
@@ -11942,6 +12011,9 @@ time .day, time .month, time .year {
   font-size: 24px;
 }
 
+/*!
+ * Partners
+ */
 .partners {
   height: 180px;
   border-bottom: 1px solid #e2e2e2;
@@ -11992,6 +12064,9 @@ time .day, time .month, time .year {
   display: inline-block;
 }
 
+/*!
+ * Contacts us
+ */
 .contact-us {
   background: #5c323e;
   /* Old browsers */
@@ -12378,6 +12453,9 @@ footer a:hover {
   padding-right: 0;
 }
 
+/*!
+ * Event view
+ */
 main.content-main {
   background: none;
 }
@@ -12703,6 +12781,9 @@ aside .event-dates {
   border-top: 1px solid #e2e2e2;
 }
 
+/*!
+ * All events page
+ */
 .all-events {
   background: #fff;
   border-bottom: 1px solid #e2e2e2;
@@ -13054,6 +13135,9 @@ aside .event-dates {
   font-weight: normal;
 }
 
+/*!
+ * Events tile
+ */
 .row.events-tile {
   margin-top: 30px;
 }
@@ -13384,6 +13468,9 @@ aside .event-dates {
   margin-top: 20px;
 }
 
+/*!
+ * Animation top events tile
+ */
 .tab-pane.active {
   perspective: 1300px;
   overflow: hidden;
@@ -13405,6 +13492,9 @@ aside .event-dates {
   animation: eventsAnimation .5s ease forwards;
 }
 
+/*!
+ * Animation top blogs
+ */
 .all-blogs-container {
   perspective: 1300px;
   overflow: hidden;
@@ -13442,6 +13532,9 @@ aside .event-dates {
     opacity: 1;
   }
 }
+/*!
+ * Events list
+ */
 .flat-day {
   width: 2.857%;
   float: left;
@@ -13510,6 +13603,9 @@ aside .event-dates {
   margin-top: 6px;
 }
 
+/*!
+ * Default slider
+ */
 .top-events-default .event-dates {
   display: none;
 }
@@ -13569,6 +13665,9 @@ aside .event-dates {
   padding-right: 0;
 }
 
+/*!
+ * Default video
+ */
 .slider-default .video-about.default {
   display: none;
 }
@@ -13601,6 +13700,9 @@ aside .event-dates {
   width: 100%;
 }
 
+/*!
+ * Blogs
+ */
 .all-blogs {
   padding-top: 45px;
   background: #fff;
@@ -13627,6 +13729,9 @@ aside .event-dates {
   cursor: pointer;
 }
 
+/*!
+ * Gallery
+ */
 .gallery-text {
   background: #f9f9f9;
   border-top: 1px solid #e2e2e2;
@@ -13924,6 +14029,9 @@ aside .event-dates {
   background-position: -315px -262px;
 }
 
+/*!
+ * Content
+ */
 .content-header {
   position: relative;
   padding-top: 100px;
@@ -14198,6 +14306,9 @@ blockquote a:hover {
   color: #e15e32;
 }
 
+/*!
+ * 404
+ */
 .ff-col {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -14207,6 +14318,9 @@ blockquote a:hover {
   background: #f9f9f9;
 }
 
+/*!
+ * Contacts
+ */
 .map-contacts {
   display: block;
   height: 400px;
@@ -14214,6 +14328,9 @@ blockquote a:hover {
   padding: 0;
 }
 
+/*!
+ * Mobile reverse
+ */
 @media screen and (max-width: 768px) and (max-height: 400px) {
   .play-btn {
     padding-top: 0 !important;
@@ -14239,6 +14356,9 @@ blockquote a:hover {
     display: none;
   }
 }
+/*!
+ **************** Tablet breakpoint
+ */
 @media screen and (min-width: 768px) and (max-width: 1200px) and (max-height: 767px) {
   .header-top {
     height: 50px;
@@ -14444,6 +14564,9 @@ blockquote a:hover {
     right: auto;
   }
 
+  /*!
+   * Slider
+   */
   .slider hr {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -14798,6 +14921,9 @@ blockquote a:hover {
     margin-right: 20px;
   }
 
+  /*!
+   * Video
+   */
   .video-btn .left-btn {
     width: 91px;
     height: 92px;
@@ -14870,6 +14996,9 @@ blockquote a:hover {
     margin-top: 40px;
   }
 
+  /*!
+   * Watch button
+   */
   .watch-btn .left-btn {
     width: 91px;
     height: 92px;
@@ -14906,6 +15035,9 @@ blockquote a:hover {
     display: block !important;
   }
 
+  /*!
+   * Event
+   */
   .ev-date-left {
     width: 100%;
     position: relative;
@@ -14943,6 +15075,9 @@ blockquote a:hover {
     padding-left: 35px;
   }
 
+  /*!
+   * Galery
+   */
   .blog.sect h2 {
     text-align: right;
     margin-top: 10px;
@@ -14979,6 +15114,9 @@ blockquote a:hover {
     margin-bottom: 10px;
   }
 
+  /*!
+   * Blog
+   */
   .btn-dropdown {
     height: 50px;
     width: 205px;
@@ -15044,6 +15182,9 @@ blockquote a:hover {
     overflow: hidden;
   }
 
+  /*!
+   * Footer
+   */
   .partners {
     height: 180px;
   }
@@ -15076,6 +15217,9 @@ blockquote a:hover {
     padding-bottom: 0;
   }
 
+  /*!
+   * Default page
+   */
   .default-gallery-slider .slick-prev, .default-gallery-slider .slick-next {
     display: block;
     background: none;
@@ -15220,6 +15364,9 @@ blockquote a:hover {
     box-sizing: border-box;
   }
 
+  /*!
+   * Events tile
+   */
   .paging .event-dates {
     width: 230px;
     height: auto;
@@ -15262,6 +15409,9 @@ blockquote a:hover {
     display: block !important;
   }
 
+  /*!
+   * Event View
+   */
   .view-evt .month, .view-evt .year {
     font-family: Verdana, sans-serif;
     font-size: 15px;
@@ -15319,6 +15469,9 @@ blockquote a:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) and (max-height: 767px) {
+  /*!
+   * Blogs
+   */
   .all-blogs {
     padding-top: 55px;
   }
@@ -15337,6 +15490,9 @@ blockquote a:hover {
     margin-top: 10px;
   }
 
+  /*!
+   * Content
+   */
   .img-side-right {
     max-width: 280px;
   }
@@ -15345,10 +15501,16 @@ blockquote a:hover {
     padding-top: 50px;
   }
 
+  /*!
+   * Events list 
+   */
   .flat-calendar {
     display: block;
   }
 }
+/*!
+ **************** Tablet breakpoint with 16:9 ratio
+ */
 @media screen and (min-width: 768px) and (max-width: 1200px) and (min-height: 768px) {
   .container, .container-fluid {
     padding-left: 40px;
@@ -15522,6 +15684,9 @@ blockquote a:hover {
     padding-bottom: 50px;
   }
 
+  /*!
+   * Top Events
+   */
   .top-events.sect {
     padding-bottom: 40px;
   }
@@ -15799,6 +15964,9 @@ blockquote a:hover {
     margin-right: 20px;
   }
 
+  /*!
+   * Video
+   */
   .play-btn.video-play, .play-btn.watch-play {
     position: relative;
   }
@@ -15912,6 +16080,9 @@ blockquote a:hover {
     padding: 5px 10px 5px 5px;
   }
 
+  /*!
+   * Galery
+   */
   .gallery.sect .item-title {
     height: auto;
     overflow: hidden;
@@ -15931,10 +16102,16 @@ blockquote a:hover {
     margin-bottom: 15px;
   }
 
+  /*!
+   * Events
+   */
   .top-events h2 {
     text-align: center;
   }
 
+  /*!
+   * Blog
+   */
   .blog h2 {
     text-align: center;
   }
@@ -16019,11 +16196,17 @@ blockquote a:hover {
     border-bottom: none;
   }
 
+  /*!
+   * Vendors
+   */
   .partners {
     height: 180px;
     overflow-x: scroll;
   }
 
+  /*!
+   * Footer
+   */
   .welcome {
     width: 295px;
     height: auto;
@@ -16065,6 +16248,9 @@ blockquote a:hover {
     padding-left: 40px;
   }
 
+  /*!
+   * Default main
+   */
   .slider-default {
     height: 600px;
     max-height: 600px;
@@ -16262,6 +16448,9 @@ blockquote a:hover {
     left: auto;
   }
 
+  /*!
+   * Default sliders
+   */
   .slider-default {
     height: 600px;
   }
@@ -16377,6 +16566,9 @@ blockquote a:hover {
     min-height: auto;
   }
 
+  /*!
+   * Default gallery
+   */
   .gall-slider-control {
     display: block;
   }
@@ -16415,6 +16607,9 @@ blockquote a:hover {
     bottom: auto;
   }
 
+  /*!
+   * Default blog
+   */
   .blog-item-def {
     padding: 30px;
   }
@@ -16440,6 +16635,9 @@ blockquote a:hover {
     content: none;
   }
 
+  /*!
+   * Events tile
+   */
   .all-events {
     padding-top: 55px;
     padding-bottom: 20px;
@@ -16574,6 +16772,9 @@ blockquote a:hover {
     color: #999;
   }
 
+  /*!
+   * Events list
+   */
   .all-events.events-list .events-tile-datapicker .datepicker.dropdown-menu.whity {
     right: 0;
     left: auto;
@@ -16583,6 +16784,9 @@ blockquote a:hover {
     display: block;
   }
 
+  /*!
+   * Event view
+   */
   .line-up {
     margin-top: -108px;
   }
@@ -16672,6 +16876,9 @@ blockquote a:hover {
     display: block;
   }
 
+  /*!
+   * Blogs
+   */
   .all-blogs {
     padding-top: 55px;
   }
@@ -16712,6 +16919,9 @@ blockquote a:hover {
     line-height: 24px;
   }
 
+  /*!
+   * Content
+   */
   .img-side-right {
     max-width: 280px;
   }
@@ -16720,6 +16930,9 @@ blockquote a:hover {
     padding-top: 50px;
   }
 
+  /*!
+   * Gallery
+   */
   .border-gall .share {
     display: none;
   }
@@ -16766,12 +16979,21 @@ blockquote a:hover {
     right: 30px;
   }
 
+  /*!
+   * 404
+   */
   .ff-col {
     margin-top: 100px;
     margin-bottom: 90px;
   }
 }
+/*!
+ **************** Large tablet breakpoint
+ */
 @media (min-width: 992px) {
+  /*!
+   * Blog pagination
+   */
   .single-paging {
     text-align: center;
   }
@@ -16843,10 +17065,16 @@ blockquote a:hover {
     height: 180px;
   }
 
+  /*!
+   * Slider
+   */
   .slider-heading-ttl {
     word-wrap: break-word;
   }
 
+  /*!
+   * Content
+   */
   .img-side-right {
     max-width: 280px;
   }
@@ -16855,6 +17083,9 @@ blockquote a:hover {
     padding-top: 50px;
   }
 
+  /*!
+   * Gallery
+   */
   .border-gall .share {
     display: block;
   }
@@ -16893,6 +17124,9 @@ blockquote a:hover {
     font-size: 24px;
   }
 
+  /*!
+   * Events list 
+   */
   .flat-calendar {
     display: block;
   }
@@ -16909,6 +17143,9 @@ blockquote a:hover {
     padding: 5px 0 10px 0;
   }
 }
+/*!
+ **************** Descktop breakpoint
+ */
 @media (min-width: 1200px) {
   .sect h2 {
     font-size: 48px;
@@ -16928,6 +17165,9 @@ blockquote a:hover {
     margin-bottom: 60px !important;
   }
 
+  /*!
+   * Header 
+   */
   header {
     height: 106px;
     padding: 27px 0;
@@ -17182,6 +17422,9 @@ blockquote a:hover {
     color: #fff;
   }
 
+  /*!
+   * Slider 
+   */
   .slider .rowss {
     max-width: 1596px;
     left: 0;
@@ -17451,6 +17694,9 @@ blockquote a:hover {
       top: 22px;
     }
   }
+  /*!
+   * Video 
+   */
   .video-hr {
     display: block;
   }
@@ -17671,6 +17917,9 @@ blockquote a:hover {
     padding: 8px 10px 8px 5px;
   }
 
+  /*!
+   * Events
+   */
   .top-events.sect {
     padding-bottom: 100px;
   }
@@ -17776,6 +18025,9 @@ blockquote a:hover {
     content: none;
   }
 
+  /*!
+   * Gallery
+   */
   .top-events .navbar-nav > li.dropdown {
     border-right: none;
   }
@@ -17801,6 +18053,9 @@ blockquote a:hover {
     text-align: right;
   }
 
+  /*!
+   * Blog 
+   */
   .blog.sect h2 {
     text-align: center;
   }
@@ -17828,6 +18083,9 @@ blockquote a:hover {
     overflow: hidden;
   }
 
+  /*!
+   * Footer 
+   */
   .partners {
     height: 180px;
     overflow-x: hidden;
@@ -17887,6 +18145,9 @@ blockquote a:hover {
     font-size: 14px;
   }
 
+  /*!
+   * Default slider 
+   */
   .slider-default {
     position: relative;
     height: 600px;
@@ -18384,6 +18645,9 @@ blockquote a:hover {
     margin-left: -6px;
   }
 
+  /*!
+   * Top events
+   */
   .sect.top-events-default .row.head {
     margin-bottom: 50px;
   }
@@ -18681,6 +18945,9 @@ blockquote a:hover {
     left: -50px;
   }
 
+  /*!
+   * Default tickets
+   */
   .sect.top-events-default {
     padding-bottom: 60px;
   }
@@ -18702,6 +18969,9 @@ blockquote a:hover {
     position: static;
   }
 
+  /*!
+   * Default tickets
+   */
   .gall-slider-control {
     display: block;
   }
@@ -18788,6 +19058,9 @@ blockquote a:hover {
     transition: all 0.3s ease;
   }
 
+  /*!
+   * Blog
+   */
   .blog-item-def {
     padding: 20px 30px 30px 30px;
   }
@@ -18813,6 +19086,9 @@ blockquote a:hover {
     float: right;
   }
 
+  /*!
+   * All events
+   */
   .all-events {
     padding-bottom: 0;
   }
@@ -18979,6 +19255,9 @@ blockquote a:hover {
     color: #999;
   }
 
+  /*!
+   * Event view
+   */
   .text-contain {
     padding-bottom: 50px;
   }
@@ -19072,10 +19351,16 @@ blockquote a:hover {
     margin-bottom: 0;
   }
 
+  /*!
+   * Events list 
+   */
   .flat-calendar {
     display: block;
   }
 
+  /*!
+   * Blogs 
+   */
   .all-blogs {
     padding-top: 50px;
     background: #fff;
@@ -19124,6 +19409,9 @@ blockquote a:hover {
     float: right;
   }
 
+  /*!
+   * Content page
+   */
   .content-h1 {
     font-size: 48px;
     line-height: 48px;
@@ -19195,11 +19483,17 @@ blockquote a:hover {
     margin-left: 22px;
   }
 
+  /*!
+   * Gallery default
+   */
   .all-blogs-container .gallery-default-item {
     margin-right: 0;
     margin-left: 0;
   }
 
+  /*!
+   * Gallery
+   */
   .gall-close .content-header {
     padding-top: 155px;
     padding-bottom: 0;
@@ -19272,11 +19566,17 @@ blockquote a:hover {
     right: 30px;
   }
 
+  /*!
+   * 404
+   */
   .ff-col {
     margin-top: 150px;
     margin-bottom: 120px;
   }
 }
+/*!
+ * Responsive gallery, blog, events
+ */
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .col-xm-6 {
     width: 50%;
@@ -19328,6 +19628,9 @@ button:active {
   border: 0;
 }
 
+/*!
+ * Custom buttons "Read more"
+ */
 .read-more {
   display: block;
   padding: 10px 17px;
@@ -19371,6 +19674,9 @@ button:active {
   border: none;
 }
 
+/*!
+ * Custom buttons "Next-Prev"
+ */
 .left-pag, .right-pag {
   display: block;
   width: 140px;
@@ -19614,6 +19920,9 @@ button:active {
     transition: all 0.3s ease;
   }
 }
+/*!
+ * Custom buttons "Button Slider"
+ */
 .button-slider, .top-events-sliders .slick-dots li button, .default-slider-tickets .slick-dots li button {
   display: block;
   width: 18px;
@@ -19686,6 +19995,9 @@ button:active {
     background: transparent;
   }
 }
+/*!
+ * Custom buttons "Button Arrow"
+ */
 .button-arrow-left, .partners-slider .slick-prev, .partners-slider .slick-next {
   display: block;
   position: relative;
@@ -19804,6 +20116,9 @@ button:active {
   position: absolute;
 }
 
+/*!
+ * Custom buttons "Button Filter Checked"
+ */
 table.club-table .button-filter.checked, .button-filter.checked:last-child {
   margin-right: 0;
 }
@@ -19978,6 +20293,9 @@ table.club-table .button-filter.checked, .button-filter.checked:last-child {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Custom buttons "Button Filter Unchecked"
+ */
 table.club-table .button-filter.unchecked, .button-filter.unchecked:last-child {
   margin-right: 0;
 }
@@ -20151,6 +20469,9 @@ table.club-table .button-filter.unchecked, .button-filter.unchecked:last-child {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Custom buttons "Button More Blogs"
+ */
 .button-more {
   display: inline-block;
   padding: 12px 19px;
@@ -20348,6 +20669,9 @@ table.club-table .button-more {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Custom buttons "Button Dropdown"
+ */
 .button-dropdown {
   display: block;
   height: 70px;
@@ -20615,6 +20939,9 @@ table.club-table .button-more {
   color: #333;
 }
 
+/*!
+ * Custom buttons "Dropdown List"
+ */
 .dropdown-list {
   display: block;
   float: left;
@@ -20696,6 +21023,9 @@ table.club-table .button-more {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Custom buttons "Tab"
+ */
 .tab-custom {
   display: block;
   width: 100%;
@@ -20856,6 +21186,9 @@ table.club-table tr.padding-b-no td {
     transition: all 0.3s ease;
   }
 }
+/*!
+ * Custom buttons "menu"
+ */
 ul.mob-menu {
   display: block;
   float: left;
@@ -21040,6 +21373,9 @@ input[type="radio"]:checked + label.rb-lb.active:after {
   background: #a82743;
 }
 
+/*!
+ * Custom buttons "Checkbox"
+ */
 .checkbox-b {
   display: block;
 }
@@ -21182,6 +21518,9 @@ input[type="checkbox"]:checked + label.chb-lb.active:after {
   font-size: 13px;
 }
 
+/*!
+ * Bootstrap inputs
+ */
 select.form-control:focus {
   border: 2px solid #ccc;
   -webkit-transition: all 0.3s ease;
@@ -21260,12 +21599,15 @@ label.error {
   padding: 12px 15px 5px 15px;
 }
 
-/* ========================================================================
+/*!
  * Custom inputs "Text"
- * ======================================================================== */
+ */
 /* ========================================================================
 * Custom inputs "Subscribe"
 * ======================================================================== */
+/*!
+ * Custom inputs "Select"
+ */
 .select-dropdown {
   display: inline-block;
   width: 100%;
@@ -21383,6 +21725,9 @@ select.form-control option:hover, select.form-control option:focus {
   border: 2px solid #e2e2e2;
 }
 
+/*!
+ * Custom inputs "Textarea"
+ */
 textarea {
   display: block;
   float: left;
@@ -21412,6 +21757,9 @@ textarea.pressed {
   transition: all 0.3s ease;
 }
 
+/*!
+ * Custom inputs "Text error"
+ */
 input.required {
   font-family: "PT Sans reg", sans-serif;
   color: #000 !important;
@@ -21503,6 +21851,9 @@ input.submit:hover {
   background-color: #d35a33;
 }
 
+/*!
+ * Error states
+ */
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
   color: #000;
 }
@@ -21521,6 +21872,9 @@ input.submit:hover {
   box-shadow: none;
 }
 
+/*!
+ * Tooltips
+ */
 .tooltip {
   font-size: 14px;
   line-height: 20px;
@@ -21625,10 +21979,16 @@ footer .suc.loader .loader .fr-bl, footer .suc.loader .loader .fth-bl, footer .s
   border-width: 25px 34px 40px 0;
 }
 
+/*!
+ * Tables
+ */
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
   background-color: #efefef;
 }
 
+/*!
+ * Color drop
+ */
 .color-ic {
   display: inline-block;
   position: relative;
