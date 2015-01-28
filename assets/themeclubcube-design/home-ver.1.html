@@ -1,828 +1,883 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home ver.1/ Theme Club Cube</title>
-        <meta name="description" content="Development templates for MODX form MakeBeCool.com design studio" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="Home ver.1">
-        <meta property="og:title" content="Theme Club Cube" />
-        <meta property="og:description" content="Development templates for MODX form MakeBeCool.com design studio" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://sites.makebecool.com/themeclubcube/" />
-        <meta property="og:image" content="http://sites.makebecool.com/themeclubcube/assets/design/images/logo.png" />
-        <meta property="og:site_name" content="Theme Club Cube" />
-        <meta http-equiv="x-dns-prefetch-control" content="on"/>
-        <link rel="dns-prefetch" href="http://code.jquery.com" />
-        <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="http://www.google-analytics.com" />
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="js/css/slick.css">
-        <link rel="stylesheet" href="css/style.min.css">
-        <link rel="stylesheet" href="css/gold-color.css">
-        <link rel="stylesheet" href="css/basketball-color.css">
-        <link rel="stylesheet" href="css/blueberry-color.css">
-        <!--[if IE]>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home ver.1/ Theme Club Cube</title>
+    <meta name="description" content="Development templates for MODX form MakeBeCool.com design studio" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Home ver.1">
+    <meta property="og:title" content="Theme Club Cube" />
+    <meta property="og:description" content="Development templates for MODX form MakeBeCool.com design studio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://sites.makebecool.com/themeclubcube/" />
+    <meta property="og:image" content="http://sites.makebecool.com/themeclubcube/assets/design/images/logo.png" />
+    <meta property="og:site_name" content="Theme Club Cube" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="http://code.jquery.com" />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="js/css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/gold-color.css">
+    <link rel="stylesheet" href="css/basketball-color.css">
+    <link rel="stylesheet" href="css/blueberry-color.css">
+    <!--[if IE]>
         <script src="js/otherlibs/html5.js"></script>
         <![endif]-->
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
         <script src="js/otherlibs/css3-mediaqueries.js"></script>
         <![endif]-->
-    </head>
-    <body>
-        <div id="loaderContainer" class="loader-container">
-            <div class="backstage"></div>
-            <div id="loader" class="loader">
-                <div class="fr-bl"></div>
-                <div class="sc-bl"></div>
-                <div class="thr-bl"></div>
-                <div class="fth-bl"></div>
-            </div>
+</head>
+
+<body>
+    <div id="loaderContainer" class="loader-container">
+        <div class="backstage"></div>
+        <div id="loader" class="loader">
+            <div class="fr-bl"></div>
+            <div class="sc-bl"></div>
+            <div class="thr-bl"></div>
+            <div class="fth-bl"></div>
         </div>
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="navbar-header col-lg-4 col-lg-offset-1">
-                        <div class="tile">
-                            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header col-lg-4 col-lg-offset-1">
+                    <div class="tile">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                            </button>
-                            <span class="home-btn">Home</span>
-                        </div>
-                        <span class="navbar-brand first">
+                        </button>
+                        <span class="home-btn">Home</span>
+                    </div>
+                    <span class="navbar-brand first">
                         <img src="images/logo-w.png" alt="" class="site-logo">
                         </span>
-                    </div>
-                    <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="first dropdown active">
-                                <a href="indexlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home<b class="caret"></b></a>
-                                <ul class="active dropdown-menu">
-                                    <li class="first active">
-                                        <span>Home ver.1</span>
-                                    </li>
-                                    <li class="last">
-                                        <a href="home-ver.2.html">Home ver.2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="eventslist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li class="first">
-                                        <a href="events.html">Events</a>
-                                    </li>
-                                    <li>
-                                        <a href="events-ver.2.html">Events ver.2</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="open-event.html">Open event</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" dropdown">
-                                <a href="gallerylist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Gallery<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li class="first">
-                                        <a href="gallery.html">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="gallery-ver.2.html">Gallery ver.2</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="gallery-item.html">Open Gallery</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="bloglist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog<b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="first">
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog2.html">Blog ver.2</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-item1.html">Open Blog (With image)</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-item2.html">Open Blog (No image)</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-item3.html">Open Blog Aside (With image)</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="blog-item4.html">Open Blog Aside (No image)</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" dropdown">
-                                <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li class="first">
-                                        <a href="feature.html">Features</a>
-                                    </li>
-                                    <li>
-                                        <a href="manual.html">Manual</a>
-                                    </li>
-                                    <li>
-                                        <a href="404.html">404</a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="design-elements.html">Design elements</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="contacts.html" class="dropdown-toggle main-heading-a">Contacts</a>
-                            </li>
-                            <li class="dropdown left-dropdow">
-                                <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
-                                    <i class="fa fa-tint"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
-                                    <li>
-                                        <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
-                                    </li>
-                                    <li>
-                                        <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
-                                    </li>
-                                    <li>
-                                        <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
-                                    </li>
-                                    <li class="last ">
-                                        <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
+                <nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="first dropdown active">
+                            <a href="indexlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Home<b class="caret"></b></a>
+                            <ul class="active dropdown-menu">
+                                <li class="first active">
+                                    <span>Home ver.1</span>
+                                </li>
+                                <li class="last">
+                                    <a href="home-ver.2.html">Home ver.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="eventslist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Events<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="events-ver.2.html">Events ver.2</a>
+                                </li>
+                                <li class="last">
+                                    <a href="open-event.html">Open event</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown">
+                            <a href="gallerylist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Gallery<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="gallery.html">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="gallery-ver.2.html">Gallery ver.2</a>
+                                </li>
+                                <li class="last">
+                                    <a href="gallery-item.html">Open Gallery</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="bloglist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog<b class="caret"></b>
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blog2.html">Blog ver.2</a>
+                                </li>
+                                <li>
+                                    <a href="blog-item1.html">Open Blog (With image)</a>
+                                </li>
+                                <li>
+                                    <a href="blog-item2.html">Open Blog (No image)</a>
+                                </li>
+                                <li>
+                                    <a href="blog-item3.html">Open Blog Aside (With image)</a>
+                                </li>
+                                <li class="last">
+                                    <a href="blog-item4.html">Open Blog Aside (No image)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown">
+                            <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <a href="feature.html">Features</a>
+                                </li>
+                                <li>
+                                    <a href="manual.html">Manual</a>
+                                </li>
+                                <li>
+                                    <a href="404.html">404</a>
+                                </li>
+                                <li class="last">
+                                    <a href="design-elements.html">Design elements</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="contacts.html" class="dropdown-toggle main-heading-a">Contacts</a>
+                        </li>
+                        <li class="dropdown left-dropdow">
+                            <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
+                                <i class="fa fa-tint"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
+                                <li>
+                                    <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
+                                </li>
+                                <li>
+                                    <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                </li>
+                                <li>
+                                    <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                </li>
+                                <li class="last ">
+                                    <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-        <div id="fullHeghtSlider" class="slider">
-            <div class="container-fluidss">
-                <div class="s-panel">
-                    <img src="http://placehold.it/2048x1365.jpg" alt="" >
-                </div>
-                <div class="pattern"></div>
-                <div class="rowss">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
-                        <div class="o-h">
-                            <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Californication Nights</div>
-                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
-                                <time class="date" datetime="2014-11-23 12:39:00">
+        </div>
+    </header>
+    <div id="fullHeghtSlider" class="slider">
+        <div class="container-fluidss">
+            <div class="s-panel">
+                <img src="http://placehold.it/2048x1365.jpg" alt="">
+            </div>
+            <div class="pattern"></div>
+            <div class="rowss">
+                <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                    <div class="o-h">
+                        <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Californication Nights</div>
+                        <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                            <time class="date" datetime="2014-11-23 12:39:00">
                                 <span class="month">Nov</span>
                                 <span class="day">23</span>
                                 <span class="year">Mo</span>
-                                </time>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="slider-heading time-evt">
-                                        <span class="trs">start</span>
-                                    </div>
-                                    <div class="slider-heading time-evt">
-                                        12:39
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="slider-description">
-                            <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
-                        <div class="event-about">
-                            <time class="date" datetime="2014-11-23 12:39:00">
-                            <span class="month">Nov</span>
-                            <span class="day">23</span>
-                            <span class="year">Mo</span>
                             </time>
-                            <div class="col-lg-6 ">
+                            <div class="col-lg-6 col-sm-6">
                                 <div class="slider-heading time-evt">
-                                <span class="trs">start</span></div>
+                                    <span class="trs">start</span>
+                                </div>
                                 <div class="slider-heading time-evt">
                                     12:39
                                 </div>
                             </div>
                         </div>
-                        <p>Old unsatiable our now but considered travelling impression.
-                        In excuse hardly summer in basket misery. By rent an part need.
-                        At wrong of of water those linen. Needed oppose seemed how all.
-                        Very m</p>
-                        <!-- Added href instead of div.get-in -->
-                        <a href="eventslist/events/californication-nights" title="Californication Nights" class="get-in">
-                            <span class="price">
+                    </div>
+                    <hr>
+                    <div class="slider-description">
+                        <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                    <div class="event-about">
+                        <time class="date" datetime="2014-11-23 12:39:00">
+                            <span class="month">Nov</span>
+                            <span class="day">23</span>
+                            <span class="year">Mo</span>
+                        </time>
+                        <div class="col-lg-6 ">
+                            <div class="slider-heading time-evt">
+                                <span class="trs">start</span>
+                            </div>
+                            <div class="slider-heading time-evt">
+                                12:39
+                            </div>
+                        </div>
+                    </div>
+                    <p>Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of of water those linen. Needed oppose seemed how all. Very m</p>
+                    <!-- Added href instead of div.get-in -->
+                    <a href="eventslist/events/californication-nights" title="Californication Nights" class="get-in">
+                        <span class="price">
                             <span class="trs">price</span>&nbsp;5$
-                            </span>
-                            <span class="get-into">GET IN!</span>
-                        </a>
-                        <div class="socials">
-                            <div class="share">SHARE:</div>
-                            <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="fb-icon"></div><div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span></div></div>
-                            <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="tw-icon"></div><div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span></div></div>
+                        </span>
+                        <span class="get-into">GET IN!</span>
+                    </a>
+                    <div class="socials">
+                        <div class="share">SHARE:</div>
+                        <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights">
+                            <div class="fb-icon"></div>
+                            <div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span>
+                            </div>
+                        </div>
+                        <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights">
+                            <div class="tw-icon"></div>
+                            <div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluidss">
-                <div class="s-panel">
-                    <img src="http://placehold.it/2048x1365.jpg" alt="">
-                </div>
-                <div class="pattern"></div>
-                <div class="rowss">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
-                        <div class="o-h">
-                            <div class="slider-heading col-sm-6 col-lg-12">FRIENDS Privat House Party</div>
-                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
-                                <time class="date" datetime="2014-09-23">
+        </div>
+        <div class="container-fluidss">
+            <div class="s-panel">
+                <img src="http://placehold.it/2048x1365.jpg" alt="">
+            </div>
+            <div class="pattern"></div>
+            <div class="rowss">
+                <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                    <div class="o-h">
+                        <div class="slider-heading col-sm-6 col-lg-12">FRIENDS Privat House Party</div>
+                        <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                            <time class="date" datetime="2014-09-23">
                                 <span class="month">APRIL</span>
                                 <span class="day">23</span>
                                 <span class="year">2014</span>
-                                </time>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="slider-heading time-evt">
-                                    <span class="trs">Start</span></div>
-                                    <div class="slider-heading time-evt">8PM</div>
+                            </time>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="slider-heading time-evt">
+                                    <span class="trs">Start</span>
                                 </div>
+                                <div class="slider-heading time-evt">8PM</div>
                             </div>
                         </div>
-                        <hr>
-                        <div class="slider-description"><span class="guest-slider">Stay B</span><span class="guest-slider"> Andrew Feeling</span> <span class="guest-slider">Someone Else</span></div>
-                        <hr>
                     </div>
-                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
-                        <div class="event-about">
-                            <time class="date" datetime="2014-09-23">
+                    <hr>
+                    <div class="slider-description"><span class="guest-slider">Stay B</span><span class="guest-slider"> Andrew Feeling</span>  <span class="guest-slider">Someone Else</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                    <div class="event-about">
+                        <time class="date" datetime="2014-09-23">
                             <span class="month">APRIL</span>
                             <span class="day">23</span>
                             <span class="year">2014</span>
-                            </time>
-                            <div class="col-lg-6 ">
-                                <div class="slider-heading time-evt">
-                                <span class="trs">Start</span></div>
-                                <div class="slider-heading time-evt">10PM</div>
+                        </time>
+                        <div class="col-lg-6 ">
+                            <div class="slider-heading time-evt">
+                                <span class="trs">Start</span>
+                            </div>
+                            <div class="slider-heading time-evt">10PM</div>
+                        </div>
+                    </div>
+                    <p>But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</p>
+                    <a href="#" class="get-in">
+                        <span class="price">
+                            <span class="trs">Price</span>&nbsp;5$</span>
+                        <span class="get-into">GET IN!</span>
+                    </a>
+                    <div class="socials">
+                        <div class="share">SHARE:</div>
+                        <div class="fb-soc">
+                            <div class="fb-icon"></div>
+                            <div class="numbers">
+                                <span class="triangle"></span>
+                                <span class="fb-numbers">1 457</span>
                             </div>
                         </div>
-                        <p>But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</p>
-                        <a href="#" class="get-in">
-                            <span class="price">
-                            <span class="trs">Price</span>&nbsp;5$</span>
-                            <span class="get-into">GET IN!</span>
-                        </a>
-                        <div class="socials">
-                            <div class="share">SHARE:</div>
-                            <div class="fb-soc">
-                                <div class="fb-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="fb-numbers">1 457</span>
-                                </div>
-                            </div>
-                            <div class="tw-soc">
-                                <div class="tw-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="tw-numbers">1 457</span>
-                                </div>
+                        <div class="tw-soc">
+                            <div class="tw-icon"></div>
+                            <div class="numbers">
+                                <span class="triangle"></span>
+                                <span class="tw-numbers">1 457</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluidss">
-                <div class="s-panel">
-                    <img src="http://placehold.it/2048x1365.jpg" alt="" >
-                </div>
-                <div class="pattern"></div>
-                <div class="rowss">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
-                        <div class="o-h">
-                            <div class="slider-heading col-sm-6 col-lg-12">Daft Punk</div>
-                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
-                                <time class="date" datetime="2014-09-23">
+        </div>
+        <div class="container-fluidss">
+            <div class="s-panel">
+                <img src="http://placehold.it/2048x1365.jpg" alt="">
+            </div>
+            <div class="pattern"></div>
+            <div class="rowss">
+                <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                    <div class="o-h">
+                        <div class="slider-heading col-sm-6 col-lg-12">Daft Punk</div>
+                        <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                            <time class="date" datetime="2014-09-23">
                                 <span class="month">SEPT</span>
                                 <span class="day">12</span>
                                 <span class="year">2014</span>
-                                </time>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="slider-heading time-evt">
-                                    <span class="trs">Start</span></div>
-                                    <div class="slider-heading time-evt">10PM</div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="slider-description">Open Air performance</div>
-                        <hr>
-                    </div>
-                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
-                        <div class="event-about">
-                            <time class="date" datetime="2014-09-23">
-                            <span class="month">APRIL</span>
-                            <span class="day">23</span>
-                            <span class="year">2014</span>
                             </time>
-                            <div class="col-lg-6 ">
+                            <div class="col-lg-6 col-sm-6">
                                 <div class="slider-heading time-evt">
-                                <span class="trs">Start</span></div>
+                                    <span class="trs">Start</span>
+                                </div>
                                 <div class="slider-heading time-evt">10PM</div>
                             </div>
                         </div>
-                        <p>But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</p>
-                        <div class="get-in">
-                            <span class="price">
-                            <span class="trs">FREE</span></span>
-                            <a href="#" class="get-into">GET IN!</a>
-                        </div>
-                        <div class="socials">
-                            <div class="share">SHARE:</div>
-                            <div class="fb-soc">
-                                <div class="fb-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="fb-numbers">1 457</span>
-                                </div>
+                    </div>
+                    <hr>
+                    <div class="slider-description">Open Air performance</div>
+                    <hr>
+                </div>
+                <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                    <div class="event-about">
+                        <time class="date" datetime="2014-09-23">
+                            <span class="month">APRIL</span>
+                            <span class="day">23</span>
+                            <span class="year">2014</span>
+                        </time>
+                        <div class="col-lg-6 ">
+                            <div class="slider-heading time-evt">
+                                <span class="trs">Start</span>
                             </div>
-                            <div class="tw-soc">
-                                <div class="tw-icon"></div>
-                                <div class="numbers">
-                                    <span class="triangle"></span>
-                                    <span class="tw-numbers">1 457</span>
-                                </div>
+                            <div class="slider-heading time-evt">10PM</div>
+                        </div>
+                    </div>
+                    <p>But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.</p>
+                    <div class="get-in">
+                        <span class="price">
+                            <span class="trs">FREE</span></span>
+                        <a href="#" class="get-into">GET IN!</a>
+                    </div>
+                    <div class="socials">
+                        <div class="share">SHARE:</div>
+                        <div class="fb-soc">
+                            <div class="fb-icon"></div>
+                            <div class="numbers">
+                                <span class="triangle"></span>
+                                <span class="fb-numbers">1 457</span>
+                            </div>
+                        </div>
+                        <div class="tw-soc">
+                            <div class="tw-icon"></div>
+                            <div class="numbers">
+                                <span class="triangle"></span>
+                                <span class="tw-numbers">1 457</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluidss">
-                <div class="s-panel">
-                    <img src="http://placehold.it/2048x1365.jpg" alt="" >
-                </div>
-                <div class="pattern"></div>
-                <div class="rowss">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
-                        <div class="o-h">
-                            <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Californication Nights</div>
-                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
-                                <time class="date" datetime="2014-11-23 12:39:00">
+        </div>
+        <div class="container-fluidss">
+            <div class="s-panel">
+                <img src="http://placehold.it/2048x1365.jpg" alt="">
+            </div>
+            <div class="pattern"></div>
+            <div class="rowss">
+                <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                    <div class="o-h">
+                        <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Californication Nights</div>
+                        <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                            <time class="date" datetime="2014-11-23 12:39:00">
                                 <span class="month">Nov</span>
                                 <span class="day">23</span>
                                 <span class="year">Mo</span>
-                                </time>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="slider-heading time-evt">
-                                        <span class="trs">start</span>
-                                    </div>
-                                    <div class="slider-heading time-evt">
-                                        12:39
-                                    </div>
+                            </time>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="slider-heading time-evt">
+                                    <span class="trs">start</span>
+                                </div>
+                                <div class="slider-heading time-evt">
+                                    12:39
                                 </div>
                             </div>
                         </div>
-                        <hr>
-                        <div class="slider-description">
-                            <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
-                        </div>
-                        <hr>
                     </div>
-                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
-                        <div class="event-about">
-                            <time class="date" datetime="2014-11-23 12:39:00">
+                    <hr>
+                    <div class="slider-description">
+                        <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                    <div class="event-about">
+                        <time class="date" datetime="2014-11-23 12:39:00">
                             <span class="month">Nov</span>
                             <span class="day">23</span>
                             <span class="year">Mo</span>
-                            </time>
-                            <div class="col-lg-6 ">
-                                <div class="slider-heading time-evt">
-                                <span class="trs">start</span></div>
-                                <div class="slider-heading time-evt">
-                                    12:39
-                                </div>
+                        </time>
+                        <div class="col-lg-6 ">
+                            <div class="slider-heading time-evt">
+                                <span class="trs">start</span>
+                            </div>
+                            <div class="slider-heading time-evt">
+                                12:39
                             </div>
                         </div>
-                        <p>Old unsatiable our now but considered travelling impression.
-                        In excuse hardly summer in basket misery. By rent an part need.
-                        At wrong of of water those linen. Needed oppose seemed how all.
-                        Very m</p>
-                        <!-- Added href instead of div.get-in -->
-                        <a href="eventslist/events/californication-nights" title="Californication Nights" class="get-in">
-                            <span class="price">
+                    </div>
+                    <p>Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of of water those linen. Needed oppose seemed how all. Very m</p>
+                    <!-- Added href instead of div.get-in -->
+                    <a href="eventslist/events/californication-nights" title="Californication Nights" class="get-in">
+                        <span class="price">
                             <span class="trs">price</span>&nbsp;5$
-                            </span>
-                            <span class="get-into">GET IN!</span>
-                        </a>
-                        <div class="socials">
-                            <div class="share">SHARE:</div>
-                            <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="fb-icon"></div><div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span></div></div>
-                            <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights"><div class="tw-icon"></div><div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span></div></div>
+                        </span>
+                        <span class="get-into">GET IN!</span>
+                    </a>
+                    <div class="socials">
+                        <div class="share">SHARE:</div>
+                        <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights">
+                            <div class="fb-icon"></div>
+                            <div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span>
+                            </div>
+                        </div>
+                        <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/californication-nights" data-text="Californication Nights">
+                            <div class="tw-icon"></div>
+                            <div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
+
             </div>
-            <div class="container-fluidss">
-                <div class="s-panel">
-                    <img src="http://placehold.it/2048x1365.jpg" alt="">
-                </div>
-                <div class="pattern"></div>
-                <div class="rowss">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
-                        <div class="o-h">
-                            <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Daily Bass Ocean</div>
-                            <div class="event-about visible-sm visible-xs visible-md col-sm-6">
-                                <time class="date" datetime="2014-11-26 12:39:00">
+        </div>
+        <div class="container-fluidss">
+            <div class="s-panel">
+                <img src="http://placehold.it/2048x1365.jpg" alt="">
+            </div>
+            <div class="pattern"></div>
+            <div class="rowss">
+                <div class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 slide-title">
+                    <div class="o-h">
+                        <div class="slider-heading slider-heading-ttl col-sm-6 col-lg-12">Daily Bass Ocean</div>
+                        <div class="event-about visible-sm visible-xs visible-md col-sm-6">
+                            <time class="date" datetime="2014-11-26 12:39:00">
                                 <span class="month">Nov</span>
                                 <span class="day">26</span>
                                 <span class="year">Th</span>
-                                </time>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="slider-heading time-evt">
-                                        <span class="trs">start</span>
-                                    </div>
-                                    <div class="slider-heading time-evt">
-                                        12:39
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="slider-description">
-                            <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
-                        <div class="event-about">
-                            <time class="date" datetime="2014-11-26 12:39:00">
-                            <span class="month">Nov</span>
-                            <span class="day">26</span>
-                            <span class="year">Th</span>
                             </time>
-                            <div class="col-lg-6 ">
+                            <div class="col-lg-6 col-sm-6">
                                 <div class="slider-heading time-evt">
-                                <span class="trs">start</span></div>
+                                    <span class="trs">start</span>
+                                </div>
                                 <div class="slider-heading time-evt">
                                     12:39
                                 </div>
                             </div>
                         </div>
-                        <p>Old unsatiable our now but considered travelling impression.
-                        In excuse hardly summer in basket misery. By rent an part need.
-                        At wrong of of water those linen. Needed oppose seemed how all.
-                        Very m</p>
-                        <!-- Added href instead of div.get-in -->
-                        <a href="eventslist/events/daily-bass-ocean-7" title="Daily Bass Ocean" class="get-in">
-                            <span class="price">
+                    </div>
+                    <hr>
+                    <div class="slider-description">
+                        <span class="guest-slider">DJ Supbass </span><span class="guest-slider">Alexander Grooves </span><span class="guest-slider">Itchy:Pitchy </span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-lg-5 col-md-10 col-md-offset-1 col-lg-offset-0 text-left slide-desc">
+                    <div class="event-about">
+                        <time class="date" datetime="2014-11-26 12:39:00">
+                            <span class="month">Nov</span>
+                            <span class="day">26</span>
+                            <span class="year">Th</span>
+                        </time>
+                        <div class="col-lg-6 ">
+                            <div class="slider-heading time-evt">
+                                <span class="trs">start</span>
+                            </div>
+                            <div class="slider-heading time-evt">
+                                12:39
+                            </div>
+                        </div>
+                    </div>
+                    <p>Old unsatiable our now but considered travelling impression. In excuse hardly summer in basket misery. By rent an part need. At wrong of of water those linen. Needed oppose seemed how all. Very m</p>
+                    <!-- Added href instead of div.get-in -->
+                    <a href="eventslist/events/daily-bass-ocean-7" title="Daily Bass Ocean" class="get-in">
+                        <span class="price">
                             <span class="trs">price</span>&nbsp;5$
-                            </span>
-                            <span class="get-into">GET IN!</span>
-                        </a>
-                        <div class="socials">
-                            <div class="share">SHARE:</div>
-                            <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/daily-bass-ocean-7" data-text="Daily Bass Ocean"><div class="fb-icon"></div><div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span></div></div>
-                            <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/daily-bass-ocean-7" data-text="Daily Bass Ocean"><div class="tw-icon"></div><div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span></div></div>
+                        </span>
+                        <span class="get-into">GET IN!</span>
+                    </a>
+                    <div class="socials">
+                        <div class="share">SHARE:</div>
+                        <div class="fb-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/daily-bass-ocean-7" data-text="Daily Bass Ocean">
+                            <div class="fb-icon"></div>
+                            <div class="numbers"><span class="triangle"></span><span class="fb-numbers">0</span>
+                            </div>
+                        </div>
+                        <div class="tw-soc ver1 sharrre" data-url="http://sites.makebecool.com/themeclubcube/eventslist/events/daily-bass-ocean-7" data-text="Daily Bass Ocean">
+                            <div class="tw-icon"></div>
+                            <div class="numbers"><span class="triangle"></span><span class="tw-numbers">0</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <span class="slide-to-left"></span>
-            <span class="slide-to-right"></span>
-            <div id="scrollDownButt" class="scroll-down">
-                <div class="l-s-arr"></div>
-                <div class="scroll-down-inner">Scroll down</div>
-                <div class="r-s-arr"></div>
             </div>
         </div>
-        <section id="topEvents" class="top-events sect">
-            <div class="container">
-                <div class="row head">
-                    <h2 class="text-center">Top Events</h2>
-                </div>
-                <div class="row">
-                    <div id="topEventsSliders" class="top-events-sliders">
-                        <div class="">
-                            <article class="top-event">
-                                <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
-                                <div class="top-event-descr">
-                                    <div class="date-event">
-                                        <div class="month">APRIL</div>
-                                        <div class="day">23</div>
-                                        <div class="week-day">WED</div>
-                                    </div>
-                                    <div class="item-title">
-                                        <h3><a href="#" class="top-event-title">TRAP ONLY. best records plus fit</a></h3>
-                                        <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
-                                    </div>
-                                    <div class="ticket-triangle-left"></div>
-                                    <div class="ticket-triangle-right"></div>
-                                    <div class="ticket-triangle-leftB"></div>
-                                    <div class="ticket-triangle-rightB"></div>
+        <span class="slide-to-left"></span>
+        <span class="slide-to-right"></span>
+        <div id="scrollDownButt" class="scroll-down">
+            <div class="l-s-arr"></div>
+            <div class="scroll-down-inner">Scroll down</div>
+            <div class="r-s-arr"></div>
+        </div>
+    </div>
+    <section id="topEvents" class="top-events sect">
+        <div class="container">
+            <div class="row head">
+                <h2 class="text-center">Top Events</h2>
+            </div>
+            <div class="row">
+                <div id="topEventsSliders" class="top-events-sliders">
+                    <div class="">
+                        <article class="top-event">
+                            <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
+                            <div class="top-event-descr">
+                                <div class="date-event">
+                                    <div class="month">APRIL</div>
+                                    <div class="day">23</div>
+                                    <div class="week-day">WED</div>
                                 </div>
-                                <div class="rombus">
+                                <div class="item-title">
+                                    <h3><a href="#" class="top-event-title">TRAP ONLY. best records plus fit</a></h3>
+                                    <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
                                 </div>
-                                <div class="popup-evt">
-                                    <div class="poput-evt-inner">
-                                        <div class="start-row row">
-                                            <div class="left-evt-inner">start</div>
-                                            <div class="right-evt-inner">11pm</div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">line-up</div>
-                                            <div class="right-evt-inner">
-                                                <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
-                                                <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
+                                <div class="ticket-triangle-left"></div>
+                                <div class="ticket-triangle-right"></div>
+                                <div class="ticket-triangle-leftB"></div>
+                                <div class="ticket-triangle-rightB"></div>
+                            </div>
+                            <div class="rombus">
+                            </div>
+                            <div class="popup-evt">
+                                <div class="poput-evt-inner">
+                                    <div class="start-row row">
+                                        <div class="left-evt-inner">start</div>
+                                        <div class="right-evt-inner">11pm</div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">line-up</div>
+                                        <div class="right-evt-inner">
+                                            <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                        <div class="line-ev row">
-                                            <div class="evt-liner"></div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">price</div>
-                                            <div class="right-evt-inner">
-                                                <div>5$</div>
+                                            <div><span class="evt-guest">Shalim</span>  <span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="top-event__link"></a>
-                            </article>
-                        </div>
-                        <div class="">
-                            <article class="top-event">
-                                <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
-                                <div class="top-event-descr">
-                                    <div class="date-event">
-                                        <div class="month">APRIL</div>
-                                        <div class="day">23</div>
-                                        <div class="week-day">WED</div>
-                                    </div>
-                                    <div class="item-title">
-                                        <h3><a href="#" class="top-event-title">FRIENDS Privat House Party</a></h3>
-                                        <div class="top-event-place">Lime Party Group</div>
-                                    </div>
-                                    <div class="ticket-triangle-left"></div>
-                                    <div class="ticket-triangle-right"></div>
-                                    <div class="ticket-triangle-leftB"></div>
-                                    <div class="ticket-triangle-rightB"></div>
-                                </div>
-                                <div class="rombus">
-                                </div>
-                                <div class="popup-evt">
-                                    <div class="poput-evt-inner">
-                                        <div class="start-row row">
-                                            <div class="left-evt-inner">start</div>
-                                            <div class="right-evt-inner">11pm</div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">line-up</div>
-                                            <div class="right-evt-inner">
-                                                <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
-                                                <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
+                                            <div><span class="evt-guest">Stay B</span>  <span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                        <div class="line-ev row">
-                                            <div class="evt-liner"></div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">price</div>
-                                            <div class="right-evt-inner">
-                                                <div>5$</div>
+                                            <div><span class="evt-guest">Someone²</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Dranga</span>  <span class="sm-tx">(mariupol)</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <a href="#" class="top-event__link"></a>
-                            </article>
-                        </div>
-                        <div class="">
-                            <article class="top-event">
-                                <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
-                                <div class="top-event-descr">
-                                    <div class="date-event">
-                                        <div class="month">APRIL</div>
-                                        <div class="day">23</div>
-                                        <div class="week-day">WED</div>
+                                    <div class="line-ev row">
+                                        <div class="evt-liner"></div>
                                     </div>
-                                    <div class="item-title">
-                                        <h3><a href="#" class="top-event-title">TRAP ONLY. best records plus fit</a></h3>
-                                        <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
-                                    </div>
-                                    <div class="ticket-triangle-left"></div>
-                                    <div class="ticket-triangle-right"></div>
-                                    <div class="ticket-triangle-leftB"></div>
-                                    <div class="ticket-triangle-rightB"></div>
-                                </div>
-                                <div class="rombus">
-                                </div>
-                                <div class="popup-evt">
-                                    <div class="poput-evt-inner">
-                                        <div class="start-row row">
-                                            <div class="left-evt-inner">start</div>
-                                            <div class="right-evt-inner">11pm</div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">price</div>
+                                        <div class="right-evt-inner">
+                                            <div>5$</div>
                                         </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">line-up</div>
-                                            <div class="right-evt-inner">
-                                                <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
-                                                <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="top-event__link"></a>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="top-event">
+                            <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
+                            <div class="top-event-descr">
+                                <div class="date-event">
+                                    <div class="month">APRIL</div>
+                                    <div class="day">23</div>
+                                    <div class="week-day">WED</div>
+                                </div>
+                                <div class="item-title">
+                                    <h3><a href="#" class="top-event-title">FRIENDS Privat House Party</a></h3>
+                                    <div class="top-event-place">Lime Party Group</div>
+                                </div>
+                                <div class="ticket-triangle-left"></div>
+                                <div class="ticket-triangle-right"></div>
+                                <div class="ticket-triangle-leftB"></div>
+                                <div class="ticket-triangle-rightB"></div>
+                            </div>
+                            <div class="rombus">
+                            </div>
+                            <div class="popup-evt">
+                                <div class="poput-evt-inner">
+                                    <div class="start-row row">
+                                        <div class="left-evt-inner">start</div>
+                                        <div class="right-evt-inner">11pm</div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">line-up</div>
+                                        <div class="right-evt-inner">
+                                            <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                        <div class="line-ev row">
-                                            <div class="evt-liner"></div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">price</div>
-                                            <div class="right-evt-inner">
-                                                <div>5$</div>
+                                            <div><span class="evt-guest">Shalim</span>  <span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="top-event__link"></a>
-                            </article>
-                        </div>
-                        <div class="">
-                            <article class="top-event">
-                                <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
-                                <div class="top-event-descr">
-                                    <div class="date-event">
-                                        <div class="month">MAY</div>
-                                        <div class="day">10</div>
-                                        <div class="week-day">WED</div>
-                                    </div>
-                                    <div class="item-title">
-                                        <h3><a href="#" class="top-event-title">Paramore live acoustic</a></h3>
-                                        <div class="top-event-place">main hall</div>
-                                    </div>
-                                    <div class="ticket-triangle-left"></div>
-                                    <div class="ticket-triangle-right"></div>
-                                    <div class="ticket-triangle-leftB"></div>
-                                    <div class="ticket-triangle-rightB"></div>
-                                </div>
-                                <div class="rombus">
-                                </div>
-                                <div class="popup-evt">
-                                    <div class="poput-evt-inner">
-                                        <div class="start-row row">
-                                            <div class="left-evt-inner">start</div>
-                                            <div class="right-evt-inner">11pm</div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">line-up</div>
-                                            <div class="right-evt-inner">
-                                                <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
-                                                <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
+                                            <div><span class="evt-guest">Stay B</span>  <span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                        <div class="line-ev row">
-                                            <div class="evt-liner"></div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">price</div>
-                                            <div class="right-evt-inner">
-                                                <div>5$</div>
+                                            <div><span class="evt-guest">Someone²</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Dranga</span>  <span class="sm-tx">(mariupol)</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <a href="#" class="top-event__link"></a>
-                            </article>
-                        </div>
-                        <div class="">
-                            <article class="top-event">
-                                <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
-                                <div class="top-event-descr">
-                                    <div class="date-event">
-                                        <div class="month">SEPT</div>
-                                        <div class="day">15</div>
-                                        <div class="week-day">WED</div>
+                                    <div class="line-ev row">
+                                        <div class="evt-liner"></div>
                                     </div>
-                                    <div class="item-title">
-                                        <h3><a href="#" class="top-event-title">Iron Maiden open Air</a></h3>
-                                        <div class="top-event-place">Open Air</div>
-                                    </div>
-                                    <div class="ticket-triangle-left"></div>
-                                    <div class="ticket-triangle-right"></div>
-                                    <div class="ticket-triangle-leftB"></div>
-                                    <div class="ticket-triangle-rightB"></div>
-                                </div>
-                                <div class="rombus">
-                                </div>
-                                <div class="popup-evt">
-                                    <div class="poput-evt-inner">
-                                        <div class="start-row row">
-                                            <div class="left-evt-inner">start</div>
-                                            <div class="right-evt-inner">11pm</div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">price</div>
+                                        <div class="right-evt-inner">
+                                            <div>5$</div>
                                         </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">line-up</div>
-                                            <div class="right-evt-inner">
-                                                <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
-                                                <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="top-event__link"></a>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="top-event">
+                            <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
+                            <div class="top-event-descr">
+                                <div class="date-event">
+                                    <div class="month">APRIL</div>
+                                    <div class="day">23</div>
+                                    <div class="week-day">WED</div>
+                                </div>
+                                <div class="item-title">
+                                    <h3><a href="#" class="top-event-title">TRAP ONLY. best records plus fit</a></h3>
+                                    <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
+                                </div>
+                                <div class="ticket-triangle-left"></div>
+                                <div class="ticket-triangle-right"></div>
+                                <div class="ticket-triangle-leftB"></div>
+                                <div class="ticket-triangle-rightB"></div>
+                            </div>
+                            <div class="rombus">
+                            </div>
+                            <div class="popup-evt">
+                                <div class="poput-evt-inner">
+                                    <div class="start-row row">
+                                        <div class="left-evt-inner">start</div>
+                                        <div class="right-evt-inner">11pm</div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">line-up</div>
+                                        <div class="right-evt-inner">
+                                            <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                        <div class="line-ev row">
-                                            <div class="evt-liner"></div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">price</div>
-                                            <div class="right-evt-inner">
-                                                <div>5$</div>
+                                            <div><span class="evt-guest">Shalim</span>  <span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="top-event__link"></a>
-                            </article>
-                        </div>
-                        <div class="">
-                            <article class="top-event last">
-                                <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
-                                <div class="top-event-descr">
-                                    <div class="date-event">
-                                        <div class="month">NOV</div>
-                                        <div class="day">20</div>
-                                        <div class="week-day">SUN</div>
-                                    </div>
-                                    <div class="item-title">
-                                        <h3><a href="#" class="top-event-title">red hot chili peppers — live video</a></h3>
-                                        <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
-                                    </div>
-                                    <div class="ticket-triangle-left"></div>
-                                    <div class="ticket-triangle-right"></div>
-                                    <div class="ticket-triangle-leftB"></div>
-                                    <div class="ticket-triangle-rightB"></div>
-                                </div>
-                                <div class="rombus">
-                                </div>
-                                <div class="popup-evt">
-                                    <div class="poput-evt-inner">
-                                        <div class="start-row row">
-                                            <div class="left-evt-inner">start</div>
-                                            <div class="right-evt-inner">11pm</div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">line-up</div>
-                                            <div class="right-evt-inner">
-                                                <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Shalim</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Stay B</span> <span class="sm-tx">(donetsk)</span></div>
-                                                <div><span class="evt-guest">Someone²</span> <span class="sm-tx">(mariupol)</span></div>
-                                                <div><span class="evt-guest">Dranga</span> <span class="sm-tx">(mariupol)</span></div>
+                                            <div><span class="evt-guest">Stay B</span>  <span class="sm-tx">(donetsk)</span>
                                             </div>
-                                        </div>
-                                        <div class="line-ev row">
-                                            <div class="evt-liner"></div>
-                                        </div>
-                                        <div class="what-row row">
-                                            <div class="left-evt-inner">price</div>
-                                            <div class="right-evt-inner">
-                                                <div>5$</div>
+                                            <div><span class="evt-guest">Someone²</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Dranga</span>  <span class="sm-tx">(mariupol)</span>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="line-ev row">
+                                        <div class="evt-liner"></div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">price</div>
+                                        <div class="right-evt-inner">
+                                            <div>5$</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="#" class="top-event__link"></a>
-                            </article>
-                        </div>
+                            </div>
+                            <a href="#" class="top-event__link"></a>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="top-event">
+                            <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
+                            <div class="top-event-descr">
+                                <div class="date-event">
+                                    <div class="month">MAY</div>
+                                    <div class="day">10</div>
+                                    <div class="week-day">WED</div>
+                                </div>
+                                <div class="item-title">
+                                    <h3><a href="#" class="top-event-title">Paramore live acoustic</a></h3>
+                                    <div class="top-event-place">main hall</div>
+                                </div>
+                                <div class="ticket-triangle-left"></div>
+                                <div class="ticket-triangle-right"></div>
+                                <div class="ticket-triangle-leftB"></div>
+                                <div class="ticket-triangle-rightB"></div>
+                            </div>
+                            <div class="rombus">
+                            </div>
+                            <div class="popup-evt">
+                                <div class="poput-evt-inner">
+                                    <div class="start-row row">
+                                        <div class="left-evt-inner">start</div>
+                                        <div class="right-evt-inner">11pm</div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">line-up</div>
+                                        <div class="right-evt-inner">
+                                            <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Shalim</span>  <span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Stay B</span>  <span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Someone²</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Dranga</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="line-ev row">
+                                        <div class="evt-liner"></div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">price</div>
+                                        <div class="right-evt-inner">
+                                            <div>5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="top-event__link"></a>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="top-event">
+                            <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
+                            <div class="top-event-descr">
+                                <div class="date-event">
+                                    <div class="month">SEPT</div>
+                                    <div class="day">15</div>
+                                    <div class="week-day">WED</div>
+                                </div>
+                                <div class="item-title">
+                                    <h3><a href="#" class="top-event-title">Iron Maiden open Air</a></h3>
+                                    <div class="top-event-place">Open Air</div>
+                                </div>
+                                <div class="ticket-triangle-left"></div>
+                                <div class="ticket-triangle-right"></div>
+                                <div class="ticket-triangle-leftB"></div>
+                                <div class="ticket-triangle-rightB"></div>
+                            </div>
+                            <div class="rombus">
+                            </div>
+                            <div class="popup-evt">
+                                <div class="poput-evt-inner">
+                                    <div class="start-row row">
+                                        <div class="left-evt-inner">start</div>
+                                        <div class="right-evt-inner">11pm</div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">line-up</div>
+                                        <div class="right-evt-inner">
+                                            <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Shalim</span>  <span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Stay B</span>  <span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Someone²</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Dranga</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="line-ev row">
+                                        <div class="evt-liner"></div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">price</div>
+                                        <div class="right-evt-inner">
+                                            <div>5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="top-event__link"></a>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="top-event last">
+                            <img class="img-h-responsive" src="http://placehold.it/360x320.jpg" alt="">
+                            <div class="top-event-descr">
+                                <div class="date-event">
+                                    <div class="month">NOV</div>
+                                    <div class="day">20</div>
+                                    <div class="week-day">SUN</div>
+                                </div>
+                                <div class="item-title">
+                                    <h3><a href="#" class="top-event-title">red hot chili peppers — live video</a></h3>
+                                    <div class="top-event-place">2<sup><small>nd</small></sup> dancefloor</div>
+                                </div>
+                                <div class="ticket-triangle-left"></div>
+                                <div class="ticket-triangle-right"></div>
+                                <div class="ticket-triangle-leftB"></div>
+                                <div class="ticket-triangle-rightB"></div>
+                            </div>
+                            <div class="rombus">
+                            </div>
+                            <div class="popup-evt">
+                                <div class="poput-evt-inner">
+                                    <div class="start-row row">
+                                        <div class="left-evt-inner">start</div>
+                                        <div class="right-evt-inner">11pm</div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">line-up</div>
+                                        <div class="right-evt-inner">
+                                            <div><span class="evt-guest">Andrew Feeling </span><span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Shalim</span>  <span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Stay B</span>  <span class="sm-tx">(donetsk)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Someone²</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                            <div><span class="evt-guest">Dranga</span>  <span class="sm-tx">(mariupol)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="line-ev row">
+                                        <div class="evt-liner"></div>
+                                    </div>
+                                    <div class="what-row row">
+                                        <div class="left-evt-inner">price</div>
+                                        <div class="right-evt-inner">
+                                            <div>5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="top-event__link"></a>
+                        </article>
                     </div>
                 </div>
-                <div class="row more-button-bott dark">
-                    <a href="eventslist/events" title="More events" class="button-more">
-                        <div class="button-filter-arr">
-                            <div class="button-filter-line left"></div>
-                            <div class="button-filter-line right"></div>
-                        </div>
-                        <span class="button-filter-text">More events</span>
-                    </a>
-                </div>
             </div>
+            <div class="row more-button-bott dark">
+                <a href="eventslist/events" title="More events" class="button-more">
+                    <div class="button-filter-arr">
+                        <div class="button-filter-line left"></div>
+                        <div class="button-filter-line right"></div>
+                    </div>
+                    <span class="button-filter-text">More events</span>
+                </a>
+            </div>
+        </div>
         </div>
     </section>
     <section id="galleryIndex" class="gallery sect">
@@ -1020,7 +1075,7 @@
                         <div class="button-filter-line right"></div>
                     </div>
                     <span class="button-filter-text">More Gallery</span>
-                    
+
                 </a>
             </div>
         </div>
@@ -1072,7 +1127,7 @@
                             <div class="item-aside">
                                 <h3><a href="#" class="top-event-title">TRAP ONLY</a></h3>
                                 <time class="top-event-place" datetime="2014-09-23">May 25, 14:44,
-                                <a class="blog-item-categ" href="">News</a>
+                                    <a class="blog-item-categ" href="">News</a>
                                 </time>
                             </div>
                         </div>
@@ -1089,7 +1144,7 @@
                             <div class="item-aside">
                                 <h3><a href="#" class="top-event-title">FRIENDS Privat Party</a></h3>
                                 <time class="top-event-place" datetime="2014-09-23">May 25, 14:44,
-                                <a class="blog-item-categ" href="#">Reviews</a>
+                                    <a class="blog-item-categ" href="#">Reviews</a>
                                 </time>
                             </div>
                         </div>
@@ -1107,7 +1162,7 @@
                             <div class="item-aside">
                                 <h3><a href="#" class="top-event-title">TRAP ONLY. best records plus fit</a></h3>
                                 <time class="top-event-place" datetime="2014-09-23">May 25, 14:44,
-                                <a class="blog-item-categ" href="#">News</a>
+                                    <a class="blog-item-categ" href="#">News</a>
                                 </time>
                             </div>
                         </div>
@@ -1209,7 +1264,7 @@
                         <form action="#" id="email-footer-form">
                             <div class="subscribe">
                                 <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail">
-                                <button type="submit" value="Subscribe" id="subscribe-btn" >Subscribe</button>
+                                <button type="submit" value="Subscribe" id="subscribe-btn">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -1269,54 +1324,55 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <p class="copyrigts">Copyright 2014 — Cube Club Theme by
-                        <a href="#">makebecool</a> / All Rights Reserved</p>
+                            <a href="#">makebecool</a> / All Rights Reserved</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</footer>
-<script>
-var global = {
-siteUrl: 'http://sites.makebecool.com/themeclubcube/',
-baseUrl: '/themeclubcube/',
-assetsUrl: '/themeclubcube/assets/',
-cultureKey: 'en'
-}
-</script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/otherlibs/bootstrap.js"></script>
-<script src="js/jquery/plugins/jquery.imgpreload.js"></script>
-<script src="js/jquery/plugins/jquery.form.js"></script>
-<script src="js/jquery/plugins/validation/jquery.validate.js"></script>
-<script src="js/jquery/plugins/slick/slick.min.js"></script>
-<script src="js/jquery/plugins/tileSlide.js"></script>
-<script src="js/jquery/plugins/topEventsAnimate.js"></script>
-<script src="js/jquery/plugins/tinyAnimations.js"></script>
-<script src="js/jquery/plugins/imagelightbox/imagelightbox.js"></script>
-<script src="js/jquery/plugins/jquery.sharrre.js"></script>
-<script src="js/jquery/plugins/topEventsAnimate.js"></script>
-<script src="js/app/lib/site.js"></script>
-<script src="js/app/lib/siteMode.js"></script>
-<script src="js/app/mode/themeMode.js"></script>
-<script src="js/app/modules/images.js"></script>
-<script src="js/app/modules/loaderMain.js"></script>
-<script src="js/app/modules/fullHeightSlider.js"></script>
-<script src="js/app/modules/eventAnimate.js"></script>
-<script src="js/app/modules/blogAnimate.js"></script>
-<script src="js/app/modules/partners.js"></script>
-<script src="js/app/modules/scrollAtOnce.js"></script>
-<script src="js/app/modules/menuToTop.js"></script>
-<script src="js/app/modules/gallerySlider.js"></script>
-<script src="js/app/modules/topEventsSlider.js"></script>
-<script src="js/app/modules/ticketsEventsSlider.js"></script>
-<script src="js/app/modules/formContacts.js"></script>
-<script src="js/app/modules/formSubscribe.js"></script>
-<script src="js/app/modules/galleryPage.js"></script>
-<script src="js/app/modules/sharrre.js"></script>
-<script src="js/app/modules/eventsTickets.js"></script>
-<script src="js/app/modules/dropDownClick.js"></script>
-<script src="js/init.js"></script>
+        </div>
+        </div>
+    </footer>
+    <script>
+        var global = {
+            siteUrl: 'http://sites.makebecool.com/themeclubcube/',
+            baseUrl: '/themeclubcube/',
+            assetsUrl: '/themeclubcube/assets/',
+            cultureKey: 'en'
+        }
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/otherlibs/bootstrap.js"></script>
+    <script src="js/jquery/plugins/jquery.imgpreload.js"></script>
+    <script src="js/jquery/plugins/jquery.form.js"></script>
+    <script src="js/jquery/plugins/validation/jquery.validate.js"></script>
+    <script src="js/jquery/plugins/slick/slick.min.js"></script>
+    <script src="js/jquery/plugins/tileSlide.js"></script>
+    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="js/jquery/plugins/tinyAnimations.js"></script>
+    <script src="js/jquery/plugins/imagelightbox/imagelightbox.js"></script>
+    <script src="js/jquery/plugins/jquery.sharrre.js"></script>
+    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="js/app/lib/site.js"></script>
+    <script src="js/app/lib/siteMode.js"></script>
+    <script src="js/app/mode/themeMode.js"></script>
+    <script src="js/app/modules/images.js"></script>
+    <script src="js/app/modules/loaderMain.js"></script>
+    <script src="js/app/modules/fullHeightSlider.js"></script>
+    <script src="js/app/modules/eventAnimate.js"></script>
+    <script src="js/app/modules/blogAnimate.js"></script>
+    <script src="js/app/modules/partners.js"></script>
+    <script src="js/app/modules/scrollAtOnce.js"></script>
+    <script src="js/app/modules/menuToTop.js"></script>
+    <script src="js/app/modules/gallerySlider.js"></script>
+    <script src="js/app/modules/topEventsSlider.js"></script>
+    <script src="js/app/modules/ticketsEventsSlider.js"></script>
+    <script src="js/app/modules/formContacts.js"></script>
+    <script src="js/app/modules/formSubscribe.js"></script>
+    <script src="js/app/modules/galleryPage.js"></script>
+    <script src="js/app/modules/sharrre.js"></script>
+    <script src="js/app/modules/eventsTickets.js"></script>
+    <script src="js/app/modules/dropDownClick.js"></script>
+    <script src="js/init.js"></script>
 </body>
+
 </html>

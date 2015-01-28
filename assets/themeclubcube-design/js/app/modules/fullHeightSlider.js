@@ -87,7 +87,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                         dots: true
                     }
                 }
-                if (!$('bg-tile').length) {
+                if (!$('.bg-tile').length) {
                     _globals.tileSlide = new TileSlide(document.querySelector(_properties.slider), tileOptions);
                 }
                 _globals.imgSlider.each(function() {

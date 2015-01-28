@@ -11,6 +11,7 @@ themeClubCube 1.0.2 pl
 themeClubCube 1.0.3 pl
 ==============
 - Fixed description main header line-up font-fize and line-height from 36 to 30 px.
+- Added fixes to the HTML standalone template
 
 themeClubCube 1.0.2 pl
 ==============
