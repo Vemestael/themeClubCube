@@ -59,12 +59,6 @@ appMakeBeCool.gateway.addClass('Partners', function(properties, $, $window, $doc
         _partnersSlider = function() {
             // if (window.innerWidth < 768) {
             _globals.partners.slick({
-                // dots: false,
-                // infinite: false,
-                // speed: 400,
-                // slidesToShow: 1,
-                // touchMove: false,
-                // slidesToScroll: 1
                 dots: false,
                 infinite: false,
                 speed: 300,
@@ -76,7 +70,7 @@ appMakeBeCool.gateway.addClass('Partners', function(properties, $, $window, $doc
                     breakpoint: 900,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToScroll: 1,
                         infinite: false,
                         dots: true
                     }

@@ -12803,19 +12803,32 @@ aside .event-dates {
   text-align: center;
 }
 
+.events-tile-h1 h1 {
+  text-align: center;
+}
+
 .all-events .rows {
   text-align: center;
 }
 
 .all-events .rows .button-dropdown {
   display: inline-block;
+  height: 70px;
   position: relative;
   margin: 20px 0;
   float: none;
 }
 
+.all-events .button-dropdown .button-dropdown-text {
+  height: 70px;
+}
+
 .all-events .button-dropdown .button-dropdown-text, .all-events .button-dropdown .hidden-dv {
   text-align: left;
+}
+
+.all-events.events-tiles > .container {
+  position: relative;
 }
 
 .events-tickets {
@@ -15084,6 +15097,12 @@ blockquote a:hover {
     padding-left: 35px;
   }
 
+  .all-events.events-tiles .rows {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+
   /*!
    * Galery
    */
@@ -16673,6 +16692,16 @@ blockquote a:hover {
 
   .all-events .events-tile-datapicker .datepicker.dropdown-menu.whity.active {
     border: 6px solid #e2e2e2 !important;
+  }
+
+  .all-events.events-tiles h1 {
+    margin-bottom: 20px;
+  }
+
+  .all-events.events-tiles .rows {
+    position: absolute;
+    top: 10px;
+    right: 40px;
   }
 
   .all-events .btn-dropdown {
@@ -19187,6 +19216,16 @@ blockquote a:hover {
     overflow: visible;
   }
 
+  .all-events.events-tiles h1 {
+    margin-bottom: 0;
+  }
+
+  .all-events.events-tiles .rows {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
   .all-events .btn-dropdown .btn-custom, .all-events .btn-dropdown .btn-custom-org {
     position: relative;
     width: auto;
@@ -20873,11 +20912,11 @@ table.club-table .button-more {
 }
 
 .all-events .button-dropdown .button-dropdown-arr {
-  height: 54px;
+  height: 100%;
 }
 
 .all-events .button-dropdown .button-dropdown-arr i {
-  margin: 17px auto 0;
+  margin: 27px auto 0;
 }
 
 .all-events .button-dropdown #weeks-tab.hidden-dv {

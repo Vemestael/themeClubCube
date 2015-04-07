@@ -270,8 +270,8 @@ button:active {border: 0;}
 
 .button-dropdown .hidden-dv {}
 
-.all-events .button-dropdown .button-dropdown-arr {height: 54px;}
-.all-events .button-dropdown .button-dropdown-arr i {margin: 17px auto 0;}
+.all-events .button-dropdown .button-dropdown-arr {height: 100%;}
+.all-events .button-dropdown .button-dropdown-arr i {margin: 27px auto 0;}
 .all-events .button-dropdown #weeks-tab.hidden-dv {top: 100%;}
 
 @media screen and (max-width: ($screen-lg)-1) {

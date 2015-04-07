@@ -23,7 +23,7 @@
   <link rel="dns-prefetch" href="http://www.google-analytics.com" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="js/css/slick.css">
+  <link rel="stylesheet" href="js/jquery/plugins/slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/gold-color.css">
   <link rel="stylesheet" href="css/basketball-color.css">
@@ -179,7 +179,8 @@
           <img src="images/themeclub_404.png" alt="" class="img-responsive">
         </div>
         <div class="col-xs-12 col-lg-6 ff-text">
-          Sorry, <br>nothing found here
+          Sorry,
+          <br>nothing found here
         </div>
       </div>
     </div>
@@ -311,6 +312,14 @@
       baseUrl: '/themeclubcube/',
       assetsUrl: '/themeclubcube/assets/',
       cultureKey: 'en'
+    }
+    var designUrl = '';
+
+    function downloadJSAtOnload(src) {
+      var element = document.createElement("script");
+      element.src = src;
+      element.async = true;
+      document.body.appendChild(element);
     }
   </script>
   <script src="js/jquery/jquery-1.11.0.min.js"></script>
