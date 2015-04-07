@@ -3,6 +3,8 @@ Changelog for themeClubCube.
 themeClubCube 1.0.6 pl
 ==============
 - Changed 404 template page
+- Removed unnecessary files in repo
+- Added designUrl key to the HTML template
 
 themeClubCube 1.0.5 pl
 ==============
