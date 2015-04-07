@@ -12803,19 +12803,32 @@ aside .event-dates {
   text-align: center;
 }
 
+.events-tile-h1 h1 {
+  text-align: center;
+}
+
 .all-events .rows {
   text-align: center;
 }
 
 .all-events .rows .button-dropdown {
   display: inline-block;
+  height: 70px;
   position: relative;
   margin: 20px 0;
   float: none;
 }
 
+.all-events .button-dropdown .button-dropdown-text {
+  height: 70px;
+}
+
 .all-events .button-dropdown .button-dropdown-text, .all-events .button-dropdown .hidden-dv {
   text-align: left;
+}
+
+.all-events.events-tiles > .container {
+  position: relative;
 }
 
 .events-tickets {
@@ -14311,11 +14324,20 @@ blockquote a:hover {
  */
 .ff-col {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .for-for {
   background: #f9f9f9;
+}
+
+.ff-text {
+  margin-bottom: 80px;
+  font-family: "PT Sans bold", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #9a9a9a;
 }
 
 /*!
@@ -15073,6 +15095,12 @@ blockquote a:hover {
 
   .poput-evt-inner {
     padding-left: 35px;
+  }
+
+  .all-events.events-tiles .rows {
+    position: absolute;
+    top: 10px;
+    right: 40px;
   }
 
   /*!
@@ -16666,6 +16694,16 @@ blockquote a:hover {
     border: 6px solid #e2e2e2 !important;
   }
 
+  .all-events.events-tiles h1 {
+    margin-bottom: 20px;
+  }
+
+  .all-events.events-tiles .rows {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+
   .all-events .btn-dropdown {
     border: none;
     width: 230px;
@@ -16983,8 +17021,14 @@ blockquote a:hover {
    * 404
    */
   .ff-col {
-    margin-top: 100px;
-    margin-bottom: 90px;
+    margin-top: 120px;
+    margin-bottom: 0;
+  }
+
+  .ff-text {
+    margin-bottom: 150px;
+    font-size: 48px;
+    line-height: 1;
   }
 }
 /*!
@@ -19172,6 +19216,16 @@ blockquote a:hover {
     overflow: visible;
   }
 
+  .all-events.events-tiles h1 {
+    margin-bottom: 0;
+  }
+
+  .all-events.events-tiles .rows {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
   .all-events .btn-dropdown .btn-custom, .all-events .btn-dropdown .btn-custom-org {
     position: relative;
     width: auto;
@@ -19572,6 +19626,15 @@ blockquote a:hover {
   .ff-col {
     margin-top: 150px;
     margin-bottom: 120px;
+    padding-right: 0;
+  }
+
+  .ff-text {
+    margin-top: 340px;
+    padding-left: 0;
+    font-size: 48px;
+    line-height: 1;
+    text-align: left;
   }
 }
 /*!
@@ -20849,11 +20912,11 @@ table.club-table .button-more {
 }
 
 .all-events .button-dropdown .button-dropdown-arr {
-  height: 54px;
+  height: 100%;
 }
 
 .all-events .button-dropdown .button-dropdown-arr i {
-  margin: 17px auto 0;
+  margin: 27px auto 0;
 }
 
 .all-events .button-dropdown #weeks-tab.hidden-dv {

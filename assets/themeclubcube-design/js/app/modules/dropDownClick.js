@@ -35,9 +35,12 @@ appMakeBeCool.gateway.addClass('DropDownClick', function(properties, $, $window,
 
     _config = function() {
         _globals.dropdown = $(_properties.dropdown);
+        _globals.dropdownToggle = $(_properties.dropdownToggle);
     },
 
     _setup = function() {
+      
+      
 //        _globals.dropdown.hover(function(){
 //            _dropDownClick.unbind($(_properties.dropdownToggle, this), 'click');
 //            _dropDownClick.bind($(_properties.dropdownToggle, this), 'click', function(e, data, el) {

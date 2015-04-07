@@ -818,9 +818,14 @@ aside .event-dates {height: auto;padding-top: 50px;padding-bottom: 30px;}
 .all-events {background:$white-color;border-bottom: 1px solid $lighter-grey-color;padding-top: 45px;}
 .all-events.events-list {padding-bottom: 0px;}
 .all-events h1 {font-family: $pt-sans-bold;font-size: $header3-font-size;color:$black-color;margin-top: 40px;margin-bottom: 0;text-align: center;}
+.events-tile-h1 h1 {text-align: center;}
 .all-events .rows {text-align: center;}
-.all-events .rows .button-dropdown {display: inline-block;position: relative;margin: 20px 0;float: none;}
+.all-events .rows .button-dropdown {display: inline-block;height: 70px;position: relative;margin: 20px 0;float: none;}
+.all-events .button-dropdown .button-dropdown-text {height: 70px;}
 .all-events .button-dropdown .button-dropdown-text, .all-events .button-dropdown .hidden-dv {text-align: left;}
+.all-events.events-tiles {}
+.all-events.events-tiles > .container {position: relative;}
+.all-events.events-tiles {}
 .events-tickets {padding-top: $margin-mdl;}
 .events-tickets .top-event-title {font-family: $pt-sans-bold;font-size: $md-font-size;}
 .events-tickets .top-event-place {font-family: $pt-sans;font-size: $sm-font-size;}
@@ -1112,8 +1117,9 @@ blockquote a:hover {color:$orange-color;}
 /*!
  * 404
  */
-.ff-col {margin-top: 80px;margin-bottom: 80px;}
+.ff-col {margin-top: 80px;margin-bottom: 0px;}
 .for-for {background: #f9f9f9;}
+.ff-text {margin-bottom: 80px; font-family: $pt-sans-bold; font-size: 24px; font-weight: bold; text-align: center; color: #9a9a9a;}
 
 /*!
  * Contacts
@@ -1279,6 +1285,7 @@ header .row, .header-top .row  {margin-left: 0;margin-right: 0;}
 .left-evt-inner {margin-right: 20px;}
 .popup-evt {padding: 20px 20px 20px 0;}
 .poput-evt-inner {padding-left: 35px;}
+.all-events.events-tiles .rows {position: absolute; top: 10px; right: 40px;}
 
 /*!
  * Galery
@@ -1660,6 +1667,8 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 .all-events .events-tile-datapicker .datepicker.dropdown-menu {left: 0;}
 .all-events .events-tile-datapicker .datepicker.dropdown-menu.whity  {width: 355px;border: 6px solid transparent!important;left:0;}
 .all-events .events-tile-datapicker .datepicker.dropdown-menu.whity.active {border: 6px solid #e2e2e2!important;}
+.all-events.events-tiles h1 {margin-bottom: 20px;}
+.all-events.events-tiles .rows {position: absolute; top: 10px; right: 40px;}
 .all-events .btn-dropdown {border:none;width: 230px;height: auto;padding: 5px 0 5px 0;margin:20px auto;}
 .all-events .btn-dropdown .col-left, .all-events .btn-dropdown .col-right-btn {display: none;}
 .all-events .btn-dropdown .hidden-dv {display: block;border:none;position: static;overflow: visible;}
@@ -1748,7 +1757,8 @@ footer .copyrigts {font-size: $reg-font-size;margin: 22px 0;}
 /*!
  * 404
  */
-.ff-col {margin-top: 100px;margin-bottom: 90px;}
+.ff-col {margin-top: 120px;margin-bottom: 0;}
+.ff-text {margin-bottom: 150px; font-size: 48px; line-height: 1;}
 
 }
 
@@ -2238,6 +2248,8 @@ aside .blog-item-def .item-title {overflow: visible;}
 .all-events .btn-dropdown {border:none;width: 100%;padding-left: 0;margin: 10px auto 15px;}
 .all-events .btn-dropdown .col-left, .all-events .btn-dropdown .col-right-btn {display: none;}
 .all-events .btn-dropdown .hidden-dv {display: block;border:none;position: static;overflow: visible;}
+.all-events.events-tiles h1 {margin-bottom: 0;}
+.all-events.events-tiles .rows {position: relative; top: auto; right: auto;}
 .all-events .btn-dropdown .btn-custom, .all-events .btn-dropdown .btn-custom-org {position: relative;width: auto;float: left;border-bottom: none;overflow: visible;padding-left: 0;padding-right: 0;margin-right: 50px;}
 .all-events .btn-dropdown .btn-custom-org.last {margin-right: 0;}
 .all-events .btn-dropdown .btn-custom.active .line-bott, .all-events .btn-dropdown .btn-custom-org.active .line-bott {display: block;}
@@ -2344,7 +2356,9 @@ blockquote {margin-left: 22px;}
 /*!
  * 404
  */
-.ff-col {margin-top: 150px;margin-bottom: 120px;}
+.ff-col {margin-top: 150px; margin-bottom: 120px; padding-right: 0;}
+.ff-text {margin-top: 340px; padding-left: 0; font-size: 48px; line-height: 1; text-align: left;}
+
 
 }
 
