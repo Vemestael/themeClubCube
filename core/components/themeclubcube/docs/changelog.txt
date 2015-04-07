@@ -1,5 +1,9 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.6 pl
+==============
+- Changed 404 template page
+
 themeClubCube 1.0.5 pl
 ==============
 - Fixed navigation linkig bug in the HTML template

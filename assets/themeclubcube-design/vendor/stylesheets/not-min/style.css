@@ -14311,11 +14311,20 @@ blockquote a:hover {
  */
 .ff-col {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .for-for {
   background: #f9f9f9;
+}
+
+.ff-text {
+  margin-bottom: 80px;
+  font-family: "PT Sans bold", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #9a9a9a;
 }
 
 /*!
@@ -16983,8 +16992,14 @@ blockquote a:hover {
    * 404
    */
   .ff-col {
-    margin-top: 100px;
-    margin-bottom: 90px;
+    margin-top: 120px;
+    margin-bottom: 0;
+  }
+
+  .ff-text {
+    margin-bottom: 150px;
+    font-size: 48px;
+    line-height: 1;
   }
 }
 /*!
@@ -19572,6 +19587,15 @@ blockquote a:hover {
   .ff-col {
     margin-top: 150px;
     margin-bottom: 120px;
+    padding-right: 0;
+  }
+
+  .ff-text {
+    margin-top: 340px;
+    padding-left: 0;
+    font-size: 48px;
+    line-height: 1;
+    text-align: left;
   }
 }
 /*!
