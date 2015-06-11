@@ -5,8 +5,5 @@ nbproject
 .sass-cache
 
 /_packages/*
-/node_modules
-/Gruntfile.js
 /.sass-cache
-/package.json
 /themeforest-materials
