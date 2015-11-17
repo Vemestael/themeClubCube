@@ -1,5 +1,9 @@
 Changelog for themeClubCube.
 
+themeClubCube 1.0.5 pl
+==============
+- Fix molt on clearCache plugin
+
 themeClubCube 1.0.4 pl
 ==============
 - Added fixes in the HTML standalone template
