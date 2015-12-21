@@ -7,9 +7,9 @@ module.exports = function (grunt) {
                     maps: false
                 },
                 files: {
-                    '../not-min/main-style.css': 'main-style.sass',
-                    '../not-min/critical.css': 'critical.sass',
-                    '../not-min/base64-fonts.css': 'base64-fonts.sass',
+                    '../main-style.css': 'main-style.sass',
+                    '../critical.css': 'critical.sass',
+                    '../base64-fonts.css': 'base64-fonts.sass',
                 }
             }
         },
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
             options: {
                 map: {
                     inline: false,
-                    annotation: '../not-min/'
+                    annotation: '../'
                 },
                 processors: [
                     require('autoprefixer')({
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: ['../not-min/style.css', '../not-min/critical.css']
+                src: ['../style.css', '../critical.css']
             }
         },
         jade: {

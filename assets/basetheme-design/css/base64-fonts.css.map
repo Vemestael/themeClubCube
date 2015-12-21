@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAOC;EANC,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,wDAAwD;;EAE7D,GAAG,EAAE,ignGAAignG;EACtgnG,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM",
+"sources": ["../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_font-awesome.scss"],
+"names": [],
+"file": "base64-fonts.css"
+}
