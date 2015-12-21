@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,UAOC;EANC,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,wDAAwD;;EAE7D,GAAG,EAAE,ignGAAignG;EACtgnG,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM",
-"sources": ["../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_font-awesome.scss"],
+"mappings": "AAAA,UAQC;EAPG,WAAW,EAAE,SAAS;EACtB,GAAG,EAAE,+CAA+C;;EAEpD,GAAG,EAAE,w1vFAAw1vF;EAC/1vF,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;;ACNpB,UAQC;EAPC,WAAW,EAAE,gBAAgB;EAC7B,GAAG,EAAE,4CAA4C;;EAEjD,GAAG,EAAE,ix2FAAix2F;EACtx2F,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;;ACNpB,UAQC;EAPG,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,+CAA+C;;EAEpD,GAAG,EAAE,w1vFAAw1vF;EAC/1vF,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;;ACNpB,UAQC;EAPG,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,+CAA+C;;EAEpD,GAAG,EAAE,w1vFAAw1vF;EAC/1vF,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;;ACNpB,UAOC;EANC,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,wDAAwD;;EAE7D,GAAG,EAAE,ignGAAignG;EACtgnG,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM",
+"sources": ["../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_base-font.scss","../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_base-bold-font.scss","../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_second-font.scss","../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_second-bold-font.scss","../../../../../../../%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/MakeBeCool/themeClubeCube/repo/assets/basetheme-design/css/sass/fonts/_font-awesome.scss"],
 "names": [],
 "file": "base64-fonts.css"
 }

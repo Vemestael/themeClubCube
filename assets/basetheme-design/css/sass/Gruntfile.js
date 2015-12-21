@@ -32,7 +32,8 @@ module.exports = function (grunt) {
         jade: {
             pretty: {
                 files: {
-                    '../../index.html': ['../../jade/index.jade']
+                    '../../index.html': ['../../jade/index.jade'],
+                    '../../controls.html': ['../../jade/controls.jade'],
                 },
                 options: {
                     pretty: true
