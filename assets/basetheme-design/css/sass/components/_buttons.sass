@@ -3,4 +3,66 @@
 //=========================================
 .btn
   display: inline-block
+  border: 2px solid #000
+  padding: 12px 20px
+  font-family: $second-font
+  font-size: 18px
+  font-weight: bold
+  color: #000
   text-decoration: none
+  text-transform: uppercase
+  min-height: 46px
+  overflow: hidden
+
+.btn[disabled="disabled"]
+  opacity: 0.5
+
+.btn-icon
+  display: inline-block
+  padding: 12px 20px 12px 44px
+  border: 2px solid #000
+  background-color: transparent
+  background-size: 28px
+  background-position: 16px center
+  background-repeat: no-repeat
+  text-decoration: none
+  min-height: 46px
+  overflow: hidden
+
+.btn-icon:not(.btn)
+  padding: 12px 20px 12px 24px
+  background-position: center
+
+.btn-icon--plus
+  background-image: url('../images/plus-icon.svg')
+
+.btn-icon--refresh
+  background-image: url('../images/refresh-icon.svg')
+
+.date
+  float: left
+  padding: 8px 6px
+  border: 2px solid #000
+  font-family: $second-font
+
+.date__dt
+  display: block
+  width: 50%
+  float: left
+  padding-right: 8px
+  font-size: 36px
+  font-weight: bold
+
+.date__rh
+  display: block
+  width: 50%
+  float: right
+
+.date__rh-m
+  display: block
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: bold
+
+.date__rh-d
+  font-size: 12px

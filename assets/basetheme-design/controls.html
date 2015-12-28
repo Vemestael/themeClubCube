@@ -26,7 +26,56 @@
   <body>
     <div class="wrap">
       <main>
-        <div class="container"><a href="#" class="btn">Button</a></div>
+        <div class="container">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Disabled</th>
+                  <th>Active</th>
+                  <th>CSS class</th>
+                  <th>Descrption</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#" class="btn">More events</a></td>
+                  <td><a href="#" disabled="disabled" class="btn">More events</a></td>
+                  <td><b>.btn</b></td>
+                  <td>Standart button</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="btn btn-icon btn-icon--plus">More events</a></td>
+                  <td><a href="#" disabled="disabled" class="btn btn-icon btn-icon--plus">More events</a></td>
+                  <td><b>.btn</b></td>
+                  <td>Standart button</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="btn-icon btn-icon--plus"></a></td>
+                  <td><a href="#" disabled="disabled" class="btn-icon btn-icon--plus"></a></td>
+                  <td><b>.btn</b></td>
+                  <td>Standart button</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="btn-icon btn-icon--refresh"></a></td>
+                  <td><a href="#" disabled="disabled" class="btn-icon btn-icon--refresh"></a></td>
+                  <td><b>.btn</b></td>
+                  <td>Standart button</td>
+                </tr>
+                <tr>
+                  <td>
+                    <time datetime="2009-08-29" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span></time>
+                  </td>
+                  <td>
+                    <time datetime="2009-08-29" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span></time>
+                  </td>
+                  <td><b>.btn</b></td>
+                  <td>Standart button</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </main>
     </div>
     <script src="js/jquery/jquery-2.1.4.min.js"></script>
