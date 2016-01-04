@@ -1,4 +1,7 @@
-//! normalize.css v3.0.2 | MIT License | git.io/normalize wee
+/**
+ * Normalize #normalize | normalize.css v3.0.2 | MIT License | git.io/normalize
+ */
+
 
 //
 // 1. Set default font family to sans-serif.
@@ -8,12 +11,9 @@
 
 html
   font-family: sans-serif
-  // 1
   -ms-text-size-adjust: 100%
-  // 2
   -webkit-text-size-adjust: 100%
-// 2
-
+  line-height: 1
 
 //
 // Remove default margin.
@@ -24,6 +24,7 @@ body
 
 body *
   box-sizing: border-box
+
 
 *:focus
   outline: none
@@ -48,7 +49,8 @@ header,
 main,
 menu,
 nav,
-section
+section,
+summary
   display: block
 
 //
@@ -58,11 +60,10 @@ section
 
 audio,
 canvas,
+progress,
 video
-  display: inline-block
-  // 1
-  vertical-align: baseline
-  // 2
+  display: inline-block // 1
+  vertical-align: baseline // 2
 
 
 //
@@ -106,12 +107,53 @@ a:focus
 // ==========================================================================
 
 //
+// Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+//
+
+//abbr[title] 
+//  border-bottom: 1px dotted
+//
+
+//
 // Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
 //
 
 b,
 strong
   font-weight: bold
+
+//
+// Address styling not present in Safari and Chrome.
+//
+
+//dfn 
+//  font-style: italic
+//
+
+//
+// Address variable `h1` font-size and margin within `section` and `article`
+// contexts in Firefox 4+, Safari, and Chrome.
+//
+
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+//
+// Address styling not present in IE 8/9.
+//
+
+//mark 
+//  background: #ff0
+//  color: #000
+//
+
+//
+// Address inconsistent and variable font size in all browsers.
+//
+
+small
+  font-size: 80%
 
 //
 // Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -151,6 +193,13 @@ svg:not(:root)
 // ==========================================================================
 
 //
+// Address margin not present in IE 8/9 and Safari.
+//
+
+figure
+  margin: 1em 40px
+
+//
 // Address differences between Firefox and other browsers.
 //
 
@@ -171,7 +220,7 @@ pre
 //
 
 code,
-pre
+samp
   font-family: monospace, monospace
   font-size: 1em
 
@@ -195,12 +244,9 @@ input,
 optgroup,
 select,
 textarea
-  color: inherit
-  // 1
-  font: inherit
-  // 2
-  margin: 0
-  // 3
+  color: inherit // 1
+  font: inherit // 2
+  margin: 0 // 3
   border-radius: 0
 
 button,
@@ -217,7 +263,6 @@ textarea
 //
 
 button
-  border: none
   overflow: visible
 
 //
@@ -240,14 +285,11 @@ select
 //
 
 button,
-html input[type="button"],
-  // 1
+html input[type="button"], // 1
 input[type="reset"],
 input[type="submit"]
-  -webkit-appearance: button
-  // 2
-  cursor: pointer
-// 3
+  -webkit-appearance: button // 2
+  cursor: pointer // 3
 
 
 //
@@ -285,10 +327,8 @@ input
 
 input[type="checkbox"],
 input[type="radio"]
-  box-sizing: border-box
-  // 1
-  padding: 0
-// 2
+  box-sizing: border-box // 1
+  padding: 0 // 2
 
 
 //
@@ -309,7 +349,6 @@ input[type="number"]::-webkit-outer-spin-button
 
 input[type="search"]
   -webkit-appearance: textfield
-  // 1
   box-sizing: content-box
 
 //
@@ -327,9 +366,19 @@ input[type="search"]::-webkit-search-decoration
 //
 
 fieldset
-  border: 1px solid #c0c0c0
+  border: none
   margin: 0
   padding: 0
+
+//
+// 1. Correct `color` not being inherited in IE 8/9/10/11.
+// 2. Remove padding so people aren't caught out if they zero out fieldsets.
+//
+
+legend
+  border: 0 // 1
+  padding: 0 // 2
+
 
 //
 // Remove default vertical scrollbar in IE 8/9/10/11.
@@ -352,7 +401,4 @@ table
 td,
 th
   padding: 0
-
-// BgImages
-// ==========================================================================
 
