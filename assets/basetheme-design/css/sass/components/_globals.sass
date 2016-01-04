@@ -5,18 +5,12 @@ html
   font-family: $base-font
   line-height: 1
 
-html,
-body
-  height: 100%
 
-.wrap
-  min-height: 100%
-  margin-bottom: -190px
 
-.wrap:after
-  display: block
-  content: ''
+@media (min-width: $screen-sm)
 
-.wrap:after,
-footer
-  height: 190px
+  .line
+    padding-right: 40px
+    padding-left: 40px
+
+

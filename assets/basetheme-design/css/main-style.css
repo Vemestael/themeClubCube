@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/**------------------------------------------------------------------
+ * [Table of contents | Main Style]
+ *
+ * 1. Typography #typography
+ * 2. Variables #variables
+ * 3. Colors #colors
+ * 4. Mixins #mixins
+ * 5. Normalize #normalize
+ * 6. Grid-mixins #grid-mixins
+ * 7. Responsive-utilites #responsive-utilites
+ * 8. Grid #grid
+ */
 /**
  * Mixins #mixins
  */
@@ -2363,6 +2375,216 @@
 
 .fa-medium:before {
   content: "";
+}
+
+/**------------------------------------------------------------------
+ * [Table of contents | Theme]
+ *
+ * 1. Header
+ *
+ */
+/**
+ * Header
+ */
+.header {
+  background-color: #202020;
+}
+
+.header--toggled,
+.header > .line {
+  height: 100%;
+}
+
+.header--toggled .navbar-toogle {
+  background-color: #c0d23e;
+}
+
+.navbar-toogle .icon-bar {
+  background-color: #fff;
+}
+
+.header--toggled .navbar-toogle .icon-bar:nth-child(1) {
+  position: absolute;
+  top: 22px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-name: topIconBar;
+       -o-animation-name: topIconBar;
+          animation-name: topIconBar;
+  -webkit-animation-duration: 0.6s;
+       -o-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+.header--toggled .navbar-toogle .icon-bar:nth-child(2) {
+  display: none;
+}
+
+.header--toggled .navbar-toogle .icon-bar:nth-child(3) {
+  position: absolute;
+  top: 22px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation-name: bottomIconBar;
+       -o-animation-name: bottomIconBar;
+          animation-name: bottomIconBar;
+  -webkit-animation-duration: 0.6s;
+       -o-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes topIconBar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@-o-keyframes topIconBar {
+  from {
+    -o-transform: rotate(0deg);
+       transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(45deg);
+       transform: rotate(45deg);
+  }
+}
+
+@keyframes topIconBar {
+  from {
+    -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes bottomIconBar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+@-o-keyframes bottomIconBar {
+  from {
+    -o-transform: rotate(0deg);
+       transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+  }
+}
+@keyframes bottomIconBar {
+  from {
+    -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+.navbar-collapse.active {
+  display: block;
+  max-height: calc(100% - 50px);
+  margin: 0 -15px;
+  padding: 0 15px;
+  background-color: #c0d23e;
+  overflow-y: auto;
+}
+
+.navbar-list li a {
+  display: inline-block;
+  padding: 18px 0;
+  color: #fff;
+}
+
+.navbar-list > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+}
+.navbar-list > li:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .header--toggled .navbar-toogle {
+    margin-right: -40px;
+    padding: 20px 40px;
+  }
+
+  .header--toggled .navbar-toogle .icon-bar:nth-child(1),
+  .header--toggled .navbar-toogle .icon-bar:nth-child(3) {
+    top: 36px;
+    right: 0;
+    left: 0;
+    width: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header--toggled .navbar-toogle .icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .header--toggled .navbar-toogle .icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .navbar-collapse.active {
+    max-height: calc(100% - 80px);
+    margin-right: -40px;
+    margin-left: -40px;
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .header--toggled,
+  .header > .line {
+    height: auto;
+  }
+
+  .navbar-collapse.active,
+  .header--toggled .navbar-toogle {
+    background-color: transparent;
+  }
+
+  .navbar-list > li {
+    border-bottom: none;
+  }
+
+  .navbar-list > li > a {
+    display: block;
+    padding: 33px 17px;
+  }
+
+  .navbar-list > li > a:hover {
+    background-color: #c0d23e;
+  }
 }
 
 /*# sourceMappingURL=../../main-style.css.map */
