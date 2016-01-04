@@ -20,61 +20,22 @@
   <meta property="og:image" content="">
   <meta property="og:description" content="">
   <meta property="og:site_name" content="">
-  <link rel="stylesheet" href="css/base64-fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic|PT+Sans+Caption:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="ext/css">
   <link rel="stylesheet" href="css/critical.css">
   <link rel="stylesheet" href="css/main-style.css">
   <body>
     <div class="wrap">
       <main>
         <div class="container">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Disabled</th>
-                  <th>Active</th>
-                  <th>CSS class</th>
-                  <th>Descrption</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="#" class="btn">More events</a></td>
-                  <td><a href="#" disabled="disabled" class="btn">More events</a></td>
-                  <td><b>.btn</b></td>
-                  <td>Standart button</td>
-                </tr>
-                <tr>
-                  <td><a href="#" class="btn btn-icon btn-icon--plus">More events</a></td>
-                  <td><a href="#" disabled="disabled" class="btn btn-icon btn-icon--plus">More events</a></td>
-                  <td><b>.btn</b></td>
-                  <td>Standart button</td>
-                </tr>
-                <tr>
-                  <td><a href="#" class="btn-icon btn-icon--plus"></a></td>
-                  <td><a href="#" disabled="disabled" class="btn-icon btn-icon--plus"></a></td>
-                  <td><b>.btn</b></td>
-                  <td>Standart button</td>
-                </tr>
-                <tr>
-                  <td><a href="#" class="btn-icon btn-icon--refresh"></a></td>
-                  <td><a href="#" disabled="disabled" class="btn-icon btn-icon--refresh"></a></td>
-                  <td><b>.btn</b></td>
-                  <td>Standart button</td>
-                </tr>
-                <tr>
-                  <td>
-                    <time datetime="2009-08-29" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span></time>
-                  </td>
-                  <td>
-                    <time datetime="2009-08-29" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span></time>
-                  </td>
-                  <td><b>.btn</b></td>
-                  <td>Standart button</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <h1> Standart buttons</h1><a href="#" class="btn">More events</a>
+          <h1> Standart small buttons</h1><a href="#" class="btn btn--mini">More events</a>
+          <h1> Standart icon buttons</h1><a href="#" class="btn-icon btn-icon--plus"></a><a href="#" class="btn-icon btn-icon--refresh"></a>
+          <h1> Standart small icon buttons</h1><a href="#" class="btn--mini btn-icon btn-icon--plus"></a><a href="#" class="btn--mini btn-icon btn-icon--refresh"></a>
+          <h1> Standart buttons with icon</h1><a href="#" class="btn btn-icon btn-icon--plus">More events</a>
+          <h1>Date label</h1>
+          <time datetime="2009-08-29" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span></time>
+          <h1>Date label additional</h1>
+          <time datetime="2009-08-29 20:00" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
         </div>
       </main>
     </div>

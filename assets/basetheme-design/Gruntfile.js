@@ -7,7 +7,7 @@ module.exports = function (grunt) {
           maps: false
         },
         files: {
-          'css/base64-fonts.css': 'css/sass/base64-fonts.sass',
+          //'css/base64-fonts.css': 'css/sass/base64-fonts.sass',
           'css/main-style.css': 'css/sass/main-style.sass',
           'css/critical.css': 'css/sass/critical.sass'
         }

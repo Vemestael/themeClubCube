@@ -5,64 +5,32 @@ include components/head
       include components/header
       main
         .container
-          .table-responsive
-            table.table
-              thead
-                tr
-                  th Disabled
-                  th Active
-                  th CSS class
-                  th Descrption
-              tbody
-                tr
-                  td
-                    a.btn(href="#") More events
-                  td
-                    a.btn(href="#", disabled="disabled") More events
-                  td
-                    b .btn
-                  td Standart button
-                tr
-                  td
-                    a.btn.btn-icon.btn-icon--plus(href="#") More events
-                  td
-                    a.btn.btn-icon.btn-icon--plus(href="#", disabled="disabled") More events
-                  td
-                    b .btn
-                  td Standart button
-                tr
-                  td
-                    a.btn-icon.btn-icon--plus(href="#")
-                  td
-                    a.btn-icon.btn-icon--plus(href="#", disabled="disabled")
-                  td
-                    b .btn
-                  td Standart button
-                tr
-                  td
-                    a.btn-icon.btn-icon--refresh(href="#")
-                  td
-                    a.btn-icon.btn-icon--refresh(href="#", disabled="disabled")
-                  td
-                    b .btn
-                  td Standart button
-                tr
-                  td
-                    time.date(datetime="2009-08-29")
-                      span.date__dt 23
-                      span.date__rh
-                        span.date__rh-m sept
-                        span.date__rh-d Mon
+          h1  Standart buttons
+          a.btn(href="#") More events
+          h1  Standart small buttons
+          a.btn.btn--mini(href="#") More events
+          h1  Standart icon buttons
+          a.btn-icon.btn-icon--plus(href="#")
+          a.btn-icon.btn-icon--refresh(href="#")
+          h1  Standart small icon buttons
+          a.btn--mini.btn-icon.btn-icon--plus(href="#")
+          a.btn--mini.btn-icon.btn-icon--refresh(href="#")
+          h1  Standart buttons with icon
+          a.btn.btn-icon.btn-icon--plus(href="#") More events
+          h1 Date label
+          time.date(datetime="2009-08-29")
+            span.date__dt 23
+            span.date__rh
+              span.date__rh-m sept
+              span.date__rh-d Mon
+          h1 Date label additional
+          time.date(datetime="2009-08-29 20:00")
+            span.date__dt 23
+            span.date__rh
+              span.date__rh-m sept
+              span.date__rh-d Mon
+            span.date__ad 8:00 pm
 
-                  td
-                    time.date(datetime="2009-08-29")
-                      span.date__dt 23
-                      span.date__rh
-                        span.date__rh-m sept
-                        span.date__rh-d Mon
-                  td
-                    b .btn
-                  td Standart button
     include components/footer
     include components/scripts
 
