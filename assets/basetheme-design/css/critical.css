@@ -1578,8 +1578,11 @@ th {
   }
 }
 html {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans Regular", sans-serif;
   line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (min-width: 768px) {
@@ -1722,7 +1725,7 @@ html {
   border: 2px solid #000;
   margin: 5px;
   padding: 12px 20px;
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "PT Sans Caption Regular", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #000;
@@ -1781,7 +1784,7 @@ html {
   display: inline-block;
   padding: 5px 6px;
   border: 2px solid #000;
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "PT Sans Caption Regular", sans-serif;
 }
 
 .date__dt {
