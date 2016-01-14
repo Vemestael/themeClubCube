@@ -1,0 +1,103 @@
+//
+// Typography
+// --------------------------------------------------
+
+html
+  font-family: $base-font
+  line-height: 1
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: normal
+
+.s1-heading,
+.s2-heading,
+.s3-heading,
+.s4-heading
+  margin: 0
+
+.s1-heading
+  margin: 40px 0
+  //font-family: $second-font
+  font-size: 30px
+
+.s2-heading
+  margin: 30px 0
+  //font-family: $second-bold-font
+  font-size: 24px
+  line-height: 30px
+
+.s3-heading
+  margin: 30px 0
+  //font-family: $second-bold-font
+  font-size: 18px
+  line-height: 24px
+
+.s4-heading
+  margin: 20px 0
+  //font-family: $second-bold-font
+  font-size: 16px
+  line-height: 18px
+
+.intro-txt
+  margin: 0
+  font-size: 18px
+  line-height: 30px
+
+.intro-txt p
+  margin: 20px 0
+  font-size: 18px
+  line-height: 30px
+
+.intro-txt p:first-child
+  margin-top: 0
+
+.intro-txt p:last-child
+  margin-bottom: 0
+
+p,
+.txt
+  margin: 0
+  font-size: 16px
+  line-height: 30px
+
+.small-txt
+  margin: 0
+  font-size: 13px
+  line-height: 22px
+
+.i,
+i,
+italic
+  font-family: $base-bold-it-font
+  font-style: normal
+
+.b,
+b,
+strong
+  font-family: $base-bold-font
+
+a
+  //color: $cold-color
+
+a:hover
+  text-decoration: none
+
+p
+  margin-top: 30px
+  margin-bottom: 30px
+
+// Tablet
+// ------------------------
+@media (min-width: $screen-sm)
+
+  .s1-heading
+    font-size: 60px
+

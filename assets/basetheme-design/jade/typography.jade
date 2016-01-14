@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+    include components/head
+    body
+        .wrap
+            include components/header
+            section.b-typography
+                .container
+                    h1.s1-heading Typography
+                    article
+                        h1.s1-heading H1 heading
+                        include parts/textLorem
+
+                        h2.s2-heading H2 heading
+                        include parts/textLorem
+
+                        h3.s3-heading H3 heading
+                        include parts/textLorem
+
+                        h4.s4-heading H4 heading
+                        include parts/textLorem
+
+                        h5.s5-heading H5 heading
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia.
+                            | faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
+                            | consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla
+                            | suctus.
+
+                        h6.s6-heading H6 heading
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia.
+                            | faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
+                            | consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla
+                            | suctus.
+
+
+
+    include components/footer
+    include components/scripts
