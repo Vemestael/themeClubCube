@@ -1,0 +1,19 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+.b-breadcrumbs
+  margin: 5px 0 20px 0
+
+.b-breadcrumbs__list
+  padding: 0
+
+.b-breadcrumbs__list li
+  display: inline-block
+  margin-right: 2px
+  text-transform: uppercase
+
+  &::after
+    content: ' /'
+
+.b-breadcrumbs__list li:last-child::after
+  display: none

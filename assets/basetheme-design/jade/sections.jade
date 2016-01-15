@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  include components/head
+  body
+    .wrap
+      include components/header
+      .b-headlines
+        .container
+          h1.b-headlines__ttl Heading blog
+      .b-breadcrumbs
+        .container
+          ul.b-breadcrumbs__list.x-small-txt
+            li: a.link(href="index.html") home
+            li Page current
+
+      include components/footer
+    include components/scripts

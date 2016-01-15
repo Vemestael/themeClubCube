@@ -65,6 +65,9 @@ module.exports = function (grunt) {
           'index.html': ['jade/index.jade'],
           'controls.html': ['jade/controls.jade'],
           'typography.html': ['jade/typography.jade'],
+          'grid.html': ['jade/grid.jade'],
+          'sections.html': ['jade/sections.jade'],
+          //'': [''],
         },
         options: {
           pretty: true

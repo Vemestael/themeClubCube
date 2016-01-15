@@ -20,13 +20,13 @@ h6
     font-family: $base-font
     text-transform: none
 
-.s1-heading,
-.s2-heading,
-.s3-heading,
-.s4-heading,
-.s5-heading,
-.s6-heading
-  text-transform: uppercase
+//.s1-heading,
+//.s2-heading,
+//.s3-heading,
+//.s4-heading,
+//.s5-heading,
+//.s6-heading
+//  text-transform: uppercase
 
 .s1-heading
   margin: 65px 0
@@ -59,22 +59,17 @@ h6
   font-family: $second-bold-font
   font-size: 18px
 
-.intro-txt
-  font-size: 18px
-  line-height: 30px
-
 .large-txt
-  font-size: 16px
-  line-height: 24px
+  font-size: 20px
 
 p,
 .txt
-  font-size: 14px
-  line-height: 20px
+  font-size: 18px
+  line-height: 30px
 
 .small-txt
-  font-size: 12px
-  line-height: 18px
+  font-size: 14px
+  line-height: 20px
 
 .x-small-txt
   font-size: 10px
@@ -90,6 +85,7 @@ italic
 b,
 strong
   font-family: $base-bold-font
+  font-weight: normal
 
 a
   color: $active-c
@@ -97,7 +93,7 @@ a
   border-bottom: 1px solid $active-c
   word-break: break-all
 
-a:not(.navbar-list > li > a, .navbar-brand):hover
+.link:hover
   border-bottom: 1px dotted
 
 p
@@ -148,12 +144,7 @@ blockquote::before
   width: 5px
   background-color: $mark-c
 
-blockquote p
-  @extend .intro-txt
-
-
-// Tablet
-// ------------------------
-@media (min-width: $screen-sm)
-
-
+.b-code
+  display: block
+  padding: 60px
+  background-color: $code-c
