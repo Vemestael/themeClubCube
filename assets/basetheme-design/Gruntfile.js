@@ -68,6 +68,7 @@ module.exports = function (grunt) {
           'grid.html': ['jade/grid.jade'],
           'sections.html': ['jade/sections.jade'],
           'tabs-accordion.html': ['jade/tabs-accordion.jade'],
+          'video-audio.html': ['jade/video-audio.jade'],
           //'': [''],
         },
         options: {
