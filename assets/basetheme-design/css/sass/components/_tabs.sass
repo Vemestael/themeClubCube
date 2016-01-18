@@ -1,0 +1,92 @@
+//
+// Tabs
+// --------------------------------------------------
+
+.b-tabs .s6-heading
+  display: inline-block
+  text-transform: uppercase
+
+.b-tabs__nav
+  float: right
+
+.b-tabs__nav-tabs li
+  position: relative
+  float: left
+  width: 35px
+  height: 35px
+  box-shadow: 0 0 0 2px $tab-bg inset
+
+.b-tabs__nav-tabs li.active,
+.b-tabs__nav-tabs li:nth-of-type(2)
+  background-color: $tab-bg
+
+.b-tabs__nav-tabs li.active:nth-of-type(1)::before,
+.b-tabs__nav-tabs li.active:nth-of-type(1)::after,
+.b-tabs__nav-tabs li:nth-of-type(2)::after
+  content: ''
+  position: absolute
+  background-color: $tab-bg
+
+.b-tabs__nav-tabs li:nth-of-type(1)::before,
+.b-tabs__nav-tabs li:nth-of-type(1)::after
+  content: ''
+  position: absolute
+  background-color: #fff
+
+.b-tabs__nav-tabs li:nth-of-type(1)::before
+  top: 49%
+  right: 35%
+  left: 35%
+  height: 2px
+  z-index: 1
+
+.b-tabs__nav-tabs li:nth-of-type(1)::after
+  width: 2px
+  top: 35%
+  bottom: 35%
+  left: 48%
+
+.b-tabs__nav-tabs li:nth-of-type(2)::after
+  top: 49%
+  right: 35%
+  left: 35%
+  height: 2px
+
+.b-tabs__nav-tabs li a
+  display: inline-block
+  width: 35px
+  height: 35px
+  border-bottom: none
+
+.b-tabs__nav-tabs li a::after
+  @include x-y-center()
+  content: ''
+  position: absolute
+  width: 10px
+  height: 10px
+
+.b-tabs__nav-tabs li:nth-of-type(1) a::after
+  background-color: $tab-bg
+
+.b-tabs__nav-tabs li:nth-of-type(2) a::after
+  background-color: $black-c
+
+.b-tabs__nav-tabs li.active a::after
+  background-color: #fff
+
+.b-tabs__pane
+  display: none
+  overflow: hidden
+
+.b-tabs__pane.active
+  display: block
+
+.b-tabs__pane-item:nth-of-type(2n+1)
+  clear: both
+
+.fade.in
+  opacity: 1
+
+.fade
+  opacity: 0
+  transition: opacity .15s linear

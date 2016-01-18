@@ -67,6 +67,7 @@ module.exports = function (grunt) {
           'typography.html': ['jade/typography.jade'],
           'grid.html': ['jade/grid.jade'],
           'sections.html': ['jade/sections.jade'],
+          'tabs-accordion.html': ['jade/tabs-accordion.jade'],
           //'': [''],
         },
         options: {

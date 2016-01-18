@@ -742,6 +742,14 @@ h6 span {
   text-transform: none;
 }
 
+.fa {
+  font-family: "Font Awesome";
+}
+
+.center-txt {
+  text-align: center;
+}
+
 .s1-heading {
   margin: 65px 0;
   font-family: "PT Sans Bold", sans-serif;
@@ -1046,6 +1054,203 @@ blockquote::before {
 
 .b-breadcrumbs__list li:last-child::after {
   display: none;
+}
+
+.b-tabs .s6-heading {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.b-tabs__nav {
+  float: right;
+}
+
+.b-tabs__nav-tabs li {
+  position: relative;
+  float: left;
+  width: 35px;
+  height: 35px;
+  -webkit-box-shadow: 0 0 0 2px #0f0809 inset;
+          box-shadow: 0 0 0 2px #0f0809 inset;
+}
+
+.b-tabs__nav-tabs li.active,
+.b-tabs__nav-tabs li:nth-of-type(2) {
+  background-color: #0f0809;
+}
+
+.b-tabs__nav-tabs li.active:nth-of-type(1)::before,
+.b-tabs__nav-tabs li.active:nth-of-type(1)::after,
+.b-tabs__nav-tabs li:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  background-color: #0f0809;
+}
+
+.b-tabs__nav-tabs li:nth-of-type(1)::before,
+.b-tabs__nav-tabs li:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+}
+
+.b-tabs__nav-tabs li:nth-of-type(1)::before {
+  top: 49%;
+  right: 35%;
+  left: 35%;
+  height: 2px;
+  z-index: 1;
+}
+
+.b-tabs__nav-tabs li:nth-of-type(1)::after {
+  width: 2px;
+  top: 35%;
+  bottom: 35%;
+  left: 48%;
+}
+
+.b-tabs__nav-tabs li:nth-of-type(2)::after {
+  top: 49%;
+  right: 35%;
+  left: 35%;
+  height: 2px;
+}
+
+.b-tabs__nav-tabs li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-bottom: none;
+}
+
+.b-tabs__nav-tabs li a::after {
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  margin-top: 50%;
+  margin-left: 50%;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+.b-tabs__nav-tabs li:nth-of-type(1) a::after {
+  background-color: #0f0809;
+}
+
+.b-tabs__nav-tabs li:nth-of-type(2) a::after {
+  background-color: #202020;
+}
+
+.b-tabs__nav-tabs li.active a::after {
+  background-color: #fff;
+}
+
+.b-tabs__pane {
+  display: none;
+  overflow: hidden;
+}
+
+.b-tabs__pane.active {
+  display: block;
+}
+
+.b-tabs__pane-item:nth-of-type(2n+1) {
+  clear: both;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.b-accordion {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.b-accordion__panel {
+  border-top: 1px solid #e8e8e8;
+}
+
+.b-accordion__panel:last-child {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.b-accordion__panel-ttl {
+  margin: 0;
+}
+
+.b-accordion__panel-ttl a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #666;
+  line-height: 28px;
+  border-bottom: none;
+}
+
+.b-accordion__panel-ttl .collapsed {
+  color: #c0d23e;
+}
+
+.b-accordion__body {
+  padding: 15px;
+}
+
+.b-accordion__body p {
+  margin: 0;
+}
+
+.b-accordion__panel-ttl a:hover {
+  color: #202020;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.in {
+  display: block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+}
+
+.b-accordion__panel .fa-angle-down {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  float: right;
+}
+
+.b-accordion__panel .collapsed .fa-angle-down {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .btn {
