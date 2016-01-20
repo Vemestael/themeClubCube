@@ -20,6 +20,9 @@ h6
     font-family: $base-font
     text-transform: none
 
+sup
+  top: -0.1em
+
 //.s1-heading,
 //.s2-heading,
 //.s3-heading,
@@ -37,12 +40,12 @@ h6
 .s1-heading
   margin: 65px 0
   font-family: $base-bold-font
-  font-size: 48px
+  font-size: 40px
 
 .s2-heading
   margin: 30px 0
   font-family: $second-bold-font
-  font-size: 30px
+  font-size: 24px
 
 .s3-heading
   margin: 20px 0
@@ -81,6 +84,11 @@ p,
   font-size: 10px
   line-height: 14px
 
+.txt-intro
+  font-size: 20px
+  font-style: italic
+  line-height: 30px
+  
 .i,
 i,
 italic
@@ -92,12 +100,20 @@ b,
 strong
   font-family: $base-bold-font
   font-weight: normal
+  line-height: 24px
 
 a
   color: $active-c
   text-decoration: none
   border-bottom: 1px solid $active-c
   word-break: break-all
+
+.link.link--dash
+  width: 140px
+  display: block
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
 
 .link:hover
   border-bottom: 1px dotted
@@ -154,3 +170,23 @@ blockquote::before
   display: block
   padding: 60px
   background-color: $code-c
+
+.b-footnote
+  margin: 25px 0 30px
+  padding-top: 16px
+  border-top: 1px solid #ccc
+
+.b-footnote p
+  margin: 0
+  color: #999
+
+.b-footnote__mark
+  font-size: 18px
+  color: $active-c
+
+@media (min-width: $screen-sm)
+  .s1-heading
+    font-size: 48px
+
+  .s2-heading
+    font-size: 30px

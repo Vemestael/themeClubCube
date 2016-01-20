@@ -3,11 +3,15 @@
 // --------------------------------------------------
 .b-headlines
   padding-top: 60px
-  padding-bottom: 50px
+  padding-bottom: 40px
   text-align: center
   background-color: $blog-bg
 
 .b-headlines__ttl
   margin: 0
-  font-size: 48px
+  font-size: 40px
   font-family: $second-bold-font
+
+@media (min-width: $screen-sm)
+  .b-headlines__ttl
+    font-size: 48px

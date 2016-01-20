@@ -1,0 +1,22 @@
+//
+// Aside bar
+// --------------------------------------------------
+
+.b-aside
+  display: none
+
+@media (min-width: $screen-md)
+  .b-aside
+    display: block
+
+  .b-aside__ttl
+    float: left
+    text-transform: uppercase
+
+  .b-aside .btn
+    @include clearfix
+    float: right
+    margin: 0 0 30px 0
+
+  .b-aside .b-box
+    margin-bottom: 1px

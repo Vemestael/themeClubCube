@@ -19,9 +19,9 @@
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
-  //@media (min-width: $screen-xl) {
-  //  width: $container-xl;
-  //}
+  @media (min-width: $screen-xl) {
+    width: $container-xl;
+  }
 }
 
 
@@ -76,7 +76,7 @@
 @media (min-width: $screen-sm-min) {
   @include make-grid(sm);
 }
-
+  
 
 // Medium grid
 //
@@ -92,10 +92,5 @@
 // Columns, offsets, pushes, and pulls for the large desktop device range.
 
 @media (min-width: $screen-lg-min) {
-  @include make-grid(lg);
-}
-
-// Extrs large grid
-@media (min-width: $screen-xl) {
   @include make-grid(lg);
 }

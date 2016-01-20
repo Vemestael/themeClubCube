@@ -50,42 +50,38 @@
           </nav>
         </div>
       </header>
-      <main>
+      <div class="b-headlines">
         <div class="container">
-          <h2 class="s2-heading"> Standart buttons</h2><a href="#" class="btn">More events</a>
-          <h2 class="s2-heading"> Standart small buttons</h2><a href="#" class="btn btn--mini">More events</a>
-          <h2 class="s2-heading"> Standart icon buttons</h2><a href="#" class="btn-icon btn-icon--plus"></a><a href="#" class="btn-icon btn-icon--refresh"></a>
-          <h2 class="s2-heading"> Standart small icon buttons</h2><a href="#" class="btn--mini btn-icon btn-icon--plus"></a><a href="#" class="btn--mini btn-icon btn-icon--refresh"></a>
-          <h2 class="s2-heading"> Standart buttons with icon</h2><a href="#" class="btn btn-icon btn-icon--plus">More events</a>
-          <h2 class="s2-heading">Date label</h2>
-          <time datetime="2009-08-29" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span></time>
-          <h2 class="s2-heading">Date label additional</h2>
-          <time datetime="2009-08-29 20:00" class="date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-          <h2 class="s2-heading">Social buttons
-            <ul class="b-social">
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
-              <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li>
-            </ul>
-          </h2>
+          <h1 class="b-headlines__ttl">Heading blog & breadcrumbs</h1>
         </div>
-      </main>
+      </div>
+      <div class="b-breadcrumbs">
+        <div class="container">
+          <ul class="b-breadcrumbs__list x-small-txt">
+            <li><a href="index.html" class="link">home</a></li>
+            <li>Page current</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="s2-heading">Form</h2>
+        <form action="/" method="GET" class="b-form b-form--inline">
+          <div class="b-form__group">
+            <input type="email" placeholder="Your E-mail" class="b-form__control">
+          </div>
+          <button type="submit" class="b-form__btn">Subscribe</button>
+        </form>
+        <h2 class="s2-heading">Message</h2>
+        <div class="b-msg">
+          <div class="b-msg__corner"></div>
+          <p class="b-msg__txt small-txt">We like to create cool parties and we love to chat with like-minded</p><strong>Do not hesitate to say hello!</strong>
+        </div>
+      </div>
       <footer class="b-footer">
         <div class="container">
           <div class="row">
-            <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
-              <h6 class="s6-heading">twitter & facebook</h6>
-              <div class="b-footer__inner">
-                <div data-href="https://www.facebook.com/facebook" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" class="fb-page">
-                  <div class="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                  </div>
-                </div>
-              </div>
+            <div class="b-footer__item col-xs-12 col-lg-3">
+              <h6 class="s6-heading">twitter feed</h6>
               <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
                 <p class="b-footer__txt">
                   RT <a class="link" href="#">@DesignerDepot</a>: "Working on the right thing is probably more important than working
@@ -95,35 +91,26 @@
                   -47 days ago
                   </span>
               </div>
-            </div>
-            <div class="b-footer__item col-xs-12 col-sm-6 col-lg-4">
-              <h6 class="s6-heading">mailing list</h6>
-              <div class="b-footer__inner">
-                <p class="b-footer__txt b-footer__txt--it">
-                  Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
-                  often!
-                </p>
-                <form action="/" method="GET" class="b-form b-form--inline">
-                  <div class="b-form__group">
-                    <input type="email" placeholder="Your E-mail" class="b-form__control">
-                  </div>
-                  <button type="submit" class="b-form__btn">Subscribe</button>
-                </form>
+              <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
+                <p class="b-footer__txt">
+                  RT <a class="link" href="/">@DesignerDepot</a>: H.264 still accounts for most video encoding today, but HEVC/H.265 and
+                  VP9 are beginning to make noise.”
+                  <a href="/" class="link link--dash"> http://t.co/f1YGnPSijD http://t.co/f1YGnPSijD</a>
+                </p><span class="b-footer__days">
+                  -47 days ago
+                  </span>
               </div>
-              <hr class="hr-line">
-              <div class="b-footer__inner">
-                <ul class="b-social b-footer__social">
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li>
-                </ul>
+              <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
+                <p class="b-footer__txt">
+                  RT <a class="link" href="/">@DesignerDepot</a>: A new series of water-activated artworks on Seattle sidewalks that only
+                  appear when it rains!
+                  <a href="/" class="link link--dash"> http://t.co/f1YGnPSijD http://t.co/f1YGnPSijD</a>
+                </p><span class="b-footer__days">
+                  -47 days ago
+                  </span>
               </div>
             </div>
-            <div class="b-footer__item col-xs-12 col-lg-4">
+            <div class="b-footer__item col-xs-12 col-lg-8 col-lg-offset-1">
               <div class="b-footer__msg">
                 <div class="b-msg">
                   <div class="b-msg__corner"></div>
@@ -138,9 +125,21 @@
                   <li><a href="tel:+38 (097) 798-45-12">+38 (097) 798-45-12</a></li>
                 </ul>
               </div>
-            </div>
-            <div class="b-footer__item-last right col-xs-12 col-lg-4">
-              <p class="b-footer__copyrights x-small-txt">Copyright 2014 — Cube Club Theme by <a class="link" href="#">makebecool</a> All Rights Reserved</p>
+              <hr class="hr-line">
+              <div class="b-footer__inner">
+                <ul class="b-social b-footer__social">
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
+                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li>
+                </ul>
+              </div>
+              <div class="b-footer__item-last">
+                <p class="b-footer__copyrights x-small-txt">Copyright 2014 — Cube Club Theme by <a class="link" href="#">makebecool</a> All Rights Reserved</p>
+              </div>
             </div>
           </div>
         </div>

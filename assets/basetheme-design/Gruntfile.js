@@ -63,12 +63,18 @@ module.exports = function (grunt) {
       pretty: {
         files: {
           'index.html': ['jade/index.jade'],
+          'footer2.html': ['jade/footer2.jade'],
+          'footer3.html': ['jade/footer3.jade'],
+          'footer4.html': ['jade/footer4.jade'],
           'controls.html': ['jade/controls.jade'],
           'typography.html': ['jade/typography.jade'],
           'grid.html': ['jade/grid.jade'],
           'sections.html': ['jade/sections.jade'],
           'tabs-accordion.html': ['jade/tabs-accordion.jade'],
           'media.html': ['jade/media.jade'],
+          'blog.html': ['jade/blog.jade'],
+          'blog-inside.html': ['jade/blog-inside.jade'],
+          //'': [''],
           //'': [''],
         },
         options: {

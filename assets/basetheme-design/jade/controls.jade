@@ -6,31 +6,40 @@ html(lang='en')
       include components/header
       main
         .container
-          h1  Standart buttons
+          h2.s2-heading  Standart buttons
           a.btn(href="#") More events
-          h1  Standart small buttons
+          h2.s2-heading  Standart small buttons
           a.btn.btn--mini(href="#") More events
-          h1  Standart icon buttons
+          h2.s2-heading  Standart icon buttons
           a.btn-icon.btn-icon--plus(href="#")
           a.btn-icon.btn-icon--refresh(href="#")
-          h1  Standart small icon buttons
+          h2.s2-heading  Standart small icon buttons
           a.btn--mini.btn-icon.btn-icon--plus(href="#")
           a.btn--mini.btn-icon.btn-icon--refresh(href="#")
-          h1  Standart buttons with icon
+          h2.s2-heading  Standart buttons with icon
           a.btn.btn-icon.btn-icon--plus(href="#") More events
-          h1 Date label
+          h2.s2-heading Date label
           time.date(datetime="2009-08-29")
             span.date__dt 23
             span.date__rh
               span.date__rh-m sept
               span.date__rh-d Mon
-          h1 Date label additional
+          h2.s2-heading Date label additional
           time.date(datetime="2009-08-29 20:00")
             span.date__dt 23
             span.date__rh
               span.date__rh-m sept
               span.date__rh-d Mon
             span.date__ad 8:00 pm
+          h2.s2-heading Social buttons
+            ul.b-social
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-facebook
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-google-plus
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-linkedin
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-twitter
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-pinterest-p
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-youtube-play
+              li: a.b-social__btn.btn(href="#"): span.fa.fa-flickr
 
       include components/footer
     include components/scripts

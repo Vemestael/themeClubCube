@@ -1,22 +1,38 @@
 //
-// Typography
+// Globals
 // --------------------------------------------------
+img
+  display: block
+
+address
+  font-style: normal
+
 section
   margin-bottom: 70px
 
 .wrap
   padding-top: 50px
 
+.b-content
+  padding-top: 50px
+  padding-bottom: 60px
+
 .hr-line
-  height: 1px
+  height: 2px
   border: none
-  background-color: $grey-c
+  background-color: $hr-line-c
 
 .b-grid
   overflow: hidden
 
+.right
+  float: right
 
 @media (min-width: $screen-sm)
+
+  .container
+    padding-right: 31px
+    padding-left: 31px
 
   .wrap
     padding-top: 80px
@@ -25,4 +41,7 @@ section
     padding-right: 40px
     padding-left: 40px
 
-
+@media (min-width: $screen-lg)
+  .container
+    padding-right: 15px
+    padding-left: 15px

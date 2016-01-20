@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  include components/head
+  body
+    .wrap
+      include components/header
+      .b-headlines
+        .container
+          h1.b-headlines__ttl Heading blog & breadcrumbs
+      .b-breadcrumbs
+        .container
+          ul.b-breadcrumbs__list.x-small-txt
+            li: a.link(href="index.html") home
+            li Page current
+      .container
+        h2.s2-heading Form
+        form.b-form.b-form--inline(action="/" method="GET")
+          .b-form__group
+            input.b-form__control(type="email", placeholder="Your E-mail")
+          button.b-form__btn(type="submit") Subscribe
+        h2.s2-heading Message
+        .b-msg
+          .b-msg__corner
+          p.b-msg__txt.small-txt.
+            We like to create cool parties and we love to chat with like-minded
+          strong Do not hesitate to say hello!
+      include components/footer3
+    include components/scripts
+

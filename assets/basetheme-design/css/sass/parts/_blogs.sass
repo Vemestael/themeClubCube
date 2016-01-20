@@ -1,0 +1,107 @@
+//
+// Blog box
+// --------------------------------------------------
+.b-box-wrap
+  margin-bottom: 30px
+
+.b-box
+  position: relative
+  float: left
+  width: 100%
+  min-height: 330px
+  margin-bottom: 30px
+  padding: 20px
+  color: $active-c
+  box-shadow: 0 0 0 2px $active-c inset
+  cursor: pointer
+
+.b-box.b-box--clr-a
+  color: #fff
+  background-color: $active-c
+
+.b-box.b-box--clr-b
+  color: #fff
+  background-color: $black-c
+  box-shadow: none
+
+.b-box__img-wrap
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-position: center
+  background-size: cover
+  border-bottom: none
+
+.b-box__date
+  position: relative
+  float: left
+  font-size: 12px
+  text-transform: uppercase
+  z-index: 1
+
+.b-box__txt
+  position: absolute
+  right: 20px
+  left: 20px
+  bottom: 16px
+  margin: 0
+  font-size: 18px
+  font-family: $second-bold-font
+  line-height: 20px
+
+.b-box-sm
+  min-height: 150px
+
+.b-box__img-wrap.bg-image
+  opacity: 0.6
+
+.b-box__link
+  @include absolute-center()
+  border-bottom: none
+
+.b-box:hover .b-box__img-wrap.bg-image
+  opacity: 1
+  transition: all 0.2s ease-out
+
+.b-box__btn-wrap
+  text-align: center
+
+@media (min-width: $screen-sm)
+  .b-box-wrap .b-box
+    width: 47%
+
+@media (min-width: $screen-lg)
+  .b-box-wrap .b-box
+    width: 30.303%
+
+
+// Blog inner
+.b-blog-inr__aside
+  margin-bottom: 40px
+
+.b-blog-inr__txt
+  margin-bottom: 42px
+
+.b-blog-inr__txt p
+  margin-top: 0
+  color: #333
+
+.b-blog-inr__aside .b-blog-inr__img-wrap
+  max-width: 260px
+  margin: 0 auto 0
+
+.b-blog-inr__img-wrap
+  margin-bottom: 45px
+
+.b-blog-inr__img-wrap img
+  width: 100%
+
+@media (min-width: $screen-sm)
+  .b-blog-inr__aside
+    float: right
+    margin: 0 0 20px 20px
+
+
+

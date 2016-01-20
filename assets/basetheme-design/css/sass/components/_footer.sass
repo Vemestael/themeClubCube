@@ -1,3 +1,149 @@
 //
 // Footer
-//=========================================
+// --------------------------------------------------
+
+.b-footer
+  margin-top: 50px
+  padding-top: 65px
+  padding-bottom: 110px
+  background-color: $black-c
+  color: #fff
+
+.b-footer .hr-line
+  margin-bottom: 40px
+
+.b-footer__item .s6-heading
+  margin-bottom: 40px
+  text-transform: uppercase
+
+.b-footer__inner
+  width: 100%
+  margin-bottom: 40px
+
+.b-footer__twitter
+  position: relative
+  padding-left: 30px
+
+.b-footer__twitter .fa-twitter
+  position: absolute
+  left: 0
+
+.b-footer__txt,
+.b-footer__days
+  font-size: 12px
+  font-family: $second-font
+  line-height: 20px
+
+.b-footer__txt
+  margin-top: 0
+
+.b-footer__txt--it
+  font-family: $base-it-font
+
+.b-footer__days
+  color: $active-c
+
+.b-footer__social
+  max-width: 290px
+
+.b-footer__social li
+  margin-right: 12px
+  margin-bottom: 14px
+
+.b-footer__social li:nth-of-type(4)
+  margin-right: 0
+
+.b-footer__social .b-social__btn
+  margin: 0
+  color: #fff
+  border-color: #fff
+
+.b-footer__contacts
+  position: relative
+  margin-bottom: 55px
+  font-size: 14px
+  font-family: $second-bold-font
+  line-height: 18px
+  text-transform: uppercase
+  overflow: hidden
+
+.b-footer__contacts a
+  color: #fff
+  border-color: #fff
+
+.b-footer__contacts-mail
+  margin-top: 45px
+  margin-bottom: 45px
+  color: #fff
+
+.b-footer__adrs,
+.b-footer__contacts-mail,
+.b-footer__contacts-phones
+  padding-left: 30px
+  padding-right: 30px
+
+.b-footer__contacts-phones a
+  border-bottom: none
+
+.b-footer__adrs:before,
+.b-footer__contacts-mail:before,
+.b-footer__contacts-phones:before
+  position: absolute
+  left: 0
+  font-size: 18px
+  font-family: $fa
+
+.b-footer__contacts-mail.indent
+  margin-top: 45px
+  margin-bottom: 45px
+  
+.b-footer__adrs:before
+  content: '\f041'
+  
+.b-footer__contacts-mail:before
+  content: '\f0e0'
+  
+.b-footer__contacts-phones:before
+  content: '\f095'
+
+.b-footer__copyrights
+  margin: 0
+  padding-top: 48px
+  border-top: 2px solid $hr-line-c
+  text-transform: uppercase
+
+@media (min-width: $screen-xm)
+  .b-footer__social
+    max-width: 100%
+
+  .b-footer__social li:nth-of-type(4)
+    margin-right: 12px
+
+@media (min-width: $screen-sm)
+  .b-footer
+    padding-top: 95px
+
+  .b-footer__item.b-footer__item--indent
+    margin-bottom: 30px
+
+  .b-footer__contacts
+    margin-bottom: 70px
+
+  .b-footer__contacts-mail
+    margin-top: 0
+    margin-bottom: 0
+
+@media (min-width: $screen-lg)
+  .b-footer__msg
+    position: absolute
+    top: -115px
+
+  .b-footer__contacts
+    margin-top: 70px
+    margin-bottom: 40px
+
+  .b-footer__contacts-mail
+    margin-top: 45px
+    margin-bottom: 45px
+
+
