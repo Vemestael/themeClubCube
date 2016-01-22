@@ -1,0 +1,267 @@
+//
+// Event box
+// --------------------------------------------------
+.c-box
+  margin-bottom: 27px
+  padding: 0
+
+.c-box::before
+  content: ''
+  position: absolute
+  left: 5px
+  right: 0
+  top: -4px
+  width: 100%
+  height: 10px
+  background: url("../images/triangle.png") repeat-x
+  background-position: center
+
+.c-box__inner
+  position: relative
+  min-height: 290px
+  padding: 20px
+  cursor: pointer
+
+.c-box__inner::before,
+.c-box__inner::after
+  content: ''
+  position: absolute
+  top: -10px
+  z-index: 2
+
+.c-box__inner::before
+  left: 0
+  width: 20px
+  height: 10px
+  border-top: 0 solid transparent
+  border-left: 10px solid #fff
+  border-bottom: 10px solid transparent
+
+.c-box__inner::after
+  @extend .c-box__inner::before
+  top: 5px
+  right: -15px
+  left: auto
+  transform: rotate(90deg)
+
+.c-box__ttl-s2,
+.c-box__ttl-s3
+  margin: 5px 0 20px 0
+  font-size: 24px
+  font-family: $second-bold-font
+  text-transform: uppercase
+  color: #fff
+
+.c-box__ttl-s2
+  width: calc(100% - 102px)
+  max-width: 270px
+  float: left
+
+.c-box__ttl-s3
+  width: 65%
+
+.c-box__inner .b-box__img-wrap.bg-image
+  opacity: 1
+  z-index: -1
+
+.c-box__inner .b-box__grdnt-a::after
+  content: ''
+  @include absolute-center()
+  @include gradient-custom-direrc($deg: 145deg, $start-color: rgba(83, 13, 133, 1), $center-color: rgba(192, 200, 62, 0.45), $end-color: rgba(192, 200, 62, 0), $start-percent: 18%, $center-percent: 70%, $end-percent: 120%)
+  z-index: -1
+
+.c-box__inner .b-box__grdnt-b::after
+  content: ''
+  @include absolute-center()
+  @include gradient-directional($start-color: #000, $end-color: rgba(0, 0, 0, 0), $deg: 145deg)
+  z-index: -1
+
+.c-box__txt
+  width: 62%
+  margin: 0
+  padding-top: 30px
+  font-size: 18px
+  font-family: $base-bold-it-font
+  color: #fff
+  line-height: 1
+  clear: left
+
+.c-box__date-item
+  position: absolute
+  top: 20px
+  right: -2px
+
+.c-box__date
+  color: #fff
+  border-color: #fff
+
+.c-box__date .date__ad
+  color: #000
+  background-color: #fff
+
+.c-box__link-wrap
+  position: absolute
+  bottom: 20px
+  right: -2px
+  z-index: 2
+
+.c-box__svg-angle
+  position: absolute
+  top: 0
+  left: -5px
+
+  path
+    fill: $active-c
+
+.c-box__views
+  position: absolute
+  bottom: 20px
+  padding: 0
+  font-family: $second-bold-font
+  color: #fff
+
+.c-box__views > li
+  display: inline-block
+  margin-right: 15px
+
+.c-box__view::before,
+.c-box__video::before
+  margin-right: 10px
+  font-family: $fa
+
+.c-box__view::before
+  content: '\f030'
+  
+.c-box__video::before
+  content: '\f03d'
+
+.c-box.c-box--size-lg .c-box__inner
+  min-height: 190px
+  margin-bottom: 30px
+
+.c-box__date-item.c-box__date-item--float
+  position: static
+  float: right
+
+.c-box.c-box--size-lg .hr-pattern
+  display: none
+
+.c-box__txt.c-box__txt--display
+  display: none
+
+.c-box__link-wrap.c-box__link-wrap--indent
+  width: 41%
+  bottom: 10px
+  right: 20px
+
+.btn-pointer.btn-pointer--size
+  padding: 10px
+  line-height: 14px
+
+.c-box.c-box--size-sm
+  margin-bottom: 35px
+  padding: 0
+  &::before
+    display: none
+
+.c-box.c-box--size-sm .c-box__inner
+  position: relative
+  min-height: 175px
+  margin-bottom: 20px
+  padding: 20px
+  overflow: hidden
+  &::before,
+  &::after
+    display: none
+
+.c-box.c-box--size-sm .c-box__views
+  bottom: 10px
+
+.c-box__link
+  font-size: 16px
+  font-family: $base-bold-font
+  color: $black-c
+  text-transform: uppercase
+  border-bottom: none
+  word-break: normal
+
+.c-box__inner:hover .b-box__grdnt-a::after,
+.c-box__inner:hover .b-box__grdnt-b::after
+  background: transparent
+
+//.c-box__inner:hover + .c-box__link-wrap-a .c-box__link
+//  color: red
+
+.c-box__inner .btn-pointer:hover
+  background-color: $active-sc-c
+
+  .c-box__svg-angle path
+    fill: $active-sc-c
+
+@media (min-width: $screen-xm)
+  .c-box .c-box__inner
+    padding: 35px 25px
+
+  .c-box.c-box--size-lg .c-box__inner
+    min-height: 440px
+    max-width: 100%
+    margin-bottom: 30px
+
+  .c-box__txt.c-box__txt--display
+    display: block
+
+  .c-box.c-box--size-lg .hr-pattern
+    display: block
+
+  .c-box__link-wrap.c-box__link-wrap--indent
+    width: auto
+    bottom: 20px
+    right: 25px
+
+  .btn-pointer.btn-pointer--size
+    padding: 18px 20px
+
+  .c-box__views
+    bottom: 30px
+
+@media (min-width: $screen-sm)
+  .c-box .c-box__inner
+    min-height: 330px
+    max-width: 330px
+
+  .c-box__date.c-box__date--lg
+    padding: 8px 20px 8px 10px
+
+  .c-box__date.c-box__date--lg .date__dt
+    font-size: 48px
+
+  .c-box__date.c-box__date--lg .date__rh-m,
+  .c-box__date.c-box__date--lg .date__rh-d
+    margin: 0
+    font-size: 18px
+
+  .c-box__date.c-box__date--lg .date__rh-m
+    margin-bottom: 2px
+
+  .c-box__link-wrap-a
+    padding-right: 110px
+
+@media (min-width: $screen-lg)
+  .c-box .c-box__inner,
+  .c-box.c-box.c-box--size-lg .c-box__inner
+    min-height: 360px
+
+  .c-box .c-box__inner
+    max-width: 360px
+
+  .c-box.c-box.c-box--size-lg .c-box__inner
+    max-width: 550px
+
+  .c-box.c-box.c-box--size-sm .c-box__inner
+    max-width: 260px
+
+
+
+
+
+
