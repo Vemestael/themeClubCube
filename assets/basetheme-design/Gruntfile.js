@@ -74,6 +74,7 @@ module.exports = function (grunt) {
           'media.html': ['jade/media.jade'],
           'blog.html': ['jade/blog.jade'],
           'blog-inside.html': ['jade/blog-inside.jade'],
+          'gallery.html': ['jade/gallery.jade'],
           //'': [''],
           //'': [''],
         },

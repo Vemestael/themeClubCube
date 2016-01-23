@@ -4,6 +4,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
     var _custom = this,
         _defaults = {
             masnBox: $('#masnBox'),
+            masnBoxGalr: $('#masnrGallery'),
             // elements
             // prop
             // data
@@ -12,6 +13,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         _properties = $.extend(_defaults, properties),
         _globals = {
             masnBox: null,
+            masnBoxGalr: null,
             addMoreBlogs: null,
             // elements
 
@@ -36,12 +38,15 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
 
         _config = function () {
             _globals.masnBox = $(_properties.masnBox);
+            _globals.masnBoxGalr = $(_properties.masnBoxGalr);
         },
 
         _setup = function () {
             _globals.masnBox.masonry();
+            _globals.masnBoxGalr.masonry();
 
             _masonryBlocks();
+            _masonryBlockGal();
         },
 
         _setBinds = function () {
@@ -53,7 +58,8 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _triggers = function () {
-            return {};
+            return {
+            };
         },
 
         _masonryBlocks = function () {
@@ -70,7 +76,23 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     duration: 500
                 }
             });
-            _globals.masnBox.addClass('animate')
+        },
+
+        _masonryBlockGal = function () {
+            _globals.masnBoxGalr.masonry({
+                itemSelector: '.c-box',
+                singleMode: true,
+                isResizable: false,
+                //gutter: 10,
+                columnWidth: '.grid-sizer',
+                percentPosition: false,
+                isAnimated: true,
+                animationOptions: {
+                    queue: false,
+                    duration: 500,
+                    easing: 'linear',
+                }
+            });
         },
 
         _setCustomMethods = function () {

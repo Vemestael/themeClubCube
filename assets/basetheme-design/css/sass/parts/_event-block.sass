@@ -1,17 +1,19 @@
 //
 // Event box
 // --------------------------------------------------
+.grid-sizer
+  width: 100%
+
 .c-box
   margin-bottom: 27px
-  padding: 0
 
 .c-box::before
   content: ''
   position: absolute
-  left: 5px
+  left: 1px
   right: 0
   top: -4px
-  width: 100%
+  width: 98%
   height: 10px
   background: url("../images/triangle.png") repeat-x
   background-position: center
@@ -137,7 +139,6 @@
 
 .c-box.c-box--size-lg .c-box__inner
   min-height: 190px
-  margin-bottom: 30px
 
 .c-box__date-item.c-box__date-item--float
   position: static
@@ -159,8 +160,6 @@
   line-height: 14px
 
 .c-box.c-box--size-sm
-  margin-bottom: 35px
-  padding: 0
   &::before
     display: none
 
@@ -199,6 +198,9 @@
     fill: $active-sc-c
 
 @media (min-width: $screen-xm)
+  .grid-sizer
+    width: 50%
+
   .c-box .c-box__inner
     padding: 35px 25px
 
@@ -244,7 +246,11 @@
     margin-bottom: 2px
 
   .c-box__link-wrap-a
-    padding-right: 110px
+    padding-right: 70px
+
+@media (min-width: $screen-md)
+  .grid-sizer
+    width: 33.333%
 
 @media (min-width: $screen-lg)
   .c-box .c-box__inner,
@@ -260,7 +266,8 @@
   .c-box.c-box.c-box--size-sm .c-box__inner
     max-width: 260px
 
-
+  .grid-sizer
+    width: 25%
 
 
 

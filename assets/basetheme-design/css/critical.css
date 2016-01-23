@@ -263,7 +263,7 @@ th {
 }
 @media (min-width: 1570px) {
   .container {
-    width: 1600px;
+    width: 1170px;
   }
 }
 
@@ -1687,7 +1687,7 @@ section {
     padding-left: 40px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -2723,18 +2723,21 @@ blockquote::before {
     margin: 0 0 27px 0 !important;
   }
 }
+.grid-sizer {
+  width: 100%;
+}
+
 .c-box {
   margin-bottom: 27px;
-  padding: 0;
 }
 
 .c-box::before {
   content: "";
   position: absolute;
-  left: 5px;
+  left: 1px;
   right: 0;
   top: -4px;
-  width: 100%;
+  width: 98%;
   height: 10px;
   background: url("../images/triangle.png") repeat-x;
   background-position: center;
@@ -2901,7 +2904,6 @@ blockquote::before {
 
 .c-box.c-box--size-lg .c-box__inner {
   min-height: 190px;
-  margin-bottom: 30px;
 }
 
 .c-box__date-item.c-box__date-item--float {
@@ -2928,10 +2930,6 @@ blockquote::before {
   line-height: 14px;
 }
 
-.c-box.c-box--size-sm {
-  margin-bottom: 35px;
-  padding: 0;
-}
 .c-box.c-box--size-sm::before {
   display: none;
 }
@@ -2973,6 +2971,10 @@ blockquote::before {
 }
 
 @media (min-width: 480px) {
+  .grid-sizer {
+    width: 50%;
+  }
+
   .c-box .c-box__inner {
     padding: 35px 25px;
   }
@@ -3030,7 +3032,12 @@ blockquote::before {
   }
 
   .c-box__link-wrap-a {
-    padding-right: 110px;
+    padding-right: 70px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-sizer {
+    width: 33.333%;
   }
 }
 @media (min-width: 1280px) {
@@ -3049,6 +3056,10 @@ blockquote::before {
 
   .c-box.c-box.c-box--size-sm .c-box__inner {
     max-width: 260px;
+  }
+
+  .grid-sizer {
+    width: 25%;
   }
 }
 .b-footer {
