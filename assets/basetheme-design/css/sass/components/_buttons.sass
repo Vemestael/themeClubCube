@@ -97,6 +97,63 @@
   color: #fff
   clear: both
 
+.date-lg
+  display: inline-block
+  width: 290px
+  padding: 11px 10px
+  border: 8px solid #fff
+  font-family: $second-bold-font
+  color: #fff
+
+.date-lg__dt
+  position: relative
+  display: block
+  float: left
+  padding-right: 15px
+  padding-bottom: 6px
+  font-size: 48px
+
+.date-lg__dt::after
+  content: ''
+  position: absolute
+  width: 8px
+  top: -11px
+  right: 0
+  bottom: 0
+  background-color: #fff
+
+.date-lg__rh
+  display: block
+  float: left
+  padding-left: 10px
+
+.date-lg__rh-m
+  @extend .date__rh-m
+  margin-top: 2px
+
+.date-lg__rh-d,
+.date-lg__rh-t
+  display: block
+  margin-top: 2px
+  font-size: 12px
+
+.date-lg__ad
+  position: relative
+  display: block
+  padding: 25px 0 10px
+  font-size: 48px
+  text-align: center
+  clear: both
+
+.date-lg__ad::before
+  content: ''
+  position: absolute
+  top: 0
+  left: -10px
+  right: -10px
+  height: 8px
+  background-color: #fff
+
 .b-social
   padding: 0
 
@@ -122,3 +179,60 @@
   background-color: $active-c
   border: none
 
+.b-likes
+  padding: 0
+
+.b-likes > li
+  display: inline-block
+  margin-right: 15px
+  font-size: 10px
+  line-height: 24px
+  cursor: pointer
+
+  &::before
+    padding-right: 20px
+    font-family: $fa
+    font-size: 18px
+    vertical-align: middle
+
+.b-likes__pinterest-p::before
+  content: '\f231'
+
+.b-likes__google-plus::before
+  content: "\f0d5"
+
+.b-likes__twitter::before
+  content: "\f099"
+
+.b-likes__facebook::before
+  content: "\f09a"
+
+.b-likes span
+  position: relative
+  padding: 4px 10px 4px 5px
+  border-top: 2px solid
+  border-right: 2px solid
+  border-bottom: 2px solid
+
+.b-likes span::before,
+.b-likes span::after
+  content: ''
+  position: absolute
+  width: 17px
+  height: 2px
+  background-color: #000
+
+.b-likes span::before
+  top: 4px
+  left: -14px
+  transform: rotate(-45deg)
+
+.b-likes span::after
+  left: -14px
+  bottom: 4px
+  transform: rotate(45deg)
+
+@media (min-width: $screen-lg)
+  .date-lg__dt,
+  .date-lg__ad
+    font-size: 60px

@@ -73,9 +73,10 @@ module.exports = function (grunt) {
           'tabs-accordion.html': ['jade/tabs-accordion.jade'],
           'media.html': ['jade/media.jade'],
           'blog.html': ['jade/blog.jade'],
-          'blog-inside.html': ['jade/blog-inside.jade'],
+          'blog-inner.html': ['jade/blog-inner.jade'],
           'gallery.html': ['jade/gallery.jade'],
-          //'': [''],
+          'gallery-inner.html': ['jade/gallery-inner.jade'],
+          'events.html': ['jade/events.jade'],
           //'': [''],
         },
         options: {

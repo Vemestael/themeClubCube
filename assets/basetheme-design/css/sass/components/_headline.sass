@@ -12,6 +12,70 @@
   font-size: 40px
   font-family: $second-bold-font
 
+.c-headlines
+  position: relative
+  min-height: 400px
+
+.c-headlines .container
+  padding-top: 30px
+
+.c-headlines__img-wrap
+  @extend %bg-images
+  z-index: -1
+
+.c-headlines__ttl
+  margin-bottom: 20px
+  font-size: 30px
+  font-family: $second-bold-font
+  color: #fff
+
+.c-headlines .hr-pattern,
+.c-headlines__likes
+  display: none
+
+
 @media (min-width: $screen-sm)
   .b-headlines__ttl
+    font-size: 48px
+
+  .c-headlines
+    min-height: 500px
+
+  .c-headlines .container
+    position: relative
+    padding-top: 60px
+
+  .c-headlines__ttl
+    max-width: 350px
+    margin-bottom: 35px
+    font-size: 36px
+
+  .c-headlines__date-lg
+    position: absolute
+    top: 60px
+    right: 40px
+
+  .c-headlines .hr-pattern,
+  .c-headlines__likes
+    display: block
+
+  .c-headlines__likes
+    padding-top: 55px
+    color: #fff
+    clear: both
+
+  .c-headlines__likes span
+    border-color: $white-light-c
+    
+  .c-headlines__likes span::before,  
+  .c-headlines__likes span::after
+    background-color: $white-light-c
+
+@media (min-width: $screen-md)
+  .c-headlines__ttl
+    max-width: 520px
+
+@media (min-width: $screen-lg)
+  .c-headlines__ttl
+    max-width: 700px
     font-size: 48px
