@@ -2,26 +2,37 @@
 // Aside bar
 // --------------------------------------------------
 
-.b-aside
+.b-aside.b-aside--display
   display: none
+  
+.b-aside-item
+  margin-bottom: 55px
+
+.b-item__header
+  margin-bottom: 20px
+  overflow: hidden
+
+.b-item__ttl-header
+  float: left
+  margin-top: 8px
+  text-transform: uppercase
+
+.b-item__header .btn--mini
+  position: relative
+  top: -5px
+  right: -5px
+  float: right
+
+.b-aside .b-box
+  margin-bottom: 1px
+
+@media (min-width: $screen-sm)
+  .b-aside-item
+    margin-bottom: 55px
 
 @media (min-width: $screen-md)
-  .b-aside
+  .b-aside.b-aside--display
     display: block
-
-  .b-aside__ttl
-    float: left
-    margin-bottom: 35px
-    text-transform: uppercase
-
-  .b-aside .btn.btn--mini
-    position: relative
-    top: -5px
-    right: -5px
-    float: right
-
-  .b-aside .b-box
-    margin-bottom: 1px
 
   .b-aside .c-box
     margin: 0 0 27px 0 !important

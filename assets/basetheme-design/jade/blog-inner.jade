@@ -103,9 +103,9 @@ html(lang='en')
                 a.link(href="https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzb")
                   | https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzb
 
-          aside.b-aside.col-md-4
-            h6.s6-heading.b-aside__ttl You may also like
-            .clearfix
+          aside.b-aside.b-aside--display.col-md-4
+            .b-item__header
+              h6.s6-heading.b-item__ttl-header You may also like
             article.c-box
               .c-box__inner
                 h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
@@ -172,8 +172,9 @@ html(lang='en')
                     | More
                 a(href="#" rel="nofollow").b-box__link
 
-            h6.s6-heading.b-aside__ttl Other blogs
-            a.btn.btn--mini(href="#") More
+            .b-item__header
+              h6.s6-heading.b-item__ttl-header Other blogs
+              a.btn.btn--mini(href="#") More
 
             .b-box.b-box-sm.b-box--clr-b
               .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")

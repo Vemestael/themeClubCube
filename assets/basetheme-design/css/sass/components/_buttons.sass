@@ -232,6 +232,40 @@
   bottom: 3px
   transform: rotate(45deg)
 
+.btn-pointer-b
+  position: relative
+  display: inline-block
+  padding: 16.4px 16px
+  background-color: $active-c
+  font-family: $base-bold-font
+  color: #fff
+  text-transform: uppercase
+  border-bottom: none
+
+.btn-pointer-b .left,
+.btn-pointer-b .right
+  position: absolute
+  top: 0
+  height: 50px
+  & path
+    fill: $active-c
+
+.btn-pointer-b .left
+  left: -5px
+
+.btn-pointer-b .right
+  right: -5px
+
+
+.btn-pointer-b:hover,
+.btn-pointer-b:hover .left path,
+.btn-pointer-b:hover .right path
+  background-color: $active-sc-c
+  fill: $active-sc-c
+
+
+
+
 @media (min-width: $screen-lg)
   .date-lg__dt,
   .date-lg__ad

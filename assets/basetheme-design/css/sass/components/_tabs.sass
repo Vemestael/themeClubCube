@@ -7,6 +7,7 @@
   text-transform: uppercase
 
 .b-tabs__nav
+  padding: 0
   float: right
 
 .b-tabs__nav-tabs li
@@ -74,6 +75,10 @@
 .b-tabs__nav-tabs li.active a::after
   background-color: #fff
 
+.b-tabs__content
+  margin-top: 30px
+  margin-bottom: 50px
+
 .b-tabs__pane
   display: none
   overflow: hidden
@@ -90,3 +95,11 @@
 .fade
   opacity: 0
   transition: opacity .15s linear
+
+@media (min-width: $screen-sm)
+  .b-tabs__content
+    margin-bottom: 100px
+
+@media (min-width: $screen-lg)
+  .b-tabs__content
+    margin-bottom: 0

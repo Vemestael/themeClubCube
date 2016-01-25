@@ -1698,12 +1698,6 @@ section {
     padding-left: 40px;
   }
 }
-@media (min-width: 992px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 html {
   font-family: "PT Sans Regular", sans-serif;
   line-height: 1;
@@ -1786,7 +1780,7 @@ sup {
 p,
 .txt {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 .small-txt {
@@ -2202,6 +2196,43 @@ blockquote::before {
           transform: rotate(45deg);
 }
 
+.btn-pointer-b {
+  position: relative;
+  display: inline-block;
+  padding: 16.4px 16px;
+  background-color: #c0d23e;
+  font-family: "PT Sans Bold", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: none;
+}
+
+.btn-pointer-b .left,
+.btn-pointer-b .right {
+  position: absolute;
+  top: 0;
+  height: 50px;
+}
+.btn-pointer-b .left path,
+.btn-pointer-b .right path {
+  fill: #c0d23e;
+}
+
+.btn-pointer-b .left {
+  left: -5px;
+}
+
+.btn-pointer-b .right {
+  right: -5px;
+}
+
+.btn-pointer-b:hover,
+.btn-pointer-b:hover .left path,
+.btn-pointer-b:hover .right path {
+  background-color: #530d85;
+  fill: #530d85;
+}
+
 @media (min-width: 1280px) {
   .date-lg__dt,
   .date-lg__ad {
@@ -2465,6 +2496,7 @@ blockquote::before {
 }
 
 .b-tabs__nav {
+  padding: 0;
   float: right;
 }
 
@@ -2549,6 +2581,11 @@ blockquote::before {
   background-color: #fff;
 }
 
+.b-tabs__content {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .b-tabs__pane {
   display: none;
   overflow: hidden;
@@ -2573,6 +2610,16 @@ blockquote::before {
   transition: opacity 0.15s linear;
 }
 
+@media (min-width: 768px) {
+  .b-tabs__content {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .b-tabs__content {
+    margin-bottom: 0;
+  }
+}
 .b-accordion {
   margin-bottom: 30px;
   overflow: hidden;
@@ -2716,6 +2763,7 @@ blockquote::before {
 }
 
 .b-video-item__iframe-md {
+  margin-bottom: 30px;
   padding-bottom: 67%;
 }
 
@@ -2908,30 +2956,44 @@ blockquote::before {
     margin: 0 0 20px 20px;
   }
 }
-.b-aside {
+.b-aside.b-aside--display {
   display: none;
 }
 
+.b-aside-item {
+  margin-bottom: 55px;
+}
+
+.b-item__header {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.b-item__ttl-header {
+  float: left;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.b-item__header .btn--mini {
+  position: relative;
+  top: -5px;
+  right: -5px;
+  float: right;
+}
+
+.b-aside .b-box {
+  margin-bottom: 1px;
+}
+
+@media (min-width: 768px) {
+  .b-aside-item {
+    margin-bottom: 55px;
+  }
+}
 @media (min-width: 992px) {
-  .b-aside {
+  .b-aside.b-aside--display {
     display: block;
-  }
-
-  .b-aside__ttl {
-    float: left;
-    margin-bottom: 35px;
-    text-transform: uppercase;
-  }
-
-  .b-aside .btn.btn--mini {
-    position: relative;
-    top: -5px;
-    right: -5px;
-    float: right;
-  }
-
-  .b-aside .b-box {
-    margin-bottom: 1px;
   }
 
   .b-aside .c-box {
@@ -3279,7 +3341,6 @@ blockquote::before {
 @media (min-width: 768px) {
   .c-box .c-box__inner {
     min-height: 330px;
-    max-width: 330px;
   }
 
   .c-box__date.c-box__date--lg {
@@ -3386,6 +3447,69 @@ blockquote::before {
 @media (min-width: 992px) {
   .b-panel-t__list:nth-of-type(2n+1) {
     clear: none;
+  }
+}
+.b-promo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #e8e8e8;
+  text-align: center;
+}
+
+.b-promo__s2-ttl {
+  width: 85%;
+  margin: 0 auto 25px;
+  font-size: 24px;
+  font-family: "PT Sans Caption Bold", sans-serif;
+  color: #c0d23e;
+}
+
+.b-promo p {
+  margin-bottom: 25px;
+  color: #0f0809;
+}
+
+@media (min-width: 768px) {
+  .b-promo {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .b-promo__s2-ttl {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .b-promo p {
+    width: 92%;
+    margin: 0 auto 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .b-promo {
+    padding-bottom: 100px;
+  }
+
+  .b-promo__s2-ttl,
+  .b-promo p {
+    width: 80%;
+  }
+}
+.b-events {
+  padding-top: 48px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .b-events {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .b-events {
+    padding-top: 48px;
+    padding-bottom: 60px;
   }
 }
 .b-footer {
