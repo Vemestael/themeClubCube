@@ -2141,7 +2141,6 @@ blockquote::before {
   display: inline-block;
   margin-right: 15px;
   font-size: 10px;
-  line-height: 24px;
   cursor: pointer;
 }
 .b-likes > li::before {
@@ -2169,6 +2168,7 @@ blockquote::before {
 
 .b-likes span {
   position: relative;
+  display: inline-block;
   padding: 4px 10px 4px 5px;
   border-top: 2px solid;
   border-right: 2px solid;
@@ -2179,14 +2179,14 @@ blockquote::before {
 .b-likes span::after {
   content: "";
   position: absolute;
-  width: 17px;
+  width: 15px;
   height: 2px;
   background-color: #000;
 }
 
 .b-likes span::before {
-  top: 4px;
-  left: -14px;
+  top: 3px;
+  left: -13px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
        -o-transform: rotate(-45deg);
@@ -2194,8 +2194,8 @@ blockquote::before {
 }
 
 .b-likes span::after {
-  left: -14px;
-  bottom: 4px;
+  left: -13px;
+  bottom: 3px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
        -o-transform: rotate(45deg);
@@ -2938,8 +2938,8 @@ blockquote::before {
     margin: 0 0 27px 0 !important;
   }
 
-  .b-aside .c-box::before {
-    display: none;
+  .b-aside .c-box-v__sm::before {
+    left: -3px;
   }
 }
 .grid-sizer {
@@ -2947,6 +2947,7 @@ blockquote::before {
 }
 
 .c-box {
+  position: relative;
   margin-bottom: 27px;
 }
 
@@ -3146,9 +3147,13 @@ blockquote::before {
 
 .btn-pointer.btn-pointer--size {
   padding: 10px;
+  font-size: 14px;
   line-height: 14px;
 }
 
+.c-box.c-box--size-sm {
+  position: relative;
+}
 .c-box.c-box--size-sm::before {
   display: none;
 }
@@ -3189,6 +3194,50 @@ blockquote::before {
   fill: #530d85;
 }
 
+.c-box-v__sm {
+  max-width: 360px;
+}
+
+.c-box-v__sm::before {
+  right: auto;
+  left: 12px;
+  width: 10px;
+  height: 100%;
+  background: url("../images/romb-v.png") repeat-y;
+}
+
+.c-box-v__sm .c-box__inner {
+  min-height: 200px !important;
+  padding: 20px !important;
+}
+.c-box-v__sm .c-box__inner::after {
+  top: auto;
+  right: auto;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+       -o-transform: rotate(270deg);
+          transform: rotate(270deg);
+  bottom: 5px;
+  left: -15px;
+}
+
+.c-box-v__sm .c-box__date-item {
+  position: static;
+}
+
+.c-box-v__sm .c-box__link-wrap {
+  top: 20px;
+}
+
+.c-box-v__sm .c-box__ttl-s3 {
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  bottom: 15px;
+  width: auto;
+  margin: 0;
+}
+
 @media (min-width: 480px) {
   .grid-sizer {
     width: 50%;
@@ -3220,6 +3269,7 @@ blockquote::before {
 
   .btn-pointer.btn-pointer--size {
     padding: 18px 20px;
+    font-size: 16px;
   }
 
   .c-box__views {
@@ -3281,32 +3331,61 @@ blockquote::before {
     width: 25%;
   }
 }
-@media (min-width: 1280px) {
+.b-panel-t {
+  position: relative;
+  top: -90px;
+  padding: 30px 30px 35px 15px;
+  background-color: #c0d23e;
+}
+
+.b-panel-t::before {
+  content: "";
+  border-top: 10px solid transparent;
+  border-bottom: 43px solid transparent;
+  border-left: 43px solid #c0d23e;
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+}
+
+.b-panel-t__list li {
+  font-size: 24px;
+  font-family: "PT Sans Bold", sans-serif;
+  line-height: 40px;
+  color: #fff;
+}
+
+.b-panel-t__list li > span {
+  font-size: 14px;
+}
+
+.b-panel-t__list li > a {
+  font-size: 18px;
+  font-family: "PT Sans Regular", sans-serif;
+  color: #fff;
+  border-color: #fff;
+}
+
+.b-panel-t__list .tel a {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
   .b-panel-t {
-    padding: 30px 30px 35px 15px;
-    background-color: #c0d23e;
+    top: -140px;
+  }
+
+  .b-panel-t__list:nth-of-type(2n+1) {
+    clear: both;
   }
 
   .b-panel-t__list:last-child {
     float: right;
   }
-
-  .b-panel-t__list li {
-    font-size: 24px;
-    font-family: "PT Sans Bold", sans-serif;
-    line-height: 40px;
-    color: #fff;
-  }
-
-  .b-panel-t__list li > span {
-    font-size: 14px;
-  }
-
-  .b-panel-t__list li > a {
-    font-size: 18px;
-    font-family: "PT Sans Regular", sans-serif;
-    color: #fff;
-    border-color: #fff;
+}
+@media (min-width: 992px) {
+  .b-panel-t__list:nth-of-type(2n+1) {
+    clear: none;
   }
 }
 .b-footer {

@@ -1,43 +1,49 @@
 //
 // Panel
 // --------------------------------------------------
+.b-panel-t
+  position: relative
+  top: -90px
+  padding: 30px 30px 35px 15px
+  background-color: $active-c
 
+.b-panel-t::before
+  content: ''
+  border-top: 10px solid transparent
+  border-bottom: 43px solid transparent
+  border-left: 43px solid $active-c
+  position: absolute
+  bottom: -42px
+  left: 0
 
+.b-panel-t__list li
+  font-size: 24px
+  font-family: $base-bold-font
+  line-height: 40px
+  color: #fff
 
-@media (min-width: $screen-lg)
+.b-panel-t__list li > span
+  font-size: 14px
+
+.b-panel-t__list li > a
+  font-size: 18px
+  font-family: $base-font
+  color: #fff
+  border-color: #fff
+
+.b-panel-t__list .tel a
+  border-bottom: none
+
+@media (min-width: $screen-sm)
   .b-panel-t
-    padding: 30px 30px 35px 15px
-    background-color: $active-c
+    top: -140px
+
+  .b-panel-t__list:nth-of-type(2n+1)
+    clear: both
 
   .b-panel-t__list:last-child
     float: right
 
-  .b-panel-t__list li
-    font-size: 24px
-    font-family: $base-bold-font
-    line-height: 40px
-    color: #fff
-
-  .b-panel-t__list li > span
-    font-size: 14px
-
-  .b-panel-t__list li > a
-    font-size: 18px
-    font-family: $base-font
-    color: #fff
-    border-color: #fff
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: $screen-md)
+  .b-panel-t__list:nth-of-type(2n+1)
+    clear: none

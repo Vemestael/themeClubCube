@@ -5,6 +5,7 @@
   width: 100%
 
 .c-box
+  position: relative
   margin-bottom: 27px
 
 .c-box::before
@@ -157,9 +158,11 @@
 
 .btn-pointer.btn-pointer--size
   padding: 10px
+  font-size: 14px
   line-height: 14px
 
 .c-box.c-box--size-sm
+  position: relative
   &::before
     display: none
 
@@ -197,6 +200,40 @@
   .c-box__svg-angle path
     fill: $active-sc-c
 
+.c-box-v__sm
+  max-width: 360px
+
+.c-box-v__sm::before
+  right: auto
+  left: 12px
+  width: 10px
+  height: 100%
+  background: url("../images/romb-v.png") repeat-y
+
+.c-box-v__sm .c-box__inner
+  min-height: 200px !important
+  padding: 20px !important
+  &::after
+    top: auto
+    right: auto
+    transform: rotate(270deg)
+    bottom: 5px
+    left: -15px
+
+.c-box-v__sm .c-box__date-item
+  position: static
+
+.c-box-v__sm .c-box__link-wrap
+  top: 20px
+
+.c-box-v__sm .c-box__ttl-s3
+  position: absolute
+  right: 20px
+  left: 20px
+  bottom: 15px
+  width: auto
+  margin: 0
+
 @media (min-width: $screen-xm)
   .grid-sizer
     width: 50%
@@ -222,6 +259,7 @@
 
   .btn-pointer.btn-pointer--size
     padding: 18px 20px
+    font-size: 16px
 
   .c-box__views
     bottom: 30px

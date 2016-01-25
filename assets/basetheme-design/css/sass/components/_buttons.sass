@@ -186,7 +186,6 @@
   display: inline-block
   margin-right: 15px
   font-size: 10px
-  line-height: 24px
   cursor: pointer
 
   &::before
@@ -209,6 +208,7 @@
 
 .b-likes span
   position: relative
+  display: inline-block
   padding: 4px 10px 4px 5px
   border-top: 2px solid
   border-right: 2px solid
@@ -218,18 +218,18 @@
 .b-likes span::after
   content: ''
   position: absolute
-  width: 17px
+  width: 15px
   height: 2px
   background-color: #000
 
 .b-likes span::before
-  top: 4px
-  left: -14px
+  top: 3px
+  left: -13px
   transform: rotate(-45deg)
 
 .b-likes span::after
-  left: -14px
-  bottom: 4px
+  left: -13px
+  bottom: 3px
   transform: rotate(45deg)
 
 @media (min-width: $screen-lg)
