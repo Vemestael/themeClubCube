@@ -47,6 +47,11 @@
   left: auto
   transform: rotate(90deg)
 
+.c-box__cont
+  position: relative
+  width: 65%
+  z-index: 1
+
 .c-box__ttl-s2,
 .c-box__ttl-s3
   margin: 5px 0 20px 0
@@ -55,32 +60,20 @@
   text-transform: uppercase
   color: #fff
 
-.c-box__ttl-s2
-  width: calc(100% - 102px)
-  max-width: 270px
-  float: left
-
-.c-box__ttl-s3
-  width: 65%
-
 .c-box__inner .b-box__img-wrap.bg-image
   opacity: 1
-  z-index: -1
 
 .c-box__inner .b-box__grdnt-a::after
   content: ''
   @include absolute-center()
   @include gradient-custom-direrc($deg: 145deg, $start-color: rgba(83, 13, 133, 1), $center-color: rgba(192, 200, 62, 0.45), $end-color: rgba(192, 200, 62, 0), $start-percent: 18%, $center-percent: 70%, $end-percent: 120%)
-  z-index: -1
 
 .c-box__inner .b-box__grdnt-b::after
   content: ''
   @include absolute-center()
   @include gradient-directional($start-color: #000, $end-color: rgba(0, 0, 0, 0), $deg: 145deg)
-  z-index: -1
 
 .c-box__txt
-  width: 62%
   margin: 0
   padding-top: 30px
   font-size: 18px
@@ -141,8 +134,15 @@
 .c-box.c-box--size-lg .c-box__inner
   min-height: 190px
 
+.c-box.c-box--size-lg .c-box__cont
+  width: calc(100% - 102px)
+  max-width: 270px
+  float: left
+
 .c-box__date-item.c-box__date-item--float
-  position: static
+  position: relative
+  top: auto
+  right: auto
   float: right
 
 .c-box.c-box--size-lg .hr-pattern
@@ -203,6 +203,7 @@
 .c-box-v__sm
   max-width: 360px
 
+.c-box-v::before,
 .c-box-v__sm::before
   right: auto
   left: 12px
@@ -210,6 +211,10 @@
   height: 100%
   background: url("../images/romb-v.png") repeat-y
 
+.c-box-v::before
+  left: -3px
+
+.c-box-v .c-box__inner,
 .c-box-v__sm .c-box__inner
   min-height: 200px !important
   padding: 20px !important
@@ -220,19 +225,28 @@
     bottom: 5px
     left: -15px
 
-.c-box-v__sm .c-box__date-item
-  position: static
-
-.c-box-v__sm .c-box__link-wrap
-  top: 20px
-
-.c-box-v__sm .c-box__ttl-s3
+.c-box-v .c-box__cont,
+.c-box-v__sm .c-box__cont
   position: absolute
   right: 20px
   left: 20px
   bottom: 15px
   width: auto
+
+.c-box-v .c-box__cont .c-box__ttl-s3,
+.c-box-v__sm .c-box__cont .c-box__ttl-s3
   margin: 0
+
+.c-box-v .c-box__date-item,
+.c-box-v__sm .c-box__date-item
+  position: relative
+  top: auto
+  right: auto
+  z-index: 1
+
+.c-box-v .c-box__link-wrap,
+.c-box-v__sm .c-box__link-wrap
+  top: 20px
 
 @media (min-width: $screen-xm)
   .grid-sizer
@@ -241,15 +255,7 @@
   .c-box .c-box__inner
     padding: 35px 25px
 
-  .c-box.c-box--size-lg .c-box__inner
-    min-height: 440px
-    max-width: 100%
-    margin-bottom: 30px
-
   .c-box__txt.c-box__txt--display
-    display: block
-
-  .c-box.c-box--size-lg .hr-pattern
     display: block
 
   .c-box__link-wrap.c-box__link-wrap--indent
@@ -264,10 +270,25 @@
   .c-box__views
     bottom: 30px
 
+  .c-box.c-box--size-lg .c-box__inner
+    min-height: 440px
+    max-width: 100%
+    margin-bottom: 30px
+
+  .c-box.c-box--size-lg .c-box__cont
+    width: 100%
+    max-width: 280px
+
+  .c-box.c-box--size-lg .hr-pattern
+    display: block
+
 @media (min-width: $screen-sm)
   .c-box .c-box__inner
     min-height: 330px
     //max-width: 330px
+
+  .c-box__link-wrap-a
+    padding-right: 70px
 
   .c-box__date.c-box__date--lg
     padding: 8px 20px 8px 10px
@@ -283,8 +304,15 @@
   .c-box__date.c-box__date--lg .date__rh-m
     margin-bottom: 2px
 
-  .c-box__link-wrap-a
-    padding-right: 70px
+  .c-box-v .c-box__cont
+    right: 0
+    left: 0
+    bottom: auto
+    width: 220px
+    margin: auto
+
+  .c-box-v .c-box__txt
+    padding-top: 20px
 
 @media (min-width: $screen-md)
   .grid-sizer
@@ -295,8 +323,8 @@
   .c-box.c-box.c-box--size-lg .c-box__inner
     min-height: 360px
 
-  .c-box .c-box__inner
-    max-width: 360px
+  //.c-box .c-box__inner
+  //  max-width: 360px
 
   .c-box.c-box.c-box--size-lg .c-box__inner
     max-width: 550px

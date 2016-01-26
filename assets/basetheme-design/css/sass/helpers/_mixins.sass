@@ -81,6 +81,12 @@
   margin-top: 50%
   margin-left: 50%
 
+@mixin absolute-center-x-y()
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
 // Absolute centering on Y axis
 @mixin y-center()
   transform: translateY(-50%)

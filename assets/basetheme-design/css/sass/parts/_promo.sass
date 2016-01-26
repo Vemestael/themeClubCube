@@ -4,7 +4,7 @@
 .b-promo
   padding-top: 60px
   padding-bottom: 60px
-  background-color: $blog-bg
+  background-color: $promo-bg
   text-align: center
 
 .b-promo__s2-ttl
@@ -17,6 +17,62 @@
 .b-promo p
   margin-bottom: 25px
   color: $txt-c
+
+.b-promo-sc
+  padding-top: 50px
+  padding-bottom: 50px
+  background-color: $promo-bg-sc
+
+.b-promo-sc__item
+  position: relative
+  min-height: 200px
+  margin-bottom: 30px
+  &:last-child,
+  .b-audio__item
+    margin-bottom: 0
+
+
+.b-promo-sc__inner-bg
+  @include absolute-center()
+  content: ''
+  left: 15px
+  right: 15px
+  background-color: $active-sc-c
+  z-index: -1
+
+.b-promo-sc__cont
+  @include absolute-center-x-y()
+  width: 80%
+  text-align: center
+  z-index: 1
+
+.b-promo-sc__cont .fa-bullhorn,
+.b-promo-sc__cont .fa-fire-extinguisher
+  margin-bottom: 10px
+  font-size: 36px
+  color: #fff
+
+.b-promo-sc__cont .s5-heading
+  color: #fff
+  line-height: 24px
+  text-transform: uppercase
+
+.b-promo-sc__img-wrap
+  @extend %bg-images
+  left: 15px
+  right: 15px
+
+.b-promo-sc__img-wrap.bg-image
+  opacity: 0.6
+
+.b-promo-sc__link
+  @include absolute-center
+  border-bottom: none
+  z-index: 1
+
+.b-promo-sc__item:hover .b-promo-sc__img-wrap.bg-image
+  opacity: 1
+  transition: all 0.2s ease-out
 
 @media (min-width: $screen-sm)
   .b-promo
@@ -31,6 +87,8 @@
     width: 92%
     margin: 0 auto 35px
 
+  .b-promo-sc__cont
+    width: 65%
 
 @media (min-width: $screen-lg)
   .b-promo
