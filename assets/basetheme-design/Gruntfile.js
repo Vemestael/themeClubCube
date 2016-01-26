@@ -89,7 +89,7 @@ module.exports = function (grunt) {
         files: ['jade/*.jade', 'jade/components/*', 'jade/parts/*'],
         tasks: ['jade'],
       },
-      files: ['css/sass/*.sass', 'css/sass/base/*', 'css/sass/components/*', 'css/sass/fonts/*', 'css/sass/helpers/*', 'css/sass/layout/*', 'css/sass/parts/*', 'css/sass/theme/*', 'css/sass/vendors/*'],
+      files: ['css/sass/*.sass', 'css/sass/base/*', 'css/sass/components/*', 'css/sass/fonts/*', 'css/sass/helpers/*', 'css/sass/layout/*', 'css/sass/parts/*', 'css/sass/theme/*', 'css/sass/vendors/*/*'],
       tasks: ['sass', 'postcss'],
     }
   });

@@ -2,25 +2,55 @@
 // Gallery
 // --------------------------------------------------
 .b-gallery
+  position: relative
   padding-top: 30px
   padding-bottom: 40px
   background-color: $gallery-bg
   color: #fff
 
 .b-gallery__img-wrap
+  @extend %bg-images
   display: none
+
+.b-gallery__slide
+  width: 100%
+  float: left
+
+.b-gallery .c-box--size-sm
+  padding-right: 15px
+  padding-left: 15px
+
+.b-gallery .c-box.c-box--size-sm .c-box__inner
+  min-height: 190px
 
 .b-gallery .c-box__link
   color: #fff
 
+.b-gallery .slick-prev,
+.b-gallery .slick-next
+  top: -40px
+
+.b-gallery .slick-prev
+  left: auto
+  right: 63px
+
+.b-gallery .slick-next
+  right: 15px
+
 @media (min-width: $screen-sm)
   .b-gallery__img-wrap
     display: block
+    opacity: 0.33
+    -webkit-filter: blur(6px)
+    filter: blur(6px)
+
+  .b-gallery .c-box.c-box--size-sm .c-box__inner
+    min-height: 220px
 
 
-
-
-
+@media (min-width: $screen-md)
+  .b-gallery .c-box.c-box--size-sm .c-box__inner
+    min-height: 170px
 
 
 
