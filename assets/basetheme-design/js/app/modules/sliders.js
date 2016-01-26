@@ -4,6 +4,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
     var _sliders = this,
         _defaults = {
             slGallery: $('#sliderGallery'),
+            slPartners: $('#sliderPartners'),
             // elements
             // prop
             // data
@@ -12,6 +13,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         _properties = $.extend(_defaults, properties),
         _globals = {
             slGallery: null,
+            slPartners: null,
             // elements
 
             // prop
@@ -35,10 +37,12 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
 
         _config = function () {
             _globals.slGallery = $(_properties.slGallery);
+            _globals.slPartners = $(_properties.slPartners);
         },
 
         _setup = function () {
             _initSlGallery();
+            _initPartners();
         },
 
         _setBinds = function () {
@@ -80,6 +84,43 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        },
+
+        _initPartners = function () {
+            _globals.slPartners.slick({
+                dots: false,
+                infinite: false,
+                speed: 400,
+                centerPadding: 30,
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
                         }
                     }
                     // You can unslick at a given breakpoint now by adding:
