@@ -5,6 +5,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         _defaults = {
             slGallery: $('#sliderGallery'),
             slPartners: $('#sliderPartners'),
+            slAdvert: $('#sliderAdvert'),
             // elements
             // prop
             // data
@@ -14,6 +15,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         _globals = {
             slGallery: null,
             slPartners: null,
+            slAdvert: null,
             // elements
 
             // prop
@@ -38,11 +40,13 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         _config = function () {
             _globals.slGallery = $(_properties.slGallery);
             _globals.slPartners = $(_properties.slPartners);
+            _globals.slAdvert = $(_properties.slAdvert);
         },
 
         _setup = function () {
             _initSlGallery();
             _initPartners();
+            _initAdvert();
         },
 
         _setBinds = function () {
@@ -60,7 +64,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _globals.slGallery.slick({
                 dots: false,
                 infinite: false,
-                speed: 400,
+                speed: 450,
                 centerPadding: 30,
                 slidesToShow: 4,
                 slidesToScroll: 2,
@@ -97,7 +101,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _globals.slPartners.slick({
                 dots: false,
                 infinite: false,
-                speed: 400,
+                speed: 450,
                 centerPadding: 30,
                 slidesToShow: 6,
                 slidesToScroll: 3,
@@ -128,6 +132,12 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                     // instead of a settings object
                 ]
             });
+        },
+
+        _initAdvert = function () {
+            _globals.slAdvert.slick({
+                fade: true
+            })
         },
 
         _setCustomMethods = function () {

@@ -59,35 +59,41 @@
 .btn-icon--refresh
   background-image: url('../images/refresh-icon.svg')
 
-.date
+.date,
+.date-lg
   display: inline-block
   padding: 5px 6px
   border: 2px solid #000
   font-family: $second-bold-font
 
-.date__dt
+.date__dt,
+.date-lg__dt
   display: block
   float: left
   padding-right: 8px
   font-size: 36px
   line-height: 38px
 
-.date__rh
+.date__rh,
+.date-lg__rh
   display: block
   float: right
 
-.date__rh-m
+.date__rh-m,
+.date-lg__rh-m
   display: block
   margin-top: 4px
   font-size: 14px
   text-transform: uppercase
   font-weight: bold
 
-.date__rh-d
+.date__rh-d,
+.date-lg__rh-d
   font-size: 12px
   font-family: $second-font
 
-.date__ad
+.date__ad,
+.date-lg__rh-t
   display: block
   margin: 0 -6px -5px -6px
   padding: 4px 8px 2px
@@ -98,61 +104,24 @@
   clear: both
 
 .date-lg
-  display: inline-block
-  width: 290px
-  padding: 11px 10px
-  border: 8px solid #fff
-  font-family: $second-bold-font
-  color: #fff
-
-.date-lg__dt
   position: relative
-  display: block
-  float: left
-  padding-right: 15px
-  padding-bottom: 6px
-  font-size: 48px
-
-.date-lg__dt::after
-  content: ''
-  position: absolute
-  width: 8px
-  top: -11px
-  right: 0
-  bottom: 0
-  background-color: #fff
-
-.date-lg__rh
-  display: block
-  float: left
-  padding-left: 10px
+  border-color: #fff
 
 .date-lg__rh-m
-  @extend .date__rh-m
-  margin-top: 2px
+  width: 60px
+  padding: 0
+  font-size: 10px
 
-.date-lg__rh-d,
+.date-lg__rh-d
+  font-size: 10px
+
 .date-lg__rh-t
-  display: block
-  margin-top: 2px
-  font-size: 12px
-
-.date-lg__ad
-  position: relative
-  display: block
-  padding: 25px 0 10px
-  font-size: 48px
-  text-align: center
-  clear: both
-
-.date-lg__ad::before
-  content: ''
   position: absolute
-  top: 0
-  left: -10px
-  right: -10px
-  height: 8px
-  background-color: #fff
+  left: 4px
+  right: 4px
+  bottom: -17px
+  color: #000
+  background: #fff
 
 .date-sm
   @extend .date
@@ -195,7 +164,9 @@
   line-height: 56px
   text-align: center
 
-.btn-pointer
+.btn-pointer,
+.btn-info
+  position: relative
   min-height: 50px
   margin: 0
   padding: 17px 20px
@@ -203,6 +174,40 @@
   color: white
   background-color: $active-c
   border: none
+  overflow: visible
+
+.btn-pointer svg,
+.btn-info svg
+  position: absolute
+  top: 0
+  left: -5px
+
+  path
+    fill: $active-c
+
+.btn-info
+  min-height: 40px
+  padding: 0
+  background-color: transparent
+
+.btn-info span:nth-of-type(2)
+  position: relative
+  display: inline-block
+  margin-left: 20px
+  padding: 12px 20px
+  background-color: $active-c
+
+.btn-info svg
+  left: -5px
+
+.btn-info span:nth-of-type(1)
+  font-style: italic
+
+.btn-info:hover
+  background-color: transparent
+
+.btn-info:hover span:nth-of-type(2)
+  color: $active-sc-c
 
 .b-likes
   padding: 0
@@ -257,6 +262,13 @@
   bottom: 3px
   transform: rotate(45deg)
 
+.b-likes--wht span
+  border-color: $white-light-c
+
+.b-likes--wht span::before,
+.b-likes--wht span::after
+  background-color: $white-light-c
+
 .btn-pointer-b
   position: relative
   display: inline-block
@@ -281,12 +293,15 @@
 .btn-pointer-b .right
   right: -5px
 
-
 .btn-pointer-b:hover,
 .btn-pointer-b:hover .left path,
 .btn-pointer-b:hover .right path
   background-color: $active-sc-c
   fill: $active-sc-c
+
+.btn-pointer--lg
+  min-height: 40px
+  padding: 12px 20px
 
 //Slick buttons
 .slick-prev,
@@ -321,6 +336,83 @@
 .btn-black .slick-prev.slick-disabled,
 .btn-black .slick-next.slick-disabled
   border-color: rgba(0, 0, 0, 0.25)
+
+@media (min-width: $screen-sm)
+  .date-lg
+    display: inline-block
+    width: 290px
+    padding: 11px 10px
+    border: 8px solid
+    font-family: $second-bold-font
+    color: #fff
+
+  .date-lg__dt
+    position: relative
+    display: block
+    float: left
+    padding-right: 15px
+    padding-bottom: 6px
+    font-size: 48px
+    line-height: 1
+
+  .date-lg__dt::after
+    content: ''
+    position: absolute
+    width: 8px
+    top: -11px
+    right: 0
+    bottom: 0
+    background-color: #fff
+
+  .date-lg__rh
+    display: block
+    float: left
+    padding-left: 10px
+
+  .date-lg__rh-m
+    width: 100%
+    margin-top: 2px
+    padding-right: 8px
+
+  .date-lg__rh-d,
+  .date-lg__rh-t
+    display: block
+    margin-top: 2px
+    font-size: 12px
+
+  .date-lg__rh-t
+    position: static
+    color: #fff
+    background: transparent
+
+  .date-lg__ad
+    position: relative
+    display: block
+    padding: 25px 0 10px
+    font-size: 48px
+    text-align: center
+    clear: both
+
+  .date-lg__ad::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -10px
+    right: -10px
+    height: 8px
+    background-color: #fff
+
+  .btn-pointer--lg
+    min-height: 50px
+    padding: 14px 36px
+    font-size: 22px
+
+  .btn-info
+    min-height: 50px
+    font-size: 22px
+
+  .btn-info span:nth-of-type(2)
+    padding: 14px 30px
 
 @media (min-width: $screen-lg)
   .date-lg__dt,
