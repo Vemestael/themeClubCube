@@ -4,7 +4,7 @@
 .b-gallery
   position: relative
   padding-top: 30px
-  padding-bottom: 40px
+  padding-bottom: 24px
   background-color: $gallery-bg
   color: #fff
 
@@ -15,8 +15,10 @@
 .b-gallery__slider
   width: 100%
   float: left
+  margin-bottom: 0
 
 .b-gallery .c-box--size-sm
+  margin-bottom: 0
   padding-right: 15px
   padding-left: 15px
 
@@ -38,6 +40,10 @@
   right: 15px
 
 @media (min-width: $screen-sm)
+  .b-gallery
+    padding-top: 94px
+    padding-bottom: 82px
+
   .b-gallery__img-wrap
     display: block
     opacity: 0.33
@@ -49,8 +55,13 @@
 
 
 @media (min-width: $screen-md)
+  .b-gallery
+    padding-bottom: 65px
+
   .b-gallery .c-box.c-box--size-sm .c-box__inner
     min-height: 170px
+
+@media (min-width: $screen-lg)
 
 
 

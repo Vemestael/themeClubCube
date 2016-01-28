@@ -2526,6 +2526,7 @@
 
 @media (min-width: 768px) {
   .header--toggled .navbar-toogle {
+    width: 140px;
     margin-right: -40px;
     padding: 20px 40px;
   }

@@ -6,7 +6,7 @@
 
 .c-box
   position: relative
-  margin-bottom: 27px
+  margin-bottom: 30px
 
 .c-box::before
   content: ''
@@ -23,7 +23,7 @@
 .c-box__inner
   position: relative
   min-height: 290px
-  padding: 20px
+  padding: 23px
   cursor: pointer
 
 .c-box__inner::before,
@@ -55,11 +55,14 @@
 
 .c-box__ttl-s2,
 .c-box__ttl-s3
-  margin: 5px 0 20px 0
+  margin: 10px 0 14px
   font-size: 24px
   font-family: $second-bold-font
   text-transform: uppercase
   color: #fff
+
+.c-box__ttl-s2
+  margin: 0 0 14px
 
 .c-box__inner .b-box__img-wrap.bg-image
   opacity: 1
@@ -85,7 +88,7 @@
 
 .c-box__date-item
   position: absolute
-  top: 20px
+  top: 26px
   right: -2px
 
 .c-box__date
@@ -104,14 +107,14 @@
 
 .c-box__views
   position: absolute
-  bottom: 20px
+  bottom: 15px
   padding: 0
   font-family: $second-bold-font
   color: #fff
 
 .c-box__views > li
   display: inline-block
-  margin-right: 15px
+  margin-right: 10px
 
 .c-box__view::before,
 .c-box__video::before
@@ -126,6 +129,7 @@
 
 .c-box.c-box--size-lg .c-box__inner
   min-height: 190px
+  padding: 20px
 
 .c-box.c-box--size-lg .c-box__cont
   width: calc(100% - 102px)
@@ -145,14 +149,11 @@
   display: none
 
 .c-box__link-wrap.c-box__link-wrap--indent
-  width: 41%
-  bottom: 10px
+  bottom: 12px
   right: 20px
-
-.btn-pointer.btn-pointer--size
-  padding: 10px
-  font-size: 14px
-  line-height: 14px
+  width: 40%
+  padding-left: 5px
+  overflow: hidden
 
 .c-box.c-box--size-sm
   position: relative
@@ -255,6 +256,7 @@
     width: auto
     bottom: 20px
     right: 25px
+    overflow: visible
 
   .btn-pointer.btn-pointer--size
     padding: 18px 20px
@@ -264,9 +266,8 @@
     bottom: 30px
 
   .c-box.c-box--size-lg .c-box__inner
-    min-height: 440px
+    min-height: 446px
     max-width: 100%
-    margin-bottom: 30px
 
   .c-box.c-box--size-lg .c-box__cont
     width: 100%
@@ -275,10 +276,21 @@
   .c-box.c-box--size-lg .hr-pattern
     display: block
 
+  .c-box.c-box--size-lg .c-box__view::before,
+  .c-box.c-box--size-lg .c-box__video::before
+    font-size: 24px
+
 @media (min-width: $screen-sm)
   .c-box .c-box__inner
     min-height: 330px
     //max-width: 330px
+
+  .c-box__ttl-s2
+    margin-top: 14px
+    font-size: 30px
+
+  .c-box__ttl-s3
+    margin-top: 0
 
   .c-box__link-wrap-a
     padding-right: 70px
@@ -296,6 +308,9 @@
 
   .c-box__date.c-box__date--lg .date__rh-m
     margin-bottom: 2px
+
+  .c-box__views > li
+    margin-right: 22px
 
   .c-box-v .c-box__cont
     right: 0

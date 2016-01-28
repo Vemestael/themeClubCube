@@ -136,7 +136,12 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
 
         _initAdvert = function () {
             _globals.slAdvert.slick({
-                fade: true
+                accessibility: false, //don't jumping the scroll in chrome!!!
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
             })
         },
 
