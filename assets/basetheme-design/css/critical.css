@@ -1887,6 +1887,14 @@ section {
   padding-top: 50px;
 }
 
+.wrap.wrap--boxed {
+  width: 1280px;
+  margin: auto;
+  background: white;
+  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
 .b-content {
   padding-top: 50px;
   padding-bottom: 60px;
@@ -2784,6 +2792,13 @@ blockquote::before {
     display: block;
     padding: 33px 17px;
   }
+
+  .header.header--boxed {
+    right: auto;
+    left: auto;
+    width: 100%;
+    max-width: 1280px;
+  }
 }
 @media (min-width: 1570px) {
   .header .line {
@@ -3021,6 +3036,12 @@ blockquote::before {
   margin-bottom: 0;
 }
 
+.b-advert__btn-item {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
 .b-advert .slick-next {
   width: 55px;
   height: 50px;
@@ -3028,6 +3049,7 @@ blockquote::before {
   top: 40px;
   background-color: #fff;
   color: #000;
+  z-index: 2;
 }
 
 .b-advert .slick-next::before {
@@ -3174,9 +3196,12 @@ blockquote::before {
     right: -8px;
   }
 
+  .b-advert__btn-item {
+    width: 688px;
+  }
+
   .b-advert .slick-next {
     top: 55px;
-    right: 40px;
   }
 
   .b-advert .slick-next {
@@ -3248,8 +3273,17 @@ blockquote::before {
     min-height: 425px;
   }
 
+  .b-advert__btn-item {
+    width: 908px;
+  }
+
   .b-advert .slick-next {
     top: 70px;
+  }
+}
+@media (min-width: 1280px) {
+  .b-advert__btn-item {
+    width: 990px;
   }
 }
 .b-tabs .s6-heading {
@@ -3652,7 +3686,8 @@ blockquote::before {
 }
 .b-partners {
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 38px;
+  background-color: #fff;
 }
 
 .b-partners .b-item__header {
@@ -3716,7 +3751,7 @@ blockquote::before {
 @media (min-width: 768px) {
   .b-partners {
     padding-top: 90px;
-    padding-bottom: 60px;
+    padding-bottom: 88px;
   }
 }
 .b-msg {
@@ -4418,13 +4453,14 @@ blockquote::before {
 .b-promo-sc {
   padding-top: 50px;
   padding-bottom: 46px;
-  background-color: rgba(143, 143, 143, 0.1);
+  background-color: #e8e8e8;
 }
 
 .b-promo-sc__item {
   position: relative;
   min-height: 200px;
   margin-bottom: 30px;
+  z-index: 1;
 }
 .b-promo-sc__item:last-child,
 .b-promo-sc__item .b-audio__item {
@@ -4540,6 +4576,11 @@ blockquote::before {
     width: 80%;
   }
 }
+.b-events,
+.b-past-evnt {
+  background-color: #fff;
+}
+
 .b-events {
   padding-top: 50px;
   padding-bottom: 13px;
@@ -4576,7 +4617,6 @@ blockquote::before {
   }
 }
 .b-footer {
-  margin-top: 28px;
   padding-top: 65px;
   padding-bottom: 110px;
   background-color: #202020;

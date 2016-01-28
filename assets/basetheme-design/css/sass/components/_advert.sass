@@ -85,8 +85,14 @@
   top: 75px
   right: 15px
 
+
 .b-advert__slider.slick-slider
   margin-bottom: 0
+
+.b-advert__btn-item
+  position: relative
+  width: 100%
+  margin: auto
 
 .b-advert .slick-next
   width: 55px
@@ -95,6 +101,7 @@
   top: 40px
   background-color: #fff
   color: #000
+  z-index: 2
 
 .b-advert .slick-next::before
   content: ''
@@ -205,9 +212,11 @@
     top: 25px
     right: -8px
 
+  .b-advert__btn-item
+    width: 688px
+
   .b-advert .slick-next
     top: 55px
-    right: 40px
 
   .b-advert .slick-next
     width: 58px
@@ -267,11 +276,15 @@
   .b-advert__item-b .b-advert__item-inr
     min-height: 425px
 
+  .b-advert__btn-item
+    width: 908px
+
   .b-advert .slick-next
     top: 70px
 
-
-
+@media (min-width: $screen-lg)
+  .b-advert__btn-item
+    width: 990px
 
 
 

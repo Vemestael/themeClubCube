@@ -63,6 +63,7 @@ module.exports = function (grunt) {
       pretty: {
         files: {
           'index.html': ['jade/index.jade'],
+          'index-boxed.html': ['jade/index-boxed.jade'],
           'footer2.html': ['jade/footer2.jade'],
           'footer3.html': ['jade/footer3.jade'],
           'footer4.html': ['jade/footer4.jade'],

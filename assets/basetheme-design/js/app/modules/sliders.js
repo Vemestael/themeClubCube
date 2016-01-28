@@ -47,6 +47,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _initSlGallery();
             _initPartners();
             _initAdvert();
+            //_setBtnPos();
         },
 
         _setBinds = function () {
@@ -140,9 +141,27 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 dots: false,
                 infinite: true,
                 speed: 500,
+                appendArrows: $('.b-advert__btn-item'),
                 fade: true,
-                cssEase: 'linear'
+                cssEase: 'linear',
+                //autoplay: true,
+                autoplaySpeed: 5000,
             })
+        },
+
+        _setBtnPos = function () {
+            //var posDivParent = $('.navbar-header').position();
+            //var leftPosBtn = posDivParent.left + $('.navbar-list').width();
+            //$document.ready(function () {
+            //    $('.b-advert .slick-next').offset({top: 100, left: leftPosBtn})
+            //})
+
+            //if (_globals.slAdvert.length) {
+            //   var $rightOffsetBl = $('.b-advert__item-a .container').offset();
+            //    $('.b-advert .slick-next').offset({top: $rightOffsetBl.top, left: 'auto'})
+            //    console.log(Math.round($rightOffsetBl.left))
+            //}
+
         },
 
         _setCustomMethods = function () {
