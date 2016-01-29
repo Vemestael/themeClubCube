@@ -16,64 +16,32 @@
   width: 35px
   height: 35px
   box-shadow: 0 0 0 2px $tab-bg inset
+  transition: all 0.2s ease
 
 .b-tabs__nav-tabs li.active,
 .b-tabs__nav-tabs li:nth-of-type(2)
   background-color: $tab-bg
 
-.b-tabs__nav-tabs li.active:nth-of-type(1)::before,
-.b-tabs__nav-tabs li.active:nth-of-type(1)::after,
-.b-tabs__nav-tabs li:nth-of-type(2)::after
-  content: ''
-  position: absolute
-  background-color: $tab-bg
-
-.b-tabs__nav-tabs li:nth-of-type(1)::before,
-.b-tabs__nav-tabs li:nth-of-type(1)::after
-  content: ''
-  position: absolute
-  background-color: #fff
-
-.b-tabs__nav-tabs li:nth-of-type(1)::before
-  top: 49%
-  right: 35%
-  left: 35%
-  height: 2px
-  z-index: 1
-
-.b-tabs__nav-tabs li:nth-of-type(1)::after
-  width: 2px
-  top: 35%
-  bottom: 35%
-  left: 48%
-
-.b-tabs__nav-tabs li:nth-of-type(2)::after
-  top: 49%
-  right: 35%
-  left: 35%
-  height: 2px
-
 .b-tabs__nav-tabs li a
   display: inline-block
   width: 35px
   height: 35px
+  padding: 10px
   border-bottom: none
 
-.b-tabs__nav-tabs li a::after
-  @include x-y-center()
-  content: ''
-  position: absolute
-  width: 10px
-  height: 10px
-
-.b-tabs__nav-tabs li:nth-of-type(1) a::after
-  background-color: $tab-bg
-
-.b-tabs__nav-tabs li:nth-of-type(2) a::after
-  background-color: $black-c
+.b-tabs__nav-tabs li.active:nth-of-type(1) a path,
+.b-tabs__nav-tabs li.active:nth-of-type(2) a path
+  fill: #fff
 
 .b-tabs__nav-tabs li.active a::after
   background-color: #fff
+
+.b-tabs__nav-tabs li:nth-of-type(1) a path
+  fill: $black-c
+  transition: all 0.2s ease
+
+.b-tabs__nav-tabs li:nth-of-type(2) a path
+  transition: all 0.2s ease
 
 .b-tabs__content
   margin-top: 26px
@@ -95,6 +63,14 @@
 .fade
   opacity: 0
   transition: opacity .15s linear
+
+.b-tabs__nav-tabs li:hover
+  background-color: rgba(15, 8, 9, 0.9)
+  box-shadow: 0 0 0 2px rgba(15, 8, 9, 0.9) inset
+
+.b-tabs__nav-tabs li:nth-of-type(1):hover a path,
+.b-tabs__nav-tabs li:nth-of-type(2):hover a path
+  fill: #fff
 
 @media (min-width: $screen-sm)
   .b-tabs__content

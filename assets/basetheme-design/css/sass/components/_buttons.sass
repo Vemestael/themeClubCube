@@ -15,6 +15,7 @@
   text-transform: uppercase
   overflow: hidden
   cursor: pointer
+  transition: all 0.2s ease
 
 .btn:hover
   color: #fff
@@ -184,6 +185,10 @@
 
   path
     fill: $active-c
+    transition: all 0.2s ease
+
+.btn-pointer
+  padding: 17px 42px 17px 14px
 
 .btn-pointer.btn-pointer--size
   min-height: 40px
@@ -191,10 +196,40 @@
   font-size: 14px
   line-height: 14px
 
+.btn-pointer__txt
+  width: 100%
+  display: inline-block
+  transform: translate3d(0, 0, 0)
+  transition: all 0.2s ease
+
+.btn-pointer__txt::after
+  content: ''
+  position: absolute
+  top: 3px
+  right: -25px
+  width: 20px
+  height: 12px
+  background-image: url("../images/arrow-left.svg")
+
+.btn-pointer:hover .btn-pointer__txt
+  transform: translate3d(50%, 0, 0)
+
+.btn-pointer:hover .btn-pointer__txt::after
+  right: auto
+  left: -27px
+  transition: all 0.2s ease
+
 .btn-info
   min-height: 40px
   padding: 0
   background-color: transparent
+
+.btn-info b
+  width: 100%
+  display: inline-block
+  line-height: 12px
+  transform: translate3d(0,0,0)
+  transition: transform 1s ease
 
 .btn-info span:nth-of-type(2)
   position: relative
@@ -202,6 +237,7 @@
   margin-left: 20px
   padding: 12px 20px
   background-color: $active-c
+  transition: color 0.2s ease
 
 .btn-info svg
   left: -5px
@@ -214,6 +250,9 @@
 
 .btn-info:hover span:nth-of-type(2)
   color: $active-sc-c
+
+.btn-info:hover b
+  transform: translate3d(-7%,0,0)
 
 .b-likes
   padding: 0
@@ -270,10 +309,19 @@
 
 .b-likes--wht span
   border-color: $white-light-c
+  transition: all 0.2s ease
 
 .b-likes--wht span::before,
 .b-likes--wht span::after
   background-color: $white-light-c
+  transition: all 0.2s ease
+
+.b-likes--wht li:hover  span
+  border-color: $white-c
+
+.b-likes--wht li:hover span::before,
+.b-likes--wht li:hover span::after
+  background-color: $white-c
 
 .btn-pointer-b
   position: relative
@@ -285,6 +333,7 @@
   color: #fff
   text-transform: uppercase
   border-bottom: none
+  transition: all 0.2s ease
 
 .btn-pointer-b .left,
 .btn-pointer-b .right
@@ -293,6 +342,7 @@
   height: 50px
   & path
     fill: $active-c
+    transition: all 0.2s ease
 
 .btn-pointer-b .left
   left: -5px

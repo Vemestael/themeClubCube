@@ -13,13 +13,17 @@
   padding: 20px
   color: $active-c
   box-shadow: 0 0 0 2px $active-c inset
-  cursor: pointer
 
-.b-box.b-box--clr-a
+.b-box:hover
+  color: $active-sc-c
+  box-shadow: 0 0 0 2px $active-sc-c inset
+  transition: all 0.2s ease-out
+
+.b-box--clr-a
   color: #fff
   background-color: $active-c
 
-.b-box.b-box--clr-b
+.b-box--clr-b
   color: #fff
   background-color: $black-c
   box-shadow: none
@@ -54,8 +58,15 @@
   @include absolute-center()
   border-bottom: none
 
-.b-box:hover .b-box__img-wrap.bg-image
-  opacity: 1
+.b-box--clr-a:hover
+  color: #fff
+  background-color: $b-box-c-a
+  box-shadow: none
+  transition: all 0.2s ease-out
+
+.b-box--clr-b:hover
+  color: #fff
+  background-color: $b-box-c-b
   transition: all 0.2s ease-out
 
 .b-box__btn-wrap
