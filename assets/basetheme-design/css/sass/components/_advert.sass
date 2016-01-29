@@ -49,17 +49,22 @@
   padding-left: 5px
   overflow: hidden
 
-.b-advert .btn-pointer
+.b-advert .btn-pointer__wrap .btn-pointer
   color: $active-sc-c
+  line-height: 40px
   background-color: #fff
-  svg > path
-    fill: #fff
+  transition: all 0.2s ease
 
-.b-advert .btn-pointer:hover
+.b-advert .btn-pointer__left path
+  fill: #fff
+  transition: all 0.2s ease
+
+.b-advert .btn-pointer__wrap:hover .btn-pointer
   color: #fff
   background-color: $active-c
-  svg > path
-    fill: $active-c
+
+.b-advert .btn-pointer__wrap:hover .btn-pointer__left path
+  fill: $active-c
 
 //Second block
 .b-advert__item-b::after
@@ -84,7 +89,6 @@
   position: absolute
   top: 75px
   right: 15px
-
 
 .b-advert__slider.slick-slider
   margin-bottom: 0
@@ -180,6 +184,9 @@
     display: block
     bottom: 65px
     left: 50px
+
+  .b-advert .btn-pointer__wrap .btn-pointer
+    line-height: 50px
 
   //Second block
   .b-advert__item-b::after

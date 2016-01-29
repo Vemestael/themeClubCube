@@ -3,7 +3,7 @@
 // --------------------------------------------------
 .btn
   display: inline-block
-  min-height: 46px
+  min-height: 50px
   border: 2px solid #000
   margin: 5px
   padding: 12px 20px
@@ -171,19 +171,16 @@
   line-height: 56px
   text-align: center
 
-.btn-pointer,
 .btn-info
   position: relative
   min-height: 50px
   margin: 0
-  padding: 17px 20px
   font-size: 16px
   color: white
   background-color: $active-c
   border: none
   overflow: visible
 
-.btn-pointer svg,
 .btn-info svg
   position: absolute
   top: 0
@@ -193,14 +190,33 @@
     fill: $active-c
     transition: all 0.2s ease
 
+.btn-pointer__wrap
+  position: relative
+  display: inline-block
+
 .btn-pointer
-  padding: 17px 42px 17px 14px
+  margin: 0
+  padding: 0 40px 0 15px
+  font-size: 16px
+  color: white
+  line-height: 50px
+  background-color: $active-c
+  border: none
+  overflow: visible
 
 .btn-pointer.btn-pointer--size
   min-height: 40px
   padding: 6px 10px
   font-size: 14px
   line-height: 14px
+
+.btn-pointer__left
+  position: absolute
+  top: 0
+  left: -5px
+  & path
+    fill: $active-c
+    transition: all 0.2s ease
 
 .btn-pointer__txt
   width: 100%
@@ -211,23 +227,29 @@
 .btn-pointer__txt::after
   content: ''
   position: absolute
-  top: 3px
+  top: 50%
   right: -25px
   width: 20px
   height: 12px
   background-image: url("../images/arrow-left.svg")
+  transform: translateY(-50%)
 
-.btn-pointer:hover .btn-pointer__txt
+.btn-pointer__wrap:hover .btn-pointer
+  background-color: $active-sc-c
+
+.btn-pointer__wrap:hover .btn-pointer__txt
   transform: translate3d(50%, 0, 0)
 
-.btn-pointer:hover .btn-pointer__txt::after
+.btn-pointer__wrap:hover .btn-pointer__txt::after
   right: auto
   left: -27px
   transition: all 0.2s ease
 
+.btn-pointer__wrap:hover .btn-pointer__left path
+  fill: $active-sc-c
+
 .btn-info
   min-height: 40px
-  padding: 0
   background-color: transparent
 
 .btn-info b
@@ -235,7 +257,7 @@
   display: inline-block
   line-height: 12px
   transform: translate3d(0,0,0)
-  transition: transform 1s ease
+  transition: transform 0.2s ease
 
 .btn-info span:nth-of-type(2)
   position: relative
@@ -258,7 +280,7 @@
   color: $active-sc-c
 
 .btn-info:hover b
-  transform: translate3d(-7%,0,0)
+  transform: translate3d(7%,0,0)
 
 .b-likes
   padding: 0
@@ -329,42 +351,49 @@
 .b-likes--wht li:hover span::after
   background-color: $white-c
 
+.btn-pointer-b__wrap
+  position: relative
+  display: inline-block
+
 .btn-pointer-b
   position: relative
   display: inline-block
-  padding: 18px 16px 13px
+  padding: 0 20px
   background-color: $active-c
   font-size: 18px
-  font-family: $base-bold-font
+  font-family: $base-font
+  font-weight: bold
+  line-height: 49px
   color: #fff
   text-transform: uppercase
   border-bottom: none
   transition: all 0.2s ease
 
-.btn-pointer-b .left,
-.btn-pointer-b .right
+.btn-pointer-b__wrap .left,
+.btn-pointer-b__wrap .right
   position: absolute
   top: 0
   height: 50px
   & path
     fill: $active-c
-    transition: all 0.2s ease
+    transition: fill 0.2s
 
-.btn-pointer-b .left
-  left: -5px
+.btn-pointer-b__wrap .left
+  left: -4px
 
-.btn-pointer-b .right
-  right: -5px
+.btn-pointer-b__wrap .right
+  right: -4px
 
-.btn-pointer-b:hover,
-.btn-pointer-b:hover .left path,
-.btn-pointer-b:hover .right path
+.btn-pointer-b__wrap:hover .btn-pointer-b
   background-color: $active-sc-c
+
+.btn-pointer-b__wrap:hover .left path,
+.btn-pointer-b__wrap:hover .right path
   fill: $active-sc-c
 
 .btn-pointer--lg
   min-height: 40px
-  padding: 12px 20px
+  padding: 0 20px
 
 //Slick buttons
 .slick-prev,
@@ -467,7 +496,7 @@
 
   .btn-pointer--lg
     min-height: 50px
-    padding: 14px 36px
+    padding: 0 36px
     font-size: 22px
 
   .btn-info
@@ -478,7 +507,6 @@
     padding: 14px 30px
 
   .btn-pointer-b
-    padding: 17px 16px 10px
     font-size: 22px
 
 @media (min-width: $screen-lg)

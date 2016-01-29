@@ -1887,14 +1887,6 @@ section {
   padding-top: 50px;
 }
 
-.wrap.wrap--boxed {
-  width: 1280px;
-  margin: auto;
-  background: white;
-  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
-}
-
 .b-content {
   padding-top: 50px;
   padding-bottom: 60px;
@@ -1941,6 +1933,15 @@ section {
   .line {
     padding-right: 40px;
     padding-left: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .wrap.wrap--boxed {
+    width: 1280px;
+    margin: auto;
+    background: white;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   }
 }
 html {
@@ -2055,7 +2056,7 @@ italic {
 .b,
 b,
 strong {
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans Caption Bold", sans-serif;
   font-weight: normal;
   line-height: 24px;
 }
@@ -2065,9 +2066,6 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #c0d23e;
   word-break: break-all;
-}
-
-.link {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -2174,7 +2172,7 @@ blockquote::before {
 }
 .btn {
   display: inline-block;
-  min-height: 46px;
+  min-height: 50px;
   border: 2px solid #000;
   margin: 5px;
   padding: 12px 20px;
@@ -2367,12 +2365,10 @@ blockquote::before {
   text-align: center;
 }
 
-.btn-pointer,
 .btn-info {
   position: relative;
   min-height: 50px;
   margin: 0;
-  padding: 17px 20px;
   font-size: 16px;
   color: white;
   background-color: #c0d23e;
@@ -2380,13 +2376,11 @@ blockquote::before {
   overflow: visible;
 }
 
-.btn-pointer svg,
 .btn-info svg {
   position: absolute;
   top: 0;
   left: -5px;
 }
-.btn-pointer svg path,
 .btn-info svg path {
   fill: #c0d23e;
   -webkit-transition: all 0.2s ease;
@@ -2394,8 +2388,20 @@ blockquote::before {
   transition: all 0.2s ease;
 }
 
+.btn-pointer__wrap {
+  position: relative;
+  display: inline-block;
+}
+
 .btn-pointer {
-  padding: 17px 42px 17px 14px;
+  margin: 0;
+  padding: 0 40px 0 15px;
+  font-size: 16px;
+  color: white;
+  line-height: 50px;
+  background-color: #c0d23e;
+  border: none;
+  overflow: visible;
 }
 
 .btn-pointer.btn-pointer--size {
@@ -2403,6 +2409,18 @@ blockquote::before {
   padding: 6px 10px;
   font-size: 14px;
   line-height: 14px;
+}
+
+.btn-pointer__left {
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+.btn-pointer__left path {
+  fill: #c0d23e;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-pointer__txt {
@@ -2418,19 +2436,27 @@ blockquote::before {
 .btn-pointer__txt::after {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 50%;
   right: -25px;
   width: 20px;
   height: 12px;
   background-image: url("../images/arrow-left.svg");
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.btn-pointer:hover .btn-pointer__txt {
+.btn-pointer__wrap:hover .btn-pointer {
+  background-color: #530d85;
+}
+
+.btn-pointer__wrap:hover .btn-pointer__txt {
   -webkit-transform: translate3d(50%, 0, 0);
           transform: translate3d(50%, 0, 0);
 }
 
-.btn-pointer:hover .btn-pointer__txt::after {
+.btn-pointer__wrap:hover .btn-pointer__txt::after {
   right: auto;
   left: -27px;
   -webkit-transition: all 0.2s ease;
@@ -2438,9 +2464,12 @@ blockquote::before {
   transition: all 0.2s ease;
 }
 
+.btn-pointer__wrap:hover .btn-pointer__left path {
+  fill: #530d85;
+}
+
 .btn-info {
   min-height: 40px;
-  padding: 0;
   background-color: transparent;
 }
 
@@ -2450,11 +2479,11 @@ blockquote::before {
   line-height: 12px;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  -o-transition: transform 1s ease, -o-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease, -o-transform 1s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  -o-transition: transform 0.2s ease, -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease, -o-transform 0.2s ease;
 }
 
 .btn-info span:nth-of-type(2) {
@@ -2485,8 +2514,8 @@ blockquote::before {
 }
 
 .btn-info:hover b {
-  -webkit-transform: translate3d(-7%, 0, 0);
-          transform: translate3d(-7%, 0, 0);
+  -webkit-transform: translate3d(7%, 0, 0);
+          transform: translate3d(7%, 0, 0);
 }
 
 .b-likes {
@@ -2582,13 +2611,20 @@ blockquote::before {
   background-color: #fff;
 }
 
+.btn-pointer-b__wrap {
+  position: relative;
+  display: inline-block;
+}
+
 .btn-pointer-b {
   position: relative;
   display: inline-block;
-  padding: 18px 16px 13px;
+  padding: 0 20px;
   background-color: #c0d23e;
   font-size: 18px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans Regular", sans-serif;
+  font-weight: bold;
+  line-height: 49px;
   color: #fff;
   text-transform: uppercase;
   border-bottom: none;
@@ -2597,38 +2633,40 @@ blockquote::before {
   transition: all 0.2s ease;
 }
 
-.btn-pointer-b .left,
-.btn-pointer-b .right {
+.btn-pointer-b__wrap .left,
+.btn-pointer-b__wrap .right {
   position: absolute;
   top: 0;
   height: 50px;
 }
-.btn-pointer-b .left path,
-.btn-pointer-b .right path {
+.btn-pointer-b__wrap .left path,
+.btn-pointer-b__wrap .right path {
   fill: #c0d23e;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: fill 0.2s;
+  -o-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
-.btn-pointer-b .left {
-  left: -5px;
+.btn-pointer-b__wrap .left {
+  left: -4px;
 }
 
-.btn-pointer-b .right {
-  right: -5px;
+.btn-pointer-b__wrap .right {
+  right: -4px;
 }
 
-.btn-pointer-b:hover,
-.btn-pointer-b:hover .left path,
-.btn-pointer-b:hover .right path {
+.btn-pointer-b__wrap:hover .btn-pointer-b {
   background-color: #530d85;
+}
+
+.btn-pointer-b__wrap:hover .left path,
+.btn-pointer-b__wrap:hover .right path {
   fill: #530d85;
 }
 
 .btn-pointer--lg {
   min-height: 40px;
-  padding: 12px 20px;
+  padding: 0 20px;
 }
 
 .slick-prev,
@@ -2748,7 +2786,7 @@ blockquote::before {
 
   .btn-pointer--lg {
     min-height: 50px;
-    padding: 14px 36px;
+    padding: 0 36px;
     font-size: 22px;
   }
 
@@ -2762,7 +2800,6 @@ blockquote::before {
   }
 
   .btn-pointer-b {
-    padding: 17px 16px 10px;
     font-size: 22px;
   }
 }
@@ -3078,19 +3115,28 @@ blockquote::before {
   overflow: hidden;
 }
 
-.b-advert .btn-pointer {
+.b-advert .btn-pointer__wrap .btn-pointer {
   color: #530d85;
+  line-height: 40px;
   background-color: #fff;
-}
-.b-advert .btn-pointer svg > path {
-  fill: #fff;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.b-advert .btn-pointer:hover {
+.b-advert .btn-pointer__left path {
+  fill: #fff;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.b-advert .btn-pointer__wrap:hover .btn-pointer {
   color: #fff;
   background-color: #c0d23e;
 }
-.b-advert .btn-pointer:hover svg > path {
+
+.b-advert .btn-pointer__wrap:hover .btn-pointer__left path {
   fill: #c0d23e;
 }
 
@@ -3248,6 +3294,10 @@ blockquote::before {
     display: block;
     bottom: 65px;
     left: 50px;
+  }
+
+  .b-advert .btn-pointer__wrap .btn-pointer {
+    line-height: 50px;
   }
 
   .b-advert__item-b::after {
@@ -4291,13 +4341,6 @@ blockquote::before {
 .c-box__inner:hover .b-box__grdnt-a::after,
 .c-box__inner:hover .b-box__grdnt-b::after {
   opacity: 0;
-}
-
-.c-box__inner .btn-pointer:hover {
-  background-color: #530d85;
-}
-.c-box__inner .btn-pointer:hover svg > path {
-  fill: #530d85;
 }
 
 .c-box-v__sm {

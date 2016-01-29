@@ -65,7 +65,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _globals.slGallery.slick({
                 dots: false,
                 infinite: false,
-                speed: 450,
+                speed: 300,
                 centerPadding: 30,
                 slidesToShow: 4,
                 slidesToScroll: 2,
@@ -102,7 +102,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _globals.slPartners.slick({
                 dots: false,
                 infinite: false,
-                speed: 450,
+                speed: 300,
                 centerPadding: 30,
                 slidesToShow: 6,
                 slidesToScroll: 3,
