@@ -2260,6 +2260,14 @@ blockquote::before {
   float: left;
   padding-right: 8px;
   font-size: 36px;
+}
+
+.date__dt, .date-sm__dt {
+  padding-top: 6px;
+  line-height: 28px;
+}
+
+.date-lg__dt {
   line-height: 38px;
 }
 
