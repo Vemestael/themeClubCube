@@ -7,4 +7,4 @@ nbproject
 /_packages/*
 /.sass-cache
 /themeforest-materials
-assets/basetheme-design/node_modules
+/assets/basetheme-design/css/*
