@@ -2878,10 +2878,44 @@ blockquote::before {
 }
 
 .navbar-list > li > a {
-  font-size: 14px;
   text-transform: uppercase;
-  text-decoration: none;
   border: none;
+}
+
+.navbar-current {
+  display: block;
+  padding: 18px 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-list-item,
+.navbar-list-inner {
+  padding: 0;
+}
+
+.navbar-list-item > li,
+.navbar-list-inner > li {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.33);
+}
+.navbar-list-item > li:last-child,
+.navbar-list-inner > li:last-child {
+  border-bottom: none;
+}
+
+.navbar-list-item > li > a,
+.navbar-list-inner > li > a {
+  text-transform: uppercase;
+  border: none;
+}
+
+.navbar-list-item,
+.navbar-list-inner {
+  display: none;
+}
+.navbar-list-item .active,
+.navbar-list-inner .active {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -2930,9 +2964,17 @@ blockquote::before {
     margin-right: 0;
   }
 
-  .navbar-list > li > a {
-    display: block;
+  .navbar-list > li > a,
+  .navbar-current {
     padding: 33px 17px;
+  }
+
+  .navbar-current {
+    color: #c0d23e;
+  }
+
+  .navbar-list li:hover .navbar-list-item {
+    display: block;
   }
 
   .header.header--boxed {

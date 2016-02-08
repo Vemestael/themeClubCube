@@ -63,14 +63,17 @@
   overflow-y: auto
 
 .navbar-list li a
-  display: inline-block
+  display: block
   padding: 18px 0
   color: #fff
 
 .navbar-list > li
-  border-bottom: 1px solid rgba(255, 255, 255, 0.33)
+  border-bottom: 2px solid rgba(255, 255, 255, 0.33)
   &:last-child
     border-bottom: none
+
+
+
 
 @media (min-width: $screen-sm)
 
@@ -114,7 +117,6 @@
     border-bottom: none
 
   .navbar-list > li > a
-    display: block
     padding: 33px 17px
 
   .navbar-list > li > a:hover

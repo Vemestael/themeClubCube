@@ -56,10 +56,35 @@
   list-style: none
 
 .navbar-list > li > a
-  font-size: 14px
   text-transform: uppercase
-  text-decoration: none
   border: none
+
+.navbar-current
+  display: block
+  padding: 18px 0
+  color: #fff
+  text-transform: uppercase
+
+.navbar-list-item,
+.navbar-list-inner
+  padding: 0
+
+.navbar-list-item > li,
+.navbar-list-inner > li
+  border-bottom: 2px solid rgba(255, 255, 255, 0.33)
+  &:last-child
+    border-bottom: none
+
+.navbar-list-item > li > a,
+.navbar-list-inner > li > a
+  text-transform: uppercase
+  border: none
+
+.navbar-list-item,
+.navbar-list-inner
+  display: none
+  & .active
+    display: block
 
 @media (min-width: $screen-sm)
 
@@ -100,9 +125,16 @@
     &:last-child
       margin-right: 0
 
-  .navbar-list > li > a
-    display: block
+  .navbar-list > li > a,
+  .navbar-current
     padding: 33px 17px
+
+  .navbar-current
+    color: $active-c
+
+  .navbar-list li:hover .navbar-list-item
+    display: block
+
 
   .header.header--boxed
     right: auto

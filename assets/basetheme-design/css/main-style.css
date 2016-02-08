@@ -2512,13 +2512,13 @@
 }
 
 .navbar-list li a {
-  display: inline-block;
+  display: block;
   padding: 18px 0;
   color: #fff;
 }
 
 .navbar-list > li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.33);
 }
 .navbar-list > li:last-child {
   border-bottom: none;
@@ -2578,7 +2578,6 @@
   }
 
   .navbar-list > li > a {
-    display: block;
     padding: 33px 17px;
   }
 
