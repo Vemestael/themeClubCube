@@ -2261,12 +2261,7 @@ blockquote::before {
 }
 
 .date__dt, .date-sm__dt {
-  padding-top: 6px;
   line-height: 28px;
-}
-
-.date-lg__dt {
-  line-height: 38px;
 }
 
 .date__rh, .date-sm__rh,
@@ -2304,7 +2299,13 @@ blockquote::before {
 
 .date-lg {
   position: relative;
+  padding-top: 6px;
   border-color: #fff;
+  color: #fff;
+}
+
+.date-lg__dt {
+  line-height: 38px;
 }
 
 .date-lg__rh-m {
@@ -2324,6 +2325,10 @@ blockquote::before {
   bottom: -17px;
   color: #000;
   background: #fff;
+}
+
+.date-lg__ad {
+  display: none;
 }
 
 .date-sm {
