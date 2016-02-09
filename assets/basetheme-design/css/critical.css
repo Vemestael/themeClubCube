@@ -2987,7 +2987,6 @@ blockquote::before {
 
   .navbar-list-item {
     position: absolute;
-    display: block;
   }
 }
 @media (min-width: 1570px) {
