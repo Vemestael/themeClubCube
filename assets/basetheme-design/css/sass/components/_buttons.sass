@@ -4,13 +4,13 @@
 .btn
   display: inline-block
   min-height: 50px
-  border: 2px solid #000
+  border: 2px solid $black-c
   margin: 5px
   padding: 12px 20px
   font-family: $second-font
   font-size: 18px
   font-weight: bold
-  color: #000
+  color: $black-c
   text-decoration: none
   text-transform: uppercase
   overflow: hidden
@@ -19,7 +19,7 @@
 
 .btn:hover
   color: #fff
-  background-color: #000
+  background-color: $black-c
 
 .btn--mini
   min-height: 34px
@@ -30,7 +30,7 @@
   display: inline-block
   margin: 5px
   padding: 12px 26px 12px 44px
-  border: 2px solid #000
+  border: 2px solid $black-c
   background-color: transparent
   background-size: 28px
   background-position: 16px center
@@ -64,7 +64,7 @@
 .date-lg
   display: inline-block
   padding: 5px 6px
-  border: 2px solid #000
+  border: 2px solid $black-c
   font-family: $second-bold-font
 
 .date__dt,
@@ -73,9 +73,6 @@
   float: left
   padding-right: 8px
   font-size: 36px
-
-.date__dt
-  line-height: 28px
 
 .date__rh,
 .date-lg__rh
@@ -100,7 +97,7 @@
   display: block
   margin: 0 -6px -5px -6px
   padding: 4px 8px 2px
-  background-color: #000
+  background-color: $black-c
   font-size: 14px
   font-family: $second-bold-font
   color: #fff
@@ -128,7 +125,7 @@
   left: 4px
   right: 4px
   bottom: -17px
-  color: #000
+  color: $black-c
   background: #fff
 
 .date-lg__ad
@@ -139,7 +136,6 @@
   padding: 4px 12px 3px 5px
 
 .date-sm__dt
-  @extend  .date__dt
   padding-right: 4px
   padding-top: 1px
   font-size: 24px
@@ -285,7 +281,7 @@
   color: $active-sc-c
 
 .btn-info:hover b
-  transform: translate3d(7%,0,0)
+  transform: translate3d(3px,0,0)
 
 .b-likes
   padding: 0
@@ -328,7 +324,7 @@
   position: absolute
   width: 15px
   height: 2px
-  background-color: #000
+  background-color: $black-c
 
 .b-likes span::before
   top: 3px
@@ -424,11 +420,11 @@
 
 .btn-black .slick-prev,
 .btn-black .slick-next
-  border-color: #000
+  border-color: $black-c
 
 .btn-black .slick-prev:before,
 .btn-black .slick-next:before
-  color: #000
+  color: $black-c
 
 .btn-black .slick-prev.slick-disabled,
 .btn-black .slick-next.slick-disabled
@@ -468,7 +464,7 @@
 
   .date-lg__rh-m
     width: 100%
-    margin-top: 2px
+    margin-top: 4px
     padding-right: 8px
 
   .date-lg__rh-d,

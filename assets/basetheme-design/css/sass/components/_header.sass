@@ -103,6 +103,11 @@
 
 
 @media (min-width: $screen-lg)
+  .header.header--boxed
+    right: auto
+    left: auto
+    width: 100%
+    max-width: 1280px
 
   .navbar-header
     float: left
@@ -121,7 +126,9 @@
     float: right
 
   .navbar-list > li
+    position: relative
     float: left
+    transition: position 0.2s ease-out
     &:last-child
       margin-right: 0
 
@@ -135,12 +142,10 @@
   .navbar-list li:hover .navbar-list-item
     display: block
 
+  .navbar-list-item
+    position: absolute
+    display: block
 
-  .header.header--boxed
-    right: auto
-    left: auto
-    width: 100%
-    max-width: 1280px
 
 @media (min-width: $screen-xl)
 

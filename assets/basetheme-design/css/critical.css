@@ -1944,8 +1944,9 @@ section {
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   }
 }
-html {
+body {
   font-family: "PT Sans Regular", sans-serif;
+  color: #202020;
   line-height: 1;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2173,13 +2174,13 @@ blockquote::before {
 .btn {
   display: inline-block;
   min-height: 50px;
-  border: 2px solid #000;
+  border: 2px solid #202020;
   margin: 5px;
   padding: 12px 20px;
   font-family: "PT Sans Caption Regular", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #000;
+  color: #202020;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -2191,7 +2192,7 @@ blockquote::before {
 
 .btn:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #202020;
 }
 
 .btn--mini {
@@ -2204,7 +2205,7 @@ blockquote::before {
   display: inline-block;
   margin: 5px;
   padding: 12px 26px 12px 44px;
-  border: 2px solid #000;
+  border: 2px solid #202020;
   background-color: transparent;
   -webkit-background-size: 28px 28px;
           background-size: 28px;
@@ -2248,20 +2249,16 @@ blockquote::before {
 .date-lg {
   display: inline-block;
   padding: 5px 6px;
-  border: 2px solid #000;
+  border: 2px solid #202020;
   font-family: "PT Sans Caption Bold", sans-serif;
 }
 
-.date__dt, .date-sm__dt,
+.date__dt,
 .date-lg__dt {
   display: block;
   float: left;
   padding-right: 8px;
   font-size: 36px;
-}
-
-.date__dt, .date-sm__dt {
-  line-height: 28px;
 }
 
 .date__rh, .date-sm__rh,
@@ -2290,7 +2287,7 @@ blockquote::before {
   display: block;
   margin: 0 -6px -5px -6px;
   padding: 4px 8px 2px;
-  background-color: #000;
+  background-color: #202020;
   font-size: 14px;
   font-family: "PT Sans Caption Bold", sans-serif;
   color: #fff;
@@ -2323,7 +2320,7 @@ blockquote::before {
   left: 4px;
   right: 4px;
   bottom: -17px;
-  color: #000;
+  color: #202020;
   background: #fff;
 }
 
@@ -2520,8 +2517,8 @@ blockquote::before {
 }
 
 .btn-info:hover b {
-  -webkit-transform: translate3d(7%, 0, 0);
-          transform: translate3d(7%, 0, 0);
+  -webkit-transform: translate3d(3px, 0, 0);
+          transform: translate3d(3px, 0, 0);
 }
 
 .b-likes {
@@ -2572,7 +2569,7 @@ blockquote::before {
   position: absolute;
   width: 15px;
   height: 2px;
-  background-color: #000;
+  background-color: #202020;
 }
 
 .b-likes span::before {
@@ -2703,12 +2700,12 @@ blockquote::before {
 
 .btn-black .slick-prev,
 .btn-black .slick-next {
-  border-color: #000;
+  border-color: #202020;
 }
 
 .btn-black .slick-prev:before,
 .btn-black .slick-next:before {
-  color: #000;
+  color: #202020;
 }
 
 .btn-black .slick-prev.slick-disabled,
@@ -2754,7 +2751,7 @@ blockquote::before {
 
   .date-lg__rh-m {
     width: 100%;
-    margin-top: 2px;
+    margin-top: 4px;
     padding-right: 8px;
   }
 
@@ -2936,6 +2933,13 @@ blockquote::before {
   }
 }
 @media (min-width: 1280px) {
+  .header.header--boxed {
+    right: auto;
+    left: auto;
+    width: 100%;
+    max-width: 1280px;
+  }
+
   .navbar-header {
     float: left;
   }
@@ -2958,7 +2962,11 @@ blockquote::before {
   }
 
   .navbar-list > li {
+    position: relative;
     float: left;
+    -webkit-transition: position 0.2s ease-out;
+    -o-transition: position 0.2s ease-out;
+    transition: position 0.2s ease-out;
   }
   .navbar-list > li:last-child {
     margin-right: 0;
@@ -2977,11 +2985,9 @@ blockquote::before {
     display: block;
   }
 
-  .header.header--boxed {
-    right: auto;
-    left: auto;
-    width: 100%;
-    max-width: 1280px;
+  .navbar-list-item {
+    position: absolute;
+    display: block;
   }
 }
 @media (min-width: 1570px) {
@@ -3498,16 +3504,15 @@ blockquote::before {
   float: left;
   width: 35px;
   height: 35px;
-  -webkit-box-shadow: 0 0 0 2px #0f0809 inset;
-          box-shadow: 0 0 0 2px #0f0809 inset;
+  -webkit-box-shadow: 0 0 0 2px #202020 inset;
+          box-shadow: 0 0 0 2px #202020 inset;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.b-tabs__nav-tabs li.active,
-.b-tabs__nav-tabs li:nth-of-type(2) {
-  background-color: #0f0809;
+.b-tabs__nav-tabs li.active {
+  background-color: #202020;
 }
 
 .b-tabs__nav-tabs li a {
@@ -3570,9 +3575,9 @@ blockquote::before {
 }
 
 .b-tabs__nav-tabs li:hover {
-  background-color: rgba(15, 8, 9, 0.9);
-  -webkit-box-shadow: 0 0 0 2px rgba(15, 8, 9, 0.9) inset;
-          box-shadow: 0 0 0 2px rgba(15, 8, 9, 0.9) inset;
+  background-color: #202020;
+  -webkit-box-shadow: 0 0 0 2px #202020 inset;
+          box-shadow: 0 0 0 2px #202020 inset;
 }
 
 .b-tabs__nav-tabs li:nth-of-type(1):hover a path,
@@ -3800,7 +3805,7 @@ blockquote::before {
   position: relative;
   padding-top: 30px;
   padding-bottom: 24px;
-  background-color: #0f0809;
+  background-color: #202020;
   color: #fff;
 }
 
@@ -4522,14 +4527,13 @@ blockquote::before {
     padding: 8px 20px 8px 10px;
   }
 
-  .c-box__date.c-box__date--lg .date__dt, .c-box__date.c-box__date--lg .date-sm__dt {
+  .c-box__date.c-box__date--lg .date__dt {
     font-size: 48px;
   }
 
   .c-box__date.c-box__date--lg .date__rh-m, .c-box__date.c-box__date--lg .date-sm__rh-m,
   .c-box__date.c-box__date--lg .date__rh-d,
   .c-box__date.c-box__date--lg .date-sm__rh-d {
-    margin: 0;
     font-size: 18px;
   }
 
@@ -4557,6 +4561,10 @@ blockquote::before {
   .grid-sizer {
     width: 33.333%;
   }
+
+  .c-box.c-box--size-lg .c-box__cont {
+    max-width: 250px;
+  }
 }
 @media (min-width: 1280px) {
   .c-box .c-box__inner,
@@ -4574,6 +4582,10 @@ blockquote::before {
 
   .grid-sizer {
     width: 25%;
+  }
+
+  .c-box.c-box--size-lg .c-box__cont {
+    max-width: 280px;
   }
 }
 .b-panel-t {
@@ -4651,7 +4663,7 @@ blockquote::before {
 .b-promo p {
   margin-top: 18px;
   margin-bottom: 16px;
-  color: #0f0809;
+  color: #202020;
 }
 
 .b-promo-sc {
