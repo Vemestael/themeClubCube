@@ -149,7 +149,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 //autoplaySpeed: 5000,
                 responsive: [
                     {
-                        breakpoint: 1024,
+                        breakpoint: 1200,
                         settings: {
                             swipe: true,
                         }
