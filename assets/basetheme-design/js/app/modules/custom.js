@@ -5,6 +5,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         _defaults = {
             masnBox: $('#masnBox'),
             masnBoxGalr: $('#masnrGallery'),
+            header: '#header',
             // elements
             // prop
             // data
@@ -15,6 +16,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             masnBox: null,
             masnBoxGalr: null,
             addMoreBlogs: null,
+            header: null,
             // elements
 
             // prop
@@ -39,6 +41,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         _config = function () {
             _globals.masnBox = $(_properties.masnBox);
             _globals.masnBoxGalr = $(_properties.masnBoxGalr);
+            _globals.header = $(_properties.header);
         },
 
         _setup = function () {
@@ -50,16 +53,29 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _setBinds = function () {
+            _binds().setScrollHeader();
         },
 
         _binds = function () {
             return {
+                setScrollHeader: function () {
+                    _custom.bind($window, 'scroll', function () {
+                        _stickyHeader();
+                    });
+                }
+                ,
             };
         },
 
         _triggers = function () {
-            return {
-            };
+            return {};
+        },
+
+        _stickyHeader = function () {
+            var offsetop = $window.scrollTop();
+            if (offsetop > _globals.header.height()) {
+                _globals.header.addClass('header__sticky');
+            } else (_globals.header.removeClass('header__sticky'))
         },
 
         _masonryBlocks = function () {

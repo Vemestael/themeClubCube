@@ -64,6 +64,7 @@
   padding: 18px 0
   color: #fff
   text-transform: uppercase
+  transition: all 0.2s ease
 
 .navbar-list-item,
 .navbar-list-inner
@@ -88,6 +89,30 @@
 
 @media (min-width: $screen-sm)
 
+  .header__sticky .navbar-brand
+    height: 30px
+    margin-top: 10px
+
+  .header__sticky .navbar-toogle
+    width: 70px
+    height: 50px
+    transition: all 0.25s ease
+
+  .header__sticky .navbar-toogle .icon-bar
+    width: 40px
+    height: 6px
+    margin-bottom: 6px
+    transition: all 0.25s ease
+
+  .header__sticky.header--toggled .navbar-toogle
+    width: 70px
+    padding: 10px 15px
+
+  .header__sticky.header--toggled .navbar-toogle .icon-bar:nth-child(1),
+  .header__sticky.header--toggled .navbar-toogle .icon-bar:nth-child(3)
+    top: 22px
+    width: 40px
+
   .navbar-brand
     height: 40px
     margin-top: 20px
@@ -101,8 +126,12 @@
     height: 7px
     margin-bottom: 9px
 
-
 @media (min-width: $screen-lg)
+  .header__sticky .navbar-list > li > a,
+  .header__sticky .navbar-current
+    padding: 17px
+    transition: all 0.2s ease
+
   .header.header--boxed
     right: auto
     left: auto
@@ -145,7 +174,6 @@
   .navbar-list-item
     position: absolute
     //display: block
-
 
 @media (min-width: $screen-xl)
 

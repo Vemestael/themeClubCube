@@ -2884,6 +2884,9 @@ blockquote::before {
   padding: 18px 0;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navbar-list-item,
@@ -2916,6 +2919,39 @@ blockquote::before {
 }
 
 @media (min-width: 768px) {
+  .header__sticky .navbar-brand {
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .header__sticky .navbar-toogle {
+    width: 70px;
+    height: 50px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+
+  .header__sticky .navbar-toogle .icon-bar {
+    width: 40px;
+    height: 6px;
+    margin-bottom: 6px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+
+  .header__sticky.header--toggled .navbar-toogle {
+    width: 70px;
+    padding: 10px 15px;
+  }
+
+  .header__sticky.header--toggled .navbar-toogle .icon-bar:nth-child(1),
+  .header__sticky.header--toggled .navbar-toogle .icon-bar:nth-child(3) {
+    top: 22px;
+    width: 40px;
+  }
+
   .navbar-brand {
     height: 40px;
     margin-top: 20px;
@@ -2933,6 +2969,14 @@ blockquote::before {
   }
 }
 @media (min-width: 1280px) {
+  .header__sticky .navbar-list > li > a,
+  .header__sticky .navbar-current {
+    padding: 17px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
   .header.header--boxed {
     right: auto;
     left: auto;
@@ -5009,4 +5053,6 @@ blockquote::before {
   }
 }
 
-/*# sourceMappingURL=../../critical.css.map */
+
+
+/*# sourceMappingURL=critical.css.map */
