@@ -1645,10 +1645,10 @@ th {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   -ms-touch-action: auto;
   touch-action: auto;
   -webkit-tap-highlight-color: transparent;
@@ -2245,7 +2245,7 @@ blockquote::before {
   background-image: url("../images/refresh-icon.svg");
 }
 
-.date, .date-sm,
+.date,
 .date-lg {
   display: inline-block;
   padding: 5px 6px;
@@ -2261,13 +2261,13 @@ blockquote::before {
   font-size: 36px;
 }
 
-.date__rh, .date-sm__rh,
+.date__rh,
 .date-lg__rh {
   display: block;
   float: right;
 }
 
-.date__rh-m, .date-sm__rh-m,
+.date__rh-m,
 .date-lg__rh-m {
   display: block;
   margin-top: 4px;
@@ -2276,7 +2276,7 @@ blockquote::before {
   font-weight: bold;
 }
 
-.date__rh-d, .date-sm__rh-d,
+.date__rh-d,
 .date-lg__rh-d {
   font-size: 12px;
   font-family: "PT Sans Caption Regular", sans-serif;
@@ -2308,11 +2308,12 @@ blockquote::before {
 .date-lg__rh-m {
   width: 60px;
   padding: 0;
+  margin-top: 3px;
   font-size: 10px;
 }
 
 .date-lg__rh-d {
-  font-size: 10px;
+  line-height: 15px;
 }
 
 .date-lg__rh-t {
@@ -2329,7 +2330,10 @@ blockquote::before {
 }
 
 .date-sm {
+  display: inline-block;
   padding: 4px 12px 3px 5px;
+  border: 2px solid #202020;
+  font-family: "PT Sans Caption Bold", sans-serif;
 }
 
 .date-sm__dt {
@@ -2339,13 +2343,22 @@ blockquote::before {
   line-height: 1;
 }
 
+.date-sm__rh {
+  display: block;
+  float: right;
+}
+
 .date-sm__rh-m {
-  margin-top: 2px;
+  display: block;
   margin-bottom: -4px;
+  margin-top: 2px;
   font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .date-sm__rh-d {
+  font-family: "PT Sans Caption Regular", sans-serif;
   font-size: 10px;
 }
 
@@ -2753,17 +2766,19 @@ blockquote::before {
     width: 100%;
     margin-top: 4px;
     padding-right: 8px;
+    font-size: 14px;
   }
 
   .date-lg__rh-d,
   .date-lg__rh-t {
     display: block;
-    margin-top: 2px;
     font-size: 12px;
+    line-height: 15px;
   }
 
   .date-lg__rh-t {
     position: static;
+    padding: 0 0 0 6px;
     color: #fff;
     background: transparent;
   }
@@ -4574,13 +4589,12 @@ blockquote::before {
     font-size: 48px;
   }
 
-  .c-box__date.c-box__date--lg .date__rh-m, .c-box__date.c-box__date--lg .date-sm__rh-m,
-  .c-box__date.c-box__date--lg .date__rh-d,
-  .c-box__date.c-box__date--lg .date-sm__rh-d {
+  .c-box__date.c-box__date--lg .date__rh-m,
+  .c-box__date.c-box__date--lg .date__rh-d {
     font-size: 18px;
   }
 
-  .c-box__date.c-box__date--lg .date__rh-m, .c-box__date.c-box__date--lg .date-sm__rh-m {
+  .c-box__date.c-box__date--lg .date__rh-m {
     margin-bottom: 2px;
   }
 

@@ -115,10 +115,11 @@
 .date-lg__rh-m
   width: 60px
   padding: 0
+  margin-top: 3px
   font-size: 10px
 
 .date-lg__rh-d
-  font-size: 10px
+  line-height: 15px
 
 .date-lg__rh-t
   position: absolute
@@ -132,8 +133,10 @@
   display: none
 
 .date-sm
-  @extend .date
+  display: inline-block
   padding: 4px 12px 3px 5px
+  border: 2px solid $black-c
+  font-family: $second-bold-font
 
 .date-sm__dt
   padding-right: 4px
@@ -142,18 +145,20 @@
   line-height: 1
 
 .date-sm__rh
-  @extend .date__rh
+  display: block
+  float: right
 
 .date-sm__rh-m
-  @extend .date__rh-m
-  margin-top: 2px
+  display: block
   margin-bottom: -4px
+  margin-top: 2px
   font-size: 10px
+  font-weight: bold
+  text-transform: uppercase
 
 .date-sm__rh-d
-  @extend .date__rh-d
+  font-family: $second-font
   font-size: 10px
-
 
 .b-social
   padding: 0
@@ -466,15 +471,17 @@
     width: 100%
     margin-top: 4px
     padding-right: 8px
+    font-size: 14px
 
   .date-lg__rh-d,
   .date-lg__rh-t
     display: block
-    margin-top: 2px
     font-size: 12px
+    line-height: 15px
 
   .date-lg__rh-t
     position: static
+    padding: 0 0 0 6px
     color: #fff
     background: transparent
 
