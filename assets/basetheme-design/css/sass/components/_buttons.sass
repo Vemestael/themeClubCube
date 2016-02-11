@@ -142,10 +142,13 @@
   line-height: 38px
 
 .date-lg__rh-m
-  width: 60px
+  width: 20px
   padding: 0
   margin-top: 3px
   font-size: 10px
+  letter-spacing: 0.6px
+  overflow: hidden
+  white-space: nowrap
 
 .date-lg__rh-d
   line-height: 15px
@@ -360,11 +363,11 @@
 
 .b-likes span::before
   top: 3px
-  left: -13px
+  left: -12px
   transform: rotate(-45deg)
 
 .b-likes span::after
-  left: -13px
+  left: -12px
   bottom: 3px
   transform: rotate(45deg)
 
@@ -461,8 +464,8 @@
   &::before
     opacity: 1
 
-.slick-prev:hover,
-.slick-next:hover
+.slick-prev:hover:not(.slick-disabled),
+.slick-next:hover:not(.slick-disabled)
   background-color: $black-c
   transition: all 0.2s ease
   &::before
@@ -484,8 +487,8 @@
     color: #fff
     opacity: 1
 
-.btn-white .slick-prev:hover,
-.btn-white .slick-next:hover
+.btn-white .slick-prev:hover:not(.slick-disabled),
+.btn-white .slick-next:hover:not(.slick-disabled)
   background-color: #fff
   transition: all 0.2s ease
   &::before

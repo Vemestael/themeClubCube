@@ -65,4 +65,4 @@ gulp.task('watch', function () {
     gulp.watch('jade/**/*.*', ['templates']);
 });
 
-gulp.task('default', ['serve','templates','sass', 'watch']);
+gulp.task('default', ['templates','sass', 'watch']);

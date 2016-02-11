@@ -23,14 +23,13 @@
   background-color: $tab-bg
 
 .b-tabs__nav-tabs li a
+  position: relative
   display: inline-block
   width: 35px
   height: 35px
-  padding: 12.4px
   border-bottom: none
   & svg
-    position: relative
-    top: -3px
+    @include absolute-center-x-y()
 
 .b-tabs__nav-tabs li.active:nth-of-type(1) a path,
 .b-tabs__nav-tabs li.active:nth-of-type(2) a path
