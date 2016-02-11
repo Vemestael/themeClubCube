@@ -4418,7 +4418,7 @@ blockquote::before {
 .c-box::before {
   content: "";
   position: absolute;
-  left: -10px;
+  left: 0;
   right: 0;
   top: -5px;
   height: 10px;
