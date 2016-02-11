@@ -2504,6 +2504,7 @@ blockquote::before {
 .btn-pointer__wrap {
   position: relative;
   display: inline-block;
+  padding-left: 7px;
 }
 
 .btn-pointer {
@@ -2527,7 +2528,7 @@ blockquote::before {
 .btn-pointer__left {
   position: absolute;
   top: 0;
-  left: -5px;
+  left: 0;
   width: 10px;
 }
 .btn-pointer__left path {
@@ -3442,6 +3443,9 @@ blockquote::before {
   background-color: #fff;
   border-color: #fff;
   z-index: 2;
+}
+.b-advert .slick-next:hover {
+  background-color: #fff !important;
 }
 
 .b-advert .slick-next::before {
