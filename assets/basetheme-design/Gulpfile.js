@@ -20,7 +20,7 @@ gulp.task('serve', function() {
 });
 
 gulp.task('sass', function (callback) {
-    return sass('css/sass/*.sass',
+    return sass(['css/sass/critical.sass', 'css/sass/main-style.sass'],
         { sourcemap: true,
           style: 'expanded'})
         .on('error', sass.logError)

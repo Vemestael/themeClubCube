@@ -14,6 +14,7 @@
 .b-footer__item .s6-heading
   margin-bottom: 40px
   text-transform: uppercase
+  letter-spacing: 2px
 
 .b-footer__inner
   width: 100%
@@ -37,7 +38,8 @@
   margin-top: 0
 
 .b-footer__txt--it
-  font-family: $base-it-font
+  font-family: $base-font
+  font-style: italic
 
 .b-footer__days
   color: $active-c
@@ -133,6 +135,9 @@
     margin-bottom: 0
 
 @media (min-width: $screen-lg)
+  .b-footer__item.b-footer__item--indent
+    padding-right: 70px
+
   .b-footer__msg
     position: absolute
     top: -115px
@@ -144,5 +149,11 @@
   .b-footer__contacts-mail
     margin-top: 45px
     margin-bottom: 45px
+
+  .b-footer__social li
+    margin-right: 9px
+    margin-bottom: 12px
+
+
 
 

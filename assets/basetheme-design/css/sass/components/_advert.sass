@@ -50,9 +50,11 @@
   overflow: hidden
 
 .b-advert .btn-pointer__wrap .btn-pointer
+  position: relative
   color: $active-sc-c
   line-height: 40px
   background-color: #fff
+  z-index: 1
   transition: all 0.2s ease
 
 .b-advert .btn-pointer__left path
@@ -98,13 +100,17 @@
   width: 100%
   margin: auto
 
+.b-advert .slick-prev
+  display: none!important
+
 .b-advert .slick-next
   width: 55px
   height: 50px
   right: 0
   top: 40px
-  background-color: #fff
   color: #000
+  background-color: #fff
+  border-color: #fff
   z-index: 2
 
 .b-advert .slick-next::before

@@ -13,10 +13,10 @@
   position: absolute
   left: 1px
   right: 0
-  top: -4px
+  top: -7px
   width: 98%
   height: 10px
-  background: url("../images/triangle.png") repeat-x
+  background: url("../images/triangle.svg") repeat-x
   background-position: center
   z-index: 1
 
@@ -68,18 +68,22 @@
   opacity: 1
 
 .c-box__inner .b-box__grdnt-a::after
-  content: ''
   @include absolute-center()
-  @include gradient-custom-direrc($deg: 145deg, $start-color: rgba(83, 13, 133, 1), $center-color: rgba(192, 200, 62, 0.45), $end-color: rgba(192, 200, 62, 0), $start-percent: 18%, $center-percent: 70%, $end-percent: 120%)
+  @include gradient-custom($deg: 145deg, $start-color: rgba(83, 13, 133, 1), $end-color: rgba(192, 200, 62, 0.45), $start-percent: 0%, $end-percent: 100%)
+  content: ''
+  opacity: 1
+
+.c-box__inner .b-box__grdnt-b::after
+  @include absolute-center()
+  @include gradient-directional($start-color: #000, $end-color: rgba(0, 0, 0, 0), $deg: 145deg)
+  content: ''
   opacity: 1
   transition: all 0.2s ease
 
-.c-box__inner .b-box__grdnt-b::after
-  content: ''
+.c-box__inner .bg-image::before
   @include absolute-center()
-  @include gradient-directional($start-color: #000, $end-color: rgba(0, 0, 0, 0), $deg: 145deg)
-  opacity: 1
-  transition: all 0.2s ease
+  content: ''
+  background-color: rgba(32, 32, 32, 0.33)
 
 .c-box__txt
   margin: 0
@@ -136,7 +140,7 @@
   padding: 20px
 
 .c-box.c-box--size-lg .c-box__cont
-  width: calc(100% - 102px)
+  width: calc(100% - 105px)
   max-width: 270px
   float: left
 
@@ -188,9 +192,7 @@
 .c-box__inner:hover .b-box__grdnt-a::after,
 .c-box__inner:hover .b-box__grdnt-b::after
   opacity: 0
-
-//.c-box__inner:hover + .c-box__link-wrap-a .c-box__link
-//  color: red
+  transition: all 0.2s ease
 
 .c-box-v__sm
   max-width: 360px
@@ -201,10 +203,10 @@
   left: 12px
   width: 10px
   height: 100%
-  background: url("../images/romb-v.png") repeat-y
+  background: url("../images/romb-v.svg") repeat-y
 
 .c-box-v::before
-  left: -3px
+  left: -7px
 
 .c-box-v .c-box__inner,
 .c-box-v__sm .c-box__inner
@@ -231,8 +233,8 @@
 
 .c-box-v .c-box__date-item,
 .c-box-v__sm .c-box__date-item
-  position: relative
-  top: auto
+  position: absolute
+  top: 20px
   right: auto
   z-index: 1
 
@@ -257,8 +259,9 @@
     overflow: visible
 
   .btn-pointer.btn-pointer--size
-    padding: 18px 20px
+    padding: 0 20px
     font-size: 16px
+    line-height: 50px
 
   .c-box__views
     bottom: 30px
@@ -310,14 +313,24 @@
     margin-right: 22px
 
   .c-box-v .c-box__cont
+    position: relative
+    top: 0
     right: 0
     left: 0
-    bottom: auto
     width: 220px
     margin: auto
 
+  .c-box-v .c-box__cont::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -20px
+    bottom: 0
+    width: 6px
+    background: url("../images/themeclub-waveVertical.svg") repeat-y
+
   .c-box-v .c-box__txt
-    padding-top: 20px
+    padding: 20px 0 30px
 
 @media (min-width: $screen-md)
   .grid-sizer

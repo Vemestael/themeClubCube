@@ -33,10 +33,10 @@
   background-repeat: repeat-x
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0)
 
-@mixin gradient-custom-direrc($deg: 145deg, $start-color: #555,$center-color: #000, $end-color: #333, $start-percent: 0%, $center-percent: 50%, $end-percent: 100%)
-  background-image: linear-gradient($deg, $start-color $start-percent, $center-color, $center-percent, $end-color $end-percent)
+@mixin gradient-custom($deg: 145deg, $start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%)
+  background-image: linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
   background-repeat: repeat-x
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}',centerColor='#{ie-hex-str($center-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0)
 
 @mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg)
   background-repeat: repeat-x

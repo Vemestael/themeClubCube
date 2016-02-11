@@ -12,6 +12,7 @@
 .b-partners .b-item__ttl-header
   width: 50%
   max-width: 145px
+  letter-spacing: 2px
 
 .b-partners__slider
   width: 100%
@@ -35,9 +36,21 @@
 .b-partners__img-wrap
   position: relative
   min-height: 70px
+  padding: 12px 0
+  box-sizing: content-box
+
+.b-partners__img-wrap a
+  @include absolute-center
+  border-bottom: none
+  z-index: 1
+  transition: none
+
+.b-partners__img-wrap a:hover
+  box-shadow: 0 0 0 2px $active-sc-c inset
 
 .b-partners__img-wrap img
   @include absolute-center-x-y
+
 
 @media (min-width: $screen-xm)
   .b-partners .b-item__ttl-header

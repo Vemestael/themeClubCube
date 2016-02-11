@@ -12,7 +12,7 @@
   margin: 0 auto
   font-size: 24px
   font-family: $second-bold-font
-  color: $active-c
+  color: $active-sc-c
 
 .b-promo p
   margin-top: 18px
@@ -39,8 +39,7 @@
   content: ''
   left: 15px
   right: 15px
-  background-color: $active-sc-c
-  z-index: -1
+  background-color: rgba(32, 32, 32, 0.33)
 
 .b-promo-sc__cont
   @include absolute-center-x-y()
@@ -65,15 +64,15 @@
   right: 15px
 
 .b-promo-sc__img-wrap.bg-image
-  opacity: 0.6
+  opacity: 1
 
 .b-promo-sc__link
   @include absolute-center
   border-bottom: none
   z-index: 1
 
-.b-promo-sc__item:hover .b-promo-sc__img-wrap.bg-image
-  opacity: 1
+.b-promo-sc__item:hover .b-promo-sc__inner-bg
+  background-color: rgba(83,13,133,0.33)
   transition: all 0.2s ease-out
 
 @media (min-width: $screen-sm)

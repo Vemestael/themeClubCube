@@ -21,6 +21,35 @@
   color: #fff
   background-color: $black-c
 
+.btn-anim-a b,
+.btn-anim-b b
+  width: 100%
+  display: inline-block
+  line-height: 1
+  transform: translate3d(0,0,0)
+  transition: transform 0.2s ease
+
+.btn-anim-a:hover b
+  transform: translate3d(3px,0,0)
+
+.btn-anim-b:hover b
+  animation-name: shake
+  animation-duration: 0.6s
+  animation-fill-mode: both
+
+@keyframes shake
+  0%,100%
+    -webkit-transform: translate3d(0,0,0)
+    transform: translate3d(0,0,0)
+
+  20%,60%
+    -webkit-transform: translate3d(-3px,0,0)
+    transform: translate3d(-3px,0,0)
+
+  40%,80%
+    -webkit-transform: translate3d(3px,0,0)
+    transform: translate3d(3px,0,0)
+
 .btn--mini
   min-height: 34px
   padding: 8px 9px
@@ -82,7 +111,7 @@
 .date__rh-m,
 .date-lg__rh-m
   display: block
-  margin-top: 4px
+  margin-top: 2px
   font-size: 14px
   text-transform: uppercase
   font-weight: bold
@@ -176,6 +205,12 @@
   line-height: 56px
   text-align: center
 
+.b-social__btn:hover
+  background-color: #fff
+  transition: all 0.2s ease
+  & .fa
+    color: $black-c
+
 .btn-info
   position: relative
   min-height: 50px
@@ -190,6 +225,7 @@
   position: absolute
   top: 0
   left: -5px
+  width: 10px
 
   path
     fill: $active-c
@@ -213,12 +249,13 @@
   min-height: 40px
   padding: 6px 10px
   font-size: 14px
-  line-height: 14px
+  line-height: 1
 
 .btn-pointer__left
   position: absolute
   top: 0
   left: -5px
+  width: 10px
   & path
     fill: $active-c
     transition: all 0.2s ease
@@ -259,11 +296,7 @@
   background-color: transparent
 
 .btn-info b
-  width: 100%
-  display: inline-block
   line-height: 12px
-  transform: translate3d(0,0,0)
-  transition: transform 0.2s ease
 
 .btn-info span:nth-of-type(2)
   position: relative
@@ -273,9 +306,6 @@
   background-color: $active-c
   transition: color 0.2s ease
 
-.btn-info svg
-  left: -5px
-
 .btn-info span:nth-of-type(1)
   font-style: italic
 
@@ -284,9 +314,6 @@
 
 .btn-info:hover span:nth-of-type(2)
   color: $active-sc-c
-
-.btn-info:hover b
-  transform: translate3d(3px,0,0)
 
 .b-likes
   padding: 0
@@ -365,7 +392,7 @@
   position: relative
   display: inline-block
   padding: 0 20px
-  background-color: $active-c
+  background-color: $active-sc-c
   font-size: 18px
   font-family: $base-font
   font-weight: bold
@@ -381,7 +408,7 @@
   top: 0
   height: 50px
   & path
-    fill: $active-c
+    fill: $active-sc-c
     transition: fill 0.2s
 
 .btn-pointer-b__wrap .left
@@ -391,11 +418,11 @@
   right: -4px
 
 .btn-pointer-b__wrap:hover .btn-pointer-b
-  background-color: $active-sc-c
+  background-color: $active-c
 
 .btn-pointer-b__wrap:hover .left path,
 .btn-pointer-b__wrap:hover .right path
-  fill: $active-sc-c
+  fill: $active-c
 
 .btn-pointer--lg
   min-height: 40px
@@ -412,6 +439,7 @@
 .slick-next:before
   font-family: $fa
   font-size: 15px
+  opacity: 1
 
 .slick-prev:before
   content: '\f053'
@@ -419,21 +447,50 @@
 .slick-next:before
   content: "\f054"
 
-.slick-prev.slick-disabled,
-.slick-next.slick-disabled
-  border-color: rgba(255, 255, 255, 0.25)
-
-.btn-black .slick-prev,
-.btn-black .slick-next
+.slick-prev,
+.slick-next
   border-color: $black-c
 
-.btn-black .slick-prev:before,
-.btn-black .slick-next:before
+.slick-prev:before,
+.slick-next:before
   color: $black-c
 
-.btn-black .slick-prev.slick-disabled,
-.btn-black .slick-next.slick-disabled
-  border-color: rgba(0, 0, 0, 0.25)
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled
+  border-color: $black-c
+  &::before
+    opacity: 1
+
+.slick-prev:hover,
+.slick-next:hover
+  background-color: $black-c
+  transition: all 0.2s ease
+  &::before
+    color: #fff
+    transition: all 0.2s ease
+
+.btn-white .slick-prev,
+.btn-white .slick-next
+  border-color: #fff
+
+.btn-white .slick-prev:before,
+.btn-white .slick-next:before
+  color: #fff
+
+.btn-white .slick-prev.slick-disabled,
+.btn-white .slick-next.slick-disabled
+  border-color: #fff
+  &::before
+    color: #fff
+    opacity: 1
+
+.btn-white .slick-prev:hover,
+.btn-white .slick-next:hover
+  background-color: #fff
+  transition: all 0.2s ease
+  &::before
+    color: $black-c
+    transition: all 0.2s ease
 
 @media (min-width: $screen-sm)
   .date-lg
