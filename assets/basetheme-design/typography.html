@@ -36,47 +36,47 @@
             <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <nav id="navbarCollapse" class="navbar-collapse">
-            <ul class="navbar-list">
+            <ul id="navigation" class="navbar-list dl-menu">
               <li><span class="navbar-current">Home</span></li>
-              <li><a href="#">Albums</a>
-                <ul class="navbar-list-item">
-                  <li><a href="#">back</a></li>
+              <li><a href="#">Albums<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-list-item dl-submenu">
+                  <li class="dt-back"><a href="#">back</a></li>
                   <li><a href="#">list (lines)</a></li>
                   <li><a href="#">list (lines)</a></li>
                 </ul>
               </li>
-              <li><a href="events.html">Events</a>
-                <ul class="navbar-list-item">
-                  <li><a href="#">back</a></li>
+              <li><a href="">Events<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-list-item dl-submenu">
+                  <li class="dt-back"><a href="#">back</a></li>
                   <li><a href="#">list (lines)</a></li>
                   <li><a href="#">list (lines)</a></li>
-                  <li><a href="#">view</a>
-                    <ul class="navbar-list-inner">
-                      <li><a href="#">back</a></li>
+                  <li class="navbar-list-next"><a href="#">view<i class="fa fa-angle-right"></i></a>
+                    <ul class="navbar-list-inner dl-submenu">
+                      <li class="dt-back"><a href="#">back</a></li>
                       <li><a href="#">regular</a></li>
                       <li><a href="#">white gallery</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><a href="gallery.html">Gallery</a>
-                <ul class="navbar-list-item">
-                  <li><a href="#">back</a></li>
+              <li><a href="">Gallery<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-list-item dl-submenu">
+                  <li class="dt-back"><a href="#">back</a></li>
                   <li><a href="#">gallery list</a></li>
                   <li><a href="#">gallery open</a></li>
                 </ul>
               </li>
               <li><a href="#">About</a></li>
               <li><a href="#">Residents</a></li>
-              <li><a href="blog.html">Blog</a>
-                <ul class="navbar-list-item">
-                  <li><a href="#">back</a></li>
+              <li><a href="">Blog<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-list-item dl-submenu">
+                  <li class="dt-back"><a href="#">back</a></li>
                   <li><a href="#">blog list</a></li>
                   <li><a href="#">blog open</a></li>
                 </ul>
               </li>
               <li><a href="#">Contacts</a></li>
-              <li><a href="#">Elements</a></li>
+              <li><a href="#">Elements<i class="fa fa-angle-right"></i></a></li>
               <li><a href="#"><span class="fa fa-tint"></span></a></li>
             </ul>
           </nav>
@@ -273,6 +273,7 @@
     <script src="js/app/lib/siteMode.js"></script>
     <script src="js/app/mode/themeMode.js"></script>
     <script src="js/app/modules/bgImages.js"></script>
+    <script src="js/app/modules/dtMenu.js"></script>
     <script src="js/app/modules/formValidate.js"></script>
     <script src="js/app/modules/formAjax.js"></script>
     <script src="js/app/modules/headerFunctions.js"></script>

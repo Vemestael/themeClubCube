@@ -9,40 +9,44 @@ header#header.header
         span.icon-bar
 
     nav#navbarCollapse.navbar-collapse
-      ul.navbar-list
+      ul#navigation.navbar-list.dl-menu
         li
           span.navbar-current Home
         li
           a(href="#") Albums
-          ul.navbar-list-item
-            li
+            i.fa.fa-angle-right
+          ul.navbar-list-item.dl-submenu
+            li.dt-back
               a(href="#") back
             li
               a(href="#") list (lines)
             li
               a(href="#") list (lines)
         li
-          a(href="events.html") Events
-          ul.navbar-list-item
-            li
+          a(href="") Events
+            i.fa.fa-angle-right
+          ul.navbar-list-item.dl-submenu
+            li.dt-back
               a(href="#") back
             li
               a(href="#") list (lines)
             li
               a(href="#") list (lines)
-            li
+            li.navbar-list-next
               a(href="#") view
-              ul.navbar-list-inner
-                li
+                i.fa.fa-angle-right
+              ul.navbar-list-inner.dl-submenu
+                li.dt-back
                   a(href="#") back
                 li
                   a(href="#") regular
                 li
                   a(href="#") white gallery
         li
-          a(href="gallery.html") Gallery
-          ul.navbar-list-item
-            li
+          a(href="") Gallery
+            i.fa.fa-angle-right
+          ul.navbar-list-item.dl-submenu
+            li.dt-back
               a(href="#") back
             li
               a(href="#") gallery list
@@ -53,9 +57,10 @@ header#header.header
         li
           a(href="#") Residents
         li
-          a(href="blog.html") Blog
-          ul.navbar-list-item
-            li
+          a(href="") Blog
+            i.fa.fa-angle-right
+          ul.navbar-list-item.dl-submenu
+            li.dt-back
               a(href="#") back
             li
               a(href="#") blog list
@@ -65,6 +70,9 @@ header#header.header
           a(href="#") Contacts
         li
           a(href="#") Elements
+            i.fa.fa-angle-right
         li
           a(href="#")
             span.fa.fa-tint
+
+

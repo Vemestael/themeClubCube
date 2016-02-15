@@ -57,6 +57,7 @@
   list-style: none
 
 .navbar-list > li > a
+  position: relative
   text-transform: uppercase
   border: none
 
@@ -65,6 +66,13 @@
   padding: 18px 0
   color: #fff
   text-transform: uppercase
+  transition: all 0.2s ease
+
+.navbar-list .fa-angle-right
+  float: right
+  margin-top: -4px
+  font-size: 20px
+  color: rgba(255, 255, 255, 0.66)
   transition: all 0.2s ease
 
 .navbar-list-item,
@@ -85,7 +93,7 @@
 .navbar-list-item,
 .navbar-list-inner
   display: none
-  & .active
+  &.active
     display: block
 
 @media (min-width: $screen-sm)
@@ -166,12 +174,49 @@
   .navbar-current
     color: $active-c
 
-  .navbar-list li:hover .navbar-list-item
-    display: block
+  .navbar-list > li > a > .fa-angle-right
+    position: absolute
+    top: 65%
+    left: 45%
+    color: rgba(255, 255, 255, 0.33)
+    transform: rotate(90deg)
+
+  .navbar-list li:hover .fa-angle-right
+    color: rgba(255, 255, 255, 1)
 
   .navbar-list-item
     position: absolute
-    //display: block
+    width: 260px
+    padding: 0 15px
+    background: $active-c
+    opacity: 0
+
+  .navbar-list li:hover .navbar-list-item,
+  .navbar-list .navbar-list-next:hover .navbar-list-inner
+    display: block
+    animation-name: fadeIn
+    animation-duration: 0.2s
+    animation-fill-mode: forwards
+
+  @keyframes fadeIn
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+
+  .navbar-list-next
+    position: relative
+
+  .navbar-list-inner
+    position: absolute
+    padding: 0 15px
+    width: 260px
+    background: darken($active-c, 5%)
+    top: 0
+    left: 245px
+
+  .dt-back
+    display: none
 
 @media (min-width: $screen-xl)
 

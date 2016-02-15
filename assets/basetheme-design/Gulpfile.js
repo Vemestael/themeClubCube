@@ -1,15 +1,16 @@
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var debug = require('gulp-debug');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
+var notify = require('gulp-notify');
 var bs = require('browser-sync').create();
 
-gulp.task('serve', function() {
+gulp.task('serve', function () {
 
     bs.init({
         proxy: "http://localhost:63342/themeClubCube/assets/basetheme-design/"
@@ -20,13 +21,22 @@ gulp.task('serve', function() {
 });
 
 gulp.task('sass', function (callback) {
-    return sass(['css/sass/critical.sass', 'css/sass/main-style.sass'],
-        { sourcemap: true,
-          style: 'expanded'})
-        .on('error', sass.logError)
+    return gulp.src(['css/sass/critical.sass', 'css/sass/main-style.sass'])
+        .pipe(plumber(
+            {
+                errorHandler: notify.onError(function (err) {
+                        return {
+                            title: 'sass',
+                            message: err.message
+                        };
+                    }
+                )
+            }))
+        .pipe(sourcemaps.init())
+        .pipe(sass())
         .pipe(debug({title: 'sass:'}))
         .pipe(autoprefixer({
-            browsers:  [
+            browsers: [
                 'Chrome >= 35',
                 'Firefox >= 31',
                 'Edge >= 12',
@@ -49,11 +59,17 @@ gulp.task('sass', function (callback) {
     callback();
 });
 
-gulp.task('templates', function(callback) {
+gulp.task('templates', function (callback) {
     gulp.src('jade/*.jade')
         .pipe(plumber())
         .pipe(jade({
             pretty: true,
+        }))
+        .on('error', notify.onError(function (err) {
+            return {
+                title: 'jade',
+                message: err.message
+            }
         }))
         .pipe(gulp.dest('.'))
         .pipe(debug({title: 'jade:'}));
@@ -65,4 +81,38 @@ gulp.task('watch', function () {
     gulp.watch('jade/**/*.*', ['templates']);
 });
 
-gulp.task('default', ['templates','sass', 'watch']);
+gulp.task('default', ['serve','templates','sass', 'watch']);
+//gulp.task('default', ['templates', 'sass', 'watch']);
+
+/**
+ * var notify = require ('gulp-notify');
+ *
+ * .on('error', notify.onError(function(err) {
+ * return: {
+ *  title: 'sass';
+ *  message: err.message
+ * };
+ * }))  можно проверить установив после одного потока сасс - но он будет работать только на один поток
+ * чтобы работал на все потоки и ловил ошибки используем так пламбер и ставим его в
+ *
+ *самом начале
+ *
+ * второй вариант отлова ошибок
+ * .pipe(plumber(
+ *  errorHandler: notify.onError(function(err) {
+ *  return: {
+ *  title: 'sass';
+ *  message: err.message
+ * };
+ *  }
+ * ))
+ *
+ *
+ *
+ *  .on('error', notify.onError(function (err) {
+            return {
+                title: 'sass',
+                message: err.message,
+            };
+        }))
+ */

@@ -39,6 +39,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.utils.extend(_globals.siteObj.classes.HeaderFunctions, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.Custom, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.Sliders, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.DtMenu, _globals.siteObj.base.Class);
 
 
     },
@@ -56,6 +57,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.createClassInstance('HeaderFunctions', _globals.siteObj.classes.HeaderFunctions, {classId: 'HeaderFunctions'});
       _globals.siteObj.createClassInstance('Custom', _globals.siteObj.classes.Custom, {classId: 'Custom'});
       _globals.siteObj.createClassInstance('Sliders', _globals.siteObj.classes.Sliders, {classId: 'Sliders'});
+      _globals.siteObj.createClassInstance('DtMenu', _globals.siteObj.classes.DtMenu, {classId: 'DtMenu'});
     },
 
     _setup = function () {
@@ -77,6 +79,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
             _themeMode.trigger('HeaderFunctions_Init', data);
             _themeMode.trigger('Custom_Init', data);
             _themeMode.trigger('Sliders_Init', data);
+            _themeMode.trigger('DtMenu_Init', data);
           });
         }
       }
