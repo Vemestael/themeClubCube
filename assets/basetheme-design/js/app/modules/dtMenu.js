@@ -42,10 +42,17 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
         },
 
         _setBinds = function () {
+            _binds().setClickLink();
         },
 
         _binds = function () {
-            return {};
+            return {
+                setClickLink: function () {
+                    _dtMenu.bind($('.navbar-list li a'), 'click', function (e) {
+                        e.preventDefault();
+                    });
+                }
+            };
         },
 
         _triggers = function () {
@@ -53,7 +60,9 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
         },
 
         _dtMenuFunc = function () {
+
             if (_globals.navigation.length && $window.width() < 1200) {
+
 
                 //Init
                 var $allLiIt = _globals.navigation.find('li a i');
@@ -62,53 +71,53 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
                 var $submenu = _globals.navigation.find('.dl-submenu');
                 var backNode = '<li class="dt-back"><a href="#"><i class="fa fa-angle-left"></i>Back</a>';
 
-                //$submenu.each(function () {
-                //    $(this).prepend(backNode);
-                //});
+                $submenu.each(function () {
+                    $(this).prepend(backNode);
+                });
 
-                //var $backNodes = _globals.navigation.find('.dt-back');
+                var $backNodes = _globals.navigation.find('.dt-back');
 
                 //Events
-                //$allLiIt.click(function () {
-                //    var $clickedLiIt = $(this);
-                //    var $clickedLi = $clickedLiIt.closest('li');
-                //    var $parentUl = $clickedLi.closest('ul');
-                //    if ($parentUl.hasClass('navbar-nav')) {
-                //        var $nextUl = $clickedLi.children('ul');
-                //        var $parentLi = $clickedLi.closest('li.subviewopen');
-                //        if ($nextUl.length) {
-                //            $clickedLi.addClass('subviewopen');
-                //            $parentUl.addClass('subview');
-                //        }
-                //    } else {
-                //        var $nextUl = $clickedLi.children('ul');
-                //        var $parentLi = $clickedLi.closest('li.subviewopen');
-                //        if ($parentLi.hasClass('subviewopen')) {
-                //            $parentLi.removeClass('subviewopen');
-                //            $parentLi.addClass('subview');
-                //            $clickedLi.addClass('subviewopen');
-                //        }
-                //    }
-                //    console.log('Nope');
-                //    return false;
-                //});
+                $allLiIt.click(function () {
+                    var $clickedLiIt = $(this);
+                    var $clickedLi = $clickedLiIt.closest('li');
+                    var $parentUl = $clickedLi.closest('ul');
+                    if ($parentUl.hasClass('navbar-nav')) {
+                        var $nextUl = $clickedLi.children('ul');
+                        var $parentLi = $clickedLi.closest('li.subviewopen');
+                        if ($nextUl.length) {
+                            $clickedLi.addClass('subviewopen');
+                            $parentUl.addClass('subview');
+                        }
+                    } else {
+                        var $nextUl = $clickedLi.children('ul');
+                        var $parentLi = $clickedLi.closest('li.subviewopen');
+                        if ($parentLi.hasClass('subviewopen')) {
+                            $parentLi.removeClass('subviewopen');
+                            $parentLi.addClass('subview');
+                            $clickedLi.addClass('subviewopen');
+                        }
+                    }
+                    console.log('Nope');
+                    return false;
+                });
 
-                //$backNodes.click(function () {
-                //    var $backLink = $(this);
-                //    var $parentLi = $(this).closest('li.subviewopen');
-                //    var $parentUl = $parentLi.closest('ul');
-                //
-                //    if (!$parentUl.hasClass('navbar-nav')) {
-                //        var $upperLi = $parentUl.closest('li');
-                //        $parentLi.removeClass('subviewopen');
-                //        $upperLi.addClass('subviewopen');
-                //    } else {
-                //        $parentUl.removeClass('subview');
-                //        $parentLi.removeClass('subviewopen');
-                //    }
-                //
-                //    return false;
-                //});
+                $backNodes.click(function () {
+                    var $backLink = $(this);
+                    var $parentLi = $(this).closest('li.subviewopen');
+                    var $parentUl = $parentLi.closest('ul');
+
+                    if (!$parentUl.hasClass('navbar-nav')) {
+                        var $upperLi = $parentUl.closest('li');
+                        $parentLi.removeClass('subviewopen');
+                        $upperLi.addClass('subviewopen');
+                    } else {
+                        $parentUl.removeClass('subview');
+                        $parentLi.removeClass('subviewopen');
+                    }
+
+                    return false;
+                });
 
             }
         },
