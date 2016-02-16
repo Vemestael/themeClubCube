@@ -2235,7 +2235,8 @@ blockquote::before {
   display: none; }
 
 .subview .subviewopen {
-  display: block; }
+  display: block;
+  border-bottom: none; }
   .subview .subviewopen > a {
     display: none; }
 
