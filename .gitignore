@@ -3,6 +3,7 @@ config.core.php
 nbproject
 .svn
 .sass-cache
+node_modules
 
 /_packages/*
 /.sass-cache
