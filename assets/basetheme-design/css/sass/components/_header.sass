@@ -70,10 +70,15 @@
 
 .navbar-list .fa-angle-right
   float: right
-  margin-top: -4px
-  font-size: 20px
+  margin-top: -2px
+  font-size: 18px
   color: rgba(255, 255, 255, 0.66)
   transition: all 0.2s ease
+
+.navbar-list .fa-angle-left
+  margin-right: 10px
+  font-size: 18px
+  color: rgba(255, 255, 255, 0.66)
 
 .navbar-list-item,
 .navbar-list-inner
@@ -90,11 +95,29 @@
   text-transform: uppercase
   border: none
 
-.navbar-list-item,
-.navbar-list-inner
+//.navbar-list-item,
+//.navbar-list-inner
+//  display: none
+//  &.active
+//    display: block
+
+//Dt-menu
+.subview
+  display: block!important
+
+.subview > li
   display: none
-  &.active
-    display: block
+
+.subview .subviewopen
+  display: block
+  & > a
+    display: none
+
+.dl-submenu
+  display: none
+
+.subview .subviewopen > .dl-submenu
+  display: block
 
 @media (min-width: $screen-sm)
 
@@ -214,9 +237,6 @@
     background: darken($active-c, 5%)
     top: 0
     left: 245px
-
-  .dt-back
-    display: none
 
 @media (min-width: $screen-xl)
 

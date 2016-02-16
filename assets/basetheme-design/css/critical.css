@@ -2200,12 +2200,17 @@ blockquote::before {
 
 .navbar-list .fa-angle-right {
   float: right;
-  margin-top: -4px;
-  font-size: 20px;
+  margin-top: -2px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.66);
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+
+.navbar-list .fa-angle-left {
+  margin-right: 10px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.66); }
 
 .navbar-list-item,
 .navbar-list-inner {
@@ -2223,12 +2228,22 @@ blockquote::before {
   text-transform: uppercase;
   border: none; }
 
-.navbar-list-item,
-.navbar-list-inner {
+.subview {
+  display: block !important; }
+
+.subview > li {
   display: none; }
-  .navbar-list-item.active,
-  .navbar-list-inner.active {
-    display: block; }
+
+.subview .subviewopen {
+  display: block; }
+  .subview .subviewopen > a {
+    display: none; }
+
+.dl-submenu {
+  display: none; }
+
+.subview .subviewopen > .dl-submenu {
+  display: block; }
 
 @media (min-width: 768px) {
   .header__sticky .navbar-brand {
@@ -2346,9 +2361,7 @@ blockquote::before {
     width: 260px;
     background: #b5c82f;
     top: 0;
-    left: 245px; }
-  .dt-back {
-    display: none; } }
+    left: 245px; } }
 
 @media (min-width: 1570px) {
   .header .line {

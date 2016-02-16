@@ -63,9 +63,8 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
 
             if (_globals.navigation.length && $window.width() < 1200) {
 
-
                 //Init
-                var $allLiIt = _globals.navigation.find('li a i');
+                var $allLiIt = _globals.navigation.find('.dt-up');
                 var $allLi = _globals.navigation.find('li');
                 var $topLi = _globals.navigation.children('li');
                 var $submenu = _globals.navigation.find('.dl-submenu');
@@ -82,7 +81,7 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
                     var $clickedLiIt = $(this);
                     var $clickedLi = $clickedLiIt.closest('li');
                     var $parentUl = $clickedLi.closest('ul');
-                    if ($parentUl.hasClass('navbar-nav')) {
+                    if ($parentUl.hasClass('dl-menu')) {
                         var $nextUl = $clickedLi.children('ul');
                         var $parentLi = $clickedLi.closest('li.subviewopen');
                         if ($nextUl.length) {
@@ -107,7 +106,7 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
                     var $parentLi = $(this).closest('li.subviewopen');
                     var $parentUl = $parentLi.closest('ul');
 
-                    if (!$parentUl.hasClass('navbar-nav')) {
+                    if ($parentUl.hasClass('dl-submenu')) {
                         var $upperLi = $parentUl.closest('li');
                         $parentLi.removeClass('subviewopen');
                         $upperLi.addClass('subviewopen');
