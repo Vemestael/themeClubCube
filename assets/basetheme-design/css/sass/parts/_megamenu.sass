@@ -2,18 +2,154 @@
 // Mega-menu
 // --------------------------------------------------
 
-.me ee
-  background-color: #fff
+.mega-menu__list
+  margin-bottom: -2px
+  padding: 0
+  overflow: hidden
 
+.mega-menu__list li
+  padding: 0
+  border-bottom: none
 
+.mega-menu__list li > a
+  border-bottom: 2px solid rgba(255, 255, 255, 0.33)
 
+.mega-menu__link-media,
+.mega-menu__link-tabs,
+.mega-menu__link-graph,
+.mega-menu__link-btn,
+.mega-menu__link-fdback,
+.mega-menu__link-tmtable,
+.mega-menu__link-rpscol
+  font-family: $base-bold-font
+  &::before
+    content: ''
+    padding-right: 10px
+    font-family: $fa
 
+.mega-menu__link-media::before
+  content: '\f001'
 
+.mega-menu__link-tabs::before
+  content: '\f07b'
 
+.mega-menu__link-graph::before
+  content: '\f031'
 
+.mega-menu__link-btn::before
+  content: '\f0c8'
 
+.mega-menu__link-fdback::before
+  content: '\f075'
 
+.mega-menu__link-tmtable::before
+  content: '\f133'
 
+.mega-menu__link-rpscol::before
+  content: '\f0db'
+
+.mega-menu .hr-line
+  margin-bottom: 3px
+
+.mega-menu__events
+  margin-top: 30px
+  margin-bottom: 10px
+  overflow: hidden
+
+.mega-menu__events-list
+  margin-bottom: 35px
+
+.mega-menu__events-list .c-box
+  margin-bottom: 1px
+
+.mega-menu__events-list .c-box .c-box__inner
+  min-height: 70px!important
+  margin: 0
+  padding: 10px
+
+.mega-menu__events-list .c-box__date-item
+  float: left
+
+.mega-menu__events-list .c-box .c-box__cont
+  float: right
+
+.mega-menu__events-list .c-box__ttl-s6
+  font-size: 16px
+  line-height: 18px
+
+.mega-menu__events .c-box .c-box__inner
+  min-height: 210px
+
+.mega-menu__events .btn-pointer__sm
+  min-height: 30px
+  padding-left: 20px
+  padding-right: 20px
+
+.mega-menu__events .c-box__link-wrap
+  position: absolute
+  right: 20px
+  bottom: 15px
+
+.mega-menu__content
+  color: #fff
+  overflow: hidden
+
+.mega-menu__item-cont
+  margin-bottom: 40px
+
+.mega-menu__ttl-s6
+  margin: 0 0 15px 0
+  font-family: $second-bold-font
+  font-size: 18px
+  line-height: 20px
+  letter-spacing: 2px
+  text-transform: uppercase
+
+.mega-menu__content p
+  margin-top: 0
+  font-size: 14px
+  line-height: 21px
+
+.mega-menu__txt
+  font-size: 12px
+  font-style: italic
+  line-height: 21px
+
+.mega-menu__item-cont .b-form__btn
+  background-color: $black-c
+
+.mega-menu__hr-wrap
+  position: relative
+  background-color: $active-c
+  z-index: 1
+
+@media (min-width: $screen-sm)
+  .mega-menu__list
+    margin-right: -15px
+    margin-left: -15px
+
+  .mega-menu__list li > a
+    margin: 0 15px
+
+@media (min-width: $screen-lg)
+  .mega-menu
+    position: absolute
+    left: 40px
+    right: 40px
+    padding: 0 20px
+    background-color: $active-c
+    display: block
+
+  .mega-menu__events .c-box .c-box__inner
+    max-width: 100%
+
+  .mega-menu__content
+    margin-top: 30px
+
+@media (min-width: $screen-xl)
+  .mega-menu
+    left: 0
+    right: 0
 
 
 

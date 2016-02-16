@@ -1936,16 +1936,6 @@
   background-color: #c0d23e;
   overflow-y: auto; }
 
-.navbar-list li a {
-  display: block;
-  padding: 18px 0;
-  color: #fff; }
-
-.navbar-list > li {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.33); }
-  .navbar-list > li:last-child {
-    border-bottom: none; }
-
 @media (min-width: 768px) {
   .header--toggled .navbar-toogle {
     width: 140px;

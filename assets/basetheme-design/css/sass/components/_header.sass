@@ -59,7 +59,13 @@
 .navbar-list > li > a
   position: relative
   text-transform: uppercase
+
+.navbar-list li > a
+  display: block
+  padding: 18px 0
+  color: #fff
   border: none
+  text-transform: uppercase
 
 .navbar-current
   display: block
@@ -84,16 +90,13 @@
 .navbar-list-inner
   padding: 0
 
-.navbar-list-item > li,
-.navbar-list-inner > li
+.navbar-list li
   border-bottom: 2px solid rgba(255, 255, 255, 0.33)
   &:last-child
     border-bottom: none
 
-.navbar-list-item > li > a,
-.navbar-list-inner > li > a
-  text-transform: uppercase
-  border: none
+.navbar-list .dt-back
+  border-bottom: 2px solid rgba(255, 255, 255, 0.33)
 
 //.navbar-list-item,
 //.navbar-list-inner
@@ -157,6 +160,9 @@
     margin-bottom: 9px
 
 @media (min-width: $screen-lg)
+  .header .line
+    position: relative
+
   .header__sticky .navbar-list > li > a,
   .header__sticky .navbar-current
     padding: 17px
@@ -217,6 +223,7 @@
 
   .navbar-list li:hover .navbar-list-item,
   .navbar-list .navbar-list-next:hover .navbar-list-inner
+    //.navbar-list li:hover .mega-menu
     display: block
     animation-name: fadeIn
     animation-duration: 0.2s
@@ -238,6 +245,9 @@
     background: darken($active-c, 5%)
     top: 0
     left: 245px
+
+  .navbar__item-mega-menu
+    position: static!important
 
 @media (min-width: $screen-xl)
 

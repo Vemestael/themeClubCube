@@ -238,8 +238,10 @@
   position: relative
   display: inline-block
   padding-left: 7px
+  overflow: hidden
 
-.btn-pointer
+.btn-pointer,
+.btn-pointer__sm
   margin: 0
   padding: 0 40px 0 15px
   font-size: 16px
@@ -249,11 +251,15 @@
   border: none
   overflow: visible
 
-.btn-pointer.btn-pointer--size
+.btn-pointer__sm
+  display: table
   min-height: 40px
   padding: 6px 10px
   font-size: 14px
   line-height: 1
+  & b
+    display: table-cell
+    vertical-align: middle
 
 .btn-pointer__left
   position: absolute
@@ -280,7 +286,8 @@
   background-image: url("../images/arrow-left.svg")
   transform: translateY(-50%)
 
-.btn-pointer__wrap:hover .btn-pointer
+.btn-pointer__wrap:hover .btn-pointer,
+.btn-pointer__wrap:hover .btn-pointer__sm
   background-color: $active-sc-c
 
 .btn-pointer__wrap:hover .btn-pointer__txt

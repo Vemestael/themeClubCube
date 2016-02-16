@@ -83,8 +83,13 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
                     var $parentUl = $clickedLi.closest('ul');
                     if ($parentUl.hasClass('dl-menu')) {
                         var $nextUl = $clickedLi.children('ul');
+                        var $nextDiv = $('.mega-menu');
                         var $parentLi = $clickedLi.closest('li.subviewopen');
                         if ($nextUl.length) {
+                            $clickedLi.addClass('subviewopen');
+                            $parentUl.addClass('subview');
+                        }
+                        else if ($nextDiv.length) {
                             $clickedLi.addClass('subviewopen');
                             $parentUl.addClass('subview');
                         }

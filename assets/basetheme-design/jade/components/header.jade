@@ -58,16 +58,105 @@ header#header.header
               a(href="#") blog open
         li
           a(href="#") Contacts
-        li
-          a(href="#") Elements
+        li.dt-up.navbar__item-mega-menu
+          a(href="") Elements
             i.fa.fa-angle-right
           .mega-menu.dl-submenu
-            ul.mega-list
-              li: a(href="#").mega-link__media video & audio
-              li: a(href="#").mega-link__tabs tabs & accordion
-              li: a(href="#").mega-link__graph typography
-              li: a(href="#").mega-link__btn buttons
-              li: a(href="#").mega-link__btn buttons
+            ul.mega-menu__list
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-media video & audio
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-tabs tabs & accordion
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-graph typography
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-btn buttons
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-fdback testimonials
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-tmtable timetable
+              li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-rpscol responsive columns
+            .mega-menu__hr-wrap
+              .hr-line
+              .hr-line
+              .hr-line
+            .mega-menu__events-wrap.row
+              .mega-menu__events.col-lg-6
+                .row
+                  .mega-menu__events-list.col-sm-6
+                    .c-box.c-box--sm
+                      .c-box__inner
+                        .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_16_Original.jpg")
+                        .c-box__cont
+                          h6.c-box__ttl-s6 Feel our new dancehall "Rivierra"
+                        .c-box__date-item.c-box__date-item--float
+                          time.date-sm.c-box__date.c-box__date--sm(datetime="2009-08-29T20:00")
+                            span.date-sm__dt 23
+                            span.date-sm__rh
+                              span.date-sm__rh-m sept
+                              span.date-sm__rh-d 2014
+                            span.date__ad 8:00 pm
+                        a(href="#" rel="nofollow").b-box__link
+
+                    .c-box.c-box--sm
+                      .c-box__inner
+                        .b-box__img-wrap.b-box__bg-a
+                        .c-box__cont
+                          h6.c-box__ttl-s6 Feel our new dancehall "Rivierra"
+                        .c-box__date-item.c-box__date-item--float
+                          time.date-sm.c-box__date.c-box__date--sm(datetime="2009-08-29T20:00")
+                            span.date-sm__dt 23
+                            span.date-sm__rh
+                              span.date-sm__rh-m sept
+                              span.date-sm__rh-d 2014
+                        a(href="#" rel="nofollow").b-box__link
+
+                    .c-box.c-box--sm
+                      .c-box__inner
+                        .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_15_Original.jpg")
+                        .c-box__cont
+                          h6.c-box__ttl-s6 Feel our new dancehall "Rivierra"
+                        .c-box__date-item.c-box__date-item--float
+                          time.date-sm.c-box__date.c-box__date--sm(datetime="2009-08-29T20:00")
+                            span.date-sm__dt 23
+                            span.date-sm__rh
+                              span.date-sm__rh-m sept
+                              span.date-sm__rh-d 2014
+                        a(href="#" rel="nofollow").b-box__link
+
+                  .c-box.c-box--sm.col-sm-6
+                    .c-box__inner
+                      .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_19_Original.jpg")
+                      .c-box__cont
+                        h6.c-box__ttl-s6 Feel our new dancehall "Rivierra"
+                      .c-box__date-item.c-box__date-item--float
+                        time.date-sm.c-box__date.c-box__date--sm(datetime="2009-08-29T20:00")
+                          span.date-sm__dt 23
+                          span.date-sm__rh
+                            span.date-sm__rh-m sept
+                            span.date-sm__rh-d 2014
+                          span.date__ad 8:00 pm
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer__sm btn-anim-a" href="#"><b>join event</b></a>
+                          <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                          .st0{fill:#A82743;}</style>
+                          <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="#" rel="nofollow").b-box__link
+
+              .mega-menu__content.col-lg-6
+                .row
+                  .mega-menu__item-cont.col-sm-6
+                    h6.mega-menu__ttl-s6 What do i need to know?
+                    p.
+                      But still, we love to roll loud dancing until dawn, and then to "crawl" on the body,
+                      remember proschedshem evente perekrik and share emotions we experienced some time ago.
+
+                  .mega-menu__item-cont.col-sm-6
+                    h6.mega-menu__ttl-s6 Get in touch with our new Events
+                    p.mega-menu__txt.
+                      Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
+                      often!
+                    form.b-form.b-form--inline(action="/" method="GET")
+                      .b-form__group
+                        input.b-form__control(type="email", placeholder="Your E-mail")
+                      button.b-form__btn(type="submit") Subscribe
         li
           a(href="#")
             span.fa.fa-tint
