@@ -2533,7 +2533,6 @@ blockquote::before {
   max-width: 360px;
   margin: 0;
   padding-right: 30px;
-  padding-left: 21px;
   font-family: "PT Sans Caption Bold", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -2556,7 +2555,7 @@ blockquote::before {
 
 .b-advert__link-wrap {
   position: absolute;
-  left: 35px;
+  left: 15px;
   bottom: 40px;
   overflow: hidden; }
 
@@ -2613,7 +2612,7 @@ blockquote::before {
 .b-advert__date-wrap {
   position: absolute;
   top: 15px;
-  left: 38px; }
+  left: 15px; }
 
 .b-advert__slider.slick-slider {
   margin-bottom: 0; }
