@@ -14,38 +14,38 @@
 .mega-menu__list li > a
   border-bottom: 2px solid rgba(255, 255, 255, 0.33)
 
-.mega-menu__link-media,
-.mega-menu__link-tabs,
-.mega-menu__link-graph,
-.mega-menu__link-btn,
-.mega-menu__link-fdback,
-.mega-menu__link-tmtable,
-.mega-menu__link-rpscol
+.mega-menu__link-media > b,
+.mega-menu__link-tabs > b,
+.mega-menu__link-graph > b,
+.mega-menu__link-btn > b,
+.mega-menu__link-fdback > b,
+.mega-menu__link-tmtable > b,
+.mega-menu__link-rpscol > b
   font-family: $base-bold-font
   &::before
     content: ''
     padding-right: 10px
     font-family: $fa
 
-.mega-menu__link-media::before
+.mega-menu__link-media > b::before
   content: '\f001'
 
-.mega-menu__link-tabs::before
+.mega-menu__link-tabs > b::before
   content: '\f07b'
 
-.mega-menu__link-graph::before
+.mega-menu__link-graph > b::before
   content: '\f031'
 
-.mega-menu__link-btn::before
+.mega-menu__link-btn > b::before
   content: '\f0c8'
 
-.mega-menu__link-fdback::before
+.mega-menu__link-fdback > b::before
   content: '\f075'
 
-.mega-menu__link-tmtable::before
+.mega-menu__link-tmtable > b::before
   content: '\f133'
 
-.mega-menu__link-rpscol::before
+.mega-menu__link-rpscol > b::before
   content: '\f0db'
 
 .mega-menu .hr-line
@@ -138,13 +138,22 @@
     right: 40px
     padding: 0 20px
     background-color: $active-c
-    display: block
 
   .mega-menu__events .c-box .c-box__inner
     max-width: 100%
 
   .mega-menu__content
     margin-top: 30px
+
+  .mega-menu__list li a > b
+    width: 100%
+    display: inline-block
+    line-height: 1
+    transform: translate3d(0,0,0)
+    transition: transform 0.2s ease
+
+  .mega-menu__list li a:hover > b
+    transform: translate3d(3px,0,0)
 
 @media (min-width: $screen-xl)
   .mega-menu
