@@ -1,6 +1,11 @@
 //
 // Mega-menu
 // --------------------------------------------------
+.mega-menu
+  display: none
+
+.mega-menu li
+  display: block
 
 .mega-menu__list
   margin-bottom: -2px
@@ -153,7 +158,7 @@
     transition: transform 0.2s ease
 
   .mega-menu__list li a:hover > b
-    transform: translate3d(3px,0,0)
+    transform: translate3d(3px, 0, 0)
 
 @media (min-width: $screen-xl)
   .mega-menu

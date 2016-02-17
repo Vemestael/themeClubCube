@@ -60,12 +60,14 @@
   position: relative
   text-transform: uppercase
 
-.navbar-list li > a
+.navbar-list li > a,
+.navbar-dropdown__submenu span
   display: block
   padding: 18px 0
   color: #fff
   border: none
   text-transform: uppercase
+  cursor: pointer
 
 .navbar-current
   display: block
@@ -86,9 +88,14 @@
   font-size: 18px
   color: rgba(255, 255, 255, 0.66)
 
-.navbar-list-item,
-.navbar-list-inner
+.navbar-dropdown__menu,
+.navbar-list__inner
   padding: 0
+
+.navbar-list__inner
+  margin: 0 -15px
+  padding: 0 15px
+  background: darken($active-c, 5%)
 
 .navbar-list li
   border-bottom: 2px solid rgba(255, 255, 255, 0.33)
@@ -98,17 +105,12 @@
 .navbar-list .dt-back
   border-bottom: 2px solid rgba(255, 255, 255, 0.33)
 
-//.navbar-list-item,
-//.navbar-list-inner
-//  display: none
-//  &.active
-//    display: block
-
 //Dt-menu
 .subview
   display: block!important
+  border-bottom: none!important
 
-.subview > li
+.subview li
   display: none
 
 .subview .subviewopen
@@ -117,11 +119,23 @@
   & > a
     display: none
 
-.dl-submenu
+.navbar-dropdown__menu
   display: none
 
-.subview .subviewopen > .dl-submenu
+.subview .subviewopen>.dl-submenu
   display: block
+
+.subview .subviewopen>.dl-submenu>li
+  display: block
+
+.subview li.subview>a
+  display: none!important
+
+.subview li.subview .dl-submenu
+  display: block
+
+.navbar-dropdown__submenu.subviewopen span
+  display: none
 
 @media (min-width: $screen-sm)
 
@@ -159,7 +173,16 @@
     height: 7px
     margin-bottom: 9px
 
+  .navbar-list__inner
+    margin: 0 -40px
+    padding: 0 40px
+
 @media (min-width: $screen-lg)
+  .navbar-list__inner
+    display: none
+    margin: 0
+    padding: 0
+
   .header .line
     position: relative
 
@@ -214,15 +237,27 @@
   .navbar-list li:hover .fa-angle-right
     color: rgba(255, 255, 255, 1)
 
-  .navbar-list-item
+  .navbar-dropdown__menu
     position: absolute
     width: 260px
     padding: 0 15px
     background: $active-c
     opacity: 0
 
-  .navbar-list li:hover .navbar-list-item,
-  .navbar-list .navbar-list-next:hover .navbar-list-inner,
+  .navbar-dropdown__menu li > a,
+  .navbar-dropdown__submenu span
+    transform: translate3d(0, 0, 0)
+    transition: all 0.2s ease
+
+  .navbar-dropdown__menu li > a:hover,
+  .navbar-dropdown__submenu span:hover
+    transform: translate3d(3px, 0, 0)
+
+  .navbar-dropdown__submenu span:hover i
+    transform: translate3d(-3px, 0, 0)
+
+  .navbar-list li:hover .navbar-dropdown__menu,
+  .navbar-list .navbar-dropdown__submenu:hover .navbar-list__inner,
   .navbar-list li:hover .mega-menu
     display: block
     animation-name: fadeIn
@@ -235,14 +270,13 @@
     100%
       opacity: 1
 
-  .navbar-list-next
+  .navbar-dropdown__submenu
     position: relative
 
-  .navbar-list-inner
+  .navbar-list__inner
     position: absolute
     padding: 0 15px
     width: 260px
-    background: darken($active-c, 5%)
     top: 0
     left: 245px
 

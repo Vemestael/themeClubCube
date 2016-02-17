@@ -42,14 +42,14 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
         },
 
         _setBinds = function () {
-            _binds().setClickLink();
+            //_binds().setClickLink();
         },
 
         _binds = function () {
             return {
                 setClickLink: function () {
                     _dtMenu.bind($('.navbar-list li a'), 'click', function (e) {
-                        e.preventDefault();
+                        //e.preventDefault();
                     });
                 }
             };
