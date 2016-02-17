@@ -22,6 +22,10 @@
 .c-headlines__img-wrap
   @extend %bg-images
   z-index: -1
+  &::before
+    @include absolute-center()
+    content: ''
+    background-color: rgba(32, 32, 32, 0.33)
 
 .c-headlines__ttl
   margin-bottom: 20px

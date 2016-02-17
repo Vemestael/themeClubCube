@@ -1432,7 +1432,7 @@ ol {
   display: block;
   width: 5px;
   height: 5px;
-  background-color: #a82743; }
+  background-color: #c0d23e; }
 
 .list-numb li {
   counter-increment: number;
@@ -1443,7 +1443,7 @@ ol {
   position: absolute;
   left: -29px;
   font-family: "PT Sans Bold", sans-serif;
-  color: #a82743; }
+  color: #c0d23e; }
 
 blockquote {
   position: relative;
@@ -1457,7 +1457,7 @@ blockquote::before {
   bottom: 0;
   left: 23px;
   width: 5px;
-  background-color: #a82743; }
+  background-color: #c0d23e; }
 
 .b-code {
   display: block;
@@ -2448,6 +2448,15 @@ blockquote::before {
 
 .c-headlines__img-wrap {
   z-index: -1; }
+  .c-headlines__img-wrap::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: '';
+    background-color: rgba(32, 32, 32, 0.33); }
 
 .c-headlines__ttl {
   margin-bottom: 20px;
@@ -3416,7 +3425,7 @@ blockquote::before {
   position: absolute;
   left: 0;
   right: 0;
-  top: -5px;
+  top: 0;
   height: 10px;
   background: url("../images/triangle.svg") repeat-x;
   background-position: center;
@@ -3766,25 +3775,46 @@ blockquote::before {
   position: relative;
   top: -90px;
   padding: 30px 30px 35px 15px;
-  background-color: #c0d23e; }
+  background-color: #530d85; }
 
 .b-panel-t::before {
   content: '';
   border-top: 10px solid transparent;
   border-bottom: 43px solid transparent;
-  border-left: 43px solid #c0d23e;
+  border-left: 43px solid #530d85;
   position: absolute;
   bottom: -42px;
   left: 0; }
 
 .b-panel-t__list li {
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 40px; }
+
+.b-panel-t__list li p {
+  margin: 0;
   font-size: 24px;
   font-family: "PT Sans Bold", sans-serif;
-  line-height: 40px;
-  color: #fff; }
+  color: #fff;
+  line-height: 20px; }
 
-.b-panel-t__list li > span {
-  font-size: 14px; }
+.b-panel-t__arts {
+  overflow: hidden; }
+
+.b-panel-t__arts li {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 0;
+  word-wrap: break-word; }
+  .b-panel-t__arts li:nth-of-type(2n+1) {
+    clear: both; }
+
+.b-panel-t__arts span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px; }
 
 .b-panel-t__list li > a {
   font-size: 18px;
