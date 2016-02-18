@@ -116,10 +116,10 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _parallaxStart = function () {
-           //$.stellar({
-           //    horizontalScrolling: false,
-           //    verticalOffset: 100
-           // })
+            _globals.prlxBack.stellar({
+               horizontalScrolling: false,
+               verticalOffset: 100
+            })
         },
 
         _setCustomMethods = function () {
