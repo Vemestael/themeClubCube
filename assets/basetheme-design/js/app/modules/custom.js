@@ -50,16 +50,11 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         _setup = function () {
             _globals.masnBox.masonry();
             _globals.masnBoxGalr.masonry();
-            //_globals.prlxBack.stellar();
-
-            $.stellar({
-                horizontalScrolling: false,
-                verticalOffset: 100
-            })
+            //$window.stellar();
 
             _masonryBlocks();
             _masonryBlockGal();
-            //_parallaxStart();
+            _parallaxStart();
         },
 
         _setBinds = function () {
@@ -122,7 +117,10 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _parallaxStart = function () {
-
+            $window.stellar({
+                horizontalScrolling: false,
+                verticalOffset: 100
+            })
         },
 
         _setCustomMethods = function () {
