@@ -47,7 +47,6 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _initSlGallery();
             _initPartners();
             _initAdvert();
-            //_setBtnPos();
         },
 
         _setBinds = function () {
