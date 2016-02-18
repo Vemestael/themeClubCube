@@ -1362,7 +1362,7 @@ sup {
 p,
 .txt {
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 30px; }
 
 .small-txt {
   margin: 10px 0;
@@ -1427,7 +1427,7 @@ ol {
 .list li::before {
   content: '';
   position: absolute;
-  top: 9px;
+  top: 13px;
   left: -25px;
   display: block;
   width: 5px;
@@ -1441,6 +1441,7 @@ ol {
 .list-numb li::before {
   content: counter(number);
   position: absolute;
+  top: 2px;
   left: -29px;
   font-family: "PT Sans Bold", sans-serif;
   color: #c0d23e; }
