@@ -3774,7 +3774,7 @@ blockquote::before {
 .b-panel-t {
   position: relative;
   top: -90px;
-  padding: 30px 30px 35px 15px;
+  padding: 30px 15px 35px 15px;
   background-color: #530d85; }
 
 .b-panel-t::before {
@@ -3806,6 +3806,7 @@ blockquote::before {
   float: left;
   margin-bottom: 20px;
   margin-right: 0;
+  padding-right: 7px;
   word-wrap: break-word; }
   .b-panel-t__arts li:nth-of-type(2n+1) {
     clear: both; }
@@ -3827,15 +3828,25 @@ blockquote::before {
 
 @media (min-width: 768px) {
   .b-panel-t {
-    top: -140px; }
+    top: -140px;
+    margin-bottom: -30px; }
   .b-panel-t__list:nth-of-type(2n+1) {
     clear: both; }
   .b-panel-t__list:last-child {
-    float: right; } }
+    float: right; }
+  .b-panel-t__list li {
+    margin-right: 0; }
+  .b-panel-t__arts {
+    margin-top: 15px; } }
 
 @media (min-width: 992px) {
-  .b-panel-t__list:nth-of-type(2n+1) {
-    clear: none; } }
+  .b-panel-t__list:nth-of-type(2n+1),
+  .b-panel-t__arts li:nth-of-type(2n+1) {
+    clear: none; }
+  .b-panel-t__arts li {
+    width: auto;
+    margin-right: 45px;
+    padding: 0; } }
 
 .b-promo {
   padding-top: 60px;
@@ -4153,6 +4164,12 @@ blockquote::before {
   .mega-menu {
     left: 0;
     right: 0; } }
+
+.parallax {
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden; }
 
 .b-footer {
   padding-top: 65px;

@@ -6,6 +6,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             masnBox: $('#masnBox'),
             masnBoxGalr: $('#masnrGallery'),
             header: '#header',
+            prlxBack: '#parallaxBack',
             // elements
             // prop
             // data
@@ -17,6 +18,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             masnBoxGalr: null,
             addMoreBlogs: null,
             header: null,
+            prlxBack: null,
             // elements
 
             // prop
@@ -42,6 +44,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _globals.masnBox = $(_properties.masnBox);
             _globals.masnBoxGalr = $(_properties.masnBoxGalr);
             _globals.header = $(_properties.header);
+            _globals.prlxBack = $(_properties.prlxBack);
         },
 
         _setup = function () {
@@ -50,6 +53,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
 
             _masonryBlocks();
             _masonryBlockGal();
+            _parallaxStart();
         },
 
         _setBinds = function () {
@@ -109,6 +113,13 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     easing: 'linear',
                 }
             });
+        },
+
+        _parallaxStart = function () {
+           $.stellar({
+               horizontalScrolling: false,
+               verticalOffset: 100
+            })
         },
 
         _setCustomMethods = function () {
