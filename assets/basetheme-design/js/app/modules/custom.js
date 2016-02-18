@@ -50,7 +50,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         _setup = function () {
             _globals.masnBox.masonry();
             _globals.masnBoxGalr.masonry();
-            //$window.stellar();
+            _globals.prlxBack.stellar();
 
             _masonryBlocks();
             _masonryBlockGal();
