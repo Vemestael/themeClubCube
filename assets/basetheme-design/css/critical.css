@@ -1776,7 +1776,7 @@ blockquote::before {
 .btn-pointer__sm {
   display: table;
   min-height: 40px;
-  padding: 6px 10px;
+  padding: 13px 10px;
   font-size: 14px;
   line-height: 1; }
   .btn-pointer__sm b {
