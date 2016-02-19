@@ -4180,11 +4180,12 @@ blockquote::before {
     left: 0;
     right: 0; } }
 
-.parallax {
-  background-position: 50% 0;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  overflow: hidden; }
+@media (min-width: 992px) {
+  .parallax {
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden; } }
 
 .b-footer {
   padding-top: 65px;

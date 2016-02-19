@@ -116,10 +116,13 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _parallaxStart = function () {
-            $.stellar({
-                horizontalScrolling: false,
-                verticalOffset: 100
-            })
+            if ($window.width() > 992) {
+                console.log(12)
+                $.stellar({
+                    horizontalScrolling: false,
+                    verticalOffset: 100
+                })
+            }
         },
 
         _setCustomMethods = function () {
