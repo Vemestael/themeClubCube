@@ -2451,7 +2451,6 @@ blockquote::before {
 .b-headlines.b-headlines--img-prlx {
   position: relative;
   background-color: transparent; }
-  .b-headlines.b-headlines--img-prlx .b-breadcrumbs__list li,
   .b-headlines.b-headlines--img-prlx .b-headlines__ttl,
   .b-headlines.b-headlines--img-prlx .b-headlines__date {
     color: #fff; }
@@ -2499,7 +2498,7 @@ blockquote::before {
     font-size: 36px; }
   .c-headlines__date-lg {
     position: absolute;
-    top: 60px;
+    top: 84px;
     right: 40px; }
   .c-headlines .hr-pattern,
   .c-headlines__likes {
@@ -2520,6 +2519,9 @@ blockquote::before {
 
 .b-breadcrumbs {
   margin: 0 0 10px 0; }
+
+.b-breadcrumbs.b-breadcrumbs--wht {
+  color: #fff; }
 
 .b-breadcrumbs__list {
   padding: 0; }

@@ -5,8 +5,14 @@ html(lang='en')
     .wrap
       include components/header
       .c-headlines
-        .c-headlines__img-wrap.parallax.bg-image(data-stellar-background-ratio="1.2" ,data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
+        .c-headlines__img-wrap.parallax.bg-image(data-stellar-background-ratio="1.2",
+        data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
         .container
+          .b-breadcrumbs.b-breadcrumbs--wht
+            ul.b-breadcrumbs__list.x-small-txt
+              li: a.link(href="index.html") main
+              li: a.link(href="blog.html") events
+              li Private house party
           .c-headlines__ttl FRIENDS Private House Party Private Private House Party House Party
           .c-headlines__date-lg
             time(datetime="2015-09-23T08:00").date-lg
