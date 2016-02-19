@@ -3283,7 +3283,7 @@ blockquote::before {
   float: left;
   width: 100%;
   min-height: 325px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 20px;
   color: #c0d23e;
   -webkit-box-shadow: 0 0 0 2px #c0d23e inset;
