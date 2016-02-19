@@ -9,7 +9,7 @@ html(lang='en')
         .container
           .c-headlines__ttl FRIENDS Private House Party Private Private House Party House Party
           .c-headlines__date-lg
-            time(datetime="2015-09-23T8:00").date-lg
+            time(datetime="2015-09-23T08:00").date-lg
               span.date-lg__dt 23
               span.date-lg__rh
                 span.date-lg__rh-m september 2015
@@ -56,21 +56,21 @@ html(lang='en')
               span Donetsk
           ul.b-panel-t__list.col-sm-4.col-md-3
             li: a(href="mailto:tickets@cumeclub.com").link tickets@cumeclub.com
-            li.tel: a(href="tel:+38(096) 977-60-11").link +38 (096) 977-60-11
+            li.tel: a(href="tel:+380969776011").link +38 (096) 977-60-11
         .row
           main.b-main.b-blog-inr.col-md-8.col-lg-7
-            .b-blog-inr__txt.txt-intro
+            .txt-intro
               p Friendship - is unselfishness , personal relationship between people based on
                 | sympathy, sincerity, love and trust. But still, we love loud roll
                 | dancing until dawn  and then to "crawl" on the body, remember proschedshem
                 | evente perekrik and share emotions we experienced some time ago.
             .main-video
               .main-video__iframe-wrap
-                iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" allowfullscreen)
               p.main-video__desc.small-txt.
                 Your inner self will meet the full force of the summer, and we can go back to each witness
                 leaving the pores, we go back to basics!
-            p.b-blog-inr__txt.
+            p.
               Friendship - is unselfishness , personal relationship between people
               based on sympathy, sincerity, love and trust. But still, we love loud
               roll dancing until dawn  and then to "crawl" on the body, remember proschedshem
@@ -78,7 +78,7 @@ html(lang='en')
             .b-blog-inr__aside
               .b-blog-inr__img-wrap
                 img(src="../uploads/blog/open/Content_03.jpg" alt="foto")
-            p.b-blog-inr__txt.
+            p.
               Friendship - is unselfishness , personal relationship between people
               based on sympathy, sincerity, love and trust. But still, we love loud
               roll dancing until dawn  and then to "crawl" on the body, remember proschedshem
@@ -87,14 +87,14 @@ html(lang='en')
                on sympathy, sincerity, love and trust. But still, we love loud roll dancing
                until dawn  and then to "crawl" on the body, remember proschedshem evente
                perekrik and share emotions we experienced some time ago.
-            p.b-blog-inr__txt.
+            p.
               Friendship - is unselfishness , personal relationship between people
               based on sympathy, sincerity, love and trust. But still, we love loud
               roll dancing until dawn  and then to "crawl" on the body, remember proschedshem
                evente perekrik and share emotions we experienced some time ago.
             .b-blog-inr__img-wrap
               img(src="../uploads/blog/open/Content_04_wide.jpg" alt="foto")
-            p.b-blog-inr__txt.
+            p.
               Friendship - is unselfishness , personal relationship between people
               based on sympathy, sincerity, love and trust. But still, we love loud
               roll dancing until dawn  and then to "crawl" on the body, remember proschedshem
@@ -123,126 +123,129 @@ html(lang='en')
                   <sup class="b-footnote__mark">*</sup> - Your inner self will meet the full force of the summer,
                   and we can go back to each witness leaving the pores, we go back to basics!
 
-          aside.b-aside.b-aside--display.col-md-4.col-lg-4.col-lg-offset-1
-            .b-item__header
-              h6.s6-heading.b-item__ttl-header You may also like
-            article.c-box.c-box-v__sm
-              .c-box__inner
-                .c-box__cont
-                  h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                .c-box__date-item
-                  time.date.c-box__date(datetime="2009-08-29T20:00")
-                    span.date__dt 23
-                    span.date__rh
-                      span.date__rh-m sept
-                      span.date__rh-d Mon
-                    span.date__ad 8:00 pm
-                .b-box__img-wrap.bg-image(data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg")
-                .b-box__grdnt-a
-                .c-box__link-wrap
-                  .btn-pointer__wrap.
-                    <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+          aside.b-aside.col-md-4.col-lg-4.col-lg-offset-1
+            .row
+              .b-aside-item.col-xs-12.col-sm-6.col-md-12
+                .b-item__header
+                  h6.s6-heading.b-item__ttl-header You may also like
+                article.c-box.c-box-v__sm
+                  .c-box__inner
+                    .c-box__cont
+                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                    .c-box__date-item
+                      time.date.c-box__date(datetime="2009-08-29T20:00")
+                        span.date__dt 23
+                        span.date__rh
+                          span.date__rh-m sept
+                          span.date__rh-d Mon
+                        span.date__ad 8:00 pm
+                    .b-box__img-wrap.bg-image(data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg")
+                    .b-box__grdnt-a
+                    .c-box__link-wrap
+                      .btn-pointer__wrap.
+                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                        <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                        .st0{fill:#A82743;}</style>
+                        <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-                a(href="#" rel="nofollow").b-box__link
+                    a(href="#" rel="nofollow").b-box__link
 
-            article.c-box.c-box-v__sm
-              .c-box__inner
-                .c-box__cont
-                  h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                .c-box__date-item
-                  time.date.c-box__date(datetime="2009-08-29T20:00")
-                    span.date__dt 23
-                    span.date__rh
-                      span.date__rh-m sept
-                      span.date__rh-d Mon
-                    span.date__ad 8:00 pm
-                .b-box__img-wrap.bg-image(data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg")
-                .b-box__grdnt-a
-                .c-box__link-wrap
-                  .btn-pointer__wrap.
-                    <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                article.c-box.c-box-v__sm
+                  .c-box__inner
+                    .c-box__cont
+                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                    .c-box__date-item
+                      time.date.c-box__date(datetime="2009-08-29T20:00")
+                        span.date__dt 23
+                        span.date__rh
+                          span.date__rh-m sept
+                          span.date__rh-d Mon
+                        span.date__ad 8:00 pm
+                    .b-box__img-wrap.bg-image(data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg")
+                    .b-box__grdnt-a
+                    .c-box__link-wrap
+                      .btn-pointer__wrap.
+                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                        <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                        .st0{fill:#A82743;}</style>
+                        <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-                a(href="#" rel="nofollow").b-box__link
+                    a(href="#" rel="nofollow").b-box__link
 
-            .b-item__header
-              h6.s6-heading.b-item__ttl-header You may also like
-            article.c-box
-              .c-box__inner
-                .c-box__cont
-                  h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                  hr.hr-pattern
-                  p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg")
-                .c-box__date-item
-                  time.date.c-box__date(datetime="2009-08-29T20:00")
-                    span.date__dt 23
-                    span.date__rh
-                      span.date__rh-m sept
-                      span.date__rh-d Mon
-                    span.date__ad 8:00 pm
-                .c-box__link-wrap
-                  .btn-pointer__wrap.
-                    <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+              .b-aside-item.col-xs-12.col-sm-6.col-md-12
+                .b-item__header
+                  h6.s6-heading.b-item__ttl-header You may also like
+                article.c-box
+                  .c-box__inner
+                    .c-box__cont
+                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                      hr.hr-pattern
+                      p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg")
+                    .c-box__date-item
+                      time.date.c-box__date(datetime="2009-08-29T20:00")
+                        span.date__dt 23
+                        span.date__rh
+                          span.date__rh-m sept
+                          span.date__rh-d Mon
+                        span.date__ad 8:00 pm
+                    .c-box__link-wrap
+                      .btn-pointer__wrap.
+                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                        <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                        .st0{fill:#A82743;}</style>
+                        <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-                a(href="#" rel="nofollow").b-box__link
-            article.c-box
-              .c-box__inner
-                .c-box__cont
-                  h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                  hr.hr-pattern
-                  p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_10_Retina.jpg")
-                .c-box__date-item
-                  time.date.c-box__date(datetime="2009-08-29T20:00")
-                    span.date__dt 23
-                    span.date__rh
-                      span.date__rh-m sept
-                      span.date__rh-d Mon
-                    span.date__ad 8:00 pm
-                .c-box__link-wrap
-                  .btn-pointer__wrap.
-                    <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                    a(href="#" rel="nofollow").b-box__link
+                article.c-box
+                  .c-box__inner
+                    .c-box__cont
+                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                      hr.hr-pattern
+                      p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_10_Retina.jpg")
+                    .c-box__date-item
+                      time.date.c-box__date(datetime="2009-08-29T20:00")
+                        span.date__dt 23
+                        span.date__rh
+                          span.date__rh-m sept
+                          span.date__rh-d Mon
+                        span.date__ad 8:00 pm
+                    .c-box__link-wrap
+                      .btn-pointer__wrap.
+                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                        <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                        .st0{fill:#A82743;}</style>
+                        <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-                a(href="#" rel="nofollow").b-box__link
-            article.c-box
-              .c-box__inner
-                .c-box__cont
-                  h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                  hr.hr-pattern
-                  p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_14_Retina.jpg")
-                .c-box__date-item
-                  time.date.c-box__date(datetime="2009-08-29T20:00")
-                    span.date__dt 23
-                    span.date__rh
-                      span.date__rh-m sept
-                      span.date__rh-d Mon
-                    span.date__ad 8:00 pm
-                .c-box__link-wrap
-                  .btn-pointer__wrap.
-                    <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                    a(href="#" rel="nofollow").b-box__link
+                article.c-box
+                  .c-box__inner
+                    .c-box__cont
+                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                      hr.hr-pattern
+                      p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_14_Retina.jpg")
+                    .c-box__date-item
+                      time.date.c-box__date(datetime="2009-08-29T20:00")
+                        span.date__dt 23
+                        span.date__rh
+                          span.date__rh-m sept
+                          span.date__rh-d Mon
+                        span.date__ad 8:00 pm
+                    .c-box__link-wrap
+                      .btn-pointer__wrap.
+                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                        <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                        .st0{fill:#A82743;}</style>
+                        <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-                a(href="#" rel="nofollow").b-box__link
+                    a(href="#" rel="nofollow").b-box__link
 
       include components/footer
     include components/scripts

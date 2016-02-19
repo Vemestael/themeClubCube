@@ -1241,6 +1241,9 @@ address {
 section {
   margin-bottom: 70px; }
 
+iframe {
+  border: 0; }
+
 .wrap {
   padding-top: 50px; }
 
@@ -3020,10 +3023,10 @@ blockquote::before {
   height: 100%; }
 
 .main-video__desc, .b-video-item__desc {
-  margin-top: 15px;
+  margin-top: 15px !important;
   font-style: italic;
   line-height: 18px;
-  color: #999; }
+  color: #999 !important; }
 
 .b-video-sm {
   margin-top: 50px; }
@@ -3360,10 +3363,8 @@ blockquote::before {
 .b-blog-inr__aside {
   margin-bottom: 40px; }
 
-.b-blog-inr__txt {
-  margin-bottom: 42px; }
-
-.b-blog-inr__txt p {
+.b-blog-inr p {
+  margin-bottom: 42px;
   margin-top: 0;
   color: #333; }
 
@@ -3382,11 +3383,8 @@ blockquote::before {
     float: right;
     margin: 0 0 20px 20px; } }
 
-.b-aside.b-aside--display {
-  display: none; }
-
 .b-aside-item {
-  margin-bottom: 46px; }
+  margin-bottom: 40px; }
 
 .b-item__header {
   margin-bottom: 20px;
@@ -3431,7 +3429,7 @@ blockquote::before {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: -5px;
   height: 10px;
   background: url("../images/triangle.svg") repeat-x;
   background-position: center;
@@ -3634,20 +3632,17 @@ blockquote::before {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.c-box-v__sm {
-  max-width: 360px; }
-
 .c-box-v::before,
 .c-box-v__sm::before {
   right: auto;
-  left: 12px;
+  top: 0;
+  left: -5px;
   width: 10px;
   height: 100%;
   background: url("../images/romb-v.svg") repeat-y; }
 
-.c-box-v::before {
-  top: 0;
-  left: -5px; }
+.c-box-v__sm:last-child {
+  margin-bottom: 0; }
 
 .c-box-v .c-box__inner,
 .c-box-v__sm .c-box__inner {
