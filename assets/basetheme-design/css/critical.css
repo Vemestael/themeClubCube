@@ -2448,6 +2448,14 @@ blockquote::before {
   font-size: 40px;
   font-family: "PT Sans Caption Bold", sans-serif; }
 
+.b-headlines.b-headlines--img-prlx {
+  position: relative;
+  background-color: transparent; }
+  .b-headlines.b-headlines--img-prlx .b-breadcrumbs__list li,
+  .b-headlines.b-headlines--img-prlx .b-headlines__ttl,
+  .b-headlines.b-headlines--img-prlx .b-headlines__date {
+    color: #fff; }
+
 .c-headlines {
   position: relative;
   min-height: 400px; }
