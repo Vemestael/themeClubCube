@@ -69,8 +69,8 @@
   overflow: hidden
 
 .b-footer__contacts a
-  color: #fff
-  border-color: #fff
+  color: $active-c
+  border-color: $active-c
 
 .b-footer__contacts-mail
   margin-top: 45px
@@ -83,8 +83,13 @@
   padding-left: 30px
   padding-right: 30px
 
-.b-footer__contacts-phones a
-  border-bottom: none
+.b-footer__contacts-phones li
+  margin-bottom: 5px
+  &:last-child
+    margin-bottom: 0
+
+.b-footer__contacts-phones li a:hover
+  border-bottom: 0
 
 .b-footer__adrs:before,
 .b-footer__contacts-mail:before,

@@ -4254,8 +4254,8 @@ blockquote::before {
   overflow: hidden; }
 
 .b-footer__contacts a {
-  color: #fff;
-  border-color: #fff; }
+  color: #c0d23e;
+  border-color: #c0d23e; }
 
 .b-footer__contacts-mail {
   margin-top: 45px;
@@ -4268,8 +4268,13 @@ blockquote::before {
   padding-left: 30px;
   padding-right: 30px; }
 
-.b-footer__contacts-phones a {
-  border-bottom: none; }
+.b-footer__contacts-phones li {
+  margin-bottom: 5px; }
+  .b-footer__contacts-phones li:last-child {
+    margin-bottom: 0; }
+
+.b-footer__contacts-phones li a:hover {
+  border-bottom: 0; }
 
 .b-footer__adrs:before,
 .b-footer__contacts-mail:before,
