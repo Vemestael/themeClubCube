@@ -1456,7 +1456,7 @@ ol {
 
 blockquote {
   position: relative;
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 0 0 0 48px; }
 
 blockquote::before {
@@ -2438,7 +2438,7 @@ blockquote::before {
     padding: 0; } }
 
 .b-headlines {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 40px;
   text-align: center;
   background-color: #e8e8e8; }
@@ -2511,7 +2511,7 @@ blockquote::before {
     font-size: 48px; } }
 
 .b-breadcrumbs {
-  margin: 5px 0 20px 0; }
+  margin: 0 0 10px 0; }
 
 .b-breadcrumbs__list {
   padding: 0; }
@@ -3364,7 +3364,7 @@ blockquote::before {
   margin-bottom: 40px; }
 
 .b-blog-inr p {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   margin-top: 0;
   color: #333; }
 
@@ -3404,6 +3404,12 @@ blockquote::before {
 
 .b-aside .b-box {
   margin-bottom: 1px; }
+
+.b-aside-item:last-child {
+  margin-bottom: 0; }
+
+.b-aside-item .c-box:last-child {
+  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .b-aside-item {

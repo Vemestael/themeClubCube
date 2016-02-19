@@ -6,12 +6,11 @@ html(lang='en')
       include components/header
       .b-headlines
         .container
+          .b-breadcrumbs
+            ul.b-breadcrumbs__list.x-small-txt
+              li: a.link(href="index.html") main
+              li Blog
           h1.b-headlines__ttl Blog
-      .b-breadcrumbs
-        .container
-          ul.b-breadcrumbs__list.x-small-txt
-            li: a.link(href="index.html") main
-            li Blog
 
       .b-content.container
         main.b-main
