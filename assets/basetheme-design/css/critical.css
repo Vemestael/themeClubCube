@@ -3645,7 +3645,7 @@ blockquote::before {
 
 .c-box__link {
   font-size: 16px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans Caption Bold", sans-serif;
   color: #202020;
   text-transform: uppercase;
   border-bottom: none;
@@ -3654,6 +3654,13 @@ blockquote::before {
 .c-box__inner:hover .b-box__grdnt-a::after,
 .c-box__inner:hover .b-box__grdnt-b::after {
   opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.c-box__link:hover,
+.c-box__inner:hover + .c-box__link-wrap-a .c-box__link {
+  color: #530d85;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
