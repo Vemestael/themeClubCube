@@ -93,7 +93,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                 isAnimated: true,
                 animationOptions: {
                     queue: false,
-                    duration: 500
+                    duration: 400
                 }
             });
         },
@@ -109,8 +109,8 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                 isAnimated: true,
                 animationOptions: {
                     queue: false,
-                    duration: 500,
-                    easing: 'linear',
+                    duration: 400,
+                    easing: 'ease',
                 }
             });
         },
