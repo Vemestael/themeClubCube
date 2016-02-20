@@ -253,8 +253,9 @@
 
 .btn-pointer__sm
   display: table
-  min-height: 40px
-  padding: 11px 10px
+  height: 50px
+  max-height: 50px
+  padding: 0 10px
   font-size: 14px
   line-height: 1
   & b
@@ -502,6 +503,12 @@
   &::before
     color: $black-c
     transition: all 0.2s ease
+
+@media (min-width: $screen-xm)
+  .btn-pointer__sm
+    height: 40px
+    max-height: 40px
+    min-height: 40px
 
 @media (min-width: $screen-sm)
   .date-lg
