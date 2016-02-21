@@ -96,6 +96,11 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     duration: 400
                 }
             });
+            if ($window.width() < 767) {
+                setTimeout(function () {
+                    _globals.masnBox.masonry()
+                })
+            }
         },
 
         _masonryBlockGal = function () {
@@ -106,6 +111,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                 //gutter: 10,
                 columnWidth: '.grid-sizer',
                 percentPosition: false,
+                resize: false,
                 isAnimated: true,
                 animationOptions: {
                     queue: false,
@@ -113,6 +119,12 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     easing: 'ease',
                 }
             });
+            if ($window.width() < 767) {
+                setTimeout(function () {
+                    _globals.masnBoxGalr.masonry()
+                })
+            }
+
         },
 
         _parallaxStart = function () {
