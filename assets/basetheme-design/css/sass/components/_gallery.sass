@@ -41,6 +41,119 @@
 .b-gallery .slick-next
   right: 15px
 
+.b-gallery__tiles,
+.b-gallery__tiles .b-headlines
+  background-color: $black-c
+
+.b-gallery__popup
+  overflow: hidden
+  & > div
+    padding: 0
+
+.b-gallery__popup a
+  display: block
+  height: 105px
+  border-bottom: 0
+  overflow: hidden
+  transform: translateZ(0)
+  & img
+    display: block
+    width: 100%
+    transition: all 0.4s ease
+
+.b-gallery__popup a:hover img
+  transform: scale(1.05)
+
+.g-headlines
+  min-height: 100%
+
+.mfp-bg
+  opacity: 1
+
+button.mfp-arrow
+  width: 40px
+  height: 40px
+  margin-top: 0
+  border: 2px solid #fff
+  opacity: 1
+  transform: translateY(-50%)
+
+.mfp-arrow:active
+  margin: 0
+
+.mfp-arrow:before
+  top: 50%
+  left: 50%
+  width: auto
+  height: auto
+  margin: 0
+  font-family: $fa
+  color: #fff
+  border: 0
+  opacity: 1
+  transform: translate(-50%, -50%)
+
+.mfp-arrow:after
+  border: 0
+
+.mfp-arrow-left:before
+  content: '\f053'
+
+.mfp-arrow-right:before
+  content: '\f054'
+
+button.mfp-arrow:hover
+  background-color: #fff
+  border-color: #fff
+  transition: all 0.2s ease
+
+button.mfp-arrow:hover:before
+  color: $black-c
+  transition: all 0.2s ease
+
+/* overlay at start */
+.mfp-fade.mfp-bg
+  opacity: 0
+  transition: all 0.15s ease
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready
+  opacity: 1
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing
+  opacity: 0
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content,
+.mfp-fade.mfp-wrap .mfp-arrow
+  opacity: 0
+  transition: all 0.1s ease
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content,
+.mfp-fade.mfp-wrap.mfp-ready .mfp-arrow
+  opacity: 1
+
+/* content aniate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content,
+.mfp-fade.mfp-wrap.mfp-removing .mfp-arrow
+  opacity: 0
+
+//.mfp-s-ready .mfp-preloader for loader
+
+.b-gallery__border
+  position: fixed
+  bottom: 0
+  width: 100%
+  height: 50px
+  background-color: rgba(32, 32, 32, 0.6)
+  z-index: 10
+
+@media (min-width: $screen-xm)
+  .b-gallery__popup a
+    height: 190px
+
 @media (min-width: $screen-sm)
   .b-gallery
     padding-top: 94px
@@ -55,6 +168,8 @@
   .b-gallery .c-box.c-box--sm .c-box__inner
     min-height: 220px
 
+  .b-gallery__popup a
+    height: 255px
 
 @media (min-width: $screen-md)
   .b-gallery
@@ -63,16 +178,16 @@
   .b-gallery .c-box.c-box--sm .c-box__inner
     min-height: 170px
 
-  .b-gallery__tiles,
-  .b-gallery__tiles .b-headlines
-    background-color: $black-c
+  .b-gallery__popup a
+    height: 200px
 
-  .g-headlines
-    min-height: auto
+  button.mfp-arrow
+    width: 50px
+    height: 50px
 
-
-
-
+@media (min-width: $screen-lg)
+  .b-gallery__popup a
+    height: 158px
 
 
 

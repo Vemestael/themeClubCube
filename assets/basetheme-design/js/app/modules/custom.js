@@ -7,6 +7,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             masnBoxGalr: $('#masnrGallery'),
             header: '#header',
             prlxBack: '#parallaxBack',
+            GlrMagic: '#GlrMagic'
             // elements
             // prop
             // data
@@ -19,6 +20,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             addMoreBlogs: null,
             header: null,
             prlxBack: null,
+            GlrMagic: null,
             // elements
 
             // prop
@@ -45,6 +47,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _globals.masnBoxGalr = $(_properties.masnBoxGalr);
             _globals.header = $(_properties.header);
             _globals.prlxBack = $(_properties.prlxBack);
+            _globals.GlrMagic = $(_properties.GlrMagic);
         },
 
         _setup = function () {
@@ -54,6 +57,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _masonryBlocks();
             _masonryBlockGal();
             _parallaxStart();
+            _popupGlr();
         },
 
         _setBinds = function () {
@@ -104,37 +108,55 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _masonryBlockGal = function () {
-            _globals.masnBoxGalr.masonry({
-                itemSelector: '.c-box',
-                singleMode: true,
-                isResizable: false,
-                //gutter: 10,
-                columnWidth: '.grid-sizer',
-                percentPosition: false,
-                resize: false,
-                isAnimated: true,
-                animationOptions: {
-                    queue: false,
-                    duration: 400,
-                    easing: 'ease',
-                }
-            });
-            if ($window.width() < 767) {
-                setTimeout(function () {
-                    _globals.masnBoxGalr.masonry()
+            setTimeout(function () {
+                _globals.masnBoxGalr.masonry({
+                    itemSelector: '.c-box',
+                    singleMode: true,
+                    isResizable: false,
+                    //gutter: 10,
+                    columnWidth: '.grid-sizer',
+                    percentPosition: false,
+                    resize: false,
+                    isAnimated: true,
+                    animationOptions: {
+                        queue: false,
+                        duration: 400,
+                        easing: 'ease',
+                    }
                 })
-            }
-
+            });
         },
 
         _parallaxStart = function () {
             if ($window.width() > 992) {
-                console.log(12)
                 $.stellar({
                     horizontalScrolling: false,
                     verticalOffset: 100
                 })
             }
+        },
+
+        _popupGlr = function () {
+            _globals.GlrMagic.magnificPopup({
+                removalDelay: 100,
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading img ...',
+                mainClass: 'mfp-fade',
+                fixedContentPos: true,
+                preloader: true,
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [1, 4] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    //titleSrc: function(item) {
+                    //  return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                    //}
+                },
+            });
         },
 
         _setCustomMethods = function () {
