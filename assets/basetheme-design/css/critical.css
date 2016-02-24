@@ -1784,7 +1784,7 @@ italic {
 .b,
 b,
 strong {
-  font-family: "PT Sans Caption Bold", sans-serif;
+  font-family: "PT Sans Bold", sans-serif;
   font-weight: normal;
   line-height: 24px; }
 
@@ -1905,6 +1905,8 @@ blockquote::before {
 
 .btn-anim-a b,
 .btn-anim-b b {
+  display: inline-block;
+  width: 100%;
   line-height: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -2553,6 +2555,7 @@ blockquote::before {
   .btn-info span:nth-of-type(2) {
     padding: 14px 30px; }
   .btn-pointer-b {
+    max-width: 400px;
     font-size: 22px; } }
 
 @media (min-width: 1280px) {
