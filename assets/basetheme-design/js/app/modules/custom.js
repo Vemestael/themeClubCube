@@ -7,7 +7,10 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             masnBoxGalr: $('#masnrGallery'),
             header: '#header',
             prlxBack: '#parallaxBack',
-            GlrMagic: '#GlrMagic'
+            GlrMagic: '#GlrMagic',
+            scrlBtnGlr: '#scrlBtnGlr',
+            glrContent: '.b-gallery__content',
+            glrTiles: '.b-gallery__tiles'
             // elements
             // prop
             // data
@@ -21,6 +24,9 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             header: null,
             prlxBack: null,
             GlrMagic: null,
+            scrlBtnGlr: null,
+            glrContent: null,
+            glrTiles: null,
             // elements
 
             // prop
@@ -48,6 +54,9 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _globals.header = $(_properties.header);
             _globals.prlxBack = $(_properties.prlxBack);
             _globals.GlrMagic = $(_properties.GlrMagic);
+            _globals.scrlBtnGlr = $(_properties.scrlBtnGlr);
+            _globals.glrContent = $(_properties.glrContent);
+            _globals.glrTiles = $(_properties.glrTiles);
         },
 
         _setup = function () {
@@ -62,6 +71,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
 
         _setBinds = function () {
             _binds().setScrollHeader();
+            _binds().setScrollOnBtn();
         },
 
         _binds = function () {
@@ -71,7 +81,39 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                         _stickyHeader();
                     });
                 }
-                ,
+                , setScrollOnBtn: function () {
+                    _custom.bind(_globals.scrlBtnGlr, 'click', function () {
+
+                        if (_globals.glrContent.hasClass('active')) {
+                            $('.b-gallery__border').removeClass('active');
+                            $('.b-scroll').removeClass('active');
+                            $('.b-gallery__content').removeClass('active');
+                            _globals.glrTiles.removeClass('top');
+                            _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('about this event');
+                            _globals.glrTiles.animate({
+                                top: 0,
+
+                            }, 700);
+                            setTimeout(function() {
+                                _globals.glrContent.removeClass('active');
+                                $('html,body').scrollTop(0);
+                            }, 700);
+                        }
+                        else {
+                            $('.b-gallery__border').addClass('active');
+                            $('.b-scroll').addClass('active');
+                            $('.b-gallery__content').addClass('active');
+                            _globals.glrTiles.addClass('top');
+                            _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('go to gallery');
+                            _globals.glrTiles.animate({
+                                top: - _globals.glrTiles.outerHeight()
+                            }, 700);
+                            $('html, body').animate({
+                                scrollTop: 0
+                            }, 700);
+                        }
+                    });
+                }
             };
         },
 
@@ -100,11 +142,6 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     duration: 400
                 }
             });
-            if ($window.width() < 767) {
-                setTimeout(function () {
-                    _globals.masnBox.masonry()
-                })
-            }
         },
 
         _masonryBlockGal = function () {
