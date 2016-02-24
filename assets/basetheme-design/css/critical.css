@@ -1905,8 +1905,6 @@ blockquote::before {
 
 .btn-anim-a b,
 .btn-anim-b b {
-  width: 100%;
-  display: inline-block;
   line-height: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -1915,6 +1913,9 @@ blockquote::before {
   -o-transition: transform 0.2s ease, -o-transform 0.2s ease;
   transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease, -o-transform 0.2s ease; }
+
+.btn-anim-b b {
+  line-height: 50px; }
 
 .btn-anim-a:hover b {
   -webkit-transform: translate3d(3px, 0, 0);
@@ -2272,8 +2273,12 @@ blockquote::before {
     font-family: "Font Awesome";
     font-size: 18px;
     vertical-align: middle; }
+  .b-likes > li:last-child {
+    margin-right: 0; }
 
-.b-likes__heading {
+.b-likes > li.b-likes__heading {
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase; }
 
 .b-likes__pinterest-p::before {
@@ -2347,23 +2352,28 @@ blockquote::before {
 
 .btn-pointer-b__wrap {
   position: relative;
-  display: inline-block; }
-
-.btn-pointer-b {
-  position: relative;
   display: inline-block;
-  padding: 0 20px;
   background-color: #530d85;
-  font-size: 18px;
-  font-family: "PT Sans Regular", sans-serif;
-  font-weight: bold;
-  line-height: 49px;
-  color: #fff;
-  text-transform: uppercase;
-  border-bottom: none;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+
+.btn-pointer-b {
+  max-width: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 49px;
+  margin: 0 20px;
+  padding: 0 1px;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: none;
+  cursor: pointer;
+  white-space: nowrap; }
 
 .btn-pointer-b__wrap .left,
 .btn-pointer-b__wrap .right {
@@ -2383,7 +2393,7 @@ blockquote::before {
 .btn-pointer-b__wrap .right {
   right: -4px; }
 
-.btn-pointer-b__wrap:hover .btn-pointer-b {
+.btn-pointer-b__wrap:hover {
   background-color: #c0d23e; }
 
 .btn-pointer-b__wrap:hover .left path,
@@ -3672,9 +3682,15 @@ button.mfp-arrow:hover:before {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 49px;
   background-color: rgba(32, 32, 32, 0.6);
   z-index: 10; }
+
+.b-gallery__border .c-box__views {
+  display: none; }
+
+.b-gallery__border .b-likes {
+  display: none; }
 
 @media (min-width: 480px) {
   .b-gallery__popup a {
@@ -3703,7 +3719,20 @@ button.mfp-arrow:hover:before {
     height: 200px; }
   button.mfp-arrow {
     width: 50px;
-    height: 50px; } }
+    height: 50px; }
+  .b-gallery__border .c-box__views {
+    position: static;
+    float: left;
+    display: block; }
+  .b-gallery__border .c-box__views .txt {
+    font-size: 24px;
+    line-height: 50px; }
+  .b-gallery__border .b-likes {
+    float: right;
+    display: block; }
+  .b-gallery__border li.b-likes__heading {
+    line-height: 50px;
+    vertical-align: middle; } }
 
 @media (min-width: 1280px) {
   .b-gallery__popup a {
@@ -4779,6 +4808,16 @@ button.mfp-arrow:hover:before {
     margin: 75px 0; }
   .b-share__list li {
     margin-bottom: 0; } }
+
+.b-scroll {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-width: 310px;
+  margin: auto;
+  text-align: center;
+  z-index: 10; }
 
 .b-footer {
   padding-top: 65px;

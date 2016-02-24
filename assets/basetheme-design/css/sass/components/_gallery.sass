@@ -146,9 +146,15 @@ button.mfp-arrow:hover:before
   position: fixed
   bottom: 0
   width: 100%
-  height: 50px
+  height: 49px
   background-color: rgba(32, 32, 32, 0.6)
   z-index: 10
+
+.b-gallery__border .c-box__views
+  display: none
+
+.b-gallery__border .b-likes
+  display: none
 
 @media (min-width: $screen-xm)
   .b-gallery__popup a
@@ -184,6 +190,23 @@ button.mfp-arrow:hover:before
   button.mfp-arrow
     width: 50px
     height: 50px
+
+  .b-gallery__border .c-box__views
+    position: static
+    float: left
+    display: block
+
+  .b-gallery__border .c-box__views .txt
+    font-size: 24px
+    line-height: 50px
+
+  .b-gallery__border .b-likes
+    float: right
+    display: block
+
+  .b-gallery__border li.b-likes__heading
+    line-height: 50px
+    vertical-align: middle
 
 @media (min-width: $screen-lg)
   .b-gallery__popup a

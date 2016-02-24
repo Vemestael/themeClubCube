@@ -23,11 +23,12 @@
 
 .btn-anim-a b,
 .btn-anim-b b
-  width: 100%
-  display: inline-block
   line-height: 1
   transform: translate3d(0,0,0)
   transition: transform 0.2s ease
+
+.btn-anim-b b
+  line-height: 50px
 
 .btn-anim-a:hover b
   transform: translate3d(3px,0,0)
@@ -342,8 +343,12 @@
     font-size: 18px
     vertical-align: middle
 
-.b-likes__heading
+  &:last-child
+    margin-right: 0
 
+.b-likes > li.b-likes__heading
+  font-size: 14px
+  line-height: 18px
   text-transform: uppercase
 
 .b-likes__pinterest-p::before
@@ -408,20 +413,22 @@
 .btn-pointer-b__wrap
   position: relative
   display: inline-block
+  background-color: $active-sc-c
+  transition: all 0.2s ease
 
 .btn-pointer-b
-  position: relative
-  display: inline-block
-  padding: 0 20px
-  background-color: $active-sc-c
+  max-width: 250px
+  display: flex
+  overflow: hidden
+  height: 49px
+  margin: 0 20px
+  padding: 0 1px
   font-size: 18px
-  font-family: $base-font
-  font-weight: bold
-  line-height: 49px
   color: #fff
   text-transform: uppercase
   border-bottom: none
-  transition: all 0.2s ease
+  cursor: pointer
+  white-space: nowrap
 
 .btn-pointer-b__wrap .left,
 .btn-pointer-b__wrap .right
@@ -438,7 +445,7 @@
 .btn-pointer-b__wrap .right
   right: -4px
 
-.btn-pointer-b__wrap:hover .btn-pointer-b
+.btn-pointer-b__wrap:hover
   background-color: $active-c
 
 .btn-pointer-b__wrap:hover .left path,
