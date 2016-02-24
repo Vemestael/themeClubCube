@@ -2159,8 +2159,9 @@ blockquote::before {
 .btn-pointer__wrap {
   position: relative;
   display: inline-block;
-  padding-left: 7px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 51px;
+  padding-left: 7px; }
 
 .btn-pointer,
 .btn-pointer__sm {
