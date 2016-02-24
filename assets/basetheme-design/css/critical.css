@@ -2273,6 +2273,9 @@ blockquote::before {
     font-size: 18px;
     vertical-align: middle; }
 
+.b-likes__heading {
+  text-transform: uppercase; }
+
 .b-likes__pinterest-p::before {
   content: '\f231'; }
 
@@ -3945,6 +3948,7 @@ button.mfp-arrow:hover:before {
 
 .b-item__ttl-header {
   float: left;
+  width: calc(100% - 72px);
   margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 2px; }
@@ -4744,7 +4748,7 @@ button.mfp-arrow:hover:before {
     overflow: hidden; } }
 
 .b-share {
-  margin-bottom: 25px; }
+  margin: 75px 0 65px; }
 
 .b-share .b-item__header {
   margin-bottom: 10px; }
@@ -4769,6 +4773,12 @@ button.mfp-arrow:hover:before {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+
+@media (min-width: 768px) {
+  .b-share {
+    margin: 75px 0; }
+  .b-share__list li {
+    margin-bottom: 0; } }
 
 .b-footer {
   padding-top: 65px;
