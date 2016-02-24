@@ -2160,7 +2160,6 @@ blockquote::before {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  height: 49px;
   padding-left: 7px; }
 
 .btn-pointer,
@@ -4130,10 +4129,6 @@ button.mfp-arrow:hover:before {
   position: absolute;
   bottom: 20px;
   right: -2px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   z-index: 2; }
 
 .c-box__views {
