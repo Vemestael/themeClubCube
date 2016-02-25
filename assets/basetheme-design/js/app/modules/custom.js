@@ -116,7 +116,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                     console.log(now);
                                     $(this).css({"transform": "translate3d(0px, 0px," + now + ")"});
                                 },
-                                easing: "easeInCirc",
+                                easing: "linear",
                                 duration: 1000,
                             });
                             //_globals.glrTiles.css({
