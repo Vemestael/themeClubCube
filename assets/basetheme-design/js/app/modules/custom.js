@@ -94,7 +94,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                 step: function (now, fx) {
                                     $(this).css({
                                         'transform': 'translate3d(0px, 0px, 0px)',
-                                        'transition': 'transform 1s ease-in',
+                                        'transition': 'transform 0.7s ease-in',
                                     })
                                 }
                             });
@@ -119,7 +119,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                 step: function (now, fx) {
                                     $(this).css({
                                         'transform': 'translate3d(0px,' + (-_globals.glrTiles.height()) + 'px, 0px)',
-                                        'transition': 'transform 1s ease-in',
+                                        'transition': 'transform 0.7s ease-in',
                                     })
                                 }
                             });
