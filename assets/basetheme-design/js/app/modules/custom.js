@@ -109,16 +109,20 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             $('.b-gallery__content').addClass('active');
                             _globals.glrTiles.addClass('top');
                             _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('go to gallery');
-                            //_globals.glrTiles.animate({
-                            //    top: - _globals.glrTiles.outerHeight(),
-                            //}, {
-                            //    easing: "linear",
-                            //    duration: 1000,
-                            //});
-                            _globals.glrTiles.css({
-                                'transform': 'translate3d(0px, -400px, 0px)',
-                                'transition': 'transform 1s linear',
+                            _globals.glrTiles.animate({
+                                opacity: 1,
+                                top: - _globals.glrTiles.outerHeight(),
+                            }, {
+                                step: function(now,fx) {
+                                    $(this).css('-webkit-transform','translateY(' + now + 'px)');
+                                },
+                                easing: "linear",
+                                duration: 1000,
                             });
+                            //_globals.glrTiles.css({
+                            //    'transform': 'translate3d(0px, -4400px, 0px)',
+                            //    'transition': 'transform 1s linear',
+                            //});
                         }
                     });
                 }
