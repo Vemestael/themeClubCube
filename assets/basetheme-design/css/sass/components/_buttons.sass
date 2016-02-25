@@ -35,7 +35,7 @@
 .btn-anim-a:hover b
   transform: translate3d(3px,0,0)
 
-.btn-anim-b:hover b
+.btn-pointer-b__wrap:hover .btn-anim-b b
   animation-name: shake
   animation-duration: 0.6s
   animation-fill-mode: both
@@ -231,7 +231,7 @@
   position: absolute
   top: 0
   left: -5px
-  width: 10px
+  width: 10.1px
 
   path
     fill: $active-c
@@ -426,7 +426,8 @@
   display: flex
   overflow: hidden
   height: 49px
-  margin: 0 20px
+  margin: 0 10px
+  padding: 0 10px
   font-size: 18px
   color: #fff
   text-transform: uppercase
@@ -448,13 +449,6 @@
 
 .btn-pointer-b__wrap .right
   right: -4px
-
-.btn-pointer-b__wrap:hover
-  background-color: $active-c
-
-.btn-pointer-b__wrap:hover .left path,
-.btn-pointer-b__wrap:hover .right path
-  fill: $active-c
 
 .btn-pointer--lg
   min-height: 40px
@@ -534,7 +528,7 @@
   .date-lg
     display: inline-block
     width: 290px
-    padding: 11px 10px
+    padding: 11px 10px 0
     border: 8px solid
     font-family: $second-bold-font
     color: #fff
@@ -583,7 +577,7 @@
   .date-lg__ad
     position: relative
     display: block
-    padding: 25px 0 10px
+    padding: 25px 0 20px
     font-size: 48px
     text-align: center
     clear: both
@@ -617,3 +611,11 @@
   .date-lg__dt,
   .date-lg__ad
     font-size: 60px
+
+
+  .btn-pointer-b__wrap:hover
+    background-color: $active-c
+
+  .btn-pointer-b__wrap:hover .left path,
+  .btn-pointer-b__wrap:hover .right path
+    fill: $active-c

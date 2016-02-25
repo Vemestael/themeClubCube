@@ -94,15 +94,14 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                 step: function (now, fx) {
                                     $(this).css({
                                         'transform': 'translate3d(0px, 0px, 0px)',
-                                        'transition': 'transform 0.7s ease-in',
+                                        'transition': 'transform 0.4s ease-in',
                                     })
                                 }
                             });
-
                             setTimeout(function () {
                                 $('.b-gallery__content').removeClass('active');
                                 $('html,body').scrollTop(0);
-                            }, 700);
+                            }, 400);
                             $('.b-gallery__border').removeClass('active');
                             $('.b-scroll').removeClass('active');
                             _globals.glrTiles.removeClass('top');
@@ -118,15 +117,11 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             }, {
                                 step: function (now, fx) {
                                     $(this).css({
-                                        'transform': 'translate3d(0px,' + (-_globals.glrTiles.height()) + 'px, 0px)',
+                                        'transform': 'translate3d(0px,' + (-_globals.glrTiles.height() - _globals.header.height()) + 'px, 0px)',
                                         'transition': 'transform 0.7s ease-in',
                                     })
                                 }
                             });
-                            //_globals.glrTiles.css({
-                            //    'transform': 'translate3d(0px, -4400px, 0px)',
-                            //    'transition': 'transform 1s linear',
-                            //});
                         }
                     });
                 }

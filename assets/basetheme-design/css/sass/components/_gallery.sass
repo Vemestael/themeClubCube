@@ -48,7 +48,7 @@
 .b-gallery__tiles
   position: relative
   min-height: 100%
-  z-index: 2
+  z-index: 3
 
 .b-gallery__tiles.top
   position: absolute
@@ -72,9 +72,6 @@
 
 .b-gallery__popup a:hover img
   transform: scale(1.05)
-
-.g-headlines
-  min-height: 100%
 
 .mfp-bg
   opacity: 1
@@ -157,7 +154,7 @@ button.mfp-arrow:hover:before
   width: 100%
   height: 49px
   background-color: rgba(32, 32, 32, 0.6)
-  z-index: 2
+  z-index: 3
 
 .b-gallery__border .c-box__views
   display: none
@@ -176,11 +173,72 @@ button.mfp-arrow:hover:before
   position: static
   overflow: visible
 
+.b-gallery__headlines
+  min-height: 370px
+  padding-top: 50px
+  background-color: $blog-bg
+
+.b-gallery__headlines .c-headlines__ttl
+  color: $black-c
+
 .b-gallery__border.active,
 .b-scroll.active
   position: absolute
   top: 50px
   bottom: auto
+
+.b-gallery__date-lg
+  margin-top: 30px
+
+.b-gallery__date-lg .date-lg
+  display: inline-block
+  width: 290px
+  padding: 11px 10px 0
+  border: 8px solid
+  font-family: $second-bold-font
+  color: $black-c
+  border-color: $black-c
+
+.b-gallery__date-lg .date-lg__dt
+  position: relative
+  display: block
+  float: left
+  padding-right: 15px
+  padding-bottom: 6px
+  font-size: 48px
+  line-height: 1
+
+.b-gallery__date-lg .date-lg__dt::after
+  content: ''
+  position: absolute
+  width: 8px
+  top: -11px
+  right: 0
+  bottom: 0
+  background-color: $black-c
+
+.b-gallery__date-lg .date-lg__rh
+  display: block
+  float: left
+  padding-left: 10px
+
+.b-gallery__date-lg .date-lg__rh-m
+  width: 100%
+  margin-top: 4px
+  padding-right: 8px
+  font-size: 14px
+
+.b-gallery__date-lg .date-lg__rh-d,
+.b-gallery__date-lg .date-lg__rh-t
+  display: block
+  font-size: 12px
+  line-height: 15px
+
+.b-gallery__date-lg .date-lg__rh-t
+  position: static
+  padding: 0 0 0 6px
+  color: $black-c
+  background: transparent
 
 @media (min-width: $screen-xm)
   .b-gallery__popup a
@@ -206,6 +264,9 @@ button.mfp-arrow:hover:before
   .b-gallery__border.active,
   .b-scroll.active
     top: 80px
+
+  .b-gallery__date-lg
+    top: 30px
 
 @media (min-width: $screen-md)
   .b-gallery
