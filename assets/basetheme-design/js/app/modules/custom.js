@@ -94,14 +94,14 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                 step: function (now, fx) {
                                     $(this).css({
                                         'transform': 'translate3d(0px, 0px, 0px)',
-                                        'transition': 'transform 0.4s ease-in',
+                                        'transition': 'transform 0.7s ease-in',
                                     })
                                 }
                             });
                             setTimeout(function () {
                                 $('.b-gallery__content').removeClass('active');
                                 $('html,body').scrollTop(0);
-                            }, 400);
+                            }, 700);
                             $('.b-gallery__border').removeClass('active');
                             $('.b-scroll').removeClass('active');
                             _globals.glrTiles.removeClass('top');
