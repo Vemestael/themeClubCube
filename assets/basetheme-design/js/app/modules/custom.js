@@ -67,11 +67,13 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _masonryBlockGal();
             _parallaxStart();
             _popupGlr();
+            _ResizeImgGlr();
         },
 
         _setBinds = function () {
             _binds().setScrollHeader();
             _binds().setScrollOnBtn();
+            _binds().setResizeImgGlr();
         },
 
         _binds = function () {
@@ -106,6 +108,16 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             _globals.glrTiles.animate({
                                 top: - _globals.glrTiles.outerHeight(),
                             }, 700);
+                        }
+                    });
+                }
+                , setResizeImgGlr: function () {
+                    _custom.bind($window, 'resize', function () {
+                        var $blImg = $('.b-gallery__popup a');
+                        if ($window.width() > 1280) {
+                            $blImg.height(
+                                $blImg.width() / 1.33
+                            )
                         }
                     });
                 }
@@ -189,6 +201,18 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     //}
                 },
             });
+        },
+
+        _ResizeImgGlr = function () {
+            var $blImg = $('.b-gallery__popup a');
+
+            if ($window.width() > 1280) {
+                setTimeout(function () {
+                    $blImg.height(
+                        $blImg.width() / 1.33
+                    )
+                }, 50)
+            }
         },
 
         _setCustomMethods = function () {
