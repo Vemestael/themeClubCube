@@ -9,6 +9,7 @@ var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var bs = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
 
 gulp.task('serve', function () {
 
@@ -76,12 +77,20 @@ gulp.task('templates', function (callback) {
     callback();
 });
 
+gulp.task('minImg', function () {
+    return gulp.src('../uploads/gallery/*.jpg')
+        .pipe(imagemin({
+            progressive: true,
+        }))
+        .pipe(gulp.dest('../uploads/gallery/images'));
+});
+
 gulp.task('watch', function () {
     gulp.watch('css/sass/**/*.*', ['sass']);
     gulp.watch('jade/**/*.*', ['templates']);
 });
 
-gulp.task('default', ['serve','templates','sass', 'watch']);
+gulp.task('default', ['templates','sass', 'watch']);
 //gulp.task('default', ['templates', 'sass', 'watch']);
 
 /**
