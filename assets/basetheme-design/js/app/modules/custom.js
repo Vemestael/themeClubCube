@@ -96,14 +96,16 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                         'transform': 'translate3d(0px, 0px, 0px)',
                                         'transition': 'transform 0.7s ease-in',
                                     })
-                                }
+                                },
+                                easening: 'linear',
+                                duration: 700
                             });
                             setTimeout(function () {
-                                $('.b-gallery__content').removeClass('active');
                                 $('html,body').scrollTop(0);
                             }, 700);
                             $('.b-gallery__border').removeClass('active');
-                            $('.b-scroll').removeClass('active');
+                            $('.b-scroll').removeClass('active')
+                            $('.b-gallery__content').removeClass('active');
                             _globals.glrTiles.removeClass('top');
                         }
                         else {
@@ -120,7 +122,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                         'transform': 'translate3d(0px,' + (-_globals.glrTiles.height() - _globals.header.height()) + 'px, 0px)',
                                         'transition': 'transform 0.7s ease-in',
                                     })
-                                }
+                                },
                             });
                         }
                     });
