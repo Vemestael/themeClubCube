@@ -90,7 +90,11 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('about this event');
                             _globals.glrTiles.animate({
                                 top: 0,
-                            }, 700);
+
+                            }, {
+                                easing: "easeOutCirc",
+                                duration: 700,
+                            });
                             setTimeout(function() {
                                 $('.b-gallery__content').removeClass('active');
                                 $('html,body').scrollTop(0);
@@ -107,7 +111,10 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('go to gallery');
                             _globals.glrTiles.animate({
                                 top: - _globals.glrTiles.outerHeight(),
-                            }, 700);
+                            }, {
+                                easing: "easeInCirc",
+                                duration: 700,
+                            });
                         }
                     });
                 }
