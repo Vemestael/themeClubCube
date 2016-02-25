@@ -88,14 +88,18 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
 
                         if (_globals.glrContent.hasClass('active')) {
                             _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('about this event');
-                            //_globals.glrTiles.animate({
-                            //    top: 0,
-                            //}, {
-                            //    easing: "easeOutCirc",
-                            //    duration: 700,
-                            //});
+                            _globals.glrTiles.animate({
+                                opacity: 1
+                            }, {
+                                step: function (now, fx) {
+                                    $(this).css({
+                                        'transform': 'translate3d(0px, 0px, 0px)',
+                                        'transition': 'transform 1s ease-in',
+                                    })
+                                }
+                            });
 
-                            setTimeout(function() {
+                            setTimeout(function () {
                                 $('.b-gallery__content').removeClass('active');
                                 $('html,body').scrollTop(0);
                             }, 700);
@@ -110,14 +114,14 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             _globals.glrTiles.addClass('top');
                             _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('go to gallery');
                             _globals.glrTiles.animate({
-                                opacity: 1,
-                                top: - _globals.glrTiles.outerHeight(),
+                                opacity: 1
                             }, {
-                                step: function(now,fx) {
-                                    $(this).css('-webkit-transform','translateY(' + now + 'px)');
-                                },
-                                easing: "linear",
-                                duration: 1000,
+                                step: function (now, fx) {
+                                    $(this).css({
+                                        'transform': 'translate3d(0px,' + (-_globals.glrTiles.height()) + 'px, 0px)',
+                                        'transition': 'transform 1s ease-in',
+                                    })
+                                }
                             });
                             //_globals.glrTiles.css({
                             //    'transform': 'translate3d(0px, -4400px, 0px)',
