@@ -94,10 +94,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             //    easing: "easeOutCirc",
                             //    duration: 700,
                             //});
-                            _globals.glrTiles.css({
-                                '-webkit-transform': 'translate3d(650px, 0px, 0px)',
-                                '-webkit-transition': '-webkit-transform 1s linear',
-                            });
+
                             setTimeout(function() {
                                 $('.b-gallery__content').removeClass('active');
                                 $('html,body').scrollTop(0);
@@ -112,16 +109,20 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                             $('.b-gallery__content').addClass('active');
                             _globals.glrTiles.addClass('top');
                             _globals.scrlBtnGlr.find('.btn-pointer-b > b').text('go to gallery');
-                            //_globals.glrTiles.animate({
-                            //    top: - _globals.glrTiles.outerHeight(),
-                            //}, {
-                            //    easing: "easeInCirc",
-                            //    duration: 700,
-                            //});
-                            _globals.glrTiles.css({
-                                '-webkit-transform': 'translate3d(0px, 0px, 0px)',
-                                '-webkit-transition': '-webkit-transform 1s linear',
+                            _globals.glrTiles.animate({
+                                top: - _globals.glrTiles.outerHeight(),
+                            }, {
+                                step: function (now) {
+                                    console.log(now);
+                                    $(this).css({"transform": "translate3d(0px, 0px," + now + ")"});
+                                },
+                                easing: "easeInCirc",
+                                duration: 1000,
                             });
+                            //_globals.glrTiles.css({
+                            //    'transform': 'translate3d(0px, 0px, _globals.glrTiles.outerHeight())',
+                            //    'transition': 'transform 1s linear',
+                            //});
                         }
                     });
                 }
