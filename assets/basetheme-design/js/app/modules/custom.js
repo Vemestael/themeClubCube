@@ -124,6 +124,14 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                     })
                                 },
                             });
+                            setTimeout(function () {
+                                $('html, body').animate({
+                                    scrollTop: 0,
+                                },{
+                                    easening: 'linear',
+                                    duration: 700
+                                });
+                            }, 300);
                         }
                     });
                 }
