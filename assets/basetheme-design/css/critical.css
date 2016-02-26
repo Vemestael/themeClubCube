@@ -1651,7 +1651,8 @@ iframe {
   clear: both; }
 
 .b-grid {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 55px; }
 
 .right {
   float: right; }
@@ -1683,6 +1684,13 @@ iframe {
   html,
   .wrap {
     height: 100%; }
+  .wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #202020; }
   .wrap.wrap--boxed {
     width: 1280px;
     margin: auto;
@@ -3451,12 +3459,6 @@ blockquote::before {
   width: 100%;
   height: 100%; }
 
-.main-video__desc, .b-video-item__desc {
-  margin-top: 15px !important;
-  font-style: italic;
-  line-height: 18px;
-  color: #999 !important; }
-
 .b-video-sm {
   margin-top: 50px; }
 
@@ -3466,21 +3468,37 @@ blockquote::before {
 .b-video-item__iframe-sm {
   padding-bottom: 42%; }
 
-.b-video-item__desc {
-  font-family: "PT Sans Regular", sans-serif;
-  line-height: 18px; }
+.b-video-item__txt {
+  font-family: "PT Sans Caption Bold", sans-serif;
+  font-size: 18px;
+  color: #c0d23e !important;
+  line-height: 20px; }
+  .b-video-item__txt:hover {
+    color: #530d85 !important;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
 
 .b-video-item__data {
-  color: #999; }
+  display: inline-block;
+  margin-top: 20px;
+  color: #c0d23e;
+  font-size: 12px;
+  text-transform: uppercase; }
+  .b-video-item__data:hover {
+    color: #530d85;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
 
 .b-video-item__iframe-md {
   margin-bottom: 30px;
   padding-bottom: 67%; }
 
-.b-video-item__b-desc {
+.b-video-item__b-txt {
   margin: 0;
   padding: 15px;
-  font-size: 12px;
+  font-style: italic;
   color: #fff;
   line-height: 18px;
   background-color: #666; }
@@ -3493,6 +3511,15 @@ blockquote::before {
 
 .b-audio__item {
   margin-bottom: 50px; }
+
+.b-video-item__iframe-sm:hover {
+  background: #000; }
+
+.b-video-item__iframe-sm:hover + .b-video-item__txt {
+  color: #530d85 !important;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .b-form__group {
   float: left;
@@ -3559,7 +3586,7 @@ blockquote::before {
 
 .b-gallery .slick-prev {
   left: auto;
-  right: 64px; }
+  right: 63px; }
 
 .b-gallery .slick-next {
   right: 15px; }
@@ -3860,7 +3887,7 @@ button.mfp-arrow:hover:before {
 
 .b-partners .slick-prev {
   left: auto;
-  right: 64px; }
+  right: 63px; }
 
 .b-partners .slick-next {
   right: 15px; }

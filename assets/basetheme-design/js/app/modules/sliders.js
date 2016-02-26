@@ -50,10 +50,17 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         },
 
         _setBinds = function () {
+            _binds().setBgGlrChange();
         },
 
         _binds = function () {
-            return {};
+            return {
+                setBgGlrChange: function () {
+                    _sliders.bind(_globals.slGallery, 'click', function () {
+                        _bgGlrChange();
+                    })
+                }
+            };
         },
 
         _triggers = function () {
@@ -62,6 +69,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
 
         _initSlGallery = function () {
             _globals.slGallery.slick({
+                accessibility: false, //don't jumping the scroll in chrome!!!
                 dots: false,
                 infinite: false,
                 speed: 300,
@@ -99,6 +107,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
 
         _initPartners = function () {
             _globals.slPartners.slick({
+                accessibility: false, //don't jumping the scroll in chrome!!!
                 dots: false,
                 infinite: false,
                 speed: 300,
@@ -144,8 +153,8 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 appendArrows: $('.b-advert__btn-item'),
                 fade: true,
                 cssEase: 'linear',
-                //autoplay: true,
-                //autoplaySpeed: 5000,
+                autoplay: true,
+                autoplaySpeed: 5000,
                 responsive: [
                     {
                         breakpoint: 1200,
@@ -157,19 +166,10 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             })
         },
 
-        _setBtnPos = function () {
-            //var posDivParent = $('.navbar-header').position();
-            //var leftPosBtn = posDivParent.left + $('.navbar-list').width();
-            //$document.ready(function () {
-            //    $('.b-advert .slick-next').offset({top: 100, left: leftPosBtn})
-            //})
-
-            //if (_globals.slAdvert.length) {
-            //   var $rightOffsetBl = $('.b-advert__item-a .container').offset();
-            //    $('.b-advert .slick-next').offset({top: $rightOffsetBl.top, left: 'auto'})
-            //    console.log(Math.round($rightOffsetBl.left))
-            //}
-
+        _bgGlrChange = function () {
+            var currentSlide = _globals.slGallery.slick('slickCurrentSlide');
+            var $imageSl = _globals.slGallery.child('[data-bgimage]');
+                console.log($imageSl)
         },
 
         _setCustomMethods = function () {
