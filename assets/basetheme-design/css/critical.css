@@ -1609,11 +1609,6 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px; } }
 
-body,
-html,
-.wrap {
-  height: 100%; }
-
 *::-moz-selection {
   background-color: #c0d23e; }
 
@@ -1682,6 +1677,10 @@ iframe {
     float: none; } }
 
 @media (min-width: 1280px) {
+  body,
+  html,
+  .wrap {
+    height: 100%; }
   .wrap.wrap--boxed {
     width: 1280px;
     margin: auto;
