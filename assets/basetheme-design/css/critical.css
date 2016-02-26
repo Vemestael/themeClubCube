@@ -1610,10 +1610,12 @@ img.mfp-img {
     padding-right: 6px; } }
 
 *::-moz-selection {
-  background-color: #c0d23e; }
+  background-color: #c0d23e;
+  color: #fff; }
 
 *::selection {
-  background-color: #c0d23e; }
+  background-color: #c0d23e;
+  color: #fff; }
 
 img {
   display: block; }

@@ -242,9 +242,14 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
 
         _fullScreenGlr = function () {
-            _globals.glrTiles.height(
-                $window.height()
-            )
+            if (_globals.glrTiles.height() < $window.height()) {
+                _globals.glrTiles.height(
+                    $window.height()
+                )
+            }
+            else {
+                return false
+            }
         },
 
         _setCustomMethods = function () {
