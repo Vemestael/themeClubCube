@@ -168,14 +168,16 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         },
 
         _bgGlrChange = function () {
-            setTimeout(function () {
-                var crntBl = $('.b-gallery .slick-current .b-box__img-wrap');
-                var bgCrntBl = crntBl.attr('style');
-                var grlBlBg = $('.b-gallery__img-wrap').attr('style', img);
-                function img() {
-                    return (bgCrntBl)
-                }
-            }, 300);
+            if ($window.width() > 1280) {
+                setTimeout(function () {
+                    var crntBl = $('.b-gallery .slick-current .b-box__img-wrap');
+                    var bgCrntBl = crntBl.attr('style');
+                    var grlBlBg = $('.b-gallery__img-wrap').attr('style', img);
+                    function img() {
+                        return (bgCrntBl)
+                    }
+                }, 300);
+            }
         },
 
         _setCustomMethods = function () {
