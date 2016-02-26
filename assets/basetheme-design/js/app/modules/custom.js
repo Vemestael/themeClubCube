@@ -124,21 +124,21 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                     })
                                 },
                             });
-                            //setTimeout(function () {
-                            //    var topPoint = 0;
-                            //    topPoint = $('html,body').scrollTop(0);
-                            //    $('html, body').animate({
-                            //        opacity: 1,
-                            //    },{
-                            //        step: function (now, fx) {
-                            //            $(this).css({
-                            //                'transform': 'translate3d(0px,' + (topPoint) + 'px, 0px)',
-                            //                'transition': 'transform 0.7s ease-in',
-                            //            })
-                            //        },
-                            //        easening: 'linear',
-                            //    });
-                            //}, 200);
+                            setTimeout(function () {
+                                var topPoint = 0;
+                                topPoint = $('html,body').scrollTop(0);
+                                $('html, body').animate({
+                                    opacity: 1,
+                                },{
+                                    step: function (now, fx) {
+                                        $(this).css({
+                                            'transform': 'translate3d(0px,' + (topPoint) + 'px, 0px)',
+                                            'transition': 'transform 0.7s ease-in',
+                                        })
+                                    },
+                                    easening: 'linear',
+                                });
+                            }, 200);
                         }
                     });
                 }
