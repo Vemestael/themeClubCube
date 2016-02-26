@@ -120,38 +120,19 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                 step: function (now, fx) {
                                     $(this).css({
                                         'transform': 'translate3d(0px,' + (-_globals.glrTiles.height() - _globals.header.height()) + 'px, 0px)',
-                                        'transition': 'transform 0.7s ease-in',
+                                        'transition': 'transform 0.8s ease-in',
                                     })
                                 },
                             });
-                            if ($window.width() < 1279) {
-                                setTimeout(function () {
-                                    var topPoint = 0;
-                                    topPoint = $('html,body').scrollTop(0);
-                                    $('html, body').animate({
-                                        opacity: 1,
-                                    },{
-                                        step: function (now, fx) {
-                                            $(this).css({
-                                                'transform': 'translate3d(0px,' + (topPoint) + 'px, 0px)',
-                                                'transition': 'transform 0.7s ease-in',
-                                            })
-                                        },
-                                        easening: 'linear',
-                                    });
-                                    return false
-                                }, 200);
-                            }
-                            else if ($window.width() > 1279) {
-                                setTimeout(function () {
-                                    $('html, body').animate({
-                                        scrollTop: 0,
-                                    },{
-                                        easening: 'linear',
-                                    });
-                                    return false
-                                }, 300);
-                            }
+                            setTimeout(function () {
+                                $('html, body').animate({
+                                    scrollTop: 0
+                                }, {
+                                    easening: 'linear',
+                                    duration: 700
+                                });
+                                return false
+                            }, 600);
                         }
                     });
                 }
