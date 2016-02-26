@@ -47,6 +47,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
             _initSlGallery();
             _initPartners();
             _initAdvert();
+            _bgGlrChange();
         },
 
         _setBinds = function () {
@@ -75,7 +76,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 speed: 300,
                 centerPadding: 30,
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 4,
                 responsive: [
                     {
                         breakpoint: 1024,
@@ -167,9 +168,14 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         },
 
         _bgGlrChange = function () {
-            var currentSlide = _globals.slGallery.slick('slickCurrentSlide');
-            var $imageSl = _globals.slGallery.child('[data-bgimage]');
-                console.log($imageSl)
+            setTimeout(function () {
+                var crntBl = $('.b-gallery .slick-current .b-box__img-wrap');
+                var bgCrntBl = crntBl.attr('style');
+                var grlBlBg = $('.b-gallery__img-wrap').attr('style', img);
+                function img() {
+                    return (bgCrntBl)
+                }
+            }, 300);
         },
 
         _setCustomMethods = function () {
