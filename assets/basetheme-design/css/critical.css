@@ -3731,7 +3731,7 @@ button.mfp-arrow:hover:before {
 
 .b-gallery__date-lg .date-lg {
   display: inline-block;
-  width: 290px;
+  width: 275px;
   padding: 11px 10px 0;
   border: 8px solid;
   font-family: "PT Sans Caption Bold", sans-serif;
@@ -3800,7 +3800,10 @@ button.mfp-arrow:hover:before {
   .b-scroll.active {
     top: 80px; }
   .b-gallery__date-lg {
-    top: 30px; } }
+    top: 30px;
+    right: 30px; }
+  .b-gallery__date-lg .date-lg {
+    width: 290px; } }
 
 @media (min-width: 992px) {
   .b-gallery {
@@ -3828,7 +3831,9 @@ button.mfp-arrow:hover:before {
 
 @media (min-width: 1280px) {
   .b-gallery__popup a {
-    height: 158px; } }
+    height: 158px; }
+  .b-gallery__date-lg {
+    right: 15px; } }
 
 .b-partners {
   padding-top: 50px;

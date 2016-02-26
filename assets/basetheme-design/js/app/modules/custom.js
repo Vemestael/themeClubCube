@@ -68,6 +68,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _parallaxStart();
             _popupGlr();
             _ResizeImgGlr();
+            _fullScreenGlr();
         },
 
         _setBinds = function () {
@@ -238,6 +239,12 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     )
                 }, 50)
             }
+        },
+
+        _fullScreenGlr = function () {
+            _globals.glrTiles.height(
+                $window.height()
+            )
         },
 
         _setCustomMethods = function () {
