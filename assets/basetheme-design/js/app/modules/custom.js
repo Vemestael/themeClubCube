@@ -67,14 +67,14 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _masonryBlockGal();
             _parallaxStart();
             _popupGlr();
-            _ResizeImgGlr();
+            //_ResizeImgGlr();
             _fullScreenGlr();
         },
 
         _setBinds = function () {
             _binds().setScrollHeader();
             _binds().setScrollOnBtn();
-            _binds().setResizeImgGlr();
+            //_binds().setResizeImgGlr();
         },
 
         _binds = function () {

@@ -3860,9 +3860,13 @@ button.mfp-arrow:hover:before {
 
 @media (min-width: 1280px) {
   .b-gallery__popup a {
-    height: 158px; }
+    height: 170px; }
   .b-gallery__date-lg {
     right: 15px; } }
+
+@media (min-width: 1570px) {
+  .b-gallery__popup a {
+    height: 200px; } }
 
 .b-partners {
   padding-top: 50px;
