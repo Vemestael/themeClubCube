@@ -3264,7 +3264,7 @@ blockquote::before {
   .b-advert__btn-item {
     width: 990px; } }
 
-.b-tabs .s6-heading {
+.b-tabs__ttl {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px; }
@@ -3273,9 +3273,14 @@ blockquote::before {
   padding: 0;
   float: right; }
 
+.b-tabs__nav-tabs--center {
+  float: none;
+  overflow: hidden;
+  text-align: center; }
+
 .b-tabs__nav-tabs li {
   position: relative;
-  float: left;
+  display: inline-block;
   width: 35px;
   height: 35px;
   -webkit-box-shadow: 0 0 0 2px #202020 inset;
@@ -3283,6 +3288,8 @@ blockquote::before {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+  .b-tabs__nav-tabs li:last-child {
+    margin-left: -5px; }
 
 .b-tabs__nav-tabs li.active {
   background-color: #202020; }
@@ -3364,6 +3371,11 @@ blockquote::before {
   margin-bottom: 30px;
   overflow: hidden; }
 
+.b-accordion__ttl {
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .b-accordion__panel {
   border-top: 1px solid #e8e8e8; }
 
@@ -3377,7 +3389,7 @@ blockquote::before {
   display: block;
   padding: 10px;
   font-size: 18px;
-  color: #666;
+  color: #202020;
   line-height: 28px;
   border-bottom: none;
   -webkit-transition: all 0.2s ease;
@@ -3391,10 +3403,13 @@ blockquote::before {
   padding: 15px; }
 
 .b-accordion__body p {
-  margin: 0; }
+  margin: 0;
+  font-size: 12px;
+  font-family: "PT Sans Caption Regular", sans-serif;
+  line-height: 20px; }
 
 .b-accordion__panel-ttl a:hover {
-  color: #202020; }
+  color: #530d85; }
 
 .collapse {
   display: none; }

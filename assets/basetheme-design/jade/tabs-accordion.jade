@@ -6,29 +6,25 @@ html(lang='en')
       include components/header
       .b-headlines
         .container
+          .b-breadcrumbs
+            ul.b-breadcrumbs__list.x-small-txt
+              li: a.link(href="index.html") main
+              li Tabs & Accordion
           h1.b-headlines__ttl Tabs & Accordion
 
-      .b-breadcrumbs
-        .container
-          ul.b-breadcrumbs__list.x-small-txt
-            li: a.link(href="index.html") home
-            li Tabs & Accordion
-
-      .container
+      .b-content.container
         .b-tabs
-          h6.s6-heading tabs & accordion
-          ul.b-tabs__nav.b-tabs__nav-tabs(role="tablist")
+          ul.b-tabs__nav.b-tabs__nav-tabs.b-tabs__nav-tabs--center(role="tablist")
             li.active(role="presentation")
               a(href="#block-a", aria-controls="block-a", role="tab", data-toggle="tab").
-                <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <svg version="1.1" baseProfile="tiny" width="10" height="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                 <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
                 </svg>
-
             li(role="presentation")
               a(href="#block-b", aria-controls="block-b", role="tab", data-toggle="tab").
-                <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                   x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                <svg version="1.1" baseProfile="tiny" width="10" height="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                 <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
                 </svg>
           .b-tabs__content
@@ -36,7 +32,7 @@ html(lang='en')
               #block-a.b-tabs__pane.fade.in.active(role="tabpanel")
                 .b-tabs__pane-item.col-md-6
                   #accordion.b-accordion(role="tablist", aria-multiselectable="true")
-                    h3.s3-heading.center-txt Classic accordion
+                    h3.s6-heading.b-accordion__ttl Classic accordion
                     .b-accordion__panel.panel
                       #headingOne.b-accordion__panel-heading(role="tab")
                         h4.b-accordion__panel-ttl
@@ -45,7 +41,7 @@ html(lang='en')
                           aria-controls="collapseOne") Last year will be remembered <b class="fa fa-angle-down"></b>
                       #collapseOne.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             For us it is, above all, a change of paradigms - we (hopefully)
                             finally moved away from the model of paternalism in the relationship
                             with the state. We finally took the course of building a civil society.
@@ -61,7 +57,7 @@ html(lang='en')
 
                       #collapseTwo.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingTwo")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Thank you for your flexible and simple program.
                             Our Pasha happy every day, we are delighted by your teachers. Good luck!
 
@@ -74,7 +70,7 @@ html(lang='en')
 
                       #collapseThree.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingThree")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                             3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                             Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
@@ -86,7 +82,7 @@ html(lang='en')
 
                 .b-tabs__pane-item.col-md-6
                   #accordionIcon.b-accordion(role="tablist", aria-multiselectable="true")
-                    h3.s3-heading.center-txt Toggle accordion with icons
+                    h3.s6-heading.b-accordion__ttl Toggle accordion with icons
                     .b-accordion__panel.panel
                       #headingIconOne.b-accordion__panel-heading(role="tab")
                         h4.b-accordion__panel-ttl
@@ -94,7 +90,7 @@ html(lang='en')
                           aria-expanded="true" aria-controls="blockIconOne") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
                       #blockIconOne.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIconOne")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             For us it is, above all, a change of paradigms - we (hopefully)
                             finally moved away from the model of paternalism in the relationship
                             with the state. We finally took the course of building a civil society.
@@ -108,7 +104,7 @@ html(lang='en')
                           aria-controls="blockIconTwo") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
                       #blockIconTwo.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconTwo")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Thank you for your flexible and simple program.
                             Our Pasha happy every day, we are delighted by your teachers. Good luck!
                     .b-accordion__panel.panel
@@ -119,7 +115,7 @@ html(lang='en')
                           aria-controls="blockIconThree") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
                       #blockIconThree.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconThree")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                             3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                             Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
@@ -137,7 +133,7 @@ html(lang='en')
               #block-b.b-tabs__pane.fade.in(role="tabpanel")
                 .b-tabs__pane-item.col-xs-12
                   #accordion2.b-accordion(role="tablist", aria-multiselectable="true")
-                    h3.s3-heading.center-txt Classic accordion
+                    h3.s6-heading.b-accordion__ttl Classic accordion
                     .b-accordion__panel.panel
                       #headingItem.b-accordion__panel-heading(role="tab")
                         h4.b-accordion__panel-ttl
@@ -145,7 +141,7 @@ html(lang='en')
                           href="#collapseItem" aria-expanded="true" aria-controls="collapseItem") Last year will be remembered <b class="fa fa-angle-down"></b>
                       #collapseItem.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingItem")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             For us it is, above all, a change of paradigms - we (hopefully)
                             finally moved away from the model of paternalism in the relationship
                             with the state. We finally took the course of building a civil society.
@@ -161,7 +157,7 @@ html(lang='en')
 
                       #collapseItem2.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingItem2")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Thank you for your flexible and simple program.
                             Our Pasha happy every day, we are delighted by your teachers. Good luck!
 
@@ -174,7 +170,7 @@ html(lang='en')
 
                       #collapseItem3.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingItem3")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                             3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                             Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
@@ -186,7 +182,7 @@ html(lang='en')
 
                 .b-tabs__pane-item.col-xs-12
                   #accordionIcon2.b-accordion(role="tablist", aria-multiselectable="true")
-                    h3.s3-heading.center-txt Toggle accordion with icons
+                    h3.s6-heading.b-accordion__ttl Toggle accordion with icons
                     .b-accordion__panel.panel
                       #headingIcon2.b-accordion__panel-heading(role="tab")
                         h4.b-accordion__panel-ttl
@@ -194,7 +190,7 @@ html(lang='en')
                           aria-expanded="true" aria-controls="blockIcon2") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
                       #blockIcon2.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIcon2")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             For us it is, above all, a change of paradigms - we (hopefully)
                             finally moved away from the model of paternalism in the relationship
                             with the state. We finally took the course of building a civil society.
@@ -208,7 +204,7 @@ html(lang='en')
                           aria-controls="blockIcon3") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
                       #blockIcon3.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIcon3")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Thank you for your flexible and simple program.
                             Our Pasha happy every day, we are delighted by your teachers. Good luck!
                     .b-accordion__panel.panel
@@ -219,7 +215,7 @@ html(lang='en')
                           aria-controls="blockIcon4") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
                       #blockIcon4.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="hdIcon4")
                         .b-accordion__body
-                          p.small-txt.
+                          p.
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                             3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                             Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua

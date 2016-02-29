@@ -2,7 +2,7 @@
 // Tabs
 // --------------------------------------------------
 
-.b-tabs .s6-heading
+.b-tabs__ttl
   display: inline-block
   text-transform: uppercase
   letter-spacing: 2px
@@ -11,13 +11,20 @@
   padding: 0
   float: right
 
+.b-tabs__nav-tabs--center
+  float: none
+  overflow: hidden
+  text-align: center
+
 .b-tabs__nav-tabs li
   position: relative
-  float: left
+  display: inline-block
   width: 35px
   height: 35px
   box-shadow: 0 0 0 2px $tab-bg inset
   transition: all 0.2s ease
+  &:last-child
+    margin-left: -5px
 
 .b-tabs__nav-tabs li.active
   background-color: $tab-bg
