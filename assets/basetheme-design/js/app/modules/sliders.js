@@ -59,6 +59,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 setBgGlrChange: function () {
                     _sliders.bind(_globals.slGallery, 'click', function () {
                         _bgGlrChange();
+                         return false
                     })
                 }
             };
@@ -73,7 +74,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 accessibility: false, //don't jumping the scroll in chrome!!!
                 dots: false,
                 infinite: false,
-                speed: 300,
+                speed: 900,
                 centerPadding: 30,
                 slidesToShow: 4,
                 slidesToScroll: 4,
@@ -169,14 +170,17 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
 
         _bgGlrChange = function () {
             if ($window.width() > 1280) {
+                console.log(1231)
+                var crntBl = $('.b-gallery .slick-current .b-box__img-wrap');
+                var bgCrntBl = crntBl.attr('style');
+                var grlBlBg = $('.b-gallery__img-wrap').attr('style', function () {
+                    $(this).addClass('active');
+                    return (bgCrntBl)
+                });
+
                 setTimeout(function () {
-                    var crntBl = $('.b-gallery .slick-current .b-box__img-wrap');
-                    var bgCrntBl = crntBl.attr('style');
-                    var grlBlBg = $('.b-gallery__img-wrap').attr('style', img);
-                    function img() {
-                        return (bgCrntBl)
-                    }
-                }, 300);
+                    $('.b-gallery__img-wrap').removeClass('active');
+                }, 1000);
             }
         },
 

@@ -44,9 +44,6 @@
   font-size: 18px
   color: $active-c !important
   line-height: 20px
-  &:hover
-    color: $active-sc-c !important
-    transition: all 0.2s ease
 
 .b-video-item__data
   display: inline-block
@@ -54,21 +51,17 @@
   color: $active-c
   font-size: 12px
   text-transform: uppercase
-  &:hover
-    color: $active-sc-c
-    transition: all 0.2s ease
 
 .b-video-item__iframe-md
   margin-bottom: 30px
   padding-bottom: 67%
 
-.b-video-item__b-txt
-  margin: 0
-  padding: 15px
+.b-video__figcaption
+  margin: 20px 0 0
+  font-size: 14px
   font-style: italic
-  color: #fff
+  color: #999
   line-height: 18px
-  background-color: #666
 
 .b-video-item__iframe-lg
   padding-bottom: 92%
@@ -80,9 +73,7 @@
 .b-audio__item
   margin-bottom: 50px
 
-.b-video-item__iframe-sm:hover
-  background: #000
-
-.b-video-item__iframe-sm:hover + .b-video-item__txt
+.b-video__cnt-wrap:hover .b-video-item__data,
+.b-video__cnt-wrap:hover .b-video-item__txt
   color: $active-sc-c !important
   transition: all 0.2s ease
