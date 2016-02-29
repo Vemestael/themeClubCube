@@ -6,85 +6,71 @@ html(lang='en')
       include components/header
       .b-headlines
         .container
+          .b-breadcrumbs
+            ul.b-breadcrumbs__list.x-small-txt
+              li: a.link(href="index.html") main
+              li typography
           h1.b-headlines__ttl Typography
 
-      .b-breadcrumbs
-        .container
-          ul.b-breadcrumbs__list.x-small-txt
-            li: a.link(href="index.html") home
-            li typography
+      .b-content.container
+        article
+          h1.s1-heading H1 <span>heading</span>
+          include parts/textLorem
 
-      section.b-typography
-        .container
-          article
-            h1.s1-heading H1 <span>heading</span>
-            p.large-txt
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia.
-              | faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
-              | consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla
-              | suctus.
+          h2.s2-heading H2 <span>heading</span>
+          include parts/textLorem
 
-            h2.s2-heading H2 <span>heading</span>
-            include parts/textLorem
+          h3.s3-heading H3 <span>heading</span>
+          include parts/textLorem
 
-            h3.s3-heading H3 <span>heading</span>
-            include parts/textLorem
+          h4.s4-heading H4 <span>heading</span>
+          include parts/textLorem
 
-            h4.s4-heading H4 <span>heading</span>
-            include parts/textLorem
+          h5.s5-heading H5 <span>heading</span>
+          include parts/textLorem
 
-            h5.s5-heading H5 <span>heading</span>
-            p.small-txt
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia.
-              | faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
-              | consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla
-              | suctus.
+          h6.s6-heading H6 <span>heading</span>
+          include parts/textLorem
 
-            h6.s6-heading H6 <span>heading</span>
-            p.x-small-txt
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia.
-              | faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
-              | consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla
-              | suctus.
-          article
-            h2.s2-heading Nature of the event H2 + bullit & List
-            ul.list.txt
-              li Participants of the event , on forms zapolennnym
-              li Indoor , 3-storey mansion.
-              li
-                | Faith , dress , soul control. But still, we love loud roll dancing until dawn  and then
-                | to "crawl" on the body
-              li Waitstaff
-              li Hour bar
+        article
+          h2.s2-heading Nature of the event H2 + bullit & List
+          ul.list.txt
+            li Participants of the event , on forms zapolennnym
+            li Indoor , 3-storey mansion.
+            li
+              | Faith , dress , soul control. But still, we love loud roll dancing until dawn  and then
+              | to "crawl" on the body
+            li Waitstaff
+            li Hour bar
 
-            ol.list-numb.txt
-              li Free Entrance
-              li Free Bar
-              li Free Pool
-              li Free Things to do on-site
+          ol.list-numb.txt
+            li Free Entrance
+            li Free Bar
+            li Free Pool
+            li Free Things to do on-site
 
-          article
-            h3.s3-heading Nature of the event H3 + quote & links
-            blockquote.b-quote.txt
-              p.b-quote__txt
-                | Friendship - is unselfishness , personal relationship between people based on
-                | sympathy, sincerity, love and trust. But still, we love loud roll dancing until dawn
-                | and then to "crawl" on the body, remember proschedshem evente perekrik and
-                | share emotions we experienced some time ago.
+        article
+          h3.s3-heading Nature of the event H3 + quote & links
+          blockquote.b-quote.txt
+            p.b-quote__txt
+              | Friendship - is unselfishness , personal relationship between people based on
+              | sympathy, sincerity, love and trust. But still, we love loud roll dancing until dawn
+              | and then to "crawl" on the body, remember proschedshem evente perekrik and
+              | share emotions we experienced some time ago.
 
-              a.link(href="https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzbBM9NIPHo/viewform")
-                | https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzbBM9NIPHo/viewform
-              <br/>
-              a.link(href="https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzb")
-                | https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzb
+            a.link(href="https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzbBM9NIPHo/viewform")
+              | https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzbBM9NIPHo/viewform
+            <br/>
+            a.link(href="https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzb")
+              | https://docs.google.com/forms/d/1Ib-DlLhw5DIU_CEwmuajux_7M1cz3yGXmzb
 
-          article
-            h4.s4-heading Nature of the event H4 + code
-            code.b-code.small-txt.
-              <strong>Code block:</strong> We will review best practices, success stories of communities of Ukraine
-               and abroad. Unlike last year, the Conference on Social Camp Ukraine 2014 we have provided
-               different forms, reports, workshops, round tables. We will review best practices, success
-               stories of communities of Ukraine and abroad. Unlike last year, the Conference on Social
-               Camp Ukraine 2014 we have provided different forms, reports, workshops, round tables.
+        article
+          h4.s4-heading Nature of the event H4 + code
+          code.b-code.small-txt.
+            <strong>Code block:</strong> We will review best practices, success stories of communities of Ukraine
+             and abroad. Unlike last year, the Conference on Social Camp Ukraine 2014 we have provided
+             different forms, reports, workshops, round tables. We will review best practices, success
+             stories of communities of Ukraine and abroad. Unlike last year, the Conference on Social
+             Camp Ukraine 2014 we have provided different forms, reports, workshops, round tables.
       include components/footer
     include components/scripts

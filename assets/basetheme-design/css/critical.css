@@ -1873,8 +1873,9 @@ blockquote::before {
 
 .b-code {
   display: block;
+  margin-bottom: 40px;
   padding: 60px;
-  background-color: #FFF0BF; }
+  background-color: #e8e8e8; }
 
 .b-footnote {
   margin: 25px 0 30px;
