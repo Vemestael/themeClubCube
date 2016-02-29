@@ -17,6 +17,10 @@
   cursor: pointer
   transition: all 0.2s ease
 
+.btn--clr-a
+  color: #fff
+  border-color: #fff!important
+
 .btn:hover
   color: #fff
   background-color: $black-c
@@ -89,8 +93,43 @@
 .btn.btn-icon--plus:hover
   background-image: url('../images/plus-icon-wht.svg')
 
-.btn-icon--refresh
+.btn-icon--plus-wht
+  background-image: url('../images/plus-icon-wht.svg')
+  border-color: #fff
+
+.btn.btn-icon--plus-wht:hover
+  background-image: url('../images/plus-icon.svg')
+
+.btn-icon--refresh,
+.btn-icon--refresh-wht
+  position: relative
   background-image: url('../images/refresh-icon.svg')
+  &:hover
+    background-color: $black-c
+
+.btn-icon--refresh-wht
+  background-image: url("../images/refresh-icon-white.svg")
+  border-color: #fff
+
+.btn-icon--refresh:before
+  @include absolute-center-x-y()
+  content: ''
+  width: 100%
+  height: 100%
+  padding-bottom: 1px
+  opacity: 0
+  background-image: url("../images/refresh-icon-white.svg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 66%
+  transition: all 0.2s ease
+
+.btn-icon--refresh-wht:before
+  background-image: url('../images/refresh-icon.svg')
+
+.btn-icon--refresh:hover:before,
+.btn-icon--refresh-wht:hover:before
+  opacity: 1
 
 .date,
 .date-lg
@@ -211,7 +250,11 @@
   line-height: 56px
   text-align: center
 
-.b-social__btn:hover
+.b-social--clr-a .b-social__btn
+  color: #fff
+  border-color: #fff
+
+.b-social--clr-a .b-social__btn:hover
   background-color: #fff
   transition: all 0.2s ease
   & .fa
@@ -517,6 +560,41 @@
   &::before
     color: $black-c
     transition: all 0.2s ease
+
+//Buttons list
+.b-btn__item
+  overflow: hidden
+  margin-bottom: 55px
+  &:last-child
+    margin-bottom: -60px
+    padding-top: 50px
+    padding-bottom: 60px
+
+.b-btn__inner .b-likes,
+.b-btn__inner .slick-prev,
+.b-btn__inner .slick-next,
+.b-btn__inner .btn-info,
+.b-btn__inner .btn-pointer-b__wrap,
+.b-btn__inner .btn-pointer__wrap,
+.b-btn__inner .b-form__btn
+  margin: 5px
+
+.b-btn__inner .slick-prev,
+.b-btn__inner .slick-next
+  position: static
+  display: inline-block
+  transform: translate(0, 0)
+
+.b-btn__inner .btn-info
+  overflow: hidden
+
+.b-btn__inner--wht .btn-info span:nth-of-type(1)
+  color: $black-c
+
+.b-btn__item-dark
+  background: $black-c
+
+.b-btn__item-dark
 
 @media (min-width: $screen-xm)
   .btn-pointer__sm

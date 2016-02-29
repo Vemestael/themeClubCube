@@ -1,0 +1,148 @@
+doctype html
+html(lang='en')
+  include components/head
+  body
+    .wrap
+      include components/header
+      .b-headlines
+        .container
+          .b-breadcrumbs
+            ul.b-breadcrumbs__list.x-small-txt
+              li: a.link(href="index.html") main
+              li Buttons
+          h1.b-headlines__ttl Buttons
+
+      .b-content
+        .b-btn__item
+          .container
+            .row
+              .b-item__header.col-xs-12.col-sm-12
+                h6.s6-heading.b-item__ttl-header On White Background
+
+              .b-btn__inner.col-xs-12.col-sm-6
+                a.btn(href="#") More events
+                a.btn.btn-icon.btn-icon--plus(href="#") More events
+                a.btn.btn--mini(href="#") More events
+
+              .b-btn__inner.col-xs-12.col-sm-6
+                a.btn-icon.btn-icon--plus(href="#")
+                a.btn-icon.btn-icon--refresh(href="#")
+                a.btn--mini.btn-icon.btn-icon--plus(href="#")
+                a.btn--mini.btn-icon.btn-icon--refresh(href="#")
+
+                .block
+                  button.slick-prev
+                  button.slick-next
+
+                ul.b-social
+                  li: a.b-social__btn.btn(href="#"): span.fa.fa-facebook
+
+                ul.b-likes
+                  li.b-likes__pinterest-p
+                    span 457
+
+              .b-btn__inner.b-btn__inner--wht.col-xs-12.col-sm-6
+                a.btn.btn-info.btn-anim-a(href="#")
+                  | <span class="">free</span>
+                  | <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  | viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                  | .st0{fill:#A82743;}</style>
+                  | <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                  |  <b>read more</b></span>
+                .btn-pointer-b__wrap.
+                  <a href="#" class="btn-pointer-b btn-anim-b"><b>Watch Promo Live</b></a>
+                  <svg class="left" x="0px" y="0px" viewBox="0 0 5 50" enable-background="new 0 0 5 50" xml:space="preserve">
+                  <path fill="#000000" d="M5.0001,49.0002H0V33.8014l4.4054-4.4053L0,24.9905v-0.9612l4.4054-4.4051L0,15.2184V0h5.0001V49.0002z"/>
+                  </svg>
+
+                  <svg class="right" x="0px" y="0px" viewBox="0 0 5 50" enable-background="new 0 0 5 50" xml:space="preserve">
+                  <path fill="#000000" d="M0,0l5.0001,0v15.1988l-4.4054,4.4053l4.4054,4.4056v0.9612L0.5947,29.376l4.4054,4.4058v15.2184H0L0,0z"/>
+                  </svg>
+
+                .btn-pointer__wrap.
+                  <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                  <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                  .st0{fill:#A82743;}</style>
+                  <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                .btn-pointer__wrap.
+                  <a class="btn btn-pointer__sm btn-anim-a" href="#"><b>open event & Gallery</b></a>
+                  <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                  .st0{fill:#A82743;}</style>
+                  <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                button.b-form__btn Subscribe
+
+        .b-btn__item.b-btn__item-dark
+          .container
+            .row
+              .b-item__header.col-xs-12
+                h6.s6-heading.b-item__ttl-header.b-item__header--clr-a On Dark Background
+
+              .b-btn__inner.col-xs-12
+                a.btn.btn--clr-a(href="#") More events
+                a.btn.btn-icon.btn-icon--plus-wht.btn--clr-a(href="#") More events
+                a.btn.btn--mini.btn--clr-a(href="#") More events
+
+              .b-btn__inner.col-xs-12
+                a.btn-icon.btn-icon--plus-wht(href="#")
+                a.btn-icon.btn-icon--refresh-wht(href="#")
+                a.btn--mini.btn-icon.btn-icon--plus-wht(href="#")
+                a.btn--mini.btn-icon.btn-icon--refresh-wht(href="#")
+
+              .b-btn__inner.btn-white.col-xs-12
+                button.slick-prev
+                button.slick-next
+
+              .b-btn__inner.col-xs-12
+                ul.b-social.b-social--clr-a
+                  li: a.b-social__btn.btn(href="#"): span.fa.fa-facebook
+
+              .b-btn__inner.col-xs-12
+                ul.b-likes.b-likes--wht
+                  li.b-likes__pinterest-p
+                    span 457
+
+              .b-btn__inner.col-xs-12
+                a.btn.btn-info.btn-anim-a(href="#")
+                  | <span class="">free</span>
+                  | <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  | viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                  | .st0{fill:#A82743;}</style>
+                  | <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                  |  <b>read more</b></span>
+              .b-btn__inner.col-xs-12
+                .btn-pointer-b__wrap.
+                  <a href="#" class="btn-pointer-b btn-anim-b"><b>Watch Promo Live</b></a>
+                  <svg class="left" x="0px" y="0px" viewBox="0 0 5 50" enable-background="new 0 0 5 50" xml:space="preserve">
+                  <path fill="#000000" d="M5.0001,49.0002H0V33.8014l4.4054-4.4053L0,24.9905v-0.9612l4.4054-4.4051L0,15.2184V0h5.0001V49.0002z"/>
+                  </svg>
+
+                  <svg class="right" x="0px" y="0px" viewBox="0 0 5 50" enable-background="new 0 0 5 50" xml:space="preserve">
+                  <path fill="#000000" d="M0,0l5.0001,0v15.1988l-4.4054,4.4053l4.4054,4.4056v0.9612L0.5947,29.376l4.4054,4.4058v15.2184H0L0,0z"/>
+                  </svg>
+
+              .b-btn__inner.col-xs-12
+                .btn-pointer__wrap.
+                  <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
+                  <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                  .st0{fill:#A82743;}</style>
+                  <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+              .b-btn__inner.col-xs-12
+                .btn-pointer__wrap.
+                  <a class="btn btn-pointer__sm btn-anim-a" href="#"><b>open event & Gallery</b></a>
+                  <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
+                  .st0{fill:#A82743;}</style>
+                  <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+              .b-btn__inner.col-xs-12
+                button.b-form__btn Subscribe
+      include components/footer
+    include components/scripts
+
+
