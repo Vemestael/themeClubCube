@@ -2240,6 +2240,7 @@ blockquote::before {
   line-height: 1; }
   .btn-pointer__sm b {
     display: table-cell;
+    padding-top: 2px;
     vertical-align: middle; }
 
 .btn-pointer__left {
@@ -4240,7 +4241,7 @@ button.mfp-arrow:hover:before {
 
 .b-item__ttl-header {
   float: left;
-  width: calc(100% - 72px);
+  width: calc(100% - 80px);
   margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 2px; }
@@ -4561,7 +4562,7 @@ button.mfp-arrow:hover:before {
     font-size: 16px;
     line-height: 50px; }
   .c-box__views {
-    bottom: 30px; }
+    bottom: 20px; }
   .c-box.c-box--lg .c-box__inner {
     min-height: 446px;
     max-width: 100%; }
