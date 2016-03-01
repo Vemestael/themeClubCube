@@ -4134,6 +4134,16 @@ button.mfp-arrow:hover:before {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
 
+.b-box__s6-ttl {
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  bottom: 16px;
+  margin: 0;
+  font-size: 18px;
+  font-family: "PT Sans Caption Bold", sans-serif;
+  line-height: 20px; }
+
 .b-box--clr-a {
   color: #fff;
   background-color: #c0d23e; }
@@ -4150,16 +4160,6 @@ button.mfp-arrow:hover:before {
   font-size: 12px;
   text-transform: uppercase;
   z-index: 1; }
-
-.b-box__txt {
-  position: absolute;
-  right: 20px;
-  left: 20px;
-  bottom: 16px;
-  margin: 0;
-  font-size: 18px;
-  font-family: "PT Sans Caption Bold", sans-serif;
-  line-height: 20px; }
 
 .b-box-sm {
   min-height: 150px; }
