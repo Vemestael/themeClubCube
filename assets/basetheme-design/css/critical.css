@@ -5109,6 +5109,9 @@ button.mfp-arrow:hover:before {
   font-family: "PT Sans Bold", sans-serif;
   color: #c0d23e; }
 
+.content > blockquote {
+  line-height: 30px; }
+
 .b-footer {
   padding-top: 65px;
   padding-bottom: 110px;
