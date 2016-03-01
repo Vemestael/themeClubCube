@@ -1,0 +1,30 @@
+//
+// Content
+// --------------------------------------------------
+
+.content > ul li,
+.content > ol li
+  position: relative
+  line-height: 30px
+
+.content > ul li::before
+  content: ''
+  position: absolute
+  top: 13px
+  left: -25px
+  display: block
+  width: 5px
+  height: 5px
+  background-color: $active-c
+
+.content > ol li
+  counter-increment: number
+
+.content > ol li::before
+  content: counter(number)
+  position: absolute
+  top: 2px
+  left: -29px
+  font-family: $base-bold-font
+  color: $active-c
+

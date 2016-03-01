@@ -1832,31 +1832,6 @@ ol {
   padding: 0 0 0 48px;
   list-style-type: none; }
 
-.list li {
-  position: relative; }
-
-.list li::before {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: -25px;
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: #c0d23e; }
-
-.list-numb li {
-  counter-increment: number;
-  position: relative; }
-
-.list-numb li::before {
-  content: counter(number);
-  position: absolute;
-  top: 2px;
-  left: -29px;
-  font-family: "PT Sans Bold", sans-serif;
-  color: #c0d23e; }
-
 blockquote {
   position: relative;
   margin: 0 0 30px 0;
@@ -1884,7 +1859,9 @@ blockquote::before {
 
 .b-footnote p {
   margin: 0;
-  color: #999; }
+  color: #999;
+  font-size: 14px;
+  line-height: 20px; }
 
 .b-footnote__mark {
   font-size: 18px;
@@ -3037,7 +3014,10 @@ blockquote::before {
   .c-headlines__likes {
     padding-top: 55px;
     color: #fff;
-    clear: both; } }
+    clear: both; }
+  .c-headlines__likes.b-likes span::before,
+  .c-headlines__likes.b-likes span::after {
+    background-color: #625B88; } }
 
 @media (min-width: 992px) {
   .c-headlines__ttl {
@@ -5102,6 +5082,32 @@ button.mfp-arrow:hover:before {
 @media (min-width: 768px) {
   .b-scroll {
     max-width: 400px; } }
+
+.content > ul li,
+.content > ol li {
+  position: relative;
+  line-height: 30px; }
+
+.content > ul li::before {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: -25px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #c0d23e; }
+
+.content > ol li {
+  counter-increment: number; }
+
+.content > ol li::before {
+  content: counter(number);
+  position: absolute;
+  top: 2px;
+  left: -29px;
+  font-family: "PT Sans Bold", sans-serif;
+  color: #c0d23e; }
 
 .b-footer {
   padding-top: 65px;
