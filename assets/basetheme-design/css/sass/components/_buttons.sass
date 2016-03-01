@@ -6,7 +6,7 @@
   min-height: 50px
   border: 2px solid $black-c
   margin: 5px
-  padding: 12px 20px
+  padding: 14px 20px
   font-family: $second-font
   font-size: 18px
   font-weight: bold
@@ -14,12 +14,19 @@
   text-decoration: none
   text-transform: uppercase
   overflow: hidden
+  background-color: transparent
   cursor: pointer
   transition: all 0.2s ease
 
-.btn--clr-a
+.btn.btn--clr-a,
+.btn-icon.btn--clr-a
   color: #fff
-  border-color: #fff!important
+  border-color: #fff
+
+.btn.btn--clr-a:hover,
+.btn-icon.btn--clr-a:hover
+  color: $black-c
+  background-color: #fff
 
 .btn:hover
   color: #fff
@@ -32,9 +39,6 @@
   line-height: 1
   transform: translate3d(0,0,0)
   transition: transform 0.2s ease
-
-//.btn-anim-b b
-//  line-height: 50px
 
 .btn-anim-a:hover b
   transform: translate3d(3px,0,0)
@@ -63,20 +67,27 @@
   font-size: 14px
 
 .btn-icon
+  position: relative
   display: inline-block
   margin: 5px
   padding: 12px 26px 12px 44px
   border: 2px solid $black-c
-  background-color: transparent
-  background-size: 28px
-  background-position: 16px center
+  background-size: 27px
+  background-position: 15px center
   background-repeat: no-repeat
-  text-decoration: none
   min-height: 46px
   overflow: hidden
 
-.btn.btn-icon
+.btn-icon:hover
+    background-color: $black-c
+
+.btn.btn-icon,
+.btn.btn-icon::before
   background-size: 22px
+
+.btn.btn-icon::before
+  left: 16px
+  width: 20px
 
 .btn-icon:not(.btn)
   padding: 12px 20px 12px 24px
@@ -90,46 +101,55 @@
 .btn-icon--plus
   background-image: url('../images/plus-icon.svg')
 
-.btn.btn-icon--plus:hover
-  background-image: url('../images/plus-icon-wht.svg')
-
 .btn-icon--plus-wht
   background-image: url('../images/plus-icon-wht.svg')
-  border-color: #fff
 
-.btn.btn-icon--plus-wht:hover
-  background-image: url('../images/plus-icon.svg')
-
-.btn-icon--refresh,
-.btn-icon--refresh-wht
-  position: relative
+.btn-icon--refresh
   background-image: url('../images/refresh-icon.svg')
-  &:hover
-    background-color: $black-c
 
 .btn-icon--refresh-wht
   background-image: url("../images/refresh-icon-white.svg")
-  border-color: #fff
 
-.btn-icon--refresh:before
-  @include absolute-center-x-y()
+.btn-icon--plus:before,
+.btn-icon--plus-wht:before,
+.btn-icon--refresh:before,
+.btn-icon--refresh-wht:before
   content: ''
+  position: absolute
+  top: 0
+  left: 0
   width: 100%
   height: 100%
-  padding-bottom: 1px
   opacity: 0
-  background-image: url("../images/refresh-icon-white.svg")
   background-repeat: no-repeat
   background-position: center
-  background-size: 66%
-  transition: all 0.2s ease
+  background-size: 27px
+
+.btn-icon--plus:before
+  background-image: url('../images/plus-icon-wht.svg')
+
+.btn-icon--plus-wht:before
+  background-image: url('../images/plus-icon.svg')
+
+.btn-icon--refresh:before
+  background-image: url("../images/refresh-icon-white.svg")
 
 .btn-icon--refresh-wht:before
-  background-image: url('../images/refresh-icon.svg')
+  background-image: url("../images/refresh-icon.svg")
 
+.btn-icon--plus:hover:before,
+.btn-icon--plus-wht:hover:before,
 .btn-icon--refresh:hover:before,
 .btn-icon--refresh-wht:hover:before
   opacity: 1
+
+.btn--mini.btn-icon--plus:before,
+.btn--mini.btn-icon--plus-wht:before
+  background-size: auto
+
+.btn--mini.btn-icon--refresh:before,
+.btn--mini.btn-icon--refresh-wht:before
+  background-size: 20px
 
 .date,
 .date-lg
@@ -373,9 +393,6 @@
 .btn-info:hover
   background-color: transparent
 
-.btn-info:hover span:nth-of-type(2)
-  color: $active-sc-c
-
 .b-likes
   padding: 0
 
@@ -501,7 +518,7 @@
 .slick-prev,
 .slick-next
   width: 50px
-  height: 34px
+  height: 35px
   border: 2px solid #fff
 
 .slick-prev:before,

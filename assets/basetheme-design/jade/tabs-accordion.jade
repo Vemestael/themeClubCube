@@ -126,9 +126,49 @@ html(lang='en')
                             heard of them accusamus labore sustainable VHS.
 
                 .b-tabs__pane-item.col-md-6
-                  include parts/textLorem
-                .b-tabs__pane-item.col-md-6
-                  include parts/textLorem
+                  #accordionIconClr.b-accordion.b-accordion--clr(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Toggle and colorfull accordion with icons
+                    .b-accordion__panel.panel.panel--bg-a
+                      #headingIconClrOne.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordionIconClr" href="#blockIconClrOne"
+                          aria-expanded="true" aria-controls="blockIconClrOne") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #blockIconClrOne.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIconClrOne")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+                    .b-accordion__panel.panel.panel--bg-b
+                      #headingIconClrTwo.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClrTwo", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr", aria-expanded="false",
+                          aria-controls="blockIconClrTwo") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
+                      #blockIconClrTwo.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClrTwo")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+                    .b-accordion__panel.panel.panel--bg-c
+                      #headingIconClrThree.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClrThree", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr", aria-expanded="false",
+                          aria-controls="blockIconClrThree") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
+                      #blockIconClrThree.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClrThree")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
 
               #block-b.b-tabs__pane.fade.in(role="tabpanel")
                 .b-tabs__pane-item.col-xs-12
@@ -225,14 +265,50 @@ html(lang='en')
                             craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
                             heard of them accusamus labore sustainable VHS.
 
-
                 .b-tabs__pane-item.col-xs-12
-                  include parts/textLorem
-                .b-tabs__pane-item.col-xs-12
-                  include parts/textLorem
-
-
-
+                  #accordionIconClr2.b-accordion.b-accordion--clr(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Toggle and colorfull accordion with icons
+                    .b-accordion__panel.panel.panel--bg-a
+                      #headingIconClr2.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordionIconClr2" href="#blockIconClr2"
+                          aria-expanded="true" aria-controls="blockIconClr2") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #blockIconClr2.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIconClr2")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+                    .b-accordion__panel.panel.panel--bg-b
+                      #headingIconClr3.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClr3", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr2", aria-expanded="false",
+                          aria-controls="blockIconClr3") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
+                      #blockIconClr3.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClr3")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+                    .b-accordion__panel.panel.panel--bg-c
+                      #headingIconClr4.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClr4", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr2", aria-expanded="false",
+                          aria-controls="blockIconClr4") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
+                      #blockIconClr4.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClr4")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
 
       include components/footer
     include components/scripts
