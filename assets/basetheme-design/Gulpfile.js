@@ -94,7 +94,6 @@ gulp.task('skins', function (callback) {
         cascade: true
       }))
       .pipe(debug({title: 'prefx:'}))
-      .pipe(debug({title: 'maps:'}))
       .pipe(gulp.dest('css/skins'));
   callback();
 });
