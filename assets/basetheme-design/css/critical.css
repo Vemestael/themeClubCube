@@ -1655,6 +1655,9 @@ iframe {
 .right {
   float: right; }
 
+.center {
+  text-align: center; }
+
 .b-blank {
   height: 50px; }
 
@@ -2375,7 +2378,7 @@ button {
 
 .b-likes--wht span {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.33);
+  border-color: #8C5DAD;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -2383,7 +2386,7 @@ button {
 .b-likes--wht span::before,
 .b-likes--wht span::after {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.33);
+  background-color: #8C5DAD;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -3352,6 +3355,10 @@ button {
 .b-tabs__nav {
   padding: 0;
   float: right; }
+
+.center .b-tabs__nav {
+  display: inline-block;
+  float: none; }
 
 .b-tabs__nav-tabs--center {
   float: none;
