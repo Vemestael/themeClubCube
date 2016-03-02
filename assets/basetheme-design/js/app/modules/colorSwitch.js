@@ -66,6 +66,8 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
                         if ($(this).hasClass('brown')) {
                             _globals.linkItm.attr('href', 'css/skins/brown-gray.css');
                         }
+                        _globals.clrPicker.removeClass('active');
+                        $(this).addClass('active');
                     });
                 }
             }

@@ -157,6 +157,19 @@
 .navbar__hr-wrap .hr-line
   margin-bottom: 3px
 
+.navbar__tint .clr-picker
+  position: relative
+  padding-left: 20px
+
+.navbar__tint .clr-picker.active::before
+  content: "\f00c"
+  position: absolute
+  left: 0
+  font-size: 14px
+  font-family: $fa
+  color: #fff
+  line-height: 50px
+
 @media (min-width: $screen-sm)
 
   .header__sticky .navbar-brand
@@ -317,6 +330,9 @@
   .dropdown-menu__right .navbar-list__inner
     right: 100%
     left: auto
+
+  .navbar__tint .fa-angle-right
+    display: none
 
 @media (min-width: $screen-xl)
 
