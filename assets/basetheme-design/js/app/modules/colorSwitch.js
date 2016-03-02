@@ -4,8 +4,8 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
     var _colorSwitch = this,
         _defaults = {
             // elements
-            colorItm: '.color-picker-item',
-            linkItm: '[href^="css/not-min/skins/"]'
+            clrPicker: '.clr-picker',
+            linkItm: '[href^="css/skins/"]'
             // prop
             // data
             // classes ans styles
@@ -13,14 +13,14 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _properties = $.extend(_defaults, properties),
         _globals = {
             // elements
-            colorItm: null,
+            clrPicker: null,
             linkItm: null,
 
             // prop
             preloaded: false
         },
 
-        //PRIVATE METHODS
+    //PRIVATE METHODS
         _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_colorSwitch, [_properties]);
             if (!_globals.preloaded) {
@@ -31,57 +31,41 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            }
+            };
             _colorSwitch.create();
         },
 
         _config = function () {
-            _globals.colorItm = $(_properties.colorItm);
+            _globals.clrPicker = $(_properties.clrPicker);
             _globals.linkItm = $(_properties.linkItm);
         },
 
         _setup = function () {
-            
-            _globals.colorItm.on('click', function (){
-                if($(this).hasClass('orange')) {
-                    _globals.linkItm.attr('href', 'css/not-min/skins/orange.css');
-                }
-
-                if($(this).hasClass('blue')) {
-                    _globals.linkItm.attr('href', 'css/not-min/skins/blue.css');
-                }
-
-                if($(this).hasClass('green')) {
-                    _globals.linkItm.attr('href', 'css/not-min/skins/green.css');
-                }
-
-                if($(this).hasClass('yellow')) {
-                    _globals.linkItm.attr('href', 'css/not-min/skins/yellow.css');
-                }
-
-                if($(this).hasClass('red')) {
-                    _globals.linkItm.attr('href', 'css/not-min/skins/red.css');
-                }
-
-                if($(this).hasClass('grey')) {
-                    _globals.linkItm.attr('href', 'css/not-min/skins/grey.css');
-                }
-            });
-
         },
 
         _setBinds = function () {
-            
+            _binds().setChangeClr();
         },
 
         _binds = function () {
-
+            return {
+                setChangeClr: function () {
+                    _globals.clrPicker.on('click', function () {
+                        if ($(this).hasClass('green')) {
+                            _globals.linkItm.attr('href', 'css/skins/green-violet.css');
+                            console.log(12)
+                        }
+                        if ($(this).hasClass('orange')) {
+                            _globals.linkItm.attr('href', 'css/skins/orange-red.css');
+                            console.log(21)
+                        }
+                    });
+                }
+            }
         },
 
         _triggers = function () {
-            return {
-
-            }
+            return {}
         },
 
         _toggleMenuCheckup = function () {
@@ -89,9 +73,11 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         },
 
         _setCustomMethods = function () {
-            _colorSwitch.globals.customResurrect = function () {}
-            _colorSwitch.globals.customDestroy = function () {}
-        }
+            _colorSwitch.globals.customResurrect = function () {
+            };
+            _colorSwitch.globals.customDestroy = function () {
+            };
+        };
 
     //PUBLIC METHODS
     _colorSwitch.addMethod('init', function () {

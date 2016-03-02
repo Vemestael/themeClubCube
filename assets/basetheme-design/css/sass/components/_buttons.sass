@@ -1,6 +1,9 @@
 //
 // Buttons
 // --------------------------------------------------
+button
+  background-color: transparent
+
 .btn
   display: inline-block
   min-height: 50px
@@ -14,7 +17,6 @@
   text-decoration: none
   text-transform: uppercase
   overflow: hidden
-  background-color: transparent
   cursor: pointer
   transition: all 0.2s ease
 
@@ -286,7 +288,6 @@
   margin: 0
   font-size: 16px
   color: white
-  background-color: $active-c
   border: none
   overflow: visible
 
@@ -297,7 +298,6 @@
   width: 10.1px
 
   path
-    fill: $active-c
     transition: all 0.2s ease
 
 .btn-pointer__wrap
@@ -313,7 +313,6 @@
   font-size: 16px
   color: white
   line-height: 50px
-  background-color: $active-c
   border: none
   overflow: visible
 
@@ -335,7 +334,6 @@
   left: 0
   width: 10px
   & path
-    fill: $active-c
     transition: all 0.2s ease
 
 .btn-pointer__txt
@@ -358,10 +356,6 @@
   padding-top: 2px
   line-height: 50px
 
-.btn-pointer__wrap:hover .btn-pointer,
-.btn-pointer__wrap:hover .btn-pointer__sm
-  background-color: $active-sc-c
-
 .btn-pointer__wrap:hover .btn-pointer__txt
   transform: translate3d(40%, 0, 0)
 
@@ -369,9 +363,6 @@
   right: auto
   left: -27px
   transition: all 0.2s ease
-
-.btn-pointer__wrap:hover .btn-pointer__left path
-  fill: $active-sc-c
 
 .btn-info
   min-height: 40px
@@ -386,7 +377,6 @@
   display: inline-block
   margin-left: 20px
   padding: 12px 20px
-  background-color: $active-c
   transition: color 0.2s ease
 
 .btn-info span:nth-of-type(1)
@@ -444,7 +434,6 @@
   position: absolute
   width: 15px
   height: 2px
-  background-color: $black-c
 
 .b-likes span::before
   top: 3px
@@ -480,7 +469,6 @@
 .btn-pointer-b__wrap
   position: relative
   display: inline-block
-  background-color: $active-sc-c
   transition: all 0.2s ease
 
 .btn-pointer-b
@@ -503,7 +491,6 @@
   top: 0
   height: 50px
   & path
-    fill: $active-sc-c
     transition: fill 0.2s
 
 .btn-pointer-b__wrap .left
@@ -613,8 +600,6 @@
 .b-btn__item-dark
   background: $black-c
 
-.b-btn__item-dark
-
 @media (min-width: $screen-xm)
   .btn-pointer__sm
     height: 40px
@@ -708,11 +693,3 @@
   .date-lg__dt,
   .date-lg__ad
     font-size: 60px
-
-
-  .btn-pointer-b__wrap:hover
-    background-color: $active-c
-
-  .btn-pointer-b__wrap:hover .left path,
-  .btn-pointer-b__wrap:hover .right path
-    fill: $active-c
