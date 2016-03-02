@@ -1,12 +1,14 @@
 //
-// Skin green and violet colors
+// Skin orange and red colors
 // --------------------------------------------------
-@import "helpers/mixins"
+@import "../helpers/mixins"
+@import "../helpers/variables"
 
 $black-c:   #202020
-$active-c: #c0d23e
-$active-sc-c: #530d85
-$form-btn-c: #c0d23e
+
+$active-c: #e15e32
+$active-sc-c: #a82743
+$form-btn-c: #e15e32
 $b-box-c-a: $active-sc-c
 $b-box-c-b: $active-sc-c
 $screen-sm: 768px !default
@@ -28,11 +30,11 @@ blockquote::before
 .b-accordion__panel-ttl .collapsed
   color: $active-c
 
-.b-advert .btn-pointer__wrap:hover .btn-pointer
+.main-slide .btn-pointer__wrap:hover .btn-pointer
   color: #fff
   background-color: $active-c
 
-.b-advert .btn-pointer__wrap:hover .btn-pointer__left path
+.main-slide .btn-pointer__wrap:hover .btn-pointer__left path
   fill: $active-c
 
 .btn-info
@@ -139,11 +141,11 @@ blockquote::before
 .panel--bg-c
   background-color: $active-sc-c
 
-.b-advert__item-a,
-.b-advert__item-b
+.main-slide__item-a,
+.main-slide__item-b
   background-color: $active-sc-c
 
-.b-advert .btn-pointer__wrap .btn-pointer
+.main-slide .btn-pointer__wrap .btn-pointer
   color: $active-sc-c
 
 .b-form__btn:hover
@@ -181,14 +183,23 @@ blockquote::before
   color: $active-sc-c
 
 .c-box__inner .b-box__grdnt-a::after
-  @include gradient-custom($deg: 145deg, $start-color: rgba(83, 13, 133, 1), $end-color: rgba(192, 200, 62, 0.45), $start-percent: 0%, $end-percent: 100%)
+  @include gradient-custom($deg: 145deg, $start-color: rgba(168, 39, 67, 1), $end-color: rgba(225, 94, 50, 0.45), $start-percent: 0%, $end-percent: 100%)
 
 .b-promo-sc__item:hover .b-promo-sc__inner-bg
-  background-color: rgba(83,13,133,0.33)
+  background-color: rgba(168, 39, 67, 0.33)
+
+.main-slide__item-b::after
+  background-color: rgba(168, 39, 67, 0.7)
+
+.b-partners__img-wrap a:hover
+  background-color: rgba(168, 39, 67, 0.66)
 
 @media (min-width: $screen-sm)
-  .b-advert__item-inr
+  .main-slide__item-inr
     background-color: $active-sc-c
+
+  .main-slide__item-b .main-slide__item-inr
+    background-color: rgba(168, 39, 67, 0.7)
 
 @media (min-width: $screen-lg)
   .btn-pointer-b__wrap:hover

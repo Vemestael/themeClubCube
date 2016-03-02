@@ -53,11 +53,18 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
                     _globals.clrPicker.on('click', function () {
                         if ($(this).hasClass('green')) {
                             _globals.linkItm.attr('href', 'css/skins/green-violet.css');
-                            console.log(12)
                         }
                         if ($(this).hasClass('orange')) {
                             _globals.linkItm.attr('href', 'css/skins/orange-red.css');
-                            console.log(21)
+                        }
+                        if ($(this).hasClass('crimson')) {
+                            _globals.linkItm.attr('href', 'css/skins/crimson-cyan.css');
+                        }
+                        if ($(this).hasClass('yellow')) {
+                            _globals.linkItm.attr('href', 'css/skins/yellow-pink.css');
+                        }
+                        if ($(this).hasClass('brown')) {
+                            _globals.linkItm.attr('href', 'css/skins/brown-gray.css');
                         }
                     });
                 }

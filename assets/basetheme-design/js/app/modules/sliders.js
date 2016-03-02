@@ -5,7 +5,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         _defaults = {
             slGallery: $('#sliderGallery'),
             slPartners: $('#sliderPartners'),
-            slAdvert: $('#sliderAdvert'),
+            slAdvert: $('#sliderMain'),
             // elements
             // prop
             // data
