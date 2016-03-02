@@ -1,10 +1,9 @@
 "use strict";
-appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('Parallax', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
-    var _custom = this,
+    var _parallax = this,
         _defaults = {
-
-
+            prlxBack: '#parallaxBack',
             // elements
             // prop
             // data
@@ -12,7 +11,7 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
         },
         _properties = $.extend(_defaults, properties),
         _globals = {
-
+            prlxBack: null,
             // elements
 
             // prop
@@ -21,55 +20,57 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
 
     //PRIVATE METHODS
         _init = function () {
-            appMakeBeCool.gateway.base.Class.apply(_custom, [_properties]);
+            appMakeBeCool.gateway.base.Class.apply(_parallax, [_properties]);
             if (!_globals.preloaded) {
-                return _custom.init();
+                return _parallax.init();
             }
-            _custom.globals.customCreate = function () {
+            _parallax.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
                 _setCustomMethods();
             };
-            _custom.create();
+            _parallax.create();
         },
 
         _config = function () {
-
-
-            _globals.header = $(_properties.header);
-
+            _globals.prlxBack = $(_properties.prlxBack);
         },
 
         _setup = function () {
-
-
+            _parallaxStart();
         },
 
         _setBinds = function () {
-
         },
 
         _binds = function () {
-            return {
-
-            };
+            return {};
         },
 
         _triggers = function () {
             return {};
         },
 
+        _parallaxStart = function () {
+            if ($window.width() > 992) {
+                $.stellar({
+                    horizontalScrolling: false,
+                    verticalOffset: 100
+                })
+            }
+        },
+
         _setCustomMethods = function () {
-            _custom.globals.customResurrect = function () {
+            _parallax.globals.customResurrect = function () {
             };
-            _custom.globals.customDestroy = function () {
+            _parallax.globals.customDestroy = function () {
             };
         };
 
     //PUBLIC METHODS
-    _custom.addMethod('init', function () {
-        _custom.bind($window, _custom.globals.classType + '_Init', function (e, data, el) {
+    _parallax.addMethod('init', function () {
+        _parallax.bind($window, _parallax.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });
