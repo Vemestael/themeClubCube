@@ -15,145 +15,247 @@ html(lang='en')
       .b-content.container
         main.b-main
           .b-box-wrap
-            .row
-              .b-tabs__pane-item.col-sm-6.col-md-4
-                .c-box
-                  .c-box__inner
-                    .c-box__cont
-                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                      hr.hr-pattern
-                      p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg")
-                    .c-box__date-item
-                      time.date.c-box__date(datetime="2016-09-23T20:00")
-                        span.date__dt 23
-                        span.date__rh
-                          span.date__rh-m sept
-                          span.date__rh-d Mon
-                        span.date__ad 8:00 pm
-                    .c-box__link-wrap
-                      .btn-pointer__wrap.
-                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                        <svg class="btn-pointer__left" x="0px" y="0px"
-                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    a(href="#" rel="nofollow").b-box__link
+            .row.center
+              ul.b-tabs__nav.b-tabs__nav-tabs(role="tablist")
+                li.active(role="presentation")
+                  a(href="#block-a", aria-controls="block-a", role="tab", data-toggle="tab").
+                    <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                    <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
+                    </svg>
+                li(role="presentation")
+                  a(href="#block-b", aria-controls="block-b", role="tab", data-toggle="tab").
+                    <svg baseProfile="tiny" width="10" height="10"
+                    x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                    <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
+                    </svg>
+            .b-tabs__content
+              #block-a.b-tabs__pane.fade.in.active.row(role="tabpanel")
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                          hr.hr-pattern
+                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2016-09-23T20:00")
+                            span.date__dt 23
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
 
-              .b-tabs__pane-item.col-sm-6.col-md-4
-                .c-box
-                  .c-box__inner
-                    .c-box__cont
-                      h3.c-box__ttl-s3 St. Patrick’s Day in New York
-                      hr.hr-pattern
-                      p.c-box__txt Cruachan, Lunasa, Flook, McGoldrick's band
-                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
-                    .c-box__date-item
-                      time.date.c-box__date(datetime="2016-09-24T20:00")
-                        span.date__dt 24
-                        span.date__rh
-                          span.date__rh-m sept
-                          span.date__rh-d Mon
-                        span.date__ad 10:00 pm
-                    .c-box__link-wrap
-                      .btn-pointer__wrap.
-                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                        <svg class="btn-pointer__left" x="0px" y="0px"
-                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    a(href="#" rel="nofollow").b-box__link
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 St. Patrick’s Day in New York
+                          hr.hr-pattern
+                          p.c-box__txt Cruachan, Lunasa, Flook, McGoldrick's band
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2016-09-24T20:00")
+                            span.date__dt 24
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 10:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
 
-              .b-tabs__pane-item.col-sm-6.col-md-4
-                .c-box
-                  .c-box__inner
-                    .c-box__cont
-                      h3.c-box__ttl-s3 American Decorative Arts
-                      hr.hr-pattern
-                      p.c-box__txt Fifth Avenue
-                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg")
-                    .c-box__date-item
-                      time.date.c-box__date(datetime="2016-09-25T20:00")
-                        span.date__dt 25
-                        span.date__rh
-                          span.date__rh-m sept
-                          span.date__rh-d Mon
-                        span.date__ad 8:00 pm
-                    .c-box__link-wrap
-                      .btn-pointer__wrap.
-                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                        <svg class="btn-pointer__left" x="0px" y="0px"
-                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    a(href="#" rel="nofollow").b-box__link
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 American Decorative Arts
+                          hr.hr-pattern
+                          p.c-box__txt Fifth Avenue
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2016-09-25T20:00")
+                            span.date__dt 25
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
 
-              .b-tabs__pane-item.col-sm-6.col-md-4
-                .c-box
-                  .c-box__inner
-                    .c-box__cont
-                      h3.c-box__ttl-s3 Troye Sivan
-                      hr.hr-pattern
-                      p.c-box__txt Webster Hall
-                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
-                    .c-box__date-item
-                      time.date.c-box__date(datetime="2009-09-26T20:00")
-                        span.date__dt 26
-                        span.date__rh
-                          span.date__rh-m sept
-                          span.date__rh-d Mon
-                        span.date__ad 8:00 pm
-                    .c-box__link-wrap
-                      .btn-pointer__wrap.
-                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                        <svg class="btn-pointer__left" x="0px" y="0px"
-                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    a(href="#" rel="nofollow").b-box__link
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 Troye Sivan
+                          hr.hr-pattern
+                          p.c-box__txt Webster Hall
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-26T20:00")
+                            span.date__dt 26
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
 
-              .b-tabs__pane-item.col-sm-6.col-md-4
-                .c-box
-                  .c-box__inner
-                    .c-box__cont
-                      h3.c-box__ttl-s3 Maurice Hines Is Tappin' Thru Life
-                      hr.hr-pattern
-                      p.c-box__txt New World Stages: Stage 1
-                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg")
-                    .c-box__date-item
-                      time.date.c-box__date(datetime="2009-09-27T20:00")
-                        span.date__dt 27
-                        span.date__rh
-                          span.date__rh-m sept
-                          span.date__rh-d Mon
-                        span.date__ad 8:00 pm
-                    .c-box__link-wrap
-                      .btn-pointer__wrap.
-                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                        <svg class="btn-pointer__left" x="0px" y="0px"
-                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    a(href="#" rel="nofollow").b-box__link
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 Maurice Hines Is Tappin' Thru Life
+                          hr.hr-pattern
+                          p.c-box__txt New World Stages: Stage 1
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-27T20:00")
+                            span.date__dt 27
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
 
-              .b-tabs__pane-item.col-sm-6.col-md-4
-                .c-box
-                  .c-box__inner
-                    .c-box__cont
-                      h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                      hr.hr-pattern
-                      p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                    .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg")
-                    .c-box__date-item
-                      time.date.c-box__date(datetime="2009-09-28T20:00")
-                        span.date__dt 28
-                        span.date__rh
-                          span.date__rh-m sept
-                          span.date__rh-d Mon
-                        span.date__ad 8:00 pm
-                    .c-box__link-wrap
-                      .btn-pointer__wrap.
-                        <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                        <svg class="btn-pointer__left" x="0px" y="0px"
-                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    a(href="#" rel="nofollow").b-box__link
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                          hr.hr-pattern
+                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-28T20:00")
+                            span.date__dt 28
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+              #block-b.b-tabs__pane.fade.in.row(role="tabpanel")
+                .b-tabs__pane-item.col-xs-12
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                        p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2009-08-29T20:00")
+                          span.date__dt 23
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px"
+                          viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 St. Patrick’s Day in New York
+                        p.c-box__txt.c-box__txt--display Cruachan, Lunasa, Flook, McGoldrick's band
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-24T20:00")
+                          span.date__dt 23
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px"
+                          viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                        p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2009-08-29T20:00")
+                          span.date__dt 23
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px"
+                          viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                        p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2009-08-29T20:00")
+                          span.date__dt 23
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px"
+                          viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
           .b-box__btn-wrap
             button#btnMore.btn.btn-icon.btn-icon--plus More events
 
