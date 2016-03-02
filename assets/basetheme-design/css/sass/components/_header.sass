@@ -70,7 +70,6 @@
 .navbar-current
   display: block
   padding: 18px 0
-  color: #fff
   text-transform: uppercase
   transition: all 0.2s ease
 
@@ -101,7 +100,9 @@
 .navbar-list__inner
   margin: 0 -15px
   padding: 0 15px
-  background: darken($active-c, 5%)
+
+.navbar-list__inner span
+  display: block!important
 
 .navbar-list li
   border-bottom: 2px solid rgba(255, 255, 255, 0.33)
@@ -145,6 +146,16 @@
 
 .navbar-dropdown__submenu.subviewopen span
   display: none
+
+.navbar__tint .navbar-dropdown__submenu
+  border: 0
+
+.navbar__hr-wrap
+  position: relative
+  z-index: 1
+
+.navbar__hr-wrap .hr-line
+  margin-bottom: 3px
 
 @media (min-width: $screen-sm)
 
@@ -233,9 +244,6 @@
   .navbar-current
     padding: 33px 17px
 
-  .navbar-current
-    color: $active-c
-
   .navbar-list > li > a > .fa-angle-right
     position: absolute
     top: 65%
@@ -256,15 +264,7 @@
     position: absolute
     width: 260px
     padding: 0 15px
-    background: $active-c
     opacity: 0
-
-  .dropdown-menu__right
-    right: 0
-
-  .dropdown-menu__right .navbar-list__inner
-    right: 260px
-    left: auto
 
   .navbar-dropdown__submenu
     margin-right: -15px
@@ -273,15 +273,15 @@
     padding-left: 15px
 
   .navbar-dropdown__menu li > a,
-  .navbar-dropdown__submenu span
+  .navbar-dropdown__menu span
     transform: translate3d(0, 0, 0)
     transition: all 0.2s ease
 
   .navbar-dropdown__menu li > a:hover,
-  .navbar-dropdown__submenu span:hover
+  .navbar-dropdown__menu span:hover
     transform: translate3d(3px, 0, 0)
 
-  .navbar-dropdown__submenu span:hover i
+  .navbar-dropdown__menu span:hover i
     transform: translate3d(-3px, 0, 0)
 
   .navbar-list li:hover .navbar-dropdown__menu,
@@ -306,10 +306,17 @@
     padding: 0 15px
     width: 260px
     top: 0
-    left: 245px
+    left: 100%
 
   .navbar__item-mega-menu
     position: static!important
+
+  .dropdown-menu__right
+    right: 0
+
+  .dropdown-menu__right .navbar-list__inner
+    right: 100%
+    left: auto
 
 @media (min-width: $screen-xl)
 

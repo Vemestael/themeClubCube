@@ -1839,9 +1839,6 @@
 .header > .line {
   height: 100%; }
 
-.header--toggled .navbar-toogle {
-  background-color: #c0d23e; }
-
 .navbar-toogle .icon-bar {
   background-color: #fff; }
 
@@ -1933,7 +1930,6 @@
   max-height: calc(100% - 50px);
   margin: 0 -15px;
   padding: 0 15px;
-  background-color: #c0d23e;
   overflow-y: auto; }
 
 @media (min-width: 768px) {
@@ -1975,8 +1971,6 @@
   .navbar-list > li {
     border-bottom: none; }
   .navbar-list > li > a {
-    padding: 33px 17px; }
-  .navbar-list > li:hover > a {
-    background-color: #c0d23e; } }
+    padding: 33px 17px; } }
 
 /*# sourceMappingURL=main-style.css.map */

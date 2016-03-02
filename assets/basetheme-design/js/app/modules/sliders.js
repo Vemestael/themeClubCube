@@ -112,7 +112,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 accessibility: false, //don't jumping the scroll in chrome!!!
                 dots: false,
                 infinite: false,
-                speed: 1600,
+                speed: 900,
                 centerPadding: 30,
                 slidesToShow: 6,
                 slidesToScroll: 3,

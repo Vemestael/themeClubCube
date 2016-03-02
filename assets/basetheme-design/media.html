@@ -22,6 +22,7 @@
     <meta property="og:description" content="">
     <meta property="og:site_name" content="">
     <link rel="stylesheet" href="css/base64-fonts.css">
+    <link rel="stylesheet" href="css/skins/green-violet.css">
     <link rel="stylesheet" href="css/critical.css"><!--[if lt IE 9]><!-->
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><!--<![endif]-->
     <!--[if IE]><!-->
@@ -84,7 +85,7 @@
                     <!-- li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-tmtable: b timetable-->
                     <li class="col-sm-6 col-lg-3"><a href="grid.html" class="mega-menu__link-rpscol"><b>responsive columns</b></a></li>
                   </ul>
-                  <div class="mega-menu__hr-wrap">
+                  <div class="navbar__hr-wrap">
                     <div class="hr-line"></div>
                     <div class="hr-line"></div>
                     <div class="hr-line"></div>
@@ -177,15 +178,23 @@
                   </div>
                 </div>
               </li>
-              <li><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
+              <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
                 <ul class="navbar-dropdown__menu dl-submenu">
                   <li><span>wide</span></li>
                   <li class="navbar-dropdown__submenu"><span>boxed<i class="fa fa-angle-right"></i></span>
                     <ul class="navbar-list__inner dl-submenu">
-                      <li><a href="#">regular</a></li>
-                      <li><a href="#">white gallery</a></li>
+                      <li><span>Circle pattern</span></li>
+                      <li><span>Triangle pattern</span></li>
+                      <li><span>Solid Color</span></li>
+                      <li><span>Waves pattern</span></li>
                     </ul>
                   </li>
+                  <li class="navbar__hr-wrap">
+                    <div class="hr-line"></div>
+                    <div class="hr-line"></div>
+                  </li>
+                  <li class="clr-picker green"><span>green/violet</span></li>
+                  <li class="clr-picker orange"><span>orange/red</span></li>
                 </ul>
               </li>
             </ul>
@@ -365,6 +374,7 @@
     <script src="js/app/modules/custom.js"></script>
     <script src="js/app/modules/sliders.js"></script>
     <script src="js/app/modules/menuAligns.js"></script>
+    <script src="js/app/modules/colorSwitch.js"></script>
     <script>appMakeBeCool.gateway.init();</script>
   </body>
 </html>

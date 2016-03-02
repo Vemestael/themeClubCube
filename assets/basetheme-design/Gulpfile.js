@@ -26,7 +26,7 @@ gulp.task('serve', function () {
 });
 
 gulp.task('sass', function (callback) {
-  return gulp.src(['css/sass/critical.sass', 'css/sass/main-style.sass'])
+  return gulp.src(['css/sass/*.sass'])
       .pipe(plumber(
           {
             errorHandler: notify.onError(function (err) {
@@ -94,8 +94,8 @@ gulp.task('watch', function () {
   gulp.watch('jade/**/*.*', ['templates']);
 });
 
-gulp.task('default', ['serve', 'templates', 'sass', 'watch']);
-//gulp.task('default', ['templates', 'sass', 'watch']);
+//gulp.task('default', ['serve', 'templates', 'sass', 'watch']);
+gulp.task('default', ['templates', 'sass', 'watch']);
 
 /**
  * var notify = require ('gulp-notify');
