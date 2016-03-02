@@ -2395,7 +2395,7 @@ blockquote::before {
 
 .b-likes--wht span {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.33);
+  border-color: #8C5DAD;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -2403,7 +2403,7 @@ blockquote::before {
 .b-likes--wht span::before,
 .b-likes--wht span::after {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.33);
+  background-color: #8C5DAD;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
