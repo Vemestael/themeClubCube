@@ -56,12 +56,9 @@
   font-size: 14px
   list-style: none
 
-.navbar-list > li > a
-  position: relative
-  text-transform: uppercase
-
 .navbar-list li > a,
 .navbar-dropdown__submenu span
+  position: relative
   display: block
   padding: 18px 0
   color: #fff
@@ -77,11 +74,19 @@
   transition: all 0.2s ease
 
 .navbar-list .fa-angle-right
-  float: right
+  position: absolute
+  top: 0
+  right: -14px
+  width: 40px
+  height: 50px
   margin-top: -2px
   font-size: 18px
   color: rgba(255, 255, 255, 0.66)
   transition: all 0.2s ease
+  &:before
+    position: absolute
+    left: 50%
+    line-height: 50px
 
 .navbar-list .fa-angle-left
   margin-right: 10px
@@ -108,7 +113,6 @@
 //Dt-menu
 .subview
   display: block!important
-  border-bottom: none!important
 
 .subview li
   display: none
@@ -127,6 +131,10 @@
 
 .subview .subviewopen>.dl-submenu>li
   display: block
+
+.subview li.subview
+  display: block
+  border-bottom: none!important
 
 .subview li.subview>a
   display: none!important
@@ -231,8 +239,14 @@
     position: absolute
     top: 65%
     left: 45%
+    right: auto
+    width: auto
+    height: auto
     color: rgba(255, 255, 255, 0.33)
     transform: rotate(90deg)
+    &::before
+      position: static
+      line-height: 1
 
   .navbar-list li:hover .fa-angle-right
     color: rgba(255, 255, 255, 1)

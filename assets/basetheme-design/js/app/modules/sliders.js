@@ -170,7 +170,6 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
 
         _bgGlrChange = function () {
             if ($window.width() > 1280) {
-                console.log(1231)
                 var crntBl = $('.b-gallery .slick-current .b-box__img-wrap');
                 var bgCrntBl = crntBl.attr('style');
                 var grlBlBg = $('.b-gallery__img-wrap').attr('style', function () {
