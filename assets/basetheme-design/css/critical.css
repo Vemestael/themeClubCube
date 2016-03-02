@@ -2797,10 +2797,15 @@ button {
 .navbar__hr-wrap .hr-line {
   margin-bottom: 3px; }
 
+.navbar__tint-wide,
 .navbar__tint .clr-picker {
   position: relative;
   padding-left: 20px; }
 
+.navbar-dropdown__submenu.navbar__tint-wide {
+  padding-left: 35px; }
+
+.navbar__tint-wide.active::before,
 .navbar__tint .clr-picker.active::before {
   content: "\f00c";
   position: absolute;
@@ -2919,7 +2924,8 @@ button {
   .navbar-dropdown__menu span:hover {
     -webkit-transform: translate3d(3px, 0, 0);
             transform: translate3d(3px, 0, 0); }
-  .navbar-dropdown__menu span:hover i {
+  .navbar-dropdown__menu span:hover i,
+  .navbar-dropdown__menu a:hover i {
     -webkit-transform: translate3d(-3px, 0, 0);
             transform: translate3d(-3px, 0, 0); }
   .navbar-list li:hover .navbar-dropdown__menu,
@@ -2965,7 +2971,7 @@ button {
   .dropdown-menu__right .navbar-list__inner {
     right: 100%;
     left: auto; }
-  .navbar__tint .fa-angle-right {
+  .navbar__tint > a .fa-angle-right {
     display: none; } }
 
 @media (min-width: 1570px) {

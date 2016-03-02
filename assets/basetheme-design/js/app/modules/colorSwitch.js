@@ -5,16 +5,16 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _defaults = {
             // elements
             clrPicker: '.clr-picker',
-            linkItm: '[href^="css/skins/"]'
-            // prop
-            // data
-            // classes ans styles
+            linkItm: '[href^="css/skins/"]',
+            wideScrn: '.navbar__tint-wide'
+
         },
         _properties = $.extend(_defaults, properties),
         _globals = {
             // elements
             clrPicker: null,
             linkItm: null,
+            wideScrn: null,
 
             // prop
             preloaded: false
@@ -38,43 +38,53 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _config = function () {
             _globals.clrPicker = $(_properties.clrPicker);
             _globals.linkItm = $(_properties.linkItm);
+            _globals.wideScrn = $(_properties.wideScrn);
         },
 
         _setup = function () {
+            _changeClr();
+            _changeWide();
         },
 
         _setBinds = function () {
-            _binds().setChangeClr();
         },
 
         _binds = function () {
             return {
-                setChangeClr: function () {
-                    _globals.clrPicker.on('click', function () {
-                        if ($(this).hasClass('green')) {
-                            _globals.linkItm.attr('href', 'css/skins/green-violet.css');
-                        }
-                        if ($(this).hasClass('orange')) {
-                            _globals.linkItm.attr('href', 'css/skins/orange-red.css');
-                        }
-                        if ($(this).hasClass('crimson')) {
-                            _globals.linkItm.attr('href', 'css/skins/crimson-cyan.css');
-                        }
-                        if ($(this).hasClass('yellow')) {
-                            _globals.linkItm.attr('href', 'css/skins/yellow-pink.css');
-                        }
-                        if ($(this).hasClass('brown')) {
-                            _globals.linkItm.attr('href', 'css/skins/brown-gray.css');
-                        }
-                        _globals.clrPicker.removeClass('active');
-                        $(this).addClass('active');
-                    });
-                }
             }
         },
 
         _triggers = function () {
             return {}
+        },
+
+        _changeClr = function () {
+            _globals.clrPicker.on('click', function () {
+                if ($(this).hasClass('green')) {
+                    _globals.linkItm.attr('href', 'css/skins/green-violet.css');
+                }
+                if ($(this).hasClass('orange')) {
+                    _globals.linkItm.attr('href', 'css/skins/orange-red.css');
+                }
+                if ($(this).hasClass('crimson')) {
+                    _globals.linkItm.attr('href', 'css/skins/crimson-cyan.css');
+                }
+                if ($(this).hasClass('yellow')) {
+                    _globals.linkItm.attr('href', 'css/skins/yellow-pink.css');
+                }
+                if ($(this).hasClass('brown')) {
+                    _globals.linkItm.attr('href', 'css/skins/brown-gray.css');
+                }
+                _globals.clrPicker.removeClass('active');
+                $(this).addClass('active');
+            });
+        },
+
+        _changeWide = function () {
+            _globals.wideScrn.on('click', function () {
+                _globals.wideScrn.removeClass('active');
+                $(this).addClass('active');
+            })
         },
 
         _toggleMenuCheckup = function () {
