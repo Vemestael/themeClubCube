@@ -3987,7 +3987,7 @@ button.mfp-arrow:hover:before {
     display: block;
     opacity: 0.33;
     -webkit-filter: blur(6px);
-    filter: blur(6px); }
+            filter: blur(6px); }
   .b-gallery .c-box.c-box--sm .c-box__inner {
     min-height: 220px; }
   .b-gallery__popup a {
