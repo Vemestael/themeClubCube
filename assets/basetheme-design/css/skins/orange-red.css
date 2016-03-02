@@ -178,9 +178,17 @@ blockquote::before {
 .b-promo-sc__item:hover .b-promo-sc__inner-bg {
   background-color: rgba(168, 39, 67, 0.33); }
 
+.b-advert__item-b::after {
+  background-color: rgba(168, 39, 67, 0.7); }
+
+.b-partners__img-wrap a:hover {
+  background-color: rgba(168, 39, 67, 0.66); }
+
 @media (min-width: 768px) {
   .b-advert__item-inr {
-    background-color: #a82743; } }
+    background-color: #a82743; }
+  .b-advert__item-b .b-advert__item-inr {
+    background-color: rgba(168, 39, 67, 0.7); } }
 
 @media (min-width: 1280px) {
   .btn-pointer-b__wrap:hover {

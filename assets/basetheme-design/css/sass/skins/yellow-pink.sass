@@ -1,16 +1,16 @@
 //
-// Skin green and violet colors
+// Skin yellow and pink colors
 // --------------------------------------------------
-@import "helpers/mixins"
+@import "../helpers/mixins"
+@import "../helpers/variables"
 
 $black-c:   #202020
-$active-c: #c0d23e
-$active-sc-c: #530d85
-$form-btn-c: #c0d23e
+
+$active-c: #f5ba2e
+$active-sc-c: #fd67a4
+$form-btn-c: #f5ba2e
 $b-box-c-a: $active-sc-c
 $b-box-c-b: $active-sc-c
-$screen-sm: 768px !default
-$screen-lg: 1280px !default
 
 *::selection
   background-color: $active-c
@@ -181,14 +181,23 @@ blockquote::before
   color: $active-sc-c
 
 .c-box__inner .b-box__grdnt-a::after
-  @include gradient-custom($deg: 145deg, $start-color: rgba(83, 13, 133, 1), $end-color: rgba(192, 200, 62, 0.45), $start-percent: 0%, $end-percent: 100%)
+  @include gradient-custom($deg: 145deg, $start-color: rgba(253, 103, 164, 1), $end-color: rgba(245, 186, 46, 0.45), $start-percent: 0%, $end-percent: 100%)
 
 .b-promo-sc__item:hover .b-promo-sc__inner-bg
-  background-color: rgba(83,13,133,0.33)
+  background-color: rgba(253, 103, 164, 0.33)
+
+.b-advert__item-b::after
+  background-color: rgba(253, 103, 164, 0.7)
+
+.b-partners__img-wrap a:hover
+  background-color: rgba(253, 103, 164, 0.66)
 
 @media (min-width: $screen-sm)
   .b-advert__item-inr
     background-color: $active-sc-c
+
+  .b-advert__item-b .b-advert__item-inr
+    background-color: rgba(253, 103, 164, 0.7)
 
 @media (min-width: $screen-lg)
   .btn-pointer-b__wrap:hover

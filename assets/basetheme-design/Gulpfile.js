@@ -26,7 +26,7 @@ gulp.task('serve', function () {
 });
 
 gulp.task('sass', function (callback) {
-  return gulp.src(['css/sass/*.sass'])
+  return gulp.src(['css/sass/*.sass', 'css/sass/skins/*.sass'])
       .pipe(plumber(
           {
             errorHandler: notify.onError(function (err) {

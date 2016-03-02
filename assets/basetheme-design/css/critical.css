@@ -3132,7 +3132,6 @@ button {
   left: 0;
   margin: auto;
   content: '';
-  background-color: rgba(83, 13, 133, 0.7);
   z-index: -1; }
 
 .b-advert__item-b .b-advert__img-wrap {
@@ -3275,8 +3274,7 @@ button {
     content: ''; }
   .b-advert__item-b .b-advert__item-inr {
     min-height: 535px;
-    padding-left: 45px;
-    background-color: rgba(83, 13, 133, 0.7); }
+    padding-left: 45px; }
   .b-advert__item-b .b-advert__s1-ttl {
     max-width: 420px; }
   .b-advert__item-b .b-advert__item-inr p {
@@ -4042,7 +4040,6 @@ button.mfp-arrow:hover:before {
   transition: none; }
 
 .b-partners__img-wrap a:hover {
-  background-color: rgba(83, 13, 133, 0.66);
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
