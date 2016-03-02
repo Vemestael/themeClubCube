@@ -1,25 +1,25 @@
 //
 // Advert
 // --------------------------------------------------
-.b-advert
+.main-slide
   overflow: hidden
 
-.b-advert,
-.b-advert__item-a,
-.b-advert__item-b
+.main-slide,
+.main-slide__item-a,
+.main-slide__item-b
   position: relative
   min-height: 350px
 
-.b-advert__bg-wrap
+.main-slide__bg-wrap
   @extend %bg-images
   display: none
 
-.b-advert__item-a,
-.b-advert__item-b
+.main-slide__item-a,
+.main-slide__item-b
   padding-top: 80px
   color: #fff
 
-.b-advert__s1-ttl
+.main-slide__s1-ttl
   max-width: 360px
   margin: 0
   padding-right: 30px
@@ -28,71 +28,71 @@
   line-height: 36px
   text-transform: uppercase
 
-.b-advert__s1-ttl--indent
+.main-slide__s1-ttl--indent
   padding-top: 40px
 
-.b-advert__item-inr .hr-pattern
+.main-slide__item-inr .hr-pattern
   display: none
 
-.b-advert__s2-ttl
+.main-slide__s2-ttl
   display: none
 
-.b-advert__item-inr p
+.main-slide__item-inr p
   display: none
 
-.b-advert__item-inr .b-likes
+.main-slide__item-inr .b-likes
   display: none
 
-.b-advert__link-wrap
+.main-slide__link-wrap
   position: absolute
   left: 15px
   bottom: 40px
   overflow: hidden
 
-.b-advert .btn-pointer__wrap .btn-pointer
+.main-slide .btn-pointer__wrap .btn-pointer
   line-height: 40px
   background-color: #fff
   transition: all 0.2s ease
 
-.b-advert .btn-pointer__left path
+.main-slide .btn-pointer__left path
   fill: #fff
   transition: all 0.2s ease
 
 //Second block
-.b-advert__item-b::after
+.main-slide__item-b::after
   @include absolute-center
   content: ''
   z-index: -1
 
-.b-advert__item-b .b-advert__img-wrap
+.main-slide__item-b .main-slide__img-wrap
   @extend %bg-images
   z-index: -1
 
-.b-advert__item-b .b-advert__img-wrap::after
+.main-slide__item-b .main-slide__img-wrap::after
   @include absolute-center
   content: ''
   background-color: rgba(15, 8, 9, 0.33)
 
-.b-advert__item-b .b-advert__s1-ttl
+.main-slide__item-b .main-slide__s1-ttl
   max-width: 260px
 
-.b-advert__date-wrap
+.main-slide__date-wrap
   position: absolute
   top: 15px
   left: 15px
 
-.b-advert__slider.slick-slider
+.main-slide__slider.slick-slider
   margin-bottom: 0
 
-.b-advert__btn-item
+.main-slide__btn-item
   position: relative
   width: 100%
   margin: auto
 
-.b-advert .slick-prev
+.main-slide .slick-prev
   display: none!important
 
-.b-advert .slick-next
+.main-slide .slick-next
   width: 55px
   height: 50px
   right: 0
@@ -104,7 +104,7 @@
   &:hover
     background-color: #fff!important
 
-.b-advert .slick-next::before
+.main-slide .slick-next::before
   content: ''
   width: 50px
   display: block
@@ -113,24 +113,24 @@
   background-position: center
 
 @media (min-width: 480px)
-  .b-advert__item-b .b-advert__s1-ttl
+  .main-slide__item-b .main-slide__s1-ttl
     max-width: 360px
 
 @media (min-width: $screen-sm)
-  .b-advert,
-  .b-advert__item-a,
-  .b-advert__item-b
+  .main-slide,
+  .main-slide__item-a,
+  .main-slide__item-b
     min-height: 720px
 
-  .b-advert__item-a,
-  .b-advert__item-b
+  .main-slide__item-a,
+  .main-slide__item-b
     padding-top: 150px
     background: transparent
 
-  .b-advert__item-a
+  .main-slide__item-a
     text-align: center
 
-  .b-advert__bg-wrap
+  .main-slide__bg-wrap
     display: block
     background-color: $bg-fs-slide
 
@@ -140,27 +140,27 @@
     background-image: radial-gradient(circle farthest-corner at center top,rgba(0, 0, 0, 0) 62%,rgb(0, 0, 0) 100%)
     content: ''
 
-  .b-advert__item-inr
+  .main-slide__item-inr
     position: relative
     min-height: 475px
     margin-bottom: 30px
     padding-top: 46px
 
-  .b-advert__s1-ttl
+  .main-slide__s1-ttl
     max-width: 100%
     padding: 0
     font-size: 60px
     line-height: 1
 
-  .b-advert__s1-ttl--indent
+  .main-slide__s1-ttl--indent
     padding-top: 0
 
-  .b-advert__item-inr .hr-pattern
+  .main-slide__item-inr .hr-pattern
     display: inline-block
     margin: 17px auto 33px
     float: none
 
-  .b-advert__s2-ttl
+  .main-slide__s2-ttl
     display: block
     margin-top: 0
     margin-bottom: 10px
@@ -169,76 +169,76 @@
     font-style: italic
     text-transform: uppercase
 
-  .b-advert__item-inr p
+  .main-slide__item-inr p
     display: block
     margin: 0
     padding: 0 50px 55px
 
-  .b-advert__footer
+  .main-slide__footer
     position: relative
     min-height: 50px
     padding-bottom: 30px
 
-  .b-advert__link-wrap
+  .main-slide__link-wrap
     left: auto
     right: -10px
     bottom: 14px
 
-  .b-advert__item-inr .b-likes
+  .main-slide__item-inr .b-likes
     position: absolute
     left: 50px
     display: block
 
-  .b-advert .btn-pointer__wrap .btn-pointer
+  .main-slide .btn-pointer__wrap .btn-pointer
     line-height: 50px
 
   //Second block
-  .b-advert__item-b::after
+  .main-slide__item-b::after
     display: none
 
-  .b-advert__item-b .bg-image::after
+  .main-slide__item-b .bg-image::after
     @include absolute-center
     background-color: rgba(0, 0, 0, 0.2)
     background-image: radial-gradient(circle farthest-corner at center top,rgba(0, 0, 0, 0) 62%,rgb(0, 0, 0) 100%)
     content: ''
 
-  .b-advert__item-b .b-advert__item-inr
+  .main-slide__item-b .main-slide__item-inr
     min-height: 535px
     padding-left: 45px
 
-  .b-advert__item-b .b-advert__s1-ttl
+  .main-slide__item-b .main-slide__s1-ttl
     max-width: 420px
 
-  .b-advert__item-b .b-advert__item-inr p
+  .main-slide__item-b .main-slide__item-inr p
     padding-left: 0
 
   .b-likes.b-likes--indent
     left: 0
 
-  .b-advert__item-b .date-lg
+  .main-slide__item-b .date-lg
     padding-bottom: 0
 
-  .b-advert__item-b .date-lg__dt
+  .main-slide__item-b .date-lg__dt
     font-size: 60px
 
-  .b-advert__date-wrap
+  .main-slide__date-wrap
     top: 25px
     right: -8px
     left: auto
 
-  .b-advert__btn-item
+  .main-slide__btn-item
     width: 688px
 
-  .b-advert .slick-next
+  .main-slide .slick-next
     top: 55px
 
-  .b-advert .slick-next
+  .main-slide .slick-next
     width: 58px
 
-  .b-advert .slick-next::before
+  .main-slide .slick-next::before
     width: 54px
 
-  .b-advert .slick-next::after
+  .main-slide .slick-next::after
     content: 'next'
     position: absolute
     bottom: -30px
@@ -254,48 +254,48 @@
     border: 2px solid #fff
 
 @media (min-width: $screen-md)
-  .b-advert,
-  .b-advert__item-a,
-  .b-advert__item-b
+  .main-slide,
+  .main-slide__item-a,
+  .main-slide__item-b
     min-height: 688px
 
-  .b-advert__item-a
+  .main-slide__item-a
     padding-top: 170px
 
-  .b-advert__item-inr
+  .main-slide__item-inr
     max-width: 990px
     min-height: 425px
     margin-right: auto
     margin-left: auto
 
-  .b-advert__s1-ttl
+  .main-slide__s1-ttl
     max-width: 65%
     margin: auto
 
-  .b-advert__link-wrap
+  .main-slide__link-wrap
     right: -5px
 
   //Second block
-  .b-advert__item-b .b-advert__s1-ttl
+  .main-slide__item-b .main-slide__s1-ttl
     max-width: 70%
     margin: 0
 
-  .b-advert__item-b
+  .main-slide__item-b
     padding-top: 195px
 
-  .b-advert__item-b .b-advert__item-inr
+  .main-slide__item-b .main-slide__item-inr
     min-height: 425px
 
-  .b-advert__btn-item
+  .main-slide__btn-item
     width: 908px
 
-  .b-advert .slick-next
+  .main-slide .slick-next
     top: 70px
 
 
 
 @media (min-width: $screen-lg)
-  .b-advert__btn-item
+  .main-slide__btn-item
     width: 990px
 
 

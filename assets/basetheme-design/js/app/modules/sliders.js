@@ -5,7 +5,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
         _defaults = {
             slGallery: $('#sliderGallery'),
             slPartners: $('#sliderPartners'),
-            slAdvert: $('#sliderAdvert'),
+            slAdvert: $('#sliderMain'),
             // elements
             // prop
             // data
@@ -152,7 +152,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 infinite: true,
                 speed: 500,
                 swipe: false,
-                appendArrows: $('.b-advert__btn-item'),
+                appendArrows: $('.main-slide__btn-item'),
                 fade: true,
                 cssEase: 'linear',
                 autoplay: true,
