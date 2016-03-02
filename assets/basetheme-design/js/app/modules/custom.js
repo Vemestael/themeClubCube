@@ -67,14 +67,12 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
             _masonryBlockGal();
             _parallaxStart();
             _popupGlr();
-            //_ResizeImgGlr();
             _fullScreenGlr();
         },
 
         _setBinds = function () {
             _binds().setScrollHeader();
             _binds().setScrollOnBtn();
-            //_binds().setResizeImgGlr();
         },
 
         _binds = function () {
@@ -134,16 +132,6 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                                 });
                                 return false
                             }, 600);
-                        }
-                    });
-                }
-                , setResizeImgGlr: function () {
-                    _custom.bind($window, 'resize', function () {
-                        var $blImg = $('.b-gallery__popup a');
-                        if ($window.width() > 1280) {
-                            $blImg.height(
-                                $blImg.width() / 1.33
-                            )
                         }
                     });
                 }
@@ -225,20 +213,8 @@ appMakeBeCool.gateway.addClass('Custom', function (properties, $, $window, $docu
                     //titleSrc: function(item) {
                     //  return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
                     //}
-                },
+                }
             });
-        },
-
-        _ResizeImgGlr = function () {
-            var $blImg = $('.b-gallery__popup a');
-
-            if ($window.width() > 1280) {
-                setTimeout(function () {
-                    $blImg.height(
-                        $blImg.width() / 1.33
-                    )
-                }, 50)
-            }
         },
 
         _fullScreenGlr = function () {

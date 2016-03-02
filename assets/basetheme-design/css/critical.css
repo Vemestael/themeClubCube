@@ -2899,9 +2899,16 @@ blockquote::before {
     padding: 0 15px;
     background: #c0d23e;
     opacity: 0; }
+  .dropdown-menu__right {
+    right: 0; }
+  .dropdown-menu__right .navbar-list__inner {
+    right: 260px;
+    left: auto; }
   .navbar-dropdown__submenu {
     margin-right: -15px;
-    padding-right: 15px; }
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px; }
   .navbar-dropdown__menu li > a,
   .navbar-dropdown__submenu span {
     -webkit-transform: translate3d(0, 0, 0);
