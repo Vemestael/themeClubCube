@@ -64,6 +64,41 @@ gulp.task('sass', function (callback) {
   callback();
 });
 
+
+gulp.task('skins', function (callback) {
+  return gulp.src(['css/sass/skins/*.sass'])
+      .pipe(plumber(
+          {
+            errorHandler: notify.onError(function (err) {
+                  return {
+                    title: 'sass',
+                    message: err.message
+                  };
+                }
+            )
+          }))
+      .pipe(sass())
+      .pipe(debug({title: 'sass:'}))
+      .pipe(autoprefixer({
+        browsers: [
+          'Chrome >= 35',
+          'Firefox >= 31',
+          'Edge >= 12',
+          'Explorer >= 9',
+          'iOS >= 8',
+          'Safari >= 8',
+          'Android 2.3',
+          'Android >= 4',
+          'Opera >= 12'
+        ],
+        cascade: true
+      }))
+      .pipe(debug({title: 'prefx:'}))
+      .pipe(debug({title: 'maps:'}))
+      .pipe(gulp.dest('css/skins'));
+  callback();
+});
+
 gulp.task('templates', function (callback) {
   gulp.src('jade/*.jade')
       .pipe(plumber())
@@ -91,11 +126,12 @@ gulp.task('minImg', function () {
 
 gulp.task('watch', function () {
   gulp.watch('css/sass/**/*.*', ['sass']);
+  gulp.watch('css/sass/skins/*.*', ['skins']);
   gulp.watch('jade/**/*.*', ['templates']);
 });
 
 //gulp.task('default', ['serve', 'templates', 'sass', 'watch']);
-gulp.task('default', ['templates', 'sass', 'watch']);
+gulp.task('default', ['templates', 'sass', 'skins', 'watch']);
 
 /**
  * var notify = require ('gulp-notify');

@@ -2960,7 +2960,9 @@ button {
     right: 0; }
   .dropdown-menu__right .navbar-list__inner {
     right: 100%;
-    left: auto; } }
+    left: auto; }
+  .navbar__tint .fa-angle-right {
+    display: none; } }
 
 @media (min-width: 1570px) {
   .header .line {

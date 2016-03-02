@@ -145,6 +145,7 @@ blockquote::before {
   color: #530d85 !important; }
 
 .c-box__link:hover,
+.b-gallery .c-box__link:hover,
 .c-box__inner:hover + .c-box__link-wrap-a .c-box__link {
   color: #530d85; }
 
@@ -204,5 +205,3 @@ blockquote::before {
     background-color: #c0d23e; }
   .navbar-list > li:hover > a {
     background-color: #c0d23e; } }
-
-/*# sourceMappingURL=green-violet.css.map */
