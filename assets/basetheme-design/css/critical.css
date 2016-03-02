@@ -2805,7 +2805,7 @@ blockquote::before {
 @media (min-width: 768px) {
   .header__sticky .navbar-brand {
     height: 30px;
-    margin-top: 10px; }
+    margin-top: 8px; }
   .header__sticky .navbar-toogle {
     width: 70px;
     height: 50px; }
