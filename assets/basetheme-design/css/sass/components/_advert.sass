@@ -101,16 +101,27 @@
   background-color: #fff
   border-color: #fff
   z-index: 2
+  transition: all 0.2s ease
   &:hover
-    background-color: #fff!important
+    background-color: #fff
+    
+.main-slide .slick-next:hover
+  background-color: #000
+  border-color: #000
+  color: #000
+  transition: all 0.2s ease
 
 .main-slide .slick-next::before
   content: ''
   width: 50px
   display: block
   height: 30px
-  background: url("../images/refresh-icon.svg") no-repeat
-  background-position: center
+  background: url("../images/refresh-icon.svg") center no-repeat
+  transition: none
+
+.main-slide .slick-next:hover::before
+  background: url("../images/refresh-icon-white.svg") center no-repeat
+  transition: none
 
 @media (min-width: 480px)
   .main-slide__item-b .main-slide__s1-ttl
@@ -241,7 +252,7 @@
   .main-slide .slick-next::after
     content: 'next'
     position: absolute
-    bottom: -30px
+    top: 100%
     right: -6px
     left: -2px
     width: 54px
@@ -252,6 +263,12 @@
     color: #fff
     text-transform: uppercase
     border: 2px solid #fff
+    transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease
+
+  .main-slide .slick-next:hover::after
+    border: 2px solid #000
+    color: #000
+    transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease
 
 @media (min-width: $screen-md)
   .main-slide,

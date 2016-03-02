@@ -1664,6 +1664,10 @@ iframe {
 .fa.fa-tint {
   line-height: 13px; }
 
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  cursor: default; }
+
 @media (min-width: 768px) {
   .container {
     padding-right: 31px;
@@ -3174,17 +3178,36 @@ button {
   color: #000;
   background-color: #fff;
   border-color: #fff;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
   .main-slide .slick-next:hover {
-    background-color: #fff !important; }
+    background-color: #fff; }
+
+.main-slide .slick-next:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #000;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .main-slide .slick-next::before {
   content: '';
   width: 50px;
   display: block;
   height: 30px;
-  background: url("../images/refresh-icon.svg") no-repeat;
-  background-position: center; }
+  background: url("../images/refresh-icon.svg") center no-repeat;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+.main-slide .slick-next:hover::before {
+  background: url("../images/refresh-icon-white.svg") center no-repeat;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
 
 @media (min-width: 480px) {
   .main-slide__item-b .main-slide__s1-ttl {
@@ -3300,7 +3323,7 @@ button {
   .main-slide .slick-next::after {
     content: 'next';
     position: absolute;
-    bottom: -30px;
+    top: 100%;
     right: -6px;
     left: -2px;
     width: 54px;
@@ -3310,7 +3333,16 @@ button {
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
-    border: 2px solid #fff; } }
+    border: 2px solid #fff;
+    -webkit-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+    -o-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease; }
+  .main-slide .slick-next:hover::after {
+    border: 2px solid #000;
+    color: #000;
+    -webkit-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+    -o-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease; } }
 
 @media (min-width: 992px) {
   .main-slide,
@@ -3705,7 +3737,8 @@ button {
 
 .b-gallery .slick-prev {
   left: auto;
-  right: 63px; }
+  right: 65px;
+  border-right: none; }
 
 .b-gallery .slick-next {
   right: 15px; }
