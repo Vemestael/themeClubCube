@@ -48,6 +48,7 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         },
 
         _setup = function () {
+            
             _changeClr();
             _changePtrn();
         },
@@ -80,6 +81,15 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
                 }
                 if ($(this).hasClass('brown')) {
                     _globals.linkItm.attr('href', 'css/skins/brown-gray.css');
+                }
+                if ($(this).hasClass('ex1')) {
+                    _globals.linkItm.attr('href', 'css/skins/example_1.css');
+                }
+                if ($(this).hasClass('ex2')) {
+                    _globals.linkItm.attr('href', 'css/skins/example_2.css');
+                }
+                if ($(this).hasClass('ex3')) {
+                    _globals.linkItm.attr('href', 'css/skins/example_3.css');
                 }
                 _globals.clrPicker.removeClass('active');
                 $(this).addClass('active');

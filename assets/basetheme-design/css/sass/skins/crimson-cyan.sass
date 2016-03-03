@@ -12,6 +12,11 @@ $form-btn-c: #cc0033
 $b-box-c-a: $active-sc-c
 $b-box-c-b: $active-sc-c
 
+$active-c-45: rgba(204, 0, 51, 0.45)
+$active-sc-c-33: rgba(9, 176, 134, 0.33)
+$active-sc-c-66: rgba(9, 176, 134, 0.66)
+$active-sc-c-70: rgba(9, 176, 134, 0.7)
+
 *::selection
   background-color: $active-c
 
@@ -182,23 +187,23 @@ blockquote::before
   color: $active-sc-c
 
 .c-box__inner .b-box__grdnt-a::after
-  @include gradient-custom($deg: 145deg, $start-color: rgba(9, 176, 134, 1), $end-color: rgba(204, 0, 51, 0.45), $start-percent: 0%, $end-percent: 100%)
+  @include gradient-custom($deg: 145deg, $start-color: $active-sc-c, $end-color: $active-c-45, $start-percent: 0%, $end-percent: 100%)
 
 .b-promo-sc__item:hover .b-promo-sc__inner-bg
-  background-color: rgba(9, 176, 134,0.33)
+  background-color: $active-sc-c-33
 
 .main-slide__item-b::after
-  background-color: rgba(9, 176, 134, 0.7)
+  background-color: $active-sc-c-70
 
 .b-partners__img-wrap a:hover
-  background-color: rgba(9, 176, 134, 0.66)
+  background-color: $active-sc-c-66
 
 @media (min-width: $screen-sm)
   .main-slide__item-inr
     background-color: $active-sc-c
 
   .main-slide__item-b .main-slide__item-inr
-    background-color: rgba(9, 176, 134, 0.7)
+    background-color: $active-sc-c-70
 
 @media (min-width: $screen-lg)
   .btn-pointer-b__wrap:hover
