@@ -2929,6 +2929,11 @@ button {
   .navbar-dropdown__menu a:hover i {
     -webkit-transform: translate3d(-3px, 0, 0);
             transform: translate3d(-3px, 0, 0); }
+  .navbar-dropdown__menu li.active > a:hover,
+  .navbar-dropdown__menu li.active > a:hover i,
+  .navbar-dropdown__menu li.active span:hover {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   .navbar-list li:hover .navbar-dropdown__menu,
   .navbar-list .navbar-dropdown__submenu:hover .navbar-list__inner,
   .navbar-list li:hover .mega-menu {

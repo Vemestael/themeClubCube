@@ -8,3 +8,5 @@ node_modules
 /_packages/*
 /.sass-cache
 /themeforest-materials
+
+assets/basetheme-design/images/patterns/.DS_Store

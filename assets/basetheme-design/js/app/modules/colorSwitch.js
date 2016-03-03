@@ -6,7 +6,7 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
             // elements
             clrPicker: '.clr-picker',
             ptrn: '.pattern',
-            linkItm: '[href^="css/skins/"]',
+            linkItm: '[href^="css/skins/clr"]',
             linkItmPtrn: '[href^="css/skins/pattern"]',
             wideScrn: '.navbar__tint-wide'
 
@@ -48,9 +48,10 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         },
 
         _setup = function () {
-            
+
             _changeClr();
             _changePtrn();
+            _loadSkin();
         },
 
         _setBinds = function () {
@@ -67,33 +68,79 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
 
         _changeClr = function () {
             _globals.clrPicker.on('click', function () {
+
                 if ($(this).hasClass('green')) {
-                    _globals.linkItm.attr('href', 'css/skins/green-violet.css');
+                    _globals.linkItm.attr('href', 'css/skins/clr-green-violet.css');
+
+                    if(typeof(Storage) !== "undefined") {
+                        localStorage.removeItem("skin");
+                        localStorage.setItem("skin", 'green');
+                    }
                 }
                 if ($(this).hasClass('orange')) {
-                    _globals.linkItm.attr('href', 'css/skins/orange-red.css');
+                   _globals.linkItm.attr('href', 'css/skins/clr-orange-red.css');
+
+                    if(typeof(Storage) !== "undefined") {
+                        localStorage.removeItem("skin");
+                        localStorage.setItem("skin", 'orange');
+                    }
                 }
                 if ($(this).hasClass('crimson')) {
-                    _globals.linkItm.attr('href', 'css/skins/crimson-cyan.css');
+                    _globals.linkItm.attr('href', 'css/skins/clr-crimson-cyan.css');
+
+                    if(typeof(Storage) !== "undefined") {
+                        localStorage.removeItem("skin");
+                        localStorage.setItem("skin", 'crimson');
+                    }
                 }
                 if ($(this).hasClass('yellow')) {
-                    _globals.linkItm.attr('href', 'css/skins/yellow-pink.css');
+                    _globals.linkItm.attr('href', 'css/skins/clr-yellow-pink.css');
+
+                    if(typeof(Storage) !== "undefined") {
+                        localStorage.removeItem("skin");
+                        localStorage.setItem("skin", 'yellow');
+                    }
                 }
                 if ($(this).hasClass('brown')) {
-                    _globals.linkItm.attr('href', 'css/skins/brown-gray.css');
-                }
-                if ($(this).hasClass('ex1')) {
-                    _globals.linkItm.attr('href', 'css/skins/example_1.css');
-                }
-                if ($(this).hasClass('ex2')) {
-                    _globals.linkItm.attr('href', 'css/skins/example_2.css');
-                }
-                if ($(this).hasClass('ex3')) {
-                    _globals.linkItm.attr('href', 'css/skins/example_3.css');
+                    _globals.linkItm.attr('href', 'css/skins/clr-brown-gray.css');
+
+                    if(typeof(Storage) !== "undefined") {
+                        localStorage.removeItem("skin");
+                        localStorage.setItem("skin", 'brown');
+                    }
                 }
                 _globals.clrPicker.removeClass('active');
                 $(this).addClass('active');
+
             });
+        },
+
+        _loadSkin = function () {
+            if(typeof(Storage) !== "undefined") {
+                setTimeout( function() {
+                    if (localStorage.getItem("skin") == ('green')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-green-violet.css');
+                    }
+                    if (localStorage.getItem("skin") == ('orange')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-orange-red.css');
+                    }
+                    if (localStorage.getItem("skin") == ('crimson')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-crimson-cyan.css');
+                    }
+                    if (localStorage.getItem("skin") == ('yellow')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-yellow-pink.css');
+                    }
+                    if (localStorage.getItem("skin") == ('brown')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-brown-gray.css');
+                    }
+                    else {
+                        console.log('error')
+                    }
+                }, 50)
+            } else {
+                alert('Sorry! No Web Storage support..')
+            }
+
         },
 
         _changePtrn = function () {
