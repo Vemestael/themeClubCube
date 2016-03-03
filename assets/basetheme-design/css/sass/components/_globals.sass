@@ -78,11 +78,6 @@ iframe
     float: none
 
 @media (min-width: $screen-lg)
-  body,
-  html,
-  .wrap
-    height: 100%
-
   .wrap::before
     content: ''
     position: absolute
@@ -92,6 +87,8 @@ iframe
     background-color: $black-c
 
   .wrap.wrap--boxed
+    position: relative
+    overflow: hidden
     width: 1280px
     margin: auto
     background: white

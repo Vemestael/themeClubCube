@@ -1685,10 +1685,6 @@ iframe {
     float: none; } }
 
 @media (min-width: 1280px) {
-  body,
-  html,
-  .wrap {
-    height: 100%; }
   .wrap::before {
     content: '';
     position: absolute;
@@ -1697,6 +1693,8 @@ iframe {
     height: 80px;
     background-color: #202020; }
   .wrap.wrap--boxed {
+    position: relative;
+    overflow: hidden;
     width: 1280px;
     margin: auto;
     background: white;
@@ -2805,6 +2803,9 @@ button {
 .navbar-dropdown__submenu.navbar__tint-wide {
   padding-left: 35px; }
 
+.navbar-dropdown__submenu.navbar__tint-wide.active::before {
+  left: 15px; }
+
 .navbar__tint-wide.active::before,
 .navbar__tint .clr-picker.active::before {
   content: "\f00c";
@@ -2979,7 +2980,10 @@ button {
     width: 1340px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0; } }
+    padding: 0; }
+  .header.header--boxed .line {
+    width: auto;
+    padding: 0 40px; } }
 
 .b-headlines {
   padding-top: 50px;
@@ -3006,17 +3010,15 @@ button {
 .c-headlines .container {
   padding-top: 30px; }
 
-.c-headlines__img-wrap {
-  z-index: -1; }
-  .c-headlines__img-wrap::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    content: '';
-    background-color: rgba(32, 32, 32, 0.33); }
+.c-headlines__img-wrap::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: '';
+  background-color: rgba(32, 32, 32, 0.33); }
 
 .c-headlines__ttl {
   margin-bottom: 20px;
@@ -3897,6 +3899,9 @@ button.mfp-arrow:hover:before {
   background-color: rgba(32, 32, 32, 0.6);
   z-index: 3; }
 
+.wrap.wrap--boxed .b-gallery__border {
+  width: 1280px; }
+
 .b-gallery__border .c-box__views {
   display: none; }
 
@@ -4034,12 +4039,16 @@ button.mfp-arrow:hover:before {
 @media (min-width: 1280px) {
   .b-gallery__popup a {
     height: 170px; }
+  .wrap.wrap--boxed .b-gallery__popup a {
+    height: 164px; }
   .b-gallery__date-lg {
     right: 15px; } }
 
 @media (min-width: 1570px) {
   .b-gallery__popup a {
-    height: 200px; } }
+    height: 200px; }
+  .wrap.wrap--boxed .b-gallery__popup a {
+    height: 164px; } }
 
 .b-partners {
   padding-top: 50px;
@@ -5037,6 +5046,9 @@ button.mfp-arrow:hover:before {
   .mega-menu {
     left: 0;
     right: 0; } }
+
+.b-headlines--img-prlx .container {
+  position: relative; }
 
 @media (min-width: 992px) {
   .parallax {

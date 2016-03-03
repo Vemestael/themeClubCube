@@ -165,6 +165,10 @@
 .navbar-dropdown__submenu.navbar__tint-wide
   padding-left: 35px
 
+.navbar-dropdown__submenu.navbar__tint-wide.active
+  &::before
+    left: 15px
+
 .navbar__tint-wide.active::before,
 .navbar__tint .clr-picker.active::before
   content: "\f00c"
@@ -347,5 +351,9 @@
     margin-right: auto
     margin-left: auto
     padding: 0
+
+  .header.header--boxed .line
+    width: auto
+    padding: 0 40px
 
 

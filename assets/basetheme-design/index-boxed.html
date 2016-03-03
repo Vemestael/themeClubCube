@@ -23,6 +23,7 @@
     <meta property="og:site_name" content="">
     <link rel="stylesheet" href="css/base64-fonts.css">
     <link rel="stylesheet" href="css/skins/green-violet.css">
+    <link rel="stylesheet" href="css/skins/pattern-waves.css">
     <link rel="stylesheet" href="css/critical.css"><!--[if lt IE 9]><!-->
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><!--<![endif]-->
     <!--[if IE]><!-->
@@ -34,87 +35,240 @@
   <body>
     <div class="wrap wrap--boxed">
       <header id="header" class="header header--boxed">
-        <div class="container">
-          <div class="navbar-header"><a href="#" class="navbar-brand"><img src="images/logo-w.png" alt=""></a>
+        <div class="container-fluid line">
+          <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="images/logo-w.png" alt=""></a>
             <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <nav id="navbarCollapse" class="navbar-collapse">
-            <ul class="navbar-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Albums</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Residents</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Elements</a></li>
+            <ul id="navigation" class="navbar-list dl-menu">
+              <li><span class="navbar-current">Home</span></li>
+              <li><a href="#">Events<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li><a href="events.html">Event list</a></li>
+                  <li><a href="event-open.html">Event open</a></li>
+                  <li class="navbar-dropdown__submenu"><span>view<i class="fa fa-angle-right"></i></span>
+                    <ul class="navbar-list__inner dl-submenu">
+                      <li><a href="#">regular</a></li>
+                      <li><a href="#">white gallery</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Gallery<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li><a href="gallery.html">gallery list</a></li>
+                  <li><a href="gallery-open.html">gallery open</a></li>
+                </ul>
+              </li>
+              <!-- lia(href="#") About
+              -->
+              <!-- lia(href="#") Residents
+              -->
+              <li><a href="#">Blog<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li><a href="blog.html">blog list</a></li>
+                  <li><a href="blog-open.html">No Titile Image & Full Width</a></li>
+                  <li><a href="blog-open-img.html">Title Image & Full Width</a></li>
+                  <li><a href="blog-open-sidebar.html">No Title Image & Right Sidebar</a></li>
+                  <li><a href="blog-open-img-sidebar.html">Title Image & Right Sidebar</a></li>
+                </ul>
+              </li>
+              <!-- lia(href="#") Contacts
+              -->
+              <li class="navbar__item-mega-menu"><a href="#">Elements<i class="fa fa-angle-right"></i></a>
+                <div class="mega-menu dl-submenu">
+                  <ul class="mega-menu__list">
+                    <li class="col-sm-6 col-lg-3"><a href="media.html" class="mega-menu__link-media"><b>video & audio</b></a></li>
+                    <li class="col-sm-6 col-lg-3"><a href="tabs-accordion.html" class="mega-menu__link-tabs"><b>tabs & accordion</b></a></li>
+                    <li class="col-sm-6 col-lg-3"><a href="typography.html" class="mega-menu__link-graph"><b>typography</b></a></li>
+                    <li class="col-sm-6 col-lg-3"><a href="buttons.html" class="mega-menu__link-btn"><b>buttons</b></a></li>
+                    <!-- li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-fdback: b testimonials-->
+                    <!-- li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-tmtable: b timetable-->
+                    <li class="col-sm-6 col-lg-3"><a href="grid.html" class="mega-menu__link-rpscol"><b>responsive columns</b></a></li>
+                  </ul>
+                  <div class="navbar__hr-wrap">
+                    <div class="hr-line"></div>
+                    <div class="hr-line"></div>
+                    <div class="hr-line"></div>
+                  </div>
+                  <div class="mega-menu__events-wrap row">
+                    <div class="mega-menu__events col-lg-6">
+                      <div class="row">
+                        <div class="mega-menu__events-list col-sm-6">
+                          <div class="c-box c-box--sm">
+                            <div class="c-box__inner">
+                              <div data-bgimage="../uploads/gallery/Gallery_16_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                              <div class="c-box__cont">
+                                <h6 class="c-box__ttl-s6">Feel our new dancehall "Rivierra"</h6>
+                              </div>
+                              <div class="c-box__date-item c-box__date-item--float">
+                                <time datetime="2009-08-29T20:00" class="date-sm c-box__date c-box__date--sm"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span><span class="date__ad">8:00 pm</span></time>
+                              </div><a href="event-open.html" class="b-box__link"></a>
+                            </div>
+                          </div>
+                          <div class="c-box c-box--sm">
+                            <div class="c-box__inner">
+                              <div class="b-box__img-wrap b-box__bg-a"></div>
+                              <div class="c-box__cont">
+                                <h6 class="c-box__ttl-s6">Feel our new dancehall "Rivierra"</h6>
+                              </div>
+                              <div class="c-box__date-item c-box__date-item--float">
+                                <time datetime="2009-08-29T20:00" class="date-sm c-box__date c-box__date--sm"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                              </div><a href="event-open.html" class="b-box__link"></a>
+                            </div>
+                          </div>
+                          <div class="c-box c-box--sm">
+                            <div class="c-box__inner">
+                              <div data-bgimage="../uploads/gallery/Gallery_15_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                              <div class="c-box__cont">
+                                <h6 class="c-box__ttl-s6">Feel our new dancehall "Rivierra"</h6>
+                              </div>
+                              <div class="c-box__date-item c-box__date-item--float">
+                                <time datetime="2009-08-29T20:00" class="date-sm c-box__date c-box__date--sm"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                              </div><a href="event-open.html" class="b-box__link"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="c-box c-box--sm col-sm-6">
+                          <div class="c-box__inner">
+                            <div data-bgimage="../uploads/gallery/Gallery_19_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                            <div class="c-box__cont">
+                              <h6 class="c-box__ttl-s6">Feel our new dancehall "Rivierra"</h6>
+                            </div>
+                            <div class="c-box__date-item c-box__date-item--float">
+                              <time datetime="2009-08-29T20:00" class="date-sm c-box__date c-box__date--sm"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span><span class="date__ad">8:00 pm</span></time>
+                            </div>
+                            <div class="c-box__link-wrap">
+                              <div class="btn-pointer__wrap">
+                                <a class="btn btn-pointer__sm btn-anim-a" href="event-open.html"><b>join event</b></a>
+                                <svg class="btn-pointer__left" x="0px" y="0px"
+                                viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                                <path class="st0" fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                                
+                              </div>
+                            </div><a href="event-open.html" class="b-box__link"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mega-menu__content col-lg-6">
+                      <div class="row">
+                        <div class="mega-menu__item-cont col-sm-6">
+                          <h6 class="mega-menu__ttl-s6">What do i need to know?</h6>
+                          <p>
+                            But still, we love to roll loud dancing until dawn, and then to "crawl" on the body,
+                            remember proschedshem evente perekrik and share emotions we experienced some time ago.
+                            
+                          </p>
+                        </div>
+                        <div class="mega-menu__item-cont col-sm-6">
+                          <h6 class="mega-menu__ttl-s6">Get in touch with our new Events</h6>
+                          <p class="mega-menu__txt">
+                            Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
+                            often!
+                          </p>
+                          <form action="/" method="GET" class="b-form b-form--inline">
+                            <div class="b-form__group">
+                              <input type="email" placeholder="Your E-mail" class="b-form__control">
+                            </div>
+                            <button type="submit" class="b-form__btn">Subscribe</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li class="navbar__tint-wide"><a href="index.html">wide</a></li>
+                  <li class="navbar-dropdown__submenu navbar__tint-wide active"><a href="index-boxed.html">boxed<i class="fa fa-angle-right"></i></a>
+                    <ul class="navbar-list__inner dl-submenu">
+                      <li class="pattern circle"><span>Circle pattern</span></li>
+                      <li class="pattern triangle"><span>Triangle pattern</span></li>
+                      <li class="pattern solid"><span>Solid Color</span></li>
+                      <li class="pattern waves"><span>Waves pattern</span></li>
+                    </ul>
+                  </li>
+                  <li class="navbar__hr-wrap">
+                    <div class="hr-line"></div>
+                    <div class="hr-line"></div>
+                  </li>
+                  <li class="clr-picker active green"><span>green/violet</span></li>
+                  <li class="clr-picker orange"><span>orange/red</span></li>
+                  <li class="clr-picker crimson"><span>crimson/cyan</span></li>
+                  <li class="clr-picker yellow"><span>yellow/pink</span></li>
+                  <li class="clr-picker brown"><span>brown/gray</span></li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
-      <div class="b-advert">
-        <div class="b-advert__btn-item"></div>
-        <div id="sliderAdvert" class="b-advert__slider">
-          <div class="b-advert__item-a">
-            <div class="b-advert__bg-wrap bg-grdnt"></div>
+      <div class="main-slide">
+        <div class="main-slide__btn-item"></div>
+        <div id="sliderMain" class="main-slide__slider">
+          <div class="main-slide__item-a">
+            <div class="main-slide__bg-wrap bg-grdnt"></div>
             <div class="container">
-              <div class="b-advert__item-inr">
-                <h1 class="b-advert__s1-ttl">FRIENDS Private House Party</h1>
+              <div class="main-slide__item-inr">
+                <h1 class="main-slide__s1-ttl">FRIENDS Private House Party</h1>
                 <hr class="hr-pattern">
-                <h2 class="b-advert__s2-ttl">Stay B, Andrew Feeling, Someone Else</h2>
+                <h2 class="main-slide__s2-ttl">Stay B, Andrew Feeling, Someone Else</h2>
                 <p>
                   But still, we love to roll loud dancing until dawn, and then to "crawl" on
                   the body, remember proschedshem evente perekrik and share emotions we
                   experienced some time ago.
                 </p>
-                <ul class="b-likes b-likes--wht">
-                  <li class="b-likes__pinterest-p"><span>457</span></li>
-                  <li class="b-likes__google-plus"><span>457</span></li>
-                  <li class="b-likes__twitter"><span>457</span></li>
-                  <li class="b-likes__facebook"><span>1457</span></li>
-                </ul>
-                <div class="b-advert__link-wrap">
-                  <div class="btn-pointer__wrap">
-                    <a class="btn btn-pointer btn-pointer--lg" href="#"><b>More</b></a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                    
+                <div class="main-slide__footer">
+                  <ul class="b-likes b-likes--wht">
+                    <li class="b-likes__pinterest-p"><span>457</span></li>
+                    <li class="b-likes__google-plus"><span>457</span></li>
+                    <li class="b-likes__twitter"><span>457</span></li>
+                    <li class="b-likes__facebook"><span>1457</span></li>
+                  </ul>
+                  <div class="main-slide__link-wrap">
+                    <div class="btn-pointer__wrap">
+                      <a class="btn btn-pointer btn-pointer--lg btn-anim-a" href="event-open.html"><b>More</b></a>
+                      <svg class="btn-pointer__left" x="0px" y="0px"
+                      viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                      <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                      
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="b-advert__item-b">
-            <div data-bgimage="../uploads/gallery/Gallery_19_Original.jpg" class="b-advert__img-wrap bg-image"></div>
+          <div class="main-slide__item-b">
+            <div data-bgimage="../uploads/gallery/Gallery_19_Original.jpg" class="main-slide__img-wrap bg-image"></div>
             <div class="container">
-              <div class="b-advert__item-inr">
-                <h1 class="b-advert__s1-ttl">FRIENDS Private House Party</h1>
-                <div class="b-advert__date-wrap">
-                  <time datetime="2015-09-23T8:00" class="date-lg"><span class="date-lg__dt">23</span><span class="date-lg__rh"><span class="date-lg__rh-m">september 2015</span><span class="date-lg__rh-d">Mon</span><span class="date-lg__rh-t">8:00 am</span></span></time>
+              <div class="main-slide__item-inr">
+                <h1 class="main-slide__s1-ttl main-slide__s1-ttl--indent">FRIENDS Private House Party</h1>
+                <div class="main-slide__date-wrap">
+                  <time datetime="2015-09-23T08:00" class="date-lg"><span class="date-lg__dt">23</span><span class="date-lg__rh"><span class="date-lg__rh-m">september 2015</span><span class="date-lg__rh-d">Mon</span><span class="date-lg__rh-t">8:00 am</span></span></time>
                 </div>
                 <hr class="hr-pattern">
-                <h2 class="b-advert__s2-ttl">Stay B, Andrew Feeling, Someone Else</h2>
+                <h2 class="main-slide__s2-ttl">Stay B, Andrew Feeling, Someone Else</h2>
                 <p>
                   But still, we love to roll loud dancing until dawn, and then to "crawl" on
                   the body, remember proschedshem evente perekrik and share emotions we
                   experienced some time ago.
                 </p>
-                <ul class="b-likes b-likes--wht">
-                  <li class="b-likes__pinterest-p"><span>457</span></li>
-                  <li class="b-likes__google-plus"><span>457</span></li>
-                  <li class="b-likes__twitter"><span>457</span></li>
-                  <li class="b-likes__facebook"><span>1457</span></li>
-                </ul>
-                <div class="b-advert__link-wrap"><a href="#" class="btn btn-info">
-                    <span class="">free</span>
-                    <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                     <b>read more</b></span></a></div>
+                <div class="main-slide__footer">
+                  <ul class="b-likes b-likes--wht b-likes--indent">
+                    <li class="b-likes__pinterest-p"><span>457</span></li>
+                    <li class="b-likes__google-plus"><span>457</span></li>
+                    <li class="b-likes__twitter"><span>457</span></li>
+                    <li class="b-likes__facebook"><span>1457</span></li>
+                  </ul>
+                  <div class="main-slide__link-wrap"><a href="event-open.html" class="btn btn-info btn-anim-a">
+                      <span>free</span>
+                      <span><svg x="0px" y="0px"
+                      viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                      <path class="st0" fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                       <b>read more</b></span></a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -129,13 +283,13 @@
             
           </p>
           <div class="btn-pointer-b__wrap">
-            <a href="#" class="btn-pointer-b">Watch Promo Live</a>
+            <a href="#" class="btn-pointer-b btn-anim-b"><b>Watch Promo Live</b></a>
             <svg class="left" x="0px" y="0px" viewBox="0 0 5 50" enable-background="new 0 0 5 50" xml:space="preserve">
-            <path fill="#000000" width="5px" height="50px" d="M5.0001,49.0002H0V33.8014l4.4054-4.4053L0,24.9905v-0.9612l4.4054-4.4051L0,15.2184V0h5.0001V49.0002z"/>
+            <path fill="#000000" d="M5.0001,49.0002H0V33.8014l4.4054-4.4053L0,24.9905v-0.9612l4.4054-4.4051L0,15.2184V0h5.0001V49.0002z"/>
             </svg>
             
             <svg class="right" x="0px" y="0px" viewBox="0 0 5 50" enable-background="new 0 0 5 50" xml:space="preserve">
-            <path fill="#000000" width="5px" height="40px" d="M0,0l5.0001,0v15.1988l-4.4054,4.4053l4.4054,4.4056v0.9612L0.5947,29.376l4.4054,4.4058v15.2184H0L0,0z"/>
+            <path fill="#000000" d="M0,0l5.0001,0v15.1988l-4.4054,4.4053l4.4054,4.4056v0.9612L0.5947,29.376l4.4054,4.4058v15.2184H0L0,0z"/>
             </svg>
             
           </div>
@@ -145,15 +299,14 @@
         <div class="container">
           <div class="row">
             <div class="b-tabs col-lg-8">
-              <h6 class="s6-heading">Top events</h6>
+              <h6 class="s6-heading b-tabs__ttl">Top events</h6>
               <ul role="tablist" class="b-tabs__nav b-tabs__nav-tabs">
                 <li role="presentation" class="active"><a href="#block-a" aria-controls="block-a" role="tab" data-toggle="tab">
-                    <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                    <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                     <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
                     </svg></a></li>
                 <li role="presentation"><a href="#block-b" aria-controls="block-b" role="tab" data-toggle="tab">
-                    <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <svg baseProfile="tiny" width="10" height="10"
                     x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                     <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
                     </svg></a></li>
@@ -161,217 +314,197 @@
               <div class="b-tabs__content">
                 <div id="block-a" role="tabpanel" class="b-tabs__pane fade in active row">
                   <div class="b-tabs__pane-item col-sm-6">
-                    <article class="c-box">
+                    <div class="c-box">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
                           <hr class="hr-pattern">
                           <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
                   <div class="b-tabs__pane-item col-sm-6">
-                    <article class="c-box">
+                    <div class="c-box">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
                           <hr class="hr-pattern">
                           <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
                   <div class="b-tabs__pane-item col-sm-6">
-                    <article class="c-box">
+                    <div class="c-box">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
                           <hr class="hr-pattern">
                           <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
                   <div class="b-tabs__pane-item col-sm-6">
-                    <article class="c-box">
+                    <div class="c-box">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
                           <hr class="hr-pattern">
                           <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_12_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
-                  <div class="b-box__btn-wrap">
-                    <button id="btnMore" class="btn btn-icon btn-icon--plus">More blogs</button>
-                  </div>
+                  <div class="b-box__btn-wrap"><a href="events.html" class="btn btn-icon btn-icon--plus">More events</a></div>
                 </div>
                 <div id="block-b" role="tabpanel" class="b-tabs__pane fade in row">
                   <div class="b-tabs__pane-item col-xs-12">
-                    <article class="c-box c-box-v">
+                    <div class="c-box c-box-v">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <!--hr.hr-pattern-->
                           <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_15_Retina.jpg" class="b-box__img-wrap bg-image"></div>
-                        <div class="b-box__grdnt-a"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
                   <div class="b-tabs__pane-item col-xs-12">
-                    <article class="c-box c-box-v">
+                    <div class="c-box c-box-v">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <!--hr.hr-pattern-->
-                          <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
+                          <h3 class="c-box__ttl-s3">St. Patrick’s Day in New York</h3>
+                          <p class="c-box__txt c-box__txt--display">Cruachan, Lunasa, Flook, McGoldrick's band</p>
                         </div>
                         <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                          <time datetime="2016-09-24T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_15_Retina.jpg" class="b-box__img-wrap bg-image"></div>
-                        <div class="b-box__grdnt-a"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
                   <div class="b-tabs__pane-item col-xs-12">
-                    <article class="c-box c-box-v">
+                    <div class="c-box c-box-v">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <!--hr.hr-pattern-->
                           <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_15_Retina.jpg" class="b-box__img-wrap bg-image"></div>
-                        <div class="b-box__grdnt-a"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
                   <div class="b-tabs__pane-item col-xs-12">
-                    <article class="c-box c-box-v">
+                    <div class="c-box c-box-v">
                       <div class="c-box__inner">
                         <div class="c-box__cont">
                           <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <!--hr.hr-pattern-->
                           <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
                         </div>
                         <div class="c-box__date-item">
                           <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_15_Retina.jpg" class="b-box__img-wrap bg-image"></div>
-                        <div class="b-box__grdnt-a"></div>
+                        <div data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
                         <div class="c-box__link-wrap">
                           <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">More</span></a>
-                            <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                            .st0{fill:#A82743;}</style>
-                            <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px"
+                            viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                             
                           </div>
-                        </div><a href="#" rel="nofollow" class="b-box__link"></a>
+                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                       </div>
-                    </article>
+                    </div>
                   </div>
-                  <div class="b-box__btn-wrap">
-                    <button id="btnMore" class="btn btn-icon btn-icon--plus">More blogs</button>
-                  </div>
+                  <div class="b-box__btn-wrap"><a href="" class="btn btn-icon btn-icon--plus">More events</a></div>
                 </div>
               </div>
             </div>
@@ -393,28 +526,28 @@
                 </div>
                 <div class="b-aside-item col-xs-12 col-sm-6 col-lg-12">
                   <div class="b-item__header">
-                    <h6 class="s6-heading b-item__ttl-header">Blog</h6><a href="#" class="btn btn--mini">More</a>
+                    <h6 class="s6-heading b-item__ttl-header">Blog</h6><a href="blog.html" class="btn btn--mini">More</a>
                   </div>
-                  <div class="b-box b-box-sm b-box--clr-b">
+                  <article class="b-box b-box-sm b-box--clr-b">
                     <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
                     <div class="b-box__date">
                       <time datetime="2015-05-25T14:44">may 25, 14:44</time>
                     </div>
-                    <div class="b-box__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div><a href="#" class="b-box__link"></a>
-                  </div>
-                  <div class="b-box b-box-sm b-box--clr-b">
+                    <h6 class="b-box__s6-ttl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6><a href="blog-open.html" class="b-box__link"></a>
+                  </article>
+                  <article class="b-box b-box-sm b-box--clr-b">
                     <div data-bgimage="../uploads/blog/Blog_02_Retina.jpg" class="b-box__img-wrap bg-image"></div>
                     <div class="b-box__date">
                       <time datetime="2015-05-25T14:44">may 25, 14:44</time>
                     </div>
-                    <div class="b-box__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div><a href="#" class="b-box__link"></a>
-                  </div>
-                  <div class="b-box b-box-sm b-box--clr-a">
+                    <h6 class="b-box__s6-ttl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6><a href="blog-open.html" class="b-box__link"></a>
+                  </article>
+                  <article class="b-box b-box-sm b-box--clr-a">
                     <div class="b-box__date">
                       <time datetime="2015-05-25T14:44">may 25, 14:44</time>
                     </div>
-                    <div class="b-box__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                  </div>
+                    <h6 class="b-box__s6-ttl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6><a href="blog-open.html" class="b-box__link"></a>
+                  </article>
                 </div>
               </div>
             </aside>
@@ -450,9 +583,9 @@
         <div class="container">
           <div class="row">
             <div class="b-item__header col-xs-12">
-              <h6 class="s6-heading b-item__ttl-header">Past events</h6><a href="#" class="btn btn--mini">More</a>
+              <h6 class="s6-heading b-item__ttl-header">Past events</h6><a href="events.html" class="btn btn--mini">More</a>
             </div>
-            <article class="c-box c-box--size-lg col-xs-12 col-md-6">
+            <div class="c-box c-box--lg col-xs-12 col-md-6">
               <div class="c-box__inner">
                 <div class="c-box__cont">
                   <h2 class="c-box__ttl-s2">TRAP  ONLY. best records plus fit</h2>
@@ -465,21 +598,20 @@
                 </div>
                 <div class="c-box__link-wrap c-box__link-wrap--indent">
                   <div class="btn-pointer__wrap">
-                    <a class="btn btn-pointer btn-pointer--size" href="#">open event & Gallery</a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                    <a class="btn btn-pointer__sm btn-anim-a" href="event-open.html"><b>open event & Gallery</b></a>
+                    <svg class="btn-pointer__left" x="0px" y="0px"
+                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                    <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                     
                   </div>
                 </div>
                 <ul class="c-box__views">
                   <li class="c-box__view txt">32</li>
                   <li class="c-box__video txt">2</li>
-                </ul>
+                </ul><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
               </div>
-            </article>
-            <article class="c-box c-box--size-lg col-xs-12 col-md-6">
+            </div>
+            <div class="c-box c-box--lg col-xs-12 col-md-6">
               <div class="c-box__inner">
                 <div class="c-box__cont">
                   <h2 class="c-box__ttl-s2">TRAP  ONLY. best records plus fit</h2>
@@ -492,32 +624,31 @@
                 </div>
                 <div class="c-box__link-wrap c-box__link-wrap--indent">
                   <div class="btn-pointer__wrap">
-                    <a class="btn btn-pointer btn-pointer--size" href="#">open event & Gallery</a>
-                    <svg version="1.1" class="btn-pointer__left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve"><style type="text/css">
-                    .st0{fill:#A82743;}</style>
-                    <path class="st0" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                    <a class="btn btn-pointer__sm btn-anim-a" href="event-open.html"><b>open event & Gallery</b></a>
+                    <svg class="btn-pointer__left" x="0px" y="0px"
+                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                    <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                     
                   </div>
                 </div>
                 <ul class="c-box__views">
                   <li class="c-box__view txt">32</li>
                   <li class="c-box__video txt">2</li>
-                </ul>
+                </ul><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>
       <div class="b-gallery">
-        <div data-bgimage="../uploads/gallery/Gallery_09_Original.jpg" class="b-gallery__img-wrap bg-image"></div>
+        <div data-bgimage="" class="b-gallery__img-wrap bg-image"></div>
         <div class="container">
           <div class="row">
             <div class="b-item__header col-xs-12">
               <h6 class="s6-heading b-item__ttl-header">Gallery</h6>
             </div>
-            <div id="sliderGallery" class="b-gallery__slider">
-              <article class="c-box c-box--size-sm">
+            <div id="sliderGallery" class="b-gallery__slider btn-white">
+              <div class="c-box c-box--sm">
                 <div class="c-box__inner">
                   <div data-bgimage="../uploads/gallery/Gallery_05_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
                   <div class="c-box__date-item c-box__date-item--float">
@@ -526,11 +657,11 @@
                   <ul class="c-box__views">
                     <li class="c-box__view txt">32</li>
                     <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
                 </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
+              <div class="c-box c-box--sm">
                 <div class="c-box__inner">
                   <div data-bgimage="../uploads/gallery/Gallery_07_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
                   <div class="c-box__date-item c-box__date-item--float">
@@ -539,11 +670,11 @@
                   <ul class="c-box__views">
                     <li class="c-box__view txt">32</li>
                     <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
                 </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Californication nights</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Californication nights</a></div>
+              </div>
+              <div class="c-box c-box--sm">
                 <div class="c-box__inner">
                   <div data-bgimage="../uploads/gallery/Gallery_04_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
                   <div class="c-box__date-item c-box__date-item--float">
@@ -552,11 +683,11 @@
                   <ul class="c-box__views">
                     <li class="c-box__view txt">32</li>
                     <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
                 </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
+              <div class="c-box c-box--sm">
                 <div class="c-box__inner">
                   <div data-bgimage="../uploads/gallery/Gallery_06_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
                   <div class="c-box__date-item c-box__date-item--float">
@@ -565,11 +696,24 @@
                   <ul class="c-box__views">
                     <li class="c-box__view txt">32</li>
                     <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
                 </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Californication nights</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Californication nights</a></div>
+              </div>
+              <div class="c-box c-box--sm">
+                <div class="c-box__inner">
+                  <div data-bgimage="../uploads/gallery/Gallery_07_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                  <div class="c-box__date-item c-box__date-item--float">
+                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                  </div>
+                  <ul class="c-box__views">
+                    <li class="c-box__view txt">32</li>
+                    <li class="c-box__video txt">2</li>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
+              <div class="c-box c-box--sm">
                 <div class="c-box__inner">
                   <div data-bgimage="../uploads/gallery/Gallery_05_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
                   <div class="c-box__date-item c-box__date-item--float">
@@ -578,37 +722,11 @@
                   <ul class="c-box__views">
                     <li class="c-box__view txt">32</li>
                     <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
                 </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
-                <div class="c-box__inner">
-                  <div data-bgimage="../uploads/gallery/Gallery_07_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
-                  <div class="c-box__date-item c-box__date-item--float">
-                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
-                  </div>
-                  <ul class="c-box__views">
-                    <li class="c-box__view txt">32</li>
-                    <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
-                </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Californication nights</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
-                <div class="c-box__inner">
-                  <div data-bgimage="../uploads/gallery/Gallery_04_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
-                  <div class="c-box__date-item c-box__date-item--float">
-                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
-                  </div>
-                  <ul class="c-box__views">
-                    <li class="c-box__view txt">32</li>
-                    <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
-                </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
-              </article>
-              <article class="c-box c-box--size-sm">
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
+              <div class="c-box c-box--sm">
                 <div class="c-box__inner">
                   <div data-bgimage="../uploads/gallery/Gallery_06_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
                   <div class="c-box__date-item c-box__date-item--float">
@@ -617,10 +735,75 @@
                   <ul class="c-box__views">
                     <li class="c-box__view txt">32</li>
                     <li class="c-box__video txt">2</li>
-                  </ul><a href="#" rel="nofollow" class="b-box__link"></a>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
                 </div>
-                <div class="c-box__link-wrap-a"><a href="#" class="c-box__link">Californication nights</a></div>
-              </article>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
+              <div class="c-box c-box--sm">
+                <div class="c-box__inner">
+                  <div data-bgimage="../uploads/gallery/Gallery_07_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                  <div class="c-box__date-item c-box__date-item--float">
+                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                  </div>
+                  <ul class="c-box__views">
+                    <li class="c-box__view txt">32</li>
+                    <li class="c-box__video txt">2</li>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Californication nights</a></div>
+              </div>
+              <div class="c-box c-box--sm">
+                <div class="c-box__inner">
+                  <div data-bgimage="../uploads/gallery/Gallery_04_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                  <div class="c-box__date-item c-box__date-item--float">
+                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                  </div>
+                  <ul class="c-box__views">
+                    <li class="c-box__view txt">32</li>
+                    <li class="c-box__video txt">2</li>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
+              <div class="c-box c-box--sm">
+                <div class="c-box__inner">
+                  <div data-bgimage="../uploads/gallery/Gallery_06_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                  <div class="c-box__date-item c-box__date-item--float">
+                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                  </div>
+                  <ul class="c-box__views">
+                    <li class="c-box__view txt">32</li>
+                    <li class="c-box__video txt">2</li>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Californication nights</a></div>
+              </div>
+              <div class="c-box c-box--sm">
+                <div class="c-box__inner">
+                  <div data-bgimage="../uploads/gallery/Gallery_06_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                  <div class="c-box__date-item c-box__date-item--float">
+                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                  </div>
+                  <ul class="c-box__views">
+                    <li class="c-box__view txt">32</li>
+                    <li class="c-box__video txt">2</li>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Californication nights</a></div>
+              </div>
+              <div class="c-box c-box--sm">
+                <div class="c-box__inner">
+                  <div data-bgimage="../uploads/gallery/Gallery_04_Original.jpg" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+                  <div class="c-box__date-item c-box__date-item--float">
+                    <time datetime="2009-08-29T20:00" class="date-sm c-box__date"><span class="date-sm__dt">23</span><span class="date-sm__rh"><span class="date-sm__rh-m">sept</span><span class="date-sm__rh-d">2014</span></span></time>
+                  </div>
+                  <ul class="c-box__views">
+                    <li class="c-box__view txt">32</li>
+                    <li class="c-box__video txt">2</li>
+                  </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="c-box__link-wrap-a"><a href="gallery-open.html" class="c-box__link">Mash up your heads: christmas night mash up your heads: christmas night</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -631,33 +814,48 @@
             <div class="b-item__header col-xs-12">
               <h6 class="s6-heading b-item__ttl-header">Meet our partners</h6>
             </div>
-            <div id="sliderPartners" class="b-partners__slider btn-black">
+            <div id="sliderPartners" class="b-partners__slider">
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner1.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner1.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner2.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner2.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner3.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner3.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner4.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner4.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner5.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner5.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner6.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner6.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner4.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner4.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner5.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner5.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
               <div class="b-partners__item">
-                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner6.jpg" alt="logo partners"></div>
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner6.jpg" alt="logo partners"><a href="#"></a></div>
+              </div>
+              <div class="b-partners__item">
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner5.jpg" alt="logo partners"><a href="#"></a></div>
+              </div>
+              <div class="b-partners__item">
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner6.jpg" alt="logo partners"><a href="#"></a></div>
+              </div>
+              <div class="b-partners__item">
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner4.jpg" alt="logo partners"><a href="#"></a></div>
+              </div>
+              <div class="b-partners__item">
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner5.jpg" alt="logo partners"><a href="#"></a></div>
+              </div>
+              <div class="b-partners__item">
+                <div class="b-partners__img-wrap"><img src="../uploads/partners/partner6.jpg" alt="logo partners"><a href="#"></a></div>
               </div>
             </div>
           </div>

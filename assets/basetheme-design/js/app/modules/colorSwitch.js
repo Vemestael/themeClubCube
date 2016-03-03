@@ -5,7 +5,9 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _defaults = {
             // elements
             clrPicker: '.clr-picker',
+            ptrn: '.pattern',
             linkItm: '[href^="css/skins/"]',
+            linkItmPtrn: '[href^="css/skins/pattern"]',
             wideScrn: '.navbar__tint-wide'
 
         },
@@ -13,7 +15,9 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _globals = {
             // elements
             clrPicker: null,
+            ptrn: null,
             linkItm: null,
+            linkItmPtrn: null,
             wideScrn: null,
 
             // prop
@@ -37,13 +41,15 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
 
         _config = function () {
             _globals.clrPicker = $(_properties.clrPicker);
+            _globals.ptrn = $(_properties.ptrn);
             _globals.linkItm = $(_properties.linkItm);
+            _globals.linkItmPtrn = $(_properties.linkItmPtrn);
             _globals.wideScrn = $(_properties.wideScrn);
         },
 
         _setup = function () {
             _changeClr();
-            _changeWide();
+            _changePtrn();
         },
 
         _setBinds = function () {
@@ -80,12 +86,32 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
             });
         },
 
-        _changeWide = function () {
-            _globals.wideScrn.on('click', function () {
-                _globals.wideScrn.removeClass('active');
-                $(this).addClass('active');
-            })
+        _changePtrn = function () {
+            _globals.ptrn.on('click', function () {
+                if ($(this).hasClass('circle')) {
+                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-circle.css');
+                }
+                if ($(this).hasClass('triangle')) {
+                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-triangle.css');
+                }
+                if ($(this).hasClass('solid')) {
+                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-solid.css');
+                }
+                if ($(this).hasClass('waves')) {
+                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-waves.css');
+                }
+
+                //_globals.clrPicker.removeClass('active');
+                //$(this).addClass('active');
+            });
         },
+
+        //_changeWide = function () {
+        //    _globals.wideScrn.on('click', function () {
+        //        _globals.wideScrn.removeClass('active');
+        //        $(this).addClass('active');
+        //    })
+        //},
 
         _toggleMenuCheckup = function () {
 
