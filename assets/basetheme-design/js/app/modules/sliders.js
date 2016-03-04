@@ -155,8 +155,8 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 appendArrows: $('.main-slide__btn-item'),
                 fade: true,
                 cssEase: 'linear',
-                autoplay: true,
-                autoplaySpeed: 5000,
+                //autoplay: true,
+                //autoplaySpeed: 5000,
                 responsive: [
                     {
                         breakpoint: 1200,

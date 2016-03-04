@@ -389,6 +389,7 @@ button
   padding: 0
 
 .b-likes > li
+  position: relative
   display: inline-block
   margin-right: 15px
   font-size: 10px
@@ -423,48 +424,37 @@ button
 .b-likes span
   position: relative
   display: inline-block
-  padding: 4px 10px 4px 5px
+  padding: 3px 10px 2.9px 5px
   border-top: 2px solid
   border-right: 2px solid
   border-bottom: 2px solid
 
-.b-likes span::before,
-.b-likes span::after
-  content: ''
+.b-likes svg
   position: absolute
-  width: 15px
-  height: 2px
+  top: -2px
+  left: -9.6px
+  width: 10px
 
-.b-likes span::before
-  top: 3px
-  left: -12px
-  transform: rotate(-45deg)
-
-.b-likes span::after
-  left: -12px
-  bottom: 3px
-  transform: rotate(45deg)
+.b-likes svg .svg__fill
+  fill: red
 
 .b-likes--wht li
   color: #fff
 
 .b-likes--wht span
   color: #fff
-  border-color: $white-light-cr
+  border-color: $white-light-c
   transition: all 0.2s ease
 
-.b-likes--wht span::before,
-.b-likes--wht span::after
-  color: #fff
-  background-color: $white-light-cr
+.b-likes--wht svg .svg__fill
+  fill: $white-light-c
   transition: all 0.2s ease
 
 .b-likes--wht li:hover  span
   border-color: $white-c
 
-.b-likes--wht li:hover span::before,
-.b-likes--wht li:hover span::after
-  background-color: $white-c
+.b-likes--wht li:hover svg .svg__fill
+  fill: $white-c
 
 .btn-pointer-b__wrap
   position: relative

@@ -9,4 +9,4 @@ node_modules
 /.sass-cache
 /themeforest-materials
 
-assets/basetheme-design/images/patterns/.DS_Store
+/basetheme-design/images/patterns/.DS_Store
