@@ -40,7 +40,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.utils.extend(_globals.siteObj.classes.Sliders, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.DtMenu, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.MenuAligns, _globals.siteObj.base.Class);
-      _globals.siteObj.utils.extend(_globals.siteObj.classes.ColorSwitch, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.GalleryFunctions, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.MasonryTiles, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.Parallax, _globals.siteObj.base.Class);
@@ -62,7 +61,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.createClassInstance('Sliders', _globals.siteObj.classes.Sliders, {classId: 'Sliders'});
       _globals.siteObj.createClassInstance('DtMenu', _globals.siteObj.classes.DtMenu, {classId: 'DtMenu'});
       _globals.siteObj.createClassInstance('MenuAligns', _globals.siteObj.classes.MenuAligns, {classId: 'MenuAligns'});
-      _globals.siteObj.createClassInstance('ColorSwitch', _globals.siteObj.classes.ColorSwitch, {classId: 'ColorSwitch'});
       _globals.siteObj.createClassInstance('GalleryFunctions', _globals.siteObj.classes.GalleryFunctions, {classId: 'GalleryFunctions'});
       _globals.siteObj.createClassInstance('MasonryTiles', _globals.siteObj.classes.MasonryTiles, {classId: 'MasonryTiles'});
       _globals.siteObj.createClassInstance('Parallax', _globals.siteObj.classes.Parallax, {classId: 'Parallax'});
@@ -88,7 +86,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
             _themeMode.trigger('Sliders_Init', data);
             _themeMode.trigger('DtMenu_Init', data);
             _themeMode.trigger('MenuAligns_Init', data);
-            _themeMode.trigger('ColorSwitch_Init', data);
             _themeMode.trigger('GalleryFunctions_Init', data);
             _themeMode.trigger('MasonryTiles_Init', data);
             _themeMode.trigger('Parallax_Init', data);

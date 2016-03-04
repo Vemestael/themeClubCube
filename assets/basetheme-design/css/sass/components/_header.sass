@@ -158,19 +158,23 @@
   margin-bottom: 3px
 
 .navbar__tint-wide,
-.navbar__tint .clr-picker
+.navbar__tint .clr-picker,
+.navbar__tint .pattern
   position: relative
   padding-left: 20px
 
 .navbar-dropdown__submenu.navbar__tint-wide
-  padding-left: 35px
+  padding-left: 0
+  & > a
+    padding-left: 20px
 
 .navbar-dropdown__submenu.navbar__tint-wide.active
   &::before
     left: 15px
 
-.navbar__tint-wide.active::before,
-.navbar__tint .clr-picker.active::before
+.navbar__tint-wide:hover::before,
+.navbar__tint .clr-picker:hover::before,
+.navbar__tint .pattern:hover::before
   content: "\f00c"
   position: absolute
   left: 0
@@ -178,6 +182,20 @@
   font-family: $fa
   color: #fff
   line-height: 50px
+
+.navbar-dropdown__submenu.navbar__tint-wide:hover::before
+  left: 15px
+
+//.navbar__tint-wide.active::before,
+//.navbar__tint .clr-picker.active::before,
+//.navbar__tint .pattern.active::before
+//  content: "\f00c"
+//  position: absolute
+//  left: 0
+//  font-size: 14px
+//  font-family: $fa
+//  color: #fff
+//  line-height: 50px
 
 @media (min-width: $screen-sm)
 
@@ -233,7 +251,7 @@
     padding: 17px
     transition: all 0.2s ease
 
-  .header.header--boxed
+  .body-boxed .header
     right: auto
     left: auto
     width: 100%
@@ -349,6 +367,9 @@
   .navbar__tint > a .fa-angle-right
     display: none
 
+  .navbar-dropdown__submenu.navbar__tint-wide > a
+    padding-left: 35px
+
 @media (min-width: $screen-xl)
 
   .header .line
@@ -357,7 +378,7 @@
     margin-left: auto
     padding: 0
 
-  .header.header--boxed .line
+  .body-boxed .header .line
     width: auto
     padding: 0 40px
 

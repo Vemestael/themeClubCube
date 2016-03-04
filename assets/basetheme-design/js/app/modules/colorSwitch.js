@@ -118,9 +118,7 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _loadSkin = function () {
             if(typeof(Storage) !== "undefined") {
                 setTimeout( function() {
-                    if (localStorage.getItem("skin") == ('green')) {
-                        _globals.linkItm.attr('href', 'css/skins/clr-green-violet.css');
-                    }
+
                     if (localStorage.getItem("skin") == ('orange')) {
                         _globals.linkItm.attr('href', 'css/skins/clr-orange-red.css');
                     }
@@ -158,6 +156,9 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
                 }
                 if ($(this).hasClass('waves')) {
                     $('body').addClass('waves')
+                }
+                else {
+                    return false
                 }
 
                 //_globals.clrPicker.removeClass('active');
