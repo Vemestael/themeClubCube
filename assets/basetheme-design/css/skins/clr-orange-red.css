@@ -103,14 +103,17 @@ blockquote::before {
 .b-share__list {
   color: #e15e32; }
 
-.b-share__list span::before, .b-share__list span::after {
-  background-color: #e15e32; }
+.b-share__list svg .svg__fill {
+  fill: #e15e32;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .b-share__list li:hover {
   color: #a82743; }
 
-.b-share__list li:hover span::before, .b-share__list li:hover span::after {
-  background-color: #a82743; }
+.b-share__list li:hover svg .svg__fill {
+  fill: #a82743; }
 
 .header--toggled .navbar-toogle {
   background-color: #e15e32; }

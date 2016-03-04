@@ -2316,11 +2316,11 @@ button {
 
 .b-likes > li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
   font-size: 10px;
   cursor: pointer; }
   .b-likes > li::before {
-    padding-right: 20px;
+    padding-right: 17px;
     font-family: "Font Awesome";
     font-size: 18px;
     vertical-align: middle; }
@@ -2354,9 +2354,6 @@ button {
   top: -2px;
   left: -10px;
   width: 52px; }
-
-.b-likes svg .svg__fill {
-  fill: red; }
 
 .b-likes--wht li {
   color: #fff; }
