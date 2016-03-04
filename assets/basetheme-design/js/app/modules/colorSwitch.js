@@ -145,17 +145,19 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
 
         _changePtrn = function () {
             _globals.ptrn.on('click', function () {
+                $('body').removeClass('circle triangle solid waves');
+
                 if ($(this).hasClass('circle')) {
-                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-circle.css');
+                     $('body').addClass('circle')
                 }
                 if ($(this).hasClass('triangle')) {
-                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-triangle.css');
+                    $('body').addClass('triangle')
                 }
                 if ($(this).hasClass('solid')) {
-                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-solid.css');
+                    $('body').addClass('solid')
                 }
                 if ($(this).hasClass('waves')) {
-                     _globals.linkItmPtrn.attr('href', 'css/skins/pattern-waves.css');
+                    $('body').addClass('waves')
                 }
 
                 //_globals.clrPicker.removeClass('active');

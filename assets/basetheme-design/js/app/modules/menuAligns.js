@@ -88,7 +88,7 @@ appMakeBeCool.gateway.addClass('MenuAligns', function (properties, $, $window, $
                 }
                 if ((thisLeftOffset + thisUlWidth) >= windowWidth) {
                     $firstUl.addClass('dropdown-menu__right');
-                } else if ($('.wrap').hasClass('wrap--boxed')) {
+                } else if ($('body').hasClass('body-boxed')) {
                     $firstUl.addClass('dropdown-menu__right');
                     console.log(windowWidth)
                 }

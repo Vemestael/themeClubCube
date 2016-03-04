@@ -1685,14 +1685,7 @@ iframe {
     float: none; } }
 
 @media (min-width: 1280px) {
-  .wrap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #202020; }
-  .wrap.wrap--boxed {
+  .body-boxed .wrap {
     position: relative;
     overflow: hidden;
     width: 1280px;
@@ -1700,6 +1693,13 @@ iframe {
     background: white;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+  .wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #202020; }
   .container {
     padding-left: 15px;
     padding-right: 15px; }
@@ -2315,7 +2315,6 @@ button {
   padding: 0; }
 
 .b-likes > li {
-  position: relative;
   display: inline-block;
   margin-right: 15px;
   font-size: 10px;
@@ -2348,16 +2347,13 @@ button {
 .b-likes span {
   position: relative;
   display: inline-block;
-  padding: 3px 10px 2.9px 5px;
-  border-top: 2px solid;
-  border-right: 2px solid;
-  border-bottom: 2px solid; }
+  padding: 3px 9px 3px 7px; }
 
 .b-likes svg {
   position: absolute;
   top: -2px;
-  left: -9.6px;
-  width: 10px; }
+  left: -10px;
+  width: 52px; }
 
 .b-likes svg .svg__fill {
   fill: red; }
@@ -2367,7 +2363,6 @@ button {
 
 .b-likes--wht span {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.33);
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -3888,9 +3883,6 @@ button.mfp-arrow:hover:before {
   background-color: rgba(32, 32, 32, 0.6);
   z-index: 3; }
 
-.wrap.wrap--boxed .b-gallery__border {
-  width: 1280px; }
-
 .b-gallery__border .c-box__views {
   display: none; }
 
@@ -4028,7 +4020,9 @@ button.mfp-arrow:hover:before {
 @media (min-width: 1280px) {
   .b-gallery__popup a {
     height: 170px; }
-  .wrap.wrap--boxed .b-gallery__popup a {
+  .body-boxed .b-gallery__border {
+    width: 1280px; }
+  .body-boxed .b-gallery__popup a {
     height: 164px; }
   .b-gallery__date-lg {
     right: 15px; } }
@@ -4036,7 +4030,7 @@ button.mfp-arrow:hover:before {
 @media (min-width: 1570px) {
   .b-gallery__popup a {
     height: 200px; }
-  .wrap.wrap--boxed .b-gallery__popup a {
+  .body-boxed .b-gallery__popup a {
     height: 164px; } }
 
 .b-partners {
