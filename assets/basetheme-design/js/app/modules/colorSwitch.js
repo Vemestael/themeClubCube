@@ -70,19 +70,19 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
             _globals.clrPicker.on('click', function () {
 
                 if ($(this).hasClass('green')) {
-                    var skin = $(this).data('skin');
-                    _globals.linkItm.attr('href', 'css/skins/clr-' + skin + '-violet.css');
+                    _globals.linkItm.attr('href', 'css/skins/clr-green-violet.css');
+
                     if(typeof(Storage) !== "undefined") {
                         localStorage.removeItem("skin");
-                        localStorage.setItem("skin", skin);
+                        localStorage.setItem("skin", 'green');
                     }
                 }
                 if ($(this).hasClass('orange')) {
-                    var skin = $(this).data('skin');
-                    _globals.linkItm.attr('href', 'css/skins/clr-' + skin + '-red.css');
+                   _globals.linkItm.attr('href', 'css/skins/clr-orange-red.css');
+
                     if(typeof(Storage) !== "undefined") {
                         localStorage.removeItem("skin");
-                        localStorage.setItem("skin", skin);
+                        localStorage.setItem("skin", 'orange');
                     }
                 }
                 if ($(this).hasClass('crimson')) {
@@ -118,7 +118,24 @@ appMakeBeCool.gateway.addClass('ColorSwitch', function (properties, $, $window, 
         _loadSkin = function () {
             if(typeof(Storage) !== "undefined") {
                 setTimeout( function() {
-                    localStorage.getItem("skin");
+                    if (localStorage.getItem("skin") == ('green')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-green-violet.css');
+                    }
+                    if (localStorage.getItem("skin") == ('orange')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-orange-red.css');
+                    }
+                    if (localStorage.getItem("skin") == ('crimson')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-crimson-cyan.css');
+                    }
+                    if (localStorage.getItem("skin") == ('yellow')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-yellow-pink.css');
+                    }
+                    if (localStorage.getItem("skin") == ('brown')) {
+                        _globals.linkItm.attr('href', 'css/skins/clr-brown-gray.css');
+                    }
+                    else {
+                        console.log('error')
+                    }
                 }, 50)
             } else {
                 alert('Sorry! No Web Storage support..')
