@@ -5003,6 +5003,8 @@ button.mfp-arrow:hover:before {
   .mega-menu__list {
     margin-right: -15px;
     margin-left: -15px; }
+  .mega-menu__list li:nth-of-type(2n+1) {
+    clear: both; }
   .mega-menu__list li > a {
     margin: 0 15px; } }
 
@@ -5016,6 +5018,8 @@ button.mfp-arrow:hover:before {
     max-width: 100%; }
   .mega-menu__content {
     margin-top: 30px; }
+  .mega-menu__list li:nth-of-type(2n+1) {
+    clear: none; }
   .mega-menu__list li a > b {
     width: 100%;
     display: inline-block;
