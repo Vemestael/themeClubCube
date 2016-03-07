@@ -6,23 +6,308 @@ html(lang='en')
       include components/header
       .b-headlines
         .container
-          h1.b-headlines__ttl Heading blog & breadcrumbs
-      .b-breadcrumbs
-        .container
-          ul.b-breadcrumbs__list.x-small-txt
-            li: a.link(href="index.html") home
-            li Page current
-      .container
-        h2.s2-heading Form
-        form.b-form.b-form--inline(action="/" method="GET")
-          .b-form__group
-            input.b-form__control(type="email", placeholder="Your E-mail")
-          button.b-form__btn(type="submit") Subscribe
-        h2.s2-heading Message
-        .b-msg
-          .b-msg__corner
-          p.b-msg__txt.small-txt.
-            We like to create cool parties and we love to chat with like-minded
-          strong Do not hesitate to say hello!
+          .b-breadcrumbs
+            ul.b-breadcrumbs__list.x-small-txt
+              li: a.link(href="index.html") home
+              li Footer-layouts-2
+          h1.b-headlines__ttl Footer-layouts-2
+      .b-content.container
+        .b-tabs
+          ul.b-tabs__nav.b-tabs__nav-tabs.b-tabs__nav-tabs--center(role="tablist")
+            li.active(role="presentation")
+              a(href="#block-a", aria-controls="block-a", role="tab", data-toggle="tab").
+                <svg version="1.1" baseProfile="tiny" width="10" height="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
+                </svg>
+            li(role="presentation")
+              a(href="#block-b", aria-controls="block-b", role="tab", data-toggle="tab").
+                <svg version="1.1" baseProfile="tiny" width="10" height="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
+                </svg>
+          .b-tabs__content
+            .row
+              #block-a.b-tabs__pane.fade.in.active(role="tabpanel")
+                .b-tabs__pane-item.col-md-6
+                  #accordion.b-accordion(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Classic accordion
+                    .b-accordion__panel.panel
+                      #headingOne.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapseOne" aria-expanded="true"
+                          aria-controls="collapseOne") Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #collapseOne.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+
+                    .b-accordion__panel.panel
+                      #headingTwo.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#collapseTwo", role="button", data-toggle="collapse",
+                          data-parent="#accordion", aria-expanded="false",
+                          aria-controls="collapseTwo") For all significant changes <b class="fa fa-angle-down"></b>
+
+                      #collapseTwo.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingTwo")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+
+                    .b-accordion__panel.panel
+                      #headingThree.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#collapseThree", role="button", data-toggle="collapse",
+                          data-parent="#accordion", aria-expanded="false",
+                          aria-controls="collapseTwo") In Ukraine and abroad <b class="fa fa-angle-down"></b>
+
+                      #collapseThree.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingThree")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+
+                .b-tabs__pane-item.col-md-6
+                  #accordionIcon.b-accordion(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Toggle accordion with icons
+                    .b-accordion__panel.panel
+                      #headingIconOne.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordionIcon" href="#blockIconOne"
+                          aria-expanded="true" aria-controls="blockIconOne") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #blockIconOne.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIconOne")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+                    .b-accordion__panel.panel
+                      #headingIconTwo.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconTwo", role="button", data-toggle="collapse",
+                          data-parent="#accordionIcon", aria-expanded="false",
+                          aria-controls="blockIconTwo") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
+                      #blockIconTwo.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconTwo")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+                    .b-accordion__panel.panel
+                      #headingIconThree.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconThree", role="button", data-toggle="collapse",
+                          data-parent="#accordionIcon", aria-expanded="false",
+                          aria-controls="blockIconThree") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
+                      #blockIconThree.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconThree")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+
+                .b-tabs__pane-item.col-md-6
+                  #accordionIconClr.b-accordion.b-accordion--clr(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Toggle and colorfull accordion with icons
+                    .b-accordion__panel.panel.panel--bg-a
+                      #headingIconClrOne.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordionIconClr" href="#blockIconClrOne"
+                          aria-expanded="true" aria-controls="blockIconClrOne") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #blockIconClrOne.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIconClrOne")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+                    .b-accordion__panel.panel.panel--bg-b
+                      #headingIconClrTwo.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClrTwo", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr", aria-expanded="false",
+                          aria-controls="blockIconClrTwo") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
+                      #blockIconClrTwo.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClrTwo")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+                    .b-accordion__panel.panel.panel--bg-c
+                      #headingIconClrThree.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClrThree", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr", aria-expanded="false",
+                          aria-controls="blockIconClrThree") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
+                      #blockIconClrThree.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClrThree")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+
+              #block-b.b-tabs__pane.fade.in(role="tabpanel")
+                .b-tabs__pane-item.col-xs-12
+                  #accordion2.b-accordion(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Classic accordion
+                    .b-accordion__panel.panel
+                      #headingItem.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordion2"
+                          href="#collapseItem" aria-expanded="true" aria-controls="collapseItem") Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #collapseItem.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingItem")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+
+                    .b-accordion__panel.panel
+                      #headingItem2.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#collapseItem2", role="button", data-toggle="collapse",
+                          data-parent="#accordion2", aria-expanded="false",
+                          aria-controls="collapseItem2") For all significant changes <b class="fa fa-angle-down"></b>
+
+                      #collapseItem2.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingItem2")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+
+                    .b-accordion__panel.panel
+                      #headingItem3.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#collapseItem3", role="button", data-toggle="collapse",
+                          data-parent="#accordion2", aria-expanded="false",
+                          aria-controls="collapseItem3") In Ukraine and abroad <b class="fa fa-angle-down"></b>
+
+                      #collapseItem3.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingItem3")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+
+                .b-tabs__pane-item.col-xs-12
+                  #accordionIcon2.b-accordion(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Toggle accordion with icons
+                    .b-accordion__panel.panel
+                      #headingIcon2.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordionIcon2" href="#blockIcon2"
+                          aria-expanded="true" aria-controls="blockIcon2") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #blockIcon2.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIcon2")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+                    .b-accordion__panel.panel
+                      #headingIcon3.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIcon3", role="button", data-toggle="collapse",
+                          data-parent="#accordionIcon2", aria-expanded="false",
+                          aria-controls="blockIcon3") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
+                      #blockIcon3.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIcon3")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+                    .b-accordion__panel.panel
+                      #hdIcon4.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIcon4", role="button", data-toggle="collapse",
+                          data-parent="#accordionIcon2", aria-expanded="false",
+                          aria-controls="blockIcon4") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
+                      #blockIcon4.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="hdIcon4")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+
+                .b-tabs__pane-item.col-xs-12
+                  #accordionIconClr2.b-accordion.b-accordion--clr(role="tablist", aria-multiselectable="true")
+                    h3.s6-heading.b-accordion__ttl Toggle and colorfull accordion with icons
+                    .b-accordion__panel.panel.panel--bg-a
+                      #headingIconClr2.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a(role="button" data-toggle="collapse" data-parent="#accordionIconClr2" href="#blockIconClr2"
+                          aria-expanded="true" aria-controls="blockIconClr2") <b class="fa fa-music"></b> Last year will be remembered <b class="fa fa-angle-down"></b>
+                      #blockIconClr2.b-accordion__collapse.collapse.in(role="tabpanel", aria-labelledby="headingIconClr2")
+                        .b-accordion__body
+                          p.
+                            For us it is, above all, a change of paradigms - we (hopefully)
+                            finally moved away from the model of paternalism in the relationship
+                            with the state. We finally took the course of building a civil society.
+                            Now, more than ever, it became clear that one can not impose
+                            the solution of social problems in the country.
+                    .b-accordion__panel.panel.panel--bg-b
+                      #headingIconClr3.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClr3", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr2", aria-expanded="false",
+                          aria-controls="blockIconClr3") <b class="fa fa-microphone"></b> For all significant changes <b class="fa fa-angle-down"></b>
+                      #blockIconClr3.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClr3")
+                        .b-accordion__body
+                          p.
+                            Thank you for your flexible and simple program.
+                            Our Pasha happy every day, we are delighted by your teachers. Good luck!
+                    .b-accordion__panel.panel.panel--bg-c
+                      #headingIconClr4.b-accordion__panel-heading(role="tab")
+                        h4.b-accordion__panel-ttl
+                          a.collapsed(href="#blockIconClr4", role="button", data-toggle="collapse",
+                          data-parent="#accordionIconClr2", aria-expanded="false",
+                          aria-controls="blockIconClr4") <b class="fa fa-play"></b> In Ukraine and abroad <b class="fa fa-angle-down"></b>
+                      #blockIconClr4.b-accordion__collapse.collapse(role="tabpanel", aria-labelledby="headingIconClr4")
+                        .b-accordion__body
+                          p.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard of them accusamus labore sustainable VHS.
+
       include components/footer2
     include components/scripts
