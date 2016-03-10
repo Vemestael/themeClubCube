@@ -13,10 +13,12 @@ $(document).ready(function () {
 
     $clrPicker.on('click', function () {
         var skin = $(this).data('skin');
-        var $current = $(this);
+
+        $clrPicker.removeClass('active');
 
         if (skin == "green") {
             $linkItm.attr('href', 'css/skins/clr-' + skin + '-violet.css');
+            $('.green').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("skin");
@@ -25,6 +27,7 @@ $(document).ready(function () {
         }
         if (skin == "orange") {
             $linkItm.attr('href', 'css/skins/clr-' + skin + '-red.css');
+            $('.orange').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("skin");
@@ -33,6 +36,7 @@ $(document).ready(function () {
         }
         if (skin == "crimson") {
             $linkItm.attr('href', 'css/skins/clr-' + skin + '-cyan.css');
+            $('.crimson').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("skin");
@@ -41,6 +45,7 @@ $(document).ready(function () {
         }
         if (skin == "yellow") {
             $linkItm.attr('href', 'css/skins/clr-' + skin + '-pink.css');
+            $('.yellow').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("skin");
@@ -49,37 +54,41 @@ $(document).ready(function () {
         }
         if (skin == "brown") {
             $linkItm.attr('href', 'css/skins/clr-' + skin + '-gray.css');
+            $('.brown').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("skin");
                 localStorage.setItem("skin", skin);
             }
         }
-
-        localStorage.setItem('saveActive', $(this).addClass('active'))
-
     });
 
     var loadSkin = function () {
-        var crnt = $(this).addClass('active');
         if(typeof(Storage) !== "undefined") {
             setTimeout( function() {
+                $clrPicker.removeClass('active');
+
                 if (localStorage.getItem("skin") == ('green')) {
                     $linkItm.attr('href', 'css/skins/clr-green-violet.css');
+                    $('.green').addClass('active');
                 }
                 if (localStorage.getItem("skin") == ('orange')) {
                     $linkItm.attr('href', 'css/skins/clr-orange-red.css');
+                    $('.orange').addClass('active');
                 }
                 if (localStorage.getItem("skin") == ('crimson')) {
                     $linkItm.attr('href', 'css/skins/clr-crimson-cyan.css');
+                    $('.crimson').addClass('active');
                 }
                 if (localStorage.getItem("skin") == ('yellow')) {
                     $linkItm.attr('href', 'css/skins/clr-yellow-pink.css');
+                    $('.yellow').addClass('active');
+
                 }
                 if (localStorage.getItem("skin") == ('brown')) {
                     $linkItm.attr('href', 'css/skins/clr-brown-gray.css');
+                    $('.brown').addClass('active');
                 }
-                localStorage.getItem('saveActive', $clrPicker.addClass('active'));
 
             }, 50)
         } else {
@@ -96,19 +105,23 @@ $(document).ready(function () {
    $ptrn.on('click', function () {
        var $body = $('body');
        $body.removeClass('circle triangle solid waves');
+       $('.pattern').removeClass('active');
 
         if ($(this).hasClass('circle')) {
-            $body.addClass('circle')
+            $body.addClass('circle');
+            $(this).addClass('active')
         }
         if ($(this).hasClass('triangle')) {
             $body.addClass('triangle')
-            console.log(123)
+            $(this).addClass('active')
         }
         if ($(this).hasClass('solid')) {
             $body.addClass('solid')
+            $(this).addClass('active')
         }
         if ($(this).hasClass('waves')) {
             $body.addClass('waves')
+            $(this).addClass('active')
         }
         else {
             return false

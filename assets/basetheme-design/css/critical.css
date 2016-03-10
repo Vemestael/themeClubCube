@@ -2799,6 +2799,17 @@ button {
 .navbar-dropdown__submenu.navbar__tint-wide:hover::before {
   left: 15px; }
 
+.navbar__tint-wide.active::before,
+.navbar__tint .clr-picker.active::before,
+.navbar__tint .pattern.active::before {
+  content: "\f00c";
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  font-family: "Font Awesome";
+  color: #fff;
+  line-height: 50px; }
+
 @media (min-width: 768px) {
   .header__sticky .navbar-brand {
     height: 30px;
@@ -4279,7 +4290,6 @@ button.mfp-arrow:hover:before {
   margin-top: 0; }
 
 .b-blog-inr__aside .b-blog-inr__img-wrap {
-  max-width: 260px;
   margin: 0 auto 0; }
 
 .b-blog-inr__img-wrap {
@@ -4291,7 +4301,9 @@ button.mfp-arrow:hover:before {
 @media (min-width: 768px) {
   .b-blog-inr__aside {
     float: right;
-    margin: 0 0 20px 20px; } }
+    margin: 0 0 20px 20px; }
+  .b-blog-inr__aside .b-blog-inr__img-wrap {
+    max-width: 260px; } }
 
 .b-aside-item {
   margin-bottom: 40px; }
