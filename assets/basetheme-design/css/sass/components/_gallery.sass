@@ -70,8 +70,18 @@
 
 .b-gallery__popup
   overflow: hidden
-  & > div
-    padding: 0
+
+.b-gallery__popup > div
+  position: relative
+  padding: 0
+  &::before
+    @include absolute-center-x-y()
+    content: ''
+    width: 30px
+    height: 50px
+    background: url('../images/bars.svg') no-repeat
+    background-size: 100%
+    background-position-y: center
 
 .b-gallery__popup a
   display: block
@@ -160,7 +170,19 @@ button.mfp-arrow:hover:before
 .mfp-fade.mfp-wrap.mfp-removing .mfp-arrow
   opacity: 0
 
-//.mfp-s-ready .mfp-preloader for loader
+.mfp-s-ready
+  position: relative
+
+.mfp-preloader
+  @include absolute-center-x-y()
+  content: ''
+  width: 50px
+  height: 70px
+  background: url('../images/bars.svg') no-repeat
+  background-size: 100%
+  background-position-y: center
+  text-indent: -9999px
+
 
 .b-gallery__border
   position: fixed

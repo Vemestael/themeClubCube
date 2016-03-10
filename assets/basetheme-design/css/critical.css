@@ -3771,8 +3771,25 @@ button {
 
 .b-gallery__popup {
   overflow: hidden; }
-  .b-gallery__popup > div {
-    padding: 0; }
+
+.b-gallery__popup > div {
+  position: relative;
+  padding: 0; }
+  .b-gallery__popup > div::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    content: '';
+    width: 30px;
+    height: 50px;
+    background: url("../images/bars.svg") no-repeat;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position-y: center; }
 
 .b-gallery__popup a {
   display: block;
@@ -3880,6 +3897,26 @@ button.mfp-arrow:hover:before {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content,
 .mfp-fade.mfp-wrap.mfp-removing .mfp-arrow {
   opacity: 0; }
+
+.mfp-s-ready {
+  position: relative; }
+
+.mfp-preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: '';
+  width: 50px;
+  height: 70px;
+  background: url("../images/bars.svg") no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position-y: center;
+  text-indent: -9999px; }
 
 .b-gallery__border {
   position: fixed;
