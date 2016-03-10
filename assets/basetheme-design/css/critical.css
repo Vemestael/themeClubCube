@@ -5158,7 +5158,7 @@ button.mfp-arrow:hover:before {
   content: counter(number);
   position: absolute;
   top: 2px;
-  left: -29px;
+  left: -27px;
   font-family: "PT Sans Bold", sans-serif; }
 
 .content > blockquote {
