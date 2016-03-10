@@ -149,7 +149,7 @@ blockquote::before {
 
 .c-box__link:hover,
 .b-gallery .c-box__link:hover,
-.c-box__inner:hover + .c-box__link-wrap-a .c-box__link {
+.c-box__inner:hover + h6 .c-box__link {
   color: #a82743; }
 
 .mega-menu__item-cont .b-form__btn {
