@@ -100,11 +100,22 @@ button
   padding: 8px 14px 8px 18px
   background-size: 20px
 
-.btn-icon--plus
-  background-image: url('../images/plus-icon.svg')
+.btn-icon__wrap
+  position: relative
+  display: inline-block
 
-.btn-icon--plus-wht
-  background-image: url('../images/plus-icon-wht.svg')
+.btn-icon__wrap svg
+  position: absolute
+  left: 20px
+  top: 17px
+  > path
+    transition: all 0.2s ease
+
+.btn-icon__wrap:hover a
+  color: #fff
+
+.btn-icon__wrap:hover svg path
+  stroke: #fff
 
 .btn-icon--refresh
   background-image: url('../images/refresh-icon.svg')
@@ -112,8 +123,6 @@ button
 .btn-icon--refresh-wht
   background-image: url("../images/refresh-icon-white.svg")
 
-.btn-icon--plus:before,
-.btn-icon--plus-wht:before,
 .btn-icon--refresh:before,
 .btn-icon--refresh-wht:before
   content: ''
@@ -127,27 +136,15 @@ button
   background-position: center
   background-size: 27px
 
-.btn-icon--plus:before
-  background-image: url('../images/plus-icon-wht.svg')
-
-.btn-icon--plus-wht:before
-  background-image: url('../images/plus-icon.svg')
-
 .btn-icon--refresh:before
   background-image: url("../images/refresh-icon-white.svg")
 
 .btn-icon--refresh-wht:before
   background-image: url("../images/refresh-icon.svg")
 
-.btn-icon--plus:hover:before,
-.btn-icon--plus-wht:hover:before,
 .btn-icon--refresh:hover:before,
 .btn-icon--refresh-wht:hover:before
   opacity: 1
-
-.btn--mini.btn-icon--plus:before,
-.btn--mini.btn-icon--plus-wht:before
-  background-size: auto
 
 .btn--mini.btn-icon--refresh:before,
 .btn--mini.btn-icon--refresh-wht:before
@@ -581,6 +578,7 @@ button
 
 .b-btn__item-dark
   background: $black-c
+
 
 @media (min-width: $screen-xm)
   .btn-pointer__sm

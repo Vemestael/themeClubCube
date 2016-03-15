@@ -88,9 +88,50 @@
 .b-tabs__nav-tabs li:nth-of-type(2):hover a path
   fill: #fff
 
+
+.b-tabs__nav-btn
+  padding: 0
+
+.b-tabs__nav-btn > li
+  display: inline-block
+  width: 85px
+  height: 35px
+  box-shadow: 0 0 0 2px $black-c inset
+  transition: all 0.2s ease
+  &:last-child
+    margin-left: -5px
+
+.b-tabs__nav-btn > li.active
+  background-color: $black-c
+
+.b-tabs__nav-btn > li.active a
+  color: #fff
+
+.b-tabs__nav-btn > li a
+  font-size: 14px
+  font-family: $second-font
+  color: #000
+  line-height: 35px
+  border-bottom: 0
+
+.b-tabs-btn .b-tabs__pane-item
+  margin-bottom: 10px
+
+.b-tabs-btn .b-tabs__pane-item:nth-of-type(2n+1)
+  clear: none
+
+.b-tabs-btn .b-tabs__pane-item:nth-of-type(2) .btn-icon__wrap
+  margin: 0 14px
+
+
+
 @media (min-width: $screen-sm)
   .b-tabs__content
     margin-bottom: 112px
+
+@media (min-width: $screen-md)
+  .b-tabs-btn .b-tabs__pane-item:nth-of-type(2) .btn-icon__wrap
+    margin: 0 11px
 
 @media (min-width: $screen-lg)
   .b-tabs__content
