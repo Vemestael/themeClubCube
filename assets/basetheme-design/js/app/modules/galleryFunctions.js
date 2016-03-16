@@ -52,6 +52,22 @@ appMakeBeCool.gateway.addClass('GalleryFunctions', function (properties, $, $win
         },
 
         _setup = function () {
+            // Bg color for b-container in button page
+            $('.b-tabs__nav-btn li').on('click', function () {
+                if($(this).hasClass('dark__bg')) {
+                    $('#bgClr').addClass('dark-bg');
+                    $('.b-tabs__nav li').css({
+                        boxShadow: '0 0 0 2px #FFFFFF inset'
+                    })
+                }
+                else {
+                    $('#bgClr').removeClass('dark-bg');
+                    $('.b-tabs__nav li').css({
+                        boxShadow: '0 0 0 2px #202020 inset'
+                    })
+                }
+            });
+
             _popupGlr();
             _fullScreenGlr();
         },

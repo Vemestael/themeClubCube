@@ -2024,6 +2024,18 @@ button {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
 
+.btn-icon__refresh svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.btn--mini svg {
+  width: 20px; }
+
 .btn-icon__wrap:hover a {
   color: #fff;
   background-color: #202020; }
@@ -3513,6 +3525,7 @@ button {
   display: inline-block;
   width: 85px;
   height: 35px;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 0 2px #202020 inset;
           box-shadow: 0 0 0 2px #202020 inset;
   -webkit-transition: all 0.2s ease;
@@ -3533,6 +3546,11 @@ button {
   color: #000;
   line-height: 35px;
   border-bottom: 0; }
+
+.b-tabs__nav-btn li:hover {
+  background-color: #202020; }
+  .b-tabs__nav-btn li:hover a {
+    color: #fff; }
 
 .b-tabs-btn .b-tabs__pane-item {
   margin-bottom: 10px; }
@@ -5741,6 +5759,23 @@ button.mfp-arrow:hover:before {
 
 .btn-pointer__wrap.btn-bg--act-e:hover svg path {
   fill: #5f584c; }
+
+.dark-bg {
+  background-color: #202020; }
+
+.btn-icon-wht a {
+  color: #fff;
+  border-color: #fff; }
+
+.btn-icon-wht svg path {
+  stroke: #fff; }
+
+.btn-icon-wht:hover a {
+  color: #202020;
+  background-color: #fff; }
+
+.btn-icon-wht:hover svg path {
+  stroke: #202020; }
 
 .b-footer {
   padding-top: 65px;

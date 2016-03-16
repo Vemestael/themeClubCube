@@ -96,10 +96,12 @@
   display: inline-block
   width: 85px
   height: 35px
+  background-color: #fff
   box-shadow: 0 0 0 2px $black-c inset
   transition: all 0.2s ease
   &:last-child
     margin-left: -5px
+
 
 .b-tabs__nav-btn > li.active
   background-color: $black-c
@@ -113,6 +115,11 @@
   color: #000
   line-height: 35px
   border-bottom: 0
+
+.b-tabs__nav-btn li:hover
+  background-color: $black-c
+  a
+    color: #fff
 
 .b-tabs-btn .b-tabs__pane-item
   margin-bottom: 10px
