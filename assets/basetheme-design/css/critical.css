@@ -3562,6 +3562,9 @@ button {
 .indent-btm {
   margin-bottom: 80px; }
 
+.b-tabs__nav-btn {
+  margin-bottom: 80px; }
+
 @media (min-width: 768px) {
   .b-tabs__content {
     margin-bottom: 112px; } }
