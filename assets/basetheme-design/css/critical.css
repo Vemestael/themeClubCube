@@ -5583,6 +5583,167 @@ button.mfp-arrow:hover:before {
     stroke: none;
     fill: #a82743; }
 
+.btn-info.btn--act-c span:nth-of-type(2) {
+  background-color: #cc0033; }
+  .btn-info.btn--act-c span:nth-of-type(2) svg path {
+    stroke: none;
+    fill: #cc0033; }
+
+.btn-info.btn--act-sc-c span:nth-of-type(2) {
+  background-color: #09b086; }
+  .btn-info.btn--act-sc-c span:nth-of-type(2) svg path {
+    stroke: none;
+    fill: #09b086; }
+
+.btn-info.btn--act-d span:nth-of-type(2) {
+  background-color: #f5ba2e; }
+  .btn-info.btn--act-d span:nth-of-type(2) svg path {
+    stroke: none;
+    fill: #f5ba2e; }
+
+.btn-info.btn--act-sc-d span:nth-of-type(2) {
+  background-color: #fd67a4; }
+  .btn-info.btn--act-sc-d span:nth-of-type(2) svg path {
+    stroke: none;
+    fill: #fd67a4; }
+
+.btn-info.btn--act-e span:nth-of-type(2) {
+  background-color: #c49548; }
+  .btn-info.btn--act-e span:nth-of-type(2) svg path {
+    stroke: none;
+    fill: #c49548; }
+
+.btn-info.btn--act-sc-e span:nth-of-type(2) {
+  background-color: #5f584c; }
+  .btn-info.btn--act-sc-e span:nth-of-type(2) svg path {
+    stroke: none;
+    fill: #5f584c; }
+
+.btn-pointer-b__wrap.btn-bg--act-a,
+.b-form__btn.btn-bg--act-a {
+  background-color: #c0d23e; }
+  .btn-pointer-b__wrap.btn-bg--act-a svg path,
+  .b-form__btn.btn-bg--act-a svg path {
+    fill: #c0d23e; }
+  .btn-pointer-b__wrap.btn-bg--act-a:hover,
+  .b-form__btn.btn-bg--act-a:hover {
+    background-color: #530d85; }
+    .btn-pointer-b__wrap.btn-bg--act-a:hover svg path,
+    .b-form__btn.btn-bg--act-a:hover svg path {
+      fill: #530d85; }
+
+.btn-pointer-b__wrap.btn-bg--act-b,
+.b-form__btn.btn-bg--act-b {
+  background-color: #e15e32; }
+  .btn-pointer-b__wrap.btn-bg--act-b svg path,
+  .b-form__btn.btn-bg--act-b svg path {
+    fill: #e15e32; }
+  .btn-pointer-b__wrap.btn-bg--act-b:hover,
+  .b-form__btn.btn-bg--act-b:hover {
+    background-color: #a82743; }
+    .btn-pointer-b__wrap.btn-bg--act-b:hover svg path,
+    .b-form__btn.btn-bg--act-b:hover svg path {
+      fill: #a82743; }
+
+.btn-pointer-b__wrap.btn-bg--act-c,
+.b-form__btn.btn-bg--act-c {
+  background-color: #cc0033; }
+  .btn-pointer-b__wrap.btn-bg--act-c svg path,
+  .b-form__btn.btn-bg--act-c svg path {
+    fill: #cc0033; }
+  .btn-pointer-b__wrap.btn-bg--act-c:hover,
+  .b-form__btn.btn-bg--act-c:hover {
+    background-color: #09b086; }
+    .btn-pointer-b__wrap.btn-bg--act-c:hover svg path,
+    .b-form__btn.btn-bg--act-c:hover svg path {
+      fill: #09b086; }
+
+.btn-pointer-b__wrap.btn-bg--act-d,
+.b-form__btn.btn-bg--act-d {
+  background-color: #f5ba2e; }
+  .btn-pointer-b__wrap.btn-bg--act-d svg path,
+  .b-form__btn.btn-bg--act-d svg path {
+    fill: #f5ba2e; }
+  .btn-pointer-b__wrap.btn-bg--act-d:hover,
+  .b-form__btn.btn-bg--act-d:hover {
+    background-color: #fd67a4; }
+    .btn-pointer-b__wrap.btn-bg--act-d:hover svg path,
+    .b-form__btn.btn-bg--act-d:hover svg path {
+      fill: #fd67a4; }
+
+.btn-pointer-b__wrap.btn-bg--act-e,
+.b-form__btn.btn-bg--act-e {
+  background-color: #c49548; }
+  .btn-pointer-b__wrap.btn-bg--act-e svg path,
+  .b-form__btn.btn-bg--act-e svg path {
+    fill: #c49548; }
+  .btn-pointer-b__wrap.btn-bg--act-e:hover,
+  .b-form__btn.btn-bg--act-e:hover {
+    background-color: #5f584c; }
+    .btn-pointer-b__wrap.btn-bg--act-e:hover svg path,
+    .b-form__btn.btn-bg--act-e:hover svg path {
+      fill: #5f584c; }
+
+.btn-pointer__wrap.btn-bg--act-a a {
+  background-color: #c0d23e; }
+
+.btn-pointer__wrap.btn-bg--act-a svg path {
+  fill: #c0d23e; }
+
+.btn-pointer__wrap.btn-bg--act-a:hover a {
+  background-color: #530d85; }
+
+.btn-pointer__wrap.btn-bg--act-a:hover svg path {
+  fill: #530d85; }
+
+.btn-pointer__wrap.btn-bg--act-b a {
+  background-color: #e15e32; }
+
+.btn-pointer__wrap.btn-bg--act-b svg path {
+  fill: #e15e32; }
+
+.btn-pointer__wrap.btn-bg--act-b:hover a {
+  background-color: #a82743; }
+
+.btn-pointer__wrap.btn-bg--act-b:hover svg path {
+  fill: #a82743; }
+
+.btn-pointer__wrap.btn-bg--act-c a {
+  background-color: #cc0033; }
+
+.btn-pointer__wrap.btn-bg--act-c svg path {
+  fill: #cc0033; }
+
+.btn-pointer__wrap.btn-bg--act-c:hover a {
+  background-color: #09b086; }
+
+.btn-pointer__wrap.btn-bg--act-c:hover svg path {
+  fill: #09b086; }
+
+.btn-pointer__wrap.btn-bg--act-d a {
+  background-color: #f5ba2e; }
+
+.btn-pointer__wrap.btn-bg--act-d svg path {
+  fill: #f5ba2e; }
+
+.btn-pointer__wrap.btn-bg--act-d:hover a {
+  background-color: #fd67a4; }
+
+.btn-pointer__wrap.btn-bg--act-d:hover svg path {
+  fill: #fd67a4; }
+
+.btn-pointer__wrap.btn-bg--act-e a {
+  background-color: #c49548; }
+
+.btn-pointer__wrap.btn-bg--act-e svg path {
+  fill: #c49548; }
+
+.btn-pointer__wrap.btn-bg--act-e:hover a {
+  background-color: #5f584c; }
+
+.btn-pointer__wrap.btn-bg--act-e:hover svg path {
+  fill: #5f584c; }
+
 .b-footer {
   padding-top: 65px;
   padding-bottom: 110px;
