@@ -2013,7 +2013,8 @@ button {
 
 .btn-icon__wrap {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 10px; }
 
 .btn-icon__wrap svg {
   position: absolute;
@@ -3552,14 +3553,14 @@ button {
   .b-tabs__nav-btn li:hover a {
     color: #fff; }
 
-.b-tabs-btn .b-tabs__pane-item {
-  margin-bottom: 10px; }
-
 .b-tabs-btn .b-tabs__pane-item:nth-of-type(2n+1) {
   clear: none; }
 
 .txt--centr {
   text-align: center; }
+
+.indent-btm {
+  margin-bottom: 80px; }
 
 @media (min-width: 768px) {
   .b-tabs__content {
@@ -5575,6 +5576,9 @@ button.mfp-arrow:hover:before {
 .clr-black {
   color: #202020; }
 
+.clr-white {
+  color: #fff; }
+
 .btn-info.btn--act-a span:nth-of-type(2) {
   background-color: #c0d23e; }
   .btn-info.btn--act-a span:nth-of-type(2) svg path {
@@ -5776,6 +5780,17 @@ button.mfp-arrow:hover:before {
 
 .btn-icon-wht:hover svg path {
   stroke: #202020; }
+
+.btn-slider.indent,
+.b-likes.indent,
+.btn.indent,
+.btn-pointer-b__wrap.indent,
+.btn-pointer__wrap.indent,
+.b-form__btn.indent {
+  margin-bottom: 20px; }
+
+.b-social.indent {
+  margin-bottom: 10px; }
 
 .b-footer {
   padding-top: 65px;
