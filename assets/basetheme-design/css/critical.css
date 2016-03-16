@@ -5805,7 +5805,13 @@ button.mfp-arrow:hover:before {
 
 .b-ntfound__wrap {
   position: relative;
-  min-height: 240px; }
+  min-height: 360px;
+  text-align: center; }
+
+.b-ntfound__ttl {
+  margin-top: 0;
+  font-size: 40px;
+  font-family: "PT Sans Caption Bold", sans-serif; }
 
 .b-ntfound__img-wrap {
   position: absolute;
@@ -5814,18 +5820,14 @@ button.mfp-arrow:hover:before {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 70%;
-  max-width: 300px; }
+          transform: translate(-50%, -50%); }
   .b-ntfound__img-wrap img {
     width: 100%;
     display: block; }
 
 @media (min-width: 768px) {
   .b-ntfound__wrap {
-    min-height: 500px; }
-  .b-ntfound__img-wrap {
-    max-width: 400px; } }
+    min-height: 500px; } }
 
 .b-footer {
   padding-top: 65px;
