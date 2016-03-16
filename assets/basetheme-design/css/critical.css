@@ -2025,7 +2025,8 @@ button {
     transition: all 0.2s ease; }
 
 .btn-icon__wrap:hover a {
-  color: #fff; }
+  color: #fff;
+  background-color: #202020; }
 
 .btn-icon__wrap:hover svg path {
   stroke: #fff; }
@@ -3540,6 +3541,9 @@ button {
 
 .b-tabs-btn .b-tabs__pane-item:nth-of-type(2) .btn-icon__wrap {
   margin: 0 14px; }
+
+.txt--centr {
+  text-align: center; }
 
 @media (min-width: 768px) {
   .b-tabs__content {
