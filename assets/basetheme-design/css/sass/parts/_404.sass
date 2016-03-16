@@ -1,3 +1,23 @@
 //
 // 404
 //=========================================
+
+.b-ntfound__wrap
+  position: relative
+  min-height: 240px
+
+.b-ntfound__img-wrap
+  @include absolute-center-x-y
+  width: 70%
+  max-width: 300px
+  img
+    width: 100%
+    display: block
+
+
+@media (min-width: $screen-sm)
+  .b-ntfound__wrap
+    min-height: 500px
+
+  .b-ntfound__img-wrap
+    max-width: 400px

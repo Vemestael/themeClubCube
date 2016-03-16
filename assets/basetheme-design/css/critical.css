@@ -1671,6 +1671,9 @@ iframe {
 .b-content--bg-c {
   background-color: #202020; }
 
+.b-content--bg-clr {
+  background-color: #e8e8e8; }
+
 @media (min-width: 768px) {
   .container {
     padding-right: 31px;
@@ -5012,7 +5015,8 @@ button.mfp-arrow:hover:before {
 .mega-menu__link-btn > b,
 .mega-menu__link-fdback > b,
 .mega-menu__link-tmtable > b,
-.mega-menu__link-rpscol > b {
+.mega-menu__link-rpscol > b,
+.mega-menu__link-notfound > b {
   font-family: "PT Sans Bold", sans-serif; }
   .mega-menu__link-media > b::before,
   .mega-menu__link-tabs > b::before,
@@ -5020,7 +5024,8 @@ button.mfp-arrow:hover:before {
   .mega-menu__link-btn > b::before,
   .mega-menu__link-fdback > b::before,
   .mega-menu__link-tmtable > b::before,
-  .mega-menu__link-rpscol > b::before {
+  .mega-menu__link-rpscol > b::before,
+  .mega-menu__link-notfound > b::before {
     content: '';
     padding-right: 10px;
     font-family: "Font Awesome"; }
@@ -5045,6 +5050,9 @@ button.mfp-arrow:hover:before {
 
 .mega-menu__link-rpscol > b::before {
   content: '\f0db'; }
+
+.mega-menu__link-notfound > b::before {
+  content: "\f071"; }
 
 .mega-menu__events {
   margin-top: 30px;
@@ -5794,6 +5802,30 @@ button.mfp-arrow:hover:before {
 
 .b-social.indent {
   margin-bottom: 10px; }
+
+.b-ntfound__wrap {
+  position: relative;
+  min-height: 240px; }
+
+.b-ntfound__img-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 300px; }
+  .b-ntfound__img-wrap img {
+    width: 100%;
+    display: block; }
+
+@media (min-width: 768px) {
+  .b-ntfound__wrap {
+    min-height: 500px; }
+  .b-ntfound__img-wrap {
+    max-width: 400px; } }
 
 .b-footer {
   padding-top: 65px;
