@@ -1980,7 +1980,7 @@ button {
   position: relative;
   display: inline-block;
   margin: 5px;
-  padding: 12px 26px 12px 44px;
+  padding: 12px 22px 12px 44px;
   border: 2px solid #202020;
   -webkit-background-size: 27px 27px;
           background-size: 27px;
@@ -2293,7 +2293,8 @@ button {
 .btn-info {
   min-height: 40px;
   padding: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  overflow: hidden; }
 
 .btn-info b {
   line-height: 12px; }
@@ -3539,19 +3540,12 @@ button {
 .b-tabs-btn .b-tabs__pane-item:nth-of-type(2n+1) {
   clear: none; }
 
-.b-tabs-btn .b-tabs__pane-item:nth-of-type(2) .btn-icon__wrap {
-  margin: 0 14px; }
-
 .txt--centr {
   text-align: center; }
 
 @media (min-width: 768px) {
   .b-tabs__content {
     margin-bottom: 112px; } }
-
-@media (min-width: 992px) {
-  .b-tabs-btn .b-tabs__pane-item:nth-of-type(2) .btn-icon__wrap {
-    margin: 0 11px; } }
 
 @media (min-width: 1280px) {
   .b-tabs__content {
