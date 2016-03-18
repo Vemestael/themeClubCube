@@ -110,7 +110,6 @@ $(document).ready(function () {
         if (ptrn == "circle") {
             $('body').removeClass('circle triangle solid waves').addClass('circle body-boxed');
             $(this).addClass('active');
-            $('#fullWide').removeClass('wide');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("ptrn");
@@ -152,7 +151,6 @@ $(document).ready(function () {
                 if (localStorage.getItem("ptrn") == ('circle')) {
                     $('body').removeClass('circle triangle solid waves').addClass('circle body-boxed');
                     $('.circle').addClass('active');
-                    $('#fullWide').removeClass('wide');
                 }
                 if (localStorage.getItem("ptrn") == ('triangle')) {
                     $('body').removeClass('circle triangle solid waves').addClass('triangle body-boxed');
@@ -177,7 +175,6 @@ $(document).ready(function () {
 
     $('#fullWide').on('click', function () {
         var wide = $(this).hasClass('wide');
-        $('#fullWide').addClass('wide');
 
         if (wide == true) {
             $('body').removeClass('body-boxed circle triangle solid waves');
