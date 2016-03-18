@@ -188,6 +188,11 @@ blockquote::before {
 .b-partners__img-wrap a:hover {
   background-color: rgba(9, 176, 134, 0.66); }
 
+.link:hover,
+.b-footer__contacts-phones li a:hover {
+  color: #09b086;
+  border-color: #09b086; }
+
 @media (min-width: 768px) {
   .main-slide__item-inr {
     background-color: #09b086; }
