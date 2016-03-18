@@ -164,13 +164,9 @@
   padding-left: 20px
 
 .navbar-dropdown__submenu.navbar__tint-wide
-  padding-left: 0
+  padding-left: 20px
   & > a
     padding-left: 20px
-
-.navbar-dropdown__submenu.navbar__tint-wide.active
-  &::before
-    left: 15px
 
 .navbar__tint-wide:hover::before,
 .navbar__tint .clr-picker:hover::before,
@@ -182,9 +178,6 @@
   font-family: $fa
   color: #fff
   line-height: 50px
-
-.navbar-dropdown__submenu.navbar__tint-wide:hover::before
-  left: 15px
 
 .navbar__tint-wide.active::before,
 .navbar__tint .clr-picker.active::before,
@@ -367,8 +360,12 @@
   .navbar__tint > a .fa-angle-right
     display: none
 
-  .navbar-dropdown__submenu.navbar__tint-wide > a
+  .navbar-dropdown__submenu.navbar__tint-wide
     padding-left: 35px
+
+  .navbar-dropdown__submenu.navbar__tint-wide.active::before,
+  .navbar-dropdown__submenu.navbar__tint-wide:hover::before
+    left: 15px
 
 @media (min-width: $screen-xl)
 

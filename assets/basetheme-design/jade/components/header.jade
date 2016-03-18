@@ -28,18 +28,19 @@ header#header.header
               a(href="gallery.html") gallery list
             li
               a(href="gallery-open.html") gallery open
-            //li.navbar-dropdown__submenu
-            //  span view
-            //    i.fa.fa-angle-right
-            //  ul.navbar-list__inner.dl-submenu
-            //    li
-            //      a(href="#") regular
-            //    li
-            //      a(href="#") white gallery
+            //-
+                li.navbar-dropdown__submenu
+                span view
+                  i.fa.fa-angle-right
+                ul.navbar-list__inner.dl-submenu
+                  li
+                    a(href="#") regular
+                  li
+                    a(href="#") white gallery
 
-        // li
+        //- li
           a(href="#") About
-        // li
+        //- li
           a(href="#") Residents
         li
           a(href="#") Blog
@@ -55,7 +56,7 @@ header#header.header
               a(href="blog-open-sidebar.html") No Title Image & Right Sidebar
             li
               a(href="blog-open-img-sidebar.html") Title Image & Right Sidebar
-        // li
+        //- li
           a(href="#") Contacts
         li.navbar__item-mega-menu
           a(href="#") Elements
@@ -166,19 +167,19 @@ header#header.header
             span.fa.fa-tint
             i.fa.fa-angle-right
           ul.navbar-dropdown__menu.dl-submenu
-            li.navbar__tint-wide.active
-              a(href="index.html") wide
+            li#fullWide.navbar__tint-wide.active.wide
+              span wide
             li.navbar-dropdown__submenu.navbar__tint-wide
-              a(href="index-boxed.html") boxed
+              span boxed
                 i.fa.fa-angle-right
               ul.navbar-list__inner.dl-submenu
-                li.pattern.circle
+                li(data-ptrn="circle").pattern.circle
                   span Circle pattern
-                li.pattern.triangle
+                li(data-ptrn="triangle").pattern.triangle
                   span Triangle pattern
-                li.pattern.solid
+                li(data-ptrn="solid").pattern.solid
                   span Solid Color
-                li.pattern.waves
+                li(data-ptrn="waves").pattern.waves
                   span Waves pattern
 
             li.navbar__hr-wrap

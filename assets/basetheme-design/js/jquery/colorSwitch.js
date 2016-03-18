@@ -102,31 +102,111 @@ $(document).ready(function () {
 
     // Change pattern for body in boxed
 
-   $ptrn.on('click', function () {
-       var $body = $('body');
-       $body.removeClass('circle triangle solid waves');
-       $('.pattern').removeClass('active');
+    $ptrn.on('click', function () {
+        var ptrn = $(this).data('ptrn');
 
-        if ($(this).hasClass('circle')) {
-            $body.addClass('circle');
-            $(this).addClass('active')
+        $ptrn.removeClass('active');
+
+        if (ptrn == "circle") {
+            $('body').removeClass('circle triangle solid waves').addClass('circle body-boxed');
+            $(this).addClass('active');
+            $('#fullWide').removeClass('wide');
+
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("ptrn");
+                localStorage.setItem("ptrn", ptrn);
+            }
         }
-        if ($(this).hasClass('triangle')) {
-            $body.addClass('triangle')
-            $(this).addClass('active')
+        if (ptrn == "triangle") {
+            $('body').removeClass('circle triangle solid waves').addClass('triangle body-boxed');
+
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("ptrn");
+                localStorage.setItem("ptrn", ptrn);
+            }
         }
-        if ($(this).hasClass('solid')) {
-            $body.addClass('solid')
-            $(this).addClass('active')
+        if (ptrn == "solid") {
+            $('body').removeClass('circle triangle solid waves').addClass('solid body-boxed');
+
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("ptrn");
+                localStorage.setItem("ptrn", ptrn);
+            }
         }
-        if ($(this).hasClass('waves')) {
-            $body.addClass('waves')
-            $(this).addClass('active')
+        if (ptrn == "waves") {
+            $('body').removeClass('circle triangle solid waves').addClass('waves body-boxed');
+
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("ptrn");
+                localStorage.setItem("ptrn", ptrn);
+            }
         }
-        else {
-            return false
+
+    });
+
+    var loadPtrn = function () {
+        if(typeof(Storage) !== "undefined") {
+            setTimeout( function() {
+                //$clrPicker.removeClass('active');
+
+                if (localStorage.getItem("ptrn") == ('circle')) {
+                    $('body').removeClass('circle triangle solid waves').addClass('circle body-boxed');
+                    $('.circle').addClass('active');
+                    $('#fullWide').removeClass('wide');
+                }
+                if (localStorage.getItem("ptrn") == ('triangle')) {
+                    $('body').removeClass('circle triangle solid waves').addClass('triangle body-boxed');
+                    $('.triangle').addClass('active')
+                }
+                if (localStorage.getItem("ptrn") == ('solid')) {
+                    $('body').removeClass('circle triangle solid waves').addClass('solid body-boxed');
+                    $('.solid').addClass('active')
+                }
+                if (localStorage.getItem("ptrn") == ('waves')) {
+                    $('body').removeClass('circle triangle solid waves').addClass('waves body-boxed');
+                    $('.waves').addClass('active')
+                }
+
+
+            }, 50)
+        } else {
+            alert('Sorry! No Web Storage support..')
+        }
+    };
+    loadPtrn();
+
+    $('#fullWide').on('click', function () {
+        var wide = $(this).hasClass('wide');
+
+        if (wide == true) {
+            $('body').removeClass('body-boxed circle triangle solid waves');
+
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("wide");
+                localStorage.setItem("wide", wide);
+            }
         }
     });
 
+    var loadWide = function () {
+        if(typeof(Storage) !== "undefined") {
+            setTimeout( function() {
+
+                if (localStorage.getItem("wide")) {
+                    $('body').removeClass('body-boxed circle triangle solid waves');
+                }
+
+            }, 50)
+        } else {
+            alert('Sorry! No Web Storage support..')
+        }
+    };
+    loadWide();
+
+
+    $('.navbar__tint-wide').on('click', function (el) {
+        $('.navbar__tint-wide').removeClass('active');
+        $(this).toggleClass('active');
+    });
 
 });
