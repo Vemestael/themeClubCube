@@ -177,6 +177,7 @@ $(document).ready(function () {
 
     $('#fullWide').on('click', function () {
         var wide = $(this).hasClass('wide');
+        $('#fullWide').addClass('wide');
 
         if (wide == true) {
             $('body').removeClass('body-boxed circle triangle solid waves');
