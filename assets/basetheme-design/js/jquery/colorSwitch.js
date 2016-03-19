@@ -118,6 +118,7 @@ $(document).ready(function () {
         }
         if (ptrn == "triangle") {
             $('body').removeClass('circle triangle solid waves').addClass('triangle body-boxed');
+            $(this).addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("ptrn");
@@ -126,6 +127,7 @@ $(document).ready(function () {
         }
         if (ptrn == "solid") {
             $('body').removeClass('circle triangle solid waves').addClass('solid body-boxed');
+            $(this).addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("ptrn");
@@ -134,6 +136,7 @@ $(document).ready(function () {
         }
         if (ptrn == "waves") {
             $('body').removeClass('circle triangle solid waves').addClass('waves body-boxed');
+            $(this).addClass('active');
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("ptrn");
@@ -154,15 +157,15 @@ $(document).ready(function () {
                 }
                 if (localStorage.getItem("ptrn") == ('triangle')) {
                     $('body').removeClass('circle triangle solid waves').addClass('triangle body-boxed');
-                    $('.triangle').addClass('active')
+                    $('.triangle').addClass('active');
                 }
                 if (localStorage.getItem("ptrn") == ('solid')) {
                     $('body').removeClass('circle triangle solid waves').addClass('solid body-boxed');
-                    $('.solid').addClass('active')
+                    $('.solid').addClass('active');
                 }
                 if (localStorage.getItem("ptrn") == ('waves')) {
                     $('body').removeClass('circle triangle solid waves').addClass('waves body-boxed');
-                    $('.waves').addClass('active')
+                    $('.waves').addClass('active');
                 }
 
 
