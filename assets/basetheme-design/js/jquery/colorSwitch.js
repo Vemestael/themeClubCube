@@ -61,6 +61,15 @@ $(document).ready(function () {
                 localStorage.setItem("skin", skin);
             }
         }
+        if (skin == "rose") {
+            $linkItm.attr('href', 'css/skins/clr-' + skin + '-serenity.css');
+            $('.rose').addClass('active');
+
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("skin");
+                localStorage.setItem("skin", skin);
+            }
+        }
     });
 
     var loadSkin = function () {
@@ -88,6 +97,10 @@ $(document).ready(function () {
                 if (localStorage.getItem("skin") == ('brown')) {
                     $linkItm.attr('href', 'css/skins/clr-brown-gray.css');
                     $('.brown').addClass('active');
+                }
+                if (localStorage.getItem("skin") == ('rose')) {
+                    $linkItm.attr('href', 'css/skins/clr-rose-serenity.css');
+                    $('.rose').addClass('active');
                 }
 
             }, 50)
