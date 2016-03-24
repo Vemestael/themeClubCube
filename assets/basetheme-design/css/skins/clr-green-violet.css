@@ -196,7 +196,7 @@ blockquote::before {
 @media (min-width: 768px) {
   .main-slide__item-inr {
     background-color: #530d85; }
-  .main-slide__item-b .main-slide__item-inr {
+  .main-slide__item-a .main-slide__item-inr {
     background-color: rgba(83, 13, 133, 0.7); } }
 
 @media (min-width: 1280px) {

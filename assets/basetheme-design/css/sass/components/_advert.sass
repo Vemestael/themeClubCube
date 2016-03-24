@@ -5,8 +5,8 @@
   overflow: hidden
 
 .main-slide,
-.main-slide__item-a,
-.main-slide__item-b
+.main-slide__item-b,
+.main-slide__item-a
   position: relative
   min-height: 350px
 
@@ -14,8 +14,8 @@
   @extend %bg-images
   display: none
 
-.main-slide__item-a,
-.main-slide__item-b
+.main-slide__item-b,
+.main-slide__item-a
   padding-top: 80px
   color: #fff
 
@@ -59,21 +59,21 @@
   transition: all 0.2s ease
 
 //Second block
-.main-slide__item-b::after
+.main-slide__item-a::after
   @include absolute-center
   content: ''
   z-index: -1
 
-.main-slide__item-b .main-slide__img-wrap
+.main-slide__item-a .main-slide__img-wrap
   @extend %bg-images
   z-index: -1
 
-.main-slide__item-b .main-slide__img-wrap::after
+.main-slide__item-a .main-slide__img-wrap::after
   @include absolute-center
   content: ''
   background-color: rgba(15, 8, 9, 0.33)
 
-.main-slide__item-b .main-slide__s1-ttl
+.main-slide__item-a .main-slide__s1-ttl
   max-width: 260px
 
 .main-slide__date-wrap
@@ -124,21 +124,21 @@
   transition: none
 
 @media (min-width: 480px)
-  .main-slide__item-b .main-slide__s1-ttl
+  .main-slide__item-a .main-slide__s1-ttl
     max-width: 360px
 
 @media (min-width: $screen-sm)
   .main-slide,
-  .main-slide__item-a,
-  .main-slide__item-b
+  .main-slide__item-b,
+  .main-slide__item-a
     min-height: 720px
 
-  .main-slide__item-a,
-  .main-slide__item-b
+  .main-slide__item-b,
+  .main-slide__item-a
     padding-top: 150px
     background: transparent
 
-  .main-slide__item-a
+  .main-slide__item-b
     text-align: center
 
   .main-slide__bg-wrap
@@ -204,32 +204,32 @@
     line-height: 50px
 
   //Second block
-  .main-slide__item-b::after
+  .main-slide__item-a::after
     display: none
 
-  .main-slide__item-b .bg-image::after
+  .main-slide__item-a .bg-image::after
     @include absolute-center
     background-color: rgba(0, 0, 0, 0.2)
     background-image: radial-gradient(circle farthest-corner at center top,rgba(0, 0, 0, 0) 62%,rgb(0, 0, 0) 100%)
     content: ''
 
-  .main-slide__item-b .main-slide__item-inr
+  .main-slide__item-a .main-slide__item-inr
     min-height: 535px
     padding-left: 45px
 
-  .main-slide__item-b .main-slide__s1-ttl
+  .main-slide__item-a .main-slide__s1-ttl
     max-width: 420px
 
-  .main-slide__item-b .main-slide__item-inr p
+  .main-slide__item-a .main-slide__item-inr p
     padding-left: 0
 
   .b-likes.b-likes--indent
     left: 0
 
-  .main-slide__item-b .date-lg
+  .main-slide__item-a .date-lg
     padding-bottom: 0
 
-  .main-slide__item-b .date-lg__dt
+  .main-slide__item-a .date-lg__dt
     font-size: 60px
 
   .main-slide__date-wrap
@@ -272,11 +272,11 @@
 
 @media (min-width: $screen-md)
   .main-slide,
-  .main-slide__item-a,
-  .main-slide__item-b
+  .main-slide__item-b,
+  .main-slide__item-a
     min-height: 688px
 
-  .main-slide__item-a
+  .main-slide__item-b
     padding-top: 170px
 
   .main-slide__item-inr
@@ -293,14 +293,14 @@
     right: -5px
 
   //Second block
-  .main-slide__item-b .main-slide__s1-ttl
+  .main-slide__item-a .main-slide__s1-ttl
     max-width: 70%
     margin: 0
 
-  .main-slide__item-b
+  .main-slide__item-a
     padding-top: 195px
 
-  .main-slide__item-b .main-slide__item-inr
+  .main-slide__item-a .main-slide__item-inr
     min-height: 425px
 
   .main-slide__btn-item

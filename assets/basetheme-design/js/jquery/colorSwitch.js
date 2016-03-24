@@ -61,15 +61,6 @@ $(document).ready(function () {
                 localStorage.setItem("skin", skin);
             }
         }
-        if (skin == "rose") {
-            $linkItm.attr('href', 'css/skins/clr-' + skin + '-serenity.css');
-            $('.rose').addClass('active');
-
-            if(typeof(Storage) !== "undefined") {
-                localStorage.removeItem("skin");
-                localStorage.setItem("skin", skin);
-            }
-        }
     });
 
     var loadSkin = function () {
@@ -98,14 +89,10 @@ $(document).ready(function () {
                     $linkItm.attr('href', 'css/skins/clr-brown-gray.css');
                     $('.brown').addClass('active');
                 }
-                if (localStorage.getItem("skin") == ('rose')) {
-                    $linkItm.attr('href', 'css/skins/clr-rose-serenity.css');
-                    $('.rose').addClass('active');
-                }
 
             }, 50)
         } else {
-            alert('Sorry! No Web Storage support..')
+            console.log('Sorry! No Web Storage support..')
         }
     };
 
@@ -184,7 +171,7 @@ $(document).ready(function () {
 
             }, 50)
         } else {
-            alert('Sorry! No Web Storage support..')
+            console.log('Sorry! No Web Storage support..')
         }
     };
     loadPtrn();
@@ -194,6 +181,9 @@ $(document).ready(function () {
 
         if (wide == true) {
             $('body').removeClass('body-boxed circle triangle solid waves');
+            if ($('.wide').hasClass('active')) {
+                $('.pattern').removeClass('active')
+            }
 
             if(typeof(Storage) !== "undefined") {
                 localStorage.removeItem("wide");
@@ -208,11 +198,14 @@ $(document).ready(function () {
 
                 if (localStorage.getItem("wide")) {
                     $('body').removeClass('body-boxed circle triangle solid waves');
+                    if ($('.wide').hasClass('active')) {
+                        $('.pattern').removeClass('active')
+                    }
                 }
 
             }, 50)
         } else {
-            alert('Sorry! No Web Storage support..')
+            console.log('Sorry! No Web Storage support..')
         }
     };
     loadWide();
@@ -221,6 +214,15 @@ $(document).ready(function () {
     $('.navbar__tint-wide').on('click', function (el) {
         $('.navbar__tint-wide').removeClass('active');
         $(this).toggleClass('active');
+
+        deleteClass()
     });
+
+    var deleteClass = function () {
+        if ($('.wide').hasClass('active')) {
+            $('.pattern').removeClass('active')
+        }
+    };
+
 
 });

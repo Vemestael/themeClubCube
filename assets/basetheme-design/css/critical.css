@@ -198,7 +198,7 @@ th {
 /**
  * Mixins #mixins
  */
-.c-headlines__img-wrap, .main-slide__bg-wrap, .main-slide__item-b .main-slide__img-wrap, .b-gallery__img-wrap, .b-box__img-wrap, .b-promo-sc__img-wrap {
+.c-headlines__img-wrap, .main-slide__bg-wrap, .main-slide__item-a .main-slide__img-wrap, .b-gallery__img-wrap, .b-box__img-wrap, .b-promo-sc__img-wrap {
   position: absolute;
   top: 0;
   left: 0;
@@ -3109,16 +3109,16 @@ button {
   overflow: hidden; }
 
 .main-slide,
-.main-slide__item-a,
-.main-slide__item-b {
+.main-slide__item-b,
+.main-slide__item-a {
   position: relative;
   min-height: 350px; }
 
 .main-slide__bg-wrap {
   display: none; }
 
-.main-slide__item-a,
-.main-slide__item-b {
+.main-slide__item-b,
+.main-slide__item-a {
   padding-top: 80px;
   color: #fff; }
 
@@ -3165,7 +3165,7 @@ button {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.main-slide__item-b::after {
+.main-slide__item-a::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -3175,10 +3175,10 @@ button {
   content: '';
   z-index: -1; }
 
-.main-slide__item-b .main-slide__img-wrap {
+.main-slide__item-a .main-slide__img-wrap {
   z-index: -1; }
 
-.main-slide__item-b .main-slide__img-wrap::after {
+.main-slide__item-a .main-slide__img-wrap::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -3188,7 +3188,7 @@ button {
   content: '';
   background-color: rgba(15, 8, 9, 0.33); }
 
-.main-slide__item-b .main-slide__s1-ttl {
+.main-slide__item-a .main-slide__s1-ttl {
   max-width: 260px; }
 
 .main-slide__date-wrap {
@@ -3247,19 +3247,19 @@ button {
   transition: none; }
 
 @media (min-width: 480px) {
-  .main-slide__item-b .main-slide__s1-ttl {
+  .main-slide__item-a .main-slide__s1-ttl {
     max-width: 360px; } }
 
 @media (min-width: 768px) {
   .main-slide,
-  .main-slide__item-a,
-  .main-slide__item-b {
+  .main-slide__item-b,
+  .main-slide__item-a {
     min-height: 720px; }
-  .main-slide__item-a,
-  .main-slide__item-b {
+  .main-slide__item-b,
+  .main-slide__item-a {
     padding-top: 150px;
     background: transparent; }
-  .main-slide__item-a {
+  .main-slide__item-b {
     text-align: center; }
   .main-slide__bg-wrap {
     display: block;
@@ -3318,9 +3318,9 @@ button {
     display: block; }
   .main-slide .btn-pointer__wrap .btn-pointer {
     line-height: 50px; }
-  .main-slide__item-b::after {
+  .main-slide__item-a::after {
     display: none; }
-  .main-slide__item-b .bg-image::after {
+  .main-slide__item-a .bg-image::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -3332,18 +3332,18 @@ button {
     background-image: -o-radial-gradient(circle farthest-corner at center top, transparent 62%, black 100%);
     background-image: radial-gradient(circle farthest-corner at center top, transparent 62%, black 100%);
     content: ''; }
-  .main-slide__item-b .main-slide__item-inr {
+  .main-slide__item-a .main-slide__item-inr {
     min-height: 535px;
     padding-left: 45px; }
-  .main-slide__item-b .main-slide__s1-ttl {
+  .main-slide__item-a .main-slide__s1-ttl {
     max-width: 420px; }
-  .main-slide__item-b .main-slide__item-inr p {
+  .main-slide__item-a .main-slide__item-inr p {
     padding-left: 0; }
   .b-likes.b-likes--indent {
     left: 0; }
-  .main-slide__item-b .date-lg {
+  .main-slide__item-a .date-lg {
     padding-bottom: 0; }
-  .main-slide__item-b .date-lg__dt {
+  .main-slide__item-a .date-lg__dt {
     font-size: 60px; }
   .main-slide__date-wrap {
     top: 25px;
@@ -3383,10 +3383,10 @@ button {
 
 @media (min-width: 992px) {
   .main-slide,
-  .main-slide__item-a,
-  .main-slide__item-b {
-    min-height: 688px; }
+  .main-slide__item-b,
   .main-slide__item-a {
+    min-height: 688px; }
+  .main-slide__item-b {
     padding-top: 170px; }
   .main-slide__item-inr {
     max-width: 990px;
@@ -3398,12 +3398,12 @@ button {
     margin: auto; }
   .main-slide__link-wrap {
     right: -5px; }
-  .main-slide__item-b .main-slide__s1-ttl {
+  .main-slide__item-a .main-slide__s1-ttl {
     max-width: 70%;
     margin: 0; }
-  .main-slide__item-b {
+  .main-slide__item-a {
     padding-top: 195px; }
-  .main-slide__item-b .main-slide__item-inr {
+  .main-slide__item-a .main-slide__item-inr {
     min-height: 425px; }
   .main-slide__btn-item {
     width: 908px; }
