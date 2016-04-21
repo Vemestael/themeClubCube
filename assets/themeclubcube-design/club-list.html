@@ -25,6 +25,7 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="js/jquery/plugins/slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/club.css">
   <link rel="stylesheet" href="css/gold-color.css">
   <link rel="stylesheet" href="css/basketball-color.css">
   <link rel="stylesheet" href="css/blueberry-color.css">
@@ -56,9 +57,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <span class="home-btn">Manual</span>
+            <span class="home-btn">Blog</span>
           </div>
-
           <a href="index.html" class="navbar-brand first">
             <img src="http://placehold.it/86x30" alt="" class="site-logo">
           </a>
@@ -104,12 +104,12 @@
                 </li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="bloglist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">Blog<b class="caret"></b>
                                 </a>
               <ul class="dropdown-menu">
-                <li class="first">
-                  <a href="blog.html">Blog</a>
+                <li class="first active">
+                  <span>Blog</span>
                 </li>
                 <li>
                   <a href="blog2.html">Blog ver.2</a>
@@ -128,16 +128,16 @@
                 </li>
               </ul>
             </li>
-            <li class="active dropdown">
+            <li class=" dropdown">
               <a href="aboutlist" class="dropdown-toggle main-heading-a" data-toggle="dropdown">About template<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="first">
                   <a href="feature.html">Features</a>
                 </li>
                 <li>
-                  <span>Manual</span>
+                  <a href="manual.html">Manual</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="404.html">404</a>
                 </li>
                 <li class="last">
@@ -172,51 +172,144 @@
       </div>
     </div>
   </header>
-  <section class="content-header white-img">
-    <div class="container z-top">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <h1 class="content-h1 text-left">Features</h1>
+  <section class="all-blogs blog">
+    <div class="container">
+      <div class="row head">
+        <div class="col-sm-6 col-md-6 col-lg-6 all-blogs-h1">
+          <h1>Clubs</h1>
+          <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li>Clubs</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
-  <div class="main-content main-content__grey-border">
-    <div class="container text-contain">
+  <main>
+    <div class="container gr-bg all-blogs-container">
       <div class="row">
-        <main class="col-lg-12 col-md-12 col-sm-12 content-main">
-          <div class="content-page">
-            <div class="page-text">
-              <p>All template settings can be found in the "System Setting", section "themeclubcube".</p>
-              <h2>Setting up the main page</h2>
-              <p>These 5 parameters corresponding for setting up the main page:</p>
-              <ul>
-                <li>style_events_promo_slider</li>
-                <li>style_index_blog_list</li>
-                <li>style_index_events_list</li>
-                <li>style_events_time_format</li>
-                <li>style_index_gallery_list</li>
-              </ul>
-              <h4>style_events_promo_slider</h4>
-              <p>Slider has two states: a large (stretched to full screen) and fixed size. Changing this setting, you can select your desired option.</p>
-              <h4>style_index_blog_list</h4>
-              <p>Blog entries are 2 types of design: tiles without images and large previews (full width of the tile).</p>
-              <h4>style_index_events_list</h4>
-              <p>Events can be designed in 2 different styles: tiles with a picture in the background and in the form of tickets.</p>
-              <h4>style_events_time_format</h4>
-              <p>This setting affects the style of the time for the event, it can be in the format of am/pm or 24 hours.</p>
-              <h4>style_index_gallery_list</h4>
-              <p>Setting the gallery output. The gallery can be displayed as a list of small tiles on a colored background, or as a slider with large thumbs.</p>
-              <h2>Google Analytics settings</h2>
-              <p>To activate the google analytics need to register your Tracking ID to set up "ga_tracking_id".</p>
-              <h2>Color sheme setting</h2>
-              <p>Setting "color_scheme". Options: yellow, turbo, max-hurricane, mint</p>
-            </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Imperia loundge</h5>
           </div>
-        </main>
+          <div data-bgimage="../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Cuba</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">"Rasputin club"</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Cuba</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">"Rasputin club"</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Imperia loundge</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Cuba</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">"Rasputin club"</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Imperia loundge</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Cuba</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">"Rasputin club"</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
+        <div class="b-promo-sc__item col-xs-12 col-sm-4">
+          <div class="b-promo-sc__cont">
+            <h5 class="s5-heading">Imperia loundge</h5>
+          </div>
+          <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+          <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
+        </div>
       </div>
     </div>
-  </div>
+    <!--        </div>-->
+    <div class="container">
+      <div class="rows paging single-paging">
+        <a href="#" class="left-pag sm off">
+          <div class="pad-arr"><i></i>
+          </div>
+          <div class="pad-text">
+            <div class="pad-title">Prev</div>
+          </div>
+        </a>
+        <ul class="middle-paging">
+          <li><a href="#">1</a>
+          </li>
+          <li class="off"><span>2</span>
+          </li>
+          <li><a href="#">3</a>
+          </li>
+          <li><a href="#">4</a>
+          </li>
+          <li><a href="#">5</a>
+          </li>
+          <li class="dots-pagination"><span>...</span>
+          </li>
+          <li class="last"><a href="#">225</a>
+          </li>
+        </ul>
+        <a href="#" class="right-pag sm">
+          <div class="pad-arr"><i></i>
+          </div>
+          <div class="pad-text">
+            <div class="pad-title">Next</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
   <footer class="contact-us">
     <div class="container">
       <div class="row">
@@ -229,52 +322,37 @@
             </div>
           </div>
           <address>
-                            <ul class="address-list">
-                                <li>
-                                    <div class="letter"></div>
-                                    <a href="mailto:hello@cubeclub.com">hello@cubeclub.com</a>
-                                </li>
-                                <li>
-                                    <div class="phone-foot"></div>
-                                    <ul>
-                                        <li>+38 (050) 588-46-37</li>
-                                        <li>+38 (097) 798-45-12</li>
-                                    </ul>
-                                </li>
-                                <li class="last">
-                                    <div class="baloone-foot"></div>
-                                    <ul>
-                                        <li>87500 Mariupol, Ukraine, ul. Kazantsev 7b, 2nd floor, office. 29</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </address>
+                        <ul class="address-list">
+                            <li>
+                                <div class="letter"></div>
+                                <a href="mailto:hello@cubeclub.com">hello@cubeclub.com</a>
+                            </li>
+                            <li>
+                                <div class="phone-foot"></div>
+                                <ul>
+                                    <li>+38 (050) 588-46-37</li>
+                                    <li>+38 (097) 798-45-12</li>
+                                </ul>
+                            </li>
+                            <li class="last">
+                                <div class="baloone-foot"></div>
+                                <ul>
+                                    <li>87500 Mariupol, Ukraine, ul. Kazantsev 7b, 2nd floor, office. 29</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </address>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 footer-block">
           <div class="subscribe-here soc-marg">
             <div class="footer-header">Mailing list</div>
             <p>Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!</p>
-            <form action="#" id="email-footer-form" novalidate>
+            <form action="#" id="email-footer-form">
               <div class="subscribe">
-                <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail" data-toggle="tooltip" data-placement="top">
-                <label for="email-subscribe" class="error">
-                  <span class="subscribe-label-arrow"></span>
-                  <span class="subscribe-label-inner">No email</span>
-                </label>
+                <input type="email" name="email" id="email-subscribe" placeholder="Your E-mail">
                 <button type="submit" value="Subscribe" id="subscribe-btn">Subscribe</button>
               </div>
-              <div id="loaderContactForm" class="suc loader">
-                <div class="loader">
-                  <div class="fr-bl"></div>
-                  <div class="sc-bl"></div>
-                  <div class="thr-bl"></div>
-                  <div class="fth-bl"></div>
-                </div>
-              </div>
             </form>
-            <div id="successContactForm" class="suc">
-              <div class="suc-title"><span class="glyphicon glyphicon-ok"></span>You were subscribed</div>
-            </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 footer-block last">
@@ -339,6 +417,7 @@
     </div>
   </footer>
   <script>
+    //<<<<<<< HEAD
     var global = {
       siteUrl: 'http://sites.makebecool.com/themeclubcube/',
       baseUrl: '/themeclubcube/',
@@ -387,9 +466,10 @@
   <script src="js/app/modules/eventsTickets.js"></script>
   <script src="js/app/modules/dropDownClick.js"></script>
     <script src="js/app/modules/bgImages.js"></script>
-    <script src="js/app/modules/bg-maps.js"></script>
+  <script src="js/app/modules/bg-maps.js"></script>
   <script src="js/app/modules/ticketForm.js"></script>
-<script src="js/init.js"></script>
+  <script src="js/init.js"></script>
+
 </body>
 
 </html>
