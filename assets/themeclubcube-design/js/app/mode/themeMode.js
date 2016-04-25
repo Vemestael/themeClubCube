@@ -11,7 +11,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
 		preloaded: false
     },
 
-	//PRIVATE METHODS
+    //PRIVATE METHODS
 	_init = function() {
         appMakeBeCool.gateway.classes.SiteMode.apply(_themeMode, [_properties])
         if(!_globals.preloaded) {
