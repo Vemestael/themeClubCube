@@ -71,6 +71,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.createClassInstance('sharrre', _globals.siteObj.classes.Sharrre, {classId: 'Sharrre'});
         _globals.siteObj.createClassInstance('eventsTickets', _globals.siteObj.classes.EventsTickets, {classId: 'EventsTickets'});
         _globals.siteObj.createClassInstance('bgImages', _globals.siteObj.classes.BgImages, {classId: 'BgImages'});
+        _globals.siteObj.createClassInstance('bgmaps', _globals.siteObj.classes.Bgmaps, {classId: 'Bgmaps'});
         _globals.siteObj.createClassInstance('ticketCalc', _globals.siteObj.classes.TicketCalc, {classId: 'TicketCalc'});
     },
 

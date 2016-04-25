@@ -3,7 +3,7 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
     //PRIVATE VARIABLES
     var _headerFunctions = this,
         _defaults = {
-            header: '#header',
+            header: '.header',
             navbar: '#navbarCollapse',
             navbarToggle: '#navbarToogle'
         },
