@@ -1,11 +1,11 @@
 appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $document) {
 	//PRIVATE VARIABLES
 	var _themeMode = this,
-	_defaults = {
+    _defaults = {
         // classes ans styles
         classMode: 'theme-mode'
     },
-	_properties = $.extend(_defaults, properties),
+    _properties = $.extend(_defaults, properties),
 	_globals = {
 		siteObj: null,
 		preloaded: false
