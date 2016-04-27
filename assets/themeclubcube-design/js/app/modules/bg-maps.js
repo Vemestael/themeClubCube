@@ -69,9 +69,7 @@ appMakeBeCool.gateway.addClass('Bgmaps', function (properties, $, $window, $docu
             position: contactsLatlng,
             map: _properties.mapObj
           });
-          marker.addListener('click', function() {
-           infowindow.open(_properties.mapObj, marker);
-         });
+
         });
       }
     },
