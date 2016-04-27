@@ -307,34 +307,211 @@ html(lang='en')
                   .b-box__btn-wrap
                     a(href="").btn.btn-icon.btn-icon--plus More events
 
-            aside.b-aside.col-xs-12.col-lg-4
-              .row
-                .b-audio__item
-                  iframe(width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/214835527&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false")
+              .b-item__header
+                .s6-heading.b-item__ttl-header Last video
+                a.btn--mini.btn-icon.btn-icon--refresh(href="#")
+              .b-video-item__iframe-md
+                iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
-                .b-item__header
-                  .s6-heading.b-item__ttl-header Blog
-                  a.btn.btn--mini(href="blog.html") More
-                article.b-box.b-box-sm.b-box--clr-b
-                  .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
-                  .b-box__date
-                    time(datetime="2015-05-25T14:44") may 25, 14:44
-                  h6.b-box__s6-ttl.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a(href="blog-open.html").b-box__link
-                article.b-box.b-box-sm.b-box--clr-b
-                  .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_02_Retina.jpg")
-                  .b-box__date
-                    time(datetime="2015-05-25T14:44") may 25, 14:44
-                  h6.b-box__s6-ttl.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a(href="blog-open.html").b-box__link
-                article.b-box.b-box-sm.b-box--clr-a
-                  .b-box__date
-                    time(datetime="2015-05-25T14:44") may 25, 14:44
-                  h6.b-box__s6-ttl.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a(href="blog-open.html").b-box__link
+      .b-gallery
+        .b-gallery__img-wrap.bg-image(data-bgimage="")
+        .container
+          .row
+            .b-item__header.col-xs-12
+              h6.s6-heading.b-item__ttl-header Gallery
+            .b-gallery__slider.btn-white#sliderGallery
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Californication nights
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Californication nights
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Californication nights
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Californication nights
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Californication nights
+
+              article.c-box.c-box--sm
+                .c-box__inner
+                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                  .c-box__date-item.c-box__date-item--float
+                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                      span.date-sm__dt 23
+                      span.date-sm__rh
+                        span.date-sm__rh-m sept
+                        span.date-sm__rh-d 2014
+                  ul.c-box__views
+                    li.c-box__view.txt 32
+                    li.c-box__video.txt 2
+                  a(href="gallery-open.html" rel="nofollow").b-box__link
+                h6
+                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+
 
       include components/footer
     include components/scripts
