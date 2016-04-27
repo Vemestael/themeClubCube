@@ -1,0 +1,55 @@
+.page-item__inner
+  margin: 0
+  overflow: hidden
+  text-align: center
+  margin-bottom: 15px
+
+.page-item__inner .img-block 
+  text-align: center
+  position: relative
+  height: 360px
+
+.page-item__inner .img-block img 
+  max-width: 100%
+  position: relative
+  top: 0
+  transform: scale(1.1,1.1)
+  transition: transform .3s ease
+  margin: auto
+
+.page-item__wrap:hover .img-block img
+  transform: scale(1,1)
+
+.page-item__wrap
+  text-align: center
+  margin-top: 40px
+  margin-bottom: 40px
+
+.page-item__wrap a
+  font-size: 18px
+  line-height: 30px
+  color: $black-c
+  font-family: $second-bold-font
+  border-bottom: 4px solid
+
+.b-banner__img-block
+  margin-top: 40px
+
+.b-banner__img-block img
+  max-width: 100%
+
+.s6-heading + .btn-pointer__wrap
+  margin: 10px 0
+  vertical-align: top
+
+.s6-heading + .btn-pointer__wrap:hover span
+  transform: none
+
+.s6-heading + .btn-pointer__wrap > .btn-pointer
+  font-size: 14px
+  min-height: 20px
+  line-height: 20px
+  padding: 0 5px
+
+.s6-heading + .btn-pointer__wrap > .btn-pointer span:after
+  display: none

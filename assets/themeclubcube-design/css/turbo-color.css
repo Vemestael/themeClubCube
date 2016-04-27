@@ -75,7 +75,8 @@ footer a:hover {color: #ec1c24;}/*Orange*/
 // -------------------------
 blockquote {border-left: 5px solid #d7515c;}/*Red*/
 blockquote a {color:#ec1c24;}/*Orange*/
-
+.reserve-btn {background: #1c486b;}
+.reserve-table .select-wrap:after {background: #1c486b;}
 .read-more {background:#d7515c;}/*Red*/
 .read-more:active, .read-more:hover:active, .read-more.pressed:active {background:#dd1e27;}/*Orange pressed*/
 .read-more.hover, .read-more:hover {background:#ec1c24;}/*Orange*/

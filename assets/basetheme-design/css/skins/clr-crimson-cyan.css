@@ -157,6 +157,9 @@ blockquote::before {
   .mega-menu__item-cont .b-form__btn:hover {
     background-color: #09b086; }
 
+.page-item__wrap a {
+  border-color: #09b086 !important; }
+
 .b-msg {
   background-color: #09b086; }
 
