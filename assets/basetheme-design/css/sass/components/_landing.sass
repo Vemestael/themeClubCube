@@ -19,19 +19,20 @@
     width: 100%
     height: 20px
     left: 0
-    background: linear-gradient(to top, rgba(255,255,255,.58), rgba(255,255,255,0))
+    background: linear-gradient(to top, rgba(232,232,232,.58), rgba(232,232,232,0))
 
 .page-item__inner .img-block img 
   max-width: 100%
   position: absolute
   transform: scale(1.1,1.1)
-  transition: transform .9s ease, bottom 3s ease
+  transition: transform .9s ease, bottom 1.5s ease
   margin: auto
 
 .page-item__wrap:hover .img-block img
   transform: scale(1,1)
   top: initial
   bottom: 0 !important
+  transition: transform .9s ease, bottom 3s ease
 
 .page-item__wrap
   text-align: center
@@ -44,7 +45,7 @@
     content: ''
     position: absolute
     z-index: -1
-    top: 361px
+    top: 360px
     left: -12px
     height: 2px
     width: calc(100% + 24px)
@@ -53,7 +54,7 @@
 @-moz-document url-prefix()
   .page-item__wrap
     &:after
-      top: 360px
+      top: 359px
 
 .page-item__wrap a.link
   position: absolute
