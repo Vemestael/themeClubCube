@@ -2692,6 +2692,10 @@ button {
   border-bottom: none;
   text-transform: uppercase; }
 
+.navbar-header.intro .navbar-brand {
+  height: 15px;
+  margin-top: 17px; }
+
 .navbar-brand img {
   display: block;
   width: auto;
@@ -2863,6 +2867,13 @@ button {
   line-height: 50px; }
 
 @media (min-width: 768px) {
+  .header__sticky .navbar-header.intro .navbar-brand {
+    margin-top: 0;
+    height: initial;
+    padding: 0;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .header__sticky .navbar-brand {
     height: 30px;
     margin-top: 8px; }
@@ -2906,7 +2917,8 @@ button {
   .header .line {
     position: relative; }
   .header__sticky .navbar-list > li > a,
-  .header__sticky .navbar-current {
+  .header__sticky .navbar-current,
+  .header__sticky .navbar-header.intro .navbar-brand {
     padding: 17px;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -2935,8 +2947,14 @@ button {
     transition: position 0.2s ease-out; }
     .navbar-list > li:last-child {
       margin-right: 0; }
+  .navbar-header.intro .navbar-brand {
+    height: initial;
+    margin-top: 0 !important;
+    font-size: initial;
+    line-height: 1.25; }
   .navbar-list > li > a,
-  .navbar-current {
+  .navbar-current,
+  .navbar-header.intro .navbar-brand {
     padding: 33px 17px; }
   .navbar-list > li > a > .fa-angle-right {
     position: absolute;
@@ -4332,11 +4350,24 @@ button.mfp-arrow:hover:before {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 355px;
-    left: -7px;
-    width: calc(100% + 15px);
-    -webkit-box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.5);
-            box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.5); }
+    top: 361px;
+    left: -12px;
+    height: 2px;
+    width: calc(100% + 24px);
+    background: url(../images/themeClub-thumb-shadow.svg) no-repeat center; }
+
+.page-item__wrap a.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border: none !important; }
+
+.page-item__wrap .link-title {
+  position: relative;
+  z-index: 1; }
 
 .page-item__wrap a {
   font-size: 18px;
