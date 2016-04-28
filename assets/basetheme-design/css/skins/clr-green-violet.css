@@ -13,6 +13,12 @@ a {
 blockquote::before {
   background-color: #c0d23e; }
 
+.btn-label.colored .btn-pointer {
+  background: #c0d23e !important; }
+
+.btn-label.colored .btn-pointer__left path {
+  fill: #c0d23e !important; }
+
 .b-footnote__mark {
   color: #c0d23e; }
 
