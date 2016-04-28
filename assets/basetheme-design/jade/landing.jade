@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
   include components/head
   body
-    .wrap
+    .wrap.fill-wrap
       include components/headerLanding
       .b-banner.bg-image(data-bgimage="../uploads/landing/banner.jpg")
         .container
@@ -14,7 +14,7 @@ html(lang='en')
             .col-sm-6.col-xs-12
               p Responsive HTML5 theme for #[span.bordered entertainment]
 
-      .b-events
+      .b-events.fill-wrap
         .container
           .row
             .col-xs-12
@@ -61,14 +61,19 @@ html(lang='en')
                   .img-block
                     img(src="../uploads/landing/posters.jpg", alt="img")
                 a(href="index.html") Cube Club
+                .btn-pointer__wrap.btn-label.colored.
+                  <div class="btn btn-pointer"><span class="btn-pointer__txt">Pro</span></div>
+                  <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                  <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-      .b-events
+
+      .b-events.fill-wrap
         .container
           .row
             .col-xs-12
               h6.s6-heading.b-tabs__ttl Musician
-              .btn-pointer__wrap.
-                <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">Coming soon</span></a>
+              .btn-pointer__wrap.btn-label.
+                <div class="btn btn-pointer"><span class="btn-pointer__txt">Coming soon</span></div>
                 <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                 <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
@@ -78,5 +83,4 @@ html(lang='en')
               .b-banner__img-block
                 img(src="../uploads/landing/banner2.jpg", alt="banner")
 
-      include components/footer
     include components/scripts

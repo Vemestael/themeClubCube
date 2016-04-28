@@ -26,6 +26,12 @@ blockquote::before {
 .main-slide .btn-pointer__wrap:hover .btn-pointer__left path {
   fill: #c49548; }
 
+.btn-label .btn-pointer {
+  background: #5f584c !important; }
+
+.btn-label .btn-pointer__left path {
+  fill: #5f584c !important; }
+
 .btn-info {
   background-color: #c49548; }
 
@@ -159,6 +165,9 @@ blockquote::before {
 
 .page-item__wrap a {
   border-color: #5f584c !important; }
+
+.page-item__wrap a:hover {
+  border-color: #c49548 !important; }
 
 .b-msg {
   background-color: #5f584c; }

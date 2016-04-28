@@ -1938,6 +1938,9 @@ button {
        -o-animation-fill-mode: both;
           animation-fill-mode: both; }
 
+.btn-label .btn-pointer {
+  cursor: default; }
+
 @-webkit-keyframes shake {
   0%, 100% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -2882,6 +2885,8 @@ button {
     line-height: 40px;
     font-size: 30px;
     font-weight: bold; }
+  span.intro {
+    font-size: 14px; }
   .navbar-toogle {
     width: 90px;
     height: 80px; }
@@ -4281,6 +4286,9 @@ button.mfp-arrow:hover:before {
     padding-top: 90px;
     padding-bottom: 88px; } }
 
+.fill-wrap {
+  background-color: #E8E8E8 !important; }
+
 .page-item__inner {
   margin: 0;
   overflow: hidden;
@@ -4294,29 +4302,41 @@ button.mfp-arrow:hover:before {
 
 .page-item__inner .img-block img {
   max-width: 100%;
-  position: relative;
-  top: 0;
+  position: absolute;
   -webkit-transform: scale(1.1, 1.1);
       -ms-transform: scale(1.1, 1.1);
        -o-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  -o-transition: transform .3s ease, -o-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease, -o-transform .3s ease;
+  -webkit-transition: bottom 3s ease, -webkit-transform .9s ease;
+  transition: bottom 3s ease, -webkit-transform .9s ease;
+  -o-transition: transform .9s ease, bottom 3s ease, -o-transform .9s ease;
+  transition: transform .9s ease, bottom 3s ease;
+  transition: transform .9s ease, bottom 3s ease, -webkit-transform .9s ease, -o-transform .9s ease;
   margin: auto; }
 
 .page-item__wrap:hover .img-block img {
   -webkit-transform: scale(1, 1);
       -ms-transform: scale(1, 1);
        -o-transform: scale(1, 1);
-          transform: scale(1, 1); }
+          transform: scale(1, 1);
+  top: initial;
+  bottom: 0 !important; }
 
 .page-item__wrap {
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1; }
+  .page-item__wrap:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 355px;
+    left: -7px;
+    width: calc(100% + 15px);
+    -webkit-box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.5); }
 
 .page-item__wrap a {
   font-size: 18px;
@@ -4331,24 +4351,30 @@ button.mfp-arrow:hover:before {
 .b-banner__img-block img {
   max-width: 100%; }
 
-.s6-heading + .btn-pointer__wrap {
-  margin: 10px 0;
+.btn-label {
+  margin: 6px 0;
   vertical-align: top; }
 
-.s6-heading + .btn-pointer__wrap:hover span {
-  -webkit-transform: none;
-      -ms-transform: none;
-       -o-transform: none;
-          transform: none; }
+.btn-label:hover span {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+       -o-transform: none !important;
+          transform: none !important; }
 
-.s6-heading + .btn-pointer__wrap > .btn-pointer {
+.btn-label > .btn-pointer {
   font-size: 14px;
   min-height: 20px;
   line-height: 20px;
   padding: 0 5px; }
 
-.s6-heading + .btn-pointer__wrap > .btn-pointer span:after {
+.btn-label .btn-pointer span:after {
   display: none; }
+
+.btn-label.colored .btn-pointer {
+  background: #09B086 !important; }
+
+.btn-label.colored .btn-pointer__left path {
+  fill: #09B086 !important; }
 
 .b-msg {
   position: relative;
