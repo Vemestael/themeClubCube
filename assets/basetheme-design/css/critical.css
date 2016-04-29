@@ -2740,6 +2740,19 @@ button {
   text-transform: uppercase;
   cursor: pointer; }
 
+.navbar-dropdown__menu .btn-pointer__wrap {
+  position: absolute;
+  top: 8px; }
+
+.navbar-dropdown__menu .btn-pointer__txt {
+  padding: 0; }
+
+.navbar-dropdown__menu .btn-label.colored .btn-pointer {
+  background: #fff !important; }
+
+.navbar-dropdown__menu .btn-label.colored .btn-pointer__left path {
+  fill: #fff !important; }
+
 .navbar-current {
   display: block;
   padding: 18px 0;
@@ -4335,7 +4348,7 @@ button.mfp-arrow:hover:before {
 
 .page-item__inner .img-block img {
   max-width: 100%;
-  position: absolute;
+  position: static;
   -webkit-transform: scale(1.1, 1.1);
       -ms-transform: scale(1.1, 1.1);
        -o-transform: scale(1.1, 1.1);
@@ -4427,17 +4440,10 @@ button.mfp-arrow:hover:before {
 
 .b-banner__img-block {
   position: relative; }
-  .b-banner__img-block:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
-    left: 0;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(232, 232, 232, 0.58)), to(rgba(232, 232, 232, 0)));
-    background: -webkit-linear-gradient(bottom, rgba(232, 232, 232, 0.58), rgba(232, 232, 232, 0));
-    background: -o-linear-gradient(bottom, rgba(232, 232, 232, 0.58), rgba(232, 232, 232, 0));
-    background: linear-gradient(to top, rgba(232, 232, 232, 0.58), rgba(232, 232, 232, 0)); }
+
+@media screen and (min-width: 992px) {
+  .page-item__inner .img-block img {
+    position: absolute; } }
 
 .b-msg {
   position: relative;

@@ -133,6 +133,9 @@ blockquote::before {
 .navbar-collapse.active {
   background-color: #c49548; }
 
+.navbar-dropdown__menu .btn-pointer__txt {
+  color: #c49548; }
+
 .b-accordion__panel-ttl a:hover {
   color: #5f584c; }
 
