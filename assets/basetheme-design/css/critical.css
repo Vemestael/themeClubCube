@@ -2742,7 +2742,8 @@ button {
 
 .navbar-dropdown__menu .btn-pointer__wrap {
   position: absolute;
-  top: 8px; }
+  top: 8px;
+  right: 0; }
 
 .navbar-dropdown__menu .btn-pointer__txt {
   padding: 0; }
