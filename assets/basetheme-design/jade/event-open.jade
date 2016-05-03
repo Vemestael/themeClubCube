@@ -4,6 +4,8 @@ html(lang='en')
   body
     .wrap
       include components/header
+        block menu
+          include components/mainNavigation
       .c-headlines
         .c-headlines__img-wrap.parallax.bg-image(data-stellar-background-ratio="1.2",
         data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")

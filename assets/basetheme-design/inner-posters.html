@@ -36,12 +36,27 @@
     <div class="wrap">
       <header id="header" class="header">
         <div class="container-fluid line">
-          <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="images/logo-w.png" alt=""></a>
+          <div class="navbar-header intro"><a href="landing.html" class="navbar-brand"><span class="intro">intro</span></a>
             <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <nav id="navbarCollapse" class="navbar-collapse">
             <ul id="navigation" class="navbar-list dl-menu">
-              <li><span class="navbar-current">Home</span></li>
+              <li><a href="#">Home<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li><a href="inner-music.html">Music</a></li>
+                  <li><a href="inner-events.html">Events</a></li>
+                  <li><a href="inner-posters.html">Posters</a></li>
+                  <li><a href="inner-fevents.html">Frequent events</a></li>
+                  <li><a href="inner-gall.html">Galleries</a></li>
+                  <li><a href="index.html">Cube Club
+                      <div class="btn-pointer__wrap btn-label colored">
+                        <div class="btn btn-pointer"><span class="btn-pointer__txt">Pro</span></div>
+                        <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        
+                      </div></a></li>
+                </ul>
+              </li>
               <li><a href="#">Events<i class="fa fa-angle-right"></i></a>
                 <ul class="navbar-dropdown__menu dl-submenu">
                   <li><a href="events.html">Event list</a></li>
@@ -315,12 +330,11 @@
           </div>
         </div>
       </div>
-      <div class="b-events">
-        <div class="container">
-          <div class="row">
-            <div class="b-tabs col-lg-8">
-              <h6 class="s6-heading b-tabs__ttl">Top events</h6>
-              <ul role="tablist" class="b-tabs__nav b-tabs__nav-tabs">
+      <div class="b-content container">
+        <main class="b-main">
+          <div class="b-box-wrap">
+            <div class="row">
+              <ul role="tablist" class="b-tabs__nav b-tabs__nav-tabs b-tabs__nav-tabs--center">
                 <li role="presentation" class="active"><a href="#block-a" aria-controls="block-a" role="tab" data-toggle="tab">
                     <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                     <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
@@ -330,200 +344,305 @@
                     <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
                     </svg></a></li>
               </ul>
-              <div class="b-tabs__content">
-                <div id="block-a" role="tabpanel" class="b-tabs__pane fade in active row">
-                  <div class="b-tabs__pane-item col-sm-6">
-                    <div class="c-box">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <hr class="hr-pattern">
-                          <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+            </div>
+            <div class="b-tabs__content">
+              <div id="block-a" role="tabpanel" class="b-tabs__pane fade in active row">
+                <div class="b-tabs__pane-item col-sm-6 col-md-4">
+                  <div class="c-box">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
+                        <hr class="hr-pattern">
+                        <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
                       </div>
-                    </div>
-                  </div>
-                  <div class="b-tabs__pane-item col-sm-6">
-                    <div class="c-box">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <hr class="hr-pattern">
-                          <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                      <div data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-23T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
                       </div>
-                    </div>
-                  </div>
-                  <div class="b-tabs__pane-item col-sm-6">
-                    <div class="c-box">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <hr class="hr-pattern">
-                          <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
                         </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="b-tabs__pane-item col-sm-6">
-                    <div class="c-box">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <hr class="hr-pattern">
-                          <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="b-box__btn-wrap txt--centr col-sm-12">
-                    <div class="btn-icon__wrap">
-                      <a href="#" class="btn btn-icon">More events</a>
-                      <svg x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                      <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10.004,17V3"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M3,9.98h14"/>
-                      </svg>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                     </div>
                   </div>
                 </div>
-                <div id="block-b" role="tabpanel" class="b-tabs__pane fade in row">
-                  <div class="b-tabs__pane-item col-xs-12">
-                    <div class="c-box c-box-v">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
-                        </div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                <div class="b-tabs__pane-item col-sm-6 col-md-4">
+                  <div class="c-box">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">St. Patrick’s Day in New York</h3>
+                        <hr class="hr-pattern">
+                        <p class="c-box__txt">Cruachan, Lunasa, Flook, McGoldrick's band</p>
                       </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-24T20:00" class="date c-box__date"><span class="date__dt">24</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">10:00 pm</span></time>
+                      </div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                     </div>
                   </div>
-                  <div class="b-tabs__pane-item col-xs-12">
-                    <div class="c-box c-box-v">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">St. Patrick’s Day in New York</h3>
-                          <p class="c-box__txt c-box__txt--display">Cruachan, Lunasa, Flook, McGoldrick's band</p>
-                        </div>
-                        <div class="c-box__date-item">
-                          <time datetime="2016-09-24T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="b-tabs__pane-item col-sm-6 col-md-4">
+                  <div class="c-box">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">American Decorative Arts</h3>
+                        <hr class="hr-pattern">
+                        <p class="c-box__txt">Fifth Avenue</p>
                       </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-25T20:00" class="date c-box__date"><span class="date__dt">25</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                     </div>
                   </div>
-                  <div class="b-tabs__pane-item col-xs-12">
-                    <div class="c-box c-box-v">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
-                        </div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="b-tabs__pane-item col-sm-6 col-md-4">
+                  <div class="c-box">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">Troye Sivan</h3>
+                        <hr class="hr-pattern">
+                        <p class="c-box__txt">Webster Hall</p>
                       </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__date-item">
+                        <time datetime="2009-09-26T20:00" class="date c-box__date"><span class="date__dt">26</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                     </div>
                   </div>
-                  <div class="b-tabs__pane-item col-xs-12">
-                    <div class="c-box c-box-v">
-                      <div class="c-box__inner">
-                        <div class="c-box__cont">
-                          <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
-                          <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
-                        </div>
-                        <div class="c-box__date-item">
-                          <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
-                        </div>
-                        <div data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
-                        <div class="c-box__link-wrap">
-                          <div class="btn-pointer__wrap">
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                            
-                          </div>
-                        </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                </div>
+                <div class="b-tabs__pane-item col-sm-6 col-md-4">
+                  <div class="c-box">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">Maurice Hines Is Tappin' Thru Life</h3>
+                        <hr class="hr-pattern">
+                        <p class="c-box__txt">New World Stages: Stage 1</p>
                       </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__date-item">
+                        <time datetime="2009-09-27T20:00" class="date c-box__date"><span class="date__dt">27</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
                     </div>
                   </div>
-                  <div class="b-box__btn-wrap"><a href="" class="btn btn-icon btn-icon--plus">More events</a></div>
+                </div>
+                <div class="b-tabs__pane-item col-sm-6 col-md-4">
+                  <div class="c-box">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
+                        <hr class="hr-pattern">
+                        <p class="c-box__txt">Stay B, Andrew Feeling, Someone Else</p>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__date-item">
+                        <time datetime="2009-09-28T20:00" class="date c-box__date"><span class="date__dt">28</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="block-b" role="tabpanel" class="b-tabs__pane fade in row">
+                <div class="b-tabs__pane-item col-xs-12 col-lg-6">
+                  <div class="c-box c-box-v">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
+                        <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
+                      </div>
+                      <div class="c-box__date-item">
+                        <time datetime="2009-08-29T20:00" class="date c-box__date"><span class="date__dt">23</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                          
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-tabs__pane-item col-xs-12 col-lg-6">
+                  <div class="c-box c-box-v">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">St. Patrick’s Day in New York</h3>
+                        <p class="c-box__txt c-box__txt--display">Cruachan, Lunasa, Flook, McGoldrick's band</p>
+                      </div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-24T20:00" class="date c-box__date"><span class="date__dt">24</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                          
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-tabs__pane-item col-xs-12 col-lg-6">
+                  <div class="c-box c-box-v">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">American Decorative Arts</h3>
+                        <p class="c-box__txt c-box__txt--display">Fifth Avenue</p>
+                      </div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-25T20:00" class="date c-box__date"><span class="date__dt">25</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                          
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-tabs__pane-item col-xs-12 col-lg-6">
+                  <div class="c-box c-box-v">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">Troye Sivan</h3>
+                        <p class="c-box__txt c-box__txt--display">Webster Hall</p>
+                      </div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-26T20:00" class="date c-box__date"><span class="date__dt">26</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                          
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-tabs__pane-item col-xs-12 col-lg-6">
+                  <div class="c-box c-box-v">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">Maurice Hines Is Tappin' Thru Life</h3>
+                        <p class="c-box__txt c-box__txt--display">New World Stages: Stage 1</p>
+                      </div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-27T20:00" class="date c-box__date"><span class="date__dt">27</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                          
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-tabs__pane-item col-xs-12 col-lg-6">
+                  <div class="c-box c-box-v">
+                    <div class="c-box__inner">
+                      <div class="c-box__cont">
+                        <h3 class="c-box__ttl-s3">TRAP  ONLY. best records plus fit</h3>
+                        <p class="c-box__txt c-box__txt--display">Stay B, Andrew Feeling, Someone Else</p>
+                      </div>
+                      <div class="c-box__date-item">
+                        <time datetime="2016-09-28T20:00" class="date c-box__date"><span class="date__dt">28</span><span class="date__rh"><span class="date__rh-m">sept</span><span class="date__rh-d">Mon</span></span><span class="date__ad">8:00 pm</span></time>
+                      </div>
+                      <div data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg" class="b-box__img-wrap b-box__grdnt-a bg-image"></div>
+                      <div class="c-box__link-wrap">
+                        <div class="btn-pointer__wrap">
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                          
+                        </div>
+                      </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-box__btn-wrap txt--centr">
+            <div class="btn-icon__wrap">
+              <a href="#" class="btn btn-icon">More events</a>
+              <svg x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10.004,17V3"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M3,9.98h14"/>
+              </svg>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="b-content container">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
+              <p class="b-footer__txt">
+                RT <a class="link" href="#">@DesignerDepot</a>: "Working on the right thing is probably more important than working
+                hard" - Caterina Fake
+                <a class="link" href="#">#wdd</a> <a class="link" href="/">#quote</a>
+              </p><span class="b-footer__days">-47 days ago</span>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="b-footer__inner">
+              <div data-href="https://www.facebook.com/facebook" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" class="fb-page">
+                <div class="fb-xfbml-parse-ignore">
+                  <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
                 </div>
               </div>
             </div>
@@ -555,43 +674,26 @@
           </div>
         </div>
       </div>
-      <footer class="b-footer">
+      <footer id="footer4" class="b-footer">
         <div class="container">
           <div class="row">
-            <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
-              <h6 class="s6-heading">twitter & facebook</h6>
-              <div class="b-footer__inner">
-                <div data-href="https://www.facebook.com/facebook" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" class="fb-page">
-                  <div class="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                  </div>
+            <div class="b-footer__item col-xs-12 col-sm-6 col-lg-4">
+              <div class="b-footer__msg">
+                <div class="b-msg">
+                  <div class="b-msg__corner"></div>
+                  <p class="b-msg__txt small-txt">We like to create cool parties and we love to chat with like-minded</p><strong>Do not hesitate to say hello!</strong>
                 </div>
               </div>
-              <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
-                <p class="b-footer__txt">
-                  RT <a class="link" href="#">@DesignerDepot</a>: "Working on the right thing is probably more important than working
-                  hard" - Caterina Fake
-                  <a class="link" href="#">#wdd</a> <a class="link" href="/">#quote</a>
-                </p><span class="b-footer__days">
-                  -47 days ago
-                  </span>
+              <div class="b-footer__contacts">
+                <address class="b-footer__adrs col-xs-12">87500 Mariupol, Ukraine, ul. Kazantseva 7b, 2nd floor, office. 29</address>
+                <div class="b-footer__contacts-mail indent col-xs-12"><a href="mailto:hello@cubeclub.com" class="link">hello@cubeclub.com</a></div>
+                <ul class="b-footer__contacts-phones col-xs-12">
+                  <li><a href="tel:+380505884637">+38 (050) 588-46-37</a></li>
+                  <li><a href="tel:+380977984512">+38 (097) 798-45-12</a></li>
+                </ul>
               </div>
             </div>
-            <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
-              <h6 class="s6-heading">mailing list</h6>
-              <div class="b-footer__inner">
-                <p class="b-footer__txt b-footer__txt--it">
-                  Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
-                  often!
-                </p>
-                <form action="/" method="GET" class="b-form b-form--inline">
-                  <div class="b-form__group">
-                    <input type="email" placeholder="Your E-mail" class="b-form__control">
-                  </div>
-                  <button type="submit" class="b-form__btn">Subscribe</button>
-                </form>
-              </div>
-              <hr class="hr-line">
+            <div class="b-footer__item col-xs-12 col-sm-6 col-lg-4">
               <div class="b-footer__inner">
                 <ul class="b-social b-social--clr-a b-footer__social">
                   <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
@@ -601,22 +703,6 @@
                   <li><a href="#" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
                   <li><a href="#" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
                   <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="b-footer__item col-xs-12 col-lg-4">
-              <div class="b-footer__msg">
-                <div class="b-msg">
-                  <div class="b-msg__corner"></div>
-                  <p class="b-msg__txt small-txt">We like to create cool parties and we love to chat with like-minded</p><strong>Do not hesitate to say hello!</strong>
-                </div>
-              </div>
-              <div class="b-footer__contacts">
-                <address class="b-footer__adrs col-sm-4 col-lg-12">87500 Mariupol, Ukraine, ul. Kazantseva 7b, 2nd floor, office. 29</address>
-                <div class="b-footer__contacts-mail col-sm-4 col-lg-12"><a href="mailto:hello@cubeclub.com" class="link">hello@cubeclub.com</a></div>
-                <ul class="b-footer__contacts-phones col-sm-4 col-lg-12">
-                  <li><a href="tel:+380505884637">+38 (050) 588-46-37</a></li>
-                  <li><a href="tel:+380977984512">+38 (097) 798-45-12</a></li>
                 </ul>
               </div>
             </div>
@@ -660,6 +746,7 @@
     <script src="js/app/modules/masonryTiles.js"></script>
     <script src="js/app/modules/parallax.js"></script>
     <script src="js/app/modules/imgHover.js"></script>
+    <script src="js/app/modules/slickSlider.js"></script>
     <script>appMakeBeCool.gateway.init();</script>
   </body>
 </html>

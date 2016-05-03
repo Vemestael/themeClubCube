@@ -3,7 +3,9 @@ html(lang='en')
   include components/head
   body
     .wrap
-      include components/header
+      include components/headerLanding
+        block menu
+          include components/innerNavigation
       .main-slide
         .main-slide__btn-item
         .main-slide__slider#sliderMain
@@ -104,12 +106,11 @@ html(lang='en')
                       <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                       <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
-      .b-events
-        .container
-          .row
-            .b-tabs.col-lg-12
-              h6.s6-heading.b-tabs__ttl Top events
-              ul.b-tabs__nav.b-tabs__nav-tabs(role="tablist")
+      .b-content.container
+        main.b-main
+          .b-box-wrap
+            .row
+              ul.b-tabs__nav.b-tabs__nav-tabs.b-tabs__nav-tabs--center(role="tablist")
                 li.active(role="presentation")
                   a(href="#block-a", aria-controls="block-a", role="tab", data-toggle="tab").
                     <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
@@ -120,9 +121,9 @@ html(lang='en')
                     <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                     <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
                     </svg>
-              .b-tabs__content
-                #block-a.b-tabs__pane.fade.in.active.row(role="tabpanel")
-                  .b-tabs__pane-item.col-sm-6
+            .b-tabs__content
+              #block-a.b-tabs__pane.fade.in.active.row(role="tabpanel")
+                  .b-tabs__pane-item.col-sm-6.col-md-4
                     .c-box
                       .c-box__inner
                         .c-box__cont
@@ -131,7 +132,7 @@ html(lang='en')
                           p.c-box__txt Stay B, Andrew Feeling, Someone Else
                         .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg")
                         .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
+                          time.date.c-box__date(datetime="2016-09-23T20:00")
                             span.date__dt 23
                             span.date__rh
                               span.date__rh-m sept
@@ -142,170 +143,435 @@ html(lang='en')
                             <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
                             <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                             <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
                         a(href="event-open.html" rel="nofollow").b-box__link
 
-                  .b-tabs__pane-item.col-sm-6
+                  .b-tabs__pane-item.col-sm-6.col-md-4
                     .c-box
-                      .c-box__inner
-                        .c-box__cont
-                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                          hr.hr-pattern
-                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
-                        .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
-                            span.date__dt 23
-                            span.date__rh
-                              span.date__rh-m sept
-                              span.date__rh-d Mon
-                            span.date__ad 8:00 pm
-                        .c-box__link-wrap
-                          .btn-pointer__wrap.
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
-                        a(href="event-open.html" rel="nofollow").b-box__link
-                  .b-tabs__pane-item.col-sm-6
-                    .c-box
-                      .c-box__inner
-                        .c-box__cont
-                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                          hr.hr-pattern
-                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg")
-                        .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
-                            span.date__dt 23
-                            span.date__rh
-                              span.date__rh-m sept
-                              span.date__rh-d Mon
-                            span.date__ad 8:00 pm
-                        .c-box__link-wrap
-                          .btn-pointer__wrap.
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
-                        a(href="event-open.html" rel="nofollow").b-box__link
-                  .b-tabs__pane-item.col-sm-6
-                    .c-box
-                      .c-box__inner
-                        .c-box__cont
-                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                          hr.hr-pattern
-                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
-                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
-                        .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
-                            span.date__dt 23
-                            span.date__rh
-                              span.date__rh-m sept
-                              span.date__rh-d Mon
-                            span.date__ad 8:00 pm
-                        .c-box__link-wrap
-                          .btn-pointer__wrap.
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
-                        a(href="event-open.html" rel="nofollow").b-box__link
-
-                  .b-box__btn-wrap.txt--centr.col-sm-12
-                    .btn-icon__wrap.
-                      <a href="#" class="btn btn-icon">More events</a>
-                      <svg x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                      <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10.004,17V3"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M3,9.98h14"/>
-                      </svg>
-                #block-b.b-tabs__pane.fade.in.row(role="tabpanel")
-                  .b-tabs__pane-item.col-xs-12
-                    .c-box.c-box-v
-                      .c-box__inner
-                        .c-box__cont
-                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                          p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
-                        .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
-                            span.date__dt 23
-                            span.date__rh
-                              span.date__rh-m sept
-                              span.date__rh-d Mon
-                            span.date__ad 8:00 pm
-                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg")
-                        .c-box__link-wrap
-                          .btn-pointer__wrap.
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
-                        a(href="event-open.html" rel="nofollow").b-box__link
-                  .b-tabs__pane-item.col-xs-12
-                    .c-box.c-box-v
                       .c-box__inner
                         .c-box__cont
                           h3.c-box__ttl-s3 St. Patrick’s Day in New York
-                          p.c-box__txt.c-box__txt--display Cruachan, Lunasa, Flook, McGoldrick's band
+                          hr.hr-pattern
+                          p.c-box__txt Cruachan, Lunasa, Flook, McGoldrick's band
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
                         .c-box__date-item
                           time.date.c-box__date(datetime="2016-09-24T20:00")
-                            span.date__dt 23
+                            span.date__dt 24
                             span.date__rh
                               span.date__rh-m sept
                               span.date__rh-d Mon
-                            span.date__ad 8:00 pm
-                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
+                            span.date__ad 10:00 pm
                         .c-box__link-wrap
                           .btn-pointer__wrap.
                             <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
                             <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                             <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
                         a(href="event-open.html" rel="nofollow").b-box__link
-                  .b-tabs__pane-item.col-xs-12
-                    .c-box.c-box-v
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
                       .c-box__inner
                         .c-box__cont
-                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                          p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
-                        .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
-                            span.date__dt 23
-                            span.date__rh
-                              span.date__rh-m sept
-                              span.date__rh-d Mon
-                            span.date__ad 8:00 pm
+                          h3.c-box__ttl-s3 American Decorative Arts
+                          hr.hr-pattern
+                          p.c-box__txt Fifth Avenue
                         .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg")
-                        .c-box__link-wrap
-                          .btn-pointer__wrap.
-                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
-                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
-                        a(href="event-open.html" rel="nofollow").b-box__link
-                  .b-tabs__pane-item.col-xs-12
-                    .c-box.c-box-v
-                      .c-box__inner
-                        .c-box__cont
-                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
-                          p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
                         .c-box__date-item
-                          time.date.c-box__date(datetime="2009-08-29T20:00")
-                            span.date__dt 23
+                          time.date.c-box__date(datetime="2016-09-25T20:00")
+                            span.date__dt 25
                             span.date__rh
                               span.date__rh-m sept
                               span.date__rh-d Mon
                             span.date__ad 8:00 pm
-                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
                         .c-box__link-wrap
                           .btn-pointer__wrap.
                             <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
                             <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                             <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-
                         a(href="event-open.html" rel="nofollow").b-box__link
-                  .b-box__btn-wrap
-                    a(href="").btn.btn-icon.btn-icon--plus More events
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 Troye Sivan
+                          hr.hr-pattern
+                          p.c-box__txt Webster Hall
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-26T20:00")
+                            span.date__dt 26
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 Maurice Hines Is Tappin' Thru Life
+                          hr.hr-pattern
+                          p.c-box__txt New World Stages: Stage 1
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-27T20:00")
+                            span.date__dt 27
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                          hr.hr-pattern
+                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-28T20:00")
+                            span.date__dt 28
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 Troye Sivan
+                          hr.hr-pattern
+                          p.c-box__txt Webster Hall
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-26T20:00")
+                            span.date__dt 26
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 Maurice Hines Is Tappin' Thru Life
+                          hr.hr-pattern
+                          p.c-box__txt New World Stages: Stage 1
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-27T20:00")
+                            span.date__dt 27
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+
+                  .b-tabs__pane-item.col-sm-6.col-md-4
+                    .c-box
+                      .c-box__inner
+                        .c-box__cont
+                          h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                          hr.hr-pattern
+                          p.c-box__txt Stay B, Andrew Feeling, Someone Else
+                        .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg")
+                        .c-box__date-item
+                          time.date.c-box__date(datetime="2009-09-28T20:00")
+                            span.date__dt 28
+                            span.date__rh
+                              span.date__rh-m sept
+                              span.date__rh-d Mon
+                            span.date__ad 8:00 pm
+                        .c-box__link-wrap
+                          .btn-pointer__wrap.
+                            <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                            <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        a(href="event-open.html" rel="nofollow").b-box__link
+              #block-b.b-tabs__pane.fade.in.row(role="tabpanel")
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                        p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2009-08-29T20:00")
+                          span.date__dt 23
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_01_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 St. Patrick’s Day in New York
+                        p.c-box__txt.c-box__txt--display Cruachan, Lunasa, Flook, McGoldrick's band
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-24T20:00")
+                          span.date__dt 24
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_02_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 American Decorative Arts
+                        p.c-box__txt.c-box__txt--display Fifth Avenue
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-25T20:00")
+                          span.date__dt 25
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_03_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 Troye Sivan
+                        p.c-box__txt.c-box__txt--display Webster Hall
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-26T20:00")
+                          span.date__dt 26
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 Maurice Hines Is Tappin' Thru Life
+                        p.c-box__txt.c-box__txt--display New World Stages: Stage 1
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-27T20:00")
+                          span.date__dt 27
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                        p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-28T20:00")
+                          span.date__dt 28
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 Troye Sivan
+                        p.c-box__txt.c-box__txt--display Webster Hall
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-26T20:00")
+                          span.date__dt 26
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_04_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 Maurice Hines Is Tappin' Thru Life
+                        p.c-box__txt.c-box__txt--display New World Stages: Stage 1
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-27T20:00")
+                          span.date__dt 27
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_05_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+                .b-tabs__pane-item.col-xs-12.col-lg-6
+                  .c-box.c-box-v
+                    .c-box__inner
+                      .c-box__cont
+                        h3.c-box__ttl-s3 TRAP  ONLY. best records plus fit
+                        p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                      .c-box__date-item
+                        time.date.c-box__date(datetime="2016-09-28T20:00")
+                          span.date__dt 28
+                          span.date__rh
+                            span.date__rh-m sept
+                            span.date__rh-d Mon
+                          span.date__ad 8:00 pm
+                      .b-box__img-wrap.b-box__grdnt-a.bg-image(data-bgimage="../uploads/events/EventsTiles_06_Retina.jpg")
+                      .c-box__link-wrap
+                        .btn-pointer__wrap.
+                          <a class="btn btn-pointer" href="event-open.html"><span class="btn-pointer__txt">More</span></a>
+                          <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                          <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                      a(href="event-open.html" rel="nofollow").b-box__link
+          .b-box__btn-wrap.txt--centr
+            .btn-icon__wrap.
+              <a href="#" class="btn btn-icon">More events</a>
+              <svg x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10.004,17V3"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M3,9.98h14"/>
+              </svg>
+
+      .b-past-evnt
+        .container
+          .row
+            .b-item__header.col-xs-12
+              h6.s6-heading.b-item__ttl-header Past events
+              a.btn.btn--mini(href="events.html") More
+            .c-box.c-box--lg.col-xs-12.col-md-6
+              .c-box__inner
+                .c-box__cont
+                  h2.c-box__ttl-s2 TRAP  ONLY. best records plus fit
+                  hr.hr-pattern
+                  p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_02_Original.jpg")
+                .c-box__date-item.c-box__date-item--float
+                  time.date.c-box__date.c-box__date--lg(datetime="2009-08-29T20:00")
+                    span.date__dt 23
+                    span.date__rh
+                      span.date__rh-m sept
+                      span.date__rh-d 2014
+                .c-box__link-wrap.c-box__link-wrap--indent
+                  .btn-pointer__wrap.
+                    <a class="btn btn-pointer__sm btn-anim-a" href="event-open.html"><b>open event & Gallery</b></a>
+                    <svg class="btn-pointer__left" x="0px" y="0px"
+                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                    <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                ul.c-box__views
+                  li.c-box__view.txt 32
+                  li.c-box__video.txt 2
+                a(href="event-open.html" rel="nofollow").b-box__link
+            .c-box.c-box--lg.col-xs-12.col-md-6
+              .c-box__inner
+                .c-box__cont
+                  h2.c-box__ttl-s2 TRAP  ONLY. best records plus fit
+                  hr.hr-pattern
+                  p.c-box__txt.c-box__txt--display Stay B, Andrew Feeling, Someone Else
+                .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                .c-box__date-item.c-box__date-item--float
+                  time.date.c-box__date.c-box__date--lg(datetime="2009-08-29T20:00")
+                    span.date__dt 23
+                    span.date__rh
+                      span.date__rh-m sept
+                      span.date__rh-d 2014
+                .c-box__link-wrap.c-box__link-wrap--indent
+                  .btn-pointer__wrap.
+                    <a class="btn btn-pointer__sm btn-anim-a" href="event-open.html"><b>open event & Gallery</b></a>
+                    <svg class="btn-pointer__left" x="0px" y="0px"
+                    viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                    <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+                ul.c-box__views
+                  li.c-box__view.txt 32
+                  li.c-box__video.txt 2
+                a(href="event-open.html" rel="nofollow").b-box__link
 
       .b-gallery
         .b-gallery__img-wrap.bg-image(data-bgimage="")
@@ -314,197 +580,198 @@ html(lang='en')
             .b-item__header.col-xs-12
               h6.s6-heading.b-item__ttl-header Gallery
             .b-gallery__slider.btn-white#sliderGallery
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+              div
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
 
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Californication nights
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Californication nights
+              div
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
 
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Californication nights
+              div
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
 
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Californication nights
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+              div
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
 
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Californication nights
+              div
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
 
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_05_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Californication nights
+              div
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Californication nights
 
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
-
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_07_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Californication nights
-
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
-
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Californication nights
-
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_06_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Californication nights
-
-              article.c-box.c-box--sm
-                .c-box__inner
-                  .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
-                  .c-box__date-item.c-box__date-item--float
-                    time.date-sm.c-box__date(datetime="2009-08-29T20:00")
-                      span.date-sm__dt 23
-                      span.date-sm__rh
-                        span.date-sm__rh-m sept
-                        span.date-sm__rh-d 2014
-                  ul.c-box__views
-                    li.c-box__view.txt 32
-                    li.c-box__video.txt 2
-                  a(href="gallery-open.html" rel="nofollow").b-box__link
-                h6
-                  a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
+                article.c-box.c-box--sm
+                  .c-box__inner
+                    .b-box__img-wrap.b-box__grdnt-b.bg-image(data-bgimage="../uploads/gallery/Gallery_04_Original.jpg")
+                    .c-box__date-item.c-box__date-item--float
+                      time.date-sm.c-box__date(datetime="2009-08-29T20:00")
+                        span.date-sm__dt 23
+                        span.date-sm__rh
+                          span.date-sm__rh-m sept
+                          span.date-sm__rh-d 2014
+                    ul.c-box__views
+                      li.c-box__view.txt 32
+                      li.c-box__video.txt 2
+                    a(href="gallery-open.html" rel="nofollow").b-box__link
+                  h6
+                    a.c-box__link(href="gallery-open.html") Mash up your heads: christmas night mash up your heads: christmas night
               
       include components/footer
     include components/scripts

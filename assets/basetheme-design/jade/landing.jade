@@ -4,6 +4,8 @@ html(lang='en')
   body
     .wrap.fill-wrap
       include components/headerLanding
+        block menu
+          include components/innerNavigation
       .b-banner.bg-image(data-bgimage="../uploads/landing/banner.jpg")
         .container
           .row

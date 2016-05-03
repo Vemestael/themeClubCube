@@ -36,12 +36,27 @@
     <div class="wrap">
       <header id="header" class="header">
         <div class="container-fluid line">
-          <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="images/logo-w.png" alt=""></a>
+          <div class="navbar-header intro"><a href="landing.html" class="navbar-brand"><span class="intro">intro</span></a>
             <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <nav id="navbarCollapse" class="navbar-collapse">
             <ul id="navigation" class="navbar-list dl-menu">
-              <li><span class="navbar-current">Home</span></li>
+              <li><a href="#">Home<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li><a href="inner-music.html">Music</a></li>
+                  <li><a href="inner-events.html">Events</a></li>
+                  <li><a href="inner-posters.html">Posters</a></li>
+                  <li><a href="inner-fevents.html">Frequent events</a></li>
+                  <li><a href="inner-gall.html">Galleries</a></li>
+                  <li><a href="index.html">Cube Club
+                      <div class="btn-pointer__wrap btn-label colored">
+                        <div class="btn btn-pointer"><span class="btn-pointer__txt">Pro</span></div>
+                        <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                        <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                        
+                      </div></a></li>
+                </ul>
+              </li>
               <li><a href="#">Events<i class="fa fa-angle-right"></i></a>
                 <ul class="navbar-dropdown__menu dl-submenu">
                   <li><a href="events.html">Event list</a></li>
@@ -528,33 +543,153 @@
               </div>
             </div>
             <aside class="b-aside col-xs-12 col-lg-4">
-              <div class="row">
-                <div class="b-audio__item"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/176235456&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></div>
-                <div class="b-item__header">
-                  <div class="s6-heading b-item__ttl-header">Blog</div><a href="blog.html" class="btn btn--mini">More</a>
-                </div>
-                <article class="b-box b-box-sm b-box--clr-b">
-                  <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
-                  <div class="b-box__date">
-                    <time datetime="2015-05-25T14:44">may 25, 14:44</time>
-                  </div>
-                  <h6 class="b-box__s6-ttl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6><a href="blog-open.html" class="b-box__link"></a>
-                </article>
-                <article class="b-box b-box-sm b-box--clr-b">
-                  <div data-bgimage="../uploads/blog/Blog_02_Retina.jpg" class="b-box__img-wrap bg-image"></div>
-                  <div class="b-box__date">
-                    <time datetime="2015-05-25T14:44">may 25, 14:44</time>
-                  </div>
-                  <h6 class="b-box__s6-ttl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6><a href="blog-open.html" class="b-box__link"></a>
-                </article>
-                <article class="b-box b-box-sm b-box--clr-a">
-                  <div class="b-box__date">
-                    <time datetime="2015-05-25T14:44">may 25, 14:44</time>
-                  </div>
-                  <h6 class="b-box__s6-ttl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6><a href="blog-open.html" class="b-box__link"></a>
-                </article>
+              <div class="b-audio__item">
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/176235456&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212039125&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
               </div>
             </aside>
+          </div>
+        </div>
+      </div>
+      <div class="b-content container">
+        <main class="b-main">
+          <h6 class="s6-heading b-tabs__ttl">Blog</h6>
+          <div id="masnBox" class="b-box-wrap">
+            <article class="b-box b-box--clr-b">
+              <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box--clr-a">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:45">may 25, 14:45</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-b">
+              <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-b">
+              <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:45">may 25, 14:45</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+                
+              </h6>
+            </article>
+            <article class="b-box b-box--clr-a">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:45">may 25, 14:45</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+                
+              </h6>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-b">
+              <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-b">
+              <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box--clr-b">
+              <div data-bgimage="../uploads/blog/Blog_01_Retina.jpg" class="b-box__img-wrap bg-image"></div>
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-a">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-a">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+            <article class="b-box b-box-sm b-box--clr-a">
+              <div class="b-box__date">
+                <time datetime="2015-04-25T14:44">may 25, 14:44</time>
+              </div>
+              <h6 class="b-box__s6-ttl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              </h6><a href="blog-open.html" class="b-box__link"></a>
+            </article>
+          </div>
+        </main>
+        <div class="b-box__btn-wrap txt--centr">
+          <div class="btn-icon__wrap">
+            <a href="#" class="btn btn-icon">More blogs</a>
+            <svg x="0px" y="0px"
+              width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10.004,17V3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M3,9.98h14"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -663,6 +798,7 @@
     <script src="js/app/modules/masonryTiles.js"></script>
     <script src="js/app/modules/parallax.js"></script>
     <script src="js/app/modules/imgHover.js"></script>
+    <script src="js/app/modules/slickSlider.js"></script>
     <script>appMakeBeCool.gateway.init();</script>
   </body>
 </html>

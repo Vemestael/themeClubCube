@@ -2070,6 +2070,12 @@ button {
 .btn-icon--refresh:before {
   background-image: url("../images/refresh-icon-white.svg"); }
 
+.btn-icon--refresh:active:before {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+          transform: rotate(360deg); }
+
 .btn-icon--refresh-wht:before {
   background-image: url("../images/refresh-icon.svg"); }
 
@@ -2645,15 +2651,6 @@ button {
   background-position: bottom center;
   position: relative;
   z-index: 1; }
-  .b-banner:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(80, 2, 136, 0.5);
-    z-index: -1; }
 
 .b-banner .navbar-brand {
   height: 50px;
@@ -4441,6 +4438,9 @@ button.mfp-arrow:hover:before {
 
 .b-banner__img-block {
   position: relative; }
+
+.b-video-item__slider .slick-prev {
+  display: none !important; }
 
 @media screen and (min-width: 992px) {
   .page-item__inner .img-block img {

@@ -4,6 +4,8 @@ html(lang='en')
   body
     .wrap
       include components/header
+        block menu
+          include components/mainNavigation
       .main-slide
         .main-slide__btn-item
         .main-slide__slider#sliderMain
@@ -347,13 +349,22 @@ html(lang='en')
                 .b-aside-item.col-xs-12.col-sm-6.col-lg-12
                   .b-item__header
                     .s6-heading.b-item__ttl-header Last video
-                    a.btn--mini.btn-icon.btn-icon--refresh(href="#")
-                  .b-video-item__iframe-md
-                    iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                  h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
-                  p.small-txt.
-                    But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
-                     proschedshem evente perekrik and share emotions we experienced some
+                    a.btn--mini.btn-icon.btn-icon--refresh.video-refresh(href="#")
+                  .b-video-item__slider
+                    div
+                      .b-video-item__iframe-md
+                          iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                        h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
+                        p.small-txt.
+                          But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
+                           proschedshem evente perekrik and share emotions we experienced some
+                    div
+                      .b-video-item__iframe-md
+                          iframe(src="https://player.vimeo.com/video/123608535?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                        h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
+                        p.small-txt.
+                          But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
+                           proschedshem evente perekrik and share emotions we experienced some
 
                 .b-aside-item.col-xs-12.col-sm-6.col-lg-12
                   .b-item__header

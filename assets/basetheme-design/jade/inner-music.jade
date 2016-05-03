@@ -3,7 +3,9 @@ html(lang='en')
   include components/head
   body
     .wrap
-      include components/header
+      include components/headerLanding
+        block menu
+          include components/innerNavigation
       .main-slide
         .main-slide__btn-item
         .main-slide__slider#sliderMain
@@ -308,33 +310,128 @@ html(lang='en')
                     a(href="").btn.btn-icon.btn-icon--plus More events
 
             aside.b-aside.col-xs-12.col-lg-4
-              .row
-                .b-audio__item
-                  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/176235456&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+              .b-audio__item
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/176235456&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212039125&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-                .b-item__header
-                  .s6-heading.b-item__ttl-header Blog
-                  a.btn.btn--mini(href="blog.html") More
-                article.b-box.b-box-sm.b-box--clr-b
-                  .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
-                  .b-box__date
-                    time(datetime="2015-05-25T14:44") may 25, 14:44
-                  h6.b-box__s6-ttl.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a(href="blog-open.html").b-box__link
-                article.b-box.b-box-sm.b-box--clr-b
-                  .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_02_Retina.jpg")
-                  .b-box__date
-                    time(datetime="2015-05-25T14:44") may 25, 14:44
-                  h6.b-box__s6-ttl.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a(href="blog-open.html").b-box__link
-                article.b-box.b-box-sm.b-box--clr-a
-                  .b-box__date
-                    time(datetime="2015-05-25T14:44") may 25, 14:44
-                  h6.b-box__s6-ttl.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  a(href="blog-open.html").b-box__link
+      .b-content.container
+        main.b-main
+          h6.s6-heading.b-tabs__ttl Blog
+          #masnBox.b-box-wrap
+            article.b-box.b-box--clr-b
+              .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
 
+            article.b-box.b-box--clr-a
+              .b-box__date
+                time(datetime="2015-04-25T14:45") may 25, 14:45
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm.b-box--clr-b
+              .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm.b-box--clr-b
+              .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm
+              .b-box__date
+                time(datetime="2015-04-25T14:45") may 25, 14:45
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+
+            article.b-box.b-box--clr-a
+              .b-box__date
+                time(datetime="2015-04-25T14:45") may 25, 14:45
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+
+            article.b-box.b-box-sm.b-box--clr-b
+              .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm.b-box--clr-b
+              .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box--clr-b
+              .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm.b-box--clr-a
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm.b-box--clr-a
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+
+            article.b-box.b-box-sm.b-box--clr-a
+              .b-box__date
+                time(datetime="2015-04-25T14:44") may 25, 14:44
+              h6.b-box__s6-ttl.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid autem cupiditate debitis delectus dignissimos fuga
+              a(href="blog-open.html").b-box__link
+        .b-box__btn-wrap.txt--centr
+          .btn-icon__wrap.
+            <a href="#" class="btn btn-icon">More blogs</a>
+            <svg x="0px" y="0px"
+              width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10.004,17V3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M3,9.98h14"/>
+            </svg>
       include components/footer
     include components/scripts
