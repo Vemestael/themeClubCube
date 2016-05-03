@@ -3750,6 +3750,24 @@ span.intro {
 .main-video__iframe-wrap {
   padding-bottom: 56.25%; }
 
+.video-wrap {
+  position: relative; }
+  .video-wrap:before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; }
+
+.video-wrap .iframe-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.video-wrap .iframe-box iframe {
+  width: 100%;
+  height: 100%; }
+
 .main-video__iframe-wrap iframe,
 .b-video-item__iframe-sm iframe,
 .b-video-item__iframe-md iframe,
