@@ -4439,8 +4439,26 @@ button.mfp-arrow:hover:before {
 .b-banner__img-block {
   position: relative; }
 
+.b-video-item__slider {
+  margin-bottom: 0; }
+
 .b-video-item__slider .slick-prev {
   display: none !important; }
+
+.topmargin {
+  margin-top: 26px; }
+
+@media screen and (min-width: 768px) {
+  .video-descr {
+    margin-left: -15px;
+    padding-left: 30px;
+    background-color: #e8e8e8; }
+  .flex-sm {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -js-display: flex; } }
 
 @media screen and (min-width: 992px) {
   .page-item__inner .img-block img {

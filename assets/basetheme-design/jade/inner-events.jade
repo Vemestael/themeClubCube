@@ -3,7 +3,7 @@ html(lang='en')
   include components/head
   body
     .wrap
-      include components/headerLanding
+      include components/header
         block menu
           include components/innerNavigation
       .main-slide
@@ -110,17 +110,19 @@ html(lang='en')
         main.b-main
           .b-box-wrap
             .row
-              ul.b-tabs__nav.b-tabs__nav-tabs.b-tabs__nav-tabs--center(role="tablist")
-                li.active(role="presentation")
-                  a(href="#block-a", aria-controls="block-a", role="tab", data-toggle="tab").
-                    <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
-                    <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
-                    </svg>
-                li(role="presentation")
-                  a(href="#block-b", aria-controls="block-b", role="tab", data-toggle="tab").
-                    <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
-                    <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
-                    </svg>
+              .col-xs-12
+                h6.s6-heading.b-tabs__ttl Top events
+                ul.b-tabs__nav.b-tabs__nav-tabs(role="tablist")
+                  li.active(role="presentation")
+                    a(href="#block-a", aria-controls="block-a", role="tab", data-toggle="tab").
+                      <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                      <path fill="#231F20" d="M0,4h4V0H0V4z M6,0v4h4V0H6z M0,10h4V6H0V10z M6,10h4V6H6V10z"/>
+                      </svg>
+                  li(role="presentation")
+                    a(href="#block-b", aria-controls="block-b", role="tab", data-toggle="tab").
+                      <svg baseProfile="tiny" width="10" height="10" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                      <path fill="#231F20" d="M0,0v4h10V0H0z M10,10V6H0v4H10z"/>
+                      </svg>
             .b-tabs__content
               #block-a.b-tabs__pane.fade.in.active.row(role="tabpanel")
                   .b-tabs__pane-item.col-sm-6.col-md-4
@@ -397,19 +399,19 @@ html(lang='en')
               a.btn--mini.btn-icon.btn-icon--refresh.video-refresh(href="#")
             .b-video-item__slider.col-xs-12
               div
-                .row
+                .row.flex-sm
                   .b-video-item__iframe-sm.col-sm-8
                       iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                  .col-sm-4
-                    h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
-                    p.small-txt.
+                  .col-sm-4.video-descr
+                    h2.s2-heading We happily announce our new dancehall "Rivierra" with two bars
+                    p.
                       But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
                        proschedshem evente perekrik and share emotions we experienced some
               div
-                .row
+                .row.flex-sm
                   .b-video-item__iframe-sm.col-sm-8
                       iframe(src="https://player.vimeo.com/video/123608535?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                  .col-sm-4  
+                  .col-sm-4.video-descr
                     h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
                     p.small-txt.
                       But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
