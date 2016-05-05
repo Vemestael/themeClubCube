@@ -4539,19 +4539,22 @@ button.mfp-arrow:hover:before {
 .nobottommargin {
   margin-bottom: 0 !important; }
 
+.video-descr {
+  padding: 0 30px;
+  background-color: #e8e8e8; }
+
 @media screen and (min-width: 992px) {
   .page-item__inner .img-block img {
     position: absolute; }
-  .video-descr {
-    margin-left: -15px;
-    padding-left: 30px;
-    background-color: #e8e8e8; }
   .flex-md {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -js-display: flex; } }
+    -js-display: flex; }
+  .video-descr {
+    margin-left: -15px;
+    padding-left: 30px; } }
 
 .b-msg {
   position: relative;
