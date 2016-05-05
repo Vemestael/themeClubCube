@@ -25,6 +25,8 @@
 
 .c-headlines .container
   padding-top: 30px
+  position: relative
+  z-index: 1
 
 .c-headlines__img-wrap
   @extend %bg-images
@@ -43,6 +45,13 @@
 .c-headlines .hr-pattern,
 .c-headlines__likes
   display: none
+
+.c-headlines__likes
+  padding-top: 55px
+  margin-bottom: 60px
+
+.visible
+  display: block !important
 
 
 @media (min-width: $screen-sm)
@@ -71,7 +80,6 @@
     display: block
 
   .c-headlines__likes
-    padding-top: 55px
     color: #fff
     clear: both
 
