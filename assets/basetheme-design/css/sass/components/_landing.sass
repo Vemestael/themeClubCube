@@ -110,16 +110,18 @@
 .topmargin
   margin-top: 26px
 
-@media screen and (min-width: $screen-sm)
+.nobottommargin
+  margin-bottom: 0 !important
+
+@media screen and (min-width: $screen-md)
+  .page-item__inner .img-block img
+    position: absolute
+
   .video-descr
     margin-left: -15px
     padding-left: 30px
     background-color: $promo-bg
 
-  .flex-sm
+  .flex-md
     display: flex
     -js-display: flex
-
-@media screen and (min-width: $screen-md)
-  .page-item__inner .img-block img
-    position: absolute

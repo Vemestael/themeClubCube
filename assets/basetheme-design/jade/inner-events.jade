@@ -4,8 +4,7 @@ html(lang='en')
   body
     .wrap
       include components/header
-        block menu
-          include components/innerNavigation
+
       .main-slide
         .main-slide__btn-item
         .main-slide__slider#sliderMain
@@ -406,12 +405,12 @@ html(lang='en')
               a.btn--mini.btn-icon.btn-icon--refresh.video-refresh(href="#")
             .b-video-item__slider.col-xs-12
               div
-                .row.flex-sm
-                  .col-sm-8
+                .row.flex-md
+                  .col-xs-12.col-md-8
                     .video-wrap
                       .iframe-box
                         iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                  .col-sm-4.video-descr
+                  .col-xs-12.col-md-4.video-descr
                     h2.s2-heading We happily announce our new dancehall "Rivierra" with two bars
                     p.
                       But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember

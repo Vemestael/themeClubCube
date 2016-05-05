@@ -4,8 +4,7 @@ html(lang='en')
   body
     .wrap
       include components/header
-        block menu
-          include components/innerNavigation
+
       .main-slide
         .main-slide__btn-item
         .main-slide__slider#sliderMain
@@ -213,7 +212,7 @@ html(lang='en')
       .b-content.container
         main.b-main
           h6.s6-heading.b-tabs__ttl Blogs
-          #masnBox.b-box-wrap.topmargin
+          #masnBox.b-box-wrap.topmargin.nobottommargin
             article.b-box.b-box--clr-b
               .b-box__img-wrap.bg-image(data-bgimage="../uploads/blog/Blog_01_Retina.jpg")
               .b-box__date
