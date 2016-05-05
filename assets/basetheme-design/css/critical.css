@@ -6154,8 +6154,10 @@ button.mfp-arrow:hover:before {
 
 .b-footer__txt {
   margin-top: 0;
-  margin-bottom: 20px;
-  color: #666; }
+  margin-bottom: 20px; }
+
+.b-footer__days {
+  color: #666 !important; }
 
 .b-footer__txt--it {
   font-family: "PT Sans Regular", sans-serif;
