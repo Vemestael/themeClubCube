@@ -133,7 +133,11 @@
   display: inline-block
   width: auto
   text-align: center
-  
+
+.timer .table-cell:first-child .tab-val,
+.timer .table-cell:first-child .tab-metr
+  padding-left: 0
+
 .timer .table-cell .tab-val
   font-size: 30px
   color: #fff
@@ -143,7 +147,7 @@
   position: relative
   border-bottom: 4px solid #fff
   margin-left: -.5px
-  font-weight: bold
+  font-family: $second-bold-font
 
   &:after
     content: ':'
@@ -173,8 +177,8 @@
   padding-left: 10px
   opacity: .5
   color: #fff
-  margin-top: 8px
-  font-weight: bold
+  margin-top: 13px
+  font-family: $second-bold-font
 
 #simple_timer.timer .table-cell.day, 
 #periodic_timer_days.timer .table-cell.hour

@@ -2635,7 +2635,7 @@ button {
 
 @media (min-width: 992px) {
   .date-lg {
-    width: 290px; } }
+    width: 280px; } }
 
 @media (min-width: 1280px) {
   .date-lg__dt,
@@ -3159,7 +3159,7 @@ span.intro {
   .c-headlines__date-lg {
     position: absolute;
     top: 84px;
-    right: 40px; }
+    right: 15px; }
   .c-headlines .hr-pattern,
   .c-headlines__likes {
     display: block; }
@@ -3361,6 +3361,10 @@ span.intro {
   width: auto;
   text-align: center; }
 
+.timer .table-cell:first-child .tab-val,
+.timer .table-cell:first-child .tab-metr {
+  padding-left: 0; }
+
 .timer .table-cell .tab-val {
   font-size: 30px;
   color: #fff;
@@ -3370,7 +3374,7 @@ span.intro {
   position: relative;
   border-bottom: 4px solid #fff;
   margin-left: -.5px;
-  font-weight: bold; }
+  font-family: "PT Sans Caption Bold", sans-serif; }
   .timer .table-cell .tab-val:after {
     content: ':';
     position: absolute;
@@ -3399,8 +3403,8 @@ span.intro {
   padding-left: 10px;
   opacity: .5;
   color: #fff;
-  margin-top: 8px;
-  font-weight: bold; }
+  margin-top: 13px;
+  font-family: "PT Sans Caption Bold", sans-serif; }
 
 #simple_timer.timer .table-cell.day,
 #periodic_timer_days.timer .table-cell.hour {
