@@ -2565,7 +2565,6 @@ button {
 @media (min-width: 768px) {
   .date-lg {
     display: inline-block;
-    width: 251px;
     padding: 11px 10px 0;
     border: 8px solid;
     font-family: "PT Sans Caption Bold", sans-serif;
@@ -2593,8 +2592,8 @@ button {
   .date-lg__rh-m {
     width: 100%;
     margin-top: 4px;
-    padding-right: 8px;
-    font-size: 14px; }
+    padding-right: 0;
+    font-size: 11px; }
   .date-lg__rh-d,
   .date-lg__rh-t {
     display: block;
@@ -2635,12 +2634,18 @@ button {
 
 @media (min-width: 992px) {
   .date-lg {
-    width: 280px; } }
+    width: 295px; }
+  .date-lg__rh-m {
+    padding-right: 8px;
+    font-size: 14px; } }
 
 @media (min-width: 1280px) {
   .date-lg__dt,
   .date-lg__ad {
-    font-size: 60px; } }
+    font-size: 60px; }
+  .date-lg {
+    display: inline-block;
+    width: 370px; } }
 
 .header {
   position: fixed;
@@ -3159,7 +3164,7 @@ span.intro {
   .c-headlines__date-lg {
     position: absolute;
     top: 84px;
-    right: 15px; }
+    right: 30px; }
   .c-headlines .hr-pattern,
   .c-headlines__likes {
     display: block; }
@@ -3182,7 +3187,9 @@ span.intro {
 @media (min-width: 1280px) {
   .c-headlines__ttl {
     max-width: 700px;
-    font-size: 48px; } }
+    font-size: 48px; }
+  .c-headlines__date-lg {
+    right: 15px; } }
 
 .b-breadcrumbs {
   margin: 0 0 10px 0; }
