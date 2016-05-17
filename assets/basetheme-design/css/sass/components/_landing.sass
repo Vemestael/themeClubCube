@@ -1,3 +1,6 @@
+.nobottommargin
+  margin-bottom: 0 !important
+
 .fill-wrap
   background-color: #E8E8E8 !important
 
@@ -24,12 +27,12 @@
 .page-item__inner .img-block img 
   max-width: 100%
   position: static
-  transform: scale(1.1,1.1)
+  transform: scale(1.1, 1.1) translateY(5%)
   transition: transform .9s ease, bottom 1.5s ease
   margin: auto
 
 .page-item__wrap:hover .img-block img
-  transform: scale(1,1)
+  transform: scale(1,1) translateY(0)
   top: initial
   bottom: 0 !important
   transition: transform .9s ease, bottom 3s ease
@@ -120,6 +123,7 @@
 @media screen and (min-width: $screen-md)
   .page-item__inner .img-block img
     position: absolute
+    left: calc(50% - 180px)
 
   .flex-md
     display: flex
