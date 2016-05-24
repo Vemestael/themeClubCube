@@ -232,5 +232,5 @@ blockquote::before {
     background: #c49548; }
   .mega-menu {
     background-color: #c49548; }
-  .navbar-list > li:hover > a {
+  .navbar-list > li.active > a {
     background-color: #c49548; } }

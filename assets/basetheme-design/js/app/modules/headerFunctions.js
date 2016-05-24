@@ -39,6 +39,7 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
         },
 
         _setup = function () {
+            _hoveredMenuNav();
         },
 
         _setBinds = function () {
@@ -86,6 +87,26 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
                     _globals.header.addClass('header--toggled');
                 }
             };
+        },
+
+        _hoveredMenuNav = function () {
+            $(".navbar-list > li").hover(function() {
+                var hovered = $(this)
+                    , timer = hovered.data("timer") || 0;
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                    hovered.addClass("active");
+                }, 480);
+                hovered.data("timer", timer);
+            }, function() {
+                var hovered = $(this)
+                    , timer = hovered.data("timer") || 0;
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                    hovered.removeClass("active");
+                }, 480);
+                hovered.data("timer", timer);
+            });
         };
 
     //PUBLIC METHODS
