@@ -123,6 +123,67 @@
   background: url("../images/refresh-icon-white.svg") center no-repeat
   transition: none
 
+.timer
+  text-align: left
+  margin: 20px auto 20px
+  padding: 0 0 10px
+  font-size: 0
+
+.timer .table-cell
+  display: inline-block
+  width: auto
+  text-align: center
+
+.timer .table-cell:first-child .tab-val,
+.timer .table-cell:first-child .tab-metr
+  padding-left: 0
+
+.timer .table-cell .tab-val
+  font-size: 30px
+  color: #fff
+  margin: 0 0 5px
+  padding: 0 10px
+  padding-bottom: 3px
+  position: relative
+  border-bottom: 4px solid #fff
+  margin-left: -.5px
+  font-family: $second-bold-font
+
+  &:after
+    content: ':'
+    position: absolute
+    right: calc(100% - 5px)
+    top: 0
+    opacity: .5
+
+.timer .table-cell:first-child .tab-val:after
+  display: none
+
+.timer .table-cell.second
+  vertical-align: top
+
+.timer .table-cell.second .tab-val
+  font-size: 15px
+  vertical-align: top
+  border-bottom: none
+
+.timer .table-cell.second .tab-metr
+  display: none
+
+.timer .table-cell .tab-metr
+  font-size: 14px
+  text-transform: uppercase
+  text-align: left
+  padding-left: 10px
+  opacity: .5
+  color: #fff
+  margin-top: 13px
+  font-family: $second-bold-font
+
+#simple_timer.timer .table-cell.day, 
+#periodic_timer_days.timer .table-cell.hour
+  width: 120px
+
 @media (min-width: 480px)
   .main-slide__item-a .main-slide__s1-ttl
     max-width: 360px
@@ -269,6 +330,17 @@
     border: 2px solid #000
     color: #000
     transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease
+
+  .timer
+    margin: 0 auto 30px
+    text-align: center
+
+  .timer .table-cell .tab-val
+    font-size: 60px
+    border-bottom: 8px solid #fff
+
+  .timer .table-cell.second .tab-val
+    font-size: 30px
 
 @media (min-width: $screen-md)
   .main-slide,

@@ -150,6 +150,9 @@ button
 .btn-icon--refresh:before
   background-image: url("../images/refresh-icon-white.svg")
 
+.btn-icon--refresh:active:before
+  transform: rotate(360deg)
+
 .btn-icon--refresh-wht:before
   background-image: url("../images/refresh-icon.svg")
 
@@ -601,7 +604,6 @@ button
 @media (min-width: $screen-sm)
   .date-lg
     display: inline-block
-    width: 290px
     padding: 11px 10px 0
     border: 8px solid
     font-family: $second-bold-font
@@ -633,8 +635,8 @@ button
   .date-lg__rh-m
     width: 100%
     margin-top: 4px
-    padding-right: 8px
-    font-size: 14px
+    padding-right: 0
+    font-size: 11px
 
   .date-lg__rh-d,
   .date-lg__rh-t
@@ -681,7 +683,19 @@ button
     max-width: 400px
     font-size: 22px
 
+@media (min-width: $screen-md)
+  .date-lg
+    width: 295px
+
+  .date-lg__rh-m
+    padding-right: 8px
+    font-size: 14px
+
 @media (min-width: $screen-lg)
   .date-lg__dt,
   .date-lg__ad
     font-size: 60px
+
+  .date-lg
+    display: inline-block
+    width: 370px

@@ -1,3 +1,6 @@
+.nobottommargin
+  margin-bottom: 0 !important
+
 .fill-wrap
   background-color: #E8E8E8 !important
 
@@ -23,13 +26,13 @@
 
 .page-item__inner .img-block img 
   max-width: 100%
-  position: absolute
-  transform: scale(1.1,1.1)
+  position: static
+  transform: scale(1.1, 1.1) translateY(5%)
   transition: transform .9s ease, bottom 1.5s ease
   margin: auto
 
 .page-item__wrap:hover .img-block img
-  transform: scale(1,1)
+  transform: scale(1,1) translateY(0)
   top: initial
   bottom: 0 !important
   transition: transform .9s ease, bottom 3s ease
@@ -101,11 +104,31 @@
 .b-banner__img-block
   position: relative
 
-  &:after
-    content: ''
+.b-video-item__slider
+  margin-bottom: 0
+
+.b-video-item__slider .slick-prev
+  display: none !important
+
+.topmargin
+  margin-top: 26px
+
+.nobottommargin
+  margin-bottom: 0 !important
+
+.video-descr
+  padding: 0 30px
+  background-color: $promo-bg
+
+@media screen and (min-width: $screen-md)
+  .page-item__inner .img-block img
     position: absolute
-    bottom: 0
-    width: 100%
-    height: 20px
-    left: 0
-    background: linear-gradient(to top, rgba(232,232,232,.58), rgba(232,232,232,0))
+    left: calc(50% - 180px)
+
+  .flex-md
+    display: flex
+    -js-display: flex
+
+  .video-descr
+    margin-left: -15px
+    padding-left: 30px

@@ -130,6 +130,9 @@ blockquote::before {
 .header--toggled .navbar-toogle {
   background-color: #e15e32; }
 
+.navbar-dropdown__menu .btn-pointer__txt {
+  color: #e15e32; }
+
 .navbar-collapse.active {
   background-color: #e15e32; }
 

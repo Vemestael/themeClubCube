@@ -44,6 +44,8 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.utils.extend(_globals.siteObj.classes.MasonryTiles, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.Parallax, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.ImgHover, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.SlickSlider, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.Timer, _globals.siteObj.base.Class);
 
 
     },
@@ -66,6 +68,8 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.createClassInstance('MasonryTiles', _globals.siteObj.classes.MasonryTiles, {classId: 'MasonryTiles'});
       _globals.siteObj.createClassInstance('Parallax', _globals.siteObj.classes.Parallax, {classId: 'Parallax'});
       _globals.siteObj.createClassInstance('ImgHover', _globals.siteObj.classes.ImgHover, {classId: 'ImgHover'});
+      _globals.siteObj.createClassInstance('SlickSlider', _globals.siteObj.classes.SlickSlider, {classId: 'ImgHover'});
+      _globals.siteObj.createClassInstance('Timer', _globals.siteObj.classes.Timer, {classId: 'ImgHover'});
     },
 
     _setup = function () {
@@ -92,6 +96,8 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
             _themeMode.trigger('MasonryTiles_Init', data);
             _themeMode.trigger('Parallax_Init', data);
             _themeMode.trigger('ImgHover_Init', data);
+            _themeMode.trigger('SlickSlider_Init', data);
+            _themeMode.trigger('Timer_Init', data);
           });
         }
       }

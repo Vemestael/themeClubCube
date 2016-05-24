@@ -14,16 +14,7 @@
   background-position: bottom center
   position: relative
   z-index: 1
-  
-  &:after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    background: rgba(80,2,136,.5)
-    z-index: -1
+
 
 .b-banner .navbar-brand
   height: 50px
@@ -111,6 +102,20 @@
   border: none
   text-transform: uppercase
   cursor: pointer
+
+.navbar-dropdown__menu .btn-pointer__wrap
+  position: absolute
+  top: 8px
+  right: 0
+
+.navbar-dropdown__menu .btn-pointer__txt
+  padding: 0
+
+.navbar-dropdown__menu .btn-label.colored .btn-pointer
+  background: #fff !important
+
+.navbar-dropdown__menu .btn-label.colored .btn-pointer__left path
+  fill: #fff !important
 
 .navbar-current
   display: block

@@ -25,6 +25,8 @@
 
 .c-headlines .container
   padding-top: 30px
+  position: relative
+  z-index: 1
 
 .c-headlines__img-wrap
   @extend %bg-images
@@ -43,6 +45,20 @@
 .c-headlines .hr-pattern,
 .c-headlines__likes
   display: none
+
+.c-headlines__likes
+  padding-top: 55px
+  margin-bottom: 60px
+
+.visible
+  display: block !important
+
+.c-headlines__date-lg .timer .table-cell .tab-val
+  font-size: 30px
+  border-bottom: 4px solid #fff
+
+.c-headlines__date-lg .timer .table-cell.second .tab-val
+  font-size: 15px
 
 
 @media (min-width: $screen-sm)
@@ -64,14 +80,13 @@
   .c-headlines__date-lg
     position: absolute
     top: 84px
-    right: 40px
+    right: 30px
 
   .c-headlines .hr-pattern,
   .c-headlines__likes
     display: block
 
   .c-headlines__likes
-    padding-top: 55px
     color: #fff
     clear: both
 
@@ -79,12 +94,23 @@
   .c-headlines__likes.b-likes span::after
     background-color: #625B88
 
-
 @media (min-width: $screen-md)
   .c-headlines__ttl
     max-width: 520px
+
+  .c-headlines__date-lg .timer .table-cell .tab-val
+    font-size: 60px
+    border-bottom: 8px solid #fff
+
+  .c-headlines__date-lg .timer .table-cell.second .tab-val
+    font-size: 30px
+
+
 
 @media (min-width: $screen-lg)
   .c-headlines__ttl
     max-width: 700px
     font-size: 48px
+
+  .c-headlines__date-lg
+    right: 15px

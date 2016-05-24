@@ -4,6 +4,7 @@ html(lang='en')
   body
     .wrap
       include components/header
+
       .main-slide
         .main-slide__btn-item
         .main-slide__slider#sliderMain
@@ -111,6 +112,45 @@ html(lang='en')
                       <a class="btn btn-pointer btn-pointer--lg btn-anim-a" href="event-open.html"><b>More</b></a>
                       <svg class="btn-pointer__left" x="0px" y="0px"
                       viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                      <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+          .main-slide__item-b
+            .main-slide__bg-wrap.bg-grdnt
+            .container
+              .main-slide__item-inr
+                h1.main-slide__s1-ttl FRIENDS Private House Party
+                hr.hr-pattern
+                .b-timer(data-year="2018" data-month="5" data-day="20" data-hour="21" data-minute="30")
+                .main-slide__footer
+                  ul.b-likes.b-likes--wht
+                    li.b-likes__pinterest-p.
+                      <span>457
+                      <svg x="0px" y="0px" viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
+                      <path class="svg__fill" d="M53,2v16.5H10.9l-8.1-8.3L10.9,2H53 M55,0H10.1L0,10.2l10.1,10.3H55V0L55,0z"/>
+                      </svg>
+                      </span>
+                    li.b-likes__google-plus.
+                      <span>457
+                      <svg x="0px" y="0px" viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
+                      <path class="svg__fill" d="M53,2v16.5H10.9l-8.1-8.3L10.9,2H53 M55,0H10.1L0,10.2l10.1,10.3H55V0L55,0z"/>
+                      </svg>
+                      </span>
+                    li.b-likes__twitter.
+                      <span>457
+                      <svg x="0px" y="0px" viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
+                      <path class="svg__fill" d="M53,2v16.5H10.9l-8.1-8.3L10.9,2H53 M55,0H10.1L0,10.2l10.1,10.3H55V0L55,0z"/>
+                      </svg>
+                      </span>
+                    li.b-likes__facebook.
+                      <span>1.45K
+                      <svg x="0px" y="0px" viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
+                      <path class="svg__fill" d="M53,2v16.5H10.9l-8.1-8.3L10.9,2H53 M55,0H10.1L0,10.2l10.1,10.3H55V0L55,0z"/>
+                      </svg>
+                      </span>
+                  .main-slide__link-wrap
+                    .btn-pointer__wrap.
+                      <a class="btn btn-pointer btn-pointer--lg btn-anim-a" href="event-open.html"><b>More</b></a>
+                      <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                       <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
       .b-promo
@@ -347,13 +387,22 @@ html(lang='en')
                 .b-aside-item.col-xs-12.col-sm-6.col-lg-12
                   .b-item__header
                     .s6-heading.b-item__ttl-header Last video
-                    a.btn--mini.btn-icon.btn-icon--refresh(href="#")
-                  .b-video-item__iframe-md
-                    iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                  h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
-                  p.small-txt.
-                    But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
-                     proschedshem evente perekrik and share emotions we experienced some
+                    a.btn--mini.btn-icon.btn-icon--refresh.video-refresh(href="#")
+                  .b-video-item__slider
+                    div
+                      .b-video-item__iframe-md
+                          iframe(src="https://player.vimeo.com/video/140230038?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                        h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
+                        p.small-txt.
+                          But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
+                           proschedshem evente perekrik and share emotions we experienced some
+                    div
+                      .b-video-item__iframe-md
+                          iframe(src="https://player.vimeo.com/video/123608535?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                        h6.s6-heading We happily announce our new dancehall "Rivierra" with two bars
+                        p.small-txt.
+                          But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember
+                           proschedshem evente perekrik and share emotions we experienced some
 
                 .b-aside-item.col-xs-12.col-sm-6.col-lg-12
                   .b-item__header
