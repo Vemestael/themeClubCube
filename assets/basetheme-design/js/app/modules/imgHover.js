@@ -54,23 +54,25 @@ appMakeBeCool.gateway.addClass('ImgHover', function (properties, $, $window, $do
 
         _imgHoverFunc = function () {
 
+            function toBottom() {
+                
+            }
+
+            function toTop() {
+
+            }
+
             _globals.item.each(function() {
-                $(this).on('mousemove', function(e) {
-                  if($(this).height() < $(this).find('.img-block img').height()) {
-
+                if($(this).height() < $(this).find('.img-block img').height()) {
                     var img = $(this).find('.img-block img');
-                    var mcoord = e.offsetY==undefined?e.layerY:e.offsetY;
-                    var imgOff = 100 - ($(this).height() / img.height() * 100);
-                    var offsetY = (mcoord / $(this).height() * imgOff);
-
-                    var toTop = (-offsetY) + '%';
+                    var imgOff = img.height() - $(this).height();
+                    var toTop = (-imgOff) + 'px';
                     img.css({
-                      'top' : toTop
-                    });
-                    } else {
-                        $(this).find('.img-block img').css({'position' : 'static'});
-                    }
-                });
+                      'bottom' : toTop
+                  }, 2000);
+                } else {
+                    $(this).find('.img-block img').css({'position' : 'static'});
+                }
             });
         },
 

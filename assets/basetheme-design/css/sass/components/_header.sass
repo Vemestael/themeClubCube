@@ -63,6 +63,10 @@
   border-bottom: none
   text-transform: uppercase
 
+.navbar-header.intro .navbar-brand
+  height: 15px
+  margin-top: 17px
+
 .navbar-brand img
   display: block
   width: auto
@@ -231,7 +235,17 @@
   color: #fff
   line-height: 50px
 
+span.intro
+  font-size: 14px
+  font-weight: 100
+
 @media (min-width: $screen-sm)
+
+  .header__sticky .navbar-header.intro .navbar-brand
+    margin-top: 0
+    height: initial
+    padding: 0
+    transition: all 0.2s ease
 
   .header__sticky .navbar-brand
     height: 30px
@@ -261,6 +275,9 @@
     font-size: 30px
     font-weight: bold
 
+  span.intro
+    font-size: 14px
+
   .navbar-toogle
     width: 90px
     height: 80px
@@ -284,7 +301,8 @@
     position: relative
 
   .header__sticky .navbar-list > li > a,
-  .header__sticky .navbar-current
+  .header__sticky .navbar-current,
+  .header__sticky .navbar-header.intro .navbar-brand
     padding: 17px
     transition: all 0.2s ease
 
@@ -317,8 +335,15 @@
     &:last-child
       margin-right: 0
 
+  .navbar-header.intro .navbar-brand
+    height: initial
+    margin-top: 0 !important
+    font-size: initial
+    line-height: 13px
+
   .navbar-list > li > a,
-  .navbar-current
+  .navbar-current,
+  .navbar-header.intro .navbar-brand
     padding: 33px 17px
 
   .navbar-list > li > a > .fa-angle-right

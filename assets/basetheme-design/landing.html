@@ -33,15 +33,24 @@
     <noscript><link rel="stylesheet" href="css/main-style.css" type="text/css"></noscript>
   </head>
   <body>
-    <div class="wrap">
+    <div class="wrap fill-wrap">
       <header id="header" class="header">
         <div class="container-fluid line">
-          <div class="navbar-header"><a href="landing.html" class="navbar-brand">intro</a>
+          <div class="navbar-header intro"><a href="landing.html" class="navbar-brand"><span class="intro">intro</span></a>
             <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <nav id="navbarCollapse" class="navbar-collapse">
             <ul id="navigation" class="navbar-list dl-menu">
-              <li><span class="navbar-current">Home</span></li>
+              <li><a href="#">Home<i class="fa fa-angle-right"></i></a>
+                <ul class="navbar-dropdown__menu dl-submenu">
+                  <li><a href="inner-music.html">Music</a></li>
+                  <li><a href="inner-events.html">Events</a></li>
+                  <li><a href="inner-posters.html">Posters</a></li>
+                  <li><a href="inner-fevents.html">Frequent events</a></li>
+                  <li><a href="inner-gall.html">Galleries</a></li>
+                  <li><a href="index.html">Cube Club</a></li>
+                </ul>
+              </li>
               <li><a href="#">Events<i class="fa fa-angle-right"></i></a>
                 <ul class="navbar-dropdown__menu dl-submenu">
                   <li><a href="events.html">Event list</a></li>
@@ -201,14 +210,14 @@
       <div data-bgimage="../uploads/landing/banner.jpg" class="b-banner bg-image">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-xs-12"><a href="index.html" class="navbar-brand"><img src="images/logo-w.png" alt=""></a></div>
+            <div class="col-sm-6 col-xs-12"><a href="index.html" class="navbar-brand"><img src="images/logo-wide.png" alt="Cube Club"></a></div>
             <div class="col-sm-6 col-xs-12">
               <p>Responsive HTML5 theme for <span class="bordered">entertainment</span></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="b-events">
+      <div class="b-events fill-wrap">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -217,142 +226,76 @@
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="page-item__wrap">
+              <div class="page-item__wrap"><a href="inner-music.html" class="link"></a>
                 <div class="page-item__inner">
                   <div class="img-block"><img src="../uploads/landing/music.jpg" alt="img"></div>
-                </div><a href="inner-music.html">Music</a>
+                </div><a rel="nofollow" href="inner-music.html" class="link-title">Music</a>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="page-item__wrap">
+              <div class="page-item__wrap"><a href="inner-events.html" class="link"></a>
                 <div class="page-item__inner">
                   <div class="img-block"><img src="../uploads/landing/events.jpg" alt="img"></div>
-                </div><a href="#">Events</a>
+                </div><a rel="nofollow" href="inner-events.html" class="link-title">Events</a>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="page-item__wrap">
+              <div class="page-item__wrap"><a href="inner-posters.html" class="link"></a>
                 <div class="page-item__inner">
                   <div class="img-block"><img src="../uploads/landing/posters.jpg" alt="img"></div>
-                </div><a href="#">Posters</a>
+                </div><a rel="nofollow" href="inner-posters.html" class="link-title">Posters</a>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="page-item__wrap">
+              <div class="page-item__wrap"><a href="inner-fevents.html" class="link"></a>
                 <div class="page-item__inner">
                   <div class="img-block"><img src="../uploads/landing/music.jpg" alt="img"></div>
-                </div><a href="#">Frequent events</a>
+                </div><a rel="nofollow" href="inner-fevents.html" class="link-title">Frequent events</a>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="page-item__wrap">
+              <div class="page-item__wrap"><a href="inner-gall.html" class="link"></a>
                 <div class="page-item__inner">
                   <div class="img-block"><img src="../uploads/landing/events.jpg" alt="img"></div>
-                </div><a href="#">Galleries</a>
+                </div><a rel="nofollow" href="inner-gall.html" class="link-title">Galleries</a>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="page-item__wrap">
+              <div class="page-item__wrap"><a href="index.html" class="link"></a>
                 <div class="page-item__inner">
                   <div class="img-block"><img src="../uploads/landing/posters.jpg" alt="img"></div>
-                </div><a href="#">Cube Club</a>
+                </div><a rel="nofollow" href="index.html" class="link-title">Cube Club</a>
+                <div class="btn-pointer__wrap btn-label colored">
+                  <div class="btn btn-pointer"><span class="btn-pointer__txt">Pro</span></div>
+                  <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                  <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+                  
+                  
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="b-events">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h6 class="s6-heading b-tabs__ttl">Musician</h6>
-              <div class="btn-pointer__wrap">
-                <a class="btn btn-pointer" href="#"><span class="btn-pointer__txt">Coming soon</span></a>
-                <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
-                <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
-                
-                
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h6 class="s6-heading b-tabs__ttl">Musician</h6>
+            <div class="btn-pointer__wrap btn-label">
+              <div class="btn btn-pointer"><span class="btn-pointer__txt">Coming soon</span></div>
+              <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+              <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+              
+              
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="b-banner__img-block"><img src="../uploads/landing/banner2.jpg" alt="banner"></div>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="b-banner__img-block"><img src="../uploads/landing/banner2.jpg" alt="banner"></div>
           </div>
         </div>
       </div>
-      <footer class="b-footer">
-        <div class="container">
-          <div class="row">
-            <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
-              <h6 class="s6-heading">twitter & facebook</h6>
-              <div class="b-footer__inner">
-                <div data-href="https://www.facebook.com/facebook" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" class="fb-page">
-                  <div class="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
-                <p class="b-footer__txt">
-                  RT <a class="link" href="#">@DesignerDepot</a>: "Working on the right thing is probably more important than working
-                  hard" - Caterina Fake
-                  <a class="link" href="#">#wdd</a> <a class="link" href="/">#quote</a>
-                </p><span class="b-footer__days">
-                  -47 days ago
-                  </span>
-              </div>
-            </div>
-            <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
-              <h6 class="s6-heading">mailing list</h6>
-              <div class="b-footer__inner">
-                <p class="b-footer__txt b-footer__txt--it">
-                  Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
-                  often!
-                </p>
-                <form action="/" method="GET" class="b-form b-form--inline">
-                  <div class="b-form__group">
-                    <input type="email" placeholder="Your E-mail" class="b-form__control">
-                  </div>
-                  <button type="submit" class="b-form__btn">Subscribe</button>
-                </form>
-              </div>
-              <hr class="hr-line">
-              <div class="b-footer__inner">
-                <ul class="b-social b-social--clr-a b-footer__social">
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
-                  <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="b-footer__item col-xs-12 col-lg-4">
-              <div class="b-footer__msg">
-                <div class="b-msg">
-                  <div class="b-msg__corner"></div>
-                  <p class="b-msg__txt small-txt">We like to create cool parties and we love to chat with like-minded</p><strong>Do not hesitate to say hello!</strong>
-                </div>
-              </div>
-              <div class="b-footer__contacts">
-                <address class="b-footer__adrs col-sm-4 col-lg-12">87500 Mariupol, Ukraine, ul. Kazantseva 7b, 2nd floor, office. 29</address>
-                <div class="b-footer__contacts-mail col-sm-4 col-lg-12"><a href="mailto:hello@cubeclub.com" class="link">hello@cubeclub.com</a></div>
-                <ul class="b-footer__contacts-phones col-sm-4 col-lg-12">
-                  <li><a href="tel:+380505884637">+38 (050) 588-46-37</a></li>
-                  <li><a href="tel:+380977984512">+38 (097) 798-45-12</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="b-footer__item-last right col-xs-12 col-lg-4">
-              <p class="b-footer__copyrights x-small-txt">&copy; 2016 — Cube Club Theme by <a class="link" href="http://makebecool.com">makebecool</a> All Rights Reserved</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     <div id="fb-root"></div>
     <link rel="stylesheet" href="css/main-style.css">
