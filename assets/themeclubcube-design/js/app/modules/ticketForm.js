@@ -5,7 +5,7 @@ appMakeBeCool.gateway.addClass('TicketCalc', function (properties, $, $window, $
     _defaults = {
       // elements
       wrapper: 'body, html',
-      anchorBtn: 'a.reserve',
+      anchorBtn: 'button.reserve',
       anchor: '#reserve',
       selectSum: '.select-sum',
       output: '.priceOutput'
