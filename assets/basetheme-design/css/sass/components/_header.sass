@@ -384,6 +384,9 @@ span.intro
     transform: translate3d(0, 0, 0)
     transition: all 0.2s ease
 
+  .navbar-dropdown__menu li > a
+    transition: none
+
   .navbar-dropdown__menu li > a:hover,
   .navbar-dropdown__menu span:hover
     transform: translate3d(3px, 0, 0)
@@ -397,9 +400,17 @@ span.intro
   .navbar-dropdown__menu li.active span:hover
     transform: translate3d(0, 0, 0)
 
-  .navbar-list li:hover .navbar-dropdown__menu,
+  .navbar-list > li > a
+    transition: none
+
+  .navbar-list > li.active > a
+    transition: all 0.2s ease
+
+  //.navbar-list li:hover .navbar-dropdown__menu,
+  //.navbar-list li:hover .mega-menu,
   .navbar-list .navbar-dropdown__submenu:hover .navbar-list__inner,
-  .navbar-list li:hover .mega-menu
+  .navbar-list > li.active .navbar-dropdown__menu,
+  .navbar-list > li.active .mega-menu
     display: block
     animation-name: fadeIn
     animation-duration: 0.2s

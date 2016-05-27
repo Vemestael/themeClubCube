@@ -3003,6 +3003,10 @@ span.intro {
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
+  .navbar-dropdown__menu li > a {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; }
   .navbar-dropdown__menu li > a:hover,
   .navbar-dropdown__menu span:hover {
     -webkit-transform: translate3d(3px, 0, 0);
@@ -3016,9 +3020,17 @@ span.intro {
   .navbar-dropdown__menu li.active span:hover {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
-  .navbar-list li:hover .navbar-dropdown__menu,
+  .navbar-list > li > a {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .navbar-list > li.active > a {
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .navbar-list .navbar-dropdown__submenu:hover .navbar-list__inner,
-  .navbar-list li:hover .mega-menu {
+  .navbar-list > li.active .navbar-dropdown__menu,
+  .navbar-list > li.active .mega-menu {
     display: block;
     -webkit-animation-name: fadeIn;
          -o-animation-name: fadeIn;
@@ -4573,6 +4585,9 @@ button.mfp-arrow:hover:before {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -js-display: -webkit-box;
+    -js-display: -webkit-flex;
+    -js-display: -ms-flexbox;
     -js-display: flex; }
   .video-descr {
     margin-left: -15px;
