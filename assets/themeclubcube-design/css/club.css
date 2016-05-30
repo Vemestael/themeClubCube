@@ -188,6 +188,9 @@
   font-size: 24px;
   color: #fff; }
 
+.reserve {
+  background: #1c486b !important; }
+
 .table-wrap {
   overflow-x: auto; }
 
@@ -258,6 +261,17 @@
 
 .reserve-form input {
   margin-top: 50px; }
+
+.reserve-form .priceOutput {
+  margin-top: 15px;
+  display: inline-block;
+  font-family: "PT Sans bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #333;
+  border: none;
+  background: transparent;
+  text-align: right; }
 
 .reserve-form button[type='submit'] {
   font-size: 24px;
