@@ -139,7 +139,7 @@
 .map-wrap
   position: relative
   width: 100%
-  height: 500px
+  height: 400px
 
 .map-canvas
   width: 100%
@@ -306,6 +306,10 @@
 .ic.door
   background: url(../images/door.svg) no-repeat center center
 
+.all-blogs-container .col-sm-4 > .gallery-default-item
+  margin-right: 0
+  margin-left: 0
+
 @media (min-width: 480px)
 
   .b-top-banner p
@@ -352,14 +356,12 @@
     text-align: right
 
   .reserve-header
-    //height: 107px
+  //height: 107px
 
   .reserve-pt
     padding-top: 150px
 
-@media screen and (max-width: 1200px) and (min-height: 768px) and (min-width: 768px)
-  //.reserve-header .navbar-collapse
-  //  top: 105px
+
 
 @media (min-width: 1280px)
   .b-promo
@@ -368,7 +370,37 @@
   .b-promo-sc__item
     min-height: 200px
 
-  .b-promo__s2-ttl
-
   .b-promo p
     width: 80%
+
+  .default-tickets--club .ticket-event-date
+    width: 9.1569%
+
+  .default-tickets--club .ticket-event-img
+    width: 26.453%
+
+  .default-tickets--club .ticket-event-lineup
+    width: 55.2325%
+
+  .default-tickets--club .ticket-event-price
+    display: table
+    width: 9.1569%
+    padding: 0
+
+  .default-tickets--club .ticket-event-price .ticket-price,
+  .default-tickets--club .ticket-event-price .ticket-doll
+    font-size: 20px
+    line-height: 28px
+    transform: rotate(-45deg)
+
+  .default-tickets--club .ticket-event-price .ticket-price span.ticket-doll
+    margin-top: 0
+
+  .default-tickets--club .ticket-event-price .ticket-price
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    margin-bottom: 2px
+
+  .default-tickets--club .ticket-event-price .hidden-sm
+    display: none

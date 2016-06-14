@@ -6291,7 +6291,8 @@ time .day, time .month, time .year {
   position: relative;
   padding: 30px 23px;
   margin: 0 15px;
-  margin-bottom: 34px; }
+  margin-bottom: 34px;
+  overflow: hidden; }
 
 .gallery-default-item.last {
   margin-bottom: 0; }
@@ -6326,6 +6327,7 @@ time .day, time .month, time .year {
 .gallery-default-item img.img-h-responsive {
   position: absolute;
   top: 0;
+  right: 0;
   left: 0;
   z-index: 5;
   opacity: 1; }
@@ -8152,7 +8154,7 @@ aside .event-dates {
   width: 31.5%;
   float: left;
   padding: 0;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3 !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -8183,7 +8185,8 @@ aside .event-dates {
   overflow: hidden; }
 
 .ticket-event-lineup h3 a, .ticket-event-lineup h2 a {
-  color: #5c323e; }
+  color: #5c323e;
+  border-bottom: none; }
 
 .default-tickets .ticket-event-lineup hr {
   display: none; }
@@ -12656,7 +12659,7 @@ blockquote a:hover {
 .map-wrap {
   position: relative;
   width: 100%;
-  height: 500px; }
+  height: 400px; }
 
 .map-canvas {
   width: 100%;
@@ -12822,6 +12825,10 @@ blockquote a:hover {
 .ic.door {
   background: url(../images/door.svg) no-repeat center center; }
 
+.all-blogs-container .col-sm-4 > .gallery-default-item {
+  margin-right: 0;
+  margin-left: 0; }
+
 @media (min-width: 480px) {
   .b-top-banner p {
     float: left; }
@@ -12864,6 +12871,33 @@ blockquote a:hover {
   .b-promo-sc__item {
     min-height: 200px; }
   .b-promo p {
-    width: 80%; } }
+    width: 80%; }
+  .default-tickets--club .ticket-event-date {
+    width: 9.1569%; }
+  .default-tickets--club .ticket-event-img {
+    width: 26.453%; }
+  .default-tickets--club .ticket-event-lineup {
+    width: 55.2325%; }
+  .default-tickets--club .ticket-event-price {
+    display: table;
+    width: 9.1569%;
+    padding: 0; }
+  .default-tickets--club .ticket-event-price .ticket-price,
+  .default-tickets--club .ticket-event-price .ticket-doll {
+    font-size: 20px;
+    line-height: 28px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .default-tickets--club .ticket-event-price .ticket-price span.ticket-doll {
+    margin-top: 0; }
+  .default-tickets--club .ticket-event-price .ticket-price {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 2px; }
+  .default-tickets--club .ticket-event-price .hidden-sm {
+    display: none; } }
 
 /*# sourceMappingURL=main-style.css.map */

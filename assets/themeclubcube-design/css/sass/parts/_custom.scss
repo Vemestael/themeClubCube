@@ -1707,6 +1707,7 @@ time .day, time .month, time .year {
   padding: 30px 23px;
   margin: 0 15px;
   margin-bottom: 34px;
+  overflow: hidden;
 }
 
 .gallery-default-item.last {
@@ -1746,6 +1747,7 @@ time .day, time .month, time .year {
 .gallery-default-item img.img-h-responsive {
   position: absolute;
   top: 0;
+  right: 0;
   left: 0;
   z-index: 5;
   opacity: 1;
@@ -3842,7 +3844,7 @@ aside .event-dates {
   width: 31.5%;
   float: left;
   padding: 0;
-  border-bottom: 1px solid $light-greys-color;
+  border-bottom: 1px solid $light-greys-color !important;
   box-sizing: border-box;
 }
 
@@ -3873,6 +3875,7 @@ aside .event-dates {
 
 .ticket-event-lineup h3 a, .ticket-event-lineup h2 a {
   color: $brown-color;
+  border-bottom: none;
 }
 
 .default-tickets .ticket-event-lineup hr {
