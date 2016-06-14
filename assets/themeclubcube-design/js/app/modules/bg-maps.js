@@ -1,26 +1,18 @@
 "use strict";
 appMakeBeCool.gateway.addClass('Bgmaps', function (properties, $, $window, $document) {
-  //PRIVATE VARIABLES
   var _bgmaps = this,
     _defaults = {
-      // elements
       mapCanvas: '.map-canvas',
       scriptUrl: 'https://maps.googleapis.com/maps/api/js?v=3.exp&' + 'callback=addMapContacts',
       mapObj: {}
 
-      // prop
-      // data
-      // classes ans styles
     },
     _properties = $.extend(_defaults, properties),
     _globals = {
-      // elements
       mapCanvas: null,
-      // prop
       preloaded: false
     },
 
-    //PRIVATE METHODS
     _init = function () {
       appMakeBeCool.gateway.base.Class.apply(_bgmaps, [_properties]);
       if (!_globals.preloaded) {
@@ -78,15 +70,11 @@ appMakeBeCool.gateway.addClass('Bgmaps', function (properties, $, $window, $docu
     },
 
     _binds = function () {
-      return {
-        
-      }
+      return {}
     },
 
     _triggers = function () {
-      return {
-
-      }
+      return {}
     },
     _toogleMap = function ($btn, $map, $form) {
 
@@ -100,11 +88,12 @@ appMakeBeCool.gateway.addClass('Bgmaps', function (properties, $, $window, $docu
     },
 
     _setCustomMethods = function () {
-      _bgmaps.globals.customResurrect = function () {}
-      _bgmaps.globals.customDestroy = function () {}
+      _bgmaps.globals.customResurrect = function () {
+      }
+      _bgmaps.globals.customDestroy = function () {
+      }
     }
 
-  //PUBLIC METHODS
   _bgmaps.addMethod('init', function () {
     _bgmaps.bind($window, _bgmaps.globals.classType + '_Init', function (e, data, el) {
       _globals.preloaded = true;
@@ -112,6 +101,5 @@ appMakeBeCool.gateway.addClass('Bgmaps', function (properties, $, $window, $docu
     });
   });
 
-  //GO!
   _init();
 });

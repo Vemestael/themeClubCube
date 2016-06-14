@@ -1,5 +1,5 @@
 .reserve-header
-  height: 152px
+  height: auto
 
 .reserve-header .b-top-banner
   display: block
@@ -8,7 +8,7 @@
   padding-top: 200px
 
 .reserve-header .navbar-collapse
-  top: 150px
+  top: 100%
 
 .b-top-banner
   background: #5C323E
@@ -28,39 +28,39 @@
   line-height: 50px
   margin: 0
 
-.b-promo 
+.b-promo
   padding-top: 60px
   padding-bottom: 52px
   background-color: #e8e8e8
   text-align: center
 
-.b-promo__s2-ttl 
+.b-promo__s2-ttl
   width: 85%
   margin: 0 auto
   font-size: 24px
   font-family: "PT Sans Caption Bold", sans-serif
 
-.b-promo p 
+.b-promo p
   margin-top: 18px
   margin-bottom: 16px
   color: #202020
 
-.b-promo-sc 
+.b-promo-sc
   padding-top: 50px
   padding-bottom: 46px
   background-color: #e8e8e8
 
-.b-promo-sc__item 
+.b-promo-sc__item
   position: relative
   min-height: 200px
   margin-bottom: 30px
   z-index: 1
 
   .b-promo-sc__item:last-child
-  .b-promo-sc__item .b-audio__item 
+  .b-promo-sc__item .b-audio__item
     margin-bottom: 0
 
-.b-promo-sc__inner-bg 
+.b-promo-sc__inner-bg
   position: absolute
   top: 0
   right: 0
@@ -72,30 +72,34 @@
   right: 15px
   background-color: rgba(32, 32, 32, 0.33)
 
-.b-promo-sc__cont 
+.b-promo-sc__cont
   position: absolute
   top: 50%
   left: 50%
   -webkit-transform: translate(-50%, -50%)
-      -ms-transform: translate(-50%, -50%)
-       -o-transform: translate(-50%, -50%)
-          transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+      -o-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
   width: 80%
   text-align: center
   z-index: 1
+
 .b-promo-sc__cont .fa-bullhorn
-.b-promo-sc__cont .fa-fire-extinguisher 
+
+.b-promo-sc__cont .fa-fire-extinguisher
   margin-bottom: 10px
   font-size: 36px
   color: #fff
-.b-promo-sc__cont .s5-heading 
+
+.b-promo-sc__cont .s5-heading
   color: #fff
   line-height: 24px
   text-transform: uppercase
   margin: 10px 0
   font-family: "PT Sans bold", sans-serif
   font-size: 20px
-.b-promo-sc__img-wrap 
+
+.b-promo-sc__img-wrap
   position: absolute
   top: 0
   left: 0
@@ -107,9 +111,10 @@
   left: 15px
   right: 15px
 
-.b-promo-sc__img-wrap.bg-image 
+.b-promo-sc__img-wrap.bg-image
   opacity: 1
-.b-promo-sc__link 
+
+.b-promo-sc__link
   position: absolute
   top: 0
   right: 0
@@ -119,44 +124,42 @@
   border-bottom: none
   z-index: 1
 
-.b-promo-sc__item .b-promo-sc__inner-bg 
+.b-promo-sc__item .b-promo-sc__inner-bg
   -webkit-transition: all 0.2s ease-out
   -o-transition: all 0.2s ease-out
   transition: all 0.2s ease-out
-  
-.b-promo-sc__item:hover .b-promo-sc__inner-bg 
+
+.b-promo-sc__item:hover .b-promo-sc__inner-bg
   background-color: rgba(83, 13, 133, 0.33)
-  
-.section-title 
-	margin-bottom: 50px
-	font-family: 'PT Sans bold'
 
-.map-wrap 
-	position: relative
-	width: 100%
-	height: 500px
+.section-title
+  margin-bottom: 50px
+  font-family: 'PT Sans bold'
 
-.map-canvas 
-	width: 100%
-	height: 100%
+.map-wrap
+  position: relative
+  width: 100%
+  height: 500px
 
-.none-transform 
+.map-canvas
+  width: 100%
+  height: 100%
+
+.none-transform
   text-transform: none !important
 
 .text-block
   margin-top: 80px
 
-.head .breadcrumb, .content-header .breadcrumb 
+.head .breadcrumb, .content-header .breadcrumb
   background: transparent
   padding: 0
   margin: 0
   text-transform: uppercase
 
-
 .head .breadcrumb a, .content-header .breadcrumb a
   color: #000
   text-decoration: underline
-
 
 .breadcrumb.white
   background: transparent
@@ -266,21 +269,21 @@
 
 .reserve-form .priceOutput
   margin-top: 15px
-  display: inline-block;
-  font-family: "PT Sans bold", sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #333;
+  display: inline-block
+  font-family: "PT Sans bold", sans-serif
+  text-transform: uppercase
+  font-size: 24px
+  color: #333
   border: none
   background: transparent
   text-align: right
 
 .reserve-form button[type='submit']
-  font-size: 24px;
-  color: #fff;
-  margin: 50px auto 50px;
-  display: block;
-  padding: 8px 35px;
+  font-size: 24px
+  color: #fff
+  margin: 50px auto 50px
+  display: block
+  padding: 8px 35px
 
 .center-align
   text-align: center
@@ -303,36 +306,7 @@
 .ic.door
   background: url(../images/door.svg) no-repeat center center
 
-
-@media (max-width: 767px) 
-  .line-up-contacts
-    float: none !important
-
-    *
-      text-align: left !important
-      float: none !important
-
-@media (min-width: 768px) 
-  .right-align
-    text-align: right
-
-  .b-promo 
-    padding-top: 98px
-    padding-bottom: 75px
-  .b-promo__s2-ttl 
-    width: 100%
-    font-size: 36px
-  .b-promo p 
-    width: 92%
-    margin: 21px auto 35px
-  .b-promo-sc 
-    padding-bottom: 20px
-  .b-promo-sc__cont 
-    width: 65%
-  .b-promo-sc__item 
-    min-height: 250px
-  .club-logo
-    text-align: right
+@media (min-width: 480px)
 
   .b-top-banner p
     float: left
@@ -340,21 +314,61 @@
   .b-top-banner a
     float: right
 
+@media (max-width: 767px)
+  .line-up-contacts
+    float: none !important
+
+    *
+      text-align: left !important
+      float: none !important
+
+@media (min-width: 768px)
+
+  .right-align
+    text-align: right
+
+  .b-promo
+    padding-top: 98px
+    padding-bottom: 75px
+
+  .b-promo__s2-ttl
+    width: 100%
+    font-size: 36px
+
+  .b-promo p
+    width: 92%
+    margin: 21px auto 35px
+
+  .b-promo-sc
+    padding-bottom: 20px
+
+  .b-promo-sc__cont
+    width: 65%
+
+  .b-promo-sc__item
+    min-height: 250px
+
+  .club-logo
+    text-align: right
+
   .reserve-header
-    height: 107px
+    //height: 107px
 
   .reserve-pt
     padding-top: 150px
 
 @media screen and (max-width: 1200px) and (min-height: 768px) and (min-width: 768px)
-  .reserve-header .navbar-collapse
-    top: 105px
+  //.reserve-header .navbar-collapse
+  //  top: 105px
 
-@media (min-width: 1280px) 
-  .b-promo 
+@media (min-width: 1280px)
+  .b-promo
     padding-bottom: 100px
-  .b-promo-sc__item 
+
+  .b-promo-sc__item
     min-height: 200px
+
   .b-promo__s2-ttl
-  .b-promo p 
+
+  .b-promo p
     width: 80%
