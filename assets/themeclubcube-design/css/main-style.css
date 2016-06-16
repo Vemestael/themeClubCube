@@ -12774,7 +12774,8 @@ blockquote a:hover {
   line-height: 50px;
   text-align: center;
   font-size: 24px;
-  margin: 50px auto 50px; }
+  margin: 50px auto 50px;
+  background-color: #1c486b !important; }
   .reserve-continue + span {
     font-size: 24px;
     font-weight: bold;
