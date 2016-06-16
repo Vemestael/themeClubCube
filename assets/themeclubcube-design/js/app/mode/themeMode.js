@@ -1,8 +1,6 @@
 appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $document) {
-	//PRIVATE VARIABLES
 	var _themeMode = this,
     _defaults = {
-        // classes ans styles
         classMode: 'theme-mode'
     },
     _properties = $.extend(_defaults, properties),
@@ -10,8 +8,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
 		siteObj: null,
 		preloaded: false
     },
-
-    //PRIVATE METHODS
     _init = function() {
         appMakeBeCool.gateway.classes.SiteMode.apply(_themeMode, [_properties])
         if(!_globals.preloaded) {
@@ -51,6 +47,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.utils.extend(_globals.siteObj.classes.BgImages, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.Bgmaps, _globals.siteObj.base.Class);
         _globals.siteObj.utils.extend(_globals.siteObj.classes.TicketCalc, _globals.siteObj.base.Class);
+        _globals.siteObj.utils.extend(_globals.siteObj.classes.Header, _globals.siteObj.base.Class);
     },
 
     _instantiateClasses = function() {
@@ -73,6 +70,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _globals.siteObj.createClassInstance('bgImages', _globals.siteObj.classes.BgImages, {classId: 'BgImages'});
         _globals.siteObj.createClassInstance('bgmaps', _globals.siteObj.classes.Bgmaps, {classId: 'Bgmaps'});
         _globals.siteObj.createClassInstance('ticketCalc', _globals.siteObj.classes.TicketCalc, {classId: 'TicketCalc'});
+        _globals.siteObj.createClassInstance('header', _globals.siteObj.classes.Header, {classId: 'Header'});
     },
 
     _setup = function() {
@@ -85,7 +83,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _binds().setFullHeightSlider_BigSliderBind();
         _binds().setScrollAtOnce_ToggleBind();
     },
-	
+
 	_binds = function() {
         return {
             setCompleteBind: function() {
@@ -114,6 +112,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
                     _themeMode.trigger('BgImages_Init', data);
                     _themeMode.trigger('Bgmaps_Init', data);
                     _themeMode.trigger('TicketCalc_Init', data);
+                    _themeMode.trigger('Header_Init', data);
                 });
             },
             setFullHeightSlider_BigSliderBind: function(){
@@ -133,8 +132,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         _themeMode.globals.customResurrect = function() {};
         _themeMode.globals.customDestroy = function() {};
     };
-	
-	//PUBLIC METHODS
+
     _themeMode.addMethod('init', function() {
         _themeMode.bind($window, 'siteConfigComplete', function() {
             _globals.preloaded = true;
@@ -142,6 +140,5 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         });
     });
 
-    //GO!
     _init();
 });

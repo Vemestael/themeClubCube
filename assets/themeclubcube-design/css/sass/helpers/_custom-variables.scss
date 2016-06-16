@@ -1,0 +1,152 @@
+
+/*!
+ * Colors
+ */
+$link-hover-color:      #fff;
+$white-color:                 #fff;
+$black-color:                 #000;
+$h2-color:                    #010101;
+$light-black-color:           #333;
+$reg-black-color: 			  #444;
+$middle-black-color:          #666;
+$grey-color:                  #999;
+$light-grey: 				  #cbcbcb;
+$ccc-color:                   #ccc;
+$a2a2a2:                      #a2a2a2;
+$brown-color:                 #5c323e;
+$dark-brown-color: 			  #251419;
+$light-brown-color: 		  #d3a8af;
+$lighter-brown-color: 		  #6c4651;
+$reddy-color:                 #a82743;
+$red-color:                   #a82743;
+$light-reddy-color:           #e9cfd5;
+$reddy-transp:                #ae828c;
+$dark-reddy-color:            #912a41;
+$d35a33:                      #d35a33;
+$orange-color:                #e15e32;
+$orange-a-color:              #d35a33;
+$line-or-color: 			  #e77e5b;
+$light-orange-color:          #f07e4f;
+$lighter-orange-color:        #ff9966;
+$lighty-orange-color:         #f0ae98;
+$light-yellow-color:          #ffcc99;
+$greeny-color:                #c0d23e;
+$blui-color: 				  #c5bfd2;
+$light-green-color:           #e5f04c;
+$lighter-grey-color:          #e2e2e2;
+$e6e6e6:                      #e6e6e6;
+$f4-grey-color:               #f4f4f4;
+$bg-f9-color:                 #f9f9f9;
+$hover-li-a:                  #e5e5e5;
+$light-greys-color:           #e3e3e3;
+$efefef:                      #efefef;
+$ea-color:                    #eaeaea;
+$marengo-color:               #f7e9e5;
+$text-pink-color:             #d6abb2;
+$text-whity-color:            #f2e1e1;
+
+$ver-gutter:                  40px;
+$nav-custom-link-padding:     18px 15px;
+$margin-mdl:                  50px;
+$margin-mdl45:                45px;
+$margin-mdl-min: 			  30px;
+$margin-sm-plus:              25px;
+$margin-sm:                   20px;
+$margin-xs: 				  12px;
+
+
+/*!
+ * Content margins
+ */
+$p-margin: 					   20px;
+$p-line-height: 			   30px;
+$h2-margin-top: 			   30px;
+$h2-margin-bottom: 			   10px;
+
+/*!
+ * Responsive gutter
+ */
+$xs-gutter:                    40px;
+$xs-horizontal-gutter:         35px;
+
+/*!
+ * Fonts
+ */
+$header1-font-size:            60px;
+$header2-font-size:            48px;
+$header3-font-size:            36px;
+$header3sm-font-size:          32px;
+$header4-font-size:            24px;
+$header45-font-size: 		   22px;
+$header5-font-size:            18px;
+
+
+/*!
+ * Contetnt fonts
+ */
+@font-face {
+	font-family: 'PT Sans reg';
+	src: url('../fonts/pt_sans-web-regular.eot');
+    src: url('../fonts/pt_sans-web-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-regular.woff') format('woff'),
+    url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype'),
+    url('../fonts/pt_sans-web-regular.svg#PTSansreg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Sans it';
+	src: url('../fonts/pt_sans-web-italic.eot');
+    src: url('../fonts/pt_sans-web-italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-italic.woff') format('woff'),
+    url('../fonts/pt_sans-web-italic.ttf') format('truetype'),
+    url('../fonts/pt_sans-web-italic.svg#PTSansit') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Sans bold';
+	src: url('../fonts/pt_sans-web-bold.eot');
+    src: url('../fonts/pt_sans-web-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-bold.woff') format('woff'),
+    url('../fonts/pt_sans-web-bold.ttf') format('truetype'),
+    url('../fonts/pt_sans-web-bold.svg#PTSansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$pt-sans: 					   'PT Sans reg', sans-serif;
+$pt-sans-it: 				   'PT Sans it', sans-serif;
+$pt-sans-bold: 				   'PT Sans bold', sans-serif;
+$verdana: 					   Verdana, sans-serif;
+
+$content-h2: 				   30px;
+$content-h3: 				   24px;
+$md-font-size:                 16px;
+$reg-font-size:                14px;
+$sm-font-size:                 12px;
+$xm-font-size: 				   11px;
+$xs-font-size:                 10px;
+$btn-cust-font-size:           20px;
+
+$line-height-md: 			   20px;
+
+/*!
+ * Buttons
+ */
+$orange-border-light:          #f4dad1;
+
+/*!
+ * Scrollbar
+ */
+$dark-red-color: 			   #772533;
+
+/*!
+ * Hr
+ */
+$light-pink-color:             #eed4d9;
+$light-white-color:            #c9bdbc;
+
+
