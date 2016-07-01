@@ -1,31 +1,23 @@
 "use strict";
 appMakeBeCool.gateway.addClass('TicketCalc', function (properties, $, $window, $document) {
-  //PRIVATE VARIABLES
   var _ticketCalc = this,
     _defaults = {
-      // elements
       wrapper: 'body, html',
       anchorBtn: 'button.reserve',
       anchor: '#reserve',
       selectSum: '.select-sum',
       output: '.priceOutput'
-      // prop
-      // data
-      // classes ans styles
     },
     _properties = $.extend(_defaults, properties),
     _globals = {
-      // elements
       wrapper: null,
       anchorBtn: null,
       anchor: null,
       selectSum: null,
       output: null,
-      // prop
       preloaded: false
     },
 
-    //PRIVATE METHODS
     _init = function () {
       appMakeBeCool.gateway.base.Class.apply(_ticketCalc, [_properties]);
       if (!_globals.preloaded) {
@@ -88,14 +80,12 @@ appMakeBeCool.gateway.addClass('TicketCalc', function (properties, $, $window, $
       _ticketCalc.globals.customDestroy = function () {}
     }
 
-  //PUBLIC METHODS
   _ticketCalc.addMethod('init', function () {
     _ticketCalc.bind($window, _ticketCalc.globals.classType + '_Init', function (e, data, el) {
       _globals.preloaded = true;
       _init();
     });
   });
-
-  //GO!
+  
   _init();
 });
