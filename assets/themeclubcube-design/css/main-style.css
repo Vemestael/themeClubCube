@@ -6276,9 +6276,8 @@ time .day, time .month, time .year {
 
 .gallery-default {
   background: #fff !important;
-  -webkit-border-image: none;
-       -o-border-image: none;
-          border-image: none;
+  -o-border-image: none;
+     border-image: none;
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 40px; }
@@ -11654,9 +11653,8 @@ blockquote a:hover {
     margin-top: 45px; }
   .gallery-default {
     background: #fff !important;
-    -webkit-border-image: none;
-         -o-border-image: none;
-            border-image: none;
+    -o-border-image: none;
+       border-image: none;
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
     padding-bottom: 35px; }
@@ -12704,13 +12702,20 @@ blockquote a:hover {
   height: 50px;
   line-height: 50px;
   font-weight: bold;
-  position: absolute;
+  position: static;
   right: 15px;
   bottom: 10px;
-  text-align: center;
+  float: right;
+  clear: both;
+  text-align: center !important;
   text-transform: uppercase;
   font-size: 24px;
   color: #fff; }
+
+.line-up-contacts .reserve {
+  margin-top: 30px;
+  text-align: center !important;
+  float: right !important; }
 
 .reserve {
   background: #1c486b !important; }
@@ -12864,7 +12869,41 @@ blockquote a:hover {
   .club-logo {
     text-align: right; }
   .reserve-pt {
-    padding-top: 150px; } }
+    padding-top: 150px; }
+  .bottom-line-up {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .bottom-line-up .line-up-contacts,
+  .bottom-line-up .line-up-contacts .text-left {
+    text-align: right; }
+  .bottom-line-up .line-up-contacts {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
 
 @media (min-width: 1280px) {
   .b-promo {
