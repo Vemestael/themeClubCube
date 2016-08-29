@@ -82,7 +82,7 @@ $tmp = array(
 		),
 		'bigBlogListIndex' => array(
 			'file' => 'partsIndex/bigBlogListIndex',
-			'description' => '', 
+			'description' => '',  
 		),
 //    'eventsListFixedPromoIndex' => array(
 //        'file' => 'partsIndex/eventsListFixedPromoIndex',
