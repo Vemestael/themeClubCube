@@ -18,6 +18,10 @@ $tmp = array(
 		'file' => 'content/indexContent_v2',
 		'description' => '',
 	),
+	'indexContent_v3' => array(
+		'file' => 'content/indexContent_v3',
+		'description' => '',
+	),
 	'eventsContent' => array(
 		'file' => 'content/eventsContent',
 		'description' => '',
