@@ -1,16 +1,14 @@
-<div class="partners">
-	<div class="container">
-		<div class="row partners-img">
-			<div class="center-block text-center partners-slider" id="partnersSlider">
-				[[+output]]
-			</div>
-		</div>
-	</div>
-</div>
-<div class="partners-title">
+<div class="b-partners">
     <div class="container">
         <div class="row">
-            <span class="partners-btn">[[%lf_our_partners_head:htmlent]]</span>
+            <div class="b-item__header col-xs-12">
+                <h6 class="s6-heading b-item__ttl-header">Meet our partners</h6>
+            </div>
+            <div id="sliderPartners" class="b-partners__slider">
+
+                [[+output]]
+
+            </div>
         </div>
     </div>
 </div>

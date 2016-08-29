@@ -10,21 +10,21 @@ $tmp = array(
 			'OnHandleRequest' => array()
 		)
 	),
-    'clearCache' => array(
-        'file' => 'clearCache',
-        'description' => '',
-        'events' => array(
-            'OnBeforeCacheUpdate' => array()
-        )
-    ),
-    'changeColorSheme' => array(
-        'file' => 'changeColorSheme',
-        'description' => '',
-        'events' => array(
-            'OnWebPageInit' => array(),
-            'OnLoadWebDocument' => array()
-        )
-    )
+//	'clearCache' => array(
+//			'file' => 'clearCache',
+//			'description' => '',
+//			'events' => array(
+//					'OnBeforeCacheUpdate' => array()
+//			)
+//	),
+//    'changeColorSheme' => array(
+//        'file' => 'changeColorSheme',
+//        'description' => '',
+//        'events' => array(
+//            'OnWebPageInit' => array(),
+//            'OnLoadWebDocument' => array()
+//        )
+//    )
 );
 
 foreach ($tmp as $k => $v) {

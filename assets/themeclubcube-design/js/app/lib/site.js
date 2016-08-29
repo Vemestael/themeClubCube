@@ -1,3 +1,4 @@
+"use strict";
 var appMakeBeCool = (typeof appMakeBeCool === 'undefined') ? {} : console.log('Namespace appMakeBeCool is taken');
 
 appMakeBeCool.Site = function ($, window, document, undefined) {
@@ -13,8 +14,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 // prop
                 siteConfigured: false,
                 siteMode: null,
-                winWidth: 0,
-                indexBase: 0,
+                winWidth: 0
             },
             utils: {},
             classes: {},
@@ -26,10 +26,10 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
 
     /**
      * Инициализация ядра приложения.
-     * @param options - объект, содержащий функцию, которая будет вызвана после инициализации
+     * @param options - объект {onComplete: function() { }}, содержащий функцию, которая будет вызвана после инициализации
      */
     _site.init = function (options) {
-        var _options = $.extend({ onComplete: function () { } }, options);
+        var _options = $.extend({onComplete: function() { }}, options);
         _site.config();
         _site.extendClasses();
         _site.instantiateClasses();
@@ -77,7 +77,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      * Вызов всех прослушиваний необходимых событий для этого класса
      */
     _site.setEventBinds = function () {
-        _site.eventBinds().setUnloadBind();
+//        _site.eventBinds().setUnloadBind();
     };
 
     /**
@@ -86,11 +86,11 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      */
     _site.eventBinds = function () {
         return {
-            setUnloadBind: function() {
-                $window.bind('load', function () {
-                    $htmlBody.scrollTop(0);
-                });
-            }
+//            setUnloadBind: function() {
+//                $window.bind('load', function () {
+//                    $htmlBody.scrollTop(0);
+//                });
+//            }
         }
     };
 
@@ -531,7 +531,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @returns {boolean}
          */
         createComplete: function (fn) {
-            _baseClass = this;
+            var _baseClass = this;
             if (_baseClass.globals.createComplete) return false; /*_baseClass.logWarning('createComplete() has already been successfully executed...is this a necessary warning?');*/
             if (_baseClass.globals.classDependentsInstances.length > 0) _baseClass.loadCompleteChecker();
             if (_baseClass.globals.classDependentsInstances.length > 0 && !_baseClass.classDependentsStatus().setupComplete) {
@@ -555,7 +555,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @param fn
          */
         loadComplete: function (fn) {
-            _baseClass = this;
+            var _baseClass = this;
             var _fn = function () {
                 if (typeof fn === 'function') fn();
                 _baseClass.properties.onLoadComplete();
@@ -570,7 +570,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @param fn
          */
         destroyStart: function (fn) {
-            _baseClass = this;
+            var _baseClass = this;
             this.trigger('classDestroyStart', { classId: _baseClass.properties.classId, classType: _baseClass.globals.classType });
             if (typeof fn === 'function') fn();
         },
@@ -580,7 +580,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @param fn
          */
         destroyComplete: function (fn) {
-            _baseClass = this;
+            var _baseClass = this;
             var _fn = function () {
                 if (typeof fn === 'function') fn();
                 _baseClass.properties.onDestroyComplete();
@@ -596,7 +596,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @returns {boolean}
          */
         isLoaded: function () {
-            _baseClass = this;
+            var _baseClass = this;
             if (!_baseClass.globals.createComplete) return false;
             else if (_baseClass.globals.classDependentsInstances < 1) return true;
             else if (_baseClass.classDependentsStatus().loadComplete) return true;
@@ -747,6 +747,45 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
 
             $window.trigger(name, _data);
             return true;
+        },
+
+        /**
+         * Парсер js шаблона по типу <script type="text/template"><a href="{{url}}"></a></script>
+         * @param template - html код шаблона
+         * @param data - объект с данными, которые нужно вставить в шаблон
+         * @returns готовый html код
+         */
+        makeTemplate: function(template, data) {
+            var output, pattern, varName, varValue, _ref;
+            pattern = /(?:\{{2})([\w\[\]\.]+)(?:\}{2})/;
+            output = template;
+            while (pattern.test(output)) {
+                varName = output.match(pattern)[1];
+                varValue = (_ref = this.getObjectProperty(data, varName)) != null ? _ref : '';
+                output = output.replace(pattern, "" + varValue);
+            }
+            return output;
+        },
+
+        /**
+         * Возвращает свойства объекта
+         * @param object
+         * @param property
+         * @returns {*}
+         */
+        getObjectProperty: function(object, property) {
+            var piece, pieces;
+            property = property.replace(/\[(\w+)\]/g, '.$1');
+            pieces = property.split('.');
+            while (pieces.length) {
+                piece = pieces.shift();
+                if ((object != null) && piece in object) {
+                    object = object[piece];
+                } else {
+                    return null;
+                }
+            }
+            return object;
         }
     };
 };

@@ -1,144 +1,123 @@
-appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $document) {
-	var _themeMode = this,
+"use strict";
+appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $document) {
+  //PRIVATE VARIABLES
+  var _themeMode = this,
     _defaults = {
-        classMode: 'theme-mode'
+      // classes ans styles
+      classMode: 'theme-mode'
     },
     _properties = $.extend(_defaults, properties),
-	_globals = {
-		siteObj: null,
-		preloaded: false
+    _globals = {
+      siteObj: null,
+      preloaded: false
     },
-    _init = function() {
-        appMakeBeCool.gateway.classes.SiteMode.apply(_themeMode, [_properties])
-        if(!_globals.preloaded) {
-            return _themeMode.init();
+
+  //PRIVATE METHODS
+    _init = function () {
+      appMakeBeCool.gateway.classes.SiteMode.apply(_themeMode, [_properties])
+      if (!_globals.preloaded) {
+        return _themeMode.init();
+      }
+      _config();
+      _extendClasses();
+      _instantiateClasses();
+      _setup();
+      _setBinds();
+      _setCustomMethods();
+      _themeMode.trigger(_themeMode.globals.classType + '_Complete');
+    },
+
+    _config = function () {
+      _globals.siteObj = _themeMode.getSiteObj();
+    },
+
+    _extendClasses = function () {
+
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.BgImages, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.FormValidate, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.FormAjax, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.HeaderFunctions, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.Sliders, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.DtMenu, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.MenuAligns, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.GalleryFunctions, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.MasonryTiles, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.Parallax, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.ImgHover, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.SlickSlider, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.Timer, _globals.siteObj.base.Class);
+
+
+    },
+
+    _instantiateClasses = function () {
+      _globals.siteObj.createClassInstance('bgImages', _globals.siteObj.classes.BgImages, {classId: 'BgImages'});
+      _globals.siteObj.createClassInstance('FormValidate', _globals.siteObj.classes.FormValidate, {
+        classId: 'FormValidate',
+        forms: []
+      });
+      _globals.siteObj.createClassInstance('FormAjax', _globals.siteObj.classes.FormAjax, {
+        classId: 'FormAjax',
+        forms: []
+      });
+      _globals.siteObj.createClassInstance('HeaderFunctions', _globals.siteObj.classes.HeaderFunctions, {classId: 'HeaderFunctions'});
+      _globals.siteObj.createClassInstance('Sliders', _globals.siteObj.classes.Sliders, {classId: 'Sliders'});
+      _globals.siteObj.createClassInstance('DtMenu', _globals.siteObj.classes.DtMenu, {classId: 'DtMenu'});
+      _globals.siteObj.createClassInstance('MenuAligns', _globals.siteObj.classes.MenuAligns, {classId: 'MenuAligns'});
+      _globals.siteObj.createClassInstance('GalleryFunctions', _globals.siteObj.classes.GalleryFunctions, {classId: 'GalleryFunctions'});
+      _globals.siteObj.createClassInstance('MasonryTiles', _globals.siteObj.classes.MasonryTiles, {classId: 'MasonryTiles'});
+      _globals.siteObj.createClassInstance('Parallax', _globals.siteObj.classes.Parallax, {classId: 'Parallax'});
+      _globals.siteObj.createClassInstance('ImgHover', _globals.siteObj.classes.ImgHover, {classId: 'ImgHover'});
+      _globals.siteObj.createClassInstance('SlickSlider', _globals.siteObj.classes.SlickSlider, {classId: 'ImgHover'});
+      _globals.siteObj.createClassInstance('Timer', _globals.siteObj.classes.Timer, {classId: 'ImgHover'});
+    },
+
+    _setup = function () {
+      $('body').addClass(_properties.classMode);
+    },
+
+    _setBinds = function () {
+      _binds().setCompleteBind();
+
+    },
+
+    _binds = function () {
+      return {
+        setCompleteBind: function () {
+          _themeMode.bind($window, _themeMode.globals.classType + '_Complete', function (e, data) {
+            _themeMode.trigger('BgImages_Init', data);
+            _themeMode.trigger('FormValidate_Init', data);
+            _themeMode.trigger('FormAjax_Init', data);
+            _themeMode.trigger('HeaderFunctions_Init', data);
+            _themeMode.trigger('Sliders_Init', data);
+            _themeMode.trigger('DtMenu_Init', data);
+            _themeMode.trigger('MenuAligns_Init', data);
+            _themeMode.trigger('GalleryFunctions_Init', data);
+            _themeMode.trigger('MasonryTiles_Init', data);
+            _themeMode.trigger('Parallax_Init', data);
+            _themeMode.trigger('ImgHover_Init', data);
+            _themeMode.trigger('SlickSlider_Init', data);
+            _themeMode.trigger('Timer_Init', data);
+          });
         }
-        _config();
-        _extendClasses();
-        _instantiateClasses();
-        _setup();
-        _setBinds();
-        _setCustomMethods();
-        _themeMode.trigger(_themeMode.globals.classType+'_Complete');
+      }
     },
 
-    _config = function() {
-        _globals.siteObj = _themeMode.getSiteObj();
-    },
-
-    _extendClasses = function() {
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.Images, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.LoaderMain, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.FullHeightSlider, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.EventAnimate, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.BlogAnimate, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.Partners, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.ScrollAtOnce, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.MenuToTop, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.TopEventsSlider, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.TicketsEventsSlider, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.GallerySlider, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.FormContacts, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.FormSubscribe, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.GalleryPage, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.Sharrre, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.EventsTickets, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.DropDownClick, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.BgImages, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.Bgmaps, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.TicketCalc, _globals.siteObj.base.Class);
-        _globals.siteObj.utils.extend(_globals.siteObj.classes.Header, _globals.siteObj.base.Class);
-    },
-
-    _instantiateClasses = function() {
-        _globals.siteObj.createClassInstance('images', _globals.siteObj.classes.Images, {classId: 'Images'});
-        _globals.siteObj.createClassInstance('loaderMain', _globals.siteObj.classes.LoaderMain, {classId: 'LoaderMain'});
-        _globals.siteObj.createClassInstance('fullHeightSlider', _globals.siteObj.classes.FullHeightSlider, {classId: 'FullHeightSlider'});
-        _globals.siteObj.createClassInstance('eventAnimate', _globals.siteObj.classes.EventAnimate, {classId: 'EventAnimate'});
-        _globals.siteObj.createClassInstance('blogAnimate', _globals.siteObj.classes.BlogAnimate, {classId: 'BlogAnimate'});
-        _globals.siteObj.createClassInstance('partners', _globals.siteObj.classes.Partners, {classId: 'Partners'});
-        _globals.siteObj.createClassInstance('scrollAtOnce', _globals.siteObj.classes.ScrollAtOnce, {classId: 'ScrollAtOnce'});
-        _globals.siteObj.createClassInstance('menuToTop', _globals.siteObj.classes.MenuToTop, {classId: 'MenuToTop'});
-        _globals.siteObj.createClassInstance('topEventsSlider', _globals.siteObj.classes.TopEventsSlider, {classId: 'TopEventsSlider'});
-        _globals.siteObj.createClassInstance('ticketsEventsSlider', _globals.siteObj.classes.TicketsEventsSlider, {classId: 'TicketsEventsSlider'});
-        _globals.siteObj.createClassInstance('gallerySlider', _globals.siteObj.classes.GallerySlider, {classId: 'GallerySlider'});
-        _globals.siteObj.createClassInstance('formContacts', _globals.siteObj.classes.FormContacts, {classId: 'FormContacts'});
-        _globals.siteObj.createClassInstance('formSubscribe', _globals.siteObj.classes.FormSubscribe, {classId: 'FormSubscribe'});
-        _globals.siteObj.createClassInstance('galleryPage', _globals.siteObj.classes.GalleryPage, {classId: 'GalleryPage'});
-        _globals.siteObj.createClassInstance('sharrre', _globals.siteObj.classes.Sharrre, {classId: 'Sharrre'});
-        _globals.siteObj.createClassInstance('eventsTickets', _globals.siteObj.classes.EventsTickets, {classId: 'EventsTickets'});
-        _globals.siteObj.createClassInstance('bgImages', _globals.siteObj.classes.BgImages, {classId: 'BgImages'});
-        _globals.siteObj.createClassInstance('bgmaps', _globals.siteObj.classes.Bgmaps, {classId: 'Bgmaps'});
-        _globals.siteObj.createClassInstance('ticketCalc', _globals.siteObj.classes.TicketCalc, {classId: 'TicketCalc'});
-        _globals.siteObj.createClassInstance('header', _globals.siteObj.classes.Header, {classId: 'Header'});
-    },
-
-    _setup = function() {
-        $('body').addClass(_properties.classMode);
-    },
-
-    _setBinds = function() {
-        _binds().setCompleteBind();
-        _binds().setImage_CompleteBind();
-        _binds().setFullHeightSlider_BigSliderBind();
-        _binds().setScrollAtOnce_ToggleBind();
-    },
-
-	_binds = function() {
-        return {
-            setCompleteBind: function() {
-                _themeMode.bind($window, _themeMode.globals.classType+'_Complete', function(e, data){
-                    _themeMode.trigger('LoaderMain_Init', data);
-                    _themeMode.trigger('Images_Init', data);
-                });
-            },
-            setImage_CompleteBind: function(){
-                _themeMode.bind($window, 'Images_ImagesComplete', function(e, data){
-                    _themeMode.trigger('FullHeightSlider_Init', data);
-                    _themeMode.trigger('LoaderMain_End', data);
-                    _themeMode.trigger('TopEventsSlider_Init', data);
-                    _themeMode.trigger('TicketsEventsSlider_Init', data);
-                    _themeMode.trigger('GallerySlider_Init', data);
-                    _themeMode.trigger('EventAnimate_Init', data);
-                    _themeMode.trigger('BlogAnimate_Init', data);
-                    _themeMode.trigger('Partners_Init', data);
-                    _themeMode.trigger('MenuToTop_Init', data);
-                    _themeMode.trigger('FormContacts_Init', data);
-                    _themeMode.trigger('FormSubscribe_Init', data);
-                    _themeMode.trigger('GalleryPage_Init', data);
-                    _themeMode.trigger('Sharrre_Init', data);
-                    _themeMode.trigger('EventsTickets_Init', data);
-                    _themeMode.trigger('DropDownClick_Init', data);
-                    _themeMode.trigger('BgImages_Init', data);
-                    _themeMode.trigger('Bgmaps_Init', data);
-                    _themeMode.trigger('TicketCalc_Init', data);
-                    _themeMode.trigger('Header_Init', data);
-                });
-            },
-            setFullHeightSlider_BigSliderBind: function(){
-                _themeMode.bind($window, 'FullHeightSlider_BigSlider', function(e, data){
-                    _themeMode.trigger('ScrollAtOnce_Init', data);
-                });
-            },
-            setScrollAtOnce_ToggleBind: function(){
-                _themeMode.bind($window, 'ScrollAtOnce_Toggle', function(e, data){
-                    _themeMode.trigger('FullHeightSlider_Action', data);
-                });
-            }
-        }
-    },
-
-	_setCustomMethods = function() {
-        _themeMode.globals.customResurrect = function() {};
-        _themeMode.globals.customDestroy = function() {};
+    _setCustomMethods = function () {
+      _themeMode.globals.customResurrect = function () {
+      };
+      _themeMode.globals.customDestroy = function () {
+      };
     };
 
-    _themeMode.addMethod('init', function() {
-        _themeMode.bind($window, 'siteConfigComplete', function() {
-            _globals.preloaded = true;
-            _init();
-        });
+  //PUBLIC METHODS
+  _themeMode.addMethod('init', function () {
+    _themeMode.bind($window, 'siteConfigComplete', function () {
+      _globals.preloaded = true;
+      _init();
     });
+  });
 
-    _init();
+  //GO!
+  _init();
 });

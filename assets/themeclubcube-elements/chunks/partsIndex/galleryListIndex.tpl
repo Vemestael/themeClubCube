@@ -1,21 +1,15 @@
-<section class="gallery sect" id="galleryIndex">
-	<div class="container">
-		<div class="row head">
-			<div class="col-lg-12 text-center">
-				<h2>[[%lf_gallery_head:htmlent]]</h2>
-			</div>
-		</div>
-		<div class="row">
-			[[+output]]
-		</div>
-		<div class="row more-button-bott">
-			<a href="[[~[[++themeclubcube.gallery_resource]]]]" title="[[%lf_gallery_more:htmlent]]" class="button-more white">
-                <div class="button-filter-arr">
-                    <div class="button-filter-line left"></div>
-                    <div class="button-filter-line right"></div>
-                </div>
-                <span class="button-filter-text">[[%lf_gallery_more:htmlent]]</span>
-			</a>
-		</div>
-	</div>
-</section>
+<div class="b-gallery">
+    <div data-bgimage="" class="b-gallery__img-wrap bg-image"></div>
+    <div class="container">
+        <div class="row">
+            <div class="b-item__header col-xs-12">
+                <h6 class="s6-heading b-item__ttl-header">Gallery</h6>
+            </div>
+            <div id="sliderGallery" class="b-gallery__slider btn-white">
+
+                [[+output]]
+
+            </div>
+        </div>
+    </div>
+</div>

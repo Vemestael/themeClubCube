@@ -1,20 +1,13 @@
-<section class="blog sect" id="blogIndex">
-	<div class="container">
-		<!-- <div class="row head more-button-bott"> -->
-		<div class="row head">
-			<h2>[[%lf_blog_head:htmlent]]</h2>
-		</div>
-		<div class="row">
-			[[+output]]
-		</div>
-		<div class="row more-button-bott dark">
-			<a href="[[~[[++themeclubcube.blog_resource]]]]" title="[[%lf_blog_more:htmlent]]" class="button-more">
-                <div class="button-filter-arr">
-                    <div class="button-filter-line left"></div>
-                    <div class="button-filter-line right"></div>
+                    <div class="b-aside-item col-xs-12 col-sm-6 col-lg-12">
+                        <div class="b-item__header">
+                            <div class="s6-heading b-item__ttl-header">Blog</div><a href="blog.html" class="btn btn--mini">More</a>
+                        </div>
+
+                        [[+output]]
+
+                    </div>
                 </div>
-                <span class="button-filter-text">[[%lf_blog_more:htmlent]]</span>
-			</a>
-		</div>
-	</div>
-</section>
+            </aside>
+        </div>
+    </div>
+</div>

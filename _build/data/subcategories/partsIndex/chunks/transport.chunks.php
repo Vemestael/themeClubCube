@@ -12,70 +12,142 @@ $tmp = array(
         'file' => 'partsIndex/eventsItemPromoIndex',
         'description' => '',
     ),
-    'eventsListFixedPromoIndex' => array(
-        'file' => 'partsIndex/eventsListFixedPromoIndex',
-        'description' => '',
-    ),
-    'eventsItemFixedPromoIndex' => array(
-        'file' => 'partsIndex/eventsItemFixedPromoIndex',
-        'description' => '',
-    ),
-    'eventsListIndex' => array(
-        'file' => 'partsIndex/eventsListIndex',
-        'description' => '',
-    ),
-    'eventsListTileIndex' => array(
-        'file' => 'partsIndex/eventsListTileIndex',
-        'description' => '',
-    ),
-    'eventsItemIndex' => array(
-        'file' => 'partsIndex/eventsItemIndex',
-        'description' => '',
-    ),
-    'eventsItemLastIndex' => array(
-        'file' => 'partsIndex/eventsItemLastIndex',
-        'description' => '',
-    ),
-    'eventsItemTileIndex' => array(
-        'file' => 'partsIndex/eventsItemTileIndex',
-        'description' => '',
-    ),
-    'galleryListIndex' => array(
-        'file' => 'partsIndex/galleryListIndex',
-        'description' => '',
-    ),
-    'galleryListSliderIndex' => array(
-        'file' => 'partsIndex/galleryListSliderIndex',
-        'description' => '',
-    ),
-    'galleryItemIndex' => array(
-        'file' => 'partsIndex/galleryItemIndex',
-        'description' => '',
-    ),
-    'galleryItemBigIndex' => array(
-        'file' => 'partsIndex/galleryItemBigIndex',
-        'description' => '',
-    ),
-    'blogListIndex' => array(
-        'file' => 'partsIndex/blogListIndex',
-        'description' => '',
-    ),
-    'blogItemIndex' => array(
-        'file' => 'partsIndex/blogItemIndex',
-        'description' => '',
-    ),
-    'blogItemTileIndex' => array(
-        'file' => 'partsIndex/blogItemTileIndex',
-        'description' => '',
-    ),
-    'partnersListIndex' => array(
-        'file' => 'partsIndex/partnersListIndex',
-        'description' => '',
-    ),
-    'partnersItemIndex' => array(
-        'file' => 'partsIndex/partnersItemIndex',
-        'description' => '',
-    ),
+		'topEventsSquareItemIndex' => array(
+			'file' => 'partsIndex/topEventsSquareItemIndex',
+			'description' => '',
+		),
+		'topEventsSquareListIndex' => array(
+			'file' => 'partsIndex/topEventsSquareListIndex',
+			'description' => '',
+		),
+		'topEventsRectangleItemIndex' => array(
+			'file' => 'partsIndex/topEventsRectangleItemIndex',
+			'description' => '',
+		),
+		'topEventsRectangleListIndex' => array(
+			'file' => 'partsIndex/topEventsRectangleListIndex',
+			'description' => '',
+		),
+		'videoItemIndex' => array(
+			'file' => 'partsIndex/videoItemIndex',
+			'description' => '',
+		),
+		'videoListIndex' => array(
+			'file' => 'partsIndex/videoListIndex',
+			'description' => '',
+		),
+		'blogItemIndex' => array(
+			'file' => 'partsIndex/blogItemIndex',
+			'description' => '',
+		),
+		'blogListIndex' => array(
+			'file' => 'partsIndex/blogListIndex',
+			'description' => '',
+		),
+		'pastEventsItemIndex' => array(
+			'file' => 'partsIndex/pastEventsItemIndex',
+			'description' => '',
+		),
+		'pastEventsListIndex' => array(
+			'file' => 'partsIndex/pastEventsListIndex',
+			'description' => '',
+		),
+		'galleryItemIndex' => array(
+			'file' => 'partsIndex/galleryItemIndex',
+			'description' => '',
+		),
+		'galleryListIndex' => array(
+			'file' => 'partsIndex/galleryListIndex',
+			'description' => '',
+		),
+		'partnersItemIndex' => array(
+			'file' => 'partsIndex/partnersItemIndex',
+			'description' => '',
+		),
+		'partnersListIndex' => array(
+			'file' => 'partsIndex/partnersListIndex',
+			'description' => '',
+		),
+		'musicItemIndex' => array(
+			'file' => 'partsIndex/musicItemIndex',
+			'description' => '',
+		),
+		'musicListIndex' => array(
+			'file' => 'partsIndex/musicListIndex',
+			'description' => '',
+		),
+		'bigBlogItemIndex' => array(
+			'file' => 'partsIndex/bigBlogItemIndex',
+			'description' => '',
+		),
+		'bigBlogListIndex' => array(
+			'file' => 'partsIndex/bigBlogListIndex',
+			'description' => '',
+		),
+//    'eventsListFixedPromoIndex' => array(
+//        'file' => 'partsIndex/eventsListFixedPromoIndex',
+//        'description' => '',
+//    ),
+//    'eventsItemFixedPromoIndex' => array(
+//        'file' => 'partsIndex/eventsItemFixedPromoIndex',
+//        'description' => '',
+//    ),
+//    'eventsListIndex' => array(
+//        'file' => 'partsIndex/eventsListIndex',
+//        'description' => '',
+//    ),
+//    'eventsListTileIndex' => array(
+//        'file' => 'partsIndex/eventsListTileIndex',
+//        'description' => '',
+//    ),
+//    'eventsItemIndex' => array(
+//        'file' => 'partsIndex/eventsItemIndex',
+//        'description' => '',
+//    ),
+//    'eventsItemLastIndex' => array(
+//        'file' => 'partsIndex/eventsItemLastIndex',
+//        'description' => '',
+//    ),
+//    'eventsItemTileIndex' => array(
+//        'file' => 'partsIndex/eventsItemTileIndex',
+//        'description' => '',
+//    ),
+//    'galleryListIndex' => array(
+//        'file' => 'partsIndex/galleryListIndex',
+//        'description' => '',
+//    ),
+//    'galleryListSliderIndex' => array(
+//        'file' => 'partsIndex/galleryListSliderIndex',
+//        'description' => '',
+//    ),
+//    'galleryItemIndex' => array(
+//        'file' => 'partsIndex/galleryItemIndex',
+//        'description' => '',
+//    ),
+//    'galleryItemBigIndex' => array(
+//        'file' => 'partsIndex/galleryItemBigIndex',
+//        'description' => '',
+//    ),
+//    'blogListIndex' => array(
+//        'file' => 'partsIndex/blogListIndex',
+//        'description' => '',
+//    ),
+//    'blogItemIndex' => array(
+//        'file' => 'partsIndex/blogItemIndex',
+//        'description' => '',
+//    ),
+//    'blogItemTileIndex' => array(
+//        'file' => 'partsIndex/blogItemTileIndex',
+//        'description' => '',
+//    ),
+//    'partnersListIndex' => array(
+//        'file' => 'partsIndex/partnersListIndex',
+//        'description' => '',
+//    ),
+//    'partnersItemIndex' => array(
+//        'file' => 'partsIndex/partnersItemIndex',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

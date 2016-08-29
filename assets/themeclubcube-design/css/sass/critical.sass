@@ -3,6 +3,7 @@
  *
  * 1. Typography #typography
  * 2. Variables #variables
+ * 3. Colors #colors
  * 4. Mixins #mixins
  * 5. Normalize #normalize
  * 6. Grid-mixins #grid-mixins
@@ -11,6 +12,76 @@
  */
 
 
-@import "helpers/custom-variables"
-@import "vendors/bootstrap/bootstrap"
+//Normalize
+@import "base/normalize"
+
+//Typography
+@import "helpers/typography"
+
+//Variables
+@import "helpers/variables"
+
+//Mixins
+@import "helpers/mixins"
+
+//Colors
+@import "helpers/colors"
+
+//Grid mixins
+@import "layout/grid-mixins"
+
+//Grid
+@import "layout/grid"
+
+//Utilites for grid
+@import "layout/responsive-utilites"
+
+//Vendors
+@import "vendors/slick/slick"
+@import "vendors/slick/slick-theme"
+@import "vendors/magnific-popup/popup"
+
+//Utilites for grid
+@import "components/globals"
+
+//Components
+@import "components/typography"
+
+//Utilites for grid
+@import "components/buttons"
+
+//Utilites for grid
 @import "components/header"
+
+//Components
+@import "components/headline"
+@import "components/breadcrumbs"
+@import "components/advert"
+@import "components/tabs"
+@import "components/accordions"
+@import "components/media"
+@import "components/forms"
+@import "components/gallery"
+@import "components/partners"
+@import "components/landing"
+
+//Parts
+@import "parts/messages"
+@import "parts/blogs"
+@import "parts/aside-bar"
+@import "parts/event-box"
+@import "parts/panel"
+@import "parts/promo"
+@import "parts/events"
+@import "parts/megamenu"
+@import "parts/parallax"
+@import "parts/share-block"
+@import "parts/b-scroll"
+@import "parts/content"
+@import "parts/buttons-page"
+@import "parts/404"
+
+//Utilites for grid
+@import "components/footer"
+
+

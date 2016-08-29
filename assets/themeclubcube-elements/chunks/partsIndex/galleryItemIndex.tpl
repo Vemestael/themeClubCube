@@ -1,35 +1,13 @@
-[[+idx:mod=`4`:is=`1`:then=`[[+idx:is=`1`:then=``:else=`</div><div class="clear-mard clearfix visible-lg"></div><div class="row">`]]`:else=``]]
-<div class="col-lg-3 col-md-6 col-xs-12 col-xm-6 col-sm-6 gall-item">
-	<div class="img-gal">
-		<a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="img-overfl">
-			<img alt="[[+pagetitle:htmlent]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="img-responsive img-preload"
-                 data-src="<768:[[+img:phpthumbof=`w=360&h=202&zc=1`]],
-					>767:[[+img:phpthumbof=`w=485&h=272&zc=1`]],
-					>1199:[[+img:phpthumbof=`w=360&h=202&zc=1`]]"
-                 data-src2x="<768:[[+img:phpthumbof=`w=720&h=404&zc=1`]],
-                    >767:[[+img:phpthumbof=`w=970&h=544&zc=1`]],
-				    >1199:[[+img:phpthumbof=`w=720&h=404&zc=1`]]"
-                 src="[[+img:phpthumbof=`w=360&h=202&zc=1`]]">
-		</a>
-		<div class="bord-fr"></div>
-		<div class="bord-sc"></div>
-	</div>
-	<div class="item-title">
-		<div class="item-aside">
-			<h3><a href="[[~[[+id]]]]" title="[[+longtitle:htmlent:default=`[[+pagetitle:htmlent]]`]]" class="top-event-title">[[+pagetitle:htmlent]]</a></h3>
-			<time class="top-event-place" datetime="[[+publishedon:date=`%Y-%m-%d %H:%M`]]">[[+publishedon:dateAgo]]</time>
-		</div>
-		[[getImageList?
-			&tpl=`@CODE: `
-			&tvname=`gallery`
-			&docid=`[[+id]]`
-			&outputSeparator=``
-		]]
-		<div class="item-icons">
-			<div class="icon-row">
-				<div class="pict-sm photo-cm"></div>
-				<span>[[+total]]</span>
-			</div>
-		</div>
-	</div>
-</div>
+<article class="c-box c-box--sm">
+    <div class="c-box__inner">
+        <div data-bgimage="[[+img]]" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
+        <div class="c-box__date-item c-box__date-item--float">
+            <time datetime="[[+publishedon]]" class="date-sm c-box__date"><span class="date-sm__dt">[[+publishedon:date=`%d`]]</span><span class="date-sm__rh"><span class="date-sm__rh-m">[[%lf_month_short.[[+publishedon:date=`%m`]]]]</span><span class="date-sm__rh-d">[[+publishedon:date=`%Y`]]</span></span></time>
+        </div>
+        <ul class="c-box__views">
+            <li class="c-box__view txt">32</li>
+            <li class="c-box__video txt">2</li>
+        </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+    </div>
+    <h6><a href="gallery-open.html" class="c-box__link">[[+pagetitle]]</a></h6>
+</article>

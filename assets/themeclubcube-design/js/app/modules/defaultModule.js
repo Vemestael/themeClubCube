@@ -1,3 +1,4 @@
+"use strict";
 appMakeBeCool.gateway.addClass('DefaultModule', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _defaultMudule = this,

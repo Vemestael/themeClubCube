@@ -6,13 +6,13 @@ if ($object && $object->xpdo) {
             $modx =& $object->xpdo;
 
             $settings = array(
-                'themeclubcube.partners_resource' => 'partners',
-                'themeclubcube.blog_resource' => 'blog',
-                'themeclubcube.gallery_resource' => 'gallery',
-                'themeclubcube.events_resource' => 'events',
-                'themeclubcube.ajax_form_contacts' => 'formcontacts',
-                'themeclubcube.ajax_form_subscribe' => 'formsubscribe',
-                'error_page' => '404',
+//                'themeclubcube.partners_resource' => 'partners',
+//                'themeclubcube.blog_resource' => 'blog',
+//                'themeclubcube.gallery_resource' => 'gallery',
+//                'themeclubcube.events_resource' => 'events',
+//                'themeclubcube.ajax_form_contacts' => 'formcontacts',
+//                'themeclubcube.ajax_form_subscribe' => 'formsubscribe',
+//                'error_page' => '404',
             );
 
             $context_key = 'web';

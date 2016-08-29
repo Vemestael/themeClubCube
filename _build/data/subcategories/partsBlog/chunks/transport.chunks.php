@@ -4,14 +4,14 @@ $chunks = array();
 
 $tmp = array(
     // Index
-    'blogItemBlog' => array(
-        'file' => 'partsBlog/blogItemBlog',
-        'description' => '',
-    ),
-    'blogItemTileBlog' => array(
-        'file' => 'partsBlog/blogItemTileBlog',
-        'description' => '',
-    ),
+//    'blogItemBlog' => array(
+//        'file' => 'partsBlog/blogItemBlog',
+//        'description' => '',
+//    ),
+//    'blogItemTileBlog' => array(
+//        'file' => 'partsBlog/blogItemTileBlog',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

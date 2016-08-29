@@ -3,38 +3,46 @@
 $snippets = array();
 
 $tmp = array(
-	'formContacts' => array(
-		'file' => 'formContacts',
-		'description' => '',
-	),
-    'formSubscribe' => array(
-        'file' => 'formSubscribe',
-        'description' => '',
-    ),
-    'time' => array(
-        'file' => 'time',
-        'description' => '',
-    ),
     'getDate' => array(
         'file' => 'getDate',
         'description' => '',
     ),
-    'getWeeksEvents' => array(
-        'file' => 'getWeeksEvents',
-        'description' => '',
-    ),
-    'getParamsWeeksEvents' => array(
-        'file' => 'getParamsWeeksEvents',
-        'description' => '',
-    ),
-    'parseMIGXTV' => array(
-        'file' => 'parseMIGXTV',
-        'description' => '',
-    ),
-    'getIdResourceForAlias' => array(
-        'file' => 'getIdResourceForAlias',
-        'description' => '',
-    ),
+	'getArtistsList' => array(
+		'file' => 'getArtistsList',
+		'description' => '',
+	),
+//	'formContacts' => array(
+//		'file' => 'formContacts',
+//		'description' => '',
+//	),
+//    'formSubscribe' => array(
+//        'file' => 'formSubscribe',
+//        'description' => '',
+//    ),
+//    'time' => array(
+//        'file' => 'time',
+//        'description' => '',
+//    ),
+//    'getDate' => array(
+//        'file' => 'getDate',
+//        'description' => '',
+//    ),
+//    'getWeeksEvents' => array(
+//        'file' => 'getWeeksEvents',
+//        'description' => '',
+//    ),
+//    'getParamsWeeksEvents' => array(
+//        'file' => 'getParamsWeeksEvents',
+//        'description' => '',
+//    ),
+//    'parseMIGXTV' => array(
+//        'file' => 'parseMIGXTV',
+//        'description' => '',
+//    ),
+//    'getIdResourceForAlias' => array(
+//        'file' => 'getIdResourceForAlias',
+//        'description' => '',
+//    ),
 );
 
 foreach ($tmp as $k => $v) {

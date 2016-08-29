@@ -1,3 +1,0 @@
-$(function(){
-    appMakeBeCool.gateway.init();
-});

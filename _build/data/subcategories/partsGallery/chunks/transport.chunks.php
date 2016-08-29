@@ -4,22 +4,22 @@ $chunks = array();
 
 $tmp = array(
     // Index
-    'galleryListWrapperGallery' => array(
-        'file' => 'partsGallery/galleryListWrapperGallery',
-        'description' => '',
-    ),
-    'galleryItemGallery' => array(
-        'file' => 'partsGallery/galleryItemGallery',
-        'description' => '',
-    ),
-    'galleryItemBigGallery' => array(
-        'file' => 'partsGallery/galleryItemBigGallery',
-        'description' => '',
-    ),
-    'galleryImageItemGallery' => array(
-        'file' => 'partsGallery/galleryImageItemGallery',
-        'description' => '',
-    ),
+//    'galleryListWrapperGallery' => array(
+//        'file' => 'partsGallery/galleryListWrapperGallery',
+//        'description' => '',
+//    ),
+//    'galleryItemGallery' => array(
+//        'file' => 'partsGallery/galleryItemGallery',
+//        'description' => '',
+//    ),
+//    'galleryItemBigGallery' => array(
+//        'file' => 'partsGallery/galleryItemBigGallery',
+//        'description' => '',
+//    ),
+//    'galleryImageItemGallery' => array(
+//        'file' => 'partsGallery/galleryImageItemGallery',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

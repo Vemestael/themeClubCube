@@ -9,30 +9,74 @@ if ($object->xpdo) {
             /* list of tvs and templates for each */
             $categoryId = $modx->getObject('modCategory', array('category'=>'themeClubCube'))->get('id');
             $tvs = array(
-                'gallery' => array(
+                'migxEventArtist' => array(
                     'category' => $categoryId,
-                    'name' => 'gallery',
-                    'caption' => 'Gallery',
+                    'name' => 'migxEventArtist',
+                    'caption' => 'Список артистов',
                     'description' => '',
                     'type' => 'migx',
                     'display' => 'default',
                     'input_properties' => array(
-                        'formtabs' => '[{"caption":"Add on image", "fields": [{"field":"title","caption":"Title","inputTV":"galleryImgTitle"},{"field":"image","caption":"Image","inputTV":"galleryImg"}]}]',
-                        'columns' => '[{"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},{"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}]'
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Artists",
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"name",
+                                                    "caption":"Name"
+                                                },
+                                                {
+                                                    "field":"city",
+                                                    "caption":"City"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Name", 
+                                                "width": "60", 
+                                                "sortable": "false", 
+                                                "dataIndex": "name"
+                                            },
+                                            {
+                                                "header": "City", 
+                                                "width": "50", 
+                                                "sortable": "false", 
+                                                "dataIndex": "city"
+                                            }
+                                        ]
+                                        '
                     )
                 ),
-                'lineUp' => array(
-                    'category' => $categoryId,
-                    'name' => 'lineUp',
-                    'caption' => 'Line-Up',
-                    'description' => '',
-                    'type' => 'migx',
-                    'display' => 'default',
-                    'input_properties' => array(
-                        'formtabs' => '[{"caption":"Add on person", "fields": [{"field":"name","caption":"Name","inputTV":"lineUpName"},{"field":"location","caption":"Location","inputTV":"lineUpLocation"}]}]',
-                        'columns' => '[{"header": "Name", "width": "140", "sortable": "true", "dataIndex": "name"},{"header": "Location", "width": "70", "sortable": "false", "dataIndex": "location"}]'
-                    )
-                ),
+//                'gallery' => array(
+//                    'category' => $categoryId,
+//                    'name' => 'gallery',
+//                    'caption' => 'Gallery',
+//                    'description' => '',
+//                    'type' => 'migx',
+//                    'display' => 'default',
+//                    'input_properties' => array(
+//                        'formtabs' => '[{"caption":"Add on image", "fields": [{"field":"title","caption":"Title","inputTV":"galleryImgTitle"},{"field":"image","caption":"Image","inputTV":"galleryImg"}]}]',
+//                        'columns' => '[{"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},{"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}]'
+//                    )
+//                ),
+//                'lineUp' => array(
+//                    'category' => $categoryId,
+//                    'name' => 'lineUp',
+//                    'caption' => 'Line-Up',
+//                    'description' => '',
+//                    'type' => 'migx',
+//                    'display' => 'default',
+//                    'input_properties' => array(
+//                        'formtabs' => '[{"caption":"Add on person", "fields": [{"field":"name","caption":"Name","inputTV":"lineUpName"},{"field":"location","caption":"Location","inputTV":"lineUpLocation"}]}]',
+//                        'columns' => '[{"header": "Name", "width": "140", "sortable": "true", "dataIndex": "name"},{"header": "Location", "width": "70", "sortable": "false", "dataIndex": "location"}]'
+//                    )
+//                ),
             );
 
             foreach ($tvs as $k => $v) {

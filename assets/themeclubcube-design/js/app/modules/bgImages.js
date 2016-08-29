@@ -5,7 +5,7 @@ appMakeBeCool.gateway.addClass('BgImages', function (properties, $, $window, $do
     _defaults = {
       // elements
       bgImages: '.bg-image',
-      parallax: '.header-banner-inner'
+      volunteerClass: '.ablock-item'
       // prop
       // data
       // classes ans styles
@@ -14,7 +14,7 @@ appMakeBeCool.gateway.addClass('BgImages', function (properties, $, $window, $do
     _globals = {
       // elements
       bgImages: null,
-      parallax: null,
+      volunteerNodes: null,
       // prop
       preloaded: false
     },
@@ -36,7 +36,7 @@ appMakeBeCool.gateway.addClass('BgImages', function (properties, $, $window, $do
 
     _config = function () {
       _globals.bgImages = $(_properties.bgImages);
-      _globals.parallax = $(_properties.parallax);
+      _globals.volunteerNodes = $(_properties.volunteerClass);
     },
 
     _setup = function () {
@@ -52,6 +52,15 @@ appMakeBeCool.gateway.addClass('BgImages', function (properties, $, $window, $do
         });
       }
       
+      if (_globals.volunteerNodes.length && $window.width() >= 1280) {
+        _globals.volunteerNodes.each(function () {
+          var $node = $(this);
+          var imgUrl = $node.data('bgimage');
+          $node.css({
+            backgroundImage: "url('" + imgUrl + "')"
+          });
+        });
+      }
     },
 
     _setBinds = function () {

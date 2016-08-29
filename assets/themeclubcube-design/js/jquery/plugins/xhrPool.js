@@ -34,4 +34,4 @@
 
         $.xhrPool[pool].push(jqXHR);
     });
-})(jQuery)
+})(jQuery);

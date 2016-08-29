@@ -7,42 +7,42 @@ if ($object && $object->xpdo) {
 
             /* list of property sets, and elements associated with each */
             $sets = array(
-                'mainMenu' => array(
-                    array('class' => 'modSnippet','name' => 'pdoMenu'),
-                ),
-                'indexSlider' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'indexEvents' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'indexGallery' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'indexBlog' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'indexPartners' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'blogList' => array(
-                    array('class' => 'modSnippet','name' => 'pdoPage'),
-                ),
-                'eventsListAll' => array(
-                    array('class' => 'modSnippet','name' => 'pdoPage'),
-                ),
-                'eventsListWeek' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'galleryList' => array(
-                    array('class' => 'modSnippet','name' => 'pdoPage'),
-                ),
-                'asideEvents' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
-                'asideBlog' => array(
-                    array('class' => 'modSnippet','name' => 'pdoResources'),
-                ),
+//                'mainMenu' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoMenu'),
+//                ),
+//                'indexSlider' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'indexEvents' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'indexGallery' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'indexBlog' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'indexPartners' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'blogList' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoPage'),
+//                ),
+//                'eventsListAll' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoPage'),
+//                ),
+//                'eventsListWeek' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'galleryList' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoPage'),
+//                ),
+//                'asideEvents' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
+//                'asideBlog' => array(
+//                    array('class' => 'modSnippet','name' => 'pdoResources'),
+//                ),
             );
 
             foreach ($sets as $setName => $elements) {

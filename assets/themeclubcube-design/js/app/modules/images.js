@@ -1,3 +1,4 @@
+"use strict";
 appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _images = this,
@@ -198,7 +199,7 @@ appMakeBeCool.gateway.addClass('Images', function(properties, $, $window, $docum
     },
 
     _addImgPreloader = function (imgEl) {
-        $imgEl = $(imgEl);
+        var $imgEl = $(imgEl);
 
         if ($imgEl.length !== 1) return console.log('Error in addImgPreloaders - context provided is invalid.');
         if ($imgEl.hasClass(_properties.imgNoPreloadClass)) return console.log('No add preload');

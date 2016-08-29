@@ -1,47 +1,59 @@
-[[pdoResources@indexSlider?
-	&parents=`[[++themeclubcube.events_resource]]`
-	&includeTVs=`timeStart,price,lineUp,promoEvent,promoImg`
-	&processTVs=`promoImg`
-	&tvPrefix=``
-	&tplWrapper=`[[++themeclubcube.style_events_promo_slider:is=`1`:then=`eventsListPromoIndex`:else=`eventsListFixedPromoIndex`]]`
-	&tpl=`[[++themeclubcube.style_events_promo_slider:is=`1`:then=`eventsItemPromoIndex`:else=`eventsItemFixedPromoIndex`]]`
-	&tvFilters=`timeStart>=[[getDate? &format=`Y-m-d 00:00:00`]],promoEvent==1`
+[[pdoResources?
+    &tpl=`eventsItemPromoIndex`
+    &tplWrapper=`eventsListPromoIndex`
+    &parents=`[[++themeclubcube.events_resource]]`
+    &tvPrefix=``
+    &includeTVs=`timeStart, viewType`
 ]]
-
-[[pdoResources@indexEvents?
-	&parents=`[[++themeclubcube.events_resource]]`
-	&includeTVs=`img,timeStart,price,lineUp,topEvent`
-	&processTVs=`img`
-	&tvPrefix=``
-	&tplWrapper=`[[++themeclubcube.style_index_events_list:is=`1`:then=`eventsListIndex`:else=`eventsListTileIndex`]]`
-	&tpl=`[[++themeclubcube.style_index_events_list:is=`1`:then=`eventsItemIndex`:else=`eventsItemTileIndex`]]`
-    &tplLast=`[[++themeclubcube.style_index_events_list:is=`1`:then=`eventsItemLastIndex`:else=`eventsItemTileIndex`]]`
-	&tvFilters=`timeStart>=[[getDate? &format=`Y-m-d 00:00:00`]],topEvent==1`
+[[pdoResources?
+    &tpl=`topEventsSquareItemIndex`
+    &tplWrapper=`topEventsSquareListIndex`
+    &parents=`[[++themeclubcube.events_resource]]`
+    &tvPrefix=``
+    &includeTVs=`imgSquare, timeStart, topEvent`
+    &tvFilters=`topEvent==1`
 ]]
-
-[[pdoResources@indexGallery?
-	&parents=`[[++themeclubcube.gallery_resource]]`
-	&includeTVs=`img`
-	&processTVs=`img`
-	&tvPrefix=``
-	&tplWrapper=`[[++themeclubcube.style_index_gallery_list:is=`1`:then=`galleryListIndex`:else=`galleryListSliderIndex`]]`
-	&tpl=`[[++themeclubcube.style_index_gallery_list:is=`1`:then=`galleryItemIndex`:else=`galleryItemBigIndex`]]`
+[[pdoResources?
+    &tpl=`topEventsRectangleItemIndex`
+    &tplWrapper=`topEventsRectangleListIndex`
+    &parents=`[[++themeclubcube.events_resource]]`
+    &tvPrefix=``
+    &includeTVs=`img, timeStart, topEvent`
+    &tvFilters=`topEvent==1`
 ]]
-
-[[pdoResources@indexBlog?
-	&parents=`[[++themeclubcube.blog_resource]]`
-	&includeTVs=`img`
-	&processTVs=`img`
-	&tvPrefix=``
-	&tplWrapper=`blogListIndex`
-	&tpl=`[[++themeclubcube.style_index_blog_list:is=`1`:then=`blogItemIndex`:else=`blogItemTileIndex`]]`
+[[pdoResources?
+    &tpl=`videoItemIndex`
+    &tplWrapper=`videoListIndex`
+    &parents=`[[++themeclubcube.video_resource]]`
+    &tvPrefix=``
+    &includeTVs=`videoLink`
 ]]
-
-[[pdoResources@indexPartners?
-	&parents=`[[++themeclubcube.partners_resource]]`
-	&includeTVs=`img`
-	&processTVs=`img`
-	&tvPrefix=``
-	&tplWrapper=`partnersListIndex`
-	&tpl=`partnersItemIndex`
+[[pdoResources?
+    &tpl=`blogItemIndex`
+    &tplWrapper=`blogListIndex`
+    &parents=`[[++themeclubcube.blog_resource]]`
+    &tvPrefix=``
+    &includeTVs=`img`
+]]
+[[pdoResources?
+    &tpl=`pastEventsItemIndex`
+    &tplWrapper=`pastEventsListIndex`
+    &parents=`[[++themeclubcube.events_resource]]`
+    &tvPrefix=``
+    &includeTVs=`timeStart, topEvent`
+    &tvFilters=`topEvent==2`
+]]
+[[pdoResources?
+    &tpl=`galleryItemIndex`
+    &tplWrapper=`galleryListIndex`
+    &parents=`[[++themeclubcube.gallery_resource]]`
+    &tvPrefix=``
+    &includeTVs=`img`
+]]
+[[pdoResources?
+    &tpl=`partnersItemIndex`
+    &tplWrapper=`partnersListIndex`
+    &parents=`[[++themeclubcube.partners_resource]]`
+    &tvPrefix=``
+    &includeTVs=`img, partnerLink`
 ]]
