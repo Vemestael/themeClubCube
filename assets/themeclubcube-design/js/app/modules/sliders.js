@@ -75,6 +75,7 @@ appMakeBeCool.gateway.addClass('Sliders', function (properties, $, $window, $doc
                 dots: false,
                 infinite: false,
                 speed: 330,
+                rows: 2,
                 centerPadding: 30,
                 slidesToShow: 4,
                 slidesToScroll: 4,
