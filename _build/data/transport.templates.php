@@ -14,6 +14,10 @@ $tmp = array(
         'file' => 'index_v2',
         'description' => 'Index template (music)',
     ),
+    'index_v3' => array(
+        'file' => 'index_v3',
+        'description' => 'Index template (events)',
+    ),
     'events' => array(
         'file' => 'events',
         'description' => 'Event template',
