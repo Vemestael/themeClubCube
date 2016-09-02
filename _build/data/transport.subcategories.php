@@ -32,24 +32,24 @@ $tmp = array(
     'partsEvents' => array(
         'chunks'
     ),
-//    //Blog
-//    'partsBlog' => array(
-//        'chunks'
-//    ),
+    //Blog
+    'partsBlog' => array(
+        'chunks'
+    ),
 //    //Events
 //    'partsEvents' => array(
 //        'chunks'
 //    ),
-//    //Gallery
-//    'partsGallery' => array(
-//        'chunks'
-//    ),
+    //Gallery
+    'partsGallery' => array(
+        'chunks'
+    ),
 //    //Contacts
 //    'partsContacts' => array(
 //        'chunks'
 //    ),
 //    /*
-//     * Technical
+//     * Technicalz
 //     */
 //    //Index
 //    'technical' => array(

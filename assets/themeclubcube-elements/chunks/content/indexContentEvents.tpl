@@ -6,34 +6,34 @@
     &includeTVs=`timeStart, viewType`
 ]]
 [[pdoResources?
-    &tpl=`topEventsSquareItemIndex_v3`
-    &tplWrapper=`topEventsSquareListIndex`
+    &tpl=`topEventsSquareItemIndexEvents`
+    &tplWrapper=`topEventsSquareListIndexEvents`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
+    &limit=`6`
     &includeTVs=`imgSquare, timeStart, topEvent`
     &tvFilters=`topEvent==1`
 ]]
 [[pdoResources?
-    &tpl=`topEventsRectangleItemIndex_v3`
-    &tplWrapper=`topEventsRectangleListIndex`
+    &tpl=`topEventsRectangleItemIndexEvents`
+    &tplWrapper=`topEventsRectangleListIndexEvents`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
+    &limit=`6`
     &includeTVs=`img, timeStart, topEvent`
     &tvFilters=`topEvent==1`
 ]]
 [[pdoResources?
-    &tpl=`musicItemIndex`
-    &tplWrapper=`musicListIndex`
-    &parents=`0`
-    &limit=`1`
+    &tpl=`videoItemIndexEvents`
+    &tplWrapper=`videoListIndexEvents`
+    &parents=`[[++themeclubcube.video_resource]]`
     &tvPrefix=``
-    &includeTVs=`audioLink`
+    &includeTVs=`videoLink`
 ]]
 [[pdoResources?
-    &tpl=`bigBlogItemIndex`
-    &tplWrapper=`bigBlogListIndex`
-    &parents=`[[++themeclubcube.blog_resource]]`
-    &limit=`8`
+    &tpl=`galleryItemIndexEvents`
+    &tplWrapper=`galleryListIndexEvents`
+    &parents=`[[++themeclubcube.gallery_resource]]`
     &tvPrefix=``
-    &includeTVs=`blogViewType, img`
+    &includeTVs=`img`
 ]]

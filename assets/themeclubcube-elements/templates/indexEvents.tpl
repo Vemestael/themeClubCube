@@ -1,4 +1,4 @@
 [[$metaBase]]
 [[$headerBase]]
-[[$indexContent_v3]]
+[[$indexContentEvents]]
 [[$footerBase]]

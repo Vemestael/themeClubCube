@@ -4,6 +4,46 @@ $chunks = array();
 
 $tmp = array(
     // Index
+    'galleryItemFirstGallery' => array(
+        'file' => 'partsGallery/galleryItemFirstGallery',
+        'description' => '',
+    ),
+	'galleryItemGallery' => array(
+		'file' => 'partsGallery/galleryItemGallery',
+		'description' => '',
+	),
+	'galleryListGallery' => array(
+		'file' => 'partsGallery/galleryListGallery',
+		'description' => '',
+	),
+	'galleryOpenGallery' => array(
+		'file' => 'partsGallery/galleryOpenGallery',
+		'description' => '',
+	),
+	'galleryOpenPopUpGallery' => array(
+		'file' => 'partsGallery/galleryOpenPopUpGallery',
+		'description' => '',
+	),
+	'videoItemGallery' => array(
+		'file' => 'partsGallery/videoItemGallery',
+		'description' => '',
+	),
+	'leftPanelItemGallery_1' => array(
+		'file' => 'partsGallery/leftPanelItemGallery_1',
+		'description' => '',
+	),
+	'leftPanelItemGallery_2' => array(
+		'file' => 'partsGallery/leftPanelItemGallery_2',
+		'description' => '',
+	),
+	'leftPanelListGallery_1' => array(
+		'file' => 'partsGallery/leftPanelListGallery_1',
+		'description' => '',
+	),
+	'leftPanelListGallery_2' => array(
+		'file' => 'partsGallery/leftPanelListGallery_2',
+		'description' => '',
+	),
 //    'galleryListWrapperGallery' => array(
 //        'file' => 'partsGallery/galleryListWrapperGallery',
 //        'description' => '',

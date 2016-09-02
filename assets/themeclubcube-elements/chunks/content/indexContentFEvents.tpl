@@ -6,36 +6,22 @@
     &includeTVs=`timeStart, viewType`
 ]]
 [[pdoResources?
-    &tpl=`topEventsSquareItemIndex`
-    &tplWrapper=`topEventsSquareListIndex`
+    &tpl=`topEventsSquareItemIndexEvents`
+    &tplWrapper=`topEventsSquareListIndexEvents`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &limit=`4`
+    &limit=`9`
     &includeTVs=`imgSquare, timeStart, topEvent`
     &tvFilters=`topEvent==1`
 ]]
 [[pdoResources?
-    &tpl=`topEventsRectangleItemIndex`
-    &tplWrapper=`topEventsRectangleListIndex`
+    &tpl=`topEventsRectangleItemIndexEvents`
+    &tplWrapper=`topEventsRectangleListIndexEvents`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &limit=`4`
+    &limit=`9`
     &includeTVs=`img, timeStart, topEvent`
     &tvFilters=`topEvent==1`
-]]
-[[pdoResources?
-    &tpl=`videoItemIndex`
-    &tplWrapper=`videoListIndex`
-    &parents=`[[++themeclubcube.video_resource]]`
-    &tvPrefix=``
-    &includeTVs=`videoLink`
-]]
-[[pdoResources?
-    &tpl=`blogItemIndex`
-    &tplWrapper=`blogListIndex`
-    &parents=`[[++themeclubcube.blog_resource]]`
-    &tvPrefix=``
-    &includeTVs=`img`
 ]]
 [[pdoResources?
     &tpl=`pastEventsItemIndex`
@@ -43,20 +29,13 @@
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
     &limit=`2`
-    &includeTVs=`timeStart, topEvent, img`
+    &includeTVs=`timeStart, topEvent`
     &tvFilters=`topEvent==2`
 ]]
 [[pdoResources?
-    &tpl=`galleryItemIndex`
-    &tplWrapper=`galleryListIndex`
+    &tpl=`galleryItemIndexEvents`
+    &tplWrapper=`galleryListIndexEvents`
     &parents=`[[++themeclubcube.gallery_resource]]`
     &tvPrefix=``
     &includeTVs=`img`
-]]
-[[pdoResources?
-    &tpl=`partnersItemIndex`
-    &tplWrapper=`partnersListIndex`
-    &parents=`[[++themeclubcube.partners_resource]]`
-    &tvPrefix=``
-    &includeTVs=`img, partnerLink`
 ]]

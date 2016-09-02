@@ -1,4 +1,4 @@
 [[$metaBase]]
 [[$headerBase]]
-[[$indexContent_v2]]
+[[$blogOpenNoTitleFullContent]]
 [[$footerBase]]

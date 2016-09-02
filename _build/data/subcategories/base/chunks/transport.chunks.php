@@ -18,6 +18,10 @@ $tmp = array(
 			'file' => 'base/footerBase',
 			'description' => '',
 	),
+	'footerBaseGallery' => array(
+		'file' => 'base/footerBaseGallery',
+		'description' => '',
+	),
 );
 
 // Save chunks for setup options

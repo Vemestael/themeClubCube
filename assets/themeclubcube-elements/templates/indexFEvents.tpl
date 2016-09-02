@@ -1,4 +1,4 @@
 [[$metaBase]]
 [[$headerBase]]
-[[$blogContent]]
+[[$indexContentFEvents]]
 [[$footerBase]]

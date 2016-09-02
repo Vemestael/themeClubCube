@@ -4,6 +4,30 @@ $chunks = array();
 
 $tmp = array(
     // Index
+    'blogItemBlog' => array(
+        'file' => 'partsBlog/blogItemBlog',
+        'description' => '',
+    ),
+	'blogListBlog' => array(
+		'file' => 'partsBlog/blogListBlog',
+		'description' => '',
+	),
+	'blogOpenNoTitleFullBlog' => array(
+		'file' => 'partsBlog/blogOpenNoTitleFullBlog',
+		'description' => '',
+	),
+	'eventsDownItemBlog' => array(
+		'file' => 'partsBlog/eventsDownItemBlog',
+		'description' => '',
+	),
+	'eventsDownListBlog' => array(
+		'file' => 'partsBlog/eventsDownListBlog',
+		'description' => '',
+	),
+	'blockquoteBlog' => array(
+		'file' => 'partsBlog/blockquoteBlog',
+		'description' => '',
+	),
 //    'blogItemBlog' => array(
 //        'file' => 'partsBlog/blogItemBlog',
 //        'description' => '',

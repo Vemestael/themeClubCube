@@ -3,15 +3,15 @@
 $chunks = array();
 
 $tmp = array(
-    // Index
-    'eventsListPromoIndex' => array(
-        'file' => 'partsIndex/eventsListPromoIndex',
-        'description' => '',
-    ),
-    'eventsItemPromoIndex' => array(
-        'file' => 'partsIndex/eventsItemPromoIndex',
-        'description' => '',
-    ),
+		// Index
+		'eventsListPromoIndex' => array(
+			'file' => 'partsIndex/eventsListPromoIndex',
+			'description' => '',
+		),
+		'eventsItemPromoIndex' => array(
+			'file' => 'partsIndex/eventsItemPromoIndex',
+			'description' => '',
+		),
 		'topEventsSquareItemIndex' => array(
 			'file' => 'partsIndex/topEventsSquareItemIndex',
 			'description' => '',
@@ -83,6 +83,50 @@ $tmp = array(
 		'bigBlogListIndex' => array(
 			'file' => 'partsIndex/bigBlogListIndex',
 			'description' => '',  
+		),
+		'topEventsSquareItemIndexEvents' => array(
+			'file' => 'partsIndex/topEventsSquareItemIndexEvents',
+			'description' => '',
+		),
+		'topEventsSquareListIndexEvents' => array(
+			'file' => 'partsIndex/topEventsSquareListIndexEvents',
+			'description' => '',
+		),
+		'topEventsRectangleItemIndexEvents' => array(
+			'file' => 'partsIndex/topEventsRectangleItemIndexEvents',
+			'description' => '',
+		),
+		'topEventsRectangleListIndexEvents' => array(
+			'file' => 'partsIndex/topEventsRectangleListIndexEvents',
+			'description' => '',
+		),
+		'videoItemIndexEvents' => array(
+			'file' => 'partsIndex/videoItemIndexEvents',
+			'description' => '',
+		),
+		'videoListIndexEvents' => array(
+			'file' => 'partsIndex/videoListIndexEvents',
+			'description' => '',
+		),
+		'galleryItemIndexEvents' => array(
+			'file' => 'partsIndex/galleryItemIndexEvents',
+			'description' => '',
+		),
+		'galleryListIndexEvents' => array(
+			'file' => 'partsIndex/galleryListIndexEvents',
+			'description' => '',
+		),
+		'pastEventsItemIndexGallery' => array(
+			'file' => 'partsIndex/pastEventsItemIndexGallery',
+			'description' => '',
+		),
+		'pastEventsListIndexGallery' => array(
+			'file' => 'partsIndex/pastEventsListIndexGallery',
+			'description' => '',
+		),
+		'socialItemIndexPosters' => array(
+			'file' => 'partsIndex/socialItemIndexPosters',
+			'description' => '',
 		),
 //    'eventsListFixedPromoIndex' => array(
 //        'file' => 'partsIndex/eventsListFixedPromoIndex',

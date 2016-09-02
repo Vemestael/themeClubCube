@@ -14,12 +14,24 @@ $tmp = array(
         'file' => 'content/indexContent',
         'description' => '',
     ),
-	'indexContent_v2' => array(
-		'file' => 'content/indexContent_v2',
+	'indexContentMusic' => array(
+		'file' => 'content/indexContentMusic',
 		'description' => '',
 	),
-	'indexContent_v3' => array(
-		'file' => 'content/indexContent_v3',
+	'indexContentEvents' => array(
+		'file' => 'content/indexContentEvents',
+		'description' => '',
+	),
+	'indexContentFEvents' => array(
+		'file' => 'content/indexContentFEvents',
+		'description' => '',
+	),
+	'indexContentGallery' => array(
+		'file' => 'content/indexContentGallery',
+		'description' => '',
+	),
+	'indexContentPosters' => array(
+		'file' => 'content/indexContentPosters',
 		'description' => '',
 	),
 	'eventsContent' => array(
@@ -28,6 +40,22 @@ $tmp = array(
 	),
 	'eventsOpenContent' => array(
 		'file' => 'content/eventsOpenContent',
+		'description' => '',
+	),
+	'galleryContent' => array(
+		'file' => 'content/galleryContent',
+		'description' => '',
+	),
+	'galleryOpenContent' => array(
+		'file' => 'content/galleryOpenContent',
+		'description' => '',
+	),
+	'blogContent' => array(
+		'file' => 'content/blogContent',
+		'description' => '',
+	),
+	'blogOpenNoTitleFullContent' => array(
+		'file' => 'content/blogOpenNoTitleFullContent',
 		'description' => '',
 	),
 //    'galleryListContent' => array(

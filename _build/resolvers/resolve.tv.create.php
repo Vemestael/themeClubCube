@@ -53,6 +53,92 @@ if ($object->xpdo) {
                                         '
                     )
                 ),
+                'imgList' => array(
+                    'category' => $categoryId,
+                    'name' => 'imgList',
+                    'caption' => 'Изображения для галереи',
+                    'description' => '',
+                    'type' => 'migx',
+                    'display' => 'default',
+                    'input_properties' => array(
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Image", 
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"image",
+                                                    "caption":"Изображение",
+                                                    "inputTVtype":"image"
+                                                },
+                                                {
+                                                    "field":"imageMin",
+                                                    "caption":"Превью",
+                                                    "inputTVtype":"image"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Изображение", 
+                                                "sortable": "true", 
+                                                "dataIndex": "image",
+                                                "renderer": "this.renderImage"
+                                            },
+                                            {
+                                                "header": "Превью", 
+                                                "sortable": "true", 
+                                                "dataIndex": "imageMin",
+                                                "renderer": "this.renderImage"
+                                            }
+                                        ]
+                                        '
+                    )
+                ),
+                'annotationBlog' => array(
+                    'category' => $categoryId,
+                    'name' => 'annotationBlog',
+                    'caption' => 'Аннотация к статье',
+                    'description' => '',
+                    'type' => 'migx',
+                    'display' => 'default',
+                    'input_properties' => array(
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Аннотация", 
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"annotationHead",
+                                                    "caption":"Заголовок"
+                                                },
+                                                {
+                                                    "field":"annotationTextAndLink",
+                                                    "caption":"Текст"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Заголовок", 
+                                                "dataIndex": "annotationHead"
+                                            },
+                                            {
+                                                "header": "Текст", 
+                                                "dataIndex": "annotationTextAndLink"
+                                            }
+                                        ]
+                                        '
+                    )
+                ),
 //                'gallery' => array(
 //                    'category' => $categoryId,
 //                    'name' => 'gallery',

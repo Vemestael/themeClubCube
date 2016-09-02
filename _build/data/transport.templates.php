@@ -10,13 +10,25 @@ $tmp = array(
         'file' => 'index',
         'description' => 'Index template',
     ),
-    'index_v2' => array(
-        'file' => 'index_v2',
+    'indexMusic' => array(
+        'file' => 'indexMusic',
         'description' => 'Index template (music)',
     ),
-    'index_v3' => array(
-        'file' => 'index_v3',
+    'indexEvents' => array(
+        'file' => 'indexEvents',
         'description' => 'Index template (events)',
+    ),
+    'indexFEvents' => array(
+        'file' => 'indexFEvents',
+        'description' => 'Index template (frequent events)',
+    ),
+    'indexGallery' => array(
+        'file' => 'indexGallery',
+        'description' => 'Index template (frequent events)',
+    ),
+    'indexPosters' => array(
+        'file' => 'indexPosters',
+        'description' => 'Index template (posters)',
     ),
     'events' => array(
         'file' => 'events',
@@ -41,6 +53,14 @@ $tmp = array(
     'eventsOpen' => array(
         'file' => 'eventsOpen',
         'description' => 'Events open template',
+    ),
+    'galleryOpen' => array(
+        'file' => 'galleryOpen',
+        'description' => 'Gallery open template',
+    ),
+    'blogOpenNoTitleFull' => array(
+        'file' => 'blogOpenNoTitleFull',
+        'description' => 'Blog open template',
     ),
 //    'partners' => array(
 //        'file' => 'partners',
