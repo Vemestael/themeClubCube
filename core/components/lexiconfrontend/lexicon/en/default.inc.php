@@ -1,4 +1,14 @@
 <?php
+/**
+ **Варианты цветовых схем
+ * clr-brown-gray
+ * clr-crimson-cyan
+ * clr-green-violet
+ * clr-orange-red
+ * clr-yellow-pink
+ **/
+$_lang['lf_color_sheme'] = 'clr-green-violet';
+///////////////////////////////////////////////
 
 $_lang['lf_brand_name'] = 'Club Cube';
 

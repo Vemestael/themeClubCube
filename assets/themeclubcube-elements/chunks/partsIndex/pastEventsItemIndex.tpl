@@ -11,7 +11,7 @@
         </div>
         <div class="c-box__link-wrap c-box__link-wrap--indent">
             <div class="btn-pointer__wrap">
-                <a class="btn btn-pointer__sm btn-anim-a" href="event-open.html"><b>open event & Gallery</b></a>
+                <a class="btn btn-pointer__sm btn-anim-a" href="[[~[[+id]]]]"><b>open event & Gallery</b></a>
                 <svg class="btn-pointer__left" x="0px" y="0px"
                      viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                     <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
@@ -21,6 +21,6 @@
         <ul class="c-box__views">
             <li class="c-box__view txt">32</li>
             <li class="c-box__video txt">2</li>
-        </ul><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+        </ul><a href="[[~[[+id]]]]" rel="nofollow" class="b-box__link"></a>
     </div>
 </div>

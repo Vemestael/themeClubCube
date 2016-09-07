@@ -36,6 +36,9 @@ $tmp = array(
     'partsBlog' => array(
         'chunks'
     ),
+    'partsElements' => array(
+        'chunks'
+    ),
 //    //Events
 //    'partsEvents' => array(
 //        'chunks'

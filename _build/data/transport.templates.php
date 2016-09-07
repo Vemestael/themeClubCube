@@ -62,6 +62,59 @@ $tmp = array(
         'file' => 'blogOpenNoTitleFull',
         'description' => 'Blog open template',
     ),
+    'blogOpenTitleFull' => array(
+        'file' => 'blogOpenTitleFull',
+        'description' => 'Blog open template',
+    ),
+    'blogOpenTitleSidebar' => array(
+        'file' => 'blogOpenTitleSidebar',
+        'description' => 'Blog open template',
+    ),
+    'blogOpenNoTitleSidebar' => array(
+        'file' => 'blogOpenNoTitleSidebar',
+        'description' => 'Blog open template',
+    ),
+    //elements
+    'elements404' => array(
+        'file' => 'elements404',
+        'description' => 'elements 404 template',
+    ),
+    'elementsButtons' => array(
+        'file' => 'elementsButtons',
+        'description' => 'elements Buttons template',
+    ),
+    'elementsFooter1' => array(
+        'file' => 'elementsFooter1',
+        'description' => 'elements Footer1 template',
+    ),
+    'elementsFooter2' => array(
+        'file' => 'elementsFooter2',
+        'description' => 'elements Footer2 template',
+    ),
+    'elementsFooter3' => array(
+        'file' => 'elementsFooter3',
+        'description' => 'elements Footer3 template',
+    ),
+    'elementsFooter4' => array(
+        'file' => 'elementsFooter4',
+        'description' => 'elements Footer4 template',
+    ),
+    'elementsGrid' => array(
+        'file' => 'elementsGrid',
+        'description' => 'elements Grid template',
+    ),
+    'elementsTabsAccordion' => array(
+        'file' => 'elementsTabsAccordion',
+        'description' => 'elements Tabs Accordion template',
+    ),
+    'elementsTypography' => array(
+        'file' => 'elementsTypography',
+        'description' => 'elements Typography template',
+    ),
+    'elementsVideoAudio' => array(
+        'file' => 'elementsVideoAudio',
+        'description' => 'elements Video Audio template',
+    ),
 //    'partners' => array(
 //        'file' => 'partners',
 //        'description' => 'Template for partners',

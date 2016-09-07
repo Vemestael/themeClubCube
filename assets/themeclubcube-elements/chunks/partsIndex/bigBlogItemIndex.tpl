@@ -7,5 +7,5 @@
     </div>
     <h6 class="b-box__s6-ttl">
         [[+pagetitle]]
-    </h6><a href="blog-open.html" class="b-box__link"></a>
+    </h6><a href="[[~[[+id]]]]" class="b-box__link"></a>
 </article>

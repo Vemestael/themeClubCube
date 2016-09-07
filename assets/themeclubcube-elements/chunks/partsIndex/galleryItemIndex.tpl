@@ -7,7 +7,7 @@
         <ul class="c-box__views">
             <li class="c-box__view txt">32</li>
             <li class="c-box__video txt">2</li>
-        </ul><a href="gallery-open.html" rel="nofollow" class="b-box__link"></a>
+        </ul><a href="[[~[[+id]]]]" rel="nofollow" class="b-box__link"></a>
     </div>
     <h6><a href="gallery-open.html" class="c-box__link">[[+pagetitle]]</a></h6>
 </article>

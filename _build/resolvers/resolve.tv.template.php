@@ -8,7 +8,7 @@ if ($object && $object->xpdo) {
             /* list of tvs and templates for each */
             $tvs = array(
                 'img' => array(
-                    'templates' => array('events', 'eventsOpen', 'blog', 'blogOpenNoTitleFull', 'gallery', 'partners'),
+                    'templates' => array('events', 'eventsOpen', 'blog', 'gallery', 'galleryOpen', 'partners', 'blogOpenTitleFull', 'blogOpenTitleSidebar'),
                     'sources' => array(
                         'web' => 'Uploads'
                     )
@@ -47,7 +47,7 @@ if ($object && $object->xpdo) {
                     'templates' => array('eventsOpen'),
                 ),
                 'annotationText' => array(
-                    'templates' => array('eventsOpen', 'blogOpenNoTitleFull'),
+                    'templates' => array('eventsOpen', 'blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
                 ),
                 'eventHeaderViewType' => array(
                     'templates' => array('eventsOpen'),
@@ -59,7 +59,7 @@ if ($object && $object->xpdo) {
                     'templates' => array('indexMusic'),
                 ),
                 'blogViewType' => array(
-                    'templates' => array('blog', 'blogOpenNoTitleFull'),
+                    'templates' => array('blog', 'blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
                 ),
                 'twitterLogin' => array(
                     'templates' => array('indexPosters'),
@@ -68,16 +68,16 @@ if ($object && $object->xpdo) {
                     'templates' => array('indexPosters'),
                 ),
                 'imgList' => array(
-                    'templates' => array('galleryOpen'),
+                    'templates' => array('galleryOpen', 'gallery'),
                 ),
                 'videoId' => array(
-                    'templates' => array('eventsOpen', 'blogOpenNoTitleFull'),
+                    'templates' => array('eventsOpen', 'blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
                 ),
                 'eventId' => array(
                     'templates' => array('galleryOpen'),
                 ),
                 'annotationBlog' => array(
-                    'templates' => array('blogOpenNoTitleFull'),
+                    'templates' => array('blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
                 ),
 //                'img' => array(
 //                    'templates' => array('partners','galleryItem','eventsItem','blogItem','blogItemAside','404','textWithImage','textAsideWithImage','textAsideRightWithImage'),

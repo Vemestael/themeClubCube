@@ -22,8 +22,10 @@
     <meta property="og:description" content="">
     <meta property="og:site_name" content="">
 
+    <script async defer src="http://assets.pinterest.com/js/pinit.js"></script>
+
     <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/base64-fonts.css">
-    <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/skins/clr-green-violet.css">
+    <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/skins/[[%lf_color_sheme]].css">
     <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/skins/patterns.css">
     <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/critical.css"><!--[if lt IE 9]><!-->
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><!--<![endif]-->

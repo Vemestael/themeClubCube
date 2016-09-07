@@ -1,0 +1,4 @@
+[[$metaBase]]
+[[$headerBase]]
+[[$blogOpenTitleFullContent]]
+[[$footerBase]]

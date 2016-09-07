@@ -28,6 +28,34 @@ $tmp = array(
 		'file' => 'partsBlog/blockquoteBlog',
 		'description' => '',
 	),
+	'blogOpenTitleFullBlog' => array(
+		'file' => 'partsBlog/blogOpenTitleFullBlog',
+		'description' => '',
+	),
+	'blogOpenNoTitleSidebarBlog' => array(
+		'file' => 'partsBlog/blogOpenNoTitleSidebarBlog',
+		'description' => '',
+	),
+	'sidebarBlogItemBlog' => array(
+		'file' => 'partsBlog/sidebarBlogItemBlog',
+		'description' => '',
+	),
+	'sidebarBlogListBlog' => array(
+		'file' => 'partsBlog/sidebarBlogListBlog',
+		'description' => '',
+	),
+	'sidebarEventsListBlog' => array(
+		'file' => 'partsBlog/sidebarEventsListBlog',
+		'description' => '',
+	),
+	'sidebarEventsItemBlog' => array(
+		'file' => 'partsBlog/sidebarEventsItemBlog',
+		'description' => '',
+	),
+	'blogOpenTitleSidebarBlog' => array(
+		'file' => 'partsBlog/blogOpenTitleSidebarBlog',
+		'description' => '',
+	),
 //    'blogItemBlog' => array(
 //        'file' => 'partsBlog/blogItemBlog',
 //        'description' => '',

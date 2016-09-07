@@ -58,6 +58,18 @@ $tmp = array(
 		'file' => 'content/blogOpenNoTitleFullContent',
 		'description' => '',
 	),
+	'blogOpenTitleFullContent' => array(
+		'file' => 'content/blogOpenTitleFullContent',
+		'description' => '',
+	),
+	'blogOpenTitleSidebarContent' => array(
+		'file' => 'content/blogOpenTitleSidebarContent',
+		'description' => '',
+	),
+	'blogOpenNoTitleSidebarContent' => array(
+		'file' => 'content/blogOpenNoTitleSidebarContent',
+		'description' => '',
+	),
 //    'galleryListContent' => array(
 //        'file' => 'content/galleryListContent',
 //        'description' => '',

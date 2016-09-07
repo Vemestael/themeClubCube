@@ -3,8 +3,8 @@
         <div class="container">
             <div class="b-breadcrumbs b-breadcrumbs--wht">
                 <ul class="b-breadcrumbs__list x-small-txt">
-                    <li><a href="index.html" class="link">main</a></li>
-                    <li><a href="gallery.html" class="link">gallery</a></li>
+                    <li><a href="/" class="link">main</a></li>
+                    <li><a href="/gallery" class="link">gallery</a></li>
                     <li>[[+pagetitle]]</li>
                 </ul>
             </div>

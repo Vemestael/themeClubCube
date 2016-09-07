@@ -7,8 +7,8 @@ $tmp = array(
         'file' => 'getDate',
         'description' => '',
     ),
-	'getArtistsList' => array(
-		'file' => 'getArtistsList',
+	'getSocialShare' => array(
+		'file' => 'getSocialShare',
 		'description' => '',
 	),
 //	'formContacts' => array(

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="b-breadcrumbs">
             <ul class="b-breadcrumbs__list x-small-txt">
-                <li><a href="index.html" class="link">main</a></li>
+                <li><a href="/" class="link">main</a></li>
                 <li>Events</li>
             </ul>
         </div>

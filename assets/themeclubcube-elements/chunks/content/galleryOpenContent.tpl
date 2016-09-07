@@ -1,11 +1,4 @@
 [[pdoResources?
-    &tpl=`galleryOpenPopUpGallery`
-    &parents=`[[++themeclubcube.gallery_resource]]`
-    &limit=`1`
-    &tvPrefix=``
-    &includeTVs=`imgList`
-]]
-[[pdoResources?
     &tpl=`galleryOpenGallery`
     &parents=`0`
     &resources=`[[*eventId]]`

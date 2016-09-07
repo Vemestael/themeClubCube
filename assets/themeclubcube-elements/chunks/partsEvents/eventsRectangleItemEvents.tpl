@@ -17,7 +17,7 @@
                               <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
                 </div>
-            </div><a href="event-open.html" rel="nofollow" class="b-box__link"></a>
+            </div><a href="[[~[[+id]]]]" rel="nofollow" class="b-box__link"></a>
         </div>
     </div>
 </div>
