@@ -6,6 +6,14 @@ $tmp = array(
     /*
      * Common
      */
+    'blogOpenCommon' => array(
+        'file' => 'common/blogOpenCommon',
+        'description' => '',
+    ),
+    'videoItemCommon' => array(
+        'file' => 'common/videoItemCommon',
+        'description' => '',
+    ),
 //    'pageWrapperCommon' => array(
 //        'file' => 'common/pageWrapperCommon',
 //        'description' => '',

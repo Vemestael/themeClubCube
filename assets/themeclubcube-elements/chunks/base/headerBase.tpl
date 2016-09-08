@@ -1,12 +1,13 @@
 <div class="wrap">
     <header id="header" class="header">
         <div class="container-fluid line">
-            <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="[[++themeclubcube.design_url]]images/logo-w.png" alt=""></a>
+            <div class="navbar-header"><a href="/" class="navbar-brand"><img src="[[++themeclubcube.design_url]]images/logo-w.png" alt=""></a>
                 <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <nav id="navbarCollapse" class="navbar-collapse">
                 <ul id="navigation" class="navbar-list dl-menu">
-                    <li><a href="#">Home<i class="fa fa-angle-right"></i></a>
+                    <li><a href="/">Home<i class="fa fa-angle-right"></i></a>
+                        <!--
                         <ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="inner-music.html">Music</a></li>
                             <li><a href="inner-events.html">Events</a></li>
@@ -20,29 +21,29 @@
                         <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
                                     </div></a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li><a href="#">Events<i class="fa fa-angle-right"></i></a>
-                        <ul class="navbar-dropdown__menu dl-submenu">
+                    <li><a href="/events">Events<i class="fa fa-angle-right"></i></a>
+                        <!--<ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="events.html">Event list</a></li>
                             <li><a href="event-open.html">Event open</a></li>
                             <li><a href="event-open-countdown.html">Event open & countdown</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li><a href="#">Gallery<i class="fa fa-angle-right"></i></a>
-                        <ul class="navbar-dropdown__menu dl-submenu">
+                    <li><a href="/gallery">Gallery<i class="fa fa-angle-right"></i></a>
+                        <!--<ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="gallery.html">gallery list</a></li>
                             <li><a href="gallery-open.html">gallery open</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li><a href="#">Blog<i class="fa fa-angle-right"></i></a>
-                        <ul class="navbar-dropdown__menu dl-submenu">
+                    <li><a href="/blog">Blog<i class="fa fa-angle-right"></i></a>
+                        <!--<ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="blog.html">blog list</a></li>
                             <li><a href="blog-open.html">No Titile Image & Full Width</a></li>
                             <li><a href="blog-open-img.html">Title Image & Full Width</a></li>
                             <li><a href="blog-open-sidebar.html">No Title Image & Right Sidebar</a></li>
                             <li><a href="blog-open-img-sidebar.html">Title Image & Right Sidebar</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
                     <li class="navbar__item-mega-menu"><a href="#">Elements<i class="fa fa-angle-right"></i></a>
                         <div class="mega-menu dl-submenu">

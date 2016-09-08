@@ -4,5 +4,3 @@
     <div class="b-box__btn-wrap"><a href="/events" class="btn btn-icon btn-icon--plus">More events</a></div>
 
 </div>
-</div>
-</div>

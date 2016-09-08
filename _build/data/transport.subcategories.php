@@ -12,9 +12,9 @@ $tmp = array(
 //    /*
 //     * Common
 //     */
-//    'common' => array(
-//        'chunks'
-//    ),
+    'common' => array(
+        'chunks'
+    ),
 //    /*
 //     * Content
 //     */

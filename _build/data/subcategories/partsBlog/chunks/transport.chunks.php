@@ -4,58 +4,50 @@ $chunks = array();
 
 $tmp = array(
     // Index
+    'blockquoteBlog' => array(
+        'file' => 'partsBlog/blockquoteBlog',
+        'description' => '',
+    ),
     'blogItemBlog' => array(
         'file' => 'partsBlog/blogItemBlog',
         'description' => '',
     ),
-	'blogListBlog' => array(
-		'file' => 'partsBlog/blogListBlog',
-		'description' => '',
-	),
-	'blogOpenNoTitleFullBlog' => array(
-		'file' => 'partsBlog/blogOpenNoTitleFullBlog',
-		'description' => '',
-	),
-	'eventsDownItemBlog' => array(
-		'file' => 'partsBlog/eventsDownItemBlog',
-		'description' => '',
-	),
-	'eventsDownListBlog' => array(
-		'file' => 'partsBlog/eventsDownListBlog',
-		'description' => '',
-	),
-	'blockquoteBlog' => array(
-		'file' => 'partsBlog/blockquoteBlog',
-		'description' => '',
-	),
-	'blogOpenTitleFullBlog' => array(
-		'file' => 'partsBlog/blogOpenTitleFullBlog',
-		'description' => '',
-	),
-	'blogOpenNoTitleSidebarBlog' => array(
-		'file' => 'partsBlog/blogOpenNoTitleSidebarBlog',
-		'description' => '',
-	),
-	'sidebarBlogItemBlog' => array(
-		'file' => 'partsBlog/sidebarBlogItemBlog',
-		'description' => '',
-	),
-	'sidebarBlogListBlog' => array(
-		'file' => 'partsBlog/sidebarBlogListBlog',
-		'description' => '',
-	),
-	'sidebarEventsListBlog' => array(
-		'file' => 'partsBlog/sidebarEventsListBlog',
-		'description' => '',
-	),
-	'sidebarEventsItemBlog' => array(
-		'file' => 'partsBlog/sidebarEventsItemBlog',
-		'description' => '',
-	),
-	'blogOpenTitleSidebarBlog' => array(
-		'file' => 'partsBlog/blogOpenTitleSidebarBlog',
-		'description' => '',
-	),
+    'blogListBlog' => array(
+        'file' => 'partsBlog/blogListBlog',
+        'description' => '',
+    ),
+    'blogOpenNoTitleBlog' => array(
+        'file' => 'partsBlog/blogOpenNoTitleBlog',
+        'description' => '',
+    ),
+    'blogOpenTitleBlog' => array(
+        'file' => 'partsBlog/blogOpenTitleBlog',
+        'description' => '',
+    ),
+    'eventsDownItemBlog' => array(
+        'file' => 'partsBlog/eventsDownItemBlog',
+        'description' => '',
+    ),
+    'eventsDownListBlog' => array(
+        'file' => 'partsBlog/eventsDownListBlog',
+        'description' => '',
+    ),
+    'sidebarBlogItemBlog' => array(
+        'file' => 'partsBlog/sidebarBlogItemBlog',
+        'description' => '',
+    ),
+    'sidebarBlogListBlog' => array(
+        'file' => 'partsBlog/sidebarBlogListBlog',
+        'description' => '',
+    ),
+    'sidebarEventsItemBlog' => array(
+        'file' => 'partsBlog/sidebarEventsItemBlog',
+        'description' => '',
+    ),
+    'sidebarEventsListBlog' => array(
+        'file' => 'partsBlog/sidebarEventsListBlog',
+        'description' => '',
+    ),
 //    'blogItemBlog' => array(
 //        'file' => 'partsBlog/blogItemBlog',
 //        'description' => '',
