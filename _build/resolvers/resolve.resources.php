@@ -237,7 +237,7 @@ if ($object && $object->xpdo) {
                         'link_attributes' => '',
                         'content' => '',
                         'isfolder' => true,
-                        'published' => true,
+                        'published' => false,
                         'publishedon' => time(),
                         'hidemenu' => false,
                         'cacheable' => true,
