@@ -1,4 +1,4 @@
-[[pdoResources?
+[[pdoResources?indexSlider
     &tpl=`eventsItemPromoIndex`
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
@@ -24,21 +24,19 @@
                 </div>
             </div>
             <div class="b-tabs__content nobottommargin">
-                [[pdoResources?
+                [[pdoResources?topIndexEvents
                     &tpl=`topEventsSquareItemIndexEvents`
                     &tplWrapper=`topEventsSquareListIndexEvents`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
-                    &limit=`6`
                     &includeTVs=`imgSquare, timeStart, topEvent`
                     &tvFilters=`topEvent==1`
                 ]]
-                [[pdoResources?
+                [[pdoResources?topIndexEvents
                     &tpl=`topEventsRectangleItemIndexEvents`
                     &tplWrapper=`topEventsRectangleListIndexEvents`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
-                    &limit=`6`
                     &includeTVs=`img, timeStart, topEvent`
                     &tvFilters=`topEvent==1`
                 ]]
@@ -46,14 +44,14 @@
         </div>
     </main>
 </div>
-[[pdoResources?
+[[pdoResources?indexVideo
     &tpl=`videoItemIndexEvents`
     &tplWrapper=`videoListIndexEvents`
     &parents=`[[++themeclubcube.video_resource]]`
     &tvPrefix=``
     &includeTVs=`videoLink`
 ]]
-[[pdoResources?
+[[pdoResources?indexGallery
     &tpl=`galleryItemIndexEvents`
     &tplWrapper=`galleryListIndexEvents`
     &parents=`[[++themeclubcube.gallery_resource]]`

@@ -6,8 +6,27 @@
             </div>
             <nav id="navbarCollapse" class="navbar-collapse">
                 <ul id="navigation" class="navbar-list dl-menu">
-                    <li><a href="/">Home<i class="fa fa-angle-right"></i></a>
-                        <!--
+                  [[pdoMenu@mainMenu?
+          						&startId=`0`
+          						&tplParentRow=`@INLINE
+                      <li>
+                        <a href="[[+link]]" [[+attributes]]>[[+menutitle]]<i class="fa fa-angle-right"></i></a>
+                        <ul class="navbar-dropdown__menu dl-submenu">[[+wrapper]]</ul>
+                      </li>`
+                      &tplParentRowHere=`@INLINE
+                      <li>
+                        <a href="#" [[+attributes]]>[[+menutitle]]<i class="fa fa-angle-right"></i></a>
+                        <ul class="navbar-dropdown__menu dl-submenu">[[+wrapper]]</ul>
+                      </li>`
+                      &tplParentRowActive=`@INLINE
+                      <li>
+                        <a href="[[+link]]" [[+attributes]]>[[+menutitle]]<i class="fa fa-angle-right"></i></a>
+                        <ul class="navbar-dropdown__menu dl-submenu">[[+wrapper]]</ul>
+                      </li>`
+                      &tplHere=`@INLINE <li class="[[+classnames]]"><span>[[+menutitle]]</span></li>`
+          						&tplOuter=`@INLINE [[+wrapper]]`
+		              ]]
+                    <!-- <li><a href="/">Home<i class="fa fa-angle-right"></i></a>
                         <ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="inner-music.html">Music</a></li>
                             <li><a href="inner-events.html">Events</a></li>
@@ -21,29 +40,29 @@
                         <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
 
                                     </div></a></li>
-                        </ul>-->
+                        </ul>
                     </li>
                     <li><a href="/events">Events<i class="fa fa-angle-right"></i></a>
-                        <!--<ul class="navbar-dropdown__menu dl-submenu">
+                        <ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="events.html">Event list</a></li>
                             <li><a href="event-open.html">Event open</a></li>
                             <li><a href="event-open-countdown.html">Event open & countdown</a></li>
-                        </ul>-->
+                        </ul>
                     </li>
                     <li><a href="/gallery">Gallery<i class="fa fa-angle-right"></i></a>
-                        <!--<ul class="navbar-dropdown__menu dl-submenu">
+                        <ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="gallery.html">gallery list</a></li>
                             <li><a href="gallery-open.html">gallery open</a></li>
-                        </ul>-->
+                        </ul>
                     </li>
                     <li><a href="/blog">Blog<i class="fa fa-angle-right"></i></a>
-                        <!--<ul class="navbar-dropdown__menu dl-submenu">
+                        <ul class="navbar-dropdown__menu dl-submenu">
                             <li><a href="blog.html">blog list</a></li>
                             <li><a href="blog-open.html">No Titile Image & Full Width</a></li>
                             <li><a href="blog-open-img.html">Title Image & Full Width</a></li>
                             <li><a href="blog-open-sidebar.html">No Title Image & Right Sidebar</a></li>
                             <li><a href="blog-open-img-sidebar.html">Title Image & Right Sidebar</a></li>
-                        </ul>-->
+                        </ul>
                     </li>
                     <li class="navbar__item-mega-menu"><a href="#">Elements<i class="fa fa-angle-right"></i></a>
                         <div class="mega-menu dl-submenu">
@@ -52,8 +71,6 @@
                                 <li class="col-sm-6 col-lg-3"><a href="tabs-accordion.html" class="mega-menu__link-tabs"><b>tabs & accordion</b></a></li>
                                 <li class="col-sm-6 col-lg-3"><a href="typography.html" class="mega-menu__link-graph"><b>typography</b></a></li>
                                 <li class="col-sm-6 col-lg-3"><a href="buttons.html" class="mega-menu__link-btn"><b>buttons</b></a></li>
-                                <!-- li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-fdback: b testimonials-->
-                                <!-- li.col-sm-6.col-lg-3: a(href="#").mega-menu__link-tmtable: b timetable-->
                                 <li class="col-sm-6 col-lg-3"><a href="grid.html" class="mega-menu__link-rpscol"><b>responsive columns</b></a></li>
                                 <li class="col-sm-6 col-lg-3"><a href="footer1.html#footer1"><b>footer layout 1</b></a></li>
                                 <li class="col-sm-6 col-lg-3"><a href="footer2.html#footer2"><b>footer layout 2</b></a></li>
@@ -175,7 +192,7 @@
                             <li data-skin="yellow" class="clr-picker yellow"><span>yellow/pink</span></li>
                             <li data-skin="brown" class="clr-picker brown"><span>brown/gray</span></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </div>

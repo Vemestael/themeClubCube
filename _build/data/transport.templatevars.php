@@ -52,7 +52,7 @@ $tmp = array(
         'caption' => 'Type event',
         'elements' => 'Top event==1||Past event==2',
         'display' => 'default',
-        'default_text' => 'a',
+        'default_text' => '1',
     ),
     'partnerLink' => array(
         'name' => 'partnerLink',

@@ -1,28 +1,26 @@
-[[pdoResources?
+[[pdoResources?indexSlider
     &tpl=`eventsItemPromoIndex`
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
     &includeTVs=`timeStart, viewType`
 ]]
-[[pdoResources?
+[[pdoResources?pastEventsIndexGallery
     &tpl=`pastEventsItemIndexGallery`
     &tplWrapper=`pastEventsListIndexGallery`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &limit=`4`
     &includeTVs=`timeStart, topEvent, img`
     &tvFilters=`topEvent==2`
 ]]
-[[pdoResources?
+[[pdoResources?indexBlogGallery
     &tpl=`bigBlogItemIndex`
     &tplWrapper=`bigBlogListIndex`
     &parents=`[[++themeclubcube.blog_resource]]`
-    &limit=`8`
     &tvPrefix=``
     &includeTVs=`blogViewType, img`
 ]]
-[[pdoResources?
+[[pdoResources?indexGallery
     &tpl=`galleryItemIndexEvents`
     &tplWrapper=`galleryListIndexEvents`
     &parents=`[[++themeclubcube.gallery_resource]]`

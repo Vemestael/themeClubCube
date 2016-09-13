@@ -7,6 +7,57 @@ if ($object && $object->xpdo) {
 
             /* list of property sets, and elements associated with each */
             $sets = array(
+                'indexSlider' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'topEvents' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'topIndexEvents' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'topIndexFEvents' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexTopEventsGallery' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexVideo' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexBlog' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexBlogGallery' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'pastEvents' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'pastEventsIndexGallery' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'indexGallery' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'blogList' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'blogEventsDown' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'blogEventsSidebar' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'eventsList' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'eventsOpenSidebar' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
+                'galleryOpenSidebar' => array(
+                    array('class' => 'modSnippet','name' => 'pdoResources'),
+                ),
 //                'mainMenu' => array(
 //                    array('class' => 'modSnippet','name' => 'pdoMenu'),
 //                ),

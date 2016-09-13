@@ -1,6 +1,7 @@
 [[pdoResources?
     &tpl=`blogOpenNoTitleBlog`
     &parents=`[[++themeclubcube.blog_resource]]`
+    &limit=`1`
 ]]
 <div class="b-content container">
     <div class="row">
@@ -8,14 +9,14 @@
             [[pdoResources?
                 &tpl=`blogOpenCommon`
                 &parents=`[[++themeclubcube.blog_resource]]`
+                &limit=`1`
                 &tvPrefix=``
                 &includeTVs=`videoId, annotationBlog, annotationText`
             ]]
-            [[pdoResources?
+            [[pdoResources?blogEventsDown
                 &tpl=`eventsDownItemBlog`
                 &tplWrapper=`eventsDownListBlog`
                 &parents=`[[++themeclubcube.events_resource]]`
-                &limit=`2`
                 &tvPrefix=``
                 &includeTVs=`img, timeStart`
             ]]

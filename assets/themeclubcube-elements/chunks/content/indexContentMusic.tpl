@@ -1,4 +1,4 @@
-[[pdoResources?
+[[pdoResources?indexSlider
     &tpl=`eventsItemPromoIndex`
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
@@ -21,7 +21,7 @@
                     </svg></a></li>
                 </ul>
                 <div class="b-tabs__content">
-                    [[pdoResources?
+                    [[pdoResources?topEvents
                         &tpl=`topEventsSquareItemIndex`
                         &tplWrapper=`topEventsSquareListIndex`
                         &parents=`[[++themeclubcube.events_resource]]`
@@ -29,7 +29,7 @@
                         &includeTVs=`imgSquare, timeStart, topEvent`
                         &tvFilters=`topEvent==1`
                     ]]
-                    [[pdoResources?
+                    [[pdoResources?topEvents
                         &tpl=`topEventsRectangleItemIndex`
                         &tplWrapper=`topEventsRectangleListIndex`
                         &parents=`[[++themeclubcube.events_resource]]`
@@ -50,11 +50,10 @@
         </div>
     </div>
 </div>
-[[pdoResources?
+[[pdoResources?indexBlogGallery
     &tpl=`bigBlogItemIndex`
     &tplWrapper=`bigBlogListIndex`
     &parents=`[[++themeclubcube.blog_resource]]`
-    &limit=`8`
     &tvPrefix=``
     &includeTVs=`blogViewType, img`
 ]]
