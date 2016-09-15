@@ -8,7 +8,7 @@ function createDocs(&$modx, $context_key, $node, $doc = null){
         'update'        => true,
     );
 
-    if(isset($node['childs'])){
+    if(isset($node['childs'])){ 
         $menuIndex = 0;
         foreach($node['childs'] as $resource => $options){
             $classKey = 'modResource';
