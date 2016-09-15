@@ -8,10 +8,6 @@ $tmp = array(
         'file' => 'partsGallery/galleryItemFirstGallery',
         'description' => '',
     ),
-	'galleryItemGallery' => array(
-		'file' => 'partsGallery/galleryItemGallery',
-		'description' => '',
-	),
 	'galleryListGallery' => array(
 		'file' => 'partsGallery/galleryListGallery',
 		'description' => '',
@@ -24,20 +20,12 @@ $tmp = array(
 		'file' => 'partsGallery/galleryOpenPopUpGallery',
 		'description' => '',
 	),
-	'leftPanelItemGallery_1' => array(
-		'file' => 'partsGallery/leftPanelItemGallery_1',
+	'sidebarItemGallery_1' => array(
+		'file' => 'partsGallery/sidebarItemGallery_1',
 		'description' => '',
 	),
-	'leftPanelItemGallery_2' => array(
-		'file' => 'partsGallery/leftPanelItemGallery_2',
-		'description' => '',
-	),
-	'leftPanelListGallery_1' => array(
-		'file' => 'partsGallery/leftPanelListGallery_1',
-		'description' => '',
-	),
-	'leftPanelListGallery_2' => array(
-		'file' => 'partsGallery/leftPanelListGallery_2',
+	'sidebarItemGallery_2' => array(
+		'file' => 'partsGallery/sidebarItemGallery_2',
 		'description' => '',
 	),
     'galleryOpenHeadGallery' => array(

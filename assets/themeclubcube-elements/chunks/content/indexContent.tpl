@@ -1,4 +1,4 @@
-[[pdoResources?indexSlider
+[[pdoResources@indexSlider?
     &tpl=`eventsItemPromoIndex`
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
@@ -21,17 +21,17 @@
                     </svg></a></li>
                 </ul>
                 <div class="b-tabs__content">
-                    [[pdoResources?topEvents
-                        &tpl=`topEventsSquareItemIndex`
-                        &tplWrapper=`topEventsSquareListIndex`
+                    [[pdoResources@topEvents?
+                        &tpl=`eventsSquareCommon`
+                        &tplWrapper=`eventsSquareListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
                         &tvPrefix=``
                         &includeTVs=`imgSquare, timeStart, topEvent`
                         &tvFilters=`topEvent==1`
                     ]]
-                    [[pdoResources?topEvents
-                        &tpl=`topEventsRectangleItemIndex`
-                        &tplWrapper=`topEventsRectangleListIndex`
+                    [[pdoResources@topEvents?
+                        &tpl=`eventsRectangleCommon`
+                        &tplWrapper=`eventsRectangleListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
                         &tvPrefix=``
                         &includeTVs=`img, timeStart, topEvent`
@@ -41,36 +41,36 @@
             </div>
             <aside class="b-aside col-xs-12 col-lg-4">
                 <div class="row">
-                    [[pdoResources?indexVideo
+                    [[pdoResources@indexVideo?
                         &tpl=`videoItemIndex`
                         &tplWrapper=`videoListIndex`
                         &parents=`[[++themeclubcube.video_resource]]`
                         &tvPrefix=``
                         &includeTVs=`videoLink`
                     ]]
-                    [[pdoResources?indexBlog
-                        &tpl=`blogItemIndex`
+                    [[pdoResources@indexBlog?
+                        &tpl=`blogItemCommon`
                         &tplWrapper=`blogListIndex`
                         &parents=`[[++themeclubcube.blog_resource]]`
                         &tvPrefix=``
-                        &includeTVs=`img`
+                        &includeTVs=`img, blogViewType`
                     ]]
                 </div>
             </aside>
         </div>
     </div>
 </div>
-[[pdoResources?pastEvents
-    &tpl=`pastEventsItemIndex`
+[[pdoResources@pastEvents?
+    &tpl=`pastEventsItemCommon`
     &tplWrapper=`pastEventsListIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
     &includeTVs=`timeStart, topEvent, img`
     &tvFilters=`topEvent==2`
 ]]
-[[pdoResources?indexGallery
-    &tpl=`galleryItemIndex`
-    &tplWrapper=`galleryListIndex`
+[[pdoResources@indexGallery?
+    &tpl=`galleryItemCommon`
+    &tplWrapper=`galleryListCommon`
     &parents=`[[++themeclubcube.gallery_resource]]`
     &tvPrefix=``
     &includeTVs=`img`

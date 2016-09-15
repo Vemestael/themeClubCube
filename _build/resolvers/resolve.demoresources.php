@@ -159,7 +159,7 @@ At wrong of of water those linen. Needed oppose seemed how all.
 Very mrs shed shew gave you.</p>
 <div class="img-full-width">
     <figure class="content-figure">
-        <img src="assets/uploads/blog/open/Content_07_wide.jpg" alt="" title="One but not alone">
+        <img src="assets/uploads/blog/open/Content_07_wide.jpg" alt="" title="One but not alone" width="50%">
         <figcaption>One but not alone</figcaption>
     </figure>
 </div>
@@ -1527,7 +1527,7 @@ if ($object && $object->xpdo) {
                                                 'img' => 'events/EventsTiles_02_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
                                                 'imgSquare' => 'events/EventsTiles_02_Retina.jpg',
-                                                'topEvent' => '1',
+                                                'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
                                                 'viewType' => 'a'
                                             ),
@@ -1569,7 +1569,7 @@ if ($object && $object->xpdo) {
                                                 'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
                                                 'imgSquare' => 'events/EventsTiles_03_Retina.jpg',
-                                                'topEvent' => '1',
+                                                'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
                                                 'viewType' => 'a'
                                             ),
@@ -1611,7 +1611,7 @@ if ($object && $object->xpdo) {
                                                 'img' => 'events/EventsTiles_04_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
                                                 'imgSquare' => 'events/EventsTiles_04_Retina.jpg',
-                                                'topEvent' => '1',
+                                                'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
                                                 'viewType' => 'a'
                                             ),
@@ -3766,7 +3766,7 @@ if ($object && $object->xpdo) {
                         ),
                         'partners' => array(
                             'template' => $tpl_partners->get('id'),
-                            'pagetitle' => 'Our Partners',
+                            'pagetitle' => 'Partners',
                             'longtitle' => '',
                             'description' => '',
                             'introtext' => '',

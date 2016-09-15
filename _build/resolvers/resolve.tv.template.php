@@ -79,6 +79,9 @@ if ($object && $object->xpdo) {
                 'annotationBlog' => array(
                     'templates' => array('blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
                 ),
+                'typeSidebar' => array(
+                    'templates' => array('galleryOpen', 'eventsOpen', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
+                ),
 //                'img' => array(
 //                    'templates' => array('partners','galleryItem','eventsItem','blogItem','blogItemAside','404','textWithImage','textAsideWithImage','textAsideRightWithImage'),
 //                    'sources' => array(

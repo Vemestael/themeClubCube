@@ -13,7 +13,7 @@
                 &tvPrefix=``
                 &includeTVs=`videoId, annotationBlog, annotationText`
             ]]
-            [[pdoResources?blogEventsDown
+            [[pdoResources@blogEventsDown?
                 &tpl=`eventsDownItemBlog`
                 &tplWrapper=`eventsDownListBlog`
                 &parents=`[[++themeclubcube.events_resource]]`

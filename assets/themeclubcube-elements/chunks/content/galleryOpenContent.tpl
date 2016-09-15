@@ -28,19 +28,12 @@
             ]]
             <aside class="b-aside col-sm-4 col-lg-4 col-lg-offset-1">
                 <div class="row">
-                    [[pdoResources?galleryOpenSidebar
-                        &tpl=`leftPanelItemGallery_1`
-                        &tplWrapper=`leftPanelListGallery_1`
+                    [[pdoResources@galleryOpenSidebar?
+                        &tpl=`sidebarEventsItemCommon_[[*typeSidebar]]`
+                        &tplWrapper=`sidebarEventsListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
                         &tvPrefix=``
-                        &includeTVs=`img, timeStart`
-                    ]]
-                    [[pdoResources?galleryOpenSidebar
-                        &tpl=`leftPanelItemGallery_2`
-                        &tplWrapper=`leftPanelListGallery_2`
-                        &parents=`[[++themeclubcube.events_resource]]`
-                        &tvPrefix=``
-                        &includeTVs=`timeStart, img`
+                        &includeTVs=`img, timeStart, typeSidebar`
                     ]]
                 </div>
             </aside>

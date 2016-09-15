@@ -362,28 +362,6 @@ $tmp = array(
             'value' => 'ASC',
         ),
     ),
-    'galleryOpenSidebar' => array(
-        array(
-            'name' => 'limit',
-            'type' => 'numberfield',
-            'value' => '2',
-        )
-        ,array(
-            'name' => 'depth',
-            'type' => 'numberfield',
-            'value' => '1',
-        )
-        ,array(
-            'name' => 'sotrby',
-            'type' => 'textfield',
-            'value' => 'timeStart',
-        )
-        ,array(
-            'name' => 'sortdir',
-            'type' => 'textfield',
-            'value' => 'ASC',
-        ),
-    ),
 //    'mainMenu' => array(
 //        array(
 //            'name' => 'level',

@@ -2,6 +2,8 @@
     &tpl=`blogOpenTitleBlog`
     &parents=`[[++themeclubcube.blog_resource]]`
     &limit=`1`
+    &tvPrefix=``
+    &includeTVs=`img`
 ]]
 <div class="b-content container">
     <div class="row">
@@ -16,14 +18,14 @@
         </main>
         <aside class="b-aside b-aside--display col-md-4 col-lg-4 col-lg-offset-1">
             <div class="row">
-                [[pdoResources?blogEventsSidebar
-                    &tpl=`sidebarEventsItemBlog`
-                    &tplWrapper=`sidebarEventsListBlog`
+                [[pdoResources@blogEventsSidebar?
+                    &tpl=`sidebarEventsItemCommon_[[*typeSidebar]]`
+                    &tplWrapper=`sidebarEventsListCommon`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
-                    &includeTVs=`img, timeStart`
+                    &includeTVs=`img, timeStart, typeSidebar`
                 ]]
-                [[pdoResources?blogEventsSidebar
+                [[pdoResources@blogEventsSidebar?
                     &tpl=`sidebarBlogItemBlog`
                     &tplWrapper=`sidebarBlogListBlog`
                     &parents=`[[++themeclubcube.blog_resource]]`

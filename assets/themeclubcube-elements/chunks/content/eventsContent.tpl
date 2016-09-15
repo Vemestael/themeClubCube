@@ -26,19 +26,19 @@
                 </ul>
             </div>
             <div class="b-tabs__content">
-                [[pdoResources?eventsList
-                    &tpl=`eventsSquareItemEvents`
+                [[pdoResources@eventsList?
+                    &tpl=`eventsSquareCommon`
                     &tplWrapper=`eventsSquareListEvents`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
-                    &includeTVs=`timeStart, img`
+                    &includeTVs=`timeStart, imgSquare`
                 ]]
-                [[pdoResources?eventsList
-                    &tpl=`eventsRectangleItemEvents`
+                [[pdoResources@eventsList?
+                    &tpl=`eventsRectangleCommon`
                     &tplWrapper=`eventsRectangleListEvents`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
-                    &includeTVs=`timeStart, viewType`
+                    &includeTVs=`timeStart, img, viewType`
                 ]]
             </div>
         </div>

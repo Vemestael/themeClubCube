@@ -170,6 +170,14 @@ $tmp = array(
         'rank' => 0,
         'input_properties' => 'a:8:{s:10:"allowBlank";s:1:"1";s:8:"showNone";s:1:"1";s:7:"parents";s:1:"3";s:5:"depth";s:2:"10";s:13:"includeParent";s:5:"false";s:19:"limitRelatedContext";s:1:"0";s:5:"where";s:0:"";s:5:"limit";s:1:"0";}',
     ),
+    'typeSidebar' => array(
+        'type' => 'option',
+        'name' => 'typeSidebar',
+        'caption' => 'Тип отображения сайдбара',
+        'elements' => 'Маленькие блоки==1||Большие блоки==2',
+        'display' => 'default',
+        'default_text' => '2',
+    ),
 //    'img' => array(
 //        'name' => 'img',
 //        'caption' => 'Preview',

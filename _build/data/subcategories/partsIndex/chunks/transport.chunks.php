@@ -12,22 +12,6 @@ $tmp = array(
 			'file' => 'partsIndex/eventsItemPromoIndex',
 			'description' => '',
 		),
-		'topEventsSquareItemIndex' => array(
-			'file' => 'partsIndex/topEventsSquareItemIndex',
-			'description' => '',
-		),
-		'topEventsSquareListIndex' => array(
-			'file' => 'partsIndex/topEventsSquareListIndex',
-			'description' => '',
-		),
-		'topEventsRectangleItemIndex' => array(
-			'file' => 'partsIndex/topEventsRectangleItemIndex',
-			'description' => '',
-		),
-		'topEventsRectangleListIndex' => array(
-			'file' => 'partsIndex/topEventsRectangleListIndex',
-			'description' => '',
-		),
 		'videoItemIndex' => array(
 			'file' => 'partsIndex/videoItemIndex',
 			'description' => '',
@@ -36,28 +20,12 @@ $tmp = array(
 			'file' => 'partsIndex/videoListIndex',
 			'description' => '',
 		),
-		'blogItemIndex' => array(
-			'file' => 'partsIndex/blogItemIndex',
-			'description' => '',
-		),
 		'blogListIndex' => array(
 			'file' => 'partsIndex/blogListIndex',
 			'description' => '',
 		),
-		'pastEventsItemIndex' => array(
-			'file' => 'partsIndex/pastEventsItemIndex',
-			'description' => '',
-		),
 		'pastEventsListIndex' => array(
 			'file' => 'partsIndex/pastEventsListIndex',
-			'description' => '',
-		),
-		'galleryItemIndex' => array(
-			'file' => 'partsIndex/galleryItemIndex',
-			'description' => '',
-		),
-		'galleryListIndex' => array(
-			'file' => 'partsIndex/galleryListIndex',
 			'description' => '',
 		),
 		'partnersItemIndex' => array(
@@ -76,29 +44,9 @@ $tmp = array(
 			'file' => 'partsIndex/musicListIndex',
 			'description' => '',
 		),
-		'bigBlogItemIndex' => array(
-			'file' => 'partsIndex/bigBlogItemIndex',
-			'description' => '',
-		),
 		'bigBlogListIndex' => array(
 			'file' => 'partsIndex/bigBlogListIndex',
 			'description' => '',  
-		),
-		'topEventsSquareItemIndexEvents' => array(
-			'file' => 'partsIndex/topEventsSquareItemIndexEvents',
-			'description' => '',
-		),
-		'topEventsSquareListIndexEvents' => array(
-			'file' => 'partsIndex/topEventsSquareListIndexEvents',
-			'description' => '',
-		),
-		'topEventsRectangleItemIndexEvents' => array(
-			'file' => 'partsIndex/topEventsRectangleItemIndexEvents',
-			'description' => '',
-		),
-		'topEventsRectangleListIndexEvents' => array(
-			'file' => 'partsIndex/topEventsRectangleListIndexEvents',
-			'description' => '',
 		),
 		'videoItemIndexEvents' => array(
 			'file' => 'partsIndex/videoItemIndexEvents',
@@ -106,18 +54,6 @@ $tmp = array(
 		),
 		'videoListIndexEvents' => array(
 			'file' => 'partsIndex/videoListIndexEvents',
-			'description' => '',
-		),
-		'galleryItemIndexEvents' => array(
-			'file' => 'partsIndex/galleryItemIndexEvents',
-			'description' => '',
-		),
-		'galleryListIndexEvents' => array(
-			'file' => 'partsIndex/galleryListIndexEvents',
-			'description' => '',
-		),
-		'pastEventsItemIndexGallery' => array(
-			'file' => 'partsIndex/pastEventsItemIndexGallery',
 			'description' => '',
 		),
 		'pastEventsListIndexGallery' => array(

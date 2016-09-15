@@ -1,4 +1,4 @@
-[[pdoResources?blogList
+[[pdoResources@blogList?
     &tpl=`blogItemBlog`
     &tplWrapper=`blogListBlog`
     &parents=`[[++themeclubcube.blog_resource]]`

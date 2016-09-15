@@ -16,10 +16,6 @@ $tmp = array(
         'file' => 'partsEvents/eventsOpen',
         'description' => '',
     ),
-    'eventsRectangleItemEvents' => array(
-        'file' => 'partsEvents/eventsRectangleItemEvents',
-        'description' => '',
-    ),
     'eventsRectangleListEvents' => array(
         'file' => 'partsEvents/eventsRectangleListEvents',
         'description' => '',
@@ -28,27 +24,6 @@ $tmp = array(
         'file' => 'partsEvents/eventsSquareListEvents',
         'description' => '',
     ),
-    'eventsSquareItemEvents' => array(
-        'file' => 'partsEvents/eventsSquareItemEvents',
-        'description' => '',
-    ),
-    'leftPanelItemEvents_1' => array(
-        'file' => 'partsEvents/leftPanelItemEvents_1',
-        'description' => '',
-    ),
-    'leftPanelItemEvents_2' => array(
-        'file' => 'partsEvents/leftPanelItemEvents_2',
-        'description' => '',
-    ),
-    'leftPanelListEvents_1' => array(
-        'file' => 'partsEvents/leftPanelListEvents_1',
-        'description' => '',
-    ),
-    'leftPanelListEvents_2' => array(
-        'file' => 'partsEvents/leftPanelListEvents_2',
-        'description' => '',
-    ),
-
 //    'weeksEvents' => array(
 //        'file' => 'partsEvents/weeksEvents',
 //        'description' => '',

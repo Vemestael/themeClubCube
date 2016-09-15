@@ -1,4 +1,4 @@
-[[pdoResources?indexSlider
+[[pdoResources@indexSlider?
     &tpl=`eventsItemPromoIndex`
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
@@ -24,17 +24,17 @@
                 </div>
             </div>
             <div class="b-tabs__content nobottommargin">
-                [[pdoResources?topIndexFEvents
-                    &tpl=`topEventsSquareItemIndexEvents`
-                    &tplWrapper=`topEventsSquareListIndexEvents`
+                [[pdoResources@topIndexFEvents?
+                    &tpl=`eventsSquareCommon`
+                    &tplWrapper=`eventsSquareListCommon`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
                     &includeTVs=`imgSquare, timeStart, topEvent`
                     &tvFilters=`topEvent==1`
                 ]]
-                [[pdoResources?topIndexFEvents
-                    &tpl=`topEventsRectangleItemIndexEvents`
-                    &tplWrapper=`topEventsRectangleListIndexEvents`
+                [[pdoResources@topIndexFEvents?
+                    &tpl=`eventsRectangleCommon`
+                    &tplWrapper=`eventsRectangleListCommon`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
                     &includeTVs=`img, timeStart, topEvent`
@@ -44,17 +44,17 @@
         </div>
     </main>
 </div>
-[[pdoResources?pastEvents
-    &tpl=`pastEventsItemIndex`
+[[pdoResources@pastEvents?
+    &tpl=`pastEventsItemCommon`
     &tplWrapper=`pastEventsListIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &includeTVs=`timeStart, topEvent`
+    &includeTVs=`timeStart, topEvent, img`
     &tvFilters=`topEvent==2`
 ]]
-[[pdoResources?indexGallery
-    &tpl=`galleryItemIndexEvents`
-    &tplWrapper=`galleryListIndexEvents`
+[[pdoResources@indexGallery?
+    &tpl=`galleryItemCommon`
+    &tplWrapper=`galleryListCommon`
     &parents=`[[++themeclubcube.gallery_resource]]`
     &tvPrefix=``
     &includeTVs=`img`

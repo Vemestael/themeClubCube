@@ -1,5 +1,5 @@
 [[pdoResources?
-    &tpl=`galleryItemGallery`
+    &tpl=`galleryItemCommon`
     &tplFirst=`galleryItemFirstGallery`
     &tplWrapper=`galleryListGallery`
     &parents=`[[++themeclubcube.gallery_resource]]`

@@ -2,6 +2,8 @@
     &tpl=`blogOpenTitleBlog`
     &parents=`[[++themeclubcube.blog_resource]]`
     &limit=`1`
+    &tvPrefix=``
+    &includeTVs=`img`
 ]]
 <div class="b-content container">
     <div class="row">
@@ -13,7 +15,7 @@
                 &tvPrefix=``
                 &includeTVs=`videoId, annotationBlog, annotationText, img`
             ]]
-            [[pdoResources?blogEventsDown
+            [[pdoResources@blogEventsDown?
                 &tpl=`eventsDownItemBlog`
                 &tplWrapper=`eventsDownListBlog`
                 &parents=`[[++themeclubcube.events_resource]]`

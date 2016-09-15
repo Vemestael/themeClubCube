@@ -11,6 +11,10 @@ $tmp = array(
 		'file' => 'getSocialShare',
 		'description' => '',
 	),
+	'getTemplateValues' => array(
+		'file' => 'getTemplateValues',
+		'description' => '',
+	),
 //	'formContacts' => array(
 //		'file' => 'formContacts',
 //		'description' => '',

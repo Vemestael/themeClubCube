@@ -40,14 +40,6 @@ $tmp = array(
         'file' => 'partsBlog/sidebarBlogListBlog',
         'description' => '',
     ),
-    'sidebarEventsItemBlog' => array(
-        'file' => 'partsBlog/sidebarEventsItemBlog',
-        'description' => '',
-    ),
-    'sidebarEventsListBlog' => array(
-        'file' => 'partsBlog/sidebarEventsListBlog',
-        'description' => '',
-    ),
 //    'blogItemBlog' => array(
 //        'file' => 'partsBlog/blogItemBlog',
 //        'description' => '',
