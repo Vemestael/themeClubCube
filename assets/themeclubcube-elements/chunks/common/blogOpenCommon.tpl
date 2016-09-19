@@ -7,7 +7,7 @@
 [[pdoResources?
     &tpl=`videoItemCommon`
     &parents=`0`
-    &resources=`[[+videoId]]`
+    &resources=`[[*videoId]]`
     &limit=`1`
     &tvPrefix=``
     &includeTVs=`videoLink`
