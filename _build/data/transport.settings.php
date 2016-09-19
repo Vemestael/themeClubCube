@@ -39,6 +39,11 @@ $tmp = array(
 		'value' => '7',
 		'area' => 'themeclubcube_resources',
 	),
+	'color_scheme' => array(
+        'xtype' => 'textfield',
+        'value' => 'green-violet',
+        'area' => 'themeclubcube_main',
+    ),
 //    'home_page' => array(
 //        'xtype' => 'textfield',
 //        'value' => '1',

@@ -17,14 +17,14 @@ $tmp = array(
 //					'OnBeforeCacheUpdate' => array()
 //			)
 //	),
-//    'changeColorSheme' => array(
-//        'file' => 'changeColorSheme',
-//        'description' => '',
-//        'events' => array(
-//            'OnWebPageInit' => array(),
-//            'OnLoadWebDocument' => array()
-//        )
-//    )
+    'changeColorSheme' => array(
+        'file' => 'changeColorSheme',
+        'description' => '',
+        'events' => array(
+            'OnWebPageInit' => array(),
+            'OnLoadWebDocument' => array()
+        )
+    )
 );
 
 foreach ($tmp as $k => $v) {

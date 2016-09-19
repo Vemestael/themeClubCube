@@ -64,6 +64,10 @@ $tmp = array(
 			'file' => 'partsIndex/socialItemIndexPosters',
 			'description' => '',
 		),
+		'promoScItemIndex' => array(
+			'file' => 'partsIndex/promoScItemIndex',
+			'description' => '',
+		),
 //    'eventsListFixedPromoIndex' => array(
 //        'file' => 'partsIndex/eventsListFixedPromoIndex',
 //        'description' => '',

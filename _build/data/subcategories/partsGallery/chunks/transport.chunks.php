@@ -20,14 +20,6 @@ $tmp = array(
 		'file' => 'partsGallery/galleryOpenPopUpGallery',
 		'description' => '',
 	),
-	'sidebarItemGallery_1' => array(
-		'file' => 'partsGallery/sidebarItemGallery_1',
-		'description' => '',
-	),
-	'sidebarItemGallery_2' => array(
-		'file' => 'partsGallery/sidebarItemGallery_2',
-		'description' => '',
-	),
     'galleryOpenHeadGallery' => array(
         'file' => 'partsGallery/galleryOpenHeadGallery',
         'description' => '',

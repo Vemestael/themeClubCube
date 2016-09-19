@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     var $clrPicker = $('.clr-picker'),
-        $linkItm = $('[href^="assets/themeclubcube-design/css/skins/clr"]'),
+        $linkItm = $('[href^="css/skins/clr"]'),
         $linkItmPtrn = $('[href^="css/skins/pattern"]'),
         $wideScrn = $('.navbar__tint-wide'),
         $ptrn = $('.pattern');
@@ -17,7 +17,7 @@ $(document).ready(function () {
         $clrPicker.removeClass('active');
 
         if (skin == "green") {
-            $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-' + skin + '-violet.css');
+            $linkItm.attr('href', 'css/skins/clr-' + skin + '-violet.css');
             $('.green').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
@@ -26,7 +26,7 @@ $(document).ready(function () {
             }
         }
         if (skin == "orange") {
-            $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-' + skin + '-red.css');
+            $linkItm.attr('href', 'css/skins/clr-' + skin + '-red.css');
             $('.orange').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
@@ -35,7 +35,7 @@ $(document).ready(function () {
             }
         }
         if (skin == "crimson") {
-            $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-' + skin + '-cyan.css');
+            $linkItm.attr('href', 'css/skins/clr-' + skin + '-cyan.css');
             $('.crimson').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
@@ -44,7 +44,7 @@ $(document).ready(function () {
             }
         }
         if (skin == "yellow") {
-            $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-' + skin + '-pink.css');
+            $linkItm.attr('href', 'css/skins/clr-' + skin + '-pink.css');
             $('.yellow').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
@@ -53,7 +53,7 @@ $(document).ready(function () {
             }
         }
         if (skin == "brown") {
-            $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-' + skin + '-gray.css');
+            $linkItm.attr('href', 'css/skins/clr-' + skin + '-gray.css');
             $('.brown').addClass('active');
 
             if(typeof(Storage) !== "undefined") {
@@ -69,24 +69,24 @@ $(document).ready(function () {
                 $clrPicker.removeClass('active');
 
                 if (localStorage.getItem("skin") == ('green')) {
-                    $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-green-violet.css');
+                    $linkItm.attr('href', 'css/skins/clr-green-violet.css');
                     $('.green').addClass('active');
                 }
                 if (localStorage.getItem("skin") == ('orange')) {
-                    $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-orange-red.css');
+                    $linkItm.attr('href', 'css/skins/clr-orange-red.css');
                     $('.orange').addClass('active');
                 }
                 if (localStorage.getItem("skin") == ('crimson')) {
-                    $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-crimson-cyan.css');
+                    $linkItm.attr('href', 'css/skins/clr-crimson-cyan.css');
                     $('.crimson').addClass('active');
                 }
                 if (localStorage.getItem("skin") == ('yellow')) {
-                    $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-yellow-pink.css');
+                    $linkItm.attr('href', 'css/skins/clr-yellow-pink.css');
                     $('.yellow').addClass('active');
 
                 }
                 if (localStorage.getItem("skin") == ('brown')) {
-                    $linkItm.attr('href', 'assets/themeclubcube-design/css/skins/clr-brown-gray.css');
+                    $linkItm.attr('href', 'css/skins/clr-brown-gray.css');
                     $('.brown').addClass('active');
                 }
 

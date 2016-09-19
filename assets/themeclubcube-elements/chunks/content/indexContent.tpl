@@ -60,6 +60,16 @@
         </div>
     </div>
 </div>
+<div class="b-promo-sc">
+    <div class="container">
+        <div class="row">
+            [[!getImageList?
+                &tvname=`migxPromoSc`
+                &tpl=`promoScItemIndex`
+            ]]
+        </div>
+    </div>
+</div>
 [[pdoResources@pastEvents?
     &tpl=`pastEventsItemCommon`
     &tplWrapper=`pastEventsListIndex`

@@ -12,7 +12,7 @@ if ($object->xpdo) {
                 'migxEventArtist' => array(
                     'category' => $categoryId,
                     'name' => 'migxEventArtist',
-                    'caption' => 'Список артистов',
+                    'caption' => 'Artist list',
                     'description' => '',
                     'type' => 'migx',
                     'display' => 'default',
@@ -56,7 +56,7 @@ if ($object->xpdo) {
                 'imgList' => array(
                     'category' => $categoryId,
                     'name' => 'imgList',
-                    'caption' => 'Изображения для галереи',
+                    'caption' => 'Images for gallery',
                     'description' => '',
                     'type' => 'migx',
                     'display' => 'default',
@@ -69,12 +69,12 @@ if ($object->xpdo) {
                                                 [
                                                 {
                                                     "field":"image",
-                                                    "caption":"Изображение",
+                                                    "caption":"Image",
                                                     "inputTVtype":"image"
                                                 },
                                                 {
                                                     "field":"imageMin",
-                                                    "caption":"Превью",
+                                                    "caption":"Preview",
                                                     "inputTVtype":"image"
                                                 }
                                                 ]
@@ -84,13 +84,13 @@ if ($object->xpdo) {
                         'columns' =>    '
                                         [
                                             {
-                                                "header": "Изображение", 
+                                                "header": "Image", 
                                                 "sortable": "true", 
                                                 "dataIndex": "image",
                                                 "renderer": "this.renderImage"
                                             },
                                             {
-                                                "header": "Превью", 
+                                                "header": "Preview", 
                                                 "sortable": "true", 
                                                 "dataIndex": "imageMin",
                                                 "renderer": "this.renderImage"
@@ -102,7 +102,7 @@ if ($object->xpdo) {
                 'annotationBlog' => array(
                     'category' => $categoryId,
                     'name' => 'annotationBlog',
-                    'caption' => 'Аннотация к статье',
+                    'caption' => 'Annotation for article',
                     'description' => '',
                     'type' => 'migx',
                     'display' => 'default',
@@ -110,16 +110,16 @@ if ($object->xpdo) {
                         'formtabs' =>   '
                                         [
                                             {
-                                                "caption":"Аннотация", 
+                                                "caption":"Annotation", 
                                                 "fields": 
                                                 [
                                                 {
                                                     "field":"annotationHead",
-                                                    "caption":"Заголовок"
+                                                    "caption":"Head"
                                                 },
                                                 {
                                                     "field":"annotationTextAndLink",
-                                                    "caption":"Текст"
+                                                    "caption":"Text"
                                                 }
                                                 ]
                                             }
@@ -128,12 +128,73 @@ if ($object->xpdo) {
                         'columns' =>    '
                                         [
                                             {
-                                                "header": "Заголовок", 
+                                                "header": "Head", 
                                                 "dataIndex": "annotationHead"
                                             },
                                             {
-                                                "header": "Текст", 
+                                                "header": "Text", 
                                                 "dataIndex": "annotationTextAndLink"
+                                            }
+                                        ]
+                                        '
+                    )
+                ),
+                'migxPromoSc' => array(
+                    'category' => $categoryId,
+                    'name' => 'migxPromoSc',
+                    'caption' => 'Data for promo',
+                    'description' => '',
+                    'type' => 'migx',
+                    'display' => 'default',
+                    'input_properties' => array(
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Data for promo", 
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"title",
+                                                    "caption":"Title"
+                                                },
+                                                {
+                                                    "field":"image",
+                                                    "caption":"Image",
+                                                    "inputTVtype":"image"
+                                                },
+                                                {
+                                                    "field":"link",
+                                                    "caption":"Link"
+                                                },
+                                                {
+                                                    "field" : "type",
+                                                    "caption":"Type of data",
+                                                    "inputTVtype":"option", 
+                                                    "inputOptionValues":"Post==1||Video==2"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Title", 
+                                                "dataIndex": "title"
+                                            },
+                                            {
+                                                "header": "Image", 
+                                                "dataIndex": "image",
+                                                "renderer": "this.renderImage"
+                                            },
+                                            {
+                                                "header": "Link", 
+                                                "dataIndex": "link"
+                                            },
+                                            {
+                                                "header": "Type of data", 
+                                                "dataIndex": "type",
+                                                "renderer":"this.renderCrossTick"
                                             }
                                         ]
                                         '

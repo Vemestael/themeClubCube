@@ -9,15 +9,15 @@ switch($eventName) {
         if($modx->context->get('key') != "mgr"){
             if(isset($_GET['color']) || isset($_SESSION['color'])) {
                 $color = $_GET['color'] ? $_GET['color'] : $_SESSION['color'];
-                $colors = array('default', 'gold', 'basketball', 'blueberry');
+                $colors = array('brown-gray', 'crimson-cyan', 'green-violet', 'orange-red', 'yellow-pink');
                 if(!in_array($color, $colors)) {
                     continue;
                 }
                 $_SESSION['color'] = $color;
 
-                $modx->regClientCSS($modx->getOption('themeclubcube.design_url').'css/'.$color.'-color.css');
+                $modx->regClientCSS($modx->getOption('themeclubcube.design_url').'css/skins/clr-'.$color.'.css');
             } else {
-                $color = 'default';
+                $color = 'green-violet';
             }
             $modx->setPlaceholder('color', $color);
         }

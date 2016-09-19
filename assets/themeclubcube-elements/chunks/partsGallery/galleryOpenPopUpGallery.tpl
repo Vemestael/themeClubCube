@@ -27,7 +27,7 @@
         <ul class="b-likes b-likes--wht">
             <li class="b-likes__heading">share:</li>
             <li class="b-likes__facebook">
-                              <span>[[!getSocialShare? &sw=`facebook`]]
+                              <span>share
 								<a href="http://www.facebook.com/sharer.php?s=100&p[url]=[[~[[*id]] ]]&p[title]=[[+pagetitle]]&p[summary]=[[+longtitle]]" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">
 									<svg x="0px" y="0px"
                                          viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
@@ -37,7 +37,7 @@
                               </span>
             </li>
             <li class="b-likes__pinterest-p">
-                              <span>[[!getSocialShare? &sw=`pinterest`]]
+                              <span>share
 									<a data-pin-do="buttonBookmark" data-pin-custom="true" data-pin-lang="ru" data-pin-save="false" href="https://ru.pinterest.com/pin/create/button/">
 										<svg x="0px" y="0px" viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
 										  <path class="svg__fill" d="M53,2v16.5H10.9l-8.1-8.3L10.9,2H53 M55,0H10.1L0,10.2l10.1,10.3H55V0L55,0z"/>

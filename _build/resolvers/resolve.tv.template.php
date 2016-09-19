@@ -82,6 +82,9 @@ if ($object && $object->xpdo) {
                 'typeSidebar' => array(
                     'templates' => array('galleryOpen', 'eventsOpen', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
                 ),
+                'migxPromoSc' => array(
+                    'templates' => array('index'),
+                ),
 //                'img' => array(
 //                    'templates' => array('partners','galleryItem','eventsItem','blogItem','blogItemAside','404','textWithImage','textAsideWithImage','textAsideRightWithImage'),
 //                    'sources' => array(

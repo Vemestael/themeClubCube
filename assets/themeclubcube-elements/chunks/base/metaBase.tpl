@@ -26,7 +26,6 @@
     <script async defer src="http://assets.pinterest.com/js/pinit.js"></script>
 
     <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/base64-fonts.css">
-    <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/skins/[[%lf_color_sheme]].css">
 
     [[Molt?
         &minifyCss=`1`
@@ -61,10 +60,10 @@
             [[++themeclubcube.design_url]]js/init.js
         `
         &cssSources=`
+            [[++themeclubcube.design_url]]css/skins/clr-[[++themeclubcube.color_scheme]].css,
             [[++themeclubcube.design_url]]css/skins/patterns.css,
             [[++themeclubcube.design_url]]css/critical.css,
             [[++themeclubcube.design_url]]css/main-style.css,
-
         `
     ]]
     [[+Molt.css]]
