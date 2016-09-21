@@ -1,0 +1,93 @@
+.b-topbar__pos
+  line-height: 50px
+  font-size: 13px
+  margin-right: 20px
+
+.header__sticky .b-topbar__pos
+  line-height: 50px
+  font-size: 13px
+  margin-right: 20px
+
+.header--toggled .navbar-toogle--clr
+  background: initial
+
+.header--toggled .navbar-collapse--clr
+  background: initial
+
+.header--toggled .navbar__s
+  width: 300px
+  margin: 0 auto
+
+.header--toggled .navbar__s > li > a
+  font-size: 30px
+  text-align: center
+
+.header--toggled .navbar__s > li.active >
+  font-family: "PT Sans Caption Bold"
+
+.header--toggled .navbar__s > li > ul > li > a
+  font-size: 30px
+  text-align: center
+
+.navbar__s > li > ul > li
+  border-bottom: none
+
+.header--toggled .navbar__s > li.active >
+  font-family: "PT Sans Caption Bold"
+
+@media (min-width: $screen-sm)
+  .b-topbar__pos
+    line-height: 80px
+    font-size: 13px
+    margin-right: 20px
+
+  .header__sticky .b-topbar__pos
+    line-height: 50px
+    font-size: 13px
+    margin-right: 20px
+
+  .header--toggled .navbar-toogle--clr
+    background: initial
+
+  .header--toggled .navbar-collapse--clr
+    background: initial
+
+  .header--toggled .navbar__s
+    width: 500px
+    margin: 0 auto
+
+  .navbar__s > li > a > .fa-angle-right
+    position: absolute
+    top: 50%
+    right: 25%
+    width: auto
+    height: auto
+    color: rgba(255, 255, 255, 0.33)
+    -webkit-transform: rotate(90deg)
+    -ms-transform: rotate(90deg)
+    -o-transform: rotate(90deg)
+    transform: rotate(90deg)
+
+@media (min-width: $screen-lg)
+  .b-topbar__pos
+    display: none
+
+  .navbar__s > li > a > .fa-angle-right
+    position: absolute
+    top: 65%!important
+    left: 45%!important
+    right: auto
+    width: auto
+    height: auto
+    color: rgba(255, 255, 255, 0.33)
+    -webkit-transform: rotate(90deg)
+    -ms-transform: rotate(90deg)
+    -o-transform: rotate(90deg)
+    transform: rotate(90deg)
+
+.header--toggled .navbar__s > .fa-angle-down:before
+  position: absolute
+  top: -25px
+  right: -39px
+
+

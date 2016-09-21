@@ -38,9 +38,6 @@ blockquote::before {
 .btn-label .btn-pointer__left path {
   fill: #09b086 !important; }
 
-.btn-info {
-  background-color: #cc0033; }
-
 .btn-info svg path {
   fill: #cc0033; }
 
@@ -234,3 +231,6 @@ blockquote::before {
     background-color: #cc0033; }
   .navbar-list > li.active > a {
     background-color: #cc0033; } }
+
+.header > .b-topbar {
+  background: #cc0033; }

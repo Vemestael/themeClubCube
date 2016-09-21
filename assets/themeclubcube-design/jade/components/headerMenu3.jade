@@ -1,0 +1,30 @@
+header#header.header
+  .container-fluid.line.navbar-flex
+
+    .col-lg-2.text-center.navbar-flex__order-two
+      .row
+        .navbar-header.navbar-header__ib
+          .navbar-header__wrap
+            a.navbar-brand.navbar-brand--stl(href="index.html")
+              img(src="images/logo-s.png", alt="")
+          button#navbarToogle.navbar-toogle(type="button")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+    .col-lg-5.header_iinernav.navbar-flex__order-one
+      .row
+        include innerNavigation2
+    .col-lg-5.navbar-right.nav-bar__r.navbar-flex__order-three
+      .row
+        ul.b-topbar__links
+          li
+            a(href='#') FAQ
+          li
+            a(href='#') Gallery
+          li.navbar__tint
+            a(href="#")
+              span.fa.fa-tint
+              i.fa.fa-angle-right
+
+  //.container-fluid.line.commerceNavtop
+  //  include innerNavigation2

@@ -1,0 +1,95 @@
+.header_iinernav .navbar-list
+  float: none
+
+.header__sticky .navbar-brand--center
+  margin-bottom: 0
+
+.header__sticky .header_iinernav
+  margin-top: 0
+
+.header__sticky .nav-bar__r
+  margin-top: 17px
+
+.nav-bar__r
+  margin-top: 50px
+  -webkit-transition: all 0.2s ease
+  -o-transition: all 0.2s ease
+  transition: all 0.2s ease
+
+.text-center
+  text-align: center
+
+.nav-bar__r .b-topbar__links
+  float: right
+
+@media (min-width: $screen-lg)
+  .navbar-header__ib
+    display: inline-block!important
+    float: initial
+
+  .header_iinernav
+    margin-top: 18px
+    -webkit-transition: all 0.2s ease
+    -o-transition: all 0.2s ease
+    transition: all 0.2s ease
+
+  .navbar-brand--hide
+    height: 40px
+    overflow: hidden
+
+  .navbar-brand--hide .navbar-brand
+    height: 56px
+
+  .navbar-brand--stl
+    margin-top: 20px
+
+@media (max-width: $screen-lg)
+  .navbar-header__wrap
+    display: inline-block
+
+  .navbar-brand--hide
+    height: 40px
+    overflow: hidden
+
+  .navbar-brand--hide .navbar-brand
+    height: 56px
+
+  .navbar-brand--hide > .navbar-brand--stl
+    margin-left: 55px
+
+.navbar-brand--stl
+  height: 33px
+  margin-top: 10px
+  margin-left: 55px
+
+@media (min-width: $screen-sm)
+  .navbar-brand--stl
+    height: 56px
+    margin-top: 10px
+    margin-left: 75px
+
+@media (min-width: $screen-lg)
+  .navbar-brand--stl
+    height: 79px
+    margin-top: 20px
+    margin-bottom: 20px
+    margin-left: 0
+
+.navbar-flex
+  display: flex
+
+.navbar-flex__order-one
+  order: 1
+
+.navbar-flex__order-two
+  order: 2
+
+.navbar-flex__order-three
+  order: 3
+
+@media (max-width: 1279px)
+  .navbar-flex
+    display: inherit
+
+  .nav-bar__r
+    display: none

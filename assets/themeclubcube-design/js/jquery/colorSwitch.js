@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     $clrPicker.on('click', function () {
         var skin = $(this).data('skin');
-
+        console.log(15);
         $clrPicker.removeClass('active');
 
         if (skin == "green") {
