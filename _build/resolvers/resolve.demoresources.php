@@ -152,7 +152,7 @@ function getIntroDemo($content){
 // [[$footerBase]]
 // ';
 
-$content_text = '
+$content_text = ' 
 <p class="lead">Old unsatiable our now but considered travelling impression.
 In excuse hardly summer in basket misery. By rent an part need.
 At wrong of of water those linen. Needed oppose seemed how all.
