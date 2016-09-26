@@ -4,13 +4,13 @@
             <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
                 <h6 class="s6-heading">twitter & facebook</h6>
                 <div class="b-footer__inner">
-                    <div data-href="https://www.facebook.com/facebook" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" class="fb-page">
+                    <div data-href="https://www.facebook.com/makebecool" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" class="fb-page">
                         <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                            <blockquote cite="https://www.facebook.com/makebecool"><a href="https://www.facebook.com/makebecool">Makebecool</a></blockquote>
                         </div>
                     </div>
                 </div>
-                <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
+                <!-- <div class="b-footer__inner b-footer__twitter"><span class="fa fa-twitter"></span>
                     <p class="b-footer__txt">
                         RT <a class="link" href="#">@DesignerDepot</a>: "Working on the right thing is probably more important than working
                         hard" - Caterina Fake
@@ -18,7 +18,7 @@
                     </p><span class="b-footer__days">
                   -47 days ago
                   </span>
-                </div>
+                </div> -->
             </div>
             <div class="b-footer__item b-footer__item--indent col-xs-12 col-sm-6 col-lg-4">
                 <h6 class="s6-heading">mailing list</h6>

@@ -14,8 +14,8 @@
             ]]
         </ul>
         <ul class="b-panel-t__list col-sm-4">
-            <li><a href="mailto:[[+contactEmail]]" class="link">[[+contactEmail]]</a></li>
-            <li class="tel"><a href="tel:[[+contactNumber]]" class="link">[[+contactNumber]]</a></li>
+            <li><a href="mailto:[[+contactEmail]]" class="link">[[*contactEmail]]</a></li>
+            <li class="tel"><a href="tel:[[+contactNumber]]" class="link">[[*contactNumber]]</a></li>
         </ul>
     </div>
     <div class="row">

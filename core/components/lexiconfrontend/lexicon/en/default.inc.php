@@ -81,10 +81,18 @@ $_lang['lf_month_short.10'] = 'Oct';
 $_lang['lf_month_short.11'] = 'Nov';
 $_lang['lf_month_short.12'] = 'Dec';
 
-$_lang['lf_week.0']='Mo';
-$_lang['lf_week.1']='Tu';
-$_lang['lf_week.2']='We';
-$_lang['lf_week.3']='Th';
-$_lang['lf_week.4']='Fr';
-$_lang['lf_week.5']='Sa';
-$_lang['lf_week.6']='Su';
+$_lang['lf_week.0']='Monday';
+$_lang['lf_week.1']='Tuesday';
+$_lang['lf_week.2']='Wednesday';
+$_lang['lf_week.3']='Thursday';
+$_lang['lf_week.4']='Friday';
+$_lang['lf_week.5']='Saturday';
+$_lang['lf_week.6']='Sunday';
+
+$_lang['lf_week_short.0']='Mo';
+$_lang['lf_week_short.1']='Tu';
+$_lang['lf_week_short.2']='We';
+$_lang['lf_week_short.3']='Th';
+$_lang['lf_week_short.4']='Fr';
+$_lang['lf_week_short.5']='Sa';
+$_lang['lf_week_short.6']='Su';

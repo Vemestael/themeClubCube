@@ -256,7 +256,7 @@ $tmp = array(
         array(
             'name' => 'limit',
             'type' => 'numberfield',
-            'value' => '13',
+            'value' => '12',
         )
         ,array(
             'name' => 'depth',

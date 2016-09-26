@@ -13,7 +13,7 @@ $subpackages = array(
     'molt' => 'molt-1.0.2-beta',
     'migx' => 'migx-2.8.1-pl',
     'pthumb' => 'pthumb-2.3.1-pl',
-    'tickets' => 'tickets-1.4.2-rc2',
+    'tickets' => 'tickets-1.6.16-pl',
 );
 $spAttr = array('vehicle_class' => 'xPDOTransportVehicle');
 

@@ -159,7 +159,7 @@ At wrong of of water those linen. Needed oppose seemed how all.
 Very mrs shed shew gave you.</p>
 <div class="img-full-width">
     <figure class="content-figure">
-        <img src="assets/uploads/blog/open/Content_07_wide.jpg" alt="" title="One but not alone" width="50%">
+        <img src="assets/uploads/blog/open/Content_07_wide.jpg" alt="" title="One but not alone">
         <figcaption>One but not alone</figcaption>
     </figure>
 </div>
@@ -1157,29 +1157,87 @@ $gallery = array(
         'image' => "assets/uploads/gallery/Gallery_18_Original.jpg",
         'imageMin' => 'assets/uploads/gallery/minImg/Gallery_18_Original.jpg'
     ),
-    array(
-        "MIGX_id" => 19,
-        'image' => "assets/uploads/gallery/Gallery_19_Original.jpg",
-        'imageMin' => 'assets/uploads/gallery/minImg/Gallery_19_Original.jpg'
-    ),
-    array(
-        "MIGX_id" => 20,
-        'image' => "assets/uploads/gallery/Gallery_20_Original.jpg",
-        'imageMin' => 'assets/uploads/gallery/minImg/Gallery_20_Original.jpg'
-    ),
+    // array(
+    //     "MIGX_id" => 19,
+    //     'image' => "assets/uploads/gallery/Gallery_19_Original.jpg",
+    //     'imageMin' => 'assets/uploads/gallery/minImg/Gallery_19_Original.jpg'
+    // ),
+    // array(
+    //     "MIGX_id" => 20,
+    //     'image' => "assets/uploads/gallery/Gallery_20_Original.jpg",
+    //     'imageMin' => 'assets/uploads/gallery/minImg/Gallery_20_Original.jpg'
+    // ),
 );
 $artists = array(
     array(
         "MIGX_id" => 1,
-        'name' => "DJ`s name",
-        'city' => 'DJ`s city'
+        'name' => "Andrew Feeling",
+        'city' => 'Donetsk'
+    ),
+    array(
+        "MIGX_id" => 2,
+        'name' => "Shalim",
+        'city' => 'Donetsk'
+    ),
+    array(
+        "MIGX_id" => 3,
+        'name' => "Stay B",
+        'city' => 'Donetsk'
+    ),
+    array(
+        "MIGX_id" => 4,
+        'name' => "Someone Else",
+        'city' => 'Mariupol'
+    ),
+    array(
+        "MIGX_id" => 5,
+        'name' => "Dranga",
+        'city' => 'Mariupol'
+    ),
+    array(
+        "MIGX_id" => 6,
+        'name' => "Andrew Feeling",
+        'city' => 'Donetsk'
+    ),
+    array(
+        "MIGX_id" => 7,
+        'name' => "Shalim",
+        'city' => 'Donetsk'
+    ),
+    array(
+        "MIGX_id" => 8,
+        'name' => "Stay B",
+        'city' => 'Donetsk'
+    ),
+);
+$promo = array(
+    array(
+        "MIGX_id" => 1,
+        'title' => "Feel our new dancehall 'Rivierra'",
+        'image' => 'assets/uploads/gallery/Gallery_18_Original.jpg',
+        'link' => '#',
+        'type' => '1',
+    ),
+    array(
+        "MIGX_id" => 2,
+        'title' => "Check this hot live from 'Cube Party'",
+        'image' => 'assets/uploads/gallery/Gallery_18_Original.jpg',
+        'link' => '#',
+        'type' => '1',
+    ),
+    array(
+        "MIGX_id" => 3,
+        'title' => "",
+        'image' => '',
+        'link' => 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212039125',
+        'type' => '2',
     ),
 );
 $annotationBlog = array(
     array(
         "MIGX_id" => 1,
-        'annotationHead' => "Заголовок аннотации",
-        'annotationTextAndLink' => 'Текст аннотации'
+        'annotationHead' => "Nature of the event + quote & links",
+        'annotationTextAndLink' => 'Friendship - is unselfishness , personal relationship between people based on sympathy, sincerity, love and trust. But still, we love loud roll dancing until dawn and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.'
     ),
 );
 
@@ -1235,7 +1293,8 @@ if ($object && $object->xpdo) {
                         continue;
                     }
                 }
-
+                $videoId = '666';
+                $eventId = '777';
                 $resources = array(
                     'childs' => array(
                         'home' => array(
@@ -1280,6 +1339,9 @@ if ($object && $object->xpdo) {
                                     'uri_override' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'tvs' => array(
+                                      'migxPromoSc' =>  $modx->toJson($promo),
+                                    ),
                                 ),
                                 'Home Events' => array(
                                     'template' => $tpl_indexEvents->get('id'),
@@ -1396,6 +1458,124 @@ if ($object && $object->xpdo) {
                                 ),
                             )
                         ),
+                        'video' => array(
+                            'parentCheck' => true,
+                            'template' => $tpl_video->get('id'),
+                            'pagetitle' => 'Video',
+                            'longtitle' => '',
+                            'description' => '',
+                            'introtext' => '',
+                            'alias' => 'video',
+                            'uri' => 'video',
+                            'link_attributes' => '',
+                            'content' => '',
+                            'isfolder' => true,
+                            'published' => false,
+                            'publishedon' => time(),
+                            'hidemenu' => true,
+                            'cacheable' => true,
+                            'searchable' => true,
+                            'richtext' => true,
+                            'context_key' => 'web',
+                            'menutitle' => '',
+                            'class_key' => 'TicketsSection',
+                            'childs' => array(
+                                'video1:Ticket' => array(
+                                    'id' => $videoId,
+                                    'class_key' => 'Ticket',
+                                    'template' => $tpl_video->get('id'),
+                                    'pagetitle' => 'We happily announce our new dancehall "Rivierra" with two bars',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => getIntroDemo($content_text),
+                                    'alias' => 'video1',
+                                    'uri' => 'video1',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (1 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'videoLink' => 'https://player.vimeo.com/video/140230038?title=0&amp;byline=0&amp;portrait=0',
+                                    ),
+                                ),
+                                'video2:Ticket' => array(
+                                    'class_key' => 'Ticket',
+                                    'template' => $tpl_video->get('id'),
+                                    'pagetitle' => 'We happily announce our new dancehall "Rivierra" with two bars',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => getIntroDemo($content_text),
+                                    'alias' => 'video2',
+                                    'uri' => 'video2',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (1 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'videoLink' => 'https://player.vimeo.com/video/140230038?title=0&amp;byline=0&amp;portrait=0',
+                                    ),
+                                ),
+                                'video3:Ticket' => array(
+                                    'class_key' => 'Ticket',
+                                    'template' => $tpl_video->get('id'),
+                                    'pagetitle' => 'We happily announce our new dancehall "Rivierra" with two bars',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => getIntroDemo($content_text),
+                                    'alias' => 'video3',
+                                    'uri' => 'video3',
+                                    'link_attributes' => '',
+                                    'content' => $content_text,
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time() + (1 * 60),
+                                    'hidemenu' => true,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
+                                    'show_in_tree' => 0,
+                                    'syncsite' => 0,
+                                    'properties' => array(
+                                        'disable_jevix' => true,
+                                        'process_tags' => false,
+                                    ),
+                                    'tvs' => array(
+                                        'videoLink' => 'https://player.vimeo.com/video/140230038?title=0&amp;byline=0&amp;portrait=0',
+                                    ),
+                                ),
+                              ),
+                        ),
                         'eventsList' => array(
                             'class_key' => 'modWebLink',
                             'template' => 0,
@@ -1444,11 +1624,12 @@ if ($object && $object->xpdo) {
                                             'template' => $tpl_eventsOpen->get('id'),
                                             'uri' => '%alias',
                                             'disable_jevix' => true,
-                                            'show_in_tree' => true
+                                            'show_in_tree' => false
                                         )
                                     ),
                                     'childs' => array(
                                         'event1:Ticket' => array(
+                                            'id' => $eventId,
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsOpen->get('id'),
                                             'pagetitle' => 'Daily Bass Ocean',
@@ -1469,7 +1650,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1479,8 +1660,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_01_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1511,7 +1692,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1521,8 +1702,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_02_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1553,7 +1734,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1563,8 +1744,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1595,7 +1776,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1605,8 +1786,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_04_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1619,7 +1800,7 @@ if ($object && $object->xpdo) {
                                         'event5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsOpen->get('id'),
-                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'pagetitle' => 'Mash Up Your Heads',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => getIntroDemo($content_text),
@@ -1637,7 +1818,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1647,8 +1828,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_01_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1679,7 +1860,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1689,8 +1870,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_02_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1721,7 +1902,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1731,8 +1912,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1763,7 +1944,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1773,8 +1954,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_04_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1805,7 +1986,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1815,8 +1996,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_01_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1847,7 +2028,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1857,8 +2038,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_02_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1871,7 +2052,7 @@ if ($object && $object->xpdo) {
                                         'event11:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_eventsOpen->get('id'),
-                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'pagetitle' => 'Mash Up Your Heads',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => getIntroDemo($content_text),
@@ -1889,7 +2070,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1899,8 +2080,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1931,7 +2112,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1941,8 +2122,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_04_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -1973,7 +2154,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -1983,8 +2164,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_01_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -2015,7 +2196,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -2025,8 +2206,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_02_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -2057,7 +2238,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -2067,8 +2248,8 @@ if ($object && $object->xpdo) {
                                                 'contactNumber' => '+380999999999',
                                                 'contactEmail' => 'email@email.email',
                                                 'ticketPrice' => '5$',
-                                                'annotationText' => 'Сноска',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
                                                 'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -2110,8 +2291,8 @@ if ($object && $object->xpdo) {
                                         'contactNumber' => '+380999999999',
                                         'contactEmail' => 'email@email.email',
                                         'ticketPrice' => '5$',
-                                        'annotationText' => 'Сноска',
-                                        'videoId' => '',
+                                        'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                        'videoId' => $videoId,
                                         'eventHeaderViewType' => '1',
                                         'img' => 'events/EventsTiles_01_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                         'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
@@ -2171,11 +2352,11 @@ if ($object && $object->xpdo) {
                                             'template' => $tpl_galleryOpen->get('id'),
                                             'uri' => '%alias',
                                             'disable_jevix' => true,
-                                            'show_in_tree' => true
+                                            'show_in_tree' => false
                                         )
                                     ),
                                     'childs' => array(
-                                        'gallery1:Ticket' => array(
+                                        'gallery1' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryOpen->get('id'),
                                             'pagetitle' => 'Daily Bass Ocean',
@@ -2196,14 +2377,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_01_Original.jpg',
                                             ),
@@ -2229,14 +2410,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_02_Original.jpg',
                                             ),
@@ -2262,14 +2443,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_03_Original.jpg',
                                             ),
@@ -2295,14 +2476,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_04_Original.jpg',
                                             ),
@@ -2310,7 +2491,7 @@ if ($object && $object->xpdo) {
                                         'gallery5:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryOpen->get('id'),
-                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'pagetitle' => 'Mash Up Your Heads',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2328,14 +2509,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_05_Original.jpg',
                                             ),
@@ -2361,14 +2542,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_06_Original.jpg',
                                             ),
@@ -2394,14 +2575,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_07_Original.jpg',
                                             ),
@@ -2427,14 +2608,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_08_Original.jpg',
                                             ),
@@ -2460,14 +2641,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_09_Original.jpg',
                                             ),
@@ -2493,14 +2674,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_10_Original.jpg',
                                             ),
@@ -2508,7 +2689,7 @@ if ($object && $object->xpdo) {
                                         'gallery11:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryOpen->get('id'),
-                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'pagetitle' => 'Mash Up Your Heads',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2526,14 +2707,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_11_Original.jpg',
                                             ),
@@ -2559,14 +2740,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_12_Original.jpg',
                                             ),
@@ -2592,14 +2773,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_13_Original.jpg',
                                             ),
@@ -2625,14 +2806,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_14_Original.jpg',
                                             ),
@@ -2658,14 +2839,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_15_Original.jpg',
                                             ),
@@ -2691,14 +2872,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_16_Original.jpg',
                                             ),
@@ -2706,7 +2887,7 @@ if ($object && $object->xpdo) {
                                         'gallery17:Ticket' => array(
                                             'class_key' => 'Ticket',
                                             'template' => $tpl_galleryOpen->get('id'),
-                                            'pagetitle' => 'Mash Up Your Heads: Christmas Night',
+                                            'pagetitle' => 'Mash Up Your Heads',
                                             'longtitle' => '',
                                             'description' => '',
                                             'introtext' => '',
@@ -2724,14 +2905,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_17_Original.jpg',
                                             ),
@@ -2757,14 +2938,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_18_Original.jpg',
                                             ),
@@ -2790,14 +2971,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_19_Original.jpg',
                                             ),
@@ -2823,14 +3004,14 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
                                                 'process_tags' => false,
                                             ),
                                             'tvs' => array(
-                                                'eventId' => '1',
+                                                'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
                                                 'img' => 'gallery/Gallery_20_Original.jpg',
                                             ),
@@ -2864,7 +3045,7 @@ if ($object && $object->xpdo) {
                                         'process_tags' => false,
                                     ),
                                     'tvs' => array(
-                                        'eventId' => '1',
+                                        'eventId' => $eventId,
                                         'imgList' => $modx->toJson($gallery),
                                         'img' => 'gallery/Gallery_01_Original.jpg',
                                     ),
@@ -2919,7 +3100,7 @@ if ($object && $object->xpdo) {
                                             'template' => $tpl_blogOpenNoTitleFull->get('id'),
                                             'uri' => '%alias',
                                             'disable_jevix' => true,
-                                            'show_in_tree' => true
+                                            'show_in_tree' => false
                                         )
                                     ),
                                     'childs' => array(
@@ -2944,7 +3125,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -2952,9 +3133,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -2979,7 +3160,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -2987,9 +3168,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3014,7 +3195,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3022,9 +3203,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
@@ -3049,7 +3230,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3057,9 +3238,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -3084,7 +3265,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3092,9 +3273,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3119,7 +3300,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3127,9 +3308,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
@@ -3154,7 +3335,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3162,9 +3343,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -3189,7 +3370,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3197,9 +3378,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3224,7 +3405,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3232,9 +3413,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
@@ -3259,7 +3440,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3267,9 +3448,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -3294,7 +3475,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3302,9 +3483,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3329,7 +3510,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3337,9 +3518,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
@@ -3364,7 +3545,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3372,9 +3553,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -3399,7 +3580,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3407,9 +3588,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3434,7 +3615,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3442,9 +3623,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
@@ -3469,7 +3650,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3477,9 +3658,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -3504,7 +3685,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3512,9 +3693,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3539,7 +3720,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3547,9 +3728,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_03_Retina.jpg',
                                             ),
                                         ),
@@ -3574,7 +3755,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3582,9 +3763,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_01_Retina.jpg',
                                             ),
                                         ),
@@ -3609,7 +3790,7 @@ if ($object && $object->xpdo) {
                                             'uri_override' => true,
                                             'context_key' => 'web',
                                             'menutitle' => '',
-                                            'show_in_tree' => 1,
+                                            'show_in_tree' => 0,
                                             'syncsite' => 0,
                                             'properties' => array(
                                                 'disable_jevix' => true,
@@ -3617,9 +3798,9 @@ if ($object && $object->xpdo) {
                                             ),
                                             'tvs' => array(
                                                 'annotationBlog' => $modx->toJson($annotationBlog),
-                                                'annotationText' => 'Сноска',
-                                                'blogViewType' => 'b-box',
-                                                'videoId' => '',
+                                                'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                                'blogViewType' => 'b-box b-box--clr-b',
+                                                'videoId' => $videoId,
                                                 'img' => 'blog/Blog_02_Retina.jpg',
                                             ),
                                         ),
@@ -3653,9 +3834,9 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'annotationBlog' => $modx->toJson($annotationBlog),
-                                        'annotationText' => 'Сноска',
-                                        'blogViewType' => 'b-box',
-                                        'videoId' => '',
+                                        'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                        'blogViewType' => 'b-box b-box--clr-b',
+                                        'videoId' => $videoId,
                                         'img' => 'blog/Blog_01_Retina.jpg',
                                     ),
                                 ),
@@ -3687,9 +3868,9 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'annotationBlog' => $modx->toJson($annotationBlog),
-                                        'annotationText' => 'Сноска',
-                                        'blogViewType' => 'b-box',
-                                        'videoId' => '',
+                                        'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                        'blogViewType' => 'b-box b-box--clr-b',
+                                        'videoId' => $videoId,
                                         'img' => 'blog/Blog_02_Retina.jpg',
                                     ),
                                 ),
@@ -3721,9 +3902,9 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'annotationBlog' => $modx->toJson($annotationBlog),
-                                        'annotationText' => 'Сноска',
-                                        'blogViewType' => 'b-box',
-                                        'videoId' => '',
+                                        'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                        'blogViewType' => 'b-box b-box--clr-b',
+                                        'videoId' => $videoId,
                                         'img' => 'blog/Blog_03_Retina.jpg',
                                     ),
                                 ),
@@ -3756,9 +3937,9 @@ if ($object && $object->xpdo) {
                                     ),
                                     'tvs' => array(
                                         'annotationBlog' => $modx->toJson($annotationBlog),
-                                        'annotationText' => 'Сноска',
-                                        'blogViewType' => 'b-box',
-                                        'videoId' => '',
+                                        'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
+                                        'blogViewType' => 'b-box b-box--clr-b',
+                                        'videoId' => $videoId,
                                         'img' => 'blog/Blog_01_Retina.jpg',
                                     ),
                                 ),
@@ -3802,6 +3983,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner1.jpg',
@@ -3825,6 +4007,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner2.jpg',
@@ -3848,6 +4031,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner3.jpg',
@@ -3871,6 +4055,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner4.jpg',
@@ -3894,6 +4079,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner5.jpg',
@@ -3917,6 +4103,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner6.jpg',
@@ -3940,6 +4127,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner1.jpg',
@@ -3963,6 +4151,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'partnerLink' => 'http://#',
                                         'img' => 'partners/partner2.jpg',
@@ -4012,6 +4201,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                 ),
                                 'buttons' => array(
                                     'template' => $tpl_elementsButtons->get('id'),
@@ -4033,6 +4223,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                     'tvs' => array(
                                         'img' => 'blog/Blog_03_Retina.jpg',
                                     ),
@@ -4057,6 +4248,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                 ),
                                 'footer2' => array(
                                     'template' => $tpl_elementsFooter2->get('id'),
@@ -4077,6 +4269,7 @@ if ($object && $object->xpdo) {
                                     'searchable' => true,
                                     'richtext' => true,
                                     'context_key' => 'web',
+                                    'show_in_tree' => 0,
                                     'menutitle' => '',
                                 ),
                                 'footer3' => array(
@@ -4097,6 +4290,7 @@ if ($object && $object->xpdo) {
                                     'cacheable' => true,
                                     'searchable' => true,
                                     'richtext' => true,
+                                    'show_in_tree' => 0,
                                     'context_key' => 'web',
                                     'menutitle' => '',
                                 ),
@@ -4120,6 +4314,7 @@ if ($object && $object->xpdo) {
                                     'richtext' => true,
                                     'context_key' => 'web',
                                     'menutitle' => '',
+                                    'show_in_tree' => 0,
                                 ),
                                 'grid' => array(
                                     'template' => $tpl_elementsGrid->get('id'),
@@ -4140,6 +4335,7 @@ if ($object && $object->xpdo) {
                                     'searchable' => true,
                                     'richtext' => true,
                                     'context_key' => 'web',
+                                    'show_in_tree' => 0,
                                     'menutitle' => '',
                                     'tvs' => array(
                                         'img' => 'blog/Blog_03_Retina.jpg',
@@ -4163,6 +4359,7 @@ if ($object && $object->xpdo) {
                                     'cacheable' => true,
                                     'searchable' => true,
                                     'richtext' => true,
+                                    'show_in_tree' => 0,
                                     'context_key' => 'web',
                                     'menutitle' => '',
                                 ),
@@ -4185,6 +4382,7 @@ if ($object && $object->xpdo) {
                                     'searchable' => true,
                                     'richtext' => true,
                                     'context_key' => 'web',
+                                    'show_in_tree' => 0,
                                     'menutitle' => '',
                                     'tvs' => array(
                                         'img' => 'blog/Blog_03_Retina.jpg',
@@ -4209,6 +4407,7 @@ if ($object && $object->xpdo) {
                                     'searchable' => true,
                                     'richtext' => true,
                                     'context_key' => 'web',
+                                    'show_in_tree' => 0,
                                     'menutitle' => '',
                                     'tvs' => array(
                                         'img' => 'blog/Blog_03_Retina.jpg',

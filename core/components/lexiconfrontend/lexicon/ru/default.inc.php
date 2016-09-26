@@ -81,10 +81,18 @@ $_lang['lf_month_short.10'] = 'Окт';
 $_lang['lf_month_short.11'] = 'Ноя';
 $_lang['lf_month_short.12'] = 'Дек';
 
-$_lang['lf_week.0']='Пн';
-$_lang['lf_week.1']='Вт';
-$_lang['lf_week.2']='Ср';
-$_lang['lf_week.3']='Чт';
-$_lang['lf_week.4']='Пт';
-$_lang['lf_week.5']='Сб';
-$_lang['lf_week.6']='Вс';
+$_lang['lf_week.0']='Понедельник';
+$_lang['lf_week.1']='Вторник';
+$_lang['lf_week.2']='Среда';
+$_lang['lf_week.3']='Четверг';
+$_lang['lf_week.4']='Пятница';
+$_lang['lf_week.5']='Суббота';
+$_lang['lf_week.6']='Воскресенье';
+
+$_lang['lf_week_short.0']='Пн';
+$_lang['lf_week_short.1']='Вт';
+$_lang['lf_week_short.2']='Ср';
+$_lang['lf_week_short.3']='Чт';
+$_lang['lf_week_short.4']='Пт';
+$_lang['lf_week_short.5']='Сб';
+$_lang['lf_week_short.6']='Вс';
