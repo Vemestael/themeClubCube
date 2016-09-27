@@ -36,15 +36,15 @@
                 </div>
                 <hr class="hr-line">
                 <div class="b-footer__inner">
-                    <ul class="b-social b-social--clr-a b-footer__social">
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
-                        <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li>
-                    </ul>
+                  <ul class="b-social b-social--clr-a b-footer__social">
+                    <li><a href="http://facebook.com/makebecool" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="https://plus.google.com/+Makebecool-webdesign" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/makebecool" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="https://twitter.com/makebecool" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="https://in.pinterest.com/makebecool/" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCiMZImHGazvt3TgQOd1OqHg" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
+                    <!-- <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li> -->
+                  </ul>
                 </div>
             </div>
             <div class="b-footer__item col-xs-12 col-lg-4">
