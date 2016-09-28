@@ -1918,7 +1918,7 @@ if ($object && $object->xpdo) {
                                                 'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (1 * 24 * 60 * 60)),
                                                 'imgSquare' => 'events/EventsTiles_03_Retina.jpg',
-                                                'topEvent' => '1',
+                                                'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
                                                 'viewType' => 'a'
                                             ),
