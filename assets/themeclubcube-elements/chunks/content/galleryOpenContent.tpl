@@ -28,7 +28,7 @@
             ]]
             <aside class="b-aside col-sm-4 col-lg-4 col-lg-offset-1">
                 <div class="row">
-                    [[pdoResources@galleryOpenSidebar?
+                    [[pdoResources@eventsOpenSidebar?
                         &tpl=`sidebarEventsItemCommon_[[*typeSidebar]]`
                         &tplWrapper=`sidebarEventsListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
