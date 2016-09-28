@@ -16,4 +16,3 @@
     </div>
     <h6><a href="[[~[[+id]]]]" class="c-box__link">[[+pagetitle]]</a></h6>
 </article>
-[[*alias]]
