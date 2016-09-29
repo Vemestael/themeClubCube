@@ -234,3 +234,40 @@ blockquote::before {
 
 .header > .b-topbar {
   background: #f5ba2e; }
+
+.paging .left-pag .pad-arr, .paging .right-pag .pad-arr {
+  background: #f5ba2e; }
+
+.paging .left-pag:hover .pad-arr, .paging .right-pag:hover .pad-arr {
+  background-color: #fd67a4; }
+
+@media screen and (min-width: 480px) {
+  .paging .left-pag:hover .pad-arr, .paging .left-pag.hover .pad-arr, .paging .right-pag:hover .pad-arr, .paging .right-pag.hover .pad-arr {
+    background: #fd67a4;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  .paging .left-pag:hover .pad-title, .paging .left-pag.hover .pad-title, .paging .right-pag:hover .pad-title, .paging .right-pag.hover .pad-title {
+    color: #fd67a4;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  .paging .left-pag:hover .pad-text, .paging .left-pag.hover .pad-text {
+    border: 1px solid #fd67a4;
+    border-left: 0 none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  .paging .right-pag:hover .pad-text, .right-pag.hover .pad-text {
+    border: 1px solid #fd67a4;
+    border-right: 0 none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; } }
+
+@media (min-width: 992px) {
+  .paging .middle-paging li a, .middle-paging li span {
+    color: #f5ba2e; }
+  .paging .middle-paging li a:hover {
+    color: #fd67a4;
+    border: 1px solid #fd67a4; } }

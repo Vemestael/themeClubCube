@@ -251,3 +251,40 @@ blockquote::before
 
 .header > .b-topbar
   background: $active-c
+
+.paging .left-pag .pad-arr, .paging .right-pag .pad-arr
+  background: $active-c
+
+.paging .left-pag:hover .pad-arr,.paging .right-pag:hover .pad-arr
+  background-color: $active-sc-c
+
+@media screen and (min-width: 480px)
+  .paging .left-pag:hover .pad-arr, .paging .left-pag.hover .pad-arr, .paging .right-pag:hover .pad-arr, .paging .right-pag.hover .pad-arr
+    background: $active-sc-c
+    //transition: all .3s ease
+    transition: all .3s ease
+
+  .paging .left-pag:hover .pad-title, .paging .left-pag.hover .pad-title, .paging .right-pag:hover .pad-title, .paging .right-pag.hover .pad-title
+    color: $active-sc-c
+    //transition: all .3s ease
+    transition: all .3s ease
+
+  .paging .left-pag:hover .pad-text, .paging .left-pag.hover .pad-text
+    border: 1px solid $active-sc-c
+    border-left: 0 none
+    //transition: all .3s ease
+    transition: all .3s ease
+
+  .paging .right-pag:hover .pad-text, .right-pag.hover .pad-text
+    border: 1px solid $active-sc-c
+    border-right: 0 none
+    //transition: all .3s ease
+    transition: all .3s ease
+
+@media (min-width: $screen-md-min)
+  .paging .middle-paging li a, .middle-paging li span
+    color: $active-c
+
+  .paging .middle-paging li a:hover
+    color: $active-sc-c
+    border: 1px solid $active-sc-c
