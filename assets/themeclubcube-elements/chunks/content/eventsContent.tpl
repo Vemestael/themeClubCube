@@ -26,23 +26,59 @@
                 </ul>
             </div>
             <div class="b-tabs__content">
-                [[pdoResources@eventsList?
+                [[!pdoPage@eventsList?
                     &tpl=`eventsSquareCommon`
                     &tplWrapper=`eventsSquareListEvents`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
+                    &limit=`6`
                     &includeTVs=`timeStart, imgSquare`
+                    &tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`
+                    &tplPageWrapper=`@INLINE <div class="container"><div class="rows paging single-paging">[[+prev]]<ul class="middle-paging">[[+pages]]</ul>[[+next]]</div></div>`
+                    &tplPageActive=`@INLINE <li class="off"><span>[[+pageNo]]</span></li>`
+                    &tplPageFirst=``
+                    &tplPageLast=``
+                    &tplPagePrev=`@INLINE <a class="left-pag sm" href="[[+href]]">
+                        <div class="pad-arr"><i></i></div>
+                        <div class="pad-text">
+                            <div class="pad-title">[[%lf_page_prev:htmlent]]</div>
+                        </div>
+                    </a>`
+                    &tplPageNext=`@INLINE <a class="right-pag sm" href="[[+href]]">
+                        <div class="pad-arr"><i></i></div>
+                        <div class="pad-text">
+                            <div class="pad-title">[[%lf_page_next:htmlent]]</div>
+                        </div>
+                    </a>`
+                    &tplPageSkip=`@INLINE <li class="dots-pagination"><span>...</span></li>`
+                    &tplPageFirstEmpty=``
+                    &tplPageLastEmpty=``
+                    &tplPagePrevEmpty=`@INLINE <div class="left-pag sm off" >
+                        <div class="pad-arr"><i></i></div>
+                        <div class="pad-text">
+                            <div class="pad-title">[[%lf_page_prev:htmlent]]</div>
+                        </div>
+                    </div>`
+                    &tplPageNextEmpty=`@INLINE <div class="right-pag sm off">
+                        <div class="pad-arr">
+                            <i></i>
+                        </div>
+                        <div class="pad-text">
+                            <div class="pad-title">[[%lf_page_next:htmlent]]</div>
+                        </div>
+                    </div>`
                 ]]
-                [[pdoResources@eventsList?
+                <!-- [[pdoResources@eventsList?
                     &tpl=`eventsRectangleCommon`
                     &tplWrapper=`eventsRectangleListEvents`
                     &parents=`[[++themeclubcube.events_resource]]`
                     &tvPrefix=``
                     &includeTVs=`timeStart, img, viewType`
-                ]]
+                ]] -->
             </div>
         </div>
-        <div class="b-box__btn-wrap txt--centr">
+        [[!+page.nav]]
+        <!-- <div class="b-box__btn-wrap txt--centr">
             <div class="btn-icon__wrap">
                 <a href="#" class="btn btn-icon">More events</a>
                 <svg x="0px" y="0px"
@@ -52,6 +88,6 @@
               </svg>
 
             </div>
-        </div>
+        </div> -->
     </main>
 </div>

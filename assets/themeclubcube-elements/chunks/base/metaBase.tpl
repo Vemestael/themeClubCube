@@ -24,13 +24,9 @@
     <meta property="og:site_name" content="">
 
     <script async defer src="http://assets.pinterest.com/js/pinit.js"></script>
-
     <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/base64-fonts.css">
-
+    <link rel="stylesheet" href="[[++themeclubcube.design_url]]css/skins/clr-[[++themeclubcube.color_scheme]].css">
     [[Molt?
-        &minifyCss=`1`
-        &minifyJs=`1`
-        &cssRegister=`placeholder`
         &cacheFolder=`[[++themeclubcube.design_url]]min/`
         &jsSources=`
             [[++themeclubcube.design_url]]js/jquery/colorSwitch.js,
@@ -59,12 +55,16 @@
             [[++themeclubcube.design_url]]js/app/modules/timer.js,
             [[++themeclubcube.design_url]]js/init.js
         `
+        &jsDeferred=`1`
+        &cssDeferred=`1`
         &cssSources=`
-            [[++themeclubcube.design_url]]css/skins/clr-[[++themeclubcube.color_scheme]].css,
-            [[++themeclubcube.design_url]]css/skins/patterns.css,
-            [[++themeclubcube.design_url]]css/critical.css,
             [[++themeclubcube.design_url]]css/main-style.css,
+            [[++themeclubcube.design_url]]css/skins/patterns.css,
         `
+        &styleHeadSources=`
+            [[++themeclubcube.design_url]]css/critical.css,
+        `
+        &jquery=`//code.jquery.com/jquery-2.1.4.min.js`
     ]]
     [[+Molt.css]]
 </head>
