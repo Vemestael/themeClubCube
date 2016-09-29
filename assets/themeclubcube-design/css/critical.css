@@ -2038,10 +2038,10 @@ button {
   stroke: #fff; }
 
 .btn-icon--refresh {
-  background-image: url("../images/refresh-icon.svg"); }
+  background-image: url("/assets/themeclubcube-design/images/refresh-icon.svg"); }
 
 .btn-icon--refresh-wht {
-  background-image: url("../images/refresh-icon-white.svg"); }
+  background-image: url("/assets/themeclubcube-design/images/refresh-icon-white.svg"); }
 
 .btn-icon--refresh:before,
 .btn-icon--refresh-wht:before {
@@ -2058,7 +2058,7 @@ button {
           background-size: 27px; }
 
 .btn-icon--refresh:before {
-  background-image: url("../images/refresh-icon-white.svg"); }
+  background-image: url("/assets/themeclubcube-design/images/refresh-icon-white.svg"); }
 
 .btn-icon--refresh:active:before {
   -webkit-transform: rotate(360deg);
@@ -2067,7 +2067,7 @@ button {
           transform: rotate(360deg); }
 
 .btn-icon--refresh-wht:before {
-  background-image: url("../images/refresh-icon.svg"); }
+  background-image: url("/assets/themeclubcube-design/images/refresh-icon.svg"); }
 
 .btn-icon--refresh:hover:before,
 .btn-icon--refresh-wht:hover:before {
@@ -2281,7 +2281,7 @@ button {
   right: -25px;
   width: 20px;
   height: 12px;
-  background-image: url("../images/arrow-left.svg");
+  background-image: url("/assets/themeclubcube-design/images/arrow-left.svg");
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
@@ -2669,7 +2669,7 @@ button {
   .b-banner span.bordered:after {
     content: '';
     position: absolute;
-    background: url(../images/border.svg) repeat-x bottom;
+    background: url(/assets/themeclubcube-design/images/border.svg) repeat-x bottom;
     width: 100%;
     height: 10px;
     left: 0;
@@ -3634,13 +3634,13 @@ span.intro {
   width: 50px;
   display: block;
   height: 30px;
-  background: url("../images/refresh-icon.svg") center no-repeat;
+  background: url("/assets/themeclubcube-design/images/refresh-icon.svg") center no-repeat;
   -webkit-transition: none;
   -o-transition: none;
   transition: none; }
 
 .main-slide .slick-next:hover::before {
-  background: url("../images/refresh-icon-white.svg") center no-repeat;
+  background: url("/assets/themeclubcube-design/images/refresh-icon-white.svg") center no-repeat;
   -webkit-transition: none;
   -o-transition: none;
   transition: none; }
@@ -4341,7 +4341,7 @@ span.intro {
     content: '';
     width: 30px;
     height: 50px;
-    background: url("../images/bars.svg") no-repeat;
+    background: url("/assets/themeclubcube-design/images/bars.svg") no-repeat;
     -webkit-background-size: 100% 100%;
             background-size: 100%;
     background-position-y: center; }
@@ -4467,7 +4467,7 @@ button.mfp-arrow:hover:before {
   content: '';
   width: 50px;
   height: 70px;
-  background: url("../images/bars.svg") no-repeat;
+  background: url("/assets/themeclubcube-design/images/bars.svg") no-repeat;
   -webkit-background-size: 100% 100%;
           background-size: 100%;
   background-position-y: center;
@@ -4793,7 +4793,7 @@ button.mfp-arrow:hover:before {
     left: -12px;
     height: 2px;
     width: calc(100% + 24px);
-    background: url(../images/themeClub-thumb-shadow.svg) no-repeat center; }
+    background: url("/assets/themeclubcube-design/images/themeClub-thumb-shadow.svg") no-repeat center; }
 
 @-moz-document url-prefix() {
   .page-item__wrap:after {
@@ -5428,7 +5428,7 @@ figure.content-figure > img {
   right: 0;
   top: -5px;
   height: 10px;
-  background: url("../images/triangle.svg") repeat-x;
+  background: url("/assets/themeclubcube-design/images/triangle.svg") repeat-x;
   background-position: center;
   z-index: 1; }
 
@@ -5637,7 +5637,7 @@ figure.content-figure > img {
   left: -5px;
   width: 10px;
   height: 100%;
-  background: url("../images/romb-v.svg") repeat-y; }
+  background: url("/assets/themeclubcube-design/images/romb-v.svg") repeat-y; }
 
 .c-box-v__sm:last-child {
   margin-bottom: 0; }
@@ -5747,7 +5747,7 @@ figure.content-figure > img {
     left: -20px;
     bottom: 0;
     width: 6px;
-    background: url("../images/themeclub-waveVertical.svg") repeat-y; }
+    background: url("/assets/themeclubcube-design/images/themeclub-waveVertical.svg") repeat-y; }
   .c-box-v .c-box__txt {
     padding: 20px 0 30px; } }
 
