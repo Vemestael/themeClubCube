@@ -1634,7 +1634,7 @@ iframe {
   height: 10px;
   float: left;
   margin: 0;
-  background: url("../images/wave-line.svg") no-repeat;
+  background: url("/assets/themeclubcube-design/images/wave-line.svg") no-repeat;
   border: none;
   clear: both; }
 
