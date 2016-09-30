@@ -44,6 +44,11 @@ $tmp = array(
         'value' => 'green-violet',
         'area' => 'themeclubcube_main',
     ),
+    'demo' => array(
+        'xtype' => 'numberfield',
+        'value' => '0',
+        'area' => 'themeclubcube_main',
+    ),
 //    'home_page' => array(
 //        'xtype' => 'textfield',
 //        'value' => '1',

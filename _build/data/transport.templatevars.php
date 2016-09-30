@@ -178,6 +178,14 @@ $tmp = array(
         'display' => 'default',
         'default_text' => '2',
     ),
+    'eventViewType' => array(
+        'type' => 'option',
+        'name' => 'eventViewType',
+        'caption' => 'Display type',
+        'elements' => 'Square==1||Rectangle==2',
+        'display' => 'default',
+        'default_text' => '1',
+    ),
 //    'img' => array(
 //        'name' => 'img',
 //        'caption' => 'Preview',

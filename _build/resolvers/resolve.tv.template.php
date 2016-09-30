@@ -85,6 +85,9 @@ if ($object && $object->xpdo) {
                 'migxPromoSc' => array(
                     'templates' => array('index'),
                 ),
+                'eventViewType' => array(
+                    'templates' => array('index', 'indexEvents', 'indexFEvents', 'indexMusic', 'indexPosters', 'events'),
+                ),
 //                'img' => array(
 //                    'templates' => array('partners','galleryItem','eventsItem','blogItem','blogItemAside','404','textWithImage','textAsideWithImage','textAsideRightWithImage'),
 //                    'sources' => array(
