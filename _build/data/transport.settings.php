@@ -16,27 +16,27 @@ $tmp = array(
     ),
 	'events_resource' => array(
 		'xtype' => 'textfield',
-		'value' => '3',
+		'value' => '7',
 		'area' => 'themeclubcube_resources',
 	),
 	'video_resource' => array(
 		'xtype' => 'textfield',
-		'value' => '4',
+		'value' => '8',
 		'area' => 'themeclubcube_resources',
 	),
 	'blog_resource' => array(
 		'xtype' => 'textfield',
-		'value' => '5',
+		'value' => '9',
 		'area' => 'themeclubcube_resources',
 	),
 	'gallery_resource' => array(
 		'xtype' => 'textfield',
-		'value' => '6',
+		'value' => '10',
 		'area' => 'themeclubcube_resources',
 	),
 	'partners_resource' => array(
 		'xtype' => 'textfield',
-		'value' => '7',
+		'value' => '11',
 		'area' => 'themeclubcube_resources',
 	),
 	'color_scheme' => array(

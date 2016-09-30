@@ -82,32 +82,5 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<script src="[[++themeclubcube.design_url]]js/jquery/jquery-2.1.4.min.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/jquery-ui.min.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/colorSwitch.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/bootstrap/bootstrap.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/plugins/slick/slick.min.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/plugins/masonry/masonry.pkgd.min.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/plugins/jquery.stellar.min.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/plugins/jquery.magnific-popup.min.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/plugins/flexibility.js"></script>
-<script src="[[++themeclubcube.design_url]]js/jquery/plugins/jquery.syotimer.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/lib/site.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/lib/siteMode.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/mode/themeMode.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/bgImages.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/dtMenu.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/formValidate.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/formAjax.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/headerFunctions.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/sliders.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/menuAligns.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/galleryFunctions.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/masonryTiles.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/parallax.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/imgHover.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/slickSlider.js"></script>
-<script src="[[++themeclubcube.design_url]]js/app/modules/timer.js"></script>
-<script>appMakeBeCool.gateway.init();</script>
 </body>
 </html>
