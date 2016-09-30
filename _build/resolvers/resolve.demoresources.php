@@ -3241,7 +3241,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/Blog_04_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog5:Ticket' => array(
@@ -3276,7 +3276,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/Blog_05_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog6:Ticket' => array(
@@ -3311,7 +3311,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                                'img' => 'blog/Blog_06_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog7:Ticket' => array(
@@ -3451,7 +3451,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/Blog_04_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog11:Ticket' => array(
@@ -3486,7 +3486,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/Blog_05_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog12:Ticket' => array(
@@ -3521,7 +3521,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                                'img' => 'blog/Blog_06_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog13:Ticket' => array(
@@ -3661,7 +3661,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/Blog_04_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog17:Ticket' => array(
@@ -3696,7 +3696,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/Blog_05_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog18:Ticket' => array(
@@ -3731,7 +3731,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                                'img' => 'blog/Blog_06_Retina.jpg',
                                             ),
                                         ),
                                         'article-blog19:Ticket' => array(
