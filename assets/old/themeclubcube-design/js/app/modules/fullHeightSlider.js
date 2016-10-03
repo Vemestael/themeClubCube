@@ -96,7 +96,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                     _changeClass(node);
                 });
                 _globals.slider.layerSlider({
-                    autoStart:false,
+                    autoStart:true,
                     skinsPath: '../themeclubcube-design/css/sass/vendors/layerslider/skins/',
                     responsive: false,
                     hoverPrevNext: false,

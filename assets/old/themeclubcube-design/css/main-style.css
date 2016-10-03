@@ -13002,7 +13002,8 @@ blockquote a:hover {
     .full-height-slider.ls-v5 .ls-nav-next:hover {
       background-position: center; }
   .full-height-slider.ls-v5 .ls-nav-prev {
-    background: url(../images/slide-l.png) center no-repeat; }
+    background: url(../images/slide-l.png) center no-repeat;
+    left: 10px; }
   .ls-inner, .ls-slide {
     max-width: none; }
   .ls-slide img {
