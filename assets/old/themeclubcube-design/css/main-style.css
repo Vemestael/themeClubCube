@@ -12951,7 +12951,17 @@ blockquote a:hover {
 
 .full-height-slider__sublayers {
   width: 100% !important;
-  height: 100% !important;
+  height: 100% !important; }
+
+.ls-inner:before {
+  position: absolute;
+  z-index: 1;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.25); }
 
 .full-height-slider .rowss {
