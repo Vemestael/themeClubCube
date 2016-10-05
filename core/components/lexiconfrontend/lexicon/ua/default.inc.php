@@ -87,3 +87,8 @@ $_lang['lf_week.3']='Чт';
 $_lang['lf_week.4']='Пн';
 $_lang['lf_week.5']='Сб';
 $_lang['lf_week.6']='Нд';
+
+$_lang['lf_megamenu_title_one'] = 'WHAT DO I NEED TO KNOW?';
+$_lang['lf_megamenu_text_one'] = 'But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.';
+$_lang['lf_megamenu_title_two'] = 'GET IN TOUCH WITH OUR NEW EVENTS';
+$_lang['lf_megamenu_text_two'] = 'Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!';

@@ -27,7 +27,7 @@
 						Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
 						often!
 					</p>
-					<form action="/" method="GET" class="b-form b-form--inline">
+					<form action="ajax/formsubscribe" id="email-footer-form" method="post" class="b-form b-form--inline">
 						<div class="b-form__group">
 							<input type="email" placeholder="Your E-mail" class="b-form__control">
 						</div>
@@ -37,12 +37,12 @@
 				<hr class="hr-line">
 				<div class="b-footer__inner">
 					<ul class="b-social b-social--clr-a b-footer__social">
-						<li><a href="http://facebook.com/makebecool" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="https://plus.google.com/+Makebecool-webdesign" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
-						<li><a href="https://www.linkedin.com/company/makebecool" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
-						<li><a href="https://twitter.com/makebecool" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="https://in.pinterest.com/makebecool/" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
-						<li><a href="https://www.youtube.com/channel/UCiMZImHGazvt3TgQOd1OqHg" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
+						<li><a target="_blank" href="http://facebook.com/makebecool" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
+						<li><a target="_blank" href="https://plus.google.com/+Makebecool-webdesign" class="b-social__btn btn"><span class="fa fa-google-plus"></span></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/company/makebecool" class="b-social__btn btn"><span class="fa fa-linkedin"></span></a></li>
+						<li><a target="_blank" href="https://twitter.com/makebecool" class="b-social__btn btn"><span class="fa fa-twitter"></span></a></li>
+						<li><a target="_blank" href="https://in.pinterest.com/makebecool/" class="b-social__btn btn"><span class="fa fa-pinterest-p"></span></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/channel/UCiMZImHGazvt3TgQOd1OqHg" class="b-social__btn btn"><span class="fa fa-youtube-play"></span></a></li>
 						<!-- <li><a href="#" class="b-social__btn btn"><span class="fa fa-flickr"></span></a></li> -->
 					</ul>
 				</div>

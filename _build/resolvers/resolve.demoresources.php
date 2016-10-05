@@ -151,7 +151,6 @@ function getIntroDemo($content){
 // ]]
 // [[$footerBase]]
 // ';
-
 $content_text = ' 
 <p class="lead">Old unsatiable our now but considered travelling impression.
 In excuse hardly summer in basket misery. By rent an part need.
@@ -1282,7 +1281,8 @@ if ($object && $object->xpdo) {
                     'indexMusic',
                     'indexPosters',
                     'partners',
-                    'video'
+                    'video',
+                    'features'
                 );
                 $templateVarPrefix = 'tpl_';
                 foreach($templateNames as $templateName){
@@ -4170,7 +4170,7 @@ if ($object && $object->xpdo) {
                             'link_attributes' => '',
                             'content' => '',
                             'isfolder' => true,
-                            'published' => false,
+                            'published' => true,
                             'publishedon' => time(),
                             'hidemenu' => false,
                             'cacheable' => true,
@@ -4411,6 +4411,51 @@ if ($object && $object->xpdo) {
                                     'tvs' => array(
                                         'img' => 'blog/Blog_03_Retina.jpg',
                                     ),
+                                ),
+                            )
+                        ),
+                        'about' => array(
+                            'class_key' => 'modWebLink',
+                            'template' => 0,
+                            'pagetitle' => 'About template',
+                            'longtitle' => '',
+                            'description' => '',
+                            'introtext' => '',
+                            'alias' => 'about',
+                            'uri' => 'about',
+                            'link_attributes' => '',
+                            'content' => '',
+                            'isfolder' => true,
+                            'published' => true,
+                            'publishedon' => time(),
+                            'hidemenu' => false,
+                            'cacheable' => true,
+                            'searchable' => true,
+                            'richtext' => true,
+                            'context_key' => 'web',
+                            'menutitle' => '',
+                            'childs' => array(
+                                'Home' => array(
+                                    'parentCheck' => true,
+                                    'template' => $tpl_features->get('id'),
+                                    'pagetitle' => 'Features',
+                                    'longtitle' => '',
+                                    'description' => '',
+                                    'introtext' => '',
+                                    'alias' => 'features',
+                                    'uri' => 'about/features',
+                                    'link_attributes' => '',
+                                    'content' => '',
+                                    'isfolder' => false,
+                                    'published' => true,
+                                    'publishedon' => time(),
+                                    'hidemenu' => false,
+                                    'cacheable' => true,
+                                    'searchable' => true,
+                                    'richtext' => true,
+                                    'uri_override' => true,
+                                    'context_key' => 'web',
+                                    'menutitle' => '',
                                 ),
                             )
                         ),

@@ -15,6 +15,14 @@ $tmp = array(
 		'file' => 'getTemplateValues',
 		'description' => '',
 	),
+    'getMegaMenu' => array(
+        'file' => 'getMegaMenu',
+        'description' => '',
+    ),
+    'formSubscribe' => array(
+        'file' => 'formSubscribe',
+        'description' => '',
+    ),
 //	'formContacts' => array(
 //		'file' => 'formContacts',
 //		'description' => '',
