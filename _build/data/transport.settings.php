@@ -49,6 +49,27 @@ $tmp = array(
         'value' => '0',
         'area' => 'themeclubcube_main',
     ),
+    'ajax_form_subscribe' => array(
+        'xtype' => 'numberfield',
+        'value' => '6',
+        'area' => 'themeclubcube_resources',
+    ),
+        //subscribe
+    'unisender_api_key' => array(
+        'xtype' => 'textfield',
+        'value' => '',
+        'area' => 'themeclubcube_subscribe',
+    ),
+    'unisender_list_ids' => array(
+        'xtype' => 'textfield',
+        'value' => '',
+        'area' => 'themeclubcube_subscribe',
+    ),
+    'mega_menu' => array(
+        'xtype' => 'textfield',
+        'value' => '12',
+        'area' => 'themeclubcube_main',
+    ),
 //    'home_page' => array(
 //        'xtype' => 'textfield',
 //        'value' => '1',

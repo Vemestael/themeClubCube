@@ -44,6 +44,10 @@ $tmp = array(
         'file' => 'partsElements/videoAudio',
         'description' => '',
     ),
+    'features' => array(
+        'file' => 'partsElements/features',
+        'description' => '',
+    ),
 //    'weeksEvents' => array(
 //        'file' => 'partsEvents/weeksEvents',
 //        'description' => '',

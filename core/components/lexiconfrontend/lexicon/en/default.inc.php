@@ -96,3 +96,8 @@ $_lang['lf_week_short.3']='Th';
 $_lang['lf_week_short.4']='Fr';
 $_lang['lf_week_short.5']='Sa';
 $_lang['lf_week_short.6']='Su';
+
+$_lang['lf_megamenu_title_one'] = 'WHAT DO I NEED TO KNOW?';
+$_lang['lf_megamenu_text_one'] = 'But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.';
+$_lang['lf_megamenu_title_two'] = 'GET IN TOUCH WITH OUR NEW EVENTS';
+$_lang['lf_megamenu_text_two'] = 'Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!';

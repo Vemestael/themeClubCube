@@ -43,6 +43,7 @@
             [[++themeclubcube.design_url]]js/app/modules/bgImages.js,
             [[++themeclubcube.design_url]]js/app/modules/dtMenu.js,
             [[++themeclubcube.design_url]]js/app/modules/formValidate.js,
+            [[++themeclubcube.design_url]]js/app/modules/formSubscribe.js,
             [[++themeclubcube.design_url]]js/app/modules/formAjax.js,
             [[++themeclubcube.design_url]]js/app/modules/headerFunctions.js,
             [[++themeclubcube.design_url]]js/app/modules/sliders.js,

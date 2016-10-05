@@ -35,6 +35,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
 
       _globals.siteObj.utils.extend(_globals.siteObj.classes.BgImages, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.FormValidate, _globals.siteObj.base.Class);
+      _globals.siteObj.utils.extend(_globals.siteObj.classes.FormSubscribe, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.FormAjax, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.HeaderFunctions, _globals.siteObj.base.Class);
       _globals.siteObj.utils.extend(_globals.siteObj.classes.Sliders, _globals.siteObj.base.Class);
@@ -54,6 +55,10 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
       _globals.siteObj.createClassInstance('bgImages', _globals.siteObj.classes.BgImages, {classId: 'BgImages'});
       _globals.siteObj.createClassInstance('FormValidate', _globals.siteObj.classes.FormValidate, {
         classId: 'FormValidate',
+        forms: []
+      });
+      _globals.siteObj.createClassInstance('FormSubscribe', _globals.siteObj.classes.FormSubscribe, {
+        classId: 'FormSubscribe',
         forms: []
       });
       _globals.siteObj.createClassInstance('FormAjax', _globals.siteObj.classes.FormAjax, {

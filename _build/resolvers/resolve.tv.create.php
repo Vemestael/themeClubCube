@@ -200,6 +200,39 @@ if ($object->xpdo) {
                                         '
                     )
                 ),
+//                'megaMenu' => array(
+//                    'category' => $categoryId,
+//                    'name' => 'megaMenu',
+//                    'caption' => 'Resources for megamenu',
+//                    'description' => '',
+//                    'type' => 'migx',
+//                    'display' => 'default',
+//                    'input_properties' => array(
+//                        'formtabs' =>   '
+//                                        [
+//                                            {
+//                                                "caption":"Resources",
+//                                                "fields":
+//                                                [
+//                                                {
+//                                                    "field":"resource",
+//                                                    "caption":"Resource",
+//                                                    "inputTVtype":"resourcelist"
+//                                                }
+//                                                ]
+//                                            }
+//                                        ]
+//                                        ',
+//                        'columns' =>    '
+//                                        [
+//                                            {
+//                                                "header": "Resource",
+//                                                "dataIndex": "resource"
+//                                            }
+//                                        ]
+//                                        '
+//                    )
+//                ),
 //                'gallery' => array(
 //                    'category' => $categoryId,
 //                    'name' => 'gallery',

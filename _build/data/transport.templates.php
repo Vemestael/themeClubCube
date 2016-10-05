@@ -115,6 +115,10 @@ $tmp = array(
         'file' => 'elementsVideoAudio',
         'description' => 'elements Video Audio template',
     ),
+    'features' => array(
+        'file' => 'features',
+        'description' => 'about this template',
+    ),
 //    'partners' => array(
 //        'file' => 'partners',
 //        'description' => 'Template for partners',
