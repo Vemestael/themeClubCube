@@ -73,7 +73,6 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                 if ((_globals.slideNodeHeight < _globals.sliderHeight) && (_globals.sliderFullHeight.length)) {
                     _globals.rowss.css('top', sliderTopPadding + (_globals.slider.hasClass(_properties.sliderDefaultClass) ? 10 : 40));
                 } else if ((_globals.slideNodeHeight < _globals.windowHeight) && (_globals.sliderDefault.length)) {
-                    console.log(2);
                     _globals.rowss.css('top', (_globals.sliderHeight - _globals.slideNodeHeight) / 2 - 20);
                 } else {
                     _globals.rowss.css('top', '130px');
@@ -81,6 +80,7 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                 if ((_globals.slideNodeHeight < _globals.sliderHeight) && (window.devicePixelRatio === 2) && ((_globals.windowWidth) === 1024)) {
                     _globals.rowss.css('top', ((_globals.sliderHeight / 2 - _globals.slideNodeHeight)) + 40);
                 }
+                $('.temporary-layer').removeClass('temporary-layer');
             //
             //     var tileOptions = {};
             //     if (_globals.slider.hasClass(_properties.sliderDefaultClass)) {
@@ -102,7 +102,8 @@ appMakeBeCool.gateway.addClass('FullHeightSlider', function(properties, $, $wind
                     hoverPrevNext: false,
                     navButtons: false,
                     navStartStop: false,
-                    showCircleTimer: false
+                    showCircleTimer: false,
+                    animateFirstLayer: true
                 });
 
             }
