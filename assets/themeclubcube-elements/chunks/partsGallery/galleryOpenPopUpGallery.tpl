@@ -5,10 +5,10 @@
                 <ul class="b-breadcrumbs__list x-small-txt">
                     <li><a href="/" class="link">main</a></li>
                     <li><a href="/gallery" class="link">gallery</a></li>
-                    <li>[[+pagetitle]]</li>
+                    <li>[[*pagetitle]]</li>
                 </ul>
             </div>
-            <h1 class="b-headlines__ttl">[[+pagetitle]]</h1>
+            <h1 class="b-headlines__ttl">[[*pagetitle]]</h1>
         </div>
     </div>
     <div id="GlrMagic" class="b-gallery__popup">
@@ -28,7 +28,7 @@
             <li class="b-likes__heading">share:</li>
             <li class="b-likes__facebook">
                               <span>share
-								<a href="http://www.facebook.com/sharer.php?s=100&p[url]=[[~[[*id]] ]]&p[title]=[[+pagetitle]]&p[summary]=[[+longtitle]]" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">
+								<a href="http://www.facebook.com/sharer.php?s=100&p[url]=[[~[[*id]] ]]&p[title]=[[*pagetitle]]&p[summary]=[[*longtitle]]" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">
 									<svg x="0px" y="0px"
                                          viewBox="0 0 55 20.4" style="enable-background:new 0 0 55 20.4;" xml:space="preserve">
 									<path class="svg__fill" d="M53,2v16.5H10.9l-8.1-8.3L10.9,2H53 M55,0H10.1L0,10.2l10.1,10.3H55V0L55,0z"/>

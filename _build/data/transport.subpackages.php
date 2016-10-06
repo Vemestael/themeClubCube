@@ -11,7 +11,6 @@ $subpackages = array(
     // 'dateago' => 'dateago-1.0.2-pl',
     // 'lexiconfrontend' => 'lexiconfrontend-1.0.1-beta',
     // 'molt' => 'molt-1.0.2-beta',
-    'basetheme' => 'basetheme-1.4.0-beta',
     'migx' => 'migx-2.8.1-pl',
     // 'pthumb' => 'pthumb-2.3.1-pl',
     // 'tickets' => 'tickets-1.6.16-pl',

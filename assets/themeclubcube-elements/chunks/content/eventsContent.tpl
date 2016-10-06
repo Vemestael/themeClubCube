@@ -57,14 +57,14 @@
                         &tplPageFirstEmpty=``
                         &tplPageLastEmpty=``
                         &tplPagePrevEmpty=`@INLINE <div class="left-pag sm off" >
-                            <div class="pad-arr"><i></i></div>
+                            <div class="pad-arr"><i class="fa fa-angle-left"></i></div>
                             <div class="pad-text">
                                 <div class="pad-title">[[%lf_page_prev:htmlent]]</div>
                             </div>
                         </div>`
                         &tplPageNextEmpty=`@INLINE <div class="right-pag sm off">
                             <div class="pad-arr">
-                                <i></i>
+                                <i class="fa fa-angle-right"></i>
                             </div>
                             <div class="pad-text">
                                 <div class="pad-title">[[%lf_page_next:htmlent]]</div>

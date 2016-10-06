@@ -6,7 +6,7 @@
         </div>
         [[getImageList?
             &tvname=`imgList`
-            &docid=`[[+id]]`
+            &docid=`[[*id]]`
             &tpl=`@CODE: `
         ]]
         <ul class="c-box__views">

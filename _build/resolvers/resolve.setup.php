@@ -58,13 +58,6 @@ if ($object->xpdo) {
     //                     'version_minor:>=' =>  0,
     //                 )
     //             ),
-                'basetheme' => array(
-                    'signature' => 'basetheme-1.4.0-beta',
-                    'options' => array(
-                        'version_major' => 1,
-                        'version_minor:>=' =>  4,
-                    )
-                ),
                 'migx' => array(
                     'signature' => 'migx-2.8.1-pl',
                     'options' => array(

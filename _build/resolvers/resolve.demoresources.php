@@ -1246,7 +1246,7 @@ if ($object && $object->xpdo) {
         case xPDOTransport::ACTION_UPGRADE:
             $modx =& $object->xpdo;
 
-            $options['demo_data'] = 1;
+            //$options['demo_data'] = 1;
             if($options['demo_data']) {
                 $modx->log(modX::LOG_LEVEL_INFO,'Setup demo resources');
                 /*
@@ -1710,7 +1710,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_02_Retina.jpg',
                                                 'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'b'
                                             ),
                                         ),
                                         'event3:Ticket' => array(
@@ -1752,7 +1752,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_03_Retina.jpg',
                                                 'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'c'
                                             ),
                                         ),
                                         'event4:Ticket' => array(
@@ -1836,7 +1836,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_06_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'b'
                                             ),
                                         ),
                                         'event6:Ticket' => array(
@@ -1878,7 +1878,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_15_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'c'
                                             ),
                                         ),
                                         'event7:Ticket' => array(
@@ -1962,7 +1962,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_17_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'b'
                                             ),
                                         ),
                                         'event9:Ticket' => array(
@@ -2004,7 +2004,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_18_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'c'
                                             ),
                                         ),
                                         'event10:Ticket' => array(
@@ -2088,7 +2088,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_20_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'b'
                                             ),
                                         ),
                                         'event12:Ticket' => array(
@@ -2130,7 +2130,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_21_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'c'
                                             ),
                                         ),
                                         'event13:Ticket' => array(
@@ -2214,7 +2214,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_15_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'b'
                                             ),
                                         ),
                                         'event15:Ticket' => array(
@@ -2256,7 +2256,7 @@ if ($object && $object->xpdo) {
                                                 'imgSquare' => 'events/EventsTiles_16_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'c'
                                             ),
                                         ),
                                     ),

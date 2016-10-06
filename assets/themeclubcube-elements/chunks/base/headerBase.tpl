@@ -21,7 +21,7 @@
                   [[!++themeclubcube.demo:is=`1`:then=`
                     <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
                         <ul class="navbar-dropdown__menu dl-submenu">
-                            <li id="fullWide" class="navbar__tint-wide active wide"><span>wide</span></li>
+                            <!-- <li id="fullWide" class="navbar__tint-wide active wide"><span>wide</span></li>
                             <li class="navbar-dropdown__submenu navbar__tint-wide"><span>boxed<i class="fa fa-angle-right"></i></span>
                                 <ul class="navbar-list__inner dl-submenu">
                                     <li data-ptrn="circle" class="pattern circle"><span>Circle pattern</span></li>
@@ -34,7 +34,7 @@
                                 <div class="hr-line"></div>
                                 <div class="hr-line"></div>
                             </li>
-
+ -->
                             <li data-skin="green" class="clr-picker green [[-!+color:is=`green-violet`:then=`active`]]">
                                 [[-!+color:is=`green-violet`:then=`
                                     <span>green/violet</span>
