@@ -1,5 +1,19 @@
 Changelog for themeClubCube.
 
+
+themeClubCube 2.0.0 pl
+==============
+- Added 6 versions of home page
+- Added new slider on home page
+- Changed color scheme
+- Added new footer
+- Added gallery-slider on home page
+- Added mega-menu
+- Added video/audio blocks on home page
+- Added 5 versions display the blog
+- Added 2 versions display the events
+
+
 themeClubCube 1.0.6 pl
 ==============
 - Changed 404 template page

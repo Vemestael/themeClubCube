@@ -68,7 +68,7 @@
         [[+description]]
       </p>
       <div class="main-slide__footer">
-        <ul class="b-likes b-likes--wht b-likes--indent">
+        <ul class="b-likes b-likes--wht">
           <li class="b-likes__pinterest-p">
                               <span>share
 									<a data-pin-do="buttonBookmark" data-pin-custom="true" data-pin-lang="ru" data-pin-save="false" href="https://ru.pinterest.com/pin/create/button/">
@@ -123,7 +123,7 @@
       <hr class="hr-pattern">
       <div data-year="[[+timeStart:strtotime:date=`%Y`]]" data-month="[[+timeStart:strtotime:date=`%m`]]" data-day="[[+timeStart:strtotime:date=`%d`]]" data-hour="[[+timeStart:strtotime:date=`%H`]]" data-minute="[[+timeStart:strtotime:date=`%M`]]" class="b-timer"></div>
       <div class="main-slide__footer">
-        <ul class="b-likes b-likes--wht b-likes--indent">
+        <ul class="b-likes b-likes--wht">
           <li class="b-likes__pinterest-p">
                               <span>share
 									<a data-pin-do="buttonBookmark" data-pin-custom="true" data-pin-lang="ru" data-pin-save="false" href="https://ru.pinterest.com/pin/create/button/">
