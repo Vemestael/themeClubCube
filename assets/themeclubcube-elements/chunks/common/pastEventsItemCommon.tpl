@@ -1,4 +1,4 @@
-<div class="c-box c-box--lg col-xs-12 col-md-6 [[+template:is=`indexGallery`:then=`col-lg-6`]]">
+<div class="c-box c-box--lg col-xs-12 col-md-6 [[*template:is=`indexGallery`:then=`col-lg-6`]]">
     <div class="c-box__inner">
         <div class="c-box__cont">
             <h2 class="c-box__ttl-s2">[[+pagetitle]]</h2>

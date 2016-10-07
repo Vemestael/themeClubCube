@@ -1,4 +1,4 @@
-<article class="c-box c-box--sm [[+alias:is=`gallery`:then=`col-xs-12 col-xm-6 col-md-4 col-lg-3`]]">
+<article class="c-box c-box--sm [[*alias:is=`gallery`:then=`col-xs-12 col-xm-6 col-md-4 col-lg-3`]]">
     <div class="c-box__inner">
         <div data-bgimage="[[+img]]" class="b-box__img-wrap b-box__grdnt-b bg-image"></div>
         <div class="c-box__date-item c-box__date-item--float">

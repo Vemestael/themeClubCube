@@ -1246,7 +1246,7 @@ if ($object && $object->xpdo) {
         case xPDOTransport::ACTION_UPGRADE:
             $modx =& $object->xpdo;
 
-            $options['demo_data'] = 1;
+            //$options['demo_data'] = 1;
             if($options['demo_data']) {
                 $modx->log(modX::LOG_LEVEL_INFO,'Setup demo resources');
                 /*
