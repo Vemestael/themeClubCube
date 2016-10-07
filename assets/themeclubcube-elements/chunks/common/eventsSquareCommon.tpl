@@ -1,4 +1,4 @@
-<div class="b-tabs__pane-item col-sm-6 [[!getTemplateValues? &id=`[[*template]]` &currentChunck=`eventsSquareItem`]]">
+<div class="b-tabs__pane-item col-sm-6 [[!getTemplateValues? &id=`[[+template]]` &currentChunck=`eventsSquareItem`]]">
     <div class="c-box">
         <div class="c-box__inner">
             <div class="c-box__cont">

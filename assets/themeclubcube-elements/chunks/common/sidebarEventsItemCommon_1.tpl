@@ -1,7 +1,7 @@
 <article class="c-box c-box-v__sm">
     <div class="c-box__inner">
         <div class="c-box__cont">
-            <h3 class="c-box__ttl-s3">[[*pagetitle]]</h3>
+            <h3 class="c-box__ttl-s3">[[+pagetitle]]</h3>
         </div>
         <div class="c-box__date-item">
             <time datetime="[[+timeStart]]" class="date c-box__date"><span class="date__dt">[[+timeStart:strtotime:date=`%d`]]</span><span class="date__rh"><span class="date__rh-m">[[%lf_month_short.[[+timeStart:strtotime:date=`%m`]]]]</span><span class="date__rh-d">[[%lf_week.[[+timeStart:strtotime:date=`%w`]]]]</span></span><span class="date__ad">[[+timeStart:strtotime:date=`%H`]]:[[+timeStart:strtotime:date=`%M`]] [[+timeStart:strtotime:date=`%P`]]</span></time>
