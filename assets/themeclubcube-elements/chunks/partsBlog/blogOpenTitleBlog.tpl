@@ -9,6 +9,6 @@
             </ul>
         </div>
         <h1 class="b-headlines__ttl">[[*pagetitle]]</h1>
-        <time datetime="[[*publishedon]]" class="b-headlines__date">[[%lf_month.[[*publishedon:date=`%m`]]]] [[*publishedon:date=`%d, %H:%M`]]</time>
+        <time datetime="[[*publishedon]]" class="b-headlines__date">[[%lf_month.[[+publishedon:date=`%m`]]]] [[+publishedon:date=`%d, %H:%M`]]</time>
     </div>
 </div>
