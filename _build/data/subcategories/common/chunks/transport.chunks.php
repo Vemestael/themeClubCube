@@ -58,6 +58,10 @@ $tmp = array(
 		'file' => 'common/sidebarEventsItemCommon_2',
 		'description' => '',
 	),
+	'moltCommon' => array(
+		'file' => 'common/moltCommon',
+		'description' => '',
+	),
 //    'pageWrapperCommon' => array(
 //        'file' => 'common/pageWrapperCommon',
 //        'description' => '',

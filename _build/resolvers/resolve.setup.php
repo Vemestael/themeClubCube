@@ -16,41 +16,41 @@ if ($object->xpdo) {
 		case xPDOTransport::ACTION_UPGRADE:
 			/* Checking and installing required packages */
 			$packages = array(
-				// 'pdoTools' => array(
-    //                 'signature' => 'pdotools-1.9.3-pl1',
-    //                 'options' => array(
-    //                     'version_major' => 1,
-    //                     'version_minor:>=' =>  9,
-    //                 )
-    //             ),
-    //             'jevix' => array(
-    //                 'signature' => 'jevix-1.2.0-pl2',
-    //                 'options' => array(
-    //                     'version_major' => 1,
-    //                     'version_minor:>=' =>  2,
-    //                 )
-    //             ),
-    //             'resizer' => array(
-    //                 'signature' => 'resizer-1.0.1-pl',
-    //                 'options' => array(
-    //                     'version_major' => 1,
-    //                     'version_minor:>=' =>  0,
-    //                 )
-    //             ),
-    //             'dateAgo' => array(
-    //                 'signature' => 'dateago-1.0.2-pl',
-    //                 'options' => array(
-    //                     'version_major' => 1,
-    //                     'version_minor:>=' =>  0,
-    //                 )
-    //             ),
-    //             'lexiconFrontend' => array(
-    //                 'signature' => 'lexiconfrontend-1.0.1-beta',
-    //                 'options' => array(
-    //                     'version_major' => 1,
-    //                     'version_minor:>=' =>  0,
-    //                 )
-    //             ),
+				'pdoTools' => array(
+                    'signature' => 'pdotools-1.9.3-pl1',
+                    'options' => array(
+                        'version_major' => 1,
+                        'version_minor:>=' =>  9,
+                    )
+                ),
+                'jevix' => array(
+                    'signature' => 'jevix-1.2.0-pl2',
+                    'options' => array(
+                        'version_major' => 1,
+                        'version_minor:>=' =>  2,
+                    )
+                ),
+                'resizer' => array(
+                    'signature' => 'resizer-1.0.1-pl',
+                    'options' => array(
+                        'version_major' => 1,
+                        'version_minor:>=' =>  0,
+                    )
+                ),
+                'dateAgo' => array(
+                    'signature' => 'dateago-1.0.2-pl',
+                    'options' => array(
+                        'version_major' => 1,
+                        'version_minor:>=' =>  0,
+                    )
+                ),
+                'lexiconFrontend' => array(
+                    'signature' => 'lexiconfrontend-1.0.1-beta',
+                    'options' => array(
+                        'version_major' => 1,
+                        'version_minor:>=' =>  0,
+                    )
+                ),
     //             'molt' => array(
     //                 'signature' => 'molt-1.0.2-beta',
     //                 'options' => array(
@@ -65,20 +65,20 @@ if ($object->xpdo) {
                         'version_minor:>=' =>  8,
                     )
                 ),
-    //             'pthumb' => array(
-    //                 'signature' => 'pthumb-2.3.1-pl',
-    //                 'options' => array(
-    //                     'version_major' => 2,
-    //                     'version_minor:>=' =>  3,
-    //                 )
-    //             ),
-    //             'tickets' => array(
-    //                 'signature' => 'tickets-1.4.2-rc2',
-    //                 'options' => array(
-    //                     'version_major' => 1,
-    //                     'version_minor:>=' =>  4,
-    //                 )
-    //             ),
+                'pthumb' => array(
+                    'signature' => 'pthumb-2.3.1-pl',
+                    'options' => array(
+                        'version_major' => 2,
+                        'version_minor:>=' =>  3,
+                    )
+                ),
+                'tickets' => array(
+                    'signature' => 'tickets-1.6.16-pl',
+                    'options' => array(
+                        'version_major' => 1,
+                        'version_minor:>=' =>  6,
+                    )
+                ),
 			);
 			foreach ($packages as $package => $opt) {
 				$query = array('package_name' => $package);

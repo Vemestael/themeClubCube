@@ -151,9 +151,9 @@ if($errorCheck) {
         'errors'    =>  $errorOutput
     );
 } else {
-    $uni = new uniApi($modx->getOption('unisender_api_key'));
+    $uni = new uniApi($modx->getOption('basetheme.unisender_api_key'));
 
-    $uni->subscribe($properties['email'], $modx->getOption('unisender_list_ids'));
+    $uni->subscribe($properties['email'], $modx->getOption('basetheme.unisender_list_ids'));
 }
 
 return json_encode($output);

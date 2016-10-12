@@ -10,9 +10,8 @@ themeClubCube 2.0.0 pl
 - Added gallery-slider on home page
 - Added mega-menu
 - Added video/audio blocks on home page
-- Added 5 versions display the blog
-- Added 2 versions display the events
-
+- Added 5 versions of the blog-list display
+- Added 2 versions of the events-list display
 
 themeClubCube 1.0.6 pl
 ==============

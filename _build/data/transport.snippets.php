@@ -23,6 +23,18 @@ $tmp = array(
         'file' => 'formSubscribe',
         'description' => '',
     ),
+    'molt' => array(
+        'file' => 'molt',
+        'description' => '',
+    ),
+    'formContacts' => array(
+      'file' => 'formContacts',
+      'description' => '',
+  ),
+    'formSubscribe' => array(
+        'file' => 'formSubscribe',
+        'description' => '',
+    ),
 //	'formContacts' => array(
 //		'file' => 'formContacts',
 //		'description' => '',

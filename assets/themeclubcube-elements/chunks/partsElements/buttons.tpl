@@ -134,6 +134,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="btn-icon__wrap"><a href="#" class="btn btn--mini">More</a></div>
                         </div>
@@ -171,6 +172,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="btn-icon__wrap btn-icon__refresh">
                                 <a href="#" class="btn-icon">
@@ -496,6 +498,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="btn-slider indent">
                                 <button class="slick-prev"></button>
@@ -566,6 +569,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <ul class="b-social indent">
                                 <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
@@ -625,6 +629,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3">
@@ -690,6 +695,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-xm-6"><a href="#" class="btn indent btn-info btn-anim-a btn--act-a">
@@ -755,6 +761,7 @@
                                     </a></div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-xm-6">
@@ -815,6 +822,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-4 col-md-3">
@@ -864,6 +872,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-xm-6 col-sm-4 col-md-3">
@@ -914,6 +923,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3">
@@ -1050,6 +1060,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12"><span class="btn-icon-wht btn-icon__wrap"><a href="#" class="btn btn--mini">More</a></span></div>
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
@@ -1085,6 +1096,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="btn-icon__wrap btn-icon__refresh btn-icon-wht">
                                 <a href="#" class="btn-icon">
@@ -1115,6 +1127,7 @@
 
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3">
@@ -1410,6 +1423,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="btn-slider btn-white indent">
                                 <button class="slick-prev"></button>
@@ -1480,6 +1494,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <ul class="b-social b-social--clr-a">
                                 <li><a href="#" class="b-social__btn btn"><span class="fa fa-facebook"></span></a></li>
@@ -1539,6 +1554,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3">
@@ -1604,6 +1620,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-xm-6"><a href="#" class="btn indent btn-info btn-anim-a btn--act-a">
@@ -1669,6 +1686,7 @@
                                     </a></div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-xm-6">
@@ -1729,6 +1747,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-4 col-md-3">
@@ -1778,6 +1797,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item indent-btm col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-xm-6 col-sm-4 col-md-3">
@@ -1828,6 +1848,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr color="blue" style="margin:10px;" />
                         <div class="b-tabs__pane-item col-xs-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3">

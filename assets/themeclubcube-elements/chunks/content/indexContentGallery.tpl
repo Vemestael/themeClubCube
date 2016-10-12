@@ -3,7 +3,7 @@
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &includeTVs=`timeStart, viewType`
+    &includeTVs=`timeStart, viewType, ticketPrice, img`
 ]]
 [[pdoResources@pastEventsIndexGallery?
     &tpl=`pastEventsItemCommon`

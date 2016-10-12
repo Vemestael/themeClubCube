@@ -3,7 +3,7 @@
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &includeTVs=`timeStart, viewType`
+    &includeTVs=`timeStart, viewType, ticketPrice, img`
 ]]
 <div class="b-content container">
     <main class="b-main">
@@ -27,7 +27,7 @@
             </div>
             <div class="b-tabs__content nobottommargin">
                 [[!++themeclubcube.demo:is=`1`:then=`
-                    [[pdoResources@topEvents?
+                    [[pdoResources@topIndexEvents?
                         &tpl=`eventsSquareCommon`
                         &tplWrapper=`eventsSquareListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
@@ -35,7 +35,7 @@
                         &includeTVs=`imgSquare, timeStart, topEvent`
                         &tvFilters=`topEvent==1`
                     ]]
-                    [[pdoResources@topEvents?
+                    [[pdoResources@topIndexEvents?
                         &tpl=`eventsRectangleCommon`
                         &tplWrapper=`eventsRectangleListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`

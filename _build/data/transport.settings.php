@@ -9,6 +9,11 @@ $tmp = array(
 //		'value' => '',
 //		'area' => 'themeclubcube_main',
 //	),
+    'design_path' => array(
+        'xtype' => 'textfield',
+        'value' => '{assets_path}'.PKG_NAME_LOWER.'-design/',
+        'area' => 'themeclubcube_main',
+    ),
     'design_url' => array(
         'xtype' => 'textfield',
         'value' => '{assets_url}'.PKG_NAME_LOWER.'-design/',
@@ -67,7 +72,7 @@ $tmp = array(
     ),
     'mega_menu' => array(
         'xtype' => 'textfield',
-        'value' => '12',
+        'value' => '848',
         'area' => 'themeclubcube_main',
     ),
 //    'home_page' => array(

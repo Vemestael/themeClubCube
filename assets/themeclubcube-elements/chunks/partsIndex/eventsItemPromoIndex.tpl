@@ -46,7 +46,7 @@
           </li>
         </ul>
         <div class="main-slide__link-wrap"><a href="[[~[[+id]]]]" class="btn btn-info btn-anim-a">
-            <span>free</span>
+            <span>[[+ticketPrice]]</span>
             <span><svg x="0px" y="0px"
                        viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
                   <path class="st0" fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>

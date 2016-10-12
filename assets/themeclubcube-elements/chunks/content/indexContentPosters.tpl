@@ -3,7 +3,7 @@
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &includeTVs=`timeStart, viewType`
+    &includeTVs=`timeStart, viewType, ticketPrice, img`
 ]]
 <div class="b-events">
     <div class="container">
@@ -24,7 +24,7 @@
                 `:else=``]]
                 <div class="b-tabs__content">
                     [[!++themeclubcube.demo:is=`1`:then=`
-                    [[pdoResources@topEvents?
+                    [[pdoResources@topIndexEvents?
                         &tpl=`eventsSquareCommon`
                         &tplWrapper=`eventsSquareListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
@@ -32,7 +32,7 @@
                         &includeTVs=`imgSquare, timeStart, topEvent`
                         &tvFilters=`topEvent==1`
                     ]]
-                    [[pdoResources@topEvents?
+                    [[pdoResources@topIndexEvents?
                         &tpl=`eventsRectangleCommon`
                         &tplWrapper=`eventsRectangleListCommon`
                         &parents=`[[++themeclubcube.events_resource]]`
@@ -42,7 +42,7 @@
                     ]]
                     `:else=``]]
                     [[!*eventViewType:is=`1`:and:if=`[[++themeclubcube.demo]]`:ne=`1`:then=`
-                        [[pdoResources@indexTopEventsGallery?
+                        [[pdoResources@topIndexEvents?
                             &tpl=`eventsSquareCommon`
                             &tplWrapper=`eventsSquareListCommon`
                             &parents=`[[++themeclubcube.events_resource]]`
@@ -52,7 +52,7 @@
                         ]]
                     `:else=``]]
                     [[!*eventViewType:is=`2`:and:if=`[[++themeclubcube.demo]]`:ne=`1`:then=`
-                        [[pdoResources@indexTopEventsGallery?
+                        [[pdoResources@topIndexEvents?
                             &activeClass=`active`
                             &tpl=`eventsRectangleCommon`
                             &tplWrapper=`eventsRectangleListCommon`
