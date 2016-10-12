@@ -16,6 +16,8 @@ switch($eventName) {
                 $_SESSION['color'] = $color;
 
                 $modx->regClientCSS($modx->getOption('themeclubcube.design_url').'css/skins/clr-'.$color.'.css');
+                $cm = $modx->getCacheManager();
+                $cm->refresh();
             } else {
                 $color = 'green-violet';
             }
