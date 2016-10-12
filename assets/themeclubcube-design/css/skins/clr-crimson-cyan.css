@@ -235,6 +235,9 @@ blockquote::before {
 .header > .b-topbar {
   background: #cc0033; }
 
+.b-navbar .navbar-list__inner {
+  background: inherit; }
+
 .paging .left-pag .pad-arr, .paging .right-pag .pad-arr {
   background: #cc0033; }
 
@@ -271,3 +274,7 @@ blockquote::before {
   .paging .middle-paging li a:hover {
     color: #09b086;
     border: 1px solid #09b086; } }
+
+@media (min-width: 1280px) {
+  .b-navbar .navbar-list__inner {
+    background: #cc0033; } }

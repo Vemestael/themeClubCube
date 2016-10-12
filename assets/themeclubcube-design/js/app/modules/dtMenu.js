@@ -103,6 +103,7 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
                         }
                     }
                     console.log('Nope');
+                    
                     return false;
                 });
 
@@ -123,7 +124,6 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
 
                     return false;
                 });
-
             }
         },
 

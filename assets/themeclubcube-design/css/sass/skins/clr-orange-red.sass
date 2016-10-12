@@ -253,6 +253,9 @@ blockquote::before
 .header > .b-topbar
   background: $active-c
 
+.b-navbar .navbar-list__inner
+  background: inherit
+
 .paging .left-pag .pad-arr, .paging .right-pag .pad-arr
   background: $active-c
 
@@ -289,3 +292,7 @@ blockquote::before
   .paging .middle-paging li a:hover
     color: $active-sc-c
     border: 1px solid $active-sc-c
+
+@media (min-width: $screen-lg-min)
+  .b-navbar .navbar-list__inner
+    background: $active-c
