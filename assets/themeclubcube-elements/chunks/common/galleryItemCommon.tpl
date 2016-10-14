@@ -11,7 +11,7 @@
         ]]
         <ul class="c-box__views">
             <li class="c-box__view txt">[[+total]]</li>
-            <li class="c-box__video txt">#</li>
+            <!-- <li class="c-box__video txt">#</li> -->
         </ul><a href="[[~[[+id]]]]" rel="nofollow" class="b-box__link"></a>
     </div>
     <h6><a href="[[~[[+id]]]]" class="c-box__link">[[+pagetitle]]</a></h6>

@@ -1,6 +1,6 @@
 [[+viewType:is=`a`:then=`
 <div class="main-slide__item-a">
-  <div data-bgimage="[[+img]]" class="main-slide__img-wrap bg-image"></div>
+  <div data-bgimage="[[+promoImg]]" class="main-slide__img-wrap bg-image"></div>
   <div class="container">
     <div class="main-slide__item-inr">
       <h1 class="main-slide__s1-ttl main-slide__s1-ttl--indent">[[+pagetitle]]</h1>

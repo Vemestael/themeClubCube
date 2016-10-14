@@ -3,7 +3,7 @@
     &tplWrapper=`eventsListPromoIndex`
     &parents=`[[++themeclubcube.events_resource]]`
     &tvPrefix=``
-    &includeTVs=`timeStart, viewType, ticketPrice, img`
+    &includeTVs=`timeStart, viewType, ticketPrice, img, promoImg`
 ]]
 <div class="b-events">
     <div class="container">

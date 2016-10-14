@@ -186,6 +186,15 @@ $tmp = array(
         'display' => 'default',
         'default_text' => '1',
     ),
+    'promoImg' => array(
+       'name' => 'promoImg',
+       'caption' => 'Promo preview',
+       'description' => 'Recommended size: 2048x1365',
+       'type' => 'image',
+       'display' => 'text',
+       'locked' => 0,
+       'rank' => 0,
+   ),
 //    'img' => array(
 //        'name' => 'img',
 //        'caption' => 'Preview',

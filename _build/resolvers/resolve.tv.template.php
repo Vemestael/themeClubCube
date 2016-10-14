@@ -88,6 +88,9 @@ if ($object && $object->xpdo) {
                 'eventViewType' => array(
                     'templates' => array('index', 'indexEvents', 'indexFEvents', 'indexMusic', 'indexPosters', 'events'),
                 ),
+                'promoImg' => array(
+                    'templates' => array('eventsOpen'),
+                ),
 //                'megaMenu' => array(
 //                    'templates' => array('index'),
 //                ),

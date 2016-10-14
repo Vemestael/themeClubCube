@@ -1663,12 +1663,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_01_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_01_Retina.jpg',
-                                                'topEvent' => '1',
+                                                'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'a',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_1.jpg',
+                                                'imgSquare' => 'events/new_event_square_1.jpg',
+                                                'img' => 'events/new_event_rectangle_1.jpg'
                                             ),
                                         ),
                                         'event2:Ticket' => array(
@@ -1705,12 +1706,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_02_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_02_Retina.jpg',
                                                 'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'b'
+                                                'viewType' => 'b',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_2.jpg',
+                                                'imgSquare' => 'events/new_event_square_2.jpg',
+                                                'img' => 'events/new_event_rectangle_2.jpg'
                                             ),
                                         ),
                                         'event3:Ticket' => array(
@@ -1747,12 +1749,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_03_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_03_Retina.jpg',
                                                 'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'c'
+                                                'viewType' => 'c',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_3.jpg',
+                                                'imgSquare' => 'events/new_event_square_3.jpg',
+                                                'img' => 'events/new_event_rectangle_3.jpg'
                                             ),
                                         ),
                                         'event4:Ticket' => array(
@@ -1789,12 +1792,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_04_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_04_Retina.jpg',
                                                 'topEvent' => '2',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'a',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_4.jpg',
+                                                'imgSquare' => 'events/new_event_square_4.jpg',
+                                                'img' => 'events/new_event_rectangle_4.jpg'
                                             ),
                                         ),
                                         'event5:Ticket' => array(
@@ -1831,12 +1835,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_06_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_06_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'b'
+                                                'viewType' => 'b',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_5.jpg',
+                                                'imgSquare' => 'events/new_event_square_5.jpg',
+                                                'img' => 'events/new_event_rectangle_5.jpg'
                                             ),
                                         ),
                                         'event6:Ticket' => array(
@@ -1873,12 +1878,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_15_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_15_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'c'
+                                                'viewType' => 'c',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_1.jpg',
+                                                'imgSquare' => 'events/new_event_square_6.jpg',
+                                                'img' => 'events/new_event_rectangle_6.jpg'
                                             ),
                                         ),
                                         'event7:Ticket' => array(
@@ -1915,12 +1921,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_16_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_16_Retina.jpg',
-                                                'topEvent' => '2',
+                                                'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'a',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_2.jpg',
+                                                'imgSquare' => 'events/new_event_square_1.jpg',
+                                                'img' => 'events/new_event_rectangle_1.jpg'
                                             ),
                                         ),
                                         'event8:Ticket' => array(
@@ -1957,12 +1964,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_17_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_17_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'b'
+                                                'viewType' => 'b',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_3.jpg',
+                                                'imgSquare' => 'events/new_event_square_2.jpg',
+                                                'img' => 'events/new_event_rectangle_2.jpg'
                                             ),
                                         ),
                                         'event9:Ticket' => array(
@@ -1999,12 +2007,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_18_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_18_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'c'
+                                                'viewType' => 'с',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_4.jpg',
+                                                'imgSquare' => 'events/new_event_square_3.jpg',
+                                                'img' => 'events/new_event_rectangle_3.jpg'
                                             ),
                                         ),
                                         'event10:Ticket' => array(
@@ -2041,12 +2050,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_19_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_19_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'a',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_5.jpg',
+                                                'imgSquare' => 'events/new_event_square_4.jpg',
+                                                'img' => 'events/new_event_rectangle_4.jpg'
                                             ),
                                         ),
                                         'event11:Ticket' => array(
@@ -2083,12 +2093,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_20_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_20_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'b'
+                                                'viewType' => 'b',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_1.jpg',
+                                                'imgSquare' => 'events/new_event_square_5.jpg',
+                                                'img' => 'events/new_event_rectangle_5.jpg'
                                             ),
                                         ),
                                         'event12:Ticket' => array(
@@ -2125,12 +2136,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_21_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_21_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'c'
+                                                'viewType' => 'c',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_2.jpg',
+                                                'imgSquare' => 'events/new_event_square_6.jpg',
+                                                'img' => 'events/new_event_rectangle_6.jpg'
                                             ),
                                         ),
                                         'event13:Ticket' => array(
@@ -2167,12 +2179,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_06_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_06_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'a'
+                                                'viewType' => 'a',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_3.jpg',
+                                                'imgSquare' => 'events/new_event_square_1.jpg',
+                                                'img' => 'events/new_event_rectangle_1.jpg'
                                             ),
                                         ),
                                         'event14:Ticket' => array(
@@ -2209,12 +2222,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_15_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_15_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'b'
+                                                'viewType' => 'b',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_4.jpg',
+                                                'imgSquare' => 'events/new_event_square_2.jpg',
+                                                'img' => 'events/new_event_rectangle_2.jpg'
                                             ),
                                         ),
                                         'event15:Ticket' => array(
@@ -2251,12 +2265,13 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'videoId' => $videoId,
                                                 'eventHeaderViewType' => '1',
-                                                'img' => 'events/EventsTiles_16_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                                 'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                                'imgSquare' => 'events/EventsTiles_16_Retina.jpg',
                                                 'topEvent' => '1',
                                                 'migxEventArtist' => $modx->toJson($artists),
-                                                'viewType' => 'c'
+                                                'viewType' => 'c',
+                                                'promoImg' => 'assets/uploads/slider/new_slider_5.jpg',
+                                                'imgSquare' => 'events/new_event_square_3.jpg',
+                                                'img' => 'events/new_event_rectangle_3.jpg'
                                             ),
                                         ),
                                     ),
@@ -2294,12 +2309,13 @@ if ($object && $object->xpdo) {
                                         'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                         'videoId' => $videoId,
                                         'eventHeaderViewType' => '1',
-                                        'img' => 'events/EventsTiles_17_Retina.2bded73ac767421fe2831c50af99005f.jpg',
                                         'timeStart' => date('Y-m-d H:i:00', time() + (3600 * 24 * 30 * 10) + (1 * 24 * 60 * 60)),
-                                        'imgSquare' => 'events/EventsTiles_17_Retina.jpg',
                                         'topEvent' => '1',
                                         'migxEventArtist' => $modx->toJson($artists),
-                                        'viewType' => 'a'
+                                        'viewType' => 'a',
+                                        'promoImg' => 'assets/uploads/slider/new_slider_1.jpg',
+                                        'imgSquare' => 'events/new_event_square_1.jpg',
+                                        'img' => 'events/new_event_rectangle_1.jpg'
                                     ),
                                 ),
                             ),
@@ -2386,7 +2402,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_01_Original.jpg',
+                                                'img' => 'gallery/new_gallery_1.jpg',
                                             ),
                                         ),
                                         'gallery2:Ticket' => array(
@@ -2419,7 +2435,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_02_Original.jpg',
+                                                'img' => 'gallery/new_gallery_2.jpg',
                                             ),
                                         ),
                                         'gallery3:Ticket' => array(
@@ -2452,7 +2468,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_03_Original.jpg',
+                                                'img' => 'gallery/new_gallery_3.jpg',
                                             ),
                                         ),
                                         'gallery4:Ticket' => array(
@@ -2485,7 +2501,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_04_Original.jpg',
+                                                'img' => 'gallery/new_gallery_4.jpg',
                                             ),
                                         ),
                                         'gallery5:Ticket' => array(
@@ -2518,7 +2534,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_05_Original.jpg',
+                                                'img' => 'gallery/new_gallery_5.jpg',
                                             ),
                                         ),
                                         'gallery6:Ticket' => array(
@@ -2551,7 +2567,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_06_Original.jpg',
+                                                'img' => 'gallery/new_gallery_6.jpg',
                                             ),
                                         ),
                                         'gallery7:Ticket' => array(
@@ -2584,7 +2600,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_07_Original.jpg',
+                                                'img' => 'gallery/new_gallery_1.jpg',
                                             ),
                                         ),
                                         'gallery8:Ticket' => array(
@@ -2617,7 +2633,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_08_Original.jpg',
+                                                'img' => 'gallery/new_gallery_2.jpg',
                                             ),
                                         ),
                                         'gallery9:Ticket' => array(
@@ -2650,7 +2666,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_09_Original.jpg',
+                                                'img' => 'gallery/new_gallery_3.jpg',
                                             ),
                                         ),
                                         'gallery10:Ticket' => array(
@@ -2683,7 +2699,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_10_Original.jpg',
+                                                'img' => 'gallery/new_gallery_4.jpg',
                                             ),
                                         ),
                                         'gallery11:Ticket' => array(
@@ -2716,7 +2732,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_11_Original.jpg',
+                                                'img' => 'gallery/new_gallery_5.jpg',
                                             ),
                                         ),
                                         'gallery12:Ticket' => array(
@@ -2749,7 +2765,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_12_Original.jpg',
+                                                'img' => 'gallery/new_gallery_6.jpg',
                                             ),
                                         ),
                                         'gallery13:Ticket' => array(
@@ -2782,7 +2798,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_13_Original.jpg',
+                                                'img' => 'gallery/new_gallery_1.jpg',
                                             ),
                                         ),
                                         'gallery14:Ticket' => array(
@@ -2815,7 +2831,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_14_Original.jpg',
+                                                'img' => 'gallery/new_gallery_2.jpg',
                                             ),
                                         ),
                                         'gallery15:Ticket' => array(
@@ -2848,7 +2864,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_15_Original.jpg',
+                                                'img' => 'gallery/new_gallery_3.jpg',
                                             ),
                                         ),
                                         'gallery16:Ticket' => array(
@@ -2881,7 +2897,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_16_Original.jpg',
+                                                'img' => 'gallery/new_gallery_4.jpg',
                                             ),
                                         ),
                                         'gallery17:Ticket' => array(
@@ -2914,7 +2930,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_17_Original.jpg',
+                                                'img' => 'gallery/new_gallery_5.jpg',
                                             ),
                                         ),
                                         'gallery18:Ticket' => array(
@@ -2947,7 +2963,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_18_Original.jpg',
+                                                'img' => 'gallery/new_gallery_6.jpg',
                                             ),
                                         ),
                                         'gallery19:Ticket' => array(
@@ -2980,7 +2996,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_19_Original.jpg',
+                                                'img' => 'gallery/new_gallery_1.jpg',
                                             ),
                                         ),
                                         'gallery20:Ticket' => array(
@@ -3013,7 +3029,7 @@ if ($object && $object->xpdo) {
                                             'tvs' => array(
                                                 'eventId' => $eventId,
                                                 'imgList' => $modx->toJson($gallery),
-                                                'img' => 'gallery/Gallery_20_Original.jpg',
+                                                'img' => 'gallery/new_gallery_2.jpg',
                                             ),
                                         ),
                                     )
@@ -3047,7 +3063,7 @@ if ($object && $object->xpdo) {
                                     'tvs' => array(
                                         'eventId' => $eventId,
                                         'imgList' => $modx->toJson($gallery),
-                                        'img' => 'gallery/Gallery_01_Original.jpg',
+                                        'img' => 'gallery/new_gallery_3.jpg',
                                     ),
                                 ),
                             )
@@ -3136,7 +3152,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/new_blog_1.jpg',
                                             ),
                                         ),
                                         'article-blog2:Ticket' => array(
@@ -3171,7 +3187,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/new_blog_2.jpg',
                                             ),
                                         ),
                                         'article-blog3:Ticket' => array(
@@ -3206,7 +3222,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                                'img' => 'blog/new_blog_3.jpg',
                                             ),
                                         ),
                                         'article-blog4:Ticket' => array(
@@ -3241,7 +3257,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_04_Retina.jpg',
+                                                'img' => 'blog/new_blog_4.jpg',
                                             ),
                                         ),
                                         'article-blog5:Ticket' => array(
@@ -3276,7 +3292,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_05_Retina.jpg',
+                                                'img' => 'blog/new_blog_5.jpg',
                                             ),
                                         ),
                                         'article-blog6:Ticket' => array(
@@ -3311,7 +3327,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_06_Retina.jpg',
+                                                'img' => 'blog/new_blog_6.jpg',
                                             ),
                                         ),
                                         'article-blog7:Ticket' => array(
@@ -3346,7 +3362,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/new_blog_1.jpg',
                                             ),
                                         ),
                                         'article-blog8:Ticket' => array(
@@ -3381,7 +3397,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/new_blog_2.jpg',
                                             ),
                                         ),
                                         'article-blog9:Ticket' => array(
@@ -3416,7 +3432,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                                'img' => 'blog/new_blog_3.jpg',
                                             ),
                                         ),
                                         'article-blog10:Ticket' => array(
@@ -3451,7 +3467,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_04_Retina.jpg',
+                                                'img' => 'blog/new_blog_4.jpg',
                                             ),
                                         ),
                                         'article-blog11:Ticket' => array(
@@ -3486,7 +3502,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_05_Retina.jpg',
+                                                'img' => 'blog/new_blog_5.jpg',
                                             ),
                                         ),
                                         'article-blog12:Ticket' => array(
@@ -3521,7 +3537,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_06_Retina.jpg',
+                                                'img' => 'blog/new_blog_6.jpg',
                                             ),
                                         ),
                                         'article-blog13:Ticket' => array(
@@ -3556,7 +3572,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/new_blog_1.jpg',
                                             ),
                                         ),
                                         'article-blog14:Ticket' => array(
@@ -3591,7 +3607,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/new_blog_2.jpg',
                                             ),
                                         ),
                                         'article-blog15:Ticket' => array(
@@ -3626,7 +3642,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_03_Retina.jpg',
+                                                'img' => 'blog/new_blog_3.jpg',
                                             ),
                                         ),
                                         'article-blog16:Ticket' => array(
@@ -3661,7 +3677,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_04_Retina.jpg',
+                                                'img' => 'blog/new_blog_4.jpg',
                                             ),
                                         ),
                                         'article-blog17:Ticket' => array(
@@ -3696,7 +3712,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_05_Retina.jpg',
+                                                'img' => 'blog/new_blog_5.jpg',
                                             ),
                                         ),
                                         'article-blog18:Ticket' => array(
@@ -3731,7 +3747,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_06_Retina.jpg',
+                                                'img' => 'blog/new_blog_6.jpg',
                                             ),
                                         ),
                                         'article-blog19:Ticket' => array(
@@ -3766,7 +3782,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_01_Retina.jpg',
+                                                'img' => 'blog/new_blog_1.jpg',
                                             ),
                                         ),
                                         'article-blog20:Ticket' => array(
@@ -3801,7 +3817,7 @@ if ($object && $object->xpdo) {
                                                 'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                                 'blogViewType' => 'b-box b-box--clr-b',
                                                 'videoId' => $videoId,
-                                                'img' => 'blog/Blog_02_Retina.jpg',
+                                                'img' => 'blog/new_blog_2.jpg',
                                             ),
                                         ),
                                     )
@@ -3837,7 +3853,7 @@ if ($object && $object->xpdo) {
                                         'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                         'blogViewType' => 'b-box b-box--clr-b',
                                         'videoId' => $videoId,
-                                        'img' => 'blog/Blog_01_Retina.jpg',
+                                        'img' => 'blog/new_blog_3.jpg',
                                     ),
                                 ),
                                 'blogItem2' => array(
@@ -3871,7 +3887,7 @@ if ($object && $object->xpdo) {
                                         'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                         'blogViewType' => 'b-box b-box--clr-b',
                                         'videoId' => $videoId,
-                                        'img' => 'blog/Blog_02_Retina.jpg',
+                                        'img' => 'blog/new_blog_4.jpg',
                                     ),
                                 ),
                                 'blogItem3' => array(
@@ -3905,7 +3921,7 @@ if ($object && $object->xpdo) {
                                         'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                         'blogViewType' => 'b-box b-box--clr-b',
                                         'videoId' => $videoId,
-                                        'img' => 'blog/Blog_03_Retina.jpg',
+                                        'img' => 'blog/new_blog_5.jpg',
                                     ),
                                 ),
                                 'blogItem4' => array(
@@ -3939,7 +3955,7 @@ if ($object && $object->xpdo) {
                                         'annotationText' => 'Your inner self will meet the full force of the summer, and we can go back to each witness leaving the pores, we go back to basics!',
                                         'blogViewType' => 'b-box b-box--clr-b',
                                         'videoId' => $videoId,
-                                        'img' => 'blog/Blog_01_Retina.jpg',
+                                        'img' => 'blog/new_blog_6.jpg',
                                     ),
                                 ),
                             )
