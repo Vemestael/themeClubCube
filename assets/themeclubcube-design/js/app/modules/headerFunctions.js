@@ -90,6 +90,7 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
             return {};
         },
 
+
         _stickyHeader = function () {
             var offsetop = $window.scrollTop();
             if (offsetop > _globals.header.height()) {
@@ -107,6 +108,9 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
                 _globals.navbarColl.css({
                     'float' : 'right'
                 });
+                $('.topbar-contact-dsp').css({
+                    'line-height' : '50px'
+                });
             } else {
                 _globals.header.removeClass('header__sticky');
                 _globals.topbar.slideDown("normal");
@@ -122,6 +126,9 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
                 _globals.navbarDisp.css({
                     "display" : "none"
                 });
+                $('.topbar-contact-dsp').css({
+                    'line-height' : '80px'
+                });
             }
             if ($(window).width() < 1280) {
                 if (offsetop > _globals.header.height()) {
@@ -133,9 +140,6 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
                 }
 
             }
-            // $('.navbar__s > li.active > a').click(function () {
-            //     $('.navbar__s > li > ul.dl-submenu').slideUp('normal');
-            // })
         },
         _setCustomMethods = function () {
             _headerFunctions.globals.customResurrect = function () {

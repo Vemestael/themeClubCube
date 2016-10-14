@@ -92,6 +92,7 @@ appMakeBeCool.gateway.addClass('ThemeMode', function (properties, $, $window, $d
           _themeMode.bind($window, _themeMode.globals.classType + '_Complete', function (e, data) {
             _themeMode.trigger('BgImages_Init', data);
             _themeMode.trigger('FormValidate_Init', data);
+            _themeMode.trigger('FormSubscribe_Init', data);
             _themeMode.trigger('FormAjax_Init', data);
             _themeMode.trigger('HeaderFunctions_Init', data);
             _themeMode.trigger('Sliders_Init', data);
