@@ -27,7 +27,7 @@
                         Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very
                         often!
                     </p>
-                    <form action="ajax/formsubscribe" id="email-footer-form" method="post" class="b-form b-form--inline">
+                    <form action="ajax/formsubscribe" method="post" class="b-form b-form--inline">
                         <div class="b-form__group">
                             <input type="email" placeholder="Your E-mail" class="b-form__control">
                         </div>
