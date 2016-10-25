@@ -97,6 +97,8 @@
                       <li><a href="blog-open-img-sidebar.html">Title Image & Right Sidebar</a></li>
                     </ul>
                   </li>
+                  <!--li-->
+                  <!--  a(href="#") Contacts-->
                   <!--li.navbar__item-mega-menu-->
                   <!--  a(href="#") Elements-->
                   <!--    i.fa.fa-angle-right-->
@@ -201,50 +203,62 @@
                   <!--              .b-form__group-->
                   <!--                input.b-form__control(type="email", placeholder="Your E-mail")-->
                   <!--              button.b-form__btn(type="submit") Subscribe-->
-                  <!--li.navbar__tint-->
-                  <!--  a(href="#")-->
-                  <!--    span.fa.fa-tint-->
-                  <!--    i.fa.fa-angle-right-->
-                  <!--  ul.navbar-dropdown__menu.dl-submenu-->
-                  <!--    li#fullWide.navbar__tint-wide.active.wide-->
-                  <!--      span wide-->
-                  <!--    li.navbar-dropdown__submenu.navbar__tint-wide-->
-                  <!--      span boxed-->
-                  <!--        i.fa.fa-angle-right-->
-                  <!--      ul.navbar-list__inner.dl-submenu-->
-                  <!--        li(data-ptrn="circle").pattern.circle-->
-                  <!--          span Circle pattern-->
-                  <!--        li(data-ptrn="triangle").pattern.triangle-->
-                  <!--          span Triangle pattern-->
-                  <!--        li(data-ptrn="solid").pattern.solid-->
-                  <!--          span Solid Color-->
-                  <!--        li(data-ptrn="waves").pattern.waves-->
-                  <!--          span Waves pattern-->
-                  <!---->
-                  <!--    li.navbar__hr-wrap-->
-                  <!--      .hr-line-->
-                  <!--      .hr-line-->
-                  <!--    li(data-skin="green").clr-picker.green-->
-                  <!--      span green/violet-->
-                  <!--    li(data-skin="orange").clr-picker.orange-->
-                  <!--      span orange/red-->
-                  <!--    li(data-skin="crimson").clr-picker.crimson-->
-                  <!--      span crimson/cyan-->
-                  <!--    li(data-skin="yellow").clr-picker.yellow-->
-                  <!--      span yellow/pink-->
-                  <!--    li(data-skin="brown").clr-picker.brown-->
-                  <!--      span brown/gray-->
+                  <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
+                    <ul class="navbar-dropdown__menu dl-submenu">
+                      <li id="fullWide" class="navbar__tint-wide active wide"><span>wide</span></li>
+                      <li class="navbar-dropdown__submenu navbar__tint-wide"><span>boxed<i class="fa fa-angle-right"></i></span>
+                        <ul class="navbar-list__inner dl-submenu">
+                          <li data-ptrn="circle" class="pattern circle"><span>Circle pattern</span></li>
+                          <li data-ptrn="triangle" class="pattern triangle"><span>Triangle pattern</span></li>
+                          <li data-ptrn="solid" class="pattern solid"><span>Solid Color</span></li>
+                          <li data-ptrn="waves" class="pattern waves"><span>Waves pattern</span></li>
+                        </ul>
+                      </li>
+                      <li class="navbar__hr-wrap">
+                        <div class="hr-line"></div>
+                        <div class="hr-line"></div>
+                      </li>
+                      <li data-skin="green" class="clr-picker green"><span>green/violet</span></li>
+                      <li data-skin="orange" class="clr-picker orange"><span>orange/red</span></li>
+                      <li data-skin="crimson" class="clr-picker crimson"><span>crimson/cyan</span></li>
+                      <li data-skin="yellow" class="clr-picker yellow"><span>yellow/pink</span></li>
+                      <li data-skin="brown" class="clr-picker brown"><span>brown/gray</span></li>
+                    </ul>
+                  </li>
                 </ul>
               </nav>
             </div>
           </div>
           <div class="col-lg-5 navbar-right nav-bar__r navbar-flex__order-three">
             <div class="row">
-              <ul class="b-topbar__links">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a></li>
-              </ul>
+              <nav id="navbarCollapse" class="navbar-collapse">
+                <ul id="navigation" class="navbar-list dl-menu">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
+                    <ul class="navbar-dropdown__menu dl-submenu navbar-open dropdown-menu__right--fix">
+                      <li id="fullWide" class="navbar__tint-wide active wide"><span>wide</span></li>
+                      <li class="navbar-dropdown__submenu navbar__tint-wide"><span>boxed<i class="fa fa-angle-right"></i></span>
+                        <ul class="navbar-list__inner dl-submenu">
+                          <li data-ptrn="circle" class="pattern circle"><span>Circle pattern</span></li>
+                          <li data-ptrn="triangle" class="pattern triangle"><span>Triangle pattern</span></li>
+                          <li data-ptrn="solid" class="pattern solid"><span>Solid Color</span></li>
+                          <li data-ptrn="waves" class="pattern waves"><span>Waves pattern</span></li>
+                        </ul>
+                      </li>
+                      <li class="navbar__hr-wrap">
+                        <div class="hr-line"></div>
+                        <div class="hr-line"></div>
+                      </li>
+                      <li data-skin="green" class="clr-picker green"><span>green/violet</span></li>
+                      <li data-skin="orange" class="clr-picker orange"><span>orange/red</span></li>
+                      <li data-skin="crimson" class="clr-picker crimson"><span>crimson/cyan</span></li>
+                      <li data-skin="yellow" class="clr-picker yellow"><span>yellow/pink</span></li>
+                      <li data-skin="brown" class="clr-picker brown"><span>brown/gray</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

@@ -41,9 +41,48 @@
               <ul class="b-topbar__links">
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a></li>
+                <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span></a></li>
               </ul>
             </div>
+            <!--nav#navbarCollapse.navbar-collapse-->
+            <!--  ul#navigation.navbar-list.dl-menu-->
+            <!--    li-->
+            <!--      a(href="#") FAQ-->
+            <!--    li-->
+            <!--      a(href="#") Gallery-->
+            <!--    li.navbar__tint-->
+            <!--      a(href="#")-->
+            <!--        span.fa.fa-tint-->
+            <!--        i.fa.fa-angle-right-->
+            <!--      ul.navbar-dropdown__menu.dl-submenu.navbar-open-->
+            <!--        li#fullWide.navbar__tint-wide.active.wide-->
+            <!--          span wide-->
+            <!--        li.navbar-dropdown__submenu.navbar__tint-wide-->
+            <!--          span boxed-->
+            <!--            i.fa.fa-angle-right-->
+            <!--          ul.navbar-list__inner.dl-submenu-->
+            <!--            li(data-ptrn="circle").pattern.circle-->
+            <!--              span Circle pattern-->
+            <!--            li(data-ptrn="triangle").pattern.triangle-->
+            <!--              span Triangle pattern-->
+            <!--            li(data-ptrn="solid").pattern.solid-->
+            <!--              span Solid Color-->
+            <!--            li(data-ptrn="waves").pattern.waves-->
+            <!--              span Waves pattern-->
+            <!---->
+            <!--        li.navbar__hr-wrap-->
+            <!--          .hr-line-->
+            <!--          .hr-line-->
+            <!--        li(data-skin="green").clr-picker.green-->
+            <!--          span green/violet-->
+            <!--        li(data-skin="orange").clr-picker.orange-->
+            <!--          span orange/red-->
+            <!--        li(data-skin="crimson").clr-picker.crimson-->
+            <!--          span crimson/cyan-->
+            <!--        li(data-skin="yellow").clr-picker.yellow-->
+            <!--          span yellow/pink-->
+            <!--        li(data-skin="brown").clr-picker.brown-->
+            <!--          span brown/gray-->
             <div class="col-topbar__wrap col-topbar__last">
               <ul class="b-topbar__links">
                 <li><span class="b-topbar__line">+38 (050) 588-46-37</span></li>
@@ -56,10 +95,12 @@
           <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="images/logo-w.png" alt=""></a>
             <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
-          <ul class="nav-commerce navbar-right">
-            <li><a href="#"><span class="nav-commerce--line fa fa-search"></span></a></li>
-            <li><a href="#"><span class="fa fa-shopping-cart"></span></a></li>
-          </ul>
+          <div class="nav-commerce navbar-right">
+            <div class="nav-commerce__search">
+              <input type="search" class="form-search">
+            </div>
+            <div class="nav-commerce__cart"><a href="#" class="cart-link"><i class="fa fa-shopping-cart nav-commerce--line"></i></a></div>
+          </div>
         </div>
         <div class="container-fluid line commerceNavtop">
           <nav id="navbarCollapse" class="navbar-collapse navbar-collapse__m2">

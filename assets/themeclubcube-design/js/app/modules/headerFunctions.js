@@ -114,7 +114,6 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
             } else {
                 _globals.header.removeClass('header__sticky');
                 _globals.topbar.slideDown("normal");
-                _globals.navComm.css({"display" : "block"});
                 _globals.navbarDropMenu.removeClass('dropdown-menu__right');
                 _globals.navHeadwrap.removeClass('navbar-brand--hide');
                 _globals.commerceNavtop.css({
