@@ -45,9 +45,31 @@
   float: left
 
 .nav-commerce
-  display: flex
+  display: none
   margin-top: 25px
   color: #fff
+
+.b-topbar__menu
+  display: none
+  padding: 0
+
+.b-topbar__menu > li
+  text-transform: uppercase
+  float: left
+  color: #fff
+
+.b-topbar__menu li a
+  padding-right: 35px
+  border: none
+  font-size: 14px
+  color: #fff
+
+@media (min-width: $screen-lg-min)
+  .nav-commerce
+    display: flex
+
+  .b-topbar__menu
+    display: block
 
 .navbar__tint--disp
   display: none
@@ -72,6 +94,8 @@
 .form-search
   background: url(../images/search.png) no-repeat 9px center
   border: 0
+  margin-left: 15px
+  margin-top: -1px
   padding: 3px 10px 3px 20px
   width: 0px
   cursor: pointer
@@ -100,6 +124,13 @@
   color: #fff
   text-decoration: none
 
+html .header__sticky .search-wrap
+  height: 0
+  z-index: 9
+
+.header__sticky .nav-commerce
+  margin-top: 11px
+
 @media (max-width: $screen-lg)
   .navbar-left
     float: none!important
@@ -111,7 +142,7 @@
 
   .navbar-collapse__m2
     margin-top: 40px
-    top: 119px
+    top: 118px
 
   .navbar-collapse--down
     top: 50px

@@ -96,7 +96,6 @@ appMakeBeCool.gateway.addClass('HeaderFunctions', function (properties, $, $wind
             if (offsetop > _globals.header.height()) {
                 _globals.header.addClass('header__sticky');
                 _globals.topbar.slideUp("normal");
-                _globals.navComm.css({"display" : "none"});
                 _globals.navbarDropMenu.addClass('dropdown-menu__right');
                 _globals.navHeadwrap.addClass('navbar-brand--hide');
                 _globals.commerceNavtop.css({

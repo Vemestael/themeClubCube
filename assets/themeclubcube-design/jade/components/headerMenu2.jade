@@ -2,51 +2,51 @@ header#header.header
   .b-topbar
     .container-fluid.line
       .col-topbar__wrap.col-topbar__first
-        ul.b-topbar__links
-          li: a(href="#") FAQ
-          li: a(href="#") Gallery
-          li.navbar__tint
-            a(href="#")
-              span.fa.fa-tint
-      //nav#navbarCollapse.navbar-collapse
-      //  ul#navigation.navbar-list.dl-menu
-      //    li
-      //      a(href="#") FAQ
-      //    li
-      //      a(href="#") Gallery
-      //    li.navbar__tint
-      //      a(href="#")
-      //        span.fa.fa-tint
-      //        i.fa.fa-angle-right
-      //      ul.navbar-dropdown__menu.dl-submenu.navbar-open
-      //        li#fullWide.navbar__tint-wide.active.wide
-      //          span wide
-      //        li.navbar-dropdown__submenu.navbar__tint-wide
-      //          span boxed
-      //            i.fa.fa-angle-right
-      //          ul.navbar-list__inner.dl-submenu
-      //            li(data-ptrn="circle").pattern.circle
-      //              span Circle pattern
-      //            li(data-ptrn="triangle").pattern.triangle
-      //              span Triangle pattern
-      //            li(data-ptrn="solid").pattern.solid
-      //              span Solid Color
-      //            li(data-ptrn="waves").pattern.waves
-      //              span Waves pattern
-      //
-      //        li.navbar__hr-wrap
-      //          .hr-line
-      //          .hr-line
-      //        li(data-skin="green").clr-picker.green
-      //          span green/violet
-      //        li(data-skin="orange").clr-picker.orange
-      //          span orange/red
-      //        li(data-skin="crimson").clr-picker.crimson
-      //          span crimson/cyan
-      //        li(data-skin="yellow").clr-picker.yellow
-      //          span yellow/pink
-      //        li(data-skin="brown").clr-picker.brown
-      //          span brown/gray
+        //ul.b-topbar__menu
+        //  li: a(href="#") FAQ
+        //  li: a(href="#") Gallery
+        //  li.navbar__tint
+        //    a(href="#")
+        //      span.fa.fa-tint
+        nav#navbarCollapse.navbar-collapse.b-topbar__menu
+          ul#navigation.navbar-list.dl-menu
+            li
+              a(href="#") FAQ
+            li
+              a(href="#") Gallery
+            li.navbar__tint
+              a(href="#")
+                span.fa.fa-tint
+                i.fa.fa-angle-right
+              ul.navbar-dropdown__menu.dl-submenu.navbar-open
+                li#fullWide.navbar__tint-wide.active.wide
+                  span wide
+                li.navbar-dropdown__submenu.navbar__tint-wide
+                  span boxed
+                    i.fa.fa-angle-right
+                  ul.navbar-list__inner.dl-submenu
+                    li(data-ptrn="circle").pattern.circle
+                      span Circle pattern
+                    li(data-ptrn="triangle").pattern.triangle
+                      span Triangle pattern
+                    li(data-ptrn="solid").pattern.solid
+                      span Solid Color
+                    li(data-ptrn="waves").pattern.waves
+                      span Waves pattern
+
+                li.navbar__hr-wrap
+                  .hr-line
+                  .hr-line
+                li(data-skin="green").clr-picker.green
+                  span green/violet
+                li(data-skin="orange").clr-picker.orange
+                  span orange/red
+                li(data-skin="crimson").clr-picker.crimson
+                  span crimson/cyan
+                li(data-skin="yellow").clr-picker.yellow
+                  span yellow/pink
+                li(data-skin="brown").clr-picker.brown
+                  span brown/gray
 
       .col-topbar__wrap.col-topbar__last
         ul.b-topbar__links
@@ -54,7 +54,7 @@ header#header.header
             span.b-topbar__line +38 (050) 588-46-37
           li
             span hello@cubeclub.com
-  .container-fluid.line
+  .container-fluid.line.search-wrap
     .navbar-header
       a.navbar-brand(href="index.html")
         img(src="images/logo-w.png", alt="")
