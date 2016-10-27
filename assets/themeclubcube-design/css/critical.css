@@ -1620,6 +1620,15 @@ iframe {
 .wrap {
   padding-top: 50px; }
 
+body.wrap__first-menu {
+  padding-top: 128px; }
+
+body.wrap__second-menu {
+  padding-top: 89px; }
+
+body.wrap__third-menu {
+  padding-top: 115px; }
+
 .b-content {
   padding-top: 50px;
   padding-bottom: 60px; }
@@ -1670,6 +1679,10 @@ iframe {
     padding-left: 31px; }
   .wrap {
     padding-top: 80px; }
+  body.wrap__first-menu {
+    padding-top: 119px; }
+  body.wrap__second-menu {
+    padding-top: 119px; }
   .line {
     padding-right: 40px;
     padding-left: 40px; } }
@@ -3217,9 +3230,6 @@ span.intro {
   width: 100%;
   top: 50px; }
 
-.navbar-collapse__m2 .navbar__tint {
-  display: block !important; }
-
 .form-search {
   background: url(../images/search.png) no-repeat 9px center;
   border: 0;
@@ -3397,7 +3407,8 @@ html .header__sticky .search-wrap {
 .topbar-contact-dsp {
   display: none;
   font-size: 12px;
-  line-height: 50px; }
+  line-height: 50px;
+  float: right; }
 
 .b-navbar .navbar-toogle,
 .b-navbar .navbar-collapse.active {
@@ -5454,6 +5465,16 @@ figure.content-figure > img {
     border: 1px solid #cbcbcb; }
   .middle-paging li.off:hover, .middle-paging li.off span:hover {
     cursor: default; } }
+
+li.off .page-numbers.dots {
+  background: #fff;
+  color: #000;
+  border: none; }
+
+li.off .page-numbers.dots:hover {
+  background: transparent;
+  color: #000;
+  border: none; }
 
 .b-msg {
   position: relative;
