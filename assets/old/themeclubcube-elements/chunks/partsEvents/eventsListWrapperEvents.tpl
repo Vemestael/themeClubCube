@@ -1,1 +1,0 @@
-[[+output:default=`<p class="hdr">[[%lf_events_empty]]</p>`]]
