@@ -7,8 +7,7 @@
  * 4. Mixins #mixins
  * 5. Normalize #normalize
  * 6. Grid-mixins #grid-mixins
- * 7. Responsive-utilites #responsive-utilites
- * 8. Grid #grid
+
  */
 
 
@@ -27,14 +26,17 @@
 //Colors
 @import "helpers/colors"
 
-//Grid mixins
-@import "layout/grid-mixins"
+@import "layout/variables";
 
-//Grid
-@import "layout/grid"
+@import "layout/breakpoints";
 
-//Utilites for grid
-@import "layout/responsive-utilites"
+@import "layout/grid-framework";
+
+@import "layout/grid";
+
+@import "base/grid";
+
+
 
 //Vendors
 @import "vendors/slick/slick"
