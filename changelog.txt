@@ -1,0 +1,10 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+## [1.2.0] - 2020-07-16
+### Changed
+- Updated gulp to version 4 and update dependent packages to the latest version
+
+## [1.1.0] - 2020-07-15
+### Changed
+- Replaced the bootstrap 3 grid with bootstrap 4 grid
