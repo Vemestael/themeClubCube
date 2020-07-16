@@ -41,17 +41,7 @@ gulp.task('sass', function (callback) {
       .pipe(sass())
       .pipe(debug({title: 'sass:'}))
       .pipe(autoprefixer({
-        browsers: [
-          'Chrome >= 35',
-          'Firefox >= 31',
-          'Edge >= 12',
-          'Explorer >= 9',
-          'iOS >= 8',
-          'Safari >= 8',
-          'Android 2.3',
-          'Android >= 4',
-          'Opera >= 12'
-        ],
+        overrideBrowserslist: ['last 5 versions'],
         cascade: true
       }))
       .pipe(debug({title: 'prefx:'}))
@@ -80,17 +70,7 @@ gulp.task('skins', function (callback) {
       .pipe(sass())
       .pipe(debug({title: 'sass:'}))
       .pipe(autoprefixer({
-        browsers: [
-          'Chrome >= 35',
-          'Firefox >= 31',
-          'Edge >= 12',
-          'Explorer >= 9',
-          'iOS >= 8',
-          'Safari >= 8',
-          'Android 2.3',
-          'Android >= 4',
-          'Opera >= 12'
-        ],
+        overrideBrowserslist: ['last 5 versions'],
         cascade: true
       }))
       .pipe(debug({title: 'prefx:'}))
@@ -124,13 +104,13 @@ gulp.task('minImg', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('css/sass/**/*.*', ['sass']);
-  gulp.watch('css/sass/skins/*.*', ['skins']);
-  gulp.watch('jade/**/*.*', ['templates']);
+  gulp.watch('css/sass/**/*.*', gulp.parallel('sass'));
+  gulp.watch('css/sass/skins/*.*', gulp.parallel('skins'));
+  gulp.watch('jade/**/*.*', gulp.parallel('templates'));
 });
 
 //gulp.task('default', ['serve', 'templates', 'sass', 'watch']);
-gulp.task('default', ['templates', 'sass', 'skins', 'watch']);
+gulp.task('default', gulp.parallel('templates', 'sass', 'skins', 'watch'));
 
 /**
  * var notify = require ('gulp-notify');
