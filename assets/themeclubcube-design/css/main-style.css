@@ -1887,7 +1887,7 @@
   padding: 0 15px;
   overflow-y: auto; }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .header--toggled .navbar-toogle {
     width: 140px;
     margin-right: -40px;
@@ -1914,7 +1914,7 @@
     margin-left: -40px;
     padding: 0 40px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .header--toggled,
   .header > .line {
     height: auto; }
