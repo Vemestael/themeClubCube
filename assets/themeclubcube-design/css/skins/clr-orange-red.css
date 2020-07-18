@@ -191,7 +191,6 @@ blockquote::before {
   color: #a82743; }
 
 .c-box__inner .b-box__grdnt-a::after {
-  background-image: -webkit-linear-gradient(305deg, #a82743 0%, rgba(225, 94, 50, 0.45) 100%);
   background-image: -o-linear-gradient(305deg, #a82743 0%, rgba(225, 94, 50, 0.45) 100%);
   background-image: linear-gradient(145deg, #a82743 0%, rgba(225, 94, 50, 0.45) 100%);
   background-repeat: repeat-x;
@@ -211,13 +210,13 @@ blockquote::before {
   color: #a82743;
   border-color: #a82743; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .main-slide__item-inr {
     background-color: #a82743; }
   .main-slide__item-a .main-slide__item-inr {
     background-color: rgba(168, 39, 67, 0.7); } }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .btn-pointer-b__wrap:hover {
     background-color: #e15e32; }
   .btn-pointer-b__wrap:hover .left path,
@@ -268,13 +267,13 @@ blockquote::before {
     -o-transition: all .3s ease;
     transition: all .3s ease; } }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .paging .middle-paging li a, .middle-paging li span {
     color: #e15e32; }
   .paging .middle-paging li a:hover {
     color: #a82743;
     border: 1px solid #a82743; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .b-navbar .navbar-list__inner {
     background: #e15e32; } }

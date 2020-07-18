@@ -19,6 +19,7 @@
   float: none
   overflow: hidden
   text-align: center
+  margin: auto
 
 .b-tabs__nav-tabs li
   position: relative
@@ -65,6 +66,9 @@
   overflow: hidden
 
 .b-tabs__pane.active
+  display: flex
+
+.b-tabs-btn .b-tabs__pane.active,
   display: block
 
 .b-tabs__pane-item:nth-of-type(2n+1)
@@ -133,10 +137,10 @@
 .b-tabs__nav-btn
   margin-bottom: 80px
 
-@media (min-width: $screen-sm)
+@media (min-width: $screen-md)
   .b-tabs__content
     margin-bottom: 112px
 
-@media (min-width: $screen-lg)
+@media (min-width: $screen-xl)
   .b-tabs__content
     margin-bottom: 0

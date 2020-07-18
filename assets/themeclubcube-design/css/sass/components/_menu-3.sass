@@ -29,7 +29,7 @@
   right: 100%
   left: auto
 
-@media (min-width: $screen-lg)
+@media (min-width: $screen-xl)
   .navbar-header__ib
     display: inline-block!important
     float: initial
@@ -50,7 +50,7 @@
   .navbar-brand--stl
     margin-top: 20px
 
-@media (max-width: $screen-lg)
+@media (max-width: $screen-xl)
   .navbar-header__wrap
     display: inline-block
 
@@ -69,7 +69,7 @@
   margin-top: 10px
   margin-left: 55px
 
-@media (min-width: $screen-sm)
+@media (min-width: $screen-md)
   .navbar-brand--stl
     height: 56px
     margin-top: 10px
@@ -84,6 +84,7 @@
 
 .navbar-flex
   display: flex
+  justify-content: space-between;
 
 .navbar-flex__order-one
   order: 1
@@ -94,7 +95,7 @@
 .navbar-flex__order-three
   order: 3
 
-@media (max-width: 1279px)
+@media (max-width: $screen-xl)
   .navbar-flex
     display: inherit
 

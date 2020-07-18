@@ -29,7 +29,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
-       -o-transform: translate(0, 0);
           transform: translate(0, 0); }
 
 /* makes the font 33% larger relative to the icon container */
@@ -89,13 +88,11 @@
 
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
-  -o-animation: fa-spin 2s infinite linear;
-     animation: fa-spin 2s infinite linear; }
+  animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
-  -o-animation: fa-spin 1s infinite steps(8);
-     animation: fa-spin 1s infinite steps(8); }
+  animation: fa-spin 1s infinite steps(8); }
 
 @-webkit-keyframes fa-spin {
   0% {
@@ -105,60 +102,43 @@
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
-@-o-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-       transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-       transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-       transform: rotate(0deg); }
+    transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-       transform: rotate(359deg); } }
+    transform: rotate(359deg); } }
 
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-     transform: rotate(90deg); }
+  transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-     transform: rotate(180deg); }
+  transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-     transform: rotate(270deg); }
+  transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-     transform: scale(-1, 1); }
+  transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
-     transform: scale(1, -1); }
+  transform: scale(1, -1); }
 
 :root .fa-rotate-90,
 :root .fa-rotate-180,
@@ -1848,13 +1828,10 @@
   top: 22px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-animation-name: topIconBar;
-       -o-animation-name: topIconBar;
           animation-name: topIconBar;
   -webkit-animation-duration: 0.6s;
-       -o-animation-duration: 0.6s;
           animation-duration: 0.6s; }
 
 .header--toggled .navbar-toogle .icon-bar:nth-child(2) {
@@ -1865,13 +1842,10 @@
   top: 22px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-animation-name: bottomIconBar;
-       -o-animation-name: bottomIconBar;
           animation-name: bottomIconBar;
   -webkit-animation-duration: 0.6s;
-       -o-animation-duration: 0.6s;
           animation-duration: 0.6s; }
 
 @-webkit-keyframes topIconBar {
@@ -1882,22 +1856,12 @@
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); } }
 
-@-o-keyframes topIconBar {
-  from {
-    -o-transform: rotate(0deg);
-       transform: rotate(0deg); }
-  to {
-    -o-transform: rotate(45deg);
-       transform: rotate(45deg); } }
-
 @keyframes topIconBar {
   from {
     -webkit-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
             transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
             transform: rotate(45deg); } }
 
 @-webkit-keyframes bottomIconBar {
@@ -1908,22 +1872,12 @@
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); } }
 
-@-o-keyframes bottomIconBar {
-  from {
-    -o-transform: rotate(0deg);
-       transform: rotate(0deg); }
-  to {
-    -o-transform: rotate(-45deg);
-       transform: rotate(-45deg); } }
-
 @keyframes bottomIconBar {
   from {
     -webkit-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
             transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
             transform: rotate(-45deg); } }
 
 .navbar-collapse.active {
@@ -1933,7 +1887,7 @@
   padding: 0 15px;
   overflow-y: auto; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .header--toggled .navbar-toogle {
     width: 140px;
     margin-right: -40px;
@@ -1949,12 +1903,10 @@
   .header--toggled .navbar-toogle .icon-bar:nth-child(1) {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
             transform: rotate(45deg); }
   .header--toggled .navbar-toogle .icon-bar:nth-child(3) {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
             transform: rotate(-45deg); }
   .navbar-collapse.active {
     max-height: calc(100% - 80px);
@@ -1962,7 +1914,7 @@
     margin-left: -40px;
     padding: 0 40px; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .header--toggled,
   .header > .line {
     height: auto; }
