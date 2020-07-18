@@ -1456,7 +1456,11 @@ body .wrap__third-menu {
     padding-top: 119px; }
   .line {
     padding-right: 40px;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  .line::after {
+    content: "";
+    display: block;
+    clear: both; } }
 
 @media (min-width: 992px) {
   .b-main.b-main--center-pg {
@@ -2639,7 +2643,7 @@ span.intro {
   font-size: 14px;
   font-weight: 100; }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .header__sticky .navbar-header.intro .navbar-brand {
     margin-top: 0;
     height: initial;
@@ -2830,7 +2834,7 @@ span.intro {
   .navbar-dropdown__submenu.navbar__tint-wide:hover::before {
     left: 15px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .header .line {
     width: 1340px;
     margin-right: auto;
@@ -3102,7 +3106,7 @@ html .header__sticky .search-wrap {
     margin-top: 10px;
     margin-left: 75px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .navbar-brand--stl {
     height: 79px;
     margin-top: 20px;
@@ -3112,7 +3116,10 @@ html .header__sticky .search-wrap {
 .navbar-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .navbar-flex__order-one {
   -webkit-box-ordinal-group: 2;
@@ -3129,7 +3136,7 @@ html .header__sticky .search-wrap {
       -ms-flex-order: 3;
           order: 3; }
 
-@media (max-width: 1279px) {
+@media (max-width: 1200px) {
   .navbar-flex {
     display: inherit; }
   .nav-bar__r {
@@ -3891,6 +3898,9 @@ html .header__sticky .search-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.b-tabs-btn .b-tabs__pane.active {
+  display: block; }
 
 .b-tabs__pane-item:nth-of-type(2n+1) {
   clear: both; }
@@ -5236,17 +5246,18 @@ li.off .page-numbers.dots:hover {
   transition: all 0.2s ease-out; }
 
 .b-box__btn-wrap {
+  width: 100%;
   text-align: center;
   clear: both; }
 
 .b-box__bg-a {
   background: #202020; }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .b-box-wrap .b-box {
     width: 47%; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .b-box-wrap .b-box {
     width: 31.5%; } }
 
