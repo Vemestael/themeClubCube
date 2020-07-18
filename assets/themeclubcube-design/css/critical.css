@@ -1454,9 +1454,6 @@ body .wrap__third-menu {
     padding-top: 119px; }
   body .wrap__second-menu {
     padding-top: 119px; }
-  .line {
-    padding-right: 40px;
-    padding-left: 40px; }
   .line::after {
     content: "";
     display: block;
@@ -3106,7 +3103,7 @@ html .header__sticky .search-wrap {
     margin-top: 10px;
     margin-left: 75px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar-brand--stl {
     height: 79px;
     margin-top: 20px;
