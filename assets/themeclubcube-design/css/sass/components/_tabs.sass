@@ -31,7 +31,7 @@
   &:last-child
     margin-left: -5px
 
-.b-tabs__nav-tabs li.active
+.b-tabs__nav-tabs a.active
   background-color: $tab-bg
 
 .b-tabs__nav-tabs li a
@@ -43,15 +43,10 @@
   & svg
     @include absolute-center-x-y()
 
-.b-tabs__nav-tabs li.active:nth-of-type(1) a path,
-.b-tabs__nav-tabs li.active:nth-of-type(2) a path
+.b-tabs__nav-tabs a.active svg path
   fill: #fff
-
-.b-tabs__nav-tabs li.active a::after
-  background-color: #fff
-
+  
 .b-tabs__nav-tabs li:nth-of-type(1) a path
-  fill: $black-c
   transition: all 0.2s ease
 
 .b-tabs__nav-tabs li:nth-of-type(2) a path
