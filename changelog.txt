@@ -1,20 +1,31 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [1.4.0] - 2020-07-18
+## [1.5.0] - 2020-07-20
 ### Changed
-- Fixed footers
-- Fixed headers
+- Update jQuery to version 3.5.1.
+- Update jQuery plugins to the latest version.
+
+### Fixed
+- Html layouts.
+- Bugs.
+
+## [1.4.0] - 2020-07-18
+### Fixed
+- Headers.
+- Footers.
 
 ## [1.3.0] - 2020-07-18
 ### Changed
-- Fixed html layouts for bootstrap 4 grid 
-- Updated slick.js to the last version 
+- Slick.js to the last version.
 
-## [1.2.0] - 2020-07-16
+### Fixed
+- Html layouts for bootstrap 4 grid.
+
+## [1.2.0] - 2020-07-16.
 ### Changed
-- Updated gulp to version 4 and update dependent packages to the latest version
+- Gulp to version 4 and update dependent packages to the latest version.
 
 ## [1.1.0] - 2020-07-15
 ### Changed
-- Replaced the bootstrap 3 grid with bootstrap 4 grid
+- Replace bootstrap 3 grid with bootstrap 4 grid.

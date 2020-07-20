@@ -3848,7 +3848,7 @@ html .header__sticky .search-wrap {
   .b-tabs__nav-tabs li:last-child {
     margin-left: -5px; }
 
-.b-tabs__nav-tabs li.active {
+.b-tabs__nav-tabs a.active {
   background-color: #202020; }
 
 .b-tabs__nav-tabs li a {
@@ -3865,15 +3865,10 @@ html .header__sticky .search-wrap {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
-.b-tabs__nav-tabs li.active:nth-of-type(1) a path,
-.b-tabs__nav-tabs li.active:nth-of-type(2) a path {
+.b-tabs__nav-tabs a.active svg path {
   fill: #fff; }
 
-.b-tabs__nav-tabs li.active a::after {
-  background-color: #fff; }
-
 .b-tabs__nav-tabs li:nth-of-type(1) a path {
-  fill: #202020;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -4254,6 +4249,9 @@ html .header__sticky .search-wrap {
 
 .b-gallery__popup {
   overflow: hidden; }
+
+.b-gallery__popup.row {
+  margin: 0; }
 
 .b-gallery__popup > div {
   position: relative;
