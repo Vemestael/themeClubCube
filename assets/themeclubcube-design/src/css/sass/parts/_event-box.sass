@@ -1,0 +1,361 @@
+//
+// Event box
+// --------------------------------------------------
+.grid-sizer
+  width: 100%
+
+.c-box
+  position: relative
+  margin-bottom: 30px
+
+.c-box::before
+  content: ''
+  position: absolute
+  left: 0
+  right: 0
+  top: -5px
+  height: 10px
+  background: url("#{$images-folder}images/triangle.svg") repeat-x
+  background-position: center
+  z-index: 1
+
+.c-box__inner
+  position: relative
+  min-height: 290px
+  padding: 23px
+  cursor: pointer
+
+.c-box__cont
+  position: relative
+  width: 65%
+  z-index: 1
+
+.c-box__ttl-s2,
+.c-box__ttl-s3,
+.c-box__ttl-s6
+  margin: 10px 0 14px
+  font-size: 24px
+  font-family: $second-bold-font
+  text-transform: uppercase
+  color: #fff
+
+.c-box__ttl-s2
+  margin: 0 0 14px
+
+.c-box__ttl-s6
+  margin: 0
+  font-size: 18px
+  line-height: 24px
+
+.c-box__inner .b-box__img-wrap.bg-image
+  opacity: 1
+
+.c-box__inner .b-box__grdnt-a::after
+  @include absolute-center()
+  content: ''
+  opacity: 1
+
+.c-box__inner .b-box__grdnt-b::after
+  @include absolute-center()
+  @include gradient-directional($start-color: #000, $end-color: rgba(0, 0, 0, 0), $deg: 145deg)
+  content: ''
+  opacity: 1
+  transition: all 0.2s ease
+
+.c-box__inner .bg-image::before
+  @include absolute-center()
+  content: ''
+  background-color: rgba(32, 32, 32, 0.33)
+
+.c-box__txt
+  margin: 0
+  padding-top: 30px
+  font-size: 18px
+  font-family: $base-bold-it-font
+  color: #fff !important
+  line-height: 1
+  clear: left
+
+.c-box__date-item
+  position: absolute
+  top: 26px
+  right: -2px
+
+.c-box__date
+  color: #fff
+  border-color: #fff
+
+.c-box__date .date__ad
+  color: #000
+  background-color: #fff
+
+.c-box__link-wrap
+  position: absolute
+  bottom: 20px
+  right: -2px
+  z-index: 2
+
+.c-box__views
+  position: absolute
+  bottom: 15px
+  padding: 0
+  font-family: $second-bold-font
+  color: #fff
+
+.c-box__views > li
+  display: inline-block
+  margin-right: 10px
+
+.c-box__view::before,
+.c-box__video::before
+  margin-right: 10px
+  font-family: $fa
+
+.c-box__view::before
+  content: '\f030'
+
+.c-box__video::before
+  content: '\f03d'
+
+.c-box.c-box--lg .c-box__inner
+  min-height: 190px
+  padding: 20px
+
+.c-box.c-box--lg .c-box__cont
+  width: calc(100% - 105px)
+  max-width: 270px
+  float: left
+
+.c-box__date-item.c-box__date-item--float
+  position: relative
+  top: auto
+  right: auto
+  float: right
+
+.c-box.c-box--lg .hr-pattern
+  display: none
+
+.c-box__txt.c-box__txt--display
+  display: none
+
+.c-box__link-wrap.c-box__link-wrap--indent
+  bottom: 12px
+  right: 20px
+  width: 43%
+  padding-left: 5px
+  overflow: hidden
+
+.c-box.c-box--sm
+  position: relative
+  &::before
+    display: none
+
+.c-box.c-box--sm .c-box__cont
+  width: calc(100% - 85px)
+  max-width: 270px
+  float: left
+
+.c-box.c-box--sm .c-box__inner
+  position: relative
+  min-height: 175px
+  margin-bottom: 20px
+  padding: 20px
+  overflow: hidden
+  &::before,
+  &::after
+    display: none
+
+.c-box.c-box--sm .c-box__views
+  bottom: 10px
+
+.c-box__date--sm
+  position: relative
+
+.c-box__date--sm .date__ad
+  position: absolute
+  top: 33px
+  color: white
+  background: transparent
+
+.c-box__link
+  font-size: 16px
+  font-family: $second-bold-font
+  color: $black-c
+  text-transform: uppercase
+  border-bottom: none
+  word-break: normal
+
+.c-box__inner:hover .b-box__grdnt-a::after,
+.c-box__inner:hover .b-box__grdnt-b::after
+  opacity: 0
+  transition: all 0.2s ease
+
+.c-box__link:hover,
+.c-box__inner:hover + h6 .c-box__link
+  transition: all 0.2s ease
+
+.c-box-v::before,
+.c-box-v__sm::before
+  right: auto
+  top: 0
+  left: -5px
+  width: 10px
+  height: 100%
+  background: url("#{$images-folder}images/romb-v.svg") repeat-y
+
+.c-box-v__sm:last-child
+  margin-bottom: 0
+
+.c-box-v .c-box__inner,
+.c-box-v__sm .c-box__inner
+  min-height: 200px !important
+  padding: 20px !important
+  &::after
+    top: auto
+    right: auto
+    transform: rotate(270deg)
+    bottom: 5px
+    left: -15px
+
+.c-box-v .c-box__cont,
+.c-box-v__sm .c-box__cont
+  position: absolute
+  right: 20px
+  left: 20px
+  bottom: 15px
+  width: auto
+
+.c-box-v .c-box__cont .c-box__ttl-s3,
+.c-box-v__sm .c-box__cont .c-box__ttl-s3
+  margin: 0
+
+.c-box-v .c-box__date-item,
+.c-box-v__sm .c-box__date-item
+  position: absolute
+  top: 20px
+  right: auto
+  z-index: 1
+
+.c-box-v .c-box__link-wrap,
+.c-box-v__sm .c-box__link-wrap
+  top: 20px
+
+@media (min-width: $screen-xm)
+  .grid-sizer
+    width: 50%
+
+  .c-box .c-box__inner
+    padding: 35px 25px
+
+  .c-box__txt.c-box__txt--display
+    display: block
+
+  .c-box__link-wrap.c-box__link-wrap--indent
+    width: auto
+    bottom: 20px
+    right: 25px
+    overflow: visible
+
+  .btn-pointer.btn-pointer--size
+    padding: 0 20px
+    font-size: 16px
+    line-height: 50px
+
+  .c-box__views
+    bottom: 20px
+
+  .c-box.c-box--lg .c-box__inner
+    min-height: 446px
+    max-width: 100%
+
+  .c-box.c-box--lg .c-box__cont
+    width: 100%
+    max-width: 280px
+
+  .c-box.c-box--lg .hr-pattern
+    display: block
+
+  .c-box.c-box--lg .c-box__view::before,
+  .c-box.c-box--lg .c-box__video::before
+    font-size: 24px
+
+@media (min-width: $screen-sm)
+  .c-box .c-box__inner
+    min-height: 330px
+  //max-width: 330px
+
+  .c-box__ttl-s2
+    margin-top: 14px
+    font-size: 30px
+
+  .c-box__ttl-s3
+    margin-top: 0
+
+  .c-box__link-wrap-a
+    padding-right: 70px
+
+  .c-box.c-box--lg::before
+    right: 10px
+
+  .c-box__date.c-box__date--lg
+    padding: 8px 20px 8px 10px
+
+  .c-box__date.c-box__date--lg .date__dt
+    font-size: 48px
+
+  .c-box__date.c-box__date--lg .date__rh-m,
+  .c-box__date.c-box__date--lg .date__rh-d
+    font-size: 18px
+
+  .c-box__date.c-box__date--lg .date__rh-m
+    margin-bottom: 2px
+
+  .c-box__views > li
+    margin-right: 22px
+
+  .c-box-v .c-box__cont
+    position: relative
+    top: 0
+    right: 0
+    left: 0
+    width: 220px
+    margin: auto
+
+  .c-box-v .c-box__cont::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -20px
+    bottom: 0
+    width: 6px
+    background: url("#{$images-folder}images/themeclub-waveVertical.svg") repeat-y
+
+  .c-box-v .c-box__txt
+    padding: 20px 0 30px
+
+@media (min-width: $screen-md)
+  .grid-sizer
+    width: 33.333%
+
+  .c-box.c-box--lg .c-box__cont
+    max-width: 250px
+
+@media (min-width: $screen-lg)
+  .c-box .c-box__inner,
+  .c-box.c-box--lg .c-box__inner
+    min-height: 360px
+
+  //.c-box .c-box__inner
+  //  max-width: 360px
+
+  .c-box.c-box--lg .c-box__inner
+    max-width: 550px
+
+  .c-box.c-box--sm .c-box__inner
+    max-width: 260px
+
+  .grid-sizer
+    width: 25%
+
+  .c-box.c-box--lg .c-box__cont
+    max-width: 280px

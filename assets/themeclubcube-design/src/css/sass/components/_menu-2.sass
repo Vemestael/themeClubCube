@@ -1,0 +1,168 @@
+.b-topbar__links li a
+  padding-right: 35px
+  font-size: 14px
+  color: $white-c
+
+.navbar-left
+  float: left
+  margin-left: -15px
+
+.navbar-right
+  float: right
+//
+//.navbar-right > li
+//  float: left
+//
+//.navbar-right > li > a
+//  color: #fff
+//  border: none
+
+//.nav-commerce--line
+//  border-left: 1px solid #fff
+//  padding-left: 25px
+//  margin-left: 25px
+
+.col-topbar__first .navbar-list > li > a
+  padding: 0px 15px
+  margin: 0
+
+.col-topbar__first .navbar-list > li.active .navbar-dropdown__menu
+  z-index: 4
+
+.col-topbar__first .navbar-dropdown__submenu span,
+.col-topbar__first .navbar-dropdown__menu span
+  padding: 7px 0
+
+.navbar-collapse__m2 .navbar-list > li > a
+  padding: 18px 0
+  margin-top: 0
+
+.header__sticky .navbar-collapse__m2 .navbar-list > li > a
+  padding: 17px
+  margin: 0
+
+.col-topbar__last
+  float: left
+
+.nav-commerce
+  display: none
+  margin-top: 35px
+  height: 20px
+  color: #fff
+
+.b-topbar__menu
+  display: none
+  padding: 0
+
+.b-topbar__menu > li
+  text-transform: uppercase
+  float: left
+  color: #fff
+
+.b-topbar__menu li a
+  padding-right: 35px
+  border: none
+  font-size: 14px
+  color: #fff
+
+@media (min-width: $screen-xl-min)
+  .nav-commerce
+    display: flex
+
+  .b-topbar__menu
+    display: block
+
+.navbar__tint--disp
+  display: none
+
+.navbar-left
+  float: left
+  margin-left: -15px
+
+.navbar-collapse__m2
+  position: absolute
+  top: 89px
+  width: 100%
+
+.navbar-collapse--down
+  position: absolute
+  width: 100%
+  top: 50px
+
+//.navbar-collapse__m2 .navbar__tint
+//  display: block!important
+
+.form-search
+  background: url(../images/search.png) no-repeat 9px center
+  border: 0
+  margin-left: 15px
+  margin-top: -1px
+  padding: 3px 10px 3px 20px
+  width: 0px
+  cursor: pointer
+  border-radius: 10em
+  -webkit-transition: all .5s
+  -o-transition: all .5s
+  transition: all .5s
+
+.form-search:focus
+  background: url(../images/search-black.png) no-repeat 9px center
+  width: 130px
+  color: #000
+  padding: 3px 10px 3px 32px
+  background-color: #fff
+  border-color: #6dcff6
+  cursor: text
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5)
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5)
+  box-shadow: 0 0 5px rgba(109,207,246,.5)
+
+//.nav-commerce__cart .fa-shopping-cart
+//  vertical-align: sub
+
+.nav-commerce__cart a
+  border: 0
+  color: #fff
+  text-decoration: none
+
+html .header__sticky .search-wrap
+  height: 0
+  z-index: 9
+
+.header__sticky .nav-commerce
+  margin-top: 15px
+
+.nav-commerce__search
+  margin-top: -3px
+
+.nav-commerce__cart
+  border-left: 1px solid #fff
+  padding-left: 25px
+  margin-left: 25px
+
+@media (max-width: $screen-xl)
+  .navbar-left
+    float: none!important
+    margin-left: 0!important
+
+@media (min-width: $screen-md)
+
+  .navbar-collapse__m2
+    margin-top: 40px
+    top: 118px
+
+  .navbar-collapse--down
+    top: 50px
+
+@media (min-width: $screen-xl)
+  .navbar-collapse__m2
+    position: inherit
+    margin-top: 0
+    top: 0
+
+  .navbar-collapse__m2 .navbar-list > li > a
+    padding: 25px 17px
+    margin-top: 20px
+
+  .col-topbar__last
+    float: right

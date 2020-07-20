@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+
+## [1.6.0] - 2020-07-20
+### Changed
+- structure of files
+### Added
+- minimized images and filies
+
 ## [1.5.0] - 2020-07-20
 ### Changed
 - Update jQuery to version 3.5.1.

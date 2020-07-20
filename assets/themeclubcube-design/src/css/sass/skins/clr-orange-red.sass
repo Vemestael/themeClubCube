@@ -1,0 +1,298 @@
+//
+// Skin orange and red colors
+// --------------------------------------------------
+@import "../helpers/mixins"
+@import "../helpers/variables"
+
+$black-c:   #202020
+
+$active-c: #e15e32
+$active-sc-c: #a82743
+$form-btn-c: #e15e32
+$b-box-c-a: $active-sc-c
+$b-box-c-b: $active-sc-c
+$screen-sm: 768px !default
+$screen-lg: 1280px !default
+
+$active-c-45: rgba(225, 94, 50, 0.45)
+$active-sc-c-33: rgba(168, 39, 67, 0.33)
+$active-sc-c-66: rgba(168, 39, 67, 0.66)
+$active-sc-c-70: rgba(168, 39, 67, 0.7)
+
+*::selection
+  background-color: $active-c
+
+a
+  color: $active-c
+  border-bottom: 1px solid $active-c
+
+blockquote::before
+  background-color: $active-c
+
+.btn-label.colored .btn-pointer
+  background: $active-c !important
+
+.btn-label.colored .btn-pointer__left path
+  fill: $active-c !important
+
+.b-footnote__mark
+  color: $active-c
+
+.b-accordion__panel-ttl .collapsed
+  color: $active-c
+
+.main-slide .btn-pointer__wrap:hover .btn-pointer
+  color: #fff
+  background-color: $active-c
+
+.main-slide .btn-pointer__wrap:hover .btn-pointer__left path
+  fill: $active-c
+
+.btn-label .btn-pointer
+  background: $active-sc-c !important
+
+.btn-label .btn-pointer__left path
+  fill: $active-sc-c !important
+
+//.btn-info
+//  background-color: $active-c
+
+.btn-info svg path
+  fill: $active-c
+
+.btn-pointer,
+.btn-pointer__sm
+  background-color: $active-c
+
+.btn-pointer__left path
+  fill: $active-c
+
+.btn-info span:nth-of-type(2)
+  background-color: $active-c
+
+.btn-pointer__wrap:hover .btn-pointer,
+.btn-pointer__wrap:hover .btn-pointer__sm
+  background-color: $active-sc-c
+
+.btn-pointer__wrap:hover .btn-pointer__left path
+  fill: $active-sc-c
+
+.btn-pointer-b__wrap
+  background-color: $active-sc-c
+
+.btn-pointer-b__wrap .left,
+.btn-pointer-b__wrap .right
+  & path
+    fill: $active-sc-c
+
+.b-footer__days
+  color: $active-c
+
+.b-footer__contacts a
+  color: $active-c
+  border-color: $active-c
+
+.navbar-list__inner
+  background: darken($active-c, 5%)
+
+.navbar__hr-wrap
+  background-color: $active-c
+
+.b-video-item__txt
+  color: $active-c !important
+
+.b-video-item__data
+  color: $active-c
+
+.b-box
+  color: $active-c
+  box-shadow: 0 0 0 2px $active-c inset
+
+.b-box:hover
+  color: $active-sc-c
+  box-shadow: 0 0 0 2px $active-sc-c inset
+
+.b-box--clr-a
+  background-color: $active-c
+
+.b-box--clr-a:hover
+  background-color: $b-box-c-a
+
+.b-box--clr-b:hover
+  background-color: $b-box-c-b
+
+.content > ul li::before
+  background-color: $active-c
+
+.content > ol li::before
+  color: $active-c
+
+.b-share__list
+  color: $active-c
+
+.b-share__list svg .svg__fill
+  fill: $active-c
+  transition: all 0.2s ease
+
+.b-share__list li:hover
+  color: $active-sc-c
+
+.b-share__list li:hover svg .svg__fill
+  fill: $active-sc-c
+
+.header--toggled .navbar-toogle
+  background-color: $active-c
+
+.navbar-dropdown__menu .btn-pointer__txt
+  color: $active-c
+
+.navbar-collapse.active
+  background-color: $active-c
+
+.b-accordion__panel-ttl a:hover
+  color: $active-sc-c
+
+.panel--bg-b
+  background-color: $active-c
+
+.panel--bg-c
+  background-color: $active-sc-c
+
+.main-slide__item-a,
+.main-slide__item-b
+  background-color: $active-sc-c
+
+.main-slide .btn-pointer__wrap .btn-pointer
+  color: $active-sc-c
+
+.b-form__btn:hover
+  background-color: $active-sc-c
+
+.b-form__btn
+  background-color: $form-btn-c
+
+.b-video__cnt-wrap:hover .b-video-item__data,
+.b-video__cnt-wrap:hover .b-video-item__txt
+  color: $active-sc-c !important
+
+.c-box__link:hover,
+.b-gallery .c-box__link:hover,
+.c-box__inner:hover + h6 .c-box__link
+  color: $active-sc-c
+
+.mega-menu__item-cont .b-form__btn
+  background-color: $black-c
+  &:hover
+    background-color: $active-sc-c
+
+.page-item__wrap a
+  border-color: $active-sc-c !important
+
+.page-item__wrap a:hover
+  border-color: $active-c !important
+.b-msg
+  background-color: $active-sc-c
+
+.b-msg__corner
+  border-left: 23px solid $active-sc-c
+
+.b-panel-t
+  background-color: $active-sc-c
+
+.b-panel-t::before
+  border-left: 43px solid $active-sc-c
+
+.b-promo__s2-ttl
+  color: $active-sc-c
+
+.c-box__inner .b-box__grdnt-a::after
+  @include gradient-custom($deg: 145deg, $start-color: $active-sc-c, $end-color: $active-c-45, $start-percent: 0%, $end-percent: 100%)
+
+.b-promo-sc__item:hover .b-promo-sc__inner-bg
+  background-color: $active-sc-c-33
+
+.main-slide__item-b::after
+  background-color: $active-sc-c-70
+
+.b-partners__img-wrap a:hover
+  background-color: $active-sc-c-66
+
+.link:hover,
+.b-footer__contacts-phones li a:hover
+  color: $active-sc-c
+  border-color: $active-sc-c
+
+@media (min-width: $screen-sm)
+  .main-slide__item-inr
+    background-color: $active-sc-c
+
+  .main-slide__item-a .main-slide__item-inr
+    background-color: $active-sc-c-70
+
+@media (min-width: $screen-lg)
+  .btn-pointer-b__wrap:hover
+    background-color: $active-c
+
+  .btn-pointer-b__wrap:hover .left path,
+  .btn-pointer-b__wrap:hover .right path
+    fill: $active-c
+
+  .navbar-current
+    color: $active-c
+
+  .navbar-dropdown__menu
+    background: $active-c
+
+  .mega-menu
+    background-color: $active-c
+
+  //.navbar-list > li:hover > a,
+  .navbar-list > li.active > a
+    background-color: $active-c
+
+.header > .b-topbar
+  background: $active-c
+
+.b-navbar .navbar-list__inner
+  background: inherit
+
+.paging .left-pag .pad-arr, .paging .right-pag .pad-arr
+  background: $active-c
+
+.paging .left-pag:hover .pad-arr,.paging .right-pag:hover .pad-arr
+  background-color: $active-sc-c
+
+@media screen and (min-width: 480px)
+  .paging .left-pag:hover .pad-arr, .paging .left-pag.hover .pad-arr, .paging .right-pag:hover .pad-arr, .paging .right-pag.hover .pad-arr
+    background: $active-sc-c
+    //transition: all .3s ease
+    transition: all .3s ease
+
+  .paging .left-pag:hover .pad-title, .paging .left-pag.hover .pad-title, .paging .right-pag:hover .pad-title, .paging .right-pag.hover .pad-title
+    color: $active-sc-c
+    //transition: all .3s ease
+    transition: all .3s ease
+
+  .paging .left-pag:hover .pad-text, .paging .left-pag.hover .pad-text
+    border: 1px solid $active-sc-c
+    border-left: 0 none
+    //transition: all .3s ease
+    transition: all .3s ease
+
+  .paging .right-pag:hover .pad-text, .right-pag.hover .pad-text
+    border: 1px solid $active-sc-c
+    border-right: 0 none
+    //transition: all .3s ease
+    transition: all .3s ease
+
+@media (min-width: $screen-md-min)
+  .paging .middle-paging li a, .middle-paging li span
+    color: $active-c
+
+  .paging .middle-paging li a:hover
+    color: $active-sc-c
+    border: 1px solid $active-sc-c
+
+@media (min-width: $screen-lg-min)
+  .b-navbar .navbar-list__inner
+    background: $active-c
