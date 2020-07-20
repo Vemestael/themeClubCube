@@ -18,7 +18,7 @@
     <div class="b-promo-sc__cont"><span class="fa fa-bullhorn"></span>
         <h5 class="s5-heading">Feel our new dancehall "Rivierra"</h5>
     </div>
-    <div data-bgimage="../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+    <div data-bgimage="../../uploads/gallery/Gallery_18_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
     <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
 </div>
 
@@ -26,7 +26,7 @@
     <div class="b-promo-sc__cont"><span class="fa fa-fire-extinguisher"></span>
         <h5 class="s5-heading">Check this hot live from "Cube Party"</h5>
     </div>
-    <div data-bgimage="../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
+    <div data-bgimage="../../uploads/gallery/Gallery_20_Original.jpg" class="b-promo-sc__img-wrap bg-image"></div>
     <div class="b-promo-sc__inner-bg"></div><a href="#" class="b-promo-sc__link"></a>
 </div>
 

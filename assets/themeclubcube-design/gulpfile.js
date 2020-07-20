@@ -7,9 +7,14 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
+var uglify = require('gulp-uglify');
 var notify = require('gulp-notify');
 var bs = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
+const rename = require("gulp-rename");
+const del = require('del');
+const clean_css = require('gulp-clean-css');
+const { src } = require('gulp');
 
 gulp.task('serve', function () {
 
@@ -21,12 +26,12 @@ gulp.task('serve', function () {
     }
   });
 
-  gulp.watch("css/*.css").on('change', bs.reload);
-  gulp.watch("*.html").on('change', bs.reload);
+  gulp.watch("src/css/*.css").on('change', bs.reload);
+  gulp.watch("dist/*.html").on('change', bs.reload);
 });
 
 gulp.task('sass', function (callback) {
-  return gulp.src(['css/sass/*.sass'])
+  return gulp.src(['src/css/sass/*.sass'])
       .pipe(plumber(
           {
             errorHandler: notify.onError(function (err) {
@@ -45,18 +50,15 @@ gulp.task('sass', function (callback) {
         cascade: true
       }))
       .pipe(debug({title: 'prefx:'}))
-      .pipe(sourcemaps.write('.', {
-        includeContent: false,
-        sourceRoot: 'source'
-      }))
       .pipe(debug({title: 'maps:'}))
-      .pipe(gulp.dest('css'));
+      .pipe(clean_css())
+      .pipe(gulp.dest('dist/css'));
   callback();
 });
 
 
 gulp.task('skins', function (callback) {
-  return gulp.src(['css/sass/skins/*.sass'])
+  return gulp.src(['src/css/sass/skins/*.sass'])
       .pipe(plumber(
           {
             errorHandler: notify.onError(function (err) {
@@ -74,12 +76,12 @@ gulp.task('skins', function (callback) {
         cascade: true
       }))
       .pipe(debug({title: 'prefx:'}))
-      .pipe(gulp.dest('css/skins'));
+      .pipe(gulp.dest('dist/css/skins'));
   callback();
 });
 
 gulp.task('templates', function (callback) {
-  gulp.src('jade/*.jade')
+  gulp.src('src/jade/*.jade')
       .pipe(plumber())
       .pipe(jade({
         pretty: true,
@@ -90,57 +92,70 @@ gulp.task('templates', function (callback) {
           message: err.message
         }
       }))
-      .pipe(gulp.dest('.'))
+      .pipe(gulp.dest('dist/'))
       .pipe(debug({title: 'jade:'}));
   callback();
 });
 
+gulp.task('scripts', function (callback) {
+  return gulp.src(
+    'src/js/**/*.js' 
+  )
+  .pipe(uglify()) 
+  .pipe(gulp.dest('dist/js/'))
+  callback();
+});
+
+gulp.task('fonts', function (callback) {
+  return gulp.src(
+    'src/fonts/**/*.*' 
+  ) 
+  .pipe(gulp.dest('dist/fonts/'))
+  callback();
+});
+
+gulp.task('images', function (callback) {
+  return gulp.src(
+    'src/images/**/*.*' 
+  )
+  .pipe(imagemin({
+    progressive: true,
+    svgoPlugins: [{removeViewBox: false}],
+    interlaced: true,
+    optimizationLevel: 3
+  }))
+  .pipe(gulp.dest('dist/images/'))
+  callback();
+});
+
+gulp.task('clean', function (callback) {
+  return del('dist/');
+  callback();
+});
+
 gulp.task('minImg', function () {
-  return gulp.src('../uploads/gallery/*.jpg')
+  return gulp.src('../src_uploads/**/*.*'
+  )
       .pipe(imagemin({
         progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        interlaced: true,
+        optimizationLevel: 1
       }))
-      .pipe(gulp.dest('../uploads/gallery/images'));
+      .pipe(gulp.dest('../uploads/'));
 });
+
+
 
 gulp.task('watch', function () {
-  gulp.watch('css/sass/**/*.*', gulp.parallel('sass'));
-  gulp.watch('css/sass/skins/*.*', gulp.parallel('skins'));
-  gulp.watch('jade/**/*.*', gulp.parallel('templates'));
+  gulp.watch('src/css/sass/**/*.*', gulp.parallel('sass'));
+  gulp.watch('src/css/sass/skins/*.*', gulp.parallel('skins'));
+  gulp.watch('src/jade/**/*.*', gulp.parallel('templates'));
+  gulp.watch('src/js/**/*.*', gulp.parallel('scripts'));
+  gulp.watch('src/fonts/**/*.*', gulp.parallel('fonts'));
+  gulp.watch('src/images/**/*.*', gulp.parallel('images'));
 });
 
-//gulp.task('default', ['serve', 'templates', 'sass', 'watch']);
-gulp.task('default', gulp.parallel('templates', 'sass', 'skins', 'watch'));
 
-/**
- * var notify = require ('gulp-notify');
- *
- * .on('error', notify.onError(function(err) {
- * return: {
- *  title: 'sass';
- *  message: err.message
- * };
- * }))  можно проверить установив после одного потока сасс - но он будет работать только на один поток
- * чтобы работал на все потоки и ловил ошибки используем так пламбер и ставим его в
- *
- *самом начале
- *
- * второй вариант отлова ошибок
- * .pipe(plumber(
- *  errorHandler: notify.onError(function(err) {
- *  return: {
- *  title: 'sass';
- *  message: err.message
- * };
- *  }
- * ))
- *
- *
- *
- *  .on('error', notify.onError(function (err) {
-            return {
-                title: 'sass',
-                message: err.message,
-            };
-        }))
- */
+gulp.task('default', gulp.series('clean', gulp.parallel('templates', 'sass', 'scripts', 'fonts', 'images', 'skins', 'minImg', 'watch')));
+

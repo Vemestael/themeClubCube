@@ -1,0 +1,92 @@
+doctype html
+html(lang='en')
+  include components/head
+  body
+    .wrap.fill-wrap
+      include components/headerLanding
+
+      .b-banner.bg-image(data-bgimage="../../uploads/landing/banner.jpg")
+        .container
+          .row
+            .col-md-6.col-12
+              a.navbar-brand(href="index.html")
+                img(src="images/logo-wide.png", alt="Cube Club")
+
+            .col-md-6.col-12
+              p Responsive HTML5 theme for #[span.bordered entertainment]
+
+      .b-events.fill-wrap
+        .container
+          .row
+            .col-12
+              h6.s6-heading.b-tabs__ttl Night club
+          .row
+            .col-12.col-md-6.col-xl-4
+              .page-item__wrap
+                a.link(href="inner-music.html")
+                .page-item__inner
+                  .img-block
+                    img(src="../../uploads/landing/music.jpg", alt="img")
+                a.link-title(rel='nofollow' href="inner-music.html") Music
+
+            .col-12.col-md-6.col-xl-4
+              .page-item__wrap
+                a.link(href="inner-events.html")
+                .page-item__inner
+                  .img-block
+                    img(src="../../uploads/landing/events.jpg", alt="img")
+                a.link-title(rel='nofollow' href="inner-events.html") Events
+
+            .col-12.col-md-6.col-xl-4
+              .page-item__wrap
+                a.link(href="inner-posters.html")
+                .page-item__inner
+                  .img-block
+                    img(src="../../uploads/landing/posters.jpg", alt="img")
+                a.link-title(rel='nofollow' href="inner-posters.html") Posters
+
+            .col-12.col-md-6.col-xl-4
+              .page-item__wrap
+                a.link(href="inner-fevents.html")
+                .page-item__inner
+                  .img-block
+                    img(src="../../uploads/landing/music.jpg", alt="img")
+                a.link-title(rel='nofollow' href="inner-fevents.html") Frequent events
+
+            .col-12.col-md-6.col-xl-4
+              .page-item__wrap
+                a.link(href="inner-gall.html")
+                .page-item__inner
+                  .img-block
+                    img(src="../../uploads/landing/events.jpg", alt="img")
+                a.link-title(rel='nofollow' href="inner-gall.html") Galleries
+
+            .col-12.col-md-6.col-xl-4
+              .page-item__wrap
+                a.link(href="index.html")
+                .page-item__inner
+                  .img-block
+                    img(src="../../uploads/landing/posters.jpg", alt="img")
+                a.link-title(rel='nofollow' href="index.html") Cube Club
+                .btn-pointer__wrap.btn-label.colored.
+                  <div class="btn btn-pointer"><span class="btn-pointer__txt">Pro</span></div>
+                  <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                  <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+
+      .container
+        .row
+          .col-12
+            h6.s6-heading.b-tabs__ttl Musician
+            .btn-pointer__wrap.btn-label.
+              <div class="btn btn-pointer"><span class="btn-pointer__txt">Coming soon</span></div>
+              <svg class="btn-pointer__left" x="0px" y="0px" viewBox="0 0 10 50" style="enable-background:new 0 0 10 50;" xml:space="preserve">
+              <path fill="#A82743" d="M10,50H0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5l-5-5l0,0v0l0,0l5-5L0,0l0,0v0h10V50z"/></svg>
+
+
+        .row
+          .col-12
+            .b-banner__img-block
+              img(src="../../uploads/landing/banner2.jpg", alt="banner")
+
+    include components/scripts
