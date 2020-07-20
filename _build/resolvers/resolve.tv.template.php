@@ -8,41 +8,128 @@ if ($object && $object->xpdo) {
             /* list of tvs and templates for each */
             $tvs = array(
                 'img' => array(
-                    'templates' => array('partners','galleryItem','eventsItem','blogItem','blogItemAside','404','textWithImage','textAsideWithImage','textAsideRightWithImage'),
+                    'templates' => array('events', 'eventsOpen', 'blog', 'gallery', 'galleryOpen', 'partners', 'blogOpenTitleFull', 'blogOpenTitleSidebar'),
                     'sources' => array(
                         'web' => 'Uploads'
                     )
                 ),
-                'galleryImg' => array(
-                    'templates' => array(),
-                    'sources' => array(
-                        'web' => 'Uploads'
-                    )
-                ),
-                'gallery' => array(
-                    'templates' => array('galleryItem'),
+                'viewType' => array(
+                    'templates' => array('events', 'eventsOpen'),
                 ),
                 'timeStart' => array(
-                    'templates' => array('eventsItem'),
+                    'templates' => array('events', 'eventsOpen'),
                 ),
-                'price' => array(
-                    'templates' => array('eventsItem'),
-                ),
-                'lineUp' => array(
-                    'templates' => array('eventsItem'),
-                ),
-                'topEvent' => array(
-                    'templates' => array('eventsItem'),
-                ),
-                'promoEvent' => array(
-                    'templates' => array('eventsItem'),
-                ),
-                'promoImg' => array(
-                    'templates' => array('eventsItem'),
+                'imgSquare' => array(
+                    'templates' => array('events', 'eventsOpen'),
                     'sources' => array(
                         'web' => 'Uploads'
                     )
                 ),
+                'videoLink' => array(
+                    'templates' => array('video'),
+                ),
+                'topEvent' => array(
+                    'templates' => array('events', 'eventsOpen'),
+                ),
+                'partnerLink' => array(
+                    'templates' => array('partners'),
+                ),
+                'migxEventArtist' => array(
+                    'templates' => array('events', 'eventsOpen'),
+                ),
+                'contactNumber' => array(
+                    'templates' => array('eventsOpen'),
+                ),
+                'contactEmail' => array(
+                    'templates' => array('eventsOpen'),
+                ),
+                'ticketPrice' => array(
+                    'templates' => array('eventsOpen'),
+                ),
+                'annotationText' => array(
+                    'templates' => array('eventsOpen', 'blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
+                ),
+                'eventHeaderViewType' => array(
+                    'templates' => array('eventsOpen'),
+                ),
+                'audioLink' => array(
+                    'templates' => array('indexMusic'),
+                ),
+                'audioViewType' => array(
+                    'templates' => array('indexMusic'),
+                ),
+                'blogViewType' => array(
+                    'templates' => array('blog', 'blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
+                ),
+                'twitterLogin' => array(
+                    'templates' => array('indexPosters'),
+                ),
+                'facebookLink' => array(
+                    'templates' => array('indexPosters'),
+                ),
+                'imgList' => array(
+                    'templates' => array('galleryOpen', 'gallery'),
+                ),
+                'videoId' => array(
+                    'templates' => array('eventsOpen', 'blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
+                ),
+                'eventId' => array(
+                    'templates' => array('galleryOpen'),
+                ),
+                'annotationBlog' => array(
+                    'templates' => array('blogOpenNoTitleFull', 'blogOpenTitleFull', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
+                ),
+                'typeSidebar' => array(
+                    'templates' => array('galleryOpen', 'eventsOpen', 'blogOpenNoTitleSidebar', 'blogOpenTitleSidebar'),
+                ),
+                'migxPromoSc' => array(
+                    'templates' => array('index'),
+                ),
+                'eventViewType' => array(
+                    'templates' => array('index', 'indexEvents', 'indexFEvents', 'indexMusic', 'indexPosters', 'events'),
+                ),
+                'promoImg' => array(
+                    'templates' => array('eventsOpen'),
+                ),
+//                'megaMenu' => array(
+//                    'templates' => array('index'),
+//                ),
+//                'img' => array(
+//                    'templates' => array('partners','galleryItem','eventsItem','blogItem','blogItemAside','404','textWithImage','textAsideWithImage','textAsideRightWithImage'),
+//                    'sources' => array(
+//                        'web' => 'Uploads'
+//                    )
+//                ),
+//                'galleryImg' => array(
+//                    'templates' => array(),
+//                    'sources' => array(
+//                        'web' => 'Uploads'
+//                    )
+//                ),
+//                'gallery' => array(
+//                    'templates' => array('galleryItem'),
+//                ),
+//                'timeStart' => array(
+//                    'templates' => array('eventsItem'),
+//                ),
+//                'price' => array(
+//                    'templates' => array('eventsItem'),
+//                ),
+//                'lineUp' => array(
+//                    'templates' => array('eventsItem'),
+//                ),
+//                'topEvent' => array(
+//                    'templates' => array('eventsItem'),
+//                ),
+//                'promoEvent' => array(
+//                    'templates' => array('eventsItem'),
+//                ),
+//                'promoImg' => array(
+//                    'templates' => array('eventsItem'),
+//                    'sources' => array(
+//                        'web' => 'Uploads'
+//                    )
+//                ),
             );
 
             foreach ($tvs as $tvName => $relations) {

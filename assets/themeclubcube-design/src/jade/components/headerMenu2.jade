@@ -1,0 +1,32 @@
+header#header.header
+  .b-topbar
+    .container-fluid.line
+      .col-topbar__wrap.col-topbar__first
+        ul.b-topbar__menu
+          li: a(href="#") FAQ
+          li: a(href="#") Gallery
+          li: a(href="#") Blog
+      .col-topbar__wrap.col-topbar__last
+        ul.b-topbar__links
+          li
+            span.b-topbar__line +38 (050) 588-46-37
+          li
+            span hello@cubeclub.com
+  .container-fluid.line.search-wrap
+    .navbar-header
+      a.navbar-brand(href="index.html")
+        img(src="images/logo-w.png", alt="")
+      button#navbarToogle.navbar-toogle(type="button")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    .nav-commerce.navbar-right
+      .nav-commerce__search
+        input.form-search(type="search")
+      .nav-commerce__cart
+        a.cart-link(href="#")
+          i.fa.fa-shopping-cart.nav-commerce--line
+
+
+  .container-fluid.line.commerceNavtop
+    include innerNavigation1

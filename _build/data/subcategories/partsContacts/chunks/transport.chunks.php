@@ -4,10 +4,10 @@ $chunks = array();
 
 $tmp = array(
     //Contacts
-    'emailContacts' => array(
-        'file' => 'partsContacts/emailContacts',
-        'description' => '',
-    ),
+//    'emailContacts' => array(
+//        'file' => 'partsContacts/emailContacts',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

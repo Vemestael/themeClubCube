@@ -6,34 +6,90 @@ $tmp = array(
     /*
      * Common
      */
-    'pageWrapperCommon' => array(
-        'file' => 'common/pageWrapperCommon',
+    'blogOpenCommon' => array(
+        'file' => 'common/blogOpenCommon',
         'description' => '',
     ),
-    'blogItemAsideCommon' => array(
-        'file' => 'common/blogItemAsideCommon',
+    'videoItemCommon' => array(
+        'file' => 'common/videoItemCommon',
         'description' => '',
     ),
-    'blogListAsideCommon' => array(
-        'file' => 'common/blogListAsideCommon',
-        'description' => '',
-    ),
-    'eventsListAsideCommon' => array(
-        'file' => 'common/eventsListAsideCommon',
-        'description' => '',
-    ),
-    'eventsItemAsideCommon' => array(
-        'file' => 'common/eventsItemAsideCommon',
-        'description' => '',
-    ),
-    'eventsListAsideCenterCommon' => array(
-        'file' => 'common/eventsListAsideCenterCommon',
-        'description' => '',
-    ),
-    'eventsItemAsideCenterCommon' => array(
-        'file' => 'common/eventsItemAsideCenterCommon',
-        'description' => '',
-    ),
+	'blogItemCommon' => array(
+		'file' => 'common/blogItemCommon',
+		'description' => '',
+	),
+	'galleryItemCommon' => array(
+		'file' => 'common/galleryItemCommon',
+		'description' => '',
+	),
+	'galleryListCommon' => array(
+		'file' => 'common/galleryListCommon',
+		'description' => '',
+	),
+	'pastEventsItemCommon' => array(
+		'file' => 'common/pastEventsItemCommon',
+		'description' => '',
+	),
+	'eventsRectangleCommon' => array(
+		'file' => 'common/eventsRectangleCommon',
+		'description' => '',
+	),
+	'eventsSquareCommon' => array(
+		'file' => 'common/eventsSquareCommon',
+		'description' => '',
+	),
+	'eventsSquareListCommon' => array(
+		'file' => 'common/eventsSquareListCommon',
+		'description' => '',
+	),
+	'eventsRectangleListCommon' => array(
+		'file' => 'common/eventsRectangleListCommon',
+		'description' => '',
+	),
+	'sidebarEventsListCommon' => array(
+		'file' => 'common/sidebarEventsListCommon',
+		'description' => '',
+	),
+	'sidebarEventsItemCommon_1' => array(
+		'file' => 'common/sidebarEventsItemCommon_1',
+		'description' => '',
+	),
+	'sidebarEventsItemCommon_2' => array(
+		'file' => 'common/sidebarEventsItemCommon_2',
+		'description' => '',
+	),
+	'moltCommon' => array(
+		'file' => 'common/moltCommon',
+		'description' => '',
+	),
+//    'pageWrapperCommon' => array(
+//        'file' => 'common/pageWrapperCommon',
+//        'description' => '',
+//    ),
+//    'blogItemAsideCommon' => array(
+//        'file' => 'common/blogItemAsideCommon',
+//        'description' => '',
+//    ),
+//    'blogListAsideCommon' => array(
+//        'file' => 'common/blogListAsideCommon',
+//        'description' => '',
+//    ),
+//    'eventsListAsideCommon' => array(
+//        'file' => 'common/eventsListAsideCommon',
+//        'description' => '',
+//    ),
+//    'eventsItemAsideCommon' => array(
+//        'file' => 'common/eventsItemAsideCommon',
+//        'description' => '',
+//    ),
+//    'eventsListAsideCenterCommon' => array(
+//        'file' => 'common/eventsListAsideCenterCommon',
+//        'description' => '',
+//    ),
+//    'eventsItemAsideCenterCommon' => array(
+//        'file' => 'common/eventsItemAsideCenterCommon',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

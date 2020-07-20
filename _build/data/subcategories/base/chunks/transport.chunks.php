@@ -10,14 +10,18 @@ $tmp = array(
 		'file' => 'base/metaBase',
 		'description' => '',
 	),
-    'headerBase' => array(
-        'file' => 'base/headerBase',
-        'description' => '',
-    ),
-    'footerBase' => array(
-        'file' => 'base/footerBase',
-        'description' => '',
-    ),
+	'headerBase' => array(
+			'file' => 'base/headerBase',
+			'description' => '',
+	),
+	'footerBase' => array(
+			'file' => 'base/footerBase',
+			'description' => '',
+	),
+	'footerBaseGallery' => array(
+		'file' => 'base/footerBaseGallery',
+		'description' => '',
+	),
 );
 
 // Save chunks for setup options

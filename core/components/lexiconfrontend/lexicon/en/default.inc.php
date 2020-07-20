@@ -1,4 +1,14 @@
 <?php
+/**
+ **Варианты цветовых схем
+ * clr-brown-gray
+ * clr-crimson-cyan
+ * clr-green-violet
+ * clr-orange-red
+ * clr-yellow-pink
+ **/
+$_lang['lf_color_sheme'] = 'clr-green-violet';
+///////////////////////////////////////////////
 
 $_lang['lf_brand_name'] = 'Club Cube';
 
@@ -71,10 +81,23 @@ $_lang['lf_month_short.10'] = 'Oct';
 $_lang['lf_month_short.11'] = 'Nov';
 $_lang['lf_month_short.12'] = 'Dec';
 
-$_lang['lf_week.0']='Mo';
-$_lang['lf_week.1']='Tu';
-$_lang['lf_week.2']='We';
-$_lang['lf_week.3']='Th';
-$_lang['lf_week.4']='Fr';
-$_lang['lf_week.5']='Sa';
-$_lang['lf_week.6']='Su';
+$_lang['lf_week.0']='Monday';
+$_lang['lf_week.1']='Tuesday';
+$_lang['lf_week.2']='Wednesday';
+$_lang['lf_week.3']='Thursday';
+$_lang['lf_week.4']='Friday';
+$_lang['lf_week.5']='Saturday';
+$_lang['lf_week.6']='Sunday';
+
+$_lang['lf_week_short.0']='Mo';
+$_lang['lf_week_short.1']='Tu';
+$_lang['lf_week_short.2']='We';
+$_lang['lf_week_short.3']='Th';
+$_lang['lf_week_short.4']='Fr';
+$_lang['lf_week_short.5']='Sa';
+$_lang['lf_week_short.6']='Su';
+
+$_lang['lf_megamenu_title_one'] = 'WHAT DO I NEED TO KNOW?';
+$_lang['lf_megamenu_text_one'] = 'But still, we love to roll loud dancing until dawn, and then to "crawl" on the body, remember proschedshem evente perekrik and share emotions we experienced some time ago.';
+$_lang['lf_megamenu_title_two'] = 'GET IN TOUCH WITH OUR NEW EVENTS';
+$_lang['lf_megamenu_text_two'] = 'Enter your E-mail below to subscribe to our partiesletter. We promise to make you happy very very often!';

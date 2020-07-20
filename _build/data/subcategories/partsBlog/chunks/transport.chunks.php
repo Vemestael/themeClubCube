@@ -4,14 +4,50 @@ $chunks = array();
 
 $tmp = array(
     // Index
+    'blockquoteBlog' => array(
+        'file' => 'partsBlog/blockquoteBlog',
+        'description' => '',
+    ),
     'blogItemBlog' => array(
         'file' => 'partsBlog/blogItemBlog',
         'description' => '',
     ),
-    'blogItemTileBlog' => array(
-        'file' => 'partsBlog/blogItemTileBlog',
+    'blogListBlog' => array(
+        'file' => 'partsBlog/blogListBlog',
         'description' => '',
     ),
+    'blogOpenNoTitleBlog' => array(
+        'file' => 'partsBlog/blogOpenNoTitleBlog',
+        'description' => '',
+    ),
+    'blogOpenTitleBlog' => array(
+        'file' => 'partsBlog/blogOpenTitleBlog',
+        'description' => '',
+    ),
+    'eventsDownItemBlog' => array(
+        'file' => 'partsBlog/eventsDownItemBlog',
+        'description' => '',
+    ),
+    'eventsDownListBlog' => array(
+        'file' => 'partsBlog/eventsDownListBlog',
+        'description' => '',
+    ),
+    'sidebarBlogItemBlog' => array(
+        'file' => 'partsBlog/sidebarBlogItemBlog',
+        'description' => '',
+    ),
+    'sidebarBlogListBlog' => array(
+        'file' => 'partsBlog/sidebarBlogListBlog',
+        'description' => '',
+    ),
+//    'blogItemBlog' => array(
+//        'file' => 'partsBlog/blogItemBlog',
+//        'description' => '',
+//    ),
+//    'blogItemTileBlog' => array(
+//        'file' => 'partsBlog/blogItemTileBlog',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

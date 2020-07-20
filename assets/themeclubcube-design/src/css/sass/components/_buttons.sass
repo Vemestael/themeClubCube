@@ -1,0 +1,701 @@
+//
+// Buttons
+// --------------------------------------------------
+button
+  background-color: transparent
+
+.btn
+  display: inline-block
+  min-height: 50px
+  border: 2px solid $black-c
+  margin: 5px
+  padding: 14px 20px
+  font-family: $second-font
+  font-size: 18px
+  font-weight: bold
+  color: $black-c
+  text-decoration: none
+  text-transform: uppercase
+  overflow: hidden
+  cursor: pointer
+  transition: all 0.2s ease
+
+.btn.btn--clr-a,
+.btn-icon.btn--clr-a
+  color: #fff
+  border-color: #fff
+
+.btn.btn--clr-a:hover,
+.btn-icon.btn--clr-a:hover
+  color: $black-c
+  background-color: #fff
+
+.btn:hover
+  color: #fff
+  background-color: $black-c
+
+.btn-anim-a b,
+.btn-anim-b b
+  display: inline-block
+  width: 100%
+  line-height: 1
+  transform: translate3d(0,0,0)
+  transition: transform 0.2s ease
+
+.btn-anim-a:hover b
+  transform: translate3d(3px,0,0)
+
+.btn-pointer-b__wrap:hover .btn-anim-b b
+  animation-name: shake
+  animation-duration: 0.6s
+  animation-fill-mode: both
+
+.btn-label .btn-pointer
+  cursor: default
+
+@keyframes shake
+  0%,100%
+    -webkit-transform: translate3d(0,0,0)
+    transform: translate3d(0,0,0)
+
+  20%,60%
+    -webkit-transform: translate3d(-3px,0,0)
+    transform: translate3d(-3px,0,0)
+
+  40%,80%
+    -webkit-transform: translate3d(3px,0,0)
+    transform: translate3d(3px,0,0)
+
+.btn--mini
+  min-height: 34px
+  padding: 8px 9px
+  font-size: 14px
+
+.btn-icon
+  position: relative
+  display: inline-block
+  margin: 5px
+  padding: 12px 22px 12px 44px
+  border: 2px solid $black-c
+  background-size: 27px
+  background-position: 15px center
+  background-repeat: no-repeat
+  min-height: 46px
+  overflow: hidden
+
+.btn-icon:hover
+    background-color: $black-c
+
+.btn.btn-icon,
+.btn.btn-icon::before
+  background-size: 22px
+
+.btn.btn-icon::before
+  left: 16px
+  width: 20px
+
+.btn-icon:not(.btn)
+  padding: 12px 20px 12px 24px
+  background-position: center
+
+.btn-icon.btn--mini:not(.btn)
+  min-height: 35px
+  padding: 8px 14px 8px 18px
+  background-size: 20px
+
+.btn-icon__wrap
+  position: relative
+  display: inline-block
+  margin-bottom: 10px
+
+.btn-icon__wrap svg
+  position: absolute
+  left: 20px
+  top: 17px
+  > path
+    transition: all 0.2s ease
+
+.btn-icon__refresh svg
+  @include absolute-center-x-y()
+
+.btn--mini svg
+  width: 20px
+
+.btn-icon__wrap:hover a
+  color: #fff
+  background-color: $black-c
+
+.btn-icon__wrap:hover svg path
+  stroke: #fff
+
+.btn-icon--refresh
+  background-image: url('#{$images-folder}images/refresh-icon.svg')
+
+.btn-icon--refresh-wht
+  background-image: url("#{$images-folder}images/refresh-icon-white.svg")
+
+.btn-icon--refresh:before,
+.btn-icon--refresh-wht:before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 27px
+
+.btn-icon--refresh:before
+  background-image: url("#{$images-folder}images/refresh-icon-white.svg")
+
+.btn-icon--refresh:active:before
+  transform: rotate(360deg)
+
+.btn-icon--refresh-wht:before
+  background-image: url("#{$images-folder}images/refresh-icon.svg")
+
+.btn-icon--refresh:hover:before,
+.btn-icon--refresh-wht:hover:before
+  opacity: 1
+
+.btn--mini.btn-icon--refresh:before,
+.btn--mini.btn-icon--refresh-wht:before
+  background-size: 20px
+
+.date,
+.date-lg
+  display: inline-block
+  padding: 5px 6px
+  border: 2px solid $black-c
+  font-family: $second-bold-font
+
+.date__dt,
+.date-lg__dt
+  display: block
+  float: left
+  padding-right: 8px
+  font-size: 36px
+
+.date__rh,
+.date-lg__rh
+  display: block
+  float: right
+
+.date__rh-m,
+.date-lg__rh-m
+  display: block
+  margin-top: 2px
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: bold
+
+.date__rh-d,
+.date-lg__rh-d
+  font-size: 12px
+  font-family: $second-font
+
+.date__ad,
+.date-lg__rh-t
+  display: block
+  margin: 0 -6px -5px -6px
+  padding: 4px 8px 2px
+  background-color: $black-c
+  font-size: 14px
+  font-family: $second-bold-font
+  color: #fff
+  clear: both
+
+.date-lg
+  position: relative
+  padding-top: 6px
+  border-color: #fff
+  color: #fff
+
+.date-lg__dt
+  line-height: 38px
+
+.date-lg__rh-m
+  width: 20px
+  padding: 0
+  margin-top: 3px
+  font-size: 10px
+  letter-spacing: 0.6px
+  overflow: hidden
+  white-space: nowrap
+
+.date-lg__rh-d
+  line-height: 15px
+
+.date-lg__rh-t
+  position: absolute
+  left: 4px
+  right: 4px
+  bottom: -17px
+  color: $black-c
+  background: #fff
+
+.date-lg__ad
+  display: none
+
+.date-sm
+  display: inline-block
+  padding: 4px 12px 3px 5px
+  border: 2px solid $black-c
+  font-family: $second-bold-font
+
+.date-sm__dt
+  padding-right: 4px
+  padding-top: 1px
+  font-size: 24px
+  line-height: 1
+
+.date-sm__rh
+  display: block
+  float: right
+
+.date-sm__rh-m
+  display: block
+  margin-bottom: -4px
+  margin-top: 2px
+  font-size: 10px
+  font-weight: bold
+  text-transform: uppercase
+
+.date-sm__rh-d
+  font-family: $second-font
+  font-size: 10px
+
+.b-social
+  padding: 0
+
+  & li
+    display: inline-block
+
+.b-social__btn
+  width: 60px
+  padding: 0
+  min-height: 100%
+  font-size: 24px
+  font-family: $fa
+  font-weight: normal
+  line-height: 56px
+  text-align: center
+
+.b-social--clr-a .b-social__btn
+  color: #fff
+  border-color: #fff
+
+.b-social--clr-a .b-social__btn:hover
+  background-color: #fff
+  transition: all 0.2s ease
+  & .fa
+    color: $black-c
+
+.btn-info
+  position: relative
+  min-height: 50px
+  margin: 0
+  font-size: 16px
+  color: white
+  border: none
+  overflow: visible
+
+.btn-info svg
+  position: absolute
+  top: 0
+  left: -5px
+  width: 10.1px
+
+  path
+    transition: all 0.2s ease
+
+.btn-pointer__wrap
+  position: relative
+  display: inline-block
+  overflow: hidden
+  padding-left: 7px
+
+.btn-pointer,
+.btn-pointer__sm
+  margin: 0
+  padding: 0 40px 0 15px
+  font-size: 16px
+  color: white
+  line-height: 50px
+  border: none
+  overflow: visible
+
+.btn-pointer__sm
+  display: table
+  height: 50px
+  max-height: 50px
+  padding: 0 10px
+  font-size: 14px
+  line-height: 1
+  & b
+    display: table-cell
+    padding-top: 2px
+    vertical-align: middle
+
+.btn-pointer__left
+  position: absolute
+  top: 0
+  left: 0
+  width: 10px
+  & path
+    transition: all 0.2s ease
+
+.btn-pointer__txt
+  width: 100%
+  display: inline-block
+  transform: translate3d(0, 0, 0)
+  transition: all 0.2s ease
+
+.btn-pointer__txt::after
+  content: ''
+  position: absolute
+  top: 50%
+  right: -25px
+  width: 20px
+  height: 12px
+  background-image: url("#{$images-folder}images/arrow-left.svg")
+  transform: translateY(-50%)
+
+.btn-pointer-b b
+  padding-top: 2px
+  line-height: 50px
+
+.btn-pointer__wrap:hover .btn-pointer__txt
+  transform: translate3d(40%, 0, 0)
+
+.btn-pointer__wrap:hover .btn-pointer__txt::after
+  right: auto
+  left: -27px
+  transition: all 0.2s ease
+
+.btn-info
+  min-height: 40px
+  padding: 0
+  background-color: transparent
+  overflow: hidden
+
+.btn-info b
+  line-height: 12px
+
+.btn-info span:nth-of-type(2)
+  position: relative
+  display: inline-block
+  margin-left: 20px
+  padding: 12px 20px
+  transition: color 0.2s ease
+
+.btn-info span:nth-of-type(1)
+  font-style: italic
+
+.btn-info:hover
+  background-color: transparent
+
+.b-likes
+  padding: 0
+
+.b-likes > li
+  display: inline-block
+  margin-right: 25px
+  font-size: 10px
+  cursor: pointer
+
+  &::before
+    padding-right: 17px
+    font-family: $fa
+    font-size: 18px
+    vertical-align: middle
+
+  &:last-child
+    margin-right: 0
+
+.b-likes > li.b-likes__heading
+  font-size: 14px
+  line-height: 18px
+  text-transform: uppercase
+
+.b-likes__pinterest-p::before
+  content: '\f231'
+
+.b-likes__google-plus::before
+  content: "\f0d5"
+
+.b-likes__twitter::before
+  content: "\f099"
+
+.b-likes__facebook::before
+  content: "\f09a"
+
+.b-likes span
+  position: relative
+  display: inline-block
+  padding: 3px 9px 3px 7px
+
+.b-likes svg
+  position: absolute
+  top: -2px
+  left: -10px
+  width: 52px
+
+.b-likes--wht li
+  color: #fff
+
+.b-likes--wht span
+  color: #fff
+  transition: all 0.2s ease
+
+.b-likes--wht svg .svg__fill
+  fill: $white-light-c
+  transition: all 0.2s ease
+
+.b-likes--wht li:hover  span
+  border-color: $white-c
+
+.b-likes--wht li:hover svg .svg__fill
+  fill: $white-c
+
+.btn-pointer-b__wrap
+  position: relative
+  display: inline-block
+  transition: all 0.2s ease
+
+.btn-pointer-b
+  max-width: 250px
+  display: flex
+  overflow: hidden
+  height: 49px
+  margin: 0 10px
+  padding: 0 10px
+  font-size: 18px
+  color: #fff
+  text-transform: uppercase
+  border-bottom: none
+  cursor: pointer
+  white-space: nowrap
+
+.btn-pointer-b__wrap .left,
+.btn-pointer-b__wrap .right
+  position: absolute
+  top: 0
+  height: 50px
+  & path
+    transition: fill 0.2s
+
+.btn-pointer-b__wrap .left
+  left: -4px
+
+.btn-pointer-b__wrap .right
+  right: -4px
+
+.btn-pointer--lg
+  min-height: 40px
+  padding: 0 20px
+
+//Slick buttons
+.slick-prev,
+.slick-next
+  width: 50px
+  height: 35px
+  border: 2px solid #fff
+
+.slick-prev:before,
+.slick-next:before
+  font-family: $fa
+  font-size: 15px
+  opacity: 1
+
+.slick-prev:before
+  content: '\f053'
+
+.slick-next:before
+  content: "\f054"
+
+.slick-prev,
+.slick-next
+  border-color: $black-c
+
+.slick-prev:before,
+.slick-next:before
+  color: $black-c
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled
+  border-color: $black-c
+  &::before
+    opacity: 1
+
+.slick-prev:hover:not(.slick-disabled),
+.slick-next:hover:not(.slick-disabled)
+  background-color: $black-c
+  transition: all 0.2s ease
+  &::before
+    color: #fff
+    transition: all 0.2s ease
+
+.btn-white .slick-prev,
+.btn-white .slick-next
+  border-color: #fff
+
+.btn-white .slick-prev:before,
+.btn-white .slick-next:before
+  color: #fff
+
+.btn-white .slick-prev.slick-disabled,
+.btn-white .slick-next.slick-disabled
+  border-color: #fff
+  &::before
+    color: #fff
+    opacity: 1
+
+.btn-white .slick-prev:hover:not(.slick-disabled),
+.btn-white .slick-next:hover:not(.slick-disabled)
+  background-color: #fff
+  transition: all 0.2s ease
+  &::before
+    color: $black-c
+    transition: all 0.2s ease
+
+//Buttons list
+.b-btn__item
+  overflow: hidden
+  margin-bottom: 55px
+  &:last-child
+    margin-bottom: -60px
+    padding-top: 50px
+    padding-bottom: 60px
+
+.b-btn__inner .b-likes,
+.b-btn__inner .slick-prev,
+.b-btn__inner .slick-next,
+.b-btn__inner .btn-info,
+.b-btn__inner .btn-pointer-b__wrap,
+.b-btn__inner .btn-pointer__wrap,
+.b-btn__inner .b-form__btn
+  margin: 5px
+
+.b-btn__inner .slick-prev,
+.b-btn__inner .slick-next
+  position: static
+  display: inline-block
+  transform: translate(0, 0)
+
+.b-btn__inner .btn-info
+  overflow: hidden
+
+.b-btn__inner--wht .btn-info span:nth-of-type(1)
+  color: $black-c
+
+.b-btn__item-dark
+  background: $black-c
+
+
+@media (min-width: $screen-sm)
+  .btn-pointer__sm
+    height: 40px
+    max-height: 40px
+    min-height: 40px
+
+@media (min-width: $screen-md)
+  .date-lg
+    display: inline-block
+    padding: 11px 10px 0
+    border: 8px solid
+    font-family: $second-bold-font
+    color: #fff
+
+  .date-lg__dt
+    position: relative
+    display: block
+    float: left
+    padding-right: 15px
+    padding-bottom: 6px
+    font-size: 48px
+    line-height: 1
+
+  .date-lg__dt::after
+    content: ''
+    position: absolute
+    width: 8px
+    top: -11px
+    right: 0
+    bottom: 0
+    background-color: #fff
+
+  .date-lg__rh
+    display: block
+    float: left
+    padding-left: 10px
+
+  .date-lg__rh-m
+    width: 100%
+    margin-top: 4px
+    padding-right: 0
+    font-size: 11px
+
+  .date-lg__rh-d,
+  .date-lg__rh-t
+    display: block
+    font-size: 12px
+    line-height: 15px
+
+  .date-lg__rh-t
+    position: static
+    padding: 0 0 0 6px
+    color: #fff
+    background: transparent
+
+  .date-lg__ad
+    position: relative
+    display: block
+    padding: 25px 0 20px
+    font-size: 48px
+    text-align: center
+    clear: both
+
+  .date-lg__ad::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -10px
+    right: -10px
+    height: 8px
+    background-color: #fff
+
+  .btn-pointer--lg
+    min-height: 50px
+    padding: 0 36px
+    font-size: 22px
+
+  .btn-info
+    min-height: 50px
+    font-size: 22px
+
+  .btn-info span:nth-of-type(2)
+    padding: 14px 30px
+
+  .btn-pointer-b
+    max-width: 400px
+    font-size: 22px
+
+@media (min-width: $screen-lg)
+  .date-lg
+    width: 295px
+
+  .date-lg__rh-m
+    padding-right: 8px
+    font-size: 14px
+
+@media (min-width: $screen-xl)
+  .date-lg__dt,
+  .date-lg__ad
+    font-size: 60px
+
+  .date-lg
+    display: inline-block
+    width: 370px

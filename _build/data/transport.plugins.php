@@ -10,13 +10,13 @@ $tmp = array(
 			'OnHandleRequest' => array()
 		)
 	),
-    'clearCache' => array(
-        'file' => 'clearCache',
-        'description' => '',
-        'events' => array(
-            'OnBeforeCacheUpdate' => array()
-        )
-    ),
+//	'clearCache' => array(
+//			'file' => 'clearCache',
+//			'description' => '',
+//			'events' => array(
+//					'OnBeforeCacheUpdate' => array()
+//			)
+//	),
     'changeColorSheme' => array(
         'file' => 'changeColorSheme',
         'description' => '',

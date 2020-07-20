@@ -1,5 +1,4 @@
 <?php
-
 function validateEmail($email){
     $pattern = "/^[^@]{1,64}\@[^\@]{1,255}$/";
     $condition = @preg_match($pattern, $email);
@@ -70,6 +69,20 @@ if($errorCheck) {
     );
 } else {
 
+    $file = false;
+    if(!empty($_FILES["file"])){
+        $file = true;
+        if($_FILES["file"]["size"] > 1024*3*1024)
+        {
+            $modx->log(modX::LOG_LEVEL_ERROR, 'PHPMailer:Размер файла превышает три мегабайта');
+
+        }
+        // Проверяем загружен ли файл
+        if(!is_uploaded_file($_FILES["file"]["tmp_name"])){
+            $modx->log(modX::LOG_LEVEL_ERROR, 'PHPMailer:Ошибка загрузки файла');
+        }
+    }
+
     if(!is_null($properties['emailTo'])) {
         $message = $modx->getChunk($properties['tpl'], $fields);
 
@@ -77,12 +90,15 @@ if($errorCheck) {
         $modx->mail->set(modMail::MAIL_BODY,$message);
         $modx->mail->set(modMail::MAIL_FROM,$modx->getOption('emailsender'));
         $modx->mail->set(modMail::MAIL_FROM_NAME,$modx->getOption('site_name'));
-        $modx->mail->set(modMail::MAIL_SENDER,$modx->getOption('site_name'));
+        $modx->mail->set(modMail::MAIL_SENDER,$modx->getOption('emailsender'));
         $modx->mail->set(modMail::MAIL_SUBJECT,$properties['subject']);
         $modx->mail->address('to',$properties['emailTo']);
         $modx->mail->setHTML(true);
+        if($file && !empty($_FILES["file"]["tmp_name"])){
+            $modx->mail->attach($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
+        }
         if (!$modx->mail->send()) {
-            $modx->log(modX::LOG_LEVEL_ERROR,'An error occurred while trying to send the email: '.$err);
+            $modx->log(modX::LOG_LEVEL_ERROR,'An error occurred while trying to send the email: '.$modx->mail->mailer->ErrorInfo);
         }
         $modx->mail->reset();
     }

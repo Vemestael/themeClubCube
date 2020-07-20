@@ -1,95 +1,84 @@
-<div class="loader-container" id="loaderContainer">
-	<div class="backstage"></div>
-	<div class="loader" id="loader">
-		<div class="fr-bl"></div>
-		<div class="sc-bl"></div>
-		<div class="thr-bl"></div>
-		<div class="fth-bl"></div>
-	</div>
-</div>
-<header id="header">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="navbar-header col-lg-2 col-lg-offset-1">
-				<div class="tile">
-					<button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<span class="home-btn">Home</span>
-				</div>
-                [[*id:is=`[[++site_start]]`:then=`
-                    <span class="navbar-brand first">
-                        <img src="[[++themeclubcube.design_url]]images/logo-w.png" alt="[[++site_name]]" class="site-logo">
-                    </span>
-                `:else=`
-                    <a href="[[++site_url]]" class="navbar-brand first">
-                        <img src="[[++themeclubcube.design_url]]images/logo-w.png" alt="[[++site_name]]" class="site-logo">
-                    </a>
-                `]]
-			</div>
-			<nav class="collapse navbar-collapse col-lg-8 main-navig" id="navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					[[pdoMenu@mainMenu?
-						&startId=`0`
-						&tplParentRow=`@INLINE
-						<li class="[[+classnames]] dropdown">
-							<a href="[[+link]]" class="dropdown-toggle main-heading-a" [[+attributes]] data-toggle="dropdown">[[+menutitle]]<b class="caret"></b></a>
-							<ul class="dropdown-menu">[[+wrapper]]</ul>
-						</li>`
-                        &tplParentRowHere=`@INLINE
-                        <li class="[[+classnames]] dropdown">
-                            <a href="#" class="dropdown-toggle main-heading-a" [[+attributes]] data-toggle="dropdown">[[+menutitle]]<b class="caret"></b></a>
-                            <ul class="dropdown-menu">[[+wrapper]]</ul>
-                        </li>`
-                        &tplParentRowActive=`@INLINE
-                        <li class="[[+classnames]] dropdown">
-                            <a href="[[+link]]" class="dropdown-toggle main-heading-a" [[+attributes]] data-toggle="dropdown">[[+menutitle]]<b class="caret"></b></a>
-                            <ul class="dropdown-menu">[[+wrapper]]</ul>
-                        </li>`
-                        &tplHere=`@INLINE <li class="[[+classnames]]"><span>[[+menutitle]]</span></li>`
-						&tplOuter=`@INLINE [[+wrapper]]`
-					]]
-                    [[++themeclubcube.demo:is=`1`:then=`
-                    <li class="dropdown left-dropdow">
-                        <a href="" class="dropdown-toggle main-heading-a color-btn" data-toggle="dropdown">
-                            <i class="fa fa-tint"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right" id="colorScheme">
-                            <li [[-!+color:is=`default`:then=`class="active"`]]>
-                                [[-!+color:is=`default`:then=`
-                                    <span><i class="color-ic color-ic-reg"></i>Origin</span>
+<div class="wrap">
+    <header id="header" class="header">
+        <div class="container-fluid line">
+            <div class="navbar-header"><a href="/" class="navbar-brand"><img src="[[++themeclubcube.design_url]]images/logo-w.png" alt=""></a>
+                <button id="navbarToogle" type="button" class="navbar-toogle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <nav id="navbarCollapse" class="navbar-collapse">
+                <ul id="navigation" class="navbar-list dl-menu">
+                  [[pdoMenu@mainMenu?
+                    &startId=`0`
+                    &tplParentRow=`@INLINE [[!getMegaMenu? &resId=`[[+id]]` &type=`getClasses` &place=`tplParentRow` &link=`[[+link]]` &menutitle=`[[+menutitle]]` &wrapper=`[[+wrapper]]` &attributes=`[[+attributes]]` &classnames=`[[+classnames]]` &classes=`[[+classes]]`]]`
+                    &tplParentRowHere=`@INLINE [[!getMegaMenu? &resId=`[[+id]]` &type=`getClasses` &place=`tplParentRowHere` &link=`[[+link]]` &menutitle=`[[+menutitle]]` &wrapper=`[[+wrapper]]` &attributes=`[[+attributes]]` &classnames=`[[+classnames]]` &classes=`[[+classes]]`]]`
+                    &tplParentRowActive=`@INLINE [[!getMegaMenu? &resId=`[[+id]]` &type=`getClasses` &place=`tplParentRowActive` &link=`[[+link]]` &menutitle=`[[+menutitle]]` &wrapper=`[[+wrapper]]` &attributes=`[[+attributes]]` &classnames=`[[+classnames]]` &classes=`[[+classes]]`]]`
+                    &tplHere=`@INLINE [[!getMegaMenu? &resId=`[[+id]]` &type=`getClasses` &place=`tplHere` &link=`[[+link]]` &menutitle=`[[+menutitle]]` &wrapper=`[[+wrapper]]` &attributes=`[[+attributes]]` &classnames=`[[+classnames]]` &classes=`[[+classes]]`]]`
+                    &tpl = `@INLINE [[!getMegaMenu? &resId=`[[+id]]` &type=`getClasses` &place=`tpl` &link=`[[+link]]` &menutitle=`[[+menutitle]]` &wrapper=`[[+wrapper]]` &attributes=`[[+attributes]]` &classnames=`[[+classnames]]` &classes=`[[+classes]]`]]`
+                    &tplOuter=`@INLINE [[+wrapper]]`
+                    &tplInner=`@INLINE [[+wrapper]]
+                        [[!getMegaMenu? &resId=`[[+id]]` &type=`setMenu`]]
+                    `
+                  ]]
+                  [[!++themeclubcube.demo:is=`1`:then=`
+                    <li class="navbar__tint"><a href="#"><span class="fa fa-tint"></span><i class="fa fa-angle-right"></i></a>
+                        <ul class="navbar-dropdown__menu dl-submenu">
+                            <!-- <li id="fullWide" class="navbar__tint-wide active wide"><span>wide</span></li>
+                            <li class="navbar-dropdown__submenu navbar__tint-wide"><span>boxed<i class="fa fa-angle-right"></i></span>
+                                <ul class="navbar-list__inner dl-submenu">
+                                    <li data-ptrn="circle" class="pattern circle"><span>Circle pattern</span></li>
+                                    <li data-ptrn="triangle" class="pattern triangle"><span>Triangle pattern</span></li>
+                                    <li data-ptrn="solid" class="pattern solid"><span>Solid Color</span></li>
+                                    <li data-ptrn="waves" class="pattern waves"><span>Waves pattern</span></li>
+                                </ul>
+                            </li>
+                            <li class="navbar__hr-wrap">
+                                <div class="hr-line"></div>
+                                <div class="hr-line"></div>
+                            </li>
+ -->
+                            <li data-skin="green" class="clr-picker green [[-!+color:is=`green-violet`:then=`active`]]">
+                                [[-!+color:is=`green-violet`:then=`
+                                    <span>green/violet</span>
                                 `:else=`]]
-                                    <a href="?color=default" data-color="default"><i class="color-ic color-ic-reg"></i>Origin</a>
+                                    <a href="?color=green-violet"><span>green/violet</span></a>
                                 [[-`]]
                             </li>
-                            <li [[-!+color:is=`gold`:then=`class="active"`]]>
-                                [[-!+color:is=`gold`:then=`
-                                    <span><i class="color-ic color-ic-gd"></i>Gold</span>
+                            <li data-skin="orange" class="clr-picker orange [[-!+color:is=`orange-red`:then=`active`]]">
+                                [[-!+color:is=`orange-red`:then=`
+                                <span>orange/red</span>
                                 `:else=`]]
-                                    <a href="?color=gold" data-color="gold"><i class="color-ic color-ic-gd"></i>Gold</a>
+                                <a href="?color=orange-red"><span>orange/red</span></a>
                                 [[-`]]
                             </li>
-                            <li [[-!+color:is=`basketball`:then=`class="active"`]] >
-                                [[-!+color:is=`basketball`:then=`
-                                    <span><i class="color-ic color-ic-bb"></i>Basketball</span>
+                            <li data-skin="crimson" class="clr-picker crimson [[-!+color:is=`crimson-cyan`:then=`active`]]">
+                                [[-!+color:is=`crimson-cyan`:then=`
+                                <span>crimson/cyan</span>
                                 `:else=`]]
-                                    <a href="?color=basketball" data-color="basketball"><i class="color-ic color-ic-bb"></i>Basketball</a>
+                                <a href="?color=crimson-cyan"><span>crimson/cyan</span></a>
                                 [[-`]]
                             </li>
-                            <li class="last [[-!+color:is=`blueberry`:then=`active`]]">
-                                [[-!+color:is=`blueberry`:then=`
-                                    <span><i class="color-ic color-ic-bbr"></i>Blueberry</span>
+                            <li data-skin="yellow" class="clr-picker yellow [[-!+color:is=`yellow-pink`:then=`active`]]">
+                                [[-!+color:is=`yellow-pink`:then=`
+                                <span>yellow/pink</span>
                                 `:else=`]]
-                                    <a href="?color=blueberry" data-color="blueberry"><i class="color-ic color-ic-bbr"></i>Blueberry</a>
+                                <a href="?color=yellow-pink"><span>yellow/pink</span></a>
                                 [[-`]]
                             </li>
+                            <li data-skin="brown" class="clr-picker brown [[-!+color:is=`brown-gray`:then=`active`]]">
+                                [[-!+color:is=`brown-gray`:then=`
+                                <span>brown/gray</span>
+                                `:else=`]]
+                                <a href="?color=brown-gray"><span>brown/gray</span></a>
+                                [[-`]]
+                            </li>
+                            <!--
+                            <li data-skin="green" class="clr-picker green"><span>green/violet</span></li>
+                            <li data-skin="orange" class="clr-picker orange"><span>orange/red</span></li>
+                            <li data-skin="crimson" class="clr-picker crimson"><span>crimson/cyan</span></li>
+                            <li data-skin="yellow" class="clr-picker yellow"><span>yellow/pink</span></li>
+                            <li data-skin="brown" class="clr-picker brown"><span>brown/gray</span></li>-->
                         </ul>
-                    </li>
-                    `]]
-				</ul>
-			</nav>
-		</div>
-	</div>
-</header>
+                    </li>`:else=``]]
+                </ul>
+            </nav>
+        </div>
+    </header>

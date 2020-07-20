@@ -1,0 +1,70 @@
+//
+// Accordions
+// --------------------------------------------------
+.b-accordion
+  margin-bottom: 30px
+  overflow: hidden
+
+.b-accordion__ttl
+  margin-bottom: 26px
+  text-transform: uppercase
+  letter-spacing: 2px
+
+.b-accordion__panel
+  border-top: 1px solid $accord-c
+
+.b-accordion__panel:last-child
+  border-bottom: 1px solid $accord-c
+
+.b-accordion__panel-ttl
+  margin: 0
+
+.b-accordion__panel-ttl a
+  display: block
+  padding: 10px
+  font-size: 18px
+  color: $black-c
+  line-height: 28px
+  border-bottom: none
+  transition: all 0.2s ease
+
+.b-accordion__body
+  padding: 15px
+
+.b-accordion__body p
+  margin: 0
+  font-size: 12px
+  font-family: $second-font
+  line-height: 20px
+
+.collapse
+  display: none
+
+.collapse.in
+  display: block
+
+.collapsing
+  position: relative
+  height: 0
+  overflow: hidden
+  transition-timing-function: ease
+  transition-duration: .35s
+  transition-property: height,visibility
+
+.b-accordion__panel .fa-angle-down
+  transform: rotate(180deg)
+  transition: all 0.2s linear
+  float: right
+
+.b-accordion__panel .collapsed .fa-angle-down
+  transform: rotate(0deg)
+
+.b-accordion.b-accordion--clr .b-accordion__panel
+  border: 0
+  color: #fff
+
+.panel--bg-a
+  background-color: $black-c
+
+.b-accordion.b-accordion--clr .b-accordion__panel-ttl a
+  color: #fff

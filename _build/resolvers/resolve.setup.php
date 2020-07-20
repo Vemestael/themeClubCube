@@ -51,13 +51,13 @@ if ($object->xpdo) {
                         'version_minor:>=' =>  0,
                     )
                 ),
-                'molt' => array(
-                    'signature' => 'molt-1.0.2-beta',
-                    'options' => array(
-                        'version_major' => 1,
-                        'version_minor:>=' =>  0,
-                    )
-                ),
+    //             'molt' => array(
+    //                 'signature' => 'molt-1.0.2-beta',
+    //                 'options' => array(
+    //                     'version_major' => 1,
+    //                     'version_minor:>=' =>  0,
+    //                 )
+    //             ),
                 'migx' => array(
                     'signature' => 'migx-2.8.1-pl',
                     'options' => array(
@@ -73,10 +73,10 @@ if ($object->xpdo) {
                     )
                 ),
                 'tickets' => array(
-                    'signature' => 'tickets-1.4.2-rc2',
+                    'signature' => 'tickets-1.6.16-pl',
                     'options' => array(
                         'version_major' => 1,
-                        'version_minor:>=' =>  4,
+                        'version_minor:>=' =>  6,
                     )
                 ),
 			);

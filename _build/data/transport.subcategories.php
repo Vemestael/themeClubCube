@@ -9,48 +9,55 @@ $tmp = array(
     'base' => array(
         'chunks'
     ),
-    /*
-     * Common
-     */
+//    /*
+//     * Common
+//     */
     'common' => array(
         'chunks'
     ),
-    /*
-     * Content
-     */
+//    /*
+//     * Content
+//     */
     'content' => array(
         'chunks'
     ),
-    /*
-     * Parts
-     */
-    //Index
+//    /*
+//     * Parts
+//     */
+//    //Index
     'partsIndex' => array(
-        'chunks'
-    ),
-    //Blog
-    'partsBlog' => array(
         'chunks'
     ),
     //Events
     'partsEvents' => array(
         'chunks'
     ),
+    //Blog
+    'partsBlog' => array(
+        'chunks'
+    ),
+    'partsElements' => array(
+        'chunks'
+    ),
+//    //Events
+//    'partsEvents' => array(
+//        'chunks'
+//    ),
     //Gallery
     'partsGallery' => array(
         'chunks'
     ),
-    //Contacts
-    'partsContacts' => array(
-        'chunks'
-    ),
-    /*
-     * Technical
-     */
-    //Index
-    'technical' => array(
-        'templates'
-    ),
+//    //Contacts
+//    'partsContacts' => array(
+//        'chunks'
+//    ),
+//    /*
+//     * Technicalz
+//     */
+//    //Index
+//    'technical' => array(
+//        'templates'
+//    ),
 );
 
 $val = array(

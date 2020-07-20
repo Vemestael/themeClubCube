@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Changelog for themeClubCube.
 
 themeClubCube 1.0.5 pl
@@ -37,4 +38,58 @@ themeClubCube 1.0.1 pl
 
 themeClubCube 1.0.0 pl
 ==============
+=======
+Changelog for themeClubCube.
+
+
+themeClubCube 2.0.0 pl
+==============
+- Added 6 versions of home page
+- Added new slider on home page
+- Changed color scheme
+- Added new footer
+- Added gallery-slider on home page
+- Added mega-menu
+- Added video/audio blocks on home page
+- Added 5 versions of the blog-list display
+- Added 2 versions of the events-list display
+
+themeClubCube 1.0.6 pl
+==============
+- Changed 404 template page
+- Removed unnecessary files in repo
+- Added designUrl key to the HTML template
+
+themeClubCube 1.0.5 pl
+==============
+- Fixed navigation linkig bug in the HTML template
+
+themeClubCube 1.0.4 pl
+==============
+- Added fixes in the HTML standalone template
+
+themeClubCube 1.0.3 pl
+==============
+- Fixed local version of HTML template
+- Fixed description main header line-up font-fize and line-height from 36 to 30 px.
+- Fixed tv images on event
+- Added fixes to the HTML standalone template
+
+themeClubCube 1.0.2 pl
+==============
+- Fixed css in the styles for main and event pages.
+- Update version subpackeges Molt to molt-1.0.2-beta
+- add img tv to more templates
+- line up on main slider max 3 items
+
+themeClubCube 1.0.1 pl
+==============
+- Fixed mobile menu overflow to the height of the viewport
+- Removed dots in the gallery slider (second type of main page)
+- Fixed gallery view page in tablet and mobile (removed .row for the each 4 gallery items)
+
+
+themeClubCube 1.0.0 pl
+==============
+>>>>>>> release-1.6
 - Initial release with the implementation of the template.

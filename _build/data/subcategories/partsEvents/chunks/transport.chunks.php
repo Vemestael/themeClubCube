@@ -4,34 +4,54 @@ $chunks = array();
 
 $tmp = array(
     // Index
-    'weeksEvents' => array(
-        'file' => 'partsEvents/weeksEvents',
+    'artistItemEvents' => array(
+        'file' => 'partsEvents/artistItemEvents',
         'description' => '',
     ),
-    'weeksCurrentEvents' => array(
-        'file' => 'partsEvents/weeksCurrentEvents',
+    'eventHeadEvents' => array(
+        'file' => 'partsEvents/eventHeadEvents',
         'description' => '',
     ),
-    'eventsItemTileEvents' => array(
-        'file' => 'partsEvents/eventsItemTileEvents',
+    'eventsOpen' => array(
+        'file' => 'partsEvents/eventsOpen',
         'description' => '',
     ),
-    'eventsItemEvents' => array(
-        'file' => 'partsEvents/eventsItemEvents',
+    'eventsRectangleListEvents' => array(
+        'file' => 'partsEvents/eventsRectangleListEvents',
         'description' => '',
     ),
-    'lineUpItemEvents' => array(
-        'file' => 'partsEvents/lineUpItemEvents',
+    'eventsSquareListEvents' => array(
+        'file' => 'partsEvents/eventsSquareListEvents',
         'description' => '',
     ),
-    'lineUpInTicketsItemEvents' => array(
-        'file' => 'partsEvents/lineUpInTicketsItemEvents',
-        'description' => '',
-    ),
-    'eventsListWrapperEvents' => array(
-        'file' => 'partsEvents/eventsListWrapperEvents',
-        'description' => '',
-    ),
+//    'weeksEvents' => array(
+//        'file' => 'partsEvents/weeksEvents',
+//        'description' => '',
+//    ),
+//    'weeksCurrentEvents' => array(
+//        'file' => 'partsEvents/weeksCurrentEvents',
+//        'description' => '',
+//    ),
+//    'eventsItemTileEvents' => array(
+//        'file' => 'partsEvents/eventsItemTileEvents',
+//        'description' => '',
+//    ),
+//    'eventsItemEvents' => array(
+//        'file' => 'partsEvents/eventsItemEvents',
+//        'description' => '',
+//    ),
+//    'lineUpItemEvents' => array(
+//        'file' => 'partsEvents/lineUpItemEvents',
+//        'description' => '',
+//    ),
+//    'lineUpInTicketsItemEvents' => array(
+//        'file' => 'partsEvents/lineUpInTicketsItemEvents',
+//        'description' => '',
+//    ),
+//    'eventsListWrapperEvents' => array(
+//        'file' => 'partsEvents/eventsListWrapperEvents',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

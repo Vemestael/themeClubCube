@@ -9,30 +9,254 @@ if ($object->xpdo) {
             /* list of tvs and templates for each */
             $categoryId = $modx->getObject('modCategory', array('category'=>'themeClubCube'))->get('id');
             $tvs = array(
-                'gallery' => array(
+                'migxEventArtist' => array(
                     'category' => $categoryId,
-                    'name' => 'gallery',
-                    'caption' => 'Gallery',
+                    'name' => 'migxEventArtist',
+                    'caption' => 'Artist list',
                     'description' => '',
                     'type' => 'migx',
                     'display' => 'default',
                     'input_properties' => array(
-                        'formtabs' => '[{"caption":"Add on image", "fields": [{"field":"title","caption":"Title","inputTV":"galleryImgTitle"},{"field":"image","caption":"Image","inputTV":"galleryImg"}]}]',
-                        'columns' => '[{"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},{"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}]'
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Artists",
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"name",
+                                                    "caption":"Name"
+                                                },
+                                                {
+                                                    "field":"city",
+                                                    "caption":"City"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Name", 
+                                                "width": "60", 
+                                                "sortable": "false", 
+                                                "dataIndex": "name"
+                                            },
+                                            {
+                                                "header": "City", 
+                                                "width": "50", 
+                                                "sortable": "false", 
+                                                "dataIndex": "city"
+                                            }
+                                        ]
+                                        '
                     )
                 ),
-                'lineUp' => array(
+                'imgList' => array(
                     'category' => $categoryId,
-                    'name' => 'lineUp',
-                    'caption' => 'Line-Up',
+                    'name' => 'imgList',
+                    'caption' => 'Images for gallery',
                     'description' => '',
                     'type' => 'migx',
                     'display' => 'default',
                     'input_properties' => array(
-                        'formtabs' => '[{"caption":"Add on person", "fields": [{"field":"name","caption":"Name","inputTV":"lineUpName"},{"field":"location","caption":"Location","inputTV":"lineUpLocation"}]}]',
-                        'columns' => '[{"header": "Name", "width": "140", "sortable": "true", "dataIndex": "name"},{"header": "Location", "width": "70", "sortable": "false", "dataIndex": "location"}]'
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Image", 
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"image",
+                                                    "caption":"Image",
+                                                    "inputTVtype":"image"
+                                                },
+                                                {
+                                                    "field":"imageMin",
+                                                    "caption":"Preview",
+                                                    "inputTVtype":"image"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Image", 
+                                                "sortable": "true", 
+                                                "dataIndex": "image",
+                                                "renderer": "this.renderImage"
+                                            },
+                                            {
+                                                "header": "Preview", 
+                                                "sortable": "true", 
+                                                "dataIndex": "imageMin",
+                                                "renderer": "this.renderImage"
+                                            }
+                                        ]
+                                        '
                     )
                 ),
+                'annotationBlog' => array(
+                    'category' => $categoryId,
+                    'name' => 'annotationBlog',
+                    'caption' => 'Annotation for article',
+                    'description' => '',
+                    'type' => 'migx',
+                    'display' => 'default',
+                    'input_properties' => array(
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Annotation", 
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"annotationHead",
+                                                    "caption":"Head"
+                                                },
+                                                {
+                                                    "field":"annotationTextAndLink",
+                                                    "caption":"Text"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Head", 
+                                                "dataIndex": "annotationHead"
+                                            },
+                                            {
+                                                "header": "Text", 
+                                                "dataIndex": "annotationTextAndLink"
+                                            }
+                                        ]
+                                        '
+                    )
+                ),
+                'migxPromoSc' => array(
+                    'category' => $categoryId,
+                    'name' => 'migxPromoSc',
+                    'caption' => 'Data for promo',
+                    'description' => '',
+                    'type' => 'migx',
+                    'display' => 'default',
+                    'input_properties' => array(
+                        'formtabs' =>   '
+                                        [
+                                            {
+                                                "caption":"Data for promo", 
+                                                "fields": 
+                                                [
+                                                {
+                                                    "field":"title",
+                                                    "caption":"Title"
+                                                },
+                                                {
+                                                    "field":"image",
+                                                    "caption":"Image",
+                                                    "inputTVtype":"image"
+                                                },
+                                                {
+                                                    "field":"link",
+                                                    "caption":"Link"
+                                                },
+                                                {
+                                                    "field" : "type",
+                                                    "caption":"Type of data",
+                                                    "inputTVtype":"option", 
+                                                    "inputOptionValues":"Post==1||Video==2"
+                                                }
+                                                ]
+                                            }
+                                        ]
+                                        ',
+                        'columns' =>    '
+                                        [
+                                            {
+                                                "header": "Title", 
+                                                "dataIndex": "title"
+                                            },
+                                            {
+                                                "header": "Image", 
+                                                "dataIndex": "image",
+                                                "renderer": "this.renderImage"
+                                            },
+                                            {
+                                                "header": "Link", 
+                                                "dataIndex": "link"
+                                            },
+                                            {
+                                                "header": "Type of data", 
+                                                "dataIndex": "type",
+                                                "renderer":"this.renderCrossTick"
+                                            }
+                                        ]
+                                        '
+                    )
+                ),
+//                'megaMenu' => array(
+//                    'category' => $categoryId,
+//                    'name' => 'megaMenu',
+//                    'caption' => 'Resources for megamenu',
+//                    'description' => '',
+//                    'type' => 'migx',
+//                    'display' => 'default',
+//                    'input_properties' => array(
+//                        'formtabs' =>   '
+//                                        [
+//                                            {
+//                                                "caption":"Resources",
+//                                                "fields":
+//                                                [
+//                                                {
+//                                                    "field":"resource",
+//                                                    "caption":"Resource",
+//                                                    "inputTVtype":"resourcelist"
+//                                                }
+//                                                ]
+//                                            }
+//                                        ]
+//                                        ',
+//                        'columns' =>    '
+//                                        [
+//                                            {
+//                                                "header": "Resource",
+//                                                "dataIndex": "resource"
+//                                            }
+//                                        ]
+//                                        '
+//                    )
+//                ),
+//                'gallery' => array(
+//                    'category' => $categoryId,
+//                    'name' => 'gallery',
+//                    'caption' => 'Gallery',
+//                    'description' => '',
+//                    'type' => 'migx',
+//                    'display' => 'default',
+//                    'input_properties' => array(
+//                        'formtabs' => '[{"caption":"Add on image", "fields": [{"field":"title","caption":"Title","inputTV":"galleryImgTitle"},{"field":"image","caption":"Image","inputTV":"galleryImg"}]}]',
+//                        'columns' => '[{"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},{"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}]'
+//                    )
+//                ),
+//                'lineUp' => array(
+//                    'category' => $categoryId,
+//                    'name' => 'lineUp',
+//                    'caption' => 'Line-Up',
+//                    'description' => '',
+//                    'type' => 'migx',
+//                    'display' => 'default',
+//                    'input_properties' => array(
+//                        'formtabs' => '[{"caption":"Add on person", "fields": [{"field":"name","caption":"Name","inputTV":"lineUpName"},{"field":"location","caption":"Location","inputTV":"lineUpLocation"}]}]',
+//                        'columns' => '[{"header": "Name", "width": "140", "sortable": "true", "dataIndex": "name"},{"header": "Location", "width": "70", "sortable": "false", "dataIndex": "location"}]'
+//                    )
+//                ),
             );
 
             foreach ($tvs as $k => $v) {

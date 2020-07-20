@@ -10,8 +10,10 @@ if ($object && $object->xpdo) {
                 'themeclubcube.blog_resource' => 'blog',
                 'themeclubcube.gallery_resource' => 'gallery',
                 'themeclubcube.events_resource' => 'events',
-                'themeclubcube.ajax_form_contacts' => 'formcontacts',
-                'themeclubcube.ajax_form_subscribe' => 'formsubscribe',
+                'themeclubcube.video_resource' => 'video',
+                'themeclubcube.mega_menu' => 'elements',
+//                'themeclubcube.ajax_form_contacts' => 'formcontacts',
+//                'themeclubcube.ajax_form_subscribe' => 'formsubscribe',
                 'error_page' => '404',
             );
 

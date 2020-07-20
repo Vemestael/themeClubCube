@@ -14,82 +14,138 @@ $tmp = array(
         'file' => 'content/indexContent',
         'description' => '',
     ),
-    'galleryListContent' => array(
-        'file' => 'content/galleryListContent',
-        'description' => '',
-    ),
-    'galleryBigListContent' => array(
-        'file' => 'content/galleryBigListContent',
-        'description' => '',
-    ),
-    'galleryItemContent' => array(
-        'file' => 'content/galleryItemContent',
-        'description' => '',
-    ),
-    'blogItemContent' => array(
-        'file' => 'content/blogItemContent',
-        'description' => '',
-    ),
-    'blogItemWithoutImageContent' => array(
-        'file' => 'content/blogItemWithoutImageContent',
-        'description' => '',
-    ),
-    'blogItemAsideContent' => array(
-        'file' => 'content/blogItemAsideContent',
-        'description' => '',
-    ),
-    'blogItemAsideWithoutImageContent' => array(
-        'file' => 'content/blogItemAsideWithoutImageContent',
-        'description' => '',
-    ),
-    'blogListContent' => array(
-        'file' => 'content/blogListContent',
-        'description' => '',
-    ),
-    'blogListTileContent' => array(
-        'file' => 'content/blogListTileContent',
-        'description' => '',
-    ),
-    'eventsListContent' => array(
-        'file' => 'content/eventsListContent',
-        'description' => '',
-    ),
-    'eventsListTicketsContent' => array(
-        'file' => 'content/eventsListTicketsContent',
-        'description' => '',
-    ),
-    'eventsItemContent' => array(
-        'file' => 'content/eventsItemContent',
-        'description' => '',
-    ),
-    'textContent' => array(
-        'file' => 'content/textContent',
-        'description' => '',
-    ),
-    'textAsideContent' => array(
-        'file' => 'content/textAsideContent',
-        'description' => '',
-    ),
-    'textAsideRightContent' => array(
-        'file' => 'content/textAsideRightContent',
-        'description' => '',
-    ),
-    'textAsideRightWithImageContent' => array(
-        'file' => 'content/textAsideRightWithImageContent',
-        'description' => '',
-    ),
-    'textAsideWithImageContent' => array(
-        'file' => 'content/textAsideWithImageContent',
-        'description' => '',
-    ),
-    'textWithImageContent' => array(
-        'file' => 'content/textWithImageContent',
-        'description' => '',
-    ),
-    'contactsContent' => array(
-        'file' => 'content/contactsContent',
-        'description' => '',
-    ),
+	'indexContentMusic' => array(
+		'file' => 'content/indexContentMusic',
+		'description' => '',
+	),
+	'indexContentEvents' => array(
+		'file' => 'content/indexContentEvents',
+		'description' => '',
+	),
+	'indexContentFEvents' => array(
+		'file' => 'content/indexContentFEvents',
+		'description' => '',
+	),
+	'indexContentGallery' => array(
+		'file' => 'content/indexContentGallery',
+		'description' => '',
+	),
+	'indexContentPosters' => array(
+		'file' => 'content/indexContentPosters',
+		'description' => '',
+	),
+	'eventsContent' => array(
+		'file' => 'content/eventsContent',
+		'description' => '',
+	),
+	'eventsOpenContent' => array(
+		'file' => 'content/eventsOpenContent',
+		'description' => '',
+	),
+	'galleryContent' => array(
+		'file' => 'content/galleryContent',
+		'description' => '',
+	),
+	'galleryOpenContent' => array(
+		'file' => 'content/galleryOpenContent',
+		'description' => '',
+	),
+	'blogContent' => array(
+		'file' => 'content/blogContent',
+		'description' => '',
+	),
+	'blogOpenNoTitleFullContent' => array(
+		'file' => 'content/blogOpenNoTitleFullContent',
+		'description' => '',
+	),
+	'blogOpenTitleFullContent' => array(
+		'file' => 'content/blogOpenTitleFullContent',
+		'description' => '',
+	),
+	'blogOpenTitleSidebarContent' => array(
+		'file' => 'content/blogOpenTitleSidebarContent',
+		'description' => '',
+	),
+	'blogOpenNoTitleSidebarContent' => array(
+		'file' => 'content/blogOpenNoTitleSidebarContent',
+		'description' => '',
+	),
+//    'galleryListContent' => array(
+//        'file' => 'content/galleryListContent',
+//        'description' => '',
+//    ),
+//    'galleryBigListContent' => array(
+//        'file' => 'content/galleryBigListContent',
+//        'description' => '',
+//    ),
+//    'galleryItemContent' => array(
+//        'file' => 'content/galleryItemContent',
+//        'description' => '',
+//    ),
+//    'blogItemContent' => array(
+//        'file' => 'content/blogItemContent',
+//        'description' => '',
+//    ),
+//    'blogItemWithoutImageContent' => array(
+//        'file' => 'content/blogItemWithoutImageContent',
+//        'description' => '',
+//    ),
+//    'blogItemAsideContent' => array(
+//        'file' => 'content/blogItemAsideContent',
+//        'description' => '',
+//    ),
+//    'blogItemAsideWithoutImageContent' => array(
+//        'file' => 'content/blogItemAsideWithoutImageContent',
+//        'description' => '',
+//    ),
+//    'blogListContent' => array(
+//        'file' => 'content/blogListContent',
+//        'description' => '',
+//    ),
+//    'blogListTileContent' => array(
+//        'file' => 'content/blogListTileContent',
+//        'description' => '',
+//    ),
+//    'eventsListContent' => array(
+//        'file' => 'content/eventsListContent',
+//        'description' => '',
+//    ),
+//    'eventsListTicketsContent' => array(
+//        'file' => 'content/eventsListTicketsContent',
+//        'description' => '',
+//    ),
+//    'eventsItemContent' => array(
+//        'file' => 'content/eventsItemContent',
+//        'description' => '',
+//    ),
+//    'textContent' => array(
+//        'file' => 'content/textContent',
+//        'description' => '',
+//    ),
+//    'textAsideContent' => array(
+//        'file' => 'content/textAsideContent',
+//        'description' => '',
+//    ),
+//    'textAsideRightContent' => array(
+//        'file' => 'content/textAsideRightContent',
+//        'description' => '',
+//    ),
+//    'textAsideRightWithImageContent' => array(
+//        'file' => 'content/textAsideRightWithImageContent',
+//        'description' => '',
+//    ),
+//    'textAsideWithImageContent' => array(
+//        'file' => 'content/textAsideWithImageContent',
+//        'description' => '',
+//    ),
+//    'textWithImageContent' => array(
+//        'file' => 'content/textWithImageContent',
+//        'description' => '',
+//    ),
+//    'contactsContent' => array(
+//        'file' => 'content/contactsContent',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options

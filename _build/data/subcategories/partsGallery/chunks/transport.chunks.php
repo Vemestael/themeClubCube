@@ -4,22 +4,42 @@ $chunks = array();
 
 $tmp = array(
     // Index
-    'galleryListWrapperGallery' => array(
-        'file' => 'partsGallery/galleryListWrapperGallery',
+    'galleryItemFirstGallery' => array(
+        'file' => 'partsGallery/galleryItemFirstGallery',
         'description' => '',
     ),
-    'galleryItemGallery' => array(
-        'file' => 'partsGallery/galleryItemGallery',
+	'galleryListGallery' => array(
+		'file' => 'partsGallery/galleryListGallery',
+		'description' => '',
+	),
+	'galleryOpenGallery' => array(
+		'file' => 'partsGallery/galleryOpenGallery',
+		'description' => '',
+	),
+	'galleryOpenPopUpGallery' => array(
+		'file' => 'partsGallery/galleryOpenPopUpGallery',
+		'description' => '',
+	),
+    'galleryOpenHeadGallery' => array(
+        'file' => 'partsGallery/galleryOpenHeadGallery',
         'description' => '',
     ),
-    'galleryItemBigGallery' => array(
-        'file' => 'partsGallery/galleryItemBigGallery',
-        'description' => '',
-    ),
-    'galleryImageItemGallery' => array(
-        'file' => 'partsGallery/galleryImageItemGallery',
-        'description' => '',
-    ),
+//    'galleryListWrapperGallery' => array(
+//        'file' => 'partsGallery/galleryListWrapperGallery',
+//        'description' => '',
+//    ),
+//    'galleryItemGallery' => array(
+//        'file' => 'partsGallery/galleryItemGallery',
+//        'description' => '',
+//    ),
+//    'galleryItemBigGallery' => array(
+//        'file' => 'partsGallery/galleryItemBigGallery',
+//        'description' => '',
+//    ),
+//    'galleryImageItemGallery' => array(
+//        'file' => 'partsGallery/galleryImageItemGallery',
+//        'description' => '',
+//    ),
 );
 
 // Save chunks for setup options
